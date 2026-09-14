@@ -52,8 +52,8 @@ def head(title, desc, path, og_type="website", extra=""):
 <meta name="twitter:title" content="{title} | {FIRM['short']}">
 <meta name="twitter:description" content="{desc}">
 <meta name="twitter:image" content="{SITE_URL}/assets/img/og-cover.png">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/img/cga-logo.jpeg">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -88,7 +88,7 @@ def header(current=""):
 <header class="masthead">
   <div class="wrap">
     <a class="brand" href="index.html">
-      <img src="assets/img/cga-logo.jpeg" alt="" data-optional width="42" height="42">
+      <img src="assets/img/cga-mark.png" alt="" width="79" height="42">
       <span class="brand__txt">Canjain Global Advisors<span>Advocate-led · CA · CS · CMA</span></span>
     </a>
     <button class="btn btn--ghost navtoggle" data-navtoggle aria-expanded="false" aria-controls="mainnav">Menu</button>
@@ -132,7 +132,7 @@ def footer():
   <div class="wrap">
     <div class="foot__grid">
       <div class="foot__brand">
-        <img src="assets/img/cga-logo.jpeg" alt="{FIRM['short']}" data-optional width="44" height="44">
+        <img src="assets/img/cga-logo-light.png" alt="{FIRM['short']}" width="214" height="64">
         <p>Registration, taxation, licensing and regulatory practice serving clients in India and abroad.</p>
         <div class="social">
           <a href="{FIRM['fb']}" rel="noopener" aria-label="Facebook">FB</a>
@@ -356,7 +356,7 @@ def build_home():
 
     schema = ('<script type="application/ld+json">'
               '{"@context":"https://schema.org","@type":"ProfessionalService",'
-              '"name":"%s","url":"%s","image":"%s/assets/img/cga-logo.jpeg",'
+              '"name":"%s","url":"%s","image":"%s/assets/img/cga-logo.png",'
               '"telephone":"%s","email":"%s",'
               '"address":{"@type":"PostalAddress","streetAddress":"Aparna Tower, near Old Bus Stand","addressLocality":"Mathura","addressRegion":"Uttar Pradesh","addressCountry":"IN"},'
               '"areaServed":"IN","description":"Advocate-led compliance practice handling company registration, GST, income tax, TDS, trademark, licences and environmental compliance across India."}'
@@ -1036,36 +1036,6 @@ def build_404():
 # assets, sitemap, robots
 # ----------------------------------------------------------------------
 
-LOGO_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CGA">
-<rect width="64" height="64" rx="6" fill="#005176"/>
-<path d="M14 44V20h9c6 0 9 3 9 8s-3 8-9 8h-4v8z" fill="#fff"/>
-<path d="M36 20h14v5h-9v5h8v5h-8v9h-5z" fill="#c9a227"/>
-</svg>
-"""
-
-OG_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0" stop-color="#003b57"/><stop offset="1" stop-color="#00688f"/></linearGradient></defs>
-<rect width="1200" height="630" fill="url(#g)"/>
-<circle cx="1080" cy="90" r="230" fill="#ffffff" opacity="0.05"/>
-<text x="80" y="190" font-family="Manrope,Arial,sans-serif" font-size="26" font-weight="700" fill="#8fd0ee">ADVOCATE-LED · CA · CS · CMA</text>
-<text x="80" y="290" font-family="Manrope,Arial,sans-serif" font-size="66" font-weight="800" fill="#ffffff">Canjain Global Advisors</text>
-<text x="80" y="372" font-family="Inter,Arial,sans-serif" font-size="34" fill="#cfe3ee">Every registration, return and licence</text>
-<text x="80" y="422" font-family="Inter,Arial,sans-serif" font-size="34" fill="#cfe3ee">your business owes — filed on time.</text>
-<rect x="80" y="480" width="120" height="4" fill="#c9a227"/>
-<text x="80" y="546" font-family="Inter,Arial,sans-serif" font-size="26" fill="#a9cde0">cgaindia.com · 5 offices · UP, Delhi, Haryana</text>
-</svg>
-"""
-
-
-def build_assets():
-    img = os.path.join(OUT, "assets", "img")
-    with open(os.path.join(img, "favicon.svg"), "w", encoding="utf-8") as f:
-        f.write(LOGO_SVG)
-    with open(os.path.join(img, "og-cover.svg"), "w", encoding="utf-8") as f:
-        f.write(OG_SVG)
-
-
 def build_sitemap():
     urls = "\n".join(
         f"  <url><loc>{SITE_URL}/{p}</loc><lastmod>{TODAY}</lastmod>"
@@ -1091,6 +1061,9 @@ def main():
     here = os.path.dirname(os.path.abspath(__file__))
     shutil.copytree(os.path.join(here, "assets", "css"), os.path.join(OUT, "assets", "css"))
     shutil.copytree(os.path.join(here, "assets", "js"), os.path.join(OUT, "assets", "js"))
+    for f in os.listdir(os.path.join(here, "assets", "img")):
+        shutil.copy2(os.path.join(here, "assets", "img", f),
+                     os.path.join(OUT, "assets", "img", f))
 
     build_home()
     build_services()
@@ -1100,7 +1073,6 @@ def main():
     build_team()
     build_legal()
     build_404()
-    build_assets()
     build_sitemap()
 
     print("built %d pages into %s" % (len(pages) + 1, OUT))
