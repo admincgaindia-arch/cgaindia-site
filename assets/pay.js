@@ -9,10 +9,10 @@
 
   var CSS =
     '.cga-pay{margin:12px 0 0;padding-top:12px;border-top:1px dashed var(--line,#e2e2e8)}' +
-    '.cga-pay p{margin:0 0 8px;font-size:.78rem;color:var(--slate,#6b7280)}' +
+    '.cga-pay p{margin:0 0 8px;font-size:.78rem;color:var(--slate,#5a7180)}' +
     '.cga-pay form{margin:0}' +
     '.cga-paylink{display:inline-block;width:100%;box-sizing:border-box;text-align:center;' +
-    'background:var(--gold,#c6922c);color:#141a2e;font-weight:600;font-size:.95rem;' +
+    'background:var(--gold,#0e7ea0);color:#06212f;font-weight:600;font-size:.95rem;' +
     'padding:11px 20px;border-radius:999px;text-decoration:none}' +
     '.cga-paylink:hover{filter:brightness(1.05)}';
 

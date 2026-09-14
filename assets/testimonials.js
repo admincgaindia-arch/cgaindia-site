@@ -15,10 +15,10 @@
   var CSS =
     '.cga-tm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}' +
     '@media(max-width:900px){.cga-tm-grid{grid-template-columns:1fr}}' +
-    '.cga-tm{background:#fff;border:1px solid var(--line,#E4E1D6);border-radius:14px;padding:24px 22px}' +
-    '.cga-tm p{font-family:"Fraunces",serif;font-size:1.02rem;line-height:1.55;color:var(--navy-deep,#13224A)}' +
-    '.cga-tm footer{background:none;padding:14px 0 0;margin:0;font-size:.85rem;color:var(--slate,#43506B)}' +
-    '.cga-tm footer b{display:block;color:var(--navy,#1F3364);font-size:.95rem}';
+    '.cga-tm{background:#fff;border:1px solid var(--line,#d5e5ed);border-radius:14px;padding:24px 22px}' +
+    '.cga-tm p{font-family:"Fraunces",serif;font-size:1.02rem;line-height:1.55;color:var(--navy-deep,#003b57)}' +
+    '.cga-tm footer{background:none;padding:14px 0 0;margin:0;font-size:.85rem;color:var(--slate,#46626f)}' +
+    '.cga-tm footer b{display:block;color:var(--navy,#005176);font-size:.95rem}';
 
   function render(list) {
     var ok = list.filter(function (t) { return t && t.consent === true && t.quote; });

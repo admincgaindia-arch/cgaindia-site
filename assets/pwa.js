@@ -53,29 +53,29 @@
     s.id = 'cgaPwaCSS';
     s.textContent =
       '#cgaPwa{position:fixed;left:16px;bottom:150px;z-index:55;width:340px;max-width:calc(100vw - 32px);' +
-      'background:#fff;color:#0D1834;border:1px solid rgba(31,51,100,.18);border-radius:16px;' +
-      'box-shadow:0 24px 60px -18px rgba(13,24,52,.42);padding:16px 16px 14px;' +
+      'background:#fff;color:#00293d;border:1px solid rgba(0,81,118,.18);border-radius:16px;' +
+      'box-shadow:0 24px 60px -18px rgba(0,41,61,.42);padding:16px 16px 14px;' +
       "font-family:'Instrument Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;" +
       'opacity:0;transform:translateY(10px);transition:opacity .22s ease,transform .22s ease}' +
       '#cgaPwa.on{opacity:1;transform:translateY(0)}' +
       '#cgaPwa .pw-top{display:flex;gap:12px;align-items:flex-start}' +
-      '#cgaPwa .pw-ic{width:44px;height:44px;border-radius:11px;flex:0 0 44px;background:#1F3364;' +
+      '#cgaPwa .pw-ic{width:44px;height:44px;border-radius:11px;flex:0 0 44px;background:#005176;' +
       'display:grid;place-items:center;overflow:hidden}' +
       '#cgaPwa .pw-ic img{width:44px;height:44px;display:block}' +
       '#cgaPwa .pw-t{font-size:15px;font-weight:700;line-height:1.3;margin:1px 0 3px}' +
       '#cgaPwa .pw-d{font-size:13px;line-height:1.5;color:#4A5878;margin:0}' +
       '#cgaPwa .pw-x{position:absolute;top:8px;right:8px;width:30px;height:30px;border:0;background:transparent;' +
       'color:#8E9CBE;font-size:20px;line-height:1;cursor:pointer;border-radius:8px;font-family:inherit}' +
-      '#cgaPwa .pw-x:hover{background:rgba(31,51,100,.07);color:#1F3364}' +
+      '#cgaPwa .pw-x:hover{background:rgba(0,81,118,.07);color:#005176}' +
       '#cgaPwa .pw-act{display:flex;gap:9px;margin-top:13px}' +
-      '#cgaPwa .pw-go{flex:1;padding:10px 14px;border:0;border-radius:999px;background:#1F3364;color:#fff;' +
+      '#cgaPwa .pw-go{flex:1;padding:10px 14px;border:0;border-radius:999px;background:#005176;color:#fff;' +
       'font-weight:700;font-size:14px;cursor:pointer;font-family:inherit}' +
-      '#cgaPwa .pw-go:hover{background:#13224A}' +
-      '#cgaPwa .pw-no{padding:10px 14px;border:1px solid rgba(31,51,100,.2);border-radius:999px;background:#fff;' +
+      '#cgaPwa .pw-go:hover{background:#003b57}' +
+      '#cgaPwa .pw-no{padding:10px 14px;border:1px solid rgba(0,81,118,.2);border-radius:999px;background:#fff;' +
       'color:#4A5878;font-weight:600;font-size:14px;cursor:pointer;font-family:inherit}' +
       '#cgaPwa .pw-ios{margin:12px 0 0;padding:10px 12px;border-radius:10px;background:#F4F6FB;' +
-      'font-size:13px;line-height:1.55;color:#1F3364}' +
-      '#cgaPwa .pw-ios b{color:#0D1834}' +
+      'font-size:13px;line-height:1.55;color:#005176}' +
+      '#cgaPwa .pw-ios b{color:#00293d}' +
       '#cgaPwa .pw-sh{display:inline-block;width:15px;height:15px;vertical-align:-3px;margin:0 1px}' +
       '@media(max-width:760px){#cgaPwa{left:12px;right:12px;width:auto;max-width:none;bottom:156px}}' +
       '@media(prefers-reduced-motion:reduce){#cgaPwa{transition:none}}';
@@ -104,7 +104,7 @@
     if (ios) {
       body +=
         '<div class="pw-ios">Safari mein niche <b>Share</b> ' +
-        '<svg class="pw-sh" viewBox="0 0 24 24" fill="none" stroke="#1F3364" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V3"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>' +
+        '<svg class="pw-sh" viewBox="0 0 24 24" fill="none" stroke="#005176" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V3"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>' +
         ' button dabayein, phir <b>Add to Home Screen</b> chunein.</div>' +
         '<div class="pw-act"><button class="pw-no" type="button" style="flex:1">Theek hai</button></div>';
     } else {

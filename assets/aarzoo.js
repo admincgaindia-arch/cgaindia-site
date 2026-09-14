@@ -168,7 +168,7 @@
   var style = document.createElement('style');
   style.textContent =
     '.az-typing{display:inline-flex;gap:4px;align-items:center;padding:2px 0}' +
-    '.az-typing i{width:6px;height:6px;border-radius:50%;background:#C6922C;display:block;animation:azb 1.1s infinite}' +
+    '.az-typing i{width:6px;height:6px;border-radius:50%;background:#0e7ea0;display:block;animation:azb 1.1s infinite}' +
     '.az-typing i:nth-child(2){animation-delay:.18s}.az-typing i:nth-child(3){animation-delay:.36s}' +
     '@keyframes azb{0%,60%,100%{opacity:.25;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}' +
     '@media(prefers-reduced-motion:reduce){.az-typing i{animation:none;opacity:.6}}';

@@ -16,21 +16,21 @@
     'font-family:var(--sans,system-ui,sans-serif);opacity:0;transform:translateY(10px);' +
     'transition:opacity .45s ease,transform .45s ease}' +
     '#cgaTicker.on{opacity:1;transform:none}' +
-    '.cgt-card{display:flex;align-items:flex-start;gap:10px;background:#fff;border:1px solid var(--line,#e6e6ea);' +
-    'border-left:3px solid var(--gold,#b8912f);border-radius:14px;padding:11px 12px 11px 13px;' +
+    '.cgt-card{display:flex;align-items:flex-start;gap:10px;background:#fff;border:1px solid var(--line,#dde8ee);' +
+    'border-left:3px solid var(--gold,#0d7191);border-radius:14px;padding:11px 12px 11px 13px;' +
     'box-shadow:0 10px 30px rgba(16,24,48,.13)}' +
     '.cgt-body{min-width:0;flex:1}' +
     '.cgt-top{display:flex;align-items:center;gap:7px;margin-bottom:3px}' +
     '.cgt-dot{width:7px;height:7px;border-radius:50%;background:#188038;flex:0 0 auto;' +
     'box-shadow:0 0 0 0 rgba(24,128,56,.55);animation:cgtPulse 2.4s infinite}' +
     '@keyframes cgtPulse{70%{box-shadow:0 0 0 7px rgba(24,128,56,0)}100%{box-shadow:0 0 0 0 rgba(24,128,56,0)}}' +
-    '.cgt-cat{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold,#b8912f)}' +
-    '.cgt-head{display:block;font-size:.86rem;line-height:1.38;color:var(--ink,#141a2e);text-decoration:none;font-weight:600}' +
+    '.cgt-cat{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold,#0d7191)}' +
+    '.cgt-head{display:block;font-size:.86rem;line-height:1.38;color:var(--ink,#06212f);text-decoration:none;font-weight:600}' +
     '.cgt-head:hover{text-decoration:underline}' +
-    '.cgt-foot{margin-top:4px;font-size:.7rem;color:var(--slate,#6b7280)}' +
+    '.cgt-foot{margin-top:4px;font-size:.7rem;color:var(--slate,#5a7180)}' +
     '.cgt-x{flex:0 0 auto;border:0;background:transparent;color:#9aa3b2;font-size:15px;line-height:1;' +
     'cursor:pointer;padding:2px 2px 2px 4px}' +
-    '.cgt-x:hover{color:var(--ink,#141a2e)}' +
+    '.cgt-x:hover{color:var(--ink,#06212f)}' +
     '.cgt-fade{transition:opacity .3s ease}' +
     '@media(max-width:560px){#cgaTicker{left:12px;bottom:14px;max-width:calc(100vw - 96px)}' +
     '.cgt-head{font-size:.8rem}}' +
