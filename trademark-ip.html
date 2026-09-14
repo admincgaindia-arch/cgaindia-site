@@ -382,7 +382,52 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','1350244116690583');fbq('track','PageView');
 </script>
 <!-- End Meta Pixel -->
-<style>.brand{display:inline-flex;align-items:center;line-height:0;padding:4px 0}.brand-lockup{height:50px;width:auto;display:block}.f-logo{margin:0 0 14px}.f-logo img{height:56px;width:auto;display:block}@media(max-width:900px){.brand-lockup{height:42px}}@media(max-width:420px){.brand-lockup{height:36px}}</style></head>
+<style>.brand{display:inline-flex;align-items:center;line-height:0;padding:4px 0}.brand-lockup{height:50px;width:auto;display:block}.f-logo{margin:0 0 14px}.f-logo img{height:56px;width:auto;display:block}@media(max-width:900px){.brand-lockup{height:42px}}@media(max-width:420px){.brand-lockup{height:36px}}</style><style>
+/* --- split hero with enquiry card --- */
+.tm-hero{background:linear-gradient(118deg,#00293d 0%,#004e72 58%,#046d94 100%);color:#fff;position:relative;overflow:hidden}
+.tm-hero::after{content:"";position:absolute;right:-10%;top:-40%;width:48%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.05)}
+.tm-hero .wrap{position:relative;z-index:1;display:grid;gap:clamp(1.8rem,4vw,3rem);padding-block:clamp(2.4rem,5vw,4rem);grid-template-columns:1fr}
+@media(min-width:980px){.tm-hero .wrap{grid-template-columns:1.35fr .95fr;align-items:start}}
+.tm-hero .eyebrow{color:#7fd0e4;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 .8rem}
+.tm-hero h1{color:#fff;font-size:clamp(1.8rem,1.35rem+2.2vw,3rem);line-height:1.12;letter-spacing:-.025em;margin:0 0 .9rem;max-width:20ch}
+.tm-hero h1 span{color:#4bbdd8}
+.tm-lede{color:#cfe3ee;font-size:clamp(1rem,.97rem+.22vw,1.14rem);max-width:56ch;margin:0 0 1.5rem}
+.tm-inc{border-top:1px solid rgba(255,255,255,.22);padding-top:1.2rem;margin-top:.4rem}
+.tm-inc p{font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#7fd0e4;margin:0 0 .8rem}
+.tm-inc ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem .9rem;grid-template-columns:1fr}
+@media(min-width:620px){.tm-inc ul{grid-template-columns:1fr 1fr}}
+.tm-inc li{color:#e3eef4;font-size:.96rem;padding-left:1.55rem;position:relative;line-height:1.45}
+.tm-inc li::before{content:"";position:absolute;left:0;top:.32em;width:14px;height:8px;border-left:2px solid #4bbdd8;border-bottom:2px solid #4bbdd8;transform:rotate(-45deg)}
+.tm-stats{display:flex;flex-wrap:wrap;gap:1px;background:rgba(255,255,255,.2);margin-top:1.6rem;border-radius:3px;overflow:hidden}
+.tm-stats div{background:rgba(0,32,48,.45);padding:.85rem 1.1rem;flex:1 1 140px}
+.tm-stats b{display:block;font-size:1.3rem;font-weight:800;letter-spacing:-.02em;line-height:1}
+.tm-stats span{display:block;font-size:.8rem;color:#a9cde0;margin-top:.28rem}
+
+/* --- enquiry card --- */
+.tm-form{background:#fff;color:#0c1b25;border-radius:5px;padding:clamp(1.2rem,2.4vw,1.6rem);box-shadow:0 24px 60px rgba(0,26,40,.32)}
+.tm-form h2{font-size:1.22rem;margin:0 0 .25rem;letter-spacing:-.015em;color:#0c1b25}
+.tm-form .sub{font-size:.9rem;color:#46626f;margin:0 0 1.1rem}
+.tm-form label{display:block;font-size:.8rem;font-weight:700;margin:0 0 .28rem;color:#0c1b25}
+.tm-form input,.tm-form select{width:100%;font:inherit;font-size:.96rem;padding:.62rem .72rem;border:1.5px solid #c3d2da;border-radius:3px;margin-bottom:.75rem;background:#fff;color:#0c1b25}
+.tm-form input:focus,.tm-form select:focus{outline:none;border-color:#005176;box-shadow:0 0 0 3px rgba(0,81,118,.14)}
+.tm-form .hp{position:absolute;left:-9999px}
+.tm-form button{width:100%;border:0;border-radius:3px;background:#005176;color:#fff;font:inherit;font-weight:700;font-size:1rem;padding:.82rem 1rem;cursor:pointer}
+.tm-form button:hover{background:#003b57}
+.tm-form .fine{font-size:.78rem;color:#5a7180;margin:.8rem 0 0;line-height:1.5}
+.tm-form .err{color:#b3261e;font-size:.8rem;margin:-.5rem 0 .7rem;display:none}
+.tm-form .ok{display:none;background:#e7f5fa;border-left:3px solid #005176;padding:.8rem .9rem;font-size:.9rem;margin-bottom:.9rem}
+
+/* --- sticky section nav --- */
+.tm-tabs{background:#fff;border-bottom:1px solid #d5e5ed;position:sticky;top:71px;z-index:29}
+#fees,#scope,#process,#faq{scroll-margin-top:128px}
+@media(max-width:1020px){.tm-tabs{top:0}#fees,#scope,#process,#faq{scroll-margin-top:60px}}
+.tm-tabs .wrap{display:flex;gap:.3rem;overflow-x:auto;scrollbar-width:none}
+.tm-tabs .wrap::-webkit-scrollbar{display:none}
+.tm-tabs a{flex:none;padding:.9rem 1.05rem;font-weight:650;font-size:.95rem;color:#46626f;text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap}
+.tm-tabs a:hover{color:#005176}
+.tm-tabs a.on{color:#005176;border-bottom-color:#4bbdd8}
+</style>
+</head>
 <body>
 
 <div class="topbar"><div class="wrap">
@@ -399,71 +444,72 @@ fbq('init','1350244116690583');fbq('track','PageView');
 <ul class="nav-links"><li class=""><button class="drop-btn" type="button">The Firm</button><div class="dropdown"><a href="about.html">About CGA</a><a href="team.html">Our Team</a><a href="clients.html">Clients</a><a href="gallery.html">Offices &amp; Gallery</a><a href="achievements.html">Recognition</a></div></li><li class=""><button class="drop-btn" type="button">Founder</button><div class="dropdown"><a href="cga.html">Neeraj Jain</a><a href="praceasy.html">PracEasy</a><a href="social-impact.html">Social Impact</a><a href="https://neerajjain.in" target="_blank" rel="noopener">Personal site &#8599;</a></div></li><li class="on"><button class="drop-btn" type="button">Services</button><div class="dropdown mega"><div class="mega-top"><a href="services.html">All Services</a><a href="gst-notice-sos.html">&#9201; GST Notice SOS</a><a href="health-check.html">&#10003; Free Health Check</a></div><div class="mega-col"><h4>Tax &amp; Returns</h4><a href="itr-filing.html">ITR Filing</a><a href="tds-returns.html">TDS Returns</a><a href="gst-registration.html">GST Registration</a><a href="gst-return-filing.html">GST Return Filing</a><a href="crypto-tax.html">Crypto / VDA Tax</a><a href="foreign-income.html">Foreign Income &amp; NRI</a><a href="international-tax.html">International Taxation</a><a href="ecommerce-sellers.html">E-commerce Sellers</a></div><div class="mega-col"><h4>Company &amp; Registrations</h4><a href="pvt-ltd-incorporation.html">Pvt Ltd Registration</a><a href="llp-partnership.html">LLP &amp; Partnership</a><a href="roc-annual-compliance.html">ROC Annual Compliance</a><a href="ngo-registration.html">NGO &middot; 12AB &middot; 80G</a><a href="startup.html">Startup Services</a><a href="trademark-ip.html" class="on">Trademark &amp; IP</a><a href="iso-certification.html">ISO Certification</a><a href="fssai-licence.html">FSSAI Licence</a></div><div class="mega-col"><h4>Business &amp; People</h4><a href="payroll-hr.html">Payroll &amp; HR</a><a href="labour-code-restructuring.html">Labour Code Restructuring</a><a href="manufacturing.html">Manufacturing Compliance</a><a href="retainers.html">Compliance Retainers</a><a href="virtual-cfo.html">Virtual CFO</a></div></div></li><li><a href="clients.html" class="">Clients</a></li><li class=""><button class="drop-btn" type="button">Learn</button><div class="dropdown"><a href="videos.html">Videos</a><a href="insights.html">Canjain Global Advisors</a><a href="updates.html">Daily Updates</a><a href="case-laws.html">Latest Case Laws</a><a href="problems-solutions.html">Common Problems</a><a href="compliance-calendar.html">Compliance Calendar</a><a href="bank-finance-news.html">Bank &amp; Finance News</a></div></li><li><a class="nav-cta" href="contact.html">Contact</a></li></ul>
 </div></nav>
 
-<header class="page-hero">
+<header class="tm-hero">
 <div class="wrap">
-<p class="eyebrow">Brand protection</p>
-<h1>Brand aapne banaya &mdash;<br>kagaz par bhi aapka hona chahiye.</h1>
-<p class="lede">Naam par mehnat aur paisa lagta hai, lekin haq usi ka hota hai jiske paas registration hai. Search se lekar objection reply tak, poora kaam ek jagah.</p>
-<div class="hero-cta">
-<a class="btn btn-gold" data-wa href="https://wa.me/919996647888?text=TRADEMARK" target="_blank" rel="noopener">Apna brand name check karwaiye</a>
-<a class="btn btn-whiteline" href="#scope">Poora process dekhiye</a>
+<div>
+<p class="eyebrow">Trademark &amp; IP &middot; Trade Marks Act, 1999</p>
+<h1>Brand aapne banaya &mdash; <span>kagaz par bhi aapka hona chahiye.</span></h1>
+<p class="tm-lede">Naam par mehnat aur paisa lagta hai, lekin haq usi ka hota hai jiske paas registration hai. Search se lekar objection reply aur hearing tak, poora kaam ek hi firm ke andar.</p>
+
+<div class="tm-inc">
+<p>Kaam mein kya shamil hai</p>
+<ul>
+<li>Public register par availability search</li>
+<li>Sahi class ka selection (NICE)</li>
+<li>Application ki drafting aur filing</li>
+<li>TM&trade; use karne ki confirmation</li>
+<li>Examination report ka reply</li>
+<li>Status tracking aur renewal reminder</li>
+</ul>
 </div>
-<p class="hero-note">Safidon &middot; Delhi (Burari) &middot; PAN India &mdash; kaam poora online ho jata hai</p>
+
+<div class="tm-stats">
+<div><b>2,500+</b><span>Clients across India</span></div>
+<div><b>20+</b><span>Professionals aur staff</span></div>
+<div><b>5</b><span>Offices &mdash; UP, Delhi, Haryana</span></div>
+</div>
+</div>
+
+<aside class="tm-form">
+<h2>Free consultation</h2>
+<p class="sub">15 minute ki baat &mdash; koi charge nahi. Brand name bataiye, hum register par dekh kar seedha batayenge ki aage kya karna hai.</p>
+<div class="ok" data-tmok>Details bhej di gayi hain. Team ek working day ke andar aapse baat karegi.</div>
+<form id="tmForm" novalidate>
+<label for="tmName">Aapka naam</label>
+<input id="tmName" name="name" type="text" autocomplete="name" required>
+<label for="tmMobile">Mobile</label>
+<input id="tmMobile" name="mobile" type="tel" inputmode="numeric" autocomplete="tel" required>
+<p class="err" data-tmerr>Naam aur 10 digit ka mobile number daal dijiye.</p>
+<label for="tmBrand">Brand ya logo ka naam</label>
+<input id="tmBrand" name="brand" type="text">
+<label for="tmCity">Sheher / state</label>
+<input id="tmCity" name="city" type="text" autocomplete="address-level2">
+<label for="tmStage">Aap abhi kahan ho</label>
+<select id="tmStage" name="stage">
+<option>Naya trademark file karwana hai</option>
+<option>Examination report / objection aaya hai</option>
+<option>Opposition ya hearing lagi hai</option>
+<option>Renewal ya assignment karwana hai</option>
+<option>Pata nahi &mdash; pehle baat karni hai</option>
+</select>
+<input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button type="submit">Free consultation book kariye</button>
+<p class="fine">Aapki details sirf is enquiry ka jawab dene ke liye use hoti hain. Professional fee aur government fee alag-alag, likhit mein, kaam shuru hone se pehle batayi jaati hai.</p>
+</form>
+</aside>
 </div>
 </header>
 
-<section class="band-why">
+<nav class="tm-tabs" aria-label="Is page ke section">
 <div class="wrap">
-<div class="why-grid">
-<div class="why-card reveal"><h3>Pehle search, phir filing</h3><p>Bina search ke file karna sabse aam galti hai. Milta-julta mark pehle se registered ho toh application objection ya opposition mein phas jaati hai, aur us waqt tak aap brand par kharch kar chuke hote hain.</p></div>
-<div class="why-card reveal"><h3>Registration se pehle bhi kaam aata hai</h3><p>Application file hote hi aap apne naam ke saath TM likh sakte hain, aur wo tareekh aapke haq ki tareekh ban jaati hai. Isliye der karne ka koi faayda nahi.</p></div>
+<a href="#fees" class="on">Fees</a>
+<a href="#scope">Kaam ka scope</a>
+<a href="#process">Process</a>
+<a href="#faq">Sawal</a>
+<a href="contact.html">Baat kariye</a>
 </div>
-</div>
-</section>
+</nav>
 
-<section class="wrap sec" id="scope">
-<p class="eyebrow">Process</p>
-<h2>Poora process, step by step</h2>
-<p class="sec-lede">Har application ek jaisa nahi chalta &mdash; kuch seedhe register ho jaate hain, kuch objection ya opposition se guzarte hain.</p>
-<div class="grid-3">
-<div class="card reveal"><h3>Search aur class selection</h3><p>Aapka naam pehle se kisi ke paas toh nahi &mdash; aur aapka business kis class mein aata hai. Galat class mein filing ka matlab hai protection kahin aur mil gaya.</p></div>
-<div class="card reveal"><h3>Application filing</h3><p>Sahi applicant ke naam par, sahi class aur description ke saath. Individual, startup aur small enterprise ke liye government fee kam hoti hai.</p></div>
-<div class="card reveal"><h3>Objection ka reply</h3><p>Examination report aane par uska reply likhit mein dena hota hai, deadline ke andar. Achha reply hi wo jagah hai jahan zyadatar applications bachti hain.</p></div>
-<div class="card reveal"><h3>Hearing aur opposition</h3><p>Koi doosra aapke mark ka virodh kare, ya hearing lag jaye &mdash; dono mein representation hum karte hain.</p></div>
-<div class="card reveal"><h3>Registration aur renewal</h3><p>Registration ke baad mark ek nishchit avadhi ke liye chalta hai aur samay par renew karna padta hai. Date miss hone par mark khatam ho sakta hai.</p></div>
-<div class="card reveal"><h3>Assignment aur licensing</h3><p>Brand kisi aur ko dena, company ke naam par transfer karna, ya use karne ka licence dena &mdash; sab documented hona chahiye.</p></div>
-<div class="card reveal"><h3>Copyright registration</h3><p>Content, artwork, software code ya manual &mdash; jahan trademark nahi chalta wahan copyright kaam aata hai.</p></div>
-<div class="card reveal"><h3>Design registration</h3><p>Product ki shape aur look &mdash; agar aapka product dikhne mein alag hai toh uska alag protection hota hai.</p></div>
-<div class="card reveal"><h3>Infringement par action</h3><p>Koi aapka naam use kar raha hai &mdash; notice se lekar aage ki karvai tak, legal side bhi humare paas hi hai.</p></div>
-</div>
-</section>
-
-<section class="wrap sec">
-<p class="eyebrow">Ye baatein pehle se jaan lijiye</p>
-<h2>Sawal jo baad mein mehnge padte hain</h2>
-<p class="sec-lede">In par shuruat mein 10 minute lagana, baad ke mahine bacha deta hai.</p>
-<div class="grid-3">
-<div class="card reveal"><h3>Naam kis ke naam par register hoga</h3><p>Proprietor, company ya founder &mdash; ye aage chal kar funding aur transfer dono par asar daalta hai.</p></div>
-<div class="card reveal"><h3>Logo alag, naam alag</h3><p>Word mark aur logo &mdash; dono ka protection alag hota hai. Zyadatar business ko word mark pehle chahiye.</p></div>
-<div class="card reveal"><h3>Ek se zyada class</h3><p>Aap aage kya bechne wale hain &mdash; agar wo abhi ki class se bahar hai toh usi waqt soch lena sasta padta hai.</p></div>
-<div class="card reveal"><h3>Government fee alag hoti hai</h3><p>Humari professional fee aur department ki fee alag hain. Individual, startup aur small enterprise ke liye department ki fee kam hoti hai.</p></div>
-<div class="card reveal"><h3>Time lagta hai</h3><p>Registration ek lambi process hai. Lekin protection application ki tareekh se judta hai, isliye jaldi file karna faayda deta hai.</p></div>
-<div class="card reveal"><h3>Renewal bhoolna nahi</h3><p>Bahut purane brands sirf isliye khatam ho jaate hain kyunki renewal ki date nikal gayi. Hum ye date track karte hain.</p></div>
-</div>
-</section>
-
-<section class="band-how">
-<div class="wrap">
-<p class="eyebrow" style="color:var(--gold-soft)">Process</p>
-<h2 style="color:#fff">Kaise chalta hai</h2>
-<div class="how-grid">
-<div class="how-step reveal"><span class="how-n">1</span><h4>Search</h4><p>Naam aur class ka search, aur uska seedha matlab &mdash; risk hai ya nahi.</p></div>
-<div class="how-step reveal"><span class="how-n">2</span><h4>File</h4><p>Documents aur application, usi din ya agle din.</p></div>
-<div class="how-step reveal"><span class="how-n">3</span><h4>Follow</h4><p>Objection ya opposition aaye toh reply aur representation hum karte hain.</p></div>
-<div class="how-step reveal"><span class="how-n">4</span><h4>Track</h4><p>Registration ke baad renewal ki date humare calendar mein rehti hai.</p></div>
-</div>
-</div>
-</section>
 
 <section class="wrap sec" id="fees">
 <p class="eyebrow">Fees</p>
@@ -510,7 +556,61 @@ fbq('init','1350244116690583');fbq('track','PageView');
 <p class="hint" style="max-width:52rem;margin:22px auto 0;text-align:center;color:var(--slate);font-size:.9rem">Is page par di gayi jaankari general information hai, professional advice nahi. Tax positions facts aur us waqt ke law par depend karti hain &mdash; apne case ke liye humse baat kar lijiye.</p>
 </section>
 
+
+<section class="band-why">
+<div class="wrap">
+<div class="why-grid">
+<div class="why-card reveal"><h3>Pehle search, phir filing</h3><p>Bina search ke file karna sabse aam galti hai. Milta-julta mark pehle se registered ho toh application objection ya opposition mein phas jaati hai, aur us waqt tak aap brand par kharch kar chuke hote hain.</p></div>
+<div class="why-card reveal"><h3>Registration se pehle bhi kaam aata hai</h3><p>Application file hote hi aap apne naam ke saath TM likh sakte hain, aur wo tareekh aapke haq ki tareekh ban jaati hai. Isliye der karne ka koi faayda nahi.</p></div>
+</div>
+</div>
+</section>
+
+<section class="wrap sec" id="scope">
+<p class="eyebrow">Process</p>
+<h2>Poora process, step by step</h2>
+<p class="sec-lede">Har application ek jaisa nahi chalta &mdash; kuch seedhe register ho jaate hain, kuch objection ya opposition se guzarte hain.</p>
+<div class="grid-3">
+<div class="card reveal"><h3>Search aur class selection</h3><p>Aapka naam pehle se kisi ke paas toh nahi &mdash; aur aapka business kis class mein aata hai. Galat class mein filing ka matlab hai protection kahin aur mil gaya.</p></div>
+<div class="card reveal"><h3>Application filing</h3><p>Sahi applicant ke naam par, sahi class aur description ke saath. Individual, startup aur small enterprise ke liye government fee kam hoti hai.</p></div>
+<div class="card reveal"><h3>Objection ka reply</h3><p>Examination report aane par uska reply likhit mein dena hota hai, deadline ke andar. Achha reply hi wo jagah hai jahan zyadatar applications bachti hain.</p></div>
+<div class="card reveal"><h3>Hearing aur opposition</h3><p>Koi doosra aapke mark ka virodh kare, ya hearing lag jaye &mdash; dono mein representation hum karte hain.</p></div>
+<div class="card reveal"><h3>Registration aur renewal</h3><p>Registration ke baad mark ek nishchit avadhi ke liye chalta hai aur samay par renew karna padta hai. Date miss hone par mark khatam ho sakta hai.</p></div>
+<div class="card reveal"><h3>Assignment aur licensing</h3><p>Brand kisi aur ko dena, company ke naam par transfer karna, ya use karne ka licence dena &mdash; sab documented hona chahiye.</p></div>
+<div class="card reveal"><h3>Copyright registration</h3><p>Content, artwork, software code ya manual &mdash; jahan trademark nahi chalta wahan copyright kaam aata hai.</p></div>
+<div class="card reveal"><h3>Design registration</h3><p>Product ki shape aur look &mdash; agar aapka product dikhne mein alag hai toh uska alag protection hota hai.</p></div>
+<div class="card reveal"><h3>Infringement par action</h3><p>Koi aapka naam use kar raha hai &mdash; notice se lekar aage ki karvai tak, legal side bhi humare paas hi hai.</p></div>
+</div>
+</section>
+
 <section class="wrap sec">
+<p class="eyebrow">Ye baatein pehle se jaan lijiye</p>
+<h2>Sawal jo baad mein mehnge padte hain</h2>
+<p class="sec-lede">In par shuruat mein 10 minute lagana, baad ke mahine bacha deta hai.</p>
+<div class="grid-3">
+<div class="card reveal"><h3>Naam kis ke naam par register hoga</h3><p>Proprietor, company ya founder &mdash; ye aage chal kar funding aur transfer dono par asar daalta hai.</p></div>
+<div class="card reveal"><h3>Logo alag, naam alag</h3><p>Word mark aur logo &mdash; dono ka protection alag hota hai. Zyadatar business ko word mark pehle chahiye.</p></div>
+<div class="card reveal"><h3>Ek se zyada class</h3><p>Aap aage kya bechne wale hain &mdash; agar wo abhi ki class se bahar hai toh usi waqt soch lena sasta padta hai.</p></div>
+<div class="card reveal"><h3>Government fee alag hoti hai</h3><p>Humari professional fee aur department ki fee alag hain. Individual, startup aur small enterprise ke liye department ki fee kam hoti hai.</p></div>
+<div class="card reveal"><h3>Time lagta hai</h3><p>Registration ek lambi process hai. Lekin protection application ki tareekh se judta hai, isliye jaldi file karna faayda deta hai.</p></div>
+<div class="card reveal"><h3>Renewal bhoolna nahi</h3><p>Bahut purane brands sirf isliye khatam ho jaate hain kyunki renewal ki date nikal gayi. Hum ye date track karte hain.</p></div>
+</div>
+</section>
+
+<section class="band-how" id="process">
+<div class="wrap">
+<p class="eyebrow" style="color:var(--gold-soft)">Process</p>
+<h2 style="color:#fff">Kaise chalta hai</h2>
+<div class="how-grid">
+<div class="how-step reveal"><span class="how-n">1</span><h4>Search</h4><p>Naam aur class ka search, aur uska seedha matlab &mdash; risk hai ya nahi.</p></div>
+<div class="how-step reveal"><span class="how-n">2</span><h4>File</h4><p>Documents aur application, usi din ya agle din.</p></div>
+<div class="how-step reveal"><span class="how-n">3</span><h4>Follow</h4><p>Objection ya opposition aaye toh reply aur representation hum karte hain.</p></div>
+<div class="how-step reveal"><span class="how-n">4</span><h4>Track</h4><p>Registration ke baad renewal ki date humare calendar mein rehti hai.</p></div>
+</div>
+</div>
+</section>
+
+<section class="wrap sec" id="faq">
 <h2>Aksar poochhe jaane wale sawal</h2>
 <div class="faq">
 <details><summary>Search zaroori hai ya seedha file kar dein?</summary><p>Search zaroori hai. Bina search ke file karne par milta-julta mark saamne aane ka risk rehta hai, aur tab tak aap fee aur brand dono par kharch kar chuke hote hain. Search sasta hai, objection mehnga.</p></details>
@@ -590,4 +690,51 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelecto
 <script defer src="assets/pay.js"></script>
 <script defer src="assets/lead-form.js"></script>
 <script src="assets/pwa.js" defer></script>
+<script>
+(function(){
+  var form=document.getElementById('tmForm');
+  if(!form) return;
+  var WEBHOOK='https://cga.app.n8n.cloud/webhook/lead';
+  var WA='https://wa.me/919996647888?text=';
+  var err=document.querySelector('[data-tmerr]'), ok=document.querySelector('[data-tmok]');
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=function(n){return form.querySelector('[name="'+n+'"]').value.trim();};
+    var name=f('name'), mobile=f('mobile').replace(/\D/g,'');
+    if(name.length<2 || mobile.length<10){ err.style.display='block'; return; }
+    err.style.display='none';
+    if(f('company')!=='') return;                 /* honeypot */
+
+    var msg='Trademark: '+f('stage')+(f('brand')?' | Brand: '+f('brand'):'');
+    var lead={name:name,mobile:mobile,email:'',city:f('city'),
+              service:'Trademark & IP',message:msg,
+              page:window.location.pathname,at:new Date().toISOString()};
+    try{
+      fetch(WEBHOOK,{method:'POST',mode:'no-cors',
+        headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)}).catch(function(){});
+    }catch(_){}
+    ok.style.display='block';
+    window.open(WA+encodeURIComponent('TRADEMARK - '+f('stage')+(f('brand')?' - '+f('brand'):'')+' - '+name),'_blank','noopener');
+  });
+
+  /* highlight the section the reader is in */
+  var tabs=document.querySelectorAll('.tm-tabs a[href^="#"]');
+  var targets=[];
+  for(var i=0;i<tabs.length;i++){
+    var el=document.getElementById(tabs[i].getAttribute('href').slice(1));
+    if(el) targets.push({tab:tabs[i],el:el});
+  }
+  function mark(){
+    var best=null, y=window.scrollY+140;
+    for(var i=0;i<targets.length;i++){
+      if(targets[i].el.offsetTop<=y) best=targets[i];
+    }
+    for(var j=0;j<tabs.length;j++) tabs[j].classList.remove('on');
+    if(best) best.tab.classList.add('on'); else if(tabs[0]) tabs[0].classList.add('on');
+  }
+  window.addEventListener('scroll',function(){window.requestAnimationFrame(mark);});
+  mark();
+})();
+</script>
 </body></html>
