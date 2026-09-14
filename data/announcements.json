@@ -1,0 +1,38 @@
+{
+  "_readme": "Suchnayein / announcements for cgaindia.com. Add objects to items[] and they appear sitewide within a minute - no code change needed. Fields: id (unique), title (required), detail, type (info | deadline | urgent | office), due (YYYY-MM-DD, shows an 'X din baaki' countdown once it is within 14 days), expires (YYYY-MM-DD, the item hides itself after this date), url (a page on this site or a full https link), strip (true = also show as the dismissible bar at the top of every page; keep at most one item with strip true).",
+  "_example": {
+    "id": "example-1",
+    "title": "Office 15 August ko band rahega",
+    "detail": "Urgent matters ke liye WhatsApp par likh dijiye.",
+    "type": "office",
+    "expires": "2026-08-16",
+    "strip": true
+  },
+  "items": [
+    {
+      "id": "retainer-launch-2026",
+      "title": "Naya: Monthly Compliance Retainer",
+      "detail": "Har chhote kaam ke liye alag baat nahi — GST, ITR, TDS aur ROC sab ek fixed monthly fee mein. ₹2,500/month se shuru.",
+      "type": "info",
+      "url": "retainers.html",
+      "expires": "2026-09-30",
+      "strip": true
+    },
+    {
+      "id": "gst-notice-sos-2026",
+      "title": "GST notice aaya hai? 48 ghante mein reply",
+      "detail": "Notice ki photo WhatsApp kar dijiye. Form number padh kar batayenge kitna serious hai, phir reply draft aur portal filing.",
+      "type": "urgent",
+      "url": "gst-notice-sos.html",
+      "expires": "2026-12-31"
+    },
+    {
+      "id": "itr-season-2026",
+      "title": "ITR AY 2026-27 — salaried ki due date nikal chuki hai",
+      "detail": "Salaried filers ka return ab belated maana jaata hai — late fee lagti hai aur us saal ke liye regime badalne ka option nahi rehta. Business, professional aur audit cases ki timeline alag hai. Apne case ki due date confirm karne ke liye message kijiye.",
+      "type": "urgent",
+      "url": "services.html",
+      "expires": "2026-12-31"
+    }
+  ]
+}

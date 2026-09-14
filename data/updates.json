@@ -1,0 +1,2206 @@
+{
+  "last_updated": "2026-09-14T01:31:03.073Z",
+  "digests": [
+    {
+      "date": "2026-09-14",
+      "summary": "Aaj mostly court aur tribunal ki rulings news mein dikh rahi hain. Direct compliance due dates ya official notifications nahi aaye.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "SC ne Vodafone Idea par 363 cr GST demand hata di",
+          "detail": "Supreme Court ne Vodafone Mobile Services Ltd. ke merger ke baad ke GST proceedings khatam kar diye. Section 87 CGST Act yahaan apply nahi hota, Union of India ka appeal reject hua.",
+          "cga_view": "Agar company merger hua hai to GST adjustment ya demand ki details achhe se check karo, especially ongoing disputes. Recent Supreme Court ka yeh ruling reference ke liye kaafi important hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/sc-drops-rs-363-crores-gst-demand-against-vodafone-idea-post-merger.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Delhi HC ne IGST refund case mein 1 week ka time diya",
+          "detail": "Delhi High Court ne DGARM chief ko kaha hai ki 1 hafte mein IGST refund dispute pe final decision lo, warna salary par asar padega.",
+          "cga_view": "Jinke IGST refund atke hue hain, court ke order ka reference deke department ko follow up karo. Ab jaldi decision expected hai, paperwork ready rakho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/delhi-high-court-directs-week-decision-withheld-igst-refund.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Madras HC: Appeal period mein GST recovery nahi hogi",
+          "detail": "Madras High Court ne bola jab tak GSTAT appeal ka time bacha hai, department recovery action nahi le sakta. Yeh kisi specific taxpayer ke case mein hua.",
+          "cga_view": "Agar aapke khilaf GST demand pass hui hai aur appeal ka time abhi bacha hai, toh recovery notice se na ghabraao – court ki guideline ka reference do.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-recovery-barred-statutory-period-approach-gstat-madras-hc.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "JAO Section 148 reassessment wapas ITAT ne bheja",
+          "detail": "ITAT Chennai ne reassessment ka case dobara khol diya hai kyunki 2026 ke amendment ne pehle wali basis hata di. Ab case fresh sunwai ko jayega.",
+          "cga_view": "Jinke khilaf Section 148 ke notices aaye hain, unko apni appeal aur representation pe nazar rakhni chahiye – amendments ke baad case ka status badal sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/jao-section-148-reassessment-remanded-retrospective-amendment-itat-chennai.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Limitation ke baad section 271D penalty hatayi",
+          "detail": "ITAT Chennai ne delay ke wajah se ₹3 lakh ki penalty utha di, kyunki woh law ke prescribed 6 mahine se baad pass hui thi.",
+          "cga_view": "Agar koi penalty order limitation ke baad aaya hai, toh us basis pe challenge karne ka mauka hai. Dates check karna na bhoolen!",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/section-271d-penalty-passed-limitation-quashed-itat-chennai.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 69A addition loan repayment par nahi laggi",
+          "detail": "ITAT Delhi ne loan repayment banking channel se hui dikhate hue section 69A ki addition hata di. Reopening me proper material nahi tha.",
+          "cga_view": "Jinke khilaf unexplained money ka notice aaya hai, toh bank records zaroor submit karein. Loan repayment traceable ho to relief mil sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-delhi-deletes-section-69a-addition-loan-repaid-banking-channels.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-13",
+      "summary": "Aaj mainly GST ke practical court rulings aur ek important Income Tax ka TDS issue discuss hua hai. MCA se related koi fresh official update nahin hai.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "ITC Refund: Section 73/74 bina refund rok nahi sakte",
+          "detail": "GSTAT Ernakulam ne bola ki agar section 73/74 ki proper proceedings nahi hui, toh ITC eligibility ke basis pe refund deny nahi kiya ja sakta. Ye inverted duty refund matter mein bola gaya hai.",
+          "cga_view": "Agar aap refund claim kar rahe hain aur department bina proper showcause notice ke rok raha hai, toh apne consultant se legal remedy explore karen.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/itc-refund-cannot-denied-without-section-73-74-determination-gstat-ernakulam.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Year-end expense provision par TDS nahi katega: ITAT Mumbai",
+          "detail": "ITAT Mumbai ne decide kiya ki year end expense provision pe TDS aur interest nahi lagega, kyunki actual payment ya credit nahi hua tha. Yeh Pfizer India ka case tha.",
+          "cga_view": "Agar aap bhi sirf provision bana rahe hain bina payment ya party account credit kiye, toh abhi TDS katne ki zarurat nahi lagti, par apne facts ko cross-check karo.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/year-expense-provisions-not-liable-tds-itat-mumbai.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Advance Ruling ke liye fee pay na ho toh application reject",
+          "detail": "Karnataka AAR ne kuch applications sirf isliye reject kar di kyunki prescribed fee nahi jama hui thi, merits pe baat hi nahi hui.",
+          "cga_view": "Agar Advance Ruling file kar rahe ho, toh ensure karo ki saari statutory fee time pe bhar di ho - warna case directly reject ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/karnataka-aar-rejects-gst-advance-ruling-application-fee-non-compliance.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-12",
+      "summary": "Aaj mostly High Court rulings ki updates hain, GST notices aur Income Tax show cause notice par focus hai. Compliance ke liye show cause process par dhyan dein.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "Kerala HC ne multiple years ki GST notice khatam ki",
+          "detail": "Kerala High Court ne composite GST notice ko quash kiya, jo multiple financial years ko cover karti thi. Ab department nayi year-wise proceedings start kar sakta hai, specified limitation period ko exclude karke.",
+          "cga_view": "Agar aapko bhi ek hi GST notice mein kai saal ka matter mila hai, to is ruling ka fayda uthaiye – courts usse quash kar rahe hain. Notice ka analysis karwana chahiye.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/kerala-hc-quashes-composite-gst-notice-covering-multiple-years.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Calcutta HC ne ek saal se zyada ki GST notice radd ki",
+          "detail": "Calcutta High Court ne GST show cause notice ko radd kar diya jo multiple years ko ek hi notice mein cover kar rahi thi. Courts yahan jurisdiction ki kami dekh rahe hain.",
+          "cga_view": "Agar aapko ek hi GST notice mein kai saal ka pucha gaya hai, to legal advice lekar challenge consider karein – similar notices khatam ho rahi hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/calcutta-hc-quashes-single-gst-notice-covering-multiple-financial-years.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Bombay HC ne TPO order sirf SCN na dene par quash kiya",
+          "detail": "Bombay High Court ne TPO ka order cancel kar diya kyunki taxpayer ko mandatory show cause notice nahi diya gaya tha. Ab dubara fresh hearing hogi.",
+          "cga_view": "Agar aapko bina proper SCN ke koi Income Tax ya TPO order mila hai, to aapko bhi similar ground par relief mil sakta hai – legal options explore karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/bombay-hc-quashes-tpo-order-failure-serve-mandatory-scn.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-11",
+      "summary": "Aaj ke din mostly tax case law updates aaye hain, sab trade press sources se. Implementation pe focus rakho, detailed notifications ka intezaar bhi karo.",
+      "items": [
+        {
+          "category": "Income Tax",
+          "headline": "Derivatives Loss, Sec 50C Addition Deleted: Kolkata ITAT",
+          "detail": "ITAT Kolkata ne AY 2012-13 mein derivatives loss aur Section 50C/26AS ke issues pe revenue ka appeal kharij kiya. Assessee ko relief mil gaya hai, pehle waale additions valid nahi samjhe gaye.",
+          "cga_view": "Agar aapke against is type ka order hai toh similar facts hone pe relief mil sakta hai. Order ka reference apne CA ko dijiye agar assessment pending hai.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/itat-kolkata-upholds-deletion-additions-derivative-loss-section-50c.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Search Assessment Needs Sec 148 Route: Delhi ITAT",
+          "detail": "ITAT Delhi ne assessment order (143(3)) cancel kar diya, kyunki post-search case mein Section 148 ka route follow nahi hua tha. AY 2021-22 ka case tha.",
+          "cga_view": "Agar aapka search ke baad direct assessment hua hai, toh order ka detailed review karao. Section 148 wali process miss hui ho toh faida ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/search-assessment-requires-section-148-route-itat-delhi-quashes-section-143-3-order.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 80G Rejection Invalid Without Notice: Gujarat HC",
+          "detail": "Gujarat HC ne ITAT ke decision ko uphold kiya aur kaha bina show cause notice ke 80G application reject nahi kiya ja sakta. Funding-related relief mila hai.",
+          "cga_view": "Jo log charitable trust ya NGO chala rahe hain, rejection aayi ho toh yeh order unke kaam aa sakta hai. Officer ki communication check karo.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/section-80g-rejection-set-no-show-notice-gujarat-hc.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST Section 129 Penalty Quashed For E-Way Bill Error: Allahabad HC",
+          "detail": "Allahabad HC ne genuine documents hone par, tax-evasion ka intent na hone par GST Section 129 ki penalty hata di. Sirf technical error tha.",
+          "cga_view": "Agar aapka e-way bill issue sirf clerical mistake ya technical galti hai toh court se relief ki possibility hai, details sambhal ke rakho.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-section-129-penalty-quashed-technical-bill-error-allahabad-high-court.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST Section 129 Penalty Quashed for E-Way Bill Lapse: Allahabad HC",
+          "detail": "Allahabad HC ne GST penalty ko quash kiya kyunki sab documents sahi the aur tax-evasion ka koi purpose nahi tha. E-way bill lapse ke case mein fayda mila.",
+          "cga_view": "Similar case hai toh apne documents proof sambhal ke rakhein. Penalty sirf major lapse par hi tik sakti hai, minor mistake pe nahi.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-section-129-penalty-quashed-bill-lapse-without-tax-evasion-allahabad-hc.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 68 Addition Deleted, Bogus Purchases Capped at 5%: Mumbai ITAT",
+          "detail": "ITAT Mumbai ne assessee ko share capital pe relief diya aur bogus purchases ko sirf 5% tak hi mana. TDS/expenses pe further examination order diya hai.",
+          "cga_view": "Agar aap par similar share capital ya bogus purchase ke issues hain, toh yeh precedent useful hai. Apne case ka fact-check karva lo.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/section-68-share-capital-addition-deleted-bogus-purchases-restricted-5-percent-mumbai-itat.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 87A Rebate Allowed for 111A Gains: Delhi ITAT",
+          "detail": "Delhi ITAT ne decide kiya ki AY 2025-26 ke liye Section 87A ka ₹25,000 rebate STCG u/s 111A par milega, kyunki Finance Act 2025 ki restriction prospective hai.",
+          "cga_view": "Short term capital gains par rebate mil sakta hai for AY 2025-26 tak. File karte time yeh baat zaroor check karo.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/itat-section-87a-rebate-stcg-111a-ay-2025-26.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-10",
+      "summary": "Aaj mostly Income Tax tribunal aur court rulings aaye hain. GST/MCA ka official update nahi mila.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "Section 142A se assessment time extend nahi kar sakte: Gujarat HC",
+          "detail": "Gujarat High Court ne kaha ki Section 142A ka use sirf assessment ke limitation period khatam hone se pehle nahi ho sakta, authority ne limitation artificially badhane ki koshish ki.",
+          "cga_view": "Agar assessment mein valuation reference aaye last moment pe, toh usko challenge karne ka scope hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/section-142a-cannot-artificially-extend-assessment-limitation-gujarat-hc.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Retrospective 12AB cancellation pre-2022 violations par nahi ho sakti: ITAT Delhi",
+          "detail": "ITAT Delhi ne decide kiya ki Finance Act 2022 ki 12AB registration cancellation provisions ko past (pre-2022) violations pe lagu nahi kiya ja sakta.",
+          "cga_view": "Agar trust/NGO ka registration cancel hua hai to dekhein ki kya purane violation ka ground use kiya gaya hai. Appeal consider karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-delhi-quashes-retrospective-12ab-cancellation-pre-2022-violations.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITAT: Cash sales pe 69A addition se pehle GST/VAT record check honi chahiye",
+          "detail": "ITAT Bangalore ne ₹1.43 crore Section 69A addition remand ki, aur bola ki AO pehle VAT/GST returns aur sales ki record verify karein.",
+          "cga_view": "Agar aapki cash sales pe Section 69A ka issue hai, toh GST/VAT records ready rakhein, usi pe aapko relief mil sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-rejects-69a-addition-without-examining-gst-vat-records-cash-sales.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-09",
+      "summary": "Aaj ke digest mein kuch GST aur Income Tax rulings aur updates hain jo business owners aur accountants ko yaad rakhni chahiye. Sabhi items trade press se aayi hain, toh filhaal official notification ka intezaar bhi hai.",
+      "items": [
+        {
+          "category": "Income Tax",
+          "headline": "ITAT: TDS credit/refund milegi Sec 148 wali return pe bhi",
+          "detail": "ITAT Bangalore ne hold kiya ki agar notice u/s 148 ke response mein return file ki hai toh 26AS mein dikha TDS ka credit milega aur extra TDS refund ho sakta hai.",
+          "cga_view": "Agar aapne Sec 148 notice pe return file ki hai, toh apna Form 26AS zaroor check karo, aur TDS credit/refund ka claim return mein include karo.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/itat-bangalore-tds-credit-refund-return-filed-section-148.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GSTN ne 'NIL demand' orders par appeal file karna enable kiya",
+          "detail": "GSTN ab allow karta hai ki NIL ya zero demand tax orders par bhi portal par seedhe appeal (Form GST APL-01) file ho sakegi. Pehle yeh restriction thi.",
+          "cga_view": "Agar aapko aise order mila tha jisme tax demand nil tha lekin appeal karni thi, ab portal par seedhe appeal kar sakte ho. Jaldi action lo agar limitation pe issue hai.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstn-enables-filing-appeals-against-nil-demand-orders.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "GSTAT: E-way bill reuse prove na hone pe penalty hatayi",
+          "detail": "GSTAT ne bola ki jab tak department prove nahi karta ke e-way bill galat use hua ya tax ki chori hui, penalty nahi lag sakti.",
+          "cga_view": "Agar aap ka case e-way bill reuse ya penalty ka hai, toh department ke evidence par dhyan do – proper documentation rakho apne favor mein.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstat-sets-section-129-penalty-bill-reuse-unproved.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Andhra HC: Multi-year composite GST assessment order galat",
+          "detail": "Andhra Pradesh High Court ne 4 saal ki composite GST assessment order ko set aside kiya, bola har saal alag notice aur proceeding honi chahiye.",
+          "cga_view": "Agar aapko GST ka composite order mila hai jo multiple years cover karta hai, toh aap separate proceedings ki demand kar sakte ho.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/composite-gst-assessment-orders-covering-multiple-years-unsustainable-ap-hc.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-08",
+      "summary": "Aaj mainly GST aur Income Tax compliance pe kuch important updates aur 2 latest court judgments aaye hain. Abhi sab trade press sources hain, toh final implementation dekhte raho.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "GSTN ne NIL demand orders pe appeal allow kiya",
+          "detail": "GSTN portal ab Form GST APL-01 file karna allow karta hai, even agar demand order mein NIL/Zero amount dikha hai. Pehle restriction tha, abhatta diya gaya hai.",
+          "cga_view": "Agar aapke upar nil demand ka order aaya ho aur aap challenge karna chahte ho, toh ab portal pe appeal daal sakte ho. Dhyan rahe ki actual order upload hua ho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstn-enables-appeals-against-nil-demand-orders.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Same GSTIN pe stock transfer: e-way bill na ho toh bhi penalty nahi",
+          "detail": "Kerala GSTAT ne bola, agar same GSTIN ki branches ke beech stock transfer hua aur tax payable nahi hai toh Section 129 ki penalty nahi lagegi, chahe e-way bill bana ya nahi.",
+          "cga_view": "Internal branch transfer pe penalty ka risk kam hua, par ye sirf Kerala ka order hai. Dusre states mein check kar lo ki local officer ka kya view hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/no-bill-internal-stock-transfer-no-section-129-penalty.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITC rectification: Calcutta HC ne timeline extension allow kiya",
+          "detail": "Calcutta High Court ne ruling diya ki ITC rectification ke liye Section 16(5) ke time limits ko government notification restrict nahi kar sakte. Taxpayer ka benefit decide kiya gaya.",
+          "cga_view": "Agar ITC rectify/claim karne ka time miss hua hai toh ab legal option stronger hai, lekin abhi yeh sirf Calcutta HC jurisdiction mein directly apply hoga. National applicability ka wait karo.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/calcutta-hc-extension-itc-rectification-time-section-16-5.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-07",
+      "summary": "Aaj GST aur Income Tax par mostly judicial updates aayi hain, compliance changes ki news nahi hai. Sab items trade press se hain.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "GST Penalty on Goods Without E-Way Bill: GSTAT Order",
+          "detail": "GSTAT Lucknow ne Section 129(3) ke tahat bina E-Way Bill ke iron scrap le jaane par tax aur same amount ka penalty barkarar rakha hai.",
+          "cga_view": "Agar aap goods transport karte hain, hamesha valid E-Way Bill banwayein, warna same amount ka penalty lag sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstat-restores-section-129-penalty-iron-scrap-moved-without-bill.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GSTR-3B aur GSTR-2A ITC Mismatch: GSTAT ne Dubara Verification Order Diya",
+          "detail": "Bengaluru GSTAT ne FY 2018-19 ka ek ITC mismatch case invoice-wise fresh verification aur personal hearing ke liye dobara adjudication par bheja hai.",
+          "cga_view": "Agar ITC mismatch ka notice aaye to har invoice ka record ready rakhein aur personal hearing miss na karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstat-remands-gstr-3b-gstr-2a-itc-mismatch-fresh-verification.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Income Tax Refund: Pehle Interest, Baad Mein Principal Adjust Hoga",
+          "detail": "Mumbai ITAT ne decide kiya hai ki Section 244A ke tahat income tax refund pehle interest dues se adjust hoga, uske baad principal tax se.",
+          "cga_view": "Agar aap refund expect kar rahe hain aur interest mila hai, to pehle interest adjustment check karein, uske baad hi main tax refund aayega.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-directs-interest-income-tax-refund-adjustment-section-244a.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-06",
+      "summary": "Aaj ka digest mostly ITAT aur High Court ke recent rulings pe based hai. GST aur Income Tax dono mein kuch important judgments aaye hain jo business owners ko check karne chahiye.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "Unsigned GST SCN/Order invalid: Rajasthan HC",
+          "detail": "Rajasthan High Court ne bola ki unsigned GST notice ya order valid nahi hai. Digital ya physical signature, Rule 26(3) ke hisaab se mandatory hai.",
+          "cga_view": "Agar apko koi unsigned GST notice mile toh turant is judgement ke basis pe usko challenge karein. Apne consultant ko dikhaen.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/unsigned-gst-show-notice-order-invalid-rajasthan-high-court.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Patna HC grants bail in GST evasion case",
+          "detail": "Patna High Court ne ₹73.75 crore GST evasion case mein bail grant ki, jabki Section 69 aur 132 lagaye gaye the. Yeh arrest process ko lekar ek important order hai.",
+          "cga_view": "Agar kisi pe GST evasion case chal raha hai ya arrest ka dar hai, toh is judgement ko lawyer ke saath discuss karein. Arrest ka process dhang se follow hona chahiye.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/patna-high-court-grants-bail-rs-73-75-crore-gst-evasion-case.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Wrong ITR nahi bana double tax ka base: ITAT",
+          "detail": "Chandigarh ITAT ne kahe ke galat ITR form se double taxation justify nahi hota. Same income pe do baar tax nahi lag sakta.",
+          "cga_view": "Agar aapne galti se wrong ITR file ki, toh department agar same income pe do baar tax maang raha hai toh definitely appeal karein. Proof rakhein ki income disclose ho chuki hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/wrong-itr-form-cannot-justify-double-taxation-itat-deletes-rs-26-69-lakh-form-26as-addition.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "BSNL receipts pe incorrect addition: ITAT Chennai",
+          "detail": "Chennai ITAT ne ruling di ki sirf Form 26AS dekh ke BSNL ki receipts ko commission nahi mana ja sakta.",
+          "cga_view": "Agar tax department Form 26AS ki basis pe hi income ka nature badal raha hai, toh yeh judgement refer karein. Receipts ki actual nature explain karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-deletes-rs-48-09-lakh-addition-bsnl-receipts-form-26as-cannot-decide-nature-income.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 56(2)(viib) not for genuine business acquisition",
+          "detail": "ITAT Delhi ne kaha ki jo shares business acquisition mein issue hue hain, unpe Section 56(2)(viib) nahi lagega. C L Educate Ltd ko relief mili.",
+          "cga_view": "Agar aapne shares business acquisition mein issue kiye hain toh yeh order ek precedent hai. Tax planning mein yeh point consider karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/shares-issued-business-acquisition-consideration-section-56-2-viib-itat-delhi.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Form 26AS pe penalty: ITAT fresh hearing ka order",
+          "detail": "ITAT Nagpur ne Section 270A penalty ko wapas fresh hearing ke liye bheja kyuki TDS calculation galat thi aur assessee ko pura suna nahi gaya tha.",
+          "cga_view": "Penalty matter mein agar department ne sahi tareeke se suna nahi ya computation galat kiya hai, toh appeal mein zarur jaayein. Procedural lapses important hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/form-26as-reveals-income-not-return-filing-itat-restores-section-270a-penalty.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-05",
+      "summary": "Aaj courts ne GST aur Income Tax ke kuch major rulings diye hain, mostly specific cases par. Official govt notification aaj kisi bhi compliance area mein nahi aayi.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "Madras HC: GST Order On Deceased Quashed",
+          "detail": "Madras High Court ne GST ka order, jo ek marhoom taxpayer ke naam pe tha, quash kar diya. Court ne bola, ab heirs ko sahi process follow karke notice dena hoga (Section 93, CGST Act).",
+          "cga_view": "Agar business owner ki death ho gayi hai, toh heirs ko prepare rehna chahiye ki GST department notice bhej sakta hai. Proper legal advice lein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/madras-hc-quashes-gst-order-passed-against-deceased-person-fresh-notice-heirs.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Kerala HC: ITC Denial Matter Dobara Dekha Jayega",
+          "detail": "Kerala High Court ne ek taxpayer ka Jan-Mar 2019 ka ITC deny karna quash kiya. Court ne bola department ko dobara Section 16(5) ke hisaab se consider karna hoga.",
+          "cga_view": "Agar aapka bhi past period ka ITC deny hua hai, toh is judgment ka reference dena useful ho sakta hai appeal mein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/kerala-hc-quashes-itc-denial-directs-reconsideration-section-16-5.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITAT: Diamond Grading Charges Pe TDS Nahin Lagega",
+          "detail": "ITAT Mumbai aur Surat dono ne bola ki diamond grading/certification charges pe TDS nahi katega, kyunki yeh Fees for Technical Services mein nahi aata agar technical skill transfer nahi hota.",
+          "cga_view": "Jewelry ya diamond business wale agar outside India se grading karwate hain, toh abhi aise services pe TDS na katega—lekin apne facts legal expert se check kar lein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-mumbai-diamond-grading-charges-not-fees-technical-services-no-tds-section-195.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Delhi ITAT: Payee Ne Tax Diya Toh TDS Ka Liability Nahi",
+          "detail": "Delhi ITAT ne bola, agar jo party ko payment hui usne sahi tarah tax pay kar diya toh payer ki TDS default ki liability nahi banti. Yeh Section 201 ki proviso ko apply karta hai.",
+          "cga_view": "Agar aap pe TDS short deduction ka notice aaya hai, toh payee ki filed ITR aur tax payment ka record zaroor dekh lein – yeh strong defence ban sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/delhi-itat-applies-proviso-section-201-1-relieves-payer-tds-default.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Delhi ITAT: Old Search Par New Satisfaction, 153C Assessment Quashed",
+          "detail": "Delhi ITAT ne 153C assessment quash kiya kyunki 2023 mein satisfaction record hua, court ne direct kiya ki assessment sirf 147/148 ke tahat ho sakta hai.",
+          "cga_view": "Agar recent case mein Section 153C ki notice mili ho toh is ruling ka reference assess kar sakte hain. Procedural ground pe relief mil sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/search-satisfaction-delhi-itat-quashes-section-153c-assessments.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-04",
+      "summary": "Aaj ke digest mein GST aur Income Tax ke kuch important court rulings hai jo compliance ko direct impact karenge. Business owners ko GST notices ke signature aur TDS property rules par dhyan dena zaroori hai.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "GST notice bina signature ke invalid: Rajasthan HC",
+          "detail": "Rajasthan HC ne unsigned GST SCN aur demand order ko quash kar diya, bola digital/physical signature mandatory hai Rule 26(3) CGST Rules ke tahat.",
+          "cga_view": "Aapko har GST notice ka sign check karna chahiye - bina sign/digital authentication wala notice invalid hai, aise mein turant legal help lo.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-notice-without-digital-physical-signature-invalid-rajasthan-hc.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST default par BNS prosecution nahi ho sakta: Allahabad HC",
+          "detail": "Allahabad HC ne clarify kiya ki GST/TDS deposit default par sida BNS mein prosecution nahi ho sakta jab tak koi alag criminal offence nahi hai.",
+          "cga_view": "Agar sirf GST bhara nahi aur koi aur criminal charge nahi hai to aap par BNS ka prosecution direct nahi lagega. Lekin compliance regular rakhein.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-default-cannot-trigger-bns-prosecution-without-distinct-criminal-offence-allahabad-hc.html"
+        },
+        {
+          "category": "GST",
+          "headline": "ITC challenge delay par Kerala HC ne appeal kharij ki",
+          "detail": "Kerala HC ne ITC challenge reject kiya, kyunki taxpayer ne GSTR-3B/2A mismatch par remedy follow nahi ki aur delay bhi zyada tha.",
+          "cga_view": "ITC dispute ho to sabhi GST notices timely respond karo aur records ready rakho, warna claim reject ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/kerala-hc-dismisses-itc-challenge-delay-failure-respond-gst-notices.html"
+        },
+        {
+          "category": "TDS",
+          "headline": "Joint property, har party ka ₹50L share se kam to TDS nahi",
+          "detail": "Delhi ITAT ne hold kiya ki Section 194-IA TDS tab nahi lagega jab joint buyers ka individual share ₹50 lakh se kam ho, chahe combined value zyada ho.",
+          "cga_view": "Joint property buy kar rahe ho to apne agreement mein individual share clearly mention karo. Agar aapka share ₹50 lakh se below hai, TDS ka issue nahi aayega.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/delhi-itat-tds-appeal-joint-property-purchase-rs-50-lakh-share.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "KPMG ko unbilled revenue write-off allow: ITAT Mumbai",
+          "detail": "Mumbai ITAT ne KPMG ka unbilled revenue write-off maan liya aur Section 40(a)(i) TDS disallowance reject kar di. Yeh case AY 2015-16 ka hai.",
+          "cga_view": "Agar aapke books mein unbilled revenue pending hai to similar facts mein write-off consider kar sakte ho, lekin detailed documentation ready rakhein.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/itat-mumbai-kpmg-unbilled-revenue-write-off-ay-2015-16.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-03",
+      "summary": "Aaj mainly trade press se GST aur Income Tax ki kuch important updates aur court rulings aayi hain. Koi bhi official government release nahi, sirf trade reporting par hai; to business owners alert rahein, official notifications ka wait karein.",
+      "items": [
+        {
+          "category": "Income Tax",
+          "headline": "Form 3CD mein naye reporting rules: FY 2025-26 se",
+          "detail": "CBDT Notification No. 23/2025 ke mutabik, Form 3CD audit report mein April 2025 se kaafi updates aaye hain: presumptive taxation, MSME rules, loans, buybacks aur GST implications ka bhi reporting zaroori hai.",
+          "cga_view": "Agar aapka audit lagta hai, apne auditor se naye Form 3CD requirement jaldi samajh lo. Data gathering abhi se shuru karo, warna last moment mein dikkat hogi.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/tax-audit-fy-2025-26-guide-form-3cd.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST advisories: GSTAT, e-Way Bill aur mining sector",
+          "detail": "July–August 2026 mein GST related departments—GSTAT benches, departmental appeal process, e-Way Bill rules aur mining sector enforcement pe updates aayi hain. Yeh sab advisories trade press mein aa rahi hain, official notification pending hai.",
+          "cga_view": "GST kaam dekhne wala staff latest advisories dekhe; lekin koi major compliance tab update kare jab official notification aaye. Mining sector wale especially alert rahein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-advisories-updates-gstat-gstn-cbic.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Deceased proprietor ke GST appeal par Andhra aur Orissa HC ruling",
+          "detail": "Andhra Pradesh aur Orissa High Court ne GST proceedings ko quash kiya jab proprietor mar chuka tha. Courts ne bola ki legal heir pe fresh action ho sakta hai, Section 93 ke under.",
+          "cga_view": "Agar kisi proprietor ke demise ke baad aap pe GST matter aaye, to legal opinion lo. Probate aur legal heir process clear rakho, old notices revert ho sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/orissa-hc-quashes-gst-proceedings-initiated-against-deceased-proprietor.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-02",
+      "summary": "Aaj GST aur Income Tax pe kai important rulings aayi hain, mostly ITAT aur tribunal level ki. Koi bhi official notification nahi hai.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "GSTAT ne 9-minute ki e-way bill lapse pe penalty hatayi",
+          "detail": "GST Appellate Tribunal (GSTAT) ne Rs.2.63 lakh ki penalty cancel kar di, kyunki e-way bill sirf 9 minute late bana tha aur koi tax evasion nahi thi.",
+          "cga_view": "Agar aapka e-way bill minor delay se bana hai, aur intention galat nahi thi, to penalty ka case tribunal mein challenge ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstat-quashes-bill-penalty-bona-fide-minute-procedural-lapse.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 234E late fee TDS returns par, June 2015 se pehle invalid",
+          "detail": "ITAT Chennai ne kaha ki June 1, 2015 se pehle file hui TDS returns par Section 234E late fee nahi lag sakta.",
+          "cga_view": "Agar June 2015 se pehle ki TDS return pe 234E late fee lagi hai to aap apni appeal file kar sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-chennai-deletes-section-234e-late-fee-tds-returns-june-2015.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Reassessment dead ke naam par notice, void hai: ITAT Delhi",
+          "detail": "ITAT Delhi ne bola, agar deceased assessee ke naam reassessment notice diya gaya bina legal heir ko, to proceedings void hain.",
+          "cga_view": "Agar family mein aise koi notice aaye hai to turant legal proof ke sath department ko inform karein, appeal ya objection laga sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-delhi-reassessment-notice-issued-dead-person-invalid.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 148 notice galat authority se, reassessment khatam: ITAT Vizag",
+          "detail": "ITAT Visakhapatnam ne reassessment cancel ki, kyunki Section 148 notice JAO ne issue kiya jab ki FAO ki zarurat thi faceless mechanism mein.",
+          "cga_view": "Aapke case mein agar notice galat authority se aaya hai to isi ground pe challenge kiya jaa sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-visakhapatnam-quashes-reassessment-jao-issued-section-148-notice.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 263 revision jab AO ne deposits dekh liye toh quash",
+          "detail": "ITAT Agra ne Section 263 revision quash kiya, kyunki AO ne cash deposits pe pehle hi inquiry karke penalty proceedings shuru kar di thi.",
+          "cga_view": "Agar similar case hai, toh Section 263 order ko challenge kar sakte hain agar AO ne sab examine kiya hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/section-263-revision-quashed-ao-plausible-view-deposits.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST notices ITC, turnover, RCM ke cases mein badh rahe",
+          "detail": "Trade press bata raha hai ki ITC mismatch, turnover difference, RCM aur e-way bill issues pe GST department ne zyada notices bhejne start kiye hain.",
+          "cga_view": "Aap apni GST returns, ITC reconciliation, aur RCM ki compliance ka double check karein. Official update ka wait bhi karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-notices-rise-key-issues-itc-turnover-rcm-bills.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Rajasthan HC ne ex-director ko GST fraud probe mein arrest se bachaya",
+          "detail": "Rajasthan HC ne ex-director ki arrest par filhal stay diya hai par investigation allow ki hai.",
+          "cga_view": "Agar aap pe bhi aisa legal pressure ho to interim protection ya anticipatory bail ke liye High Court jaen.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/rajasthan-hc-protects-director-arrest-gst-itc-fraud-investigation.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-09-01",
+      "summary": "Aaj mostly income tax aur GST par kuch tribunal/court rulings update hue hain. Koi major government notification ya due date nahi aayi hai.",
+      "items": [
+        {
+          "category": "Income Tax",
+          "headline": "115BAC Benefit Allowed Despite Late Return: ITAT Delhi",
+          "detail": "ITAT Delhi ne belated return file karne par bhi Section 115BAC ka benefit allow kiya. Delay condone karke assessee ki nayi regime ki choice maani gayi.",
+          "cga_view": "Agar client ka return late hai aur nayi regime choose karna hai, ab aise cases mein appeal ka option consider karo. Strict rejection zaroori nahi hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-delhi-section-115bac-benefit-belated-income-tax-return.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Foreign Commission - Section 40(a)(i) Disallowance Deleted",
+          "detail": "ITAT Ahmedabad ne ruling di ki foreign commission (bahar rendered services) par TDS ki zaroorat nahi thi, isliye disallowance hata diya.",
+          "cga_view": "Agar koi foreign payment TDS par doubt ho (services India ke bahar diye gaye hain), toh similar precedent refer kar sakte ho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-ahmedabad-deletes-section-40-disallowance-foreign-commission.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "148A Proceedings: Karnataka HC Ne Dubara Mauka Diya",
+          "detail": "Karnataka HC ne reassessment, demand aur penalties quash karke taxpayer ko 148A(b) notice ka response dene ka fresh mauka diya, deadline 15 September 2026.",
+          "cga_view": "148A(b) ka notice aaye toh time par respond zaroor karo. Court ne recent order mein taxpayer ko ek aur opportunity di hai, deadlines ignore na karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/karnataka-hc-restores-reassessment-section-148a-stage-sets-penalties.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "GSTAT: Deceased Proprietor Par GST Demand Set Aside",
+          "detail": "GSTAT Thiruvananthapuram ne 2017-18 ke ITC par retrospective Section 16(5) lagate hue mrtak proprietor par GST demand hata di.",
+          "cga_view": "Agar koi GST demand deceased proprietor ke naam par ho, toh is precedent ki copy department ko dikhao. ITC claim karne ka mauka hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/gstat-sets-gst-demand-against-deceased-proprietor-itc-section-16-5.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITC Allowed to Bonafide Purchaser: Calcutta HC",
+          "detail": "Calcutta HC ne bola invoice GSTR-2A mein reflect na hone par bhi agar aap bonafide ho toh ITC deny nahi kiya jaa sakta.",
+          "cga_view": "Agar supplier ki GSTR-3B non-filing ki wajah se ITC atka hai, toh is HC judgement ka reference likh kar department ko reply bhejein.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/calcutta-hc-holds-itc-cannot-be-denied-to-bonafide-purchaser-merely-for-suppliers-non-filing-of-gstr-3b-read-order-1450583"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-31",
+      "summary": "Aaj mostly GST aur Income Tax par focus hai, mostly High Court aur tribunal ke updates hain. Direct compliance kaam abhi ke liye kam hai, par kuch important legal developments note karo.",
+      "items": [
+        {
+          "category": "Income Tax",
+          "headline": "CBDT ne ITR-B introduce kiya Block Assessment ke liye",
+          "detail": "CBDT ne ITR-B form launch kiya hai block assessment ke liye, Income-tax Rules, 2026 ke amendment se. Notification No. 97/2026 se Rule 332 update hua.",
+          "cga_view": "Jo bhi clients ka block assessment chal raha ho, unke liye naya ITR-B form check karo. Filing process mein changes aa sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/cbdt-introduces-itr-block-assessment-income-tax-rules-2026.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST death ke baad legal heirs ki liability samjho",
+          "detail": "Section 93 CGST Act ke hisaab se, taxpayer ki death ke baad GST liability legal representatives par aati hai, especially agar business continue ho raha hai ya estate se recover ho sakta hai.",
+          "cga_view": "Agar client ki death hui ho aur business continue hai, toh legal heir ko GST liability ka dhyaan rakhna zaroori hai. Estate planning mein ab is point ko zaroor samjhao.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-outlives-taxpayer-liability-legal-representative-section-93.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Karnataka HC: GST seized goods bech sakte hain, proper notice ke baad",
+          "detail": "Court ne GST authority ko allow kiya ki Section 129(6) KSGST/CGST Act ke tahat hazardous goods ko sell karein, agar owner appeal nahi karta. Notice serve karna compulsory hai.",
+          "cga_view": "Agar aapke goods GST authority ne seize kiye hain aur appeal nahi file ki, toh goods bik sakte hain. Appeal ka option jaldi exercise karo, warna goods loss ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/karnataka-hc-directs-sale-of-seized-goods-us1296-of-ksgst-act-after-due-notice-if-owner-fails-to-avail-appellate-remedy-1450559"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Delhi HC: GST SCN sirf portal par upload se valid nahi",
+          "detail": "Delhi HC ne kaha ki agar GST show cause notice sirf portal par upload hua, proper serve nahi hua, toh poori proceedings wapas SCN stage par jayengi.",
+          "cga_view": "Agar apko sirf portal par notice mila aur personally serve nahi hua, toh department ki action legally weak ho sakta hai. Is ground par relief mil sakti hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/delhi-hc-restores-gst-proceedings-scn-not-duly-served.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Telangana HC: Cancelled GST registration ka revocation apply kar sakte hain",
+          "detail": "Telangana HC ne allowed kiya ke agar GST registration fraud/suppression/alleged galti se cancel hua ho, toh taxpayer revocation request daal sakta hai.",
+          "cga_view": "Agar registration cancel ho gaya hai, toh ab bhi revocation ka mauka mil sakta hai. Jaldi application file karo, especially agar cancellation reason dispute hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/telangana-hc-gst-registration-revocation-application-cancellation.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-30",
+      "summary": "Aaj ke digest mein ITAT aur HC ke kuch important rulings aur GST notice ko lekar ek zabardast point highlight hua hai. Compliance aur notices handle karte waqt extra careful rahein.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "Unsigned GST Notice par Rajasthan HC ka ruling",
+          "detail": "Rajasthan High Court ne bola ki sirf unsigned GST notice electronically generate hona legal authentication nahi hai. Aise notice pe recovery ya adjudication nahi ho sakta.",
+          "cga_view": "Agar aapko unsigned GST notice milta hai to us par action lene se pehle legal review zaroor karayein. Unsigned notice valid nahi maana jayega.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/mere-electronic-generation-does-not-authenticate-unsigned-gst-notice-rajasthan-hc-read-order-1450515"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Trust ko TDS credit agar Form 26AS mismatch ho toh bhi",
+          "detail": "Jodhpur ITAT ne trust ko TDS ka credit diya jab ki Form 26AS mein mismatch tha, kyunki trust ne income dikhayi thi aur Rule 37BA ki declaration sirf procedural hai.",
+          "cga_view": "Agar trust ke Form 26AS mein TDS nahi dikha, lekin income offer ki gayi hai, toh claim reject hone pe aap ITAT ka yeh order use kar sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/jodhpur-itat-trust-tds-credit-trustees-form-26as-rule-37ba-declaration-procedural.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Manual Form 26A filing se TDS relief par koi rok nahi",
+          "detail": "Jaipur ITAT ne kaha ki agar tax pehle se pay ho chuka hai, toh manually file ki gayi Form 26A bhi sufficient hai. Isliye ₹1.15 lakh TDS demand hata di gayi.",
+          "cga_view": "Agar Form 26A online upload nahin hui par tax paid hai, toh manual filing case me bhi appeal ki possibility dekhein. Strictly procedural lapses pe relief mil sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/tax-paid-offline-form-26a-no-bar-tds-relief-jaipur-itat.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Rs 60 lakh limit se ITAT mein reassessment par rok",
+          "detail": "ITAT Bangalore ne ruling di ki agar tax effect ₹60 lakh se kam hai, toh reassessment issue pe dept ka appeal maintain nahin hota.",
+          "cga_view": "Agar aapka case ITAT jaa raha hai aur tax effect limit se kam hai toh department ki appeal reject ho sakti hai. Appeal process monitor karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/rs-60-lakh-limit-ends-jao-fao-reassessment-battle-bangalore-itat.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 234C interest ka re-calculation allowed",
+          "detail": "ITAT ne foreign-tax relief aur TDS credit lene ke baad section 234C interest ₹7 lakh se ghata ke ₹56,047 kar diya. Sirf net taxable shortfall pe hi interest.",
+          "cga_view": "Agar aapko zyada interest notice aayi hai toh foreign tax credit aur TDS adjust karwa kar interest ka recomputation demand kar sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-cuts-section-234c-interest-rs-7-lakh-rs-56-047.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "25% tax rate agar turnover ₹400 crore se kam hai",
+          "detail": "ITAT Delhi ne rule kiya hai ki company ka turnover agar ₹400 crore se kam hai toh 25% tax lagega, 30% nahi, chahe CPC ne galti se zyada tax laga diya ho.",
+          "cga_view": "Balance Sheet ke basis par hi apni company ke tax rate ka claim karein. CPC ka assessment galat ho toh turant rectification file karein.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/25-tax-rate-applicable-where-turnover-below-400-crore-itat-sets-aside-cpcs-30-tax-rate-read-order-1450535"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-29",
+      "summary": "Aaj ke digest mein GST, Income Tax aur TDS ke upar recent rulings discuss kiye gaye hain. Saare items trade press ke hain, koi official government release nahi aaya.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "Income Tax Data se Service Tax Limitation Extend nahi ho sakta: CESTAT",
+          "detail": "CESTAT Chandigarh ne bola ki sirf third-party Income Tax data ke base par service tax demand zyada time ke liye lagana sahi nahi, jab tak suppression ka proof na ho.",
+          "cga_view": "Agar department sirf kisi aur ki income tax info se purana service tax uthata hai, toh strong legal ground pe challenge ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/service-tax/cestat-holds-extended-limitation-unsustainable-service-tax-demand-based-solely-party-data-income-tax-dept.html"
+        },
+        {
+          "category": "TDS",
+          "headline": "SBI par Section 201 TDS Default nahi banta: ITAT Ahmedabad",
+          "detail": "ITAT Ahmedabad ne decide kiya ki jab bank ne Madras HC ka interim order follow kiya, toh unpe LTC TDS non-deduction ka Section 201 default nahi lagega.",
+          "cga_view": "Agar aap kisi court order ki wajah se TDS nahi kaat paaye hain, toh uski certified copy aur full compliance records sambhal ke rakhein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/no-section-201-tds-default-sbi-binding-hc-order-itat-ahmedabad.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Same FY, same ITC issue se 'same subject matter' prove nahi hota: Delhi HC",
+          "detail": "Delhi High Court ne GST ke overlapping proceedings ke mamle mein bola ki sirf same financial year aur ITC matter hone se Section 6(2)(b) apply nahi ho jaata. Appellate authority final decide karega.",
+          "cga_view": "Agar aapki GST proceedings multiple forums pe chal rahi hain, toh specific facts ke liye appellate authority ka decision ka intezaar karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/fy-itc-issue-cannot-establish-subject-matter-section-6-2-delhi-hc.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-28",
+      "summary": "Aaj mostly ITAT ke rulings aaye hain, kuch TDS disputes par clarity mili hai. Court ne GST search payment refund par bhi comment diya hai.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "500 pedh lagana Income Tax relief ka shart bana",
+          "detail": "ITAT ne taxpayer ko 500 pedh lagane ki shart par apna case phir se Assessing Officer ko bheja. Yeh bhari addition (11.22 crore) se related hai.",
+          "cga_view": "Agar apka koi appeal hai, toh court ki alag conditions aa sakti hain. Plantation jaisi rare order ko dhyan se padhein.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/can-planting-trees-be-a-condition-for-income-tax-relief-itat-grants-taxpayer-one-final-opportunity-subject-to-500-tree-plantation-read-order-1450491"
+        },
+        {
+          "category": "Ruling",
+          "headline": "26AS mein TDS dikh raha toh spouse ke clubbing par mana nahi",
+          "detail": "Kolkata ITAT ne bola – agar 26AS mein TDS diya hai toh TDS credit spouse ke clubbing se deny nahi hoga. Re-examine ka order diya gaya hai.",
+          "cga_view": "Agar clubbing ki wajah se credit atka hai, toh AO se reconciliation jarur maang sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-kolkata-remands-tds-credit-dispute-rule-37ba-fresh-decision.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST search payment refund pe Delhi HC ne action se pehle fact finding bola",
+          "detail": "Delhi HC ne kaha ki GST search ke time agar zabardasti payment hua hai, toh fact finding jaruri hai. CBIC ke instructions bhi refer hue hain.",
+          "cga_view": "Agar aapne search mein paisa diya hai aur refund chahiye, toh proper documentation sambhal ke rakhein.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/delhi-hc-declines-refund-of-rs-2655l-gst-payment-made-during-search-says-alleged-coercion-requires-fact-finding-read-order-1450488"
+        },
+        {
+          "category": "TDS",
+          "headline": "Reimbursement par proportionate TDS credit deny nahi ho sakta",
+          "detail": "Mumbai ITAT ne bola reimbursement ke case mein books aur 26AS mein mismatch ho toh AO ko fir se check karna hoga, TDS credit deny nahi kiya ja sakta.",
+          "cga_view": "Aapke books aur 26AS match nahi kar rahe toh AO se fresh reconciliation ki demand karo.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/mumbai-itat-remands-tds-credit-dispute-rule-37ba-reconciliation.html"
+        },
+        {
+          "category": "TDS",
+          "headline": "Section 234E late fee nahi lagegi – June 2015 se pehle ke TDS returns pe",
+          "detail": "Chennai ITAT ne Section 234E late fee ko invalid declare kiya un TDS returns par jo 1 June 2015 ke pehle process hue the.",
+          "cga_view": "Agar aapki TDS return June 2015 se pehle ki hai, toh late fee ke liye ab appeal kar sakte ho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/chennai-itat-deletes-section-234e-late-fee-tds-returns-june-2015.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-27",
+      "summary": "Aaj major GST aur income tax court orders aaye, tax assessments aur penalties ko lekar clarity mili hai. Business owners in updates par dhyan dein.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "AP HC ne composite GST order ko set aside kiya",
+          "detail": "Andhra Pradesh High Court ne ek hi GST order mein do saal (FY 2019-20 aur 2020-21) ko include karne wale order ko set aside kar diya. Ab alag tax period ka assessment alag se hoga, limitation period ka exclusion milega.",
+          "cga_view": "Agar aapke against composite GST order hai, toh alag-alag period ke liye separate notices/appeals ka plan banaaein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/ap-hc-sets-composite-gst-order-covering-multiple-tax-periods.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Allahabad HC: GST penalty SCN se zyada nahi ho sakti",
+          "detail": "Allahabad High Court ne us order ko khatam kiya jisme SCN (Show Cause Notice) ki demand se zyada penalty lagayi gayi thi, Section 75(7) ki violation ke wajah se.",
+          "cga_view": "Agar aapke assessee ke saath bhi SCN ke beyond penalty lagi hai toh usko challenge karne ka ground mil sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/allahabad-hc-sets-gst-order-confirming-penalty-show-notice.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "ITAT Delhi: Bona fide ITR non-filing pe penalty delete",
+          "detail": "ITAT Delhi ne ek case mein ₹3.74 lakh penalty Section 270A ki, non-filing pe, hata di jab assesee ne TDS aur income accept ki thi. Bona fide galti ki wajah se penalty valid nahi samjhi gayi.",
+          "cga_view": "Agar TDS already deduct ho gaya aur income declare ki hui hai, toh non-filing pe penalty ko challenge kar sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-delhi-deletes-section-270a-penalty-bona-fide-non-filing-itr.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-26",
+      "summary": "Aaj High Courts aur Tribunals se GST, Income Tax aur TDS pe kuch important rulings aayi hain. Compliance wale kaam mein thoda dhyaan dena zaroori hai.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "Madras HC: GSTR-1 galti ki rectification allowed",
+          "detail": "Madras High Court ne FY 2017-18 ki inadvertent GSTR-1 errors ko rectify karne ki permission di. Court ne kaha software ki dikkat se correction mana nahi kiya ja sakta.",
+          "cga_view": "Agar aapne galti se galat GSTR-1 file ki thi (bona fide mistake), toh rectify karne ki umeed hai. Apni case ki details check kar ke rectify request file karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/madras-hc-dismisses-gst-appeal-upholds-rectification-bona-fide-gstr-1-errors.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Rajasthan HC: 101 din GST appeal delay condoned",
+          "detail": "Rajasthan High Court ne GST appeal me 101 din ki der ko maaf kar diya, aur Appellate Authority ko merit par decision lene ko kaha.",
+          "cga_view": "Agar aapki GST appeal time limit ke baad bhi pending hai, toh aap bhi condonation ke liye try kar sakte hain, lekin sahi reason dikhaana zaroori hoga.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/rajasthan-hc-condones-101-day-gst-appeal-delay-orders-merits-adjudication.html"
+        },
+        {
+          "category": "TDS",
+          "headline": "ITAT Agra: Pura TDS credit ek co-owner ko mila",
+          "detail": "ITAT Agra ne decide kiya ki jab baaki co-owners ne apna share claim nahi kiya toh pura TDS credit ek hi PAN (Tejpratap Singh Yadav) ko mil gaya.",
+          "cga_view": "Joint property ya asset mein TDS credit distribute karna ho toh sab co-owners ko apna share claim karna chahiye. Claim nahi karoge toh ek bande ko pura benefit mil sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-agra-directs-rs-4-06-lakh-tds-credit-owners-not-claim-shares.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Bombay HC: Income tax refund pe extra interest possible",
+          "detail": "Bombay HC ne AO ko bola ki delayed AY 2008-09 refund pe balance interest ka calculation karein, aur jo bhi banta ho four weeks mein de.",
+          "cga_view": "Agar aapka refund delay hua hai toh interest calculation check karein. AO ko likh ke extra interest demand kar sakte ho, especially old refunds me.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/bombay-hc-directs-consideration-balance-interest-delayed-income-tax-refund.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Karnataka HC: DRP directions ignore ki to assessment quash",
+          "detail": "Karnataka High Court ne Flextronics ka assessment quash kiya kyunki Assessing Officer ne DRP ke binding directions ko ignore kiya tha.",
+          "cga_view": "Agar DRP ke baad AO ne aapki baat nahi maani ya unke order follow nahi kiye, toh apna order review karwa sakte ho. Appeal ka strong ground hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/karnataka-hc-upholds-quashing-assessment-ignoring-drp-directions.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-25",
+      "summary": "Aaj Supreme Court ki GST SCN par kuch important rulings aayi hain aur Income Tax, TDS aur MCA par bhi kuch updates hai. In par hi focus karte hain.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "GST SCNs: Supreme Court ne fair hearing par zor diya",
+          "detail": "Supreme Court keh rahi hai ki GST Show Cause Notice (SCN) mein allegations clear hone chahiye aur company ko properly apna side rakhne ka mauka milna chahiye. Pre-decided mind se proceedings chalana galat hai.",
+          "cga_view": "Agar kisi tax officer ka GST SCN vague hai ya hearing fair nahi lag rahi, to legal advice lekar objection file karo. SC ki ruling aapke favour mein ho sakti hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-show-notices-sc-stresses-fair-hearing-open-minded-adjudication.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Mechanical fraud bolne se SCN ka limitation nahi badh sakta: SC",
+          "detail": "Supreme Court ne decide kiya hai ki sirf 'fraud' bol dene se Section 74 CGST ka limitation period extend nahi hoga. Fraud ka specific evidence hona zaruri hai.",
+          "cga_view": "Aapke khilaaf agar GST fraud ka vague allegation lag raha hai to limitation check karo, time-barred ho sakta hai. Legal recourse socho agar SCN illegal lage.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/mechanical-fraud-invocation-cannot-extend-cgst-section-74-limitation-sc.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Political/Charitable Donations par IT Notice?",
+          "detail": "Recent income tax notices Section 80G aur 80GGC ki deductions claim karne walon ko aarahi hai. SMS/email advisories, scrutiny notices aur reassessment proceedings ho rahi hain.",
+          "cga_view": "Agar aapko aisa notice aaya hai to saare donation receipts aur related documents ready rakho. Accountants ko bhi client verification pe focus karna chahiye.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/received-income-tax-notice-143-2-148a-148-political-charitable-donation.html"
+        },
+        {
+          "category": "MCA / ROC",
+          "headline": "DIN update karne ka process: DIR-6 file karo",
+          "detail": "Directors ko apne DIN mein koi bhi change aata hai, to 30 din ke andar MCA ko DIR-6 form se batana hota hai. Rule 12 ke hisab se ye mandatory hai.",
+          "cga_view": "Business owners/directors agar DIN detail change ho toh delay na karein. Sab supporting documents ready rakhein aur DIR-6 jaldi file karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/company-law/procedure-filing-dir-6-update-din-particulars-companies-act-2013.html"
+        },
+        {
+          "category": "TDS",
+          "headline": "TDS paid double nahi ho sakta; late payment par interest lagega",
+          "detail": "ITAT Mumbai ne bola ki TDS ek hi baar recover ho sakta hai, lekin agar payment late kiya to interest zarur lagega. Doubled recovery ka scope nahi hai par timely payment zaruri hai.",
+          "cga_view": "Agar department double TDS mang raha hai, to uska proof maangein. TDS timely deposit karen, nahi toh interest cost uthani padegi.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/tds-paid-cannot-recovered-delayed-payment-attracts-interest-itat-mumbai.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-24",
+      "summary": "Aaj major service tax ke old matters pe tribunal ne relief diya hai. Income tax mein ITAT ne kuch routine disputes settle kiye hain. ",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "ST-3 aur 26AS/ITR mismatch par Service Tax demand set aside",
+          "detail": "CESTAT Chandigarh ne ₹1.04 crore service tax demand ko hata diya, sirf ST-3 aur 26AS/ITR mismatch basis par demand sahi nahi mani gayi.",
+          "cga_view": "Agar aapke khilaaf aise demand aayi hai to documentation pakka rakho aur tribunal relief ka reference de sakte ho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/service-tax/cestat-chandigarh-sets-rs-1-04-crore-service-tax-demand-based-st-3-26as-itr-mismatch.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITAT: ₹23 lakh deposit marriage ke liye, mangoes sale ka source accepted",
+          "detail": "ITAT ne paisa deposit par documentary proof dekh kar source ko sale of trees and mangoes accept kiya aur addition delete ki.",
+          "cga_view": "Aap agar cash ya large deposits explain karna chahte hain to proper document tayar rakhein jo source dikhaye.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/23-lakh-deposited-by-husband-in-wifes-account-for-daughters-marriage-itat-accepts-sale-of-trees-and-mangoes-as-source-1450423"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Section 12AB aur 80G approval par SC case ki conditionality hatayi",
+          "detail": "ITAT Mumbai ne Section 12AB aur 80G registrations par CIT(E) ki Supreme Court pending case ki conditionality delete kar di.",
+          "cga_view": "Agar aapka trust ki registration aise condition ke saath hai to ITAT ka yeh order aapke favor mein cite kiya ja sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-mumbai-deletes-conditional-section-12ab-80g-registration-conditions-imposed-cit.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-23",
+      "summary": "Aaj ke din kuch important GST aur court rulings aaye hain jo importers aur service providers ko dhyan me rakhni chahiye.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "GSTIN ya Fee Payment se Service Recipient prove nahi hota: AAR Rajasthan",
+          "detail": "AAR Rajasthan ne bola ki sirf GSTIN ya fee payment se ye nahi maana ja sakta ki koi entity service recipient hai. Har case ki details alag ho sakti hain.",
+          "cga_view": "Service contract details aur documentation tight rakho – sirf payment ya GSTIN pe rely mat karo.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstin-fee-payment-cannot-establish-service-recipient-aar-rajasthan.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Delayed IGST on Imports ka Interest Refund nahi milega: CESTAT Delhi",
+          "detail": "CESTAT Delhi ne decide kiya ki import pe jo delayed IGST ka interest hota hai, uska refund nahi mil sakta, agar assessment pe challenge nahi hua ho.",
+          "cga_view": "IGST timely pay karo, interest refund expect mat karo; assessment pe time pe dispute uthao.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/interest-delayed-igst-imports-cannot-refunded-cestat-delhi.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "IGST Demand Advance Authorisation Imports pe hata: CESTAT Ahmedabad",
+          "detail": "CESTAT Ahmedabad ne Sakar Industries ka IGST demand set aside kar diya, bola pre-import condition factual basis pe fulfill hui thi.",
+          "cga_view": "Agar aap advance authorisation ke under import karte ho, toh pre-import ki conditions ki file ready rakho – department se sawal ho toh proof dikhana pad sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/cestat-ahmedabad-sets-igst-demand-advance-authorisation-imports.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-22",
+      "summary": "Aaj ke digest mein GST aur income tax se jude court rulings, aur TDS par ek CBDT explanation hai. Official notification ka intezaar abhi bhi hai, isliye har cheez ko last confirm na maane.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "IGST galat head mein hone par adjust ho sakta hai: Karnataka HC",
+          "detail": "Karnataka High Court ne GST demand khatam ki aur bola ki agar IGST galat head mein pay hua hai, toh CGST/SGST liability ke against adjust ho sakta hai; ab fresh consideration hoga.",
+          "cga_view": "Agar client se galat GST head mein payment ho gaya hai, toh department se adjustment ke liye proper representation karein, par official order dekhein, har state ka approach alag ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/karnataka-hc-adjustment-igst-paid-wrong-head-against-cgst-sgst.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Delhi HC: SGST notice baad mein aane par CGST proceedings valid",
+          "detail": "Delhi High Court ne decide kiya ki agar CGST proceedings pehle shuru ho gayi hai, toh baad mein SGST notice aane par bhi CGST action bar nahi hota.",
+          "cga_view": "Parallel GST notices aaye hain toh confuse mat ho, dono alag chal sakte hain - reply har department ko timely de.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/prior-cgst-proceedings-not-barred-sgst-notices-delhi-hc.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "AIS & TIS ka use, galat entry par feedback ka option",
+          "detail": "Income Tax department ne AIS & TIS information aur taxpayer feedback process samjhaya hai. Feedback se ITR auto-pre-fill mein bhi help milegi.",
+          "cga_view": "AIS/TIS portal check kar ke galat entry pe turant feedback dalein, taki ITR mein correct info jaye. Har client ka review karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/ais-tis-income-tax-information-taxpayer-feedback.html"
+        },
+        {
+          "category": "TDS",
+          "headline": "TDS on Non-resident payment: CBDT ki samjhayi hui guide",
+          "detail": "CBDT ne ek brochure release kiya hai jisme non-residents ko payment par TDS kaise katega (section 195) aur lower/nil deduction certificate (section 197) ka process bataya gaya hai.",
+          "cga_view": "Foreign payment plan ho toh latest CBDT material dekhein; lower/nil deduction ke liye timely application file karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/tds-payments-non-residents-nil-deduction-certificate-sections-195-197.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Madras HC: AY 2015-16 Section 148 notice allowed, limitation mein",
+          "detail": "Madras High Court ne section 148A(d) ka order aur section 148 notice (AY 2015-16) ko sahi mana hai, yeh proceedings limitation period mein aayi thi.",
+          "cga_view": "Agar old years ke liye 148 notice aayi ho toh High Court precedent check kar ke reply karein; challenge ka ground limited hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/madras-hc-upholds-section-148-reassessment-notice-ay-2015-16-limitation.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-21",
+      "summary": "Aaj ka digest mein only court rulings hain, zyada tar GST aur income tax ke recent cases par. Official announcements nahi hain, sirf trade press se news hai, toh business owners abhi direct action na le, lekin apne cases aur notices ko check kar lein.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "SGST notice ke baad bhi pehle CGST case valid: Delhi HC",
+          "detail": "Delhi HC ne bola ki agar CGST ki proceedings pehle shuru hui thi, toh baad mein aayi SGST notice se wo nullify nahi hoti. Section 6(2)(b) ka aisa koi bar nahi hai.",
+          "cga_view": "Agar aapke against pehle CGST aur baad mein SGST notice aya hai, toh dono ki validity check karen—sirf is base pe challenge na karein ki ek authority already action le chuki thi.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/prior-cgst-proceedings-not-barred-sgst-notices-delhi-hc.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "GST refund delay pe interest milega, naya certificate nahi chahiye: Telangana HC",
+          "detail": "Telangana HC ne bola ki agar refund pe interest claim karna hai aur refund already sanction ho chuka hai, toh dubara certification ki zarurat nahi.",
+          "cga_view": "Agar GST refund aapko late mila hai, toh bina kisi extra document ke interest claim request karein. Bas sanctioned refund proof ready rakhein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/interest-payable-delayed-gst-refunds-fresh-certification-not-required-telangana-hc.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITR me galat exemption section bhara? Section 10(26AAB) benefit phir bhi mil sakta hai",
+          "detail": "ITAT Lucknow ne bola ki agar taxpayer ne galat section me exemption claim kiya but eligible hai, toh AO ko sahi section dekh ke benefit dena chahiye.",
+          "cga_view": "Agar aap ya aapka client galti se ITR me exemption ki galat section bhar deta hai, toh eligibility proof ke saath AO ke samne apni claim present karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/wrong-exemption-section-itr-cannot-deny-section-10-26aab-benefit-itat-lucknow.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-20",
+      "summary": "Aaj ka digest mein key court rulings aur income tax ke practical points cover kiye gaye hain. Sab items high-impact aur relevant hain, trade press se liye gaye kyunki aaj official release nahi aayi.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "Arbitral Damages GST ke under taxable nahi: Bombay HC",
+          "detail": "Bombay High Court ne bola ki arbitral award ka damages ya settlement GST supply nahi maana jayega. Matlab yeh compensation section 7 CGST Act ke andar taxable nahi hai.",
+          "cga_view": "Agar aapko business dispute mein damages mile hain toh GST ka liability ya return mein supply treat mat karo. Lekin similar disputes mein case facts check kar lo.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/arbitral-damages-enforcement-proceedings-settlement-not-taxable-gst-supply-bombay-hc.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "TDR Exchange par capital gain lagega: ITAT ka decision",
+          "detail": "ITAT ke according, agar aap existing land/building surrender karke TDR rights lete ho aur bechte ho, toh yeh transfer capital gain head mein taxable hai. Section 45 apply hoga.",
+          "cga_view": "Agar aap TDR rights mein deal kar rahe ho toh capital gain calculation properly karo, supporting documents sambhal ke rakho. Surrender ka nature clear maintain karo.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/tdr-sale-taxable-as-capital-gain-where-existing-land-and-building-surrendered-in-exchange-for-acquiring-rights-itat-1450346"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Sirf CBDT data pe Service Tax demand nahi chal sakta: CESTAT",
+          "detail": "CESTAT Kolkata ne Service Tax demand set aside kar diya kyunki sirf CBDT/26AS data pe hi basis tha, independent verification nahi tha. Evidence aur due process ka hona zaroori hai.",
+          "cga_view": "Agar aapke against only data-mismatch ki wajah se Service Tax demand aayi hai toh evidence aur proper procedure ki demand karo. Apne representation strong banao.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/service-tax/cestat-kolkata-sets-service-tax-demand-based-solely-cbdt-data.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-19",
+      "summary": "Aaj mostly GST aur Income Tax ke kuch important tribunal/court rulings aaye hain. Government ka koi new official circular nahi hai. Reporting mein clarity important hai.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "GST exclusion: ITAT ne Section 271B penalty hatai",
+          "detail": "Mumbai ITAT ne kaha ki assessee ne apni turnover se GST hata, penalty nahi lagi kyunki uska yakin genuine tha. Yeh un logon par lagu hai jo GST ko tax audit turnover se exclude karte hain.",
+          "cga_view": "Agar aapne GST ko exclude kiya aur penalty notice aayi, to ab tribunal ke is ruling ka reference de sakte hain. Par final view department pe depend karega.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/gst-exclusion-turnover-tax-audit-penalty-mumbai-itat-deletes-section-271b-penalty.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Bangalore ITAT: High-turnover comparables ALP mein exclude hue",
+          "detail": "ITAT ne kuch high-turnover companies ko ALP se hata diya aur TDS credit bhi allow ki, as per Form 26AS. Transfer pricing matters mein relevant hai.",
+          "cga_view": "ALP calculation mein agar comparables ka turnover bahut zyada hai, to aap bhi yeh reasoning try kar sakte hain. TDS credit galat show ho raha hai to ITAT order ka reference den.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/high-turnover-comparables-excluded-alp-bangalore-itat-grants-partial-relief.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "GST order ki sirf portal upload se appeal limitation start nahi hoti: Rajasthan HC",
+          "detail": "Rajasthan High Court ne 645 din ki delay allow ki, bola proper service nahi hui thi toh sirf portal par order dalne se appeal ki limitation start nahi hoti.",
+          "cga_view": "Agar order ki physical ya proper service nahi hui aur appeal ki time limit miss ho gayi hai, toh yeh HC ka decision helpfull ho sakta hai. Appeal file karte samay is order ka reference dein.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/mere-upload-of-gst-order-on-common-portal-does-not-trigger-appeal-limitation-without-proper-service-rajasthan-hc-condones-645-days-delay-read-order-1450305"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-18",
+      "summary": "Aaj GST aur Income Tax se related kuch important tribunal rulings aur ek naya disclosure scheme hain. Official circulars aaj nahi mile.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "Stock-transfer pe penalty nahi, agar tax due hi nahi",
+          "detail": "Tribunal ne bola Section 129 CGST Act ki penalty tab nahi lagegi jab goods pe koi tax payable nahi hai, chahe e-way bill na ho aur stock transfer ho.",
+          "cga_view": "Agar aap stock transfer kar rahe hain aur e-way bill miss ho gaya, toh check karein koi tax due hai ya nahi, unnecessary penalty se bach sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/penalty-not-leviable-section-129-cgst-act-no-tax-payable.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST order appeal allowed kyunki taxpayer ko notice hi nahi tha",
+          "detail": "Telangana HC ne GST Section 74 order against appeal allow kar di, kyunki taxpayer ko pata hi nahi tha ki proceedings ho rahi hain, isliye delay bhi condone ho gaya.",
+          "cga_view": "Agar aapko GST order bina proper communication mila ho, toh appeal consider karein, delay bhi maaf ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/telangana-hc-appeal-against-gst-order-due-taxpayers-lack-knowledge-proceedings.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Foreign assets ke liye naya disclosure scheme, 2026 rules notified",
+          "detail": "CBDT ne Foreign Assets Disclosure Scheme Rules, 2026 notify kar diye hain—isme valuation, eligibility aur filing ka process bataya gaya hai.",
+          "cga_view": "Agar aapke paas foreign assets hain, toh nayi scheme aur rules dhyan se padhke timely disclosure karein. Compliance miss na karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/foreign-assets-small-taxpayers-disclosure-scheme-rules-2026.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 87A ka rebate 111A STCG par bhi milega: Jaipur ITAT",
+          "detail": "Jaipur ITAT ne bola ki Assessment Year 2024-25 ke liye Section 111A ke short-term capital gains par bhi Section 87A ka rebate mil sakta hai, chahe CBDT circular kuch bhi kahe.",
+          "cga_view": "Agar aapka short-term capital gains 111A ke under hai, toh 87A rebate le sakte hain—return file karte waqt claim karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/jaipur-itat-87a-rebate-allowed-111a-stcg-ay-2024-25-cbdt-circular-13-2025-no-bar.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "High-turnover comparables exclude kiye ALP calculation mein: Bangalore ITAT",
+          "detail": "Bangalore ITAT ne ALP calculation ke liye 4 high-turnover comparables ko hata diya, aur TDS credit Form 26AS ke hisaab se allow ki.",
+          "cga_view": "Transfer pricing me high-turnover companies ko comparable na lein agar facts milte julte hain; Form 26AS ka TDS credit accurate claim karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/high-turnover-comparables-excluded-alp-bangalore-itat-grants-partial-relief.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-17",
+      "summary": "Aaj court rulings pe focus raha, GST aur income tax dono mein important updates hain. Official notifications nahi aaye, lekin kuch compliance implications ho sakti hain.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "CESTAT Ahmedabad ne IGST ka time-barred demand khatam kiya",
+          "detail": "CESTAT Ahmedabad ne interest, fine aur penalty hata diya, kyunki IGST ka demand time-barred tha aur proper charging provision nahi tha.",
+          "cga_view": "Agar aapke against bhi aise old IGST demands pending hain, to apne consultant se matter dubara check karayein, appeal ka option ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/cestat-ahmedabad-sets-interest-fine-penalty-igst-time-barred-demand.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Kerala HC ne GST show cause notice multiple years ka quash kiya",
+          "detail": "Kerala HC ne bola ek hi GST show cause notice mein multiple years nahi ho sakte, alag notice chahiye. Intervening period limitation mein nahi aayega.",
+          "cga_view": "Agar aapko bhi composite show cause notice mila hai, to is judgement ka reference deke clarification mangwayein ya challenge karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/kerala-hc-quashes-composite-gst-show-notice-multiple-years.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "SC: Sec 264 se return revise allowed nahi after deadline",
+          "detail": "Supreme Court ne bola ki section 264 ka use karke prescribed time ke baad return revise nahi ki ja sakti. HC ka remand set aside kar diya.",
+          "cga_view": "Deadline ke baad income tax return revise karne ki ummeed mat rakhein; planning aur filing time pe hi karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/section-264-cannot-revise-income-tax-return-prescribed-time-sc.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITAT Delhi: TPO se bina reference ALP decide nahi ho sakta",
+          "detail": "AO ne bina TPO reference ke ALP decide kiya tha, jo galat bola gaya. Case assessment dobara hoga.",
+          "cga_view": "Agar TP issue hai, to ensure karein ki AO TPO ko reference de, nahi to matter dobara open ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/ao-cannot-determine-alp-without-tpo-reference-itat-delhi-restores-assessment.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-16",
+      "summary": "Aaj mainly GST aur Income Tax/TDS se judi 5 important updates hain. Trade reports par based hai, isliye final action lene se pehle official notification zaroor check karein.",
+      "items": [
+        {
+          "category": "TDS",
+          "headline": "CBDT ne TDS demand pe relief diya for inoperative PAN",
+          "detail": "CBDT Circular No. 9/2025 ke hisaab se, agar deductee ya collectee ka PAN inoperative hai, to Section 206AA/206CC ke tehat zyada TDS/TCS nahi katega. Circular 21 July 2025 ko issue hua tha.",
+          "cga_view": "Agar kisika PAN inoperative tha aur aapko higher TDS demand aaya hai, to yeh circular ka reference dena zaroori hai. Apne TDS records review karo.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/cbdt-relief-tds-demand-inoperative-pan-section-206aa.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Delhi HC: GST seizure challenge ko reject kiya",
+          "detail": "Delhi HC ne CGST Section 67(6) ke tehat seizure aur show cause notice proceedings ko separate maana hai. Taxpayer ko Section 130 notice ka jawab dena allowed kiya gaya hai.",
+          "cga_view": "Agar aapke goods seize hue hain, to notice ka jawab dena compulsory hai. Court ka order cite kar sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/delhi-hc-declines-gst-challenge-seizure-separate-section-67-6-74a-proceedings-recognised.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Delhi HC ne judges ki ITR processing rok di",
+          "detail": "Delhi HC ne judges ke PAN aur ITR details submit karne ko bola hai aur abhi sabhi tax demands, refunds aur processing pe stay laga diya hai jab tak case chalta hai.",
+          "cga_view": "Sirf judges ya related parties ke cases mein hi apply hota hai, normal taxpayer par is order ka impact nahi hai. Public reporting purpose ke liye hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/corporate-law/delhi-hc-directs-pan-details-judges-hold-income-tax-return-processing-pending-writ.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Gujarat HC: Deceased proprietor par GST demand quash",
+          "detail": "Gujarat HC ne ek aise taxpayer par GST demand quash kar diya jo mar chuke hain, bola aise proceedings ki koi legal validity nahi.",
+          "cga_view": "Agar family member/firm mein aisa koi case hai, to turant legal heir ya representative ke naam pe GST compliance karayein. Purane deceased proprietor ke naam par demand valid nahi hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gujarat-hc-quashes-gst-demand-against-deceased-proprietor-proceedings-without-jurisdiction.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITAT Delhi: Section 40(a)(i) disallowance DTAA ke mutabik limited",
+          "detail": "ITAT Delhi ne GE India ke case mein 100% Section 40(a)(i) ka disallowance sirf 30% tak restrict kiya under DTAA. PF-ESI disallowance bhi hataya gaya.",
+          "cga_view": "Agar foreign remitance par 100% disallowance laga hai, to apne CA se DTAA benefit explore karwayein. Documentation pura rakhein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-delhi-restricts-100-percent-section-40-disallowance-30-percent-dtaa.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-15",
+      "summary": "Aaj ke digest mein ek ITAT Delhi ka important ruling hai, aur ek religious trusts ke GST/income-tax exemption par official clarification. CAAR Delhi ne bulk drugs import pe IGST rate bhi clear kiya hai.",
+      "items": [
+        {
+          "category": "Income Tax",
+          "headline": "Religious trusts ke liye tax aur GST exemption",
+          "detail": "Finance Ministry ne clarify kiya ki kuch services religious trusts ko income-tax mein exemption aur GST mein Notification No.12/2017-CT (R) ke under relief milta hai. Yeh eligible trusts aur unke specific activities par lagu hoga.",
+          "cga_view": "Agar aap religious trust chala rahe hain to official exemption check karein, aur activity wise documentation ready rakhein audit ke liye.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/religious-trust-taxation-income-tax-act-exemption-gst-relief.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITAT Delhi: Assessment u/s 143(3) invalid jab 153C lagu ho",
+          "detail": "ITAT Delhi ne Akansha Gupta case mein bola ki jab seized documents hai, toh sahi provision section 153C hai, na ki 143(3). Assessment FY 2021-22 ke liye quash ho gaya.",
+          "cga_view": "Aapke case mein search/seizure hua ho toh assessment section zaroor double-check karein. Galat section lage toh appeal ka scope hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-delhi-holds-section-143-3-assessment-invalid-section-153c-applied.html"
+        },
+        {
+          "category": "GST",
+          "headline": "CAAR Delhi: Bulk drugs import pe 5% IGST lagu",
+          "detail": "CAAR Delhi ne decide kiya ki agar bulk drugs/API imported hai aur wo Notification 10/2025 ke NIL-rated list mein nahi aata, toh 5% IGST lagta hai Sl. No. 226 ke under.",
+          "cga_view": "Pharma ya bulk drug importer hain toh apne product ka notification check karein pura 5% IGST ya NIL rate claim ke liye, galat classification se penalty lag sakti hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/caar-delhi-5-percent-igst-bulk-drugs-apis.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-14",
+      "summary": "Aaj GST aur Income Tax par 8 kaam ki baatein: mostly recent court rulings, compliance updates aur NPO registration par ek major advance.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "Section 83 GST attachment band ho jata hai ek saal ke baad",
+          "detail": "Madras High Court ka kehna hai ki provisional bank attachment, Section 83 CGST Act ke under, ek saal se zyada continue nahi ho sakta. Court ne old attachment order ko set aside kar diya.",
+          "cga_view": "Agar aapki company ka account 1 saal se zyada attached hai, toh turant application daaliye for release. Pure documents ready rakhein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/provisional-gst-section-83-attachment-automatically-ceases-year-madras-hc.html"
+        },
+        {
+          "category": "GST",
+          "headline": "SC ne GST appeal time badhaya technical glitch ki wajah se",
+          "detail": "Supreme Court ne GST appeal file karne ka additional time allow kiya hai, jab technical problem ki wajah se delay hua tha. Ab appeal merits pe suni jayegi, limitation ki dikkat nahi rahegi.",
+          "cga_view": "Agar aapka GST appeal deadline technical glitch se miss hua, toh abhi bhi file kar sakte hain. Saare system proof sambhal ke rakhein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/sc-extends-gst-appeal-time-due-technical-glitches.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Rajasthan HC: Online uploaded order, late appeal allowed",
+          "detail": "Rajasthan HC ne GST appeal ka delay condone kiya, kyunki order sirf online upload hua tha, actual communication nahi hua. Section 107 limitation ab dhyan se dekhein.",
+          "cga_view": "Aapka order sirf online aya aur delay hua appeal mein, toh aap bhi delay condonation ki application de sakte ho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/rajasthan-hc-condones-gst-appeal-delay-order-uploaded-online.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Gujarat HC: GST refund ke liye Rule 89(4B) omission matter",
+          "detail": "Gujarat HC ne GST order ko quash kar diya, kyunki Rule 89(4B) omit karne ke baad, bina saving clause ke, pending proceedings par bhi apply karta hai.",
+          "cga_view": "Naye refund claims mein agar Rule 89(4B) ka issue aata hai, toh legal advice lekar challenge consider karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gujarat-hc-quashes-gst-order-omission-rule-89-4b-without-saving-clause.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Calcutta HC: Section 132 GST case mein trial rokne se mana",
+          "detail": "Calcutta HC ne GST invoice violation case (Section 132) ki criminal proceedings rokne se inkaar kiya aur tax authorities se jawab manga hai.",
+          "cga_view": "Agar aap par Section 132 ka case hai, toh abhi tak stay nahi mila, normal trial process follow karein. Legal help lein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/calcutta-hc-declines-quash-section-132-proceedings-criminal-trial-pending.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "NPO registration ke liye ab Form 104 lagega, 10A nahi",
+          "detail": "CBDT ne NPO provisional registration ke liye simplified Form 104 introduce kiya hai, jo 10A ki jagah use hoga. Applicability 2025 se.",
+          "cga_view": "Agar NGO/NPO run kar rahe ho, toh future registration/renewal ke liye Form 104 ka latest format check karo.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/income-tax-form-form-104-replaces-form-10a-npos.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Karnataka HC: Appeal wahi file hogi jahan AO baitha ho",
+          "detail": "Karnataka HC ne bola: income tax appeal ki jurisdiction AO ke location pe depend karegi, assesee ke address pe nahi.",
+          "cga_view": "Assessment order ka AO kis area ka hai, woh dekh kar right HC mein appeal file karein. Galat jurisdiction mein mat jaayen.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/income-tax-appeal-lies-assessment-ao-located-not-assessee-lives-karnataka-hc.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Demonetization ke time medicine business ka profit 4% mana gaya",
+          "detail": "ITAT ne decide kiya ki medicine business ka net profit demonetization period mein 4% of gross sales hi maana jayega, aur tax normal rates pe lagega.",
+          "cga_view": "Demonetization ke duran sales pe agar aapka business scrutiny mein hai, toh yeh ruling refer kar sakte hain apne case mein.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/net-profit-in-the-demonetization-period-from-medicine-business-to-be-estimated-at-4-of-gross-sales-itat-allows-income-tax-appeal-1449945"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-13",
+      "summary": "Aaj ki digest mein mainly Income Tax forms ke naye updates hain jo 1 April 2026 se lagu honge. GST aur ek important tribunal decision bhi cover kiya gaya hai.",
+      "items": [
+        {
+          "category": "Income Tax",
+          "headline": "PAN ke liye nayi Forms 93 aur 94 April 2026 se",
+          "detail": "CBDT ne Form 49A ko hata ke Forms 93 (individuals) aur 94 (non-individuals) introduce kiye hain. PAN apply karne ka process simplify hua hai, effective 1 April 2026.",
+          "cga_view": "Agar client PAN apply kare, to updated forms ka dhyaan rakhein. Old Form 49A use na karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/income-tax-form-nos-93-94-erstwhile-form-no-49a.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Foreign applicants ke liye PAN ab Forms 95 aur 96 se",
+          "detail": "CBDT ne Form 49AA hata kar nayi Forms 95 aur 96 foreign applicants ke liye launch ki hain. PAN ka process simplify hua hai, 1 April 2026 se.",
+          "cga_view": "Kisi bhi foreign entity ka PAN banana ho to naye forms 95/96 nazar mein rakhein, aur client ko update kar dein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/income-tax-form-nos-95-96-erstwhile-form-no-49aa.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Form 97/98: ab PAN transaction reporting ke liye simplified forms",
+          "detail": "Forms 97 aur 98 (old 60N/61N) April 2026 se applicable hain. Filing requirements simplify hui hain; kuch extra document details chahiye honge.",
+          "cga_view": "Agar aapko PAN se related reporting ya compliance karni hai, nayi forms ka format dekhein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/income-tax-form-nos-97-98-erstwhile-form-nos-60n-61n.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "TAN application ke liye ab Forms 134 aur 135",
+          "detail": "Form 49B ab replace ho gaya hai. Government aur non-Government ke liye alag forms 134 aur 135 1 April 2026 se lagu hain.",
+          "cga_view": "TAN apply karte waqt sahi naya form pilih karein, purane form 49B use na karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/income-tax-form-nos-134-135-erstwhile-form-no-49b.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST Rule 14A: Simplified registration, eligibility Rs. 2.5 lakh/month B2B output",
+          "detail": "GST Rule 14A ke tahat eligible taxpayers (B2B output tax liability up to Rs. 2.5 lakh/month) ko simplified registration ka option hai. Regular monitoring hoga.",
+          "cga_view": "Agar aapka monthly B2B GST output Rs. 2.5 lakh se kam hai, toh advantages check karein. Eligibility clear karein pehle apply karne se pehle.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-rule-14a-registration-process-documents-withdrawal.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Section 44AD nahi lagu jab taxpayer ne opt nahi kiya: Delhi ITAT",
+          "detail": "Delhi ITAT ne addition reject ki, kaha section 44AD ka presumptive scheme zabardasti lagu nahi kiya ja sakta. Jab tak taxpayer khud opt na karein.",
+          "cga_view": "Profit calculation ke liye scheme opt karne ka dhyaan rakhein; zabardasti presumptive nahi lagti, books maintain karne par apna case bana rahein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/delhi-itat-section-44ad-cannot-forced-without-assessees-option.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "90 lakh fake ITC case: Allahabad HC ne bail di, evidence kam tha",
+          "detail": "Allahabad High Court ne fake GST input tax credit ke case mein, evidence nahi hone par accused ko bail di. Sirf allegation pe prosecution nahi ho sakta.",
+          "cga_view": "Business ko apne GST trail aur documentation bilkul tight rakhna hai; mala fide transaction ka proof na ho, to department action defend ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/allahabad-hc-grants-bail-rs-90-lakh-fake-itc-case-lack-evidence.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-12",
+      "summary": "Aaj ka digest important TDS/TCS reporting, kuch recent court rulings, aur ek GST update cover karta hai. Official government source se koi naya notification nahi aaya hai.",
+      "items": [
+        {
+          "category": "TDS",
+          "headline": "FY 2026-27 se naye TDS forms 138 & 140 lagenge",
+          "detail": "Trade reports ke mutabik, Form 24Q/26Q ki jagah ab Form 138/140 use honge TDS filing ke liye, April 2026 se. Naye forms quarterly aur simplified kahe ja rahe hain.",
+          "cga_view": "Clients abhi purane forms use karein, par FY 2026-27 ke liye team ko naye formats ki training dena shuru karein. Official notification ka intezaar rahe.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/tds-forms-138-140-replace-forms-24q-26q-fy-2026-27.html"
+        },
+        {
+          "category": "TDS",
+          "headline": "TCS reporting FY 2025–26 mein ab bhi 27EQ form se",
+          "detail": "Trade press ke hisaab se, Income Tax Act, 2025 ke mutabik abhi Form 27EQ hi TCS reporting ke liye use hoga for FY 2025–26. Quarterly filing ki timeline continue rehni hai.",
+          "cga_view": "TCS ke clients ko abhi koi immediate badlav nahi karna, Form 27EQ hi timely submit karein. Team ko new Act pe update rakhna zaroori hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/form-143-erstwhile-27eq-tcs-reporting-income-tax-act-2025.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Jodhpur ITAT: Late Form 10B ke bawajood Section 11 exemption mili",
+          "detail": "Agar audit report CPC tak time pe pahunch jaaye toh late Form 10B filing par bhi Section 11 exemption mil sakta hai (ITAT Jodhpur ka case).",
+          "cga_view": "Trusts/NGOs ke audit me delay ho toh yeh case ka reference rakhna, lekin har case alag hota hai - dependency assessment officer pe bhi hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-jodhpur-section-11-exemption-late-form-10b-filing.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Supreme Court: CGST Rule 96(10) omission – pending refunds par bhi lagu",
+          "detail": "Supreme Court ne decide kiya ki CGST Rule 96(10) ka jo omission hua hai, woh abhi ke pending GST refund cases par bhi lagu hoga jahan koi saving clause nahi diya gaya.",
+          "cga_view": "Agar aapka GST refund case pending hai, toh yeh SC ka ruling aapke favour me help kar sakta hai. Refund follow-up me reference ka use karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/omission-cgst-rule-96-10-applies-pending-refund-proceedings-sc.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Gujarat HC: Assessment cancel hua, sirf 2 din reply time diya tha",
+          "detail": "Gujarat High Court ne assessment aur penalty cancel kar diye, kyunki taxpayer ko sirf 2 din ka response time mila tha. Naya assessment conduct hoga.",
+          "cga_view": "Agar assessment notices me kam samay mil raha hai toh turant objection file karein aur is HC ka example dikhayein. Fair hearing zaroori hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/gujarat-hc-quashes-income-tax-assessment-days-response-time.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-11",
+      "summary": "Aaj ki digest mein GST aur Income Tax par recent HC aur tribunal rulings cover ki gayi hain. Sab items verified sources se liye gaye hain, koi due date iss period mein nahi hai.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "TDS Paid u/s 195A Not Subject to Service Tax",
+          "detail": "CESTAT Chandigarh ne decide kiya ki Section 195A ke under pay hua TDS service tax ke value mein include nahi hoga. Saath hi, jab tak suppression ya tax evasion ka intent nahi, extended limitation bhi apply nahi hogi.",
+          "cga_view": "Agar aapne 195A ke under TDS pay kiya hai to service tax demand ke liye yeh order ka reference use kar sakte hain. Purane cases check karein, shayad refund ya relief mil sake.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/service-tax/tds-paid-section-195a-not-subject-service-tax-cestat-chandigarh.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Panaji ITAT: Double Tax on Partner Salary Deleted",
+          "detail": "Panaji ITAT ne 2.98 lakh double addition hata di, kyunki partner remuneration pe already partner ki personal return me tax kaata tha (AY 2013-14 ka case).",
+          "cga_view": "Is ruling ko refer karein agar firm aur partner dono ki income pe tax dubara lag raha hai. Apni assessment order cross-check kar lein.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/panaji-itat-deletes-rs-2-98-lakh-double-taxation-partner-remuneration-taxed.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITAT Delhi: Wrong Section Used, Assessment Quashed",
+          "detail": "Delhi ITAT ne assessment khatam ki jo Section 143(3) me thi, jabki matter 153C me initiate hona chahiye tha (AY 2021-22).",
+          "cga_view": "Agar aap bhi similar notice ya assessment ka samna kar rahe hain, to section ki technicality jaankari lein. Galat section ho to appeal zarur karein.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/itat-delhi-quashes-assessment-section-153c-not-section-143-3-applicable.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Karnataka HC: Multiple Year GST SCN Allowed",
+          "detail": "Karnataka High Court ne bola GST show cause notice ek saath several saal ke liye consolidated issue ho sakta hai. Law me aisa ban nahi hai, lekin limitation period ka dhyaan rakhna hoga.",
+          "cga_view": "Agar consolidated SCN mila hai to har saal ki calculation alag se verify karein. Limitation period cross-check karna must hai.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/karnataka-hc-consolidated-gst-show-notices-multiple-years.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-10",
+      "summary": "Aaj mostly HC/tribunal rulings hain GST aur Income Tax par, business owners ko notices & compliance process mein practical guidance mil sakti hai.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "Order galat address par chipkana – limitation nahi lagega",
+          "detail": "CESTAT Allahabad ne bola ki GST order agar galat premise par chipkaya gaya toh appeal ki limitation nahi lagegi. Case dobara sunne bheja gaya.",
+          "cga_view": "Agar apke office ki jagah kisi aur jagah order chipka ho, toh appeal late ho toh bhi valid ho sakti hai. Iss point ko apne records mein note karo.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/service-tax/order-affixed-wrong-premises-cannot-trigger-appeal-limitation-cestat-allahabad.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Karnataka HC: Multiple year GST notices allowed",
+          "detail": "Karnataka HC ne clarify kiya ki consolidated GST show cause notices multiple years ke liye diya ja sakta hai. Limitation rules safe hai.",
+          "cga_view": "Agar aapko ek hi notice mein kai saal ka GST poocha jaye toh challenge karna mushkil hoga; defence prepare karte waqt sab saal ka dhyan rakho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/karnataka-hc-consolidated-gst-show-notices-multiple-years.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITAT Delhi: Wrong section se assessment hua toh order quash ho sakta hai",
+          "detail": "Delhi ITAT ne ek assessment ko isliye quash kiya kyunki sahi section (153C) mein notice nahi diya gaya, galat section (143(3)) mein kiya gaya tha.",
+          "cga_view": "Aapka assessment ya notice sahi section mein hai ya nahi, yeh check karwana zaroori hai – galat section ho toh aap challenge kar sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-delhi-quashes-assessment-section-153c-not-section-143-3-applicable.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Parallel GST proceedings ITC ke case mein allowed nahi – HP HC",
+          "detail": "Himachal Pradesh High Court ne bola ki Central aur State GST authorities ek hi ITC dispute pe parallel proceedings nahi chala sakti. Case fresh consider hoga.",
+          "cga_view": "Agar apke against ITC ka Central aur State dono jagah se notice hai, toh aapko ek hi proceeding mein combine karane ke liye application karwana chahiye.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/section-6-2-bar-parallel-gst-proceedings-applied-itc-dispute-himachal-pradesh-hc.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "DRP ko timely objection nahi diya toh assessment challenge nahi hoga - Allahabad HC",
+          "detail": "Allahabad High Court ne bataya ki agar aapne DRP ke samne timely objection nahi diya, toh assessment order court mein challenge nahi ho sakta.",
+          "cga_view": "Assessment order milte hi DRP ke samne objection ki last date mat miss karo, warna legal remedy khatam ho jayegi.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/failure-to-file-objections-before-drp-bars-challenge-to-assessment-order-allahabad-hc-1449841"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-09",
+      "summary": "Aaj ke digest mein High Courts aur CESTAT ke kuch kaafi important GST aur Income Tax rulings hain jo aapki compliance aur litigations strategy par effect daal sakte hain.",
+      "items": [
+        {
+          "category": "Ruling",
+          "headline": "Order galat jagah chipka toh appeal late nahi maana jayega",
+          "detail": "CESTAT Allahabad ne bola ki agar GST order galat premises par chipka, toh appeal filing ki limitation start nahi hoti. Matter wapas de-novo proceeding ke liye bheja gaya.",
+          "cga_view": "Agar aapko order properly serve nahi hua hai, toh appeal filing ka limitation period waise hi nahi chalega. Order ki service check karein pehle.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/service-tax/order-affixed-wrong-premises-cannot-trigger-appeal-limitation-cestat-allahabad.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Bar on parallel GST proceedings: Himachal HC ka naya decision",
+          "detail": "Himachal Pradesh HC ne kaha ki ITC disputes mein central aur state authorities ek saath parallel proceedings nahi chala sakte. Fresh consideration ka order diya.",
+          "cga_view": "Agar aapke khilaaf dono authorities proceedings chala rahi hain toh yeh decision cite kar ke ek proceeding rokwa sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/section-6-2-bar-parallel-gst-proceedings-applied-itc-dispute-himachal-pradesh-hc.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "APA forms aur process simplified by CBDT",
+          "detail": "CBDT ne Advance Pricing Agreement (APA) ke forms revise kiye, ₹20 lakh fee standard rakhi, aur withdrawal, renewal process simplify kiya. Rules ab 2026 ke liye hain.",
+          "cga_view": "Jo log APA process use karte hain, naye forms aur process ko check karein for fresh and renewal applications.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/income-tax-rules-2026-key-advance-pricing-agreements.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Income Tax records dekhne advocate appointment allowed in liquidation",
+          "detail": "Madras HC ne income tax advocate ko appointment ki permission di, taaki ₹6.29 crore ka department ka claim settle ho sake during liquidation process.",
+          "cga_view": "Jo log winding up ya liquidation phase mein hain, advocates ko tax records review ke liye appoint karne ka yeh precedent use kar sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/madras-hc-permits-advocate-appointment-examine-income-tax-records-liquidation.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-08",
+      "summary": "Aaj major GST compliance aur MCA penalty news hain. Courts ne kuch latest GST aur Income Tax interpretations diye hain.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "J&K Mining Sector Par CBIC Naya GST Coordination Framework",
+          "detail": "CBIC ne Instruction No. 01/2026-GST se J&K mining sector mein CGST-State mining coordination aur data sharing ko mandate kiya hai. Isse GST enforcement minerals sector mein jyada strong hoga.",
+          "cga_view": "Minerals ya mining business wale Jammu-Kashmir mein compliance aur reporting mein ab zyada dikkat expect karein, additional scrutiny ki taiyari rakhein.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/operationalizing-cbic-instruction-no-01-2026-gst-roadmap-jammu-kashmir-curb-mining-sector-evasion.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST Appeal Limitation Mein Rectification Ka Time Exclude Hoga: Gauhati HC",
+          "detail": "Gauhati High Court ne bola, agar Section 161 ke rectification ke liye time diya gaya hai to appeal (Section 107) ki limitation nikalte waqt ye duration exclude hoga.",
+          "cga_view": "Agar aap GST order ke rectification ke liye jaa rahe hain, appeals file karne ka waqt effectively badh jaata hai, lekin dates note karna zaroori hai.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/time-spent-gst-rectification-excludible-appeal-limitation-gauhati-hc.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "GST ITC (Truck & Cross Year) Claims Ko CA Certificate Chahiye: GSTAT",
+          "detail": "Tribunal ne assessee ko kaha ki GST ITC ke verification ke liye CA certificate file karein aur ITC register dikhayein, taa ki confirm ho ki vehicle par GST claim mein depreciation nahi li.",
+          "cga_view": "Truck ya vehicle par GST ITC claim cross-year karte ho to CA certificate aur saara backup ready rakho, nahi to aapka ITC atak sakta hai.",
+          "source_type": "trade",
+          "source_name": "TaxScan",
+          "source_url": "https://www.taxscan.in/top-stories/verification-of-gst-itc-on-truck-cross-year-claims-needs-ca-certificate-itc-register-gstat-directs-assessee-to-furnish-documents-read-order-1449791"
+        },
+        {
+          "category": "MCA / ROC",
+          "headline": "MGT-7A Mein Galat Disclosure Par ₹5,000 Ka ROC Penalty",
+          "detail": "ROC Mumbai II ne authorised signatory par ₹5,000 penalty lagayi hai kyunki annual return (MGT-7A) mein board meeting disclosure poora nahi tha.",
+          "cga_view": "Company return file karte waqt board meetings aur compliance details galti se na chhodein, penalty seedha personal lag sakta hai.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/company-law/roc-imposes-rs-5-000-penalty-incomplete-board-meeting-disclosure-mgt-7a.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Trade Body Ko Section 12AA Registration Ka Right: Gujarat HC",
+          "detail": "Gujarat HC ne decide kiya ki trade promotion association ko Section 12AA charitable registration mil sakti hai; Revenue ki appeal dismiss kar di.",
+          "cga_view": "Apne objects clear dikhao, charitable registration possible hai agar criteria fulfill hai. Associations ko ye precedent help karega.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/trade-promotion-body-qualifies-charitable-institution-section-12aa-registration-gujarat-hc.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "GST Road Contract Mein Wrong GST Reimbursement Par Allahabad HC Ka Faisla",
+          "detail": "Allahabad HC ne arbitral award set aside kiya kyunki arbitrator ne MoRTH SOP ko wrongly apply kiya, jab State order applicable tha.",
+          "cga_view": "Contract drafting aur GST reimbursement ke clauses halke mein na lein, dispute hone par court contract ki exact language dekhega.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/arbitral-award-gst-reimbursement-unsustainable-road-contract-allahabad-hc.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-07",
+      "summary": "Aaj ke din, GST, IT, aur ek court ruling par kuch important updates hain. Official notification ka intezaar hai, sab trade press reports se hai.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "GSTAT ne Bengal Peerless par anti-profiteering case drop kiya",
+          "detail": "GSTAT ne DGAP report ko maante hue bola ki Digangana Project mein GST ka koi extra ITC benefit nahi mila, isliye Section 171 ka matter close ho gaya.",
+          "cga_view": "Agar aapka project bhi anti-profiteering ke under hai toh ye case helpful ho sakta hai. Apne documents DGAP ke liye ready rakhein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstat-drops-anti-profiteering-proceedings-against-bengal-peerless-digangana-project.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "CBDT ka delay refund procedure: Section 119(2)(b)",
+          "detail": "CBDT ne delayed income tax refund claims ke liye process explain kiya hai—kaun eligible hai, approval limits aur adjustment Section 245 ke under possible hai. Details abhi trade press report pe hain.",
+          "cga_view": "Agar aapka refund delay ho raha hai toh Section 119(2)(b) ke under aap application consider kar sakte hai. Official circular ka wait karein aur CA se process check karva lein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/cbdt-procedure-delayed-income-tax-refund-claims-section-119-2.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Delhi ITAT: IBC moratorium mein Revenue appeal maintain nahi",
+          "detail": "Delhi ITAT ne bola ki agar IBC moratorium chal raha hai toh income tax appeal maintain nahi hoti. Ye sirf trade press ki coverage hai, abhi official order ka link nahi.",
+          "cga_view": "Agar aap IBC mein hain aur income tax ka matter chal raha hai toh apne CA ko order dikhayein, shayad aapko bhi stay ka benefit mil sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/revenue-appeal-not-maintainable-ibc-moratorium-delhi-itat.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITAT Bangalore: LLP conversion ke baad reassessment invalid",
+          "detail": "Bangalore ITAT ne kaha ki company jab LLP ban gayi aur AO ko pata tha, fir bhi reassessment hua toh vo invalid hai. Official copy abhi link pe available nahi.",
+          "cga_view": "Agar aapne company ko LLP mein convert kiya hai toh reassessment notices ka dhyan rakhein—galat notice aaye toh challenge kar sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/bangalore-itat-quashes-reassessment-company-llp-conversion.html"
+        },
+        {
+          "category": "GST",
+          "headline": "GST Council ne IGST settlement reforms implement kiye",
+          "detail": "GST Council ne IGST settlement ke liye new rules (GST Settlement of Fund Rules, 2026) notify kiye aur ITC reversal ka naya SOP lagu kiya. Abhi sab trade report par depend hai.",
+          "cga_view": "Abhi IGST or cross-utilisation pe closely monitor karein—SOP ke official details aate hi process update karna padega.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-council-implements-igst-settlement-reforms-gst-settlement-fund-rules-2026.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-06",
+      "summary": "Aaj ki digest mein GST refund par Gujarat HC ka ruling, TDS par ITAT Mumbai ka faydemand faisla, aur ek aur income tax assessment ki important clarification di gayi hai. Sab update trade press sources se hain, official notification ke intezaar mein rehna sahi rahega.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "Gujarat HC: GST Refund Circular Can't Restrict Section 54",
+          "detail": "Gujarat High Court ne Circular No. 181/13/2022-GST ke basis par Section 54 refund reject karna galat bola hai. Court ne refund claims wapas process karne ko bola hai. Circular ki limitation pe Court ne clear stance diya hai.",
+          "cga_view": "Agar aapka GST refund Circular 181/13/2022-GST ka hawala dekar reject hua, toh phir se claim file karo ya appeal karo. Official department ki new instructions ka intezaar bhi zaruri hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/circular-181-13-2022-gst-cannot-restrict-section-54-refunds-gujarat-hc.html"
+        },
+        {
+          "category": "TDS",
+          "headline": "Trade Discount Not Liable for TDS u/s 194H: ITAT Mumbai",
+          "detail": "ITAT Mumbai ne bola, dealers ko diye trade discounts commission nahi hain, isliye inpe Section 194H TDS nahi katega. Specific Bajaj Auto case mein yeh ruling aayi hai.",
+          "cga_view": "Agar aap dealers ko sirf trade discount dete ho, toh uss amount par 194H TDS katna abhi zaroori nahi lagta, par abhi bhi practice/facts check kar lo. Department se challenge ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/trade-discounts-dealers-not-liable-tds-section-194h-itat-mumbai.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Section 153C Limitation Counts From Assessing Officer Transfer: ITAT Delhi",
+          "detail": "ITAT Delhi ne kaha, search ke baad assessment ki limitation period Section 127 transfer date se chalegi jab records common AO ko milte hain. Yeh clarity specifically reassessment cases mein apply hoti hai.",
+          "cga_view": "Kisi bhi search case mein assessment limitation dekhte waqt Section 127 transfer date dhyan se verify karo. Ye ground assessment ko challenge karne mein kaam aa sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/search-cases-common-assessing-officer-governed-section-127-transfer-date-itat-delhi.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-05",
+      "summary": "Aaj GST aur Income Tax se related kuch key updates aaye hain, ek Bombay HC ka ruling bhi notable hai. MCA/ROC ya TDS se direct update nahi aaya.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "Bombay HC ne GST notice ko quash kiya",
+          "detail": "Bombay High Court ne GST show cause notice aur adjudication order quash kar diya hai, kyunki Section 73 ki 3 months ki mandatory gap maintain nahi hui thi. Iss wajah se pura SCN aur order invalid ho gaya.",
+          "cga_view": "Agar aapko bhi GST SCN mila hai aur lagta hai ki procedure follow nahi hua, toh legal review karwayein – case ban sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/bombay-hc-quashes-gst-show-notice-order-breach-section-73-time-gap.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Taxation and Other Laws (Amendment) Bill, 2026 aaya",
+          "detail": "Trade report ke mutabik naya Bill propose hua hai jo Income-tax Act, Finance Act wa Payment & Settlement Systems Act mein changes la sakta hai. Official detail ya notification abhi aana baaki hai.",
+          "cga_view": "Filhaal koi immediate action nahi hai, lekin clients ke IT compliance pe nazar rakhein – Bill pass hone par impact ho sakta hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/taxation-laws-amendment-bill-2026-proposes-key-income-tax-act-finance-act.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "CBDT ne HSBTE ko Section 10(46) exemption di",
+          "detail": "HSBTE ko CBDT ne Section 10(46) ke under exempt kiya hai, kuch income aur conditions ke saath. Applicability AY 2024-25 se hogi. Detail notification trade press mein hai, official link ka intezaar hai.",
+          "cga_view": "Agar kisi client ka HSBTE se transaction hai toh uski tax treatment review karein, exemption conditions dekhein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/cbdt-notifies-hsbte-section-10-46-income-tax-exemption.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-04",
+      "summary": "GST aur Income Tax pe latest court judgments aaye hain, jo aapke ongoing cases aur compliance approach ko impact kar sakte hain. Official notifications aaj nahi aaye, isliye zyada focus important rulings par hai.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "Consolidated GST SCN across years valid: Gauhati HC",
+          "detail": "Gauhati High Court ne bola ki Section 73/74 CGST Act ke hisaab se multiple saal ka ek hi show cause notice diya ja sakta hai, agar limitation period ke andar ho.",
+          "cga_view": "Aapko agar ek hi SCN mein multiple years covered milta hai, toh alag se challenge karne ki jarurat nahi hai. Defence prepare karte waqt ye fact dhyan mein rakho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gauhati-hc-dismisses-challenge-consolidated-gst-scns-financial-years.html"
+        },
+        {
+          "category": "GST",
+          "headline": "E-way bill expiry pe detention illegal if reason genuine: AP HC",
+          "detail": "AP HC ne GST detention cancel kar diya jab e-way bill vehicle breakdown ki wajah se expire hua, aur pareshani ki koi tax evasion nahi thi.",
+          "cga_view": "Agar aapka consignment vehicle breakdown ki wajah se delay hota hai, toh uska proof sambhal ke rakho. E-way bill expire hone par penalty avoid kar sakte ho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/ap-hc-quashes-gst-detention-expired-bill-vehicle-breakdown.html"
+        },
+        {
+          "category": "GST",
+          "headline": "ITC denial matter: Interim relief by Karnataka HC",
+          "detail": "Karnataka HC ne ITC denial case mein interim relief diya, jahan supplier return file nahi kar raha tha aur NCLT case pending tha.",
+          "cga_view": "Jis supplier ne return file nahi kiya hai aur uspe NCLT case chal raha hai, toh ITC ka denial challenge kiya ja sakta hai. Apne documents ready rakho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/karnataka-hc-grants-interim-relief-itc-denial-due-supplier-default.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Unverified portal info pe reassessment nahi chalegi: ITAT",
+          "detail": "ITAT ne ruling di ki Income Tax Officers ko portal (ITBA/INSIGHT) ke data pe bina verify kiye assessment nahi kholni chahiye, kyunki galti ho sakti hai.",
+          "cga_view": "Agar aap par sirf portal ke data pe case khola gaya hai, toh is precedent ko cite karke relief maang sakte ho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/itat-cancels-reassessment-based-solely-unverified-itba-portal-information.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Unsecured loan/share application genuine if docs okay: ITAT",
+          "detail": "ITAT ne bola ki sirf creditor ka entry operator se link hone par unsecured loan ya share application ko bogus nahi maana jaa sakta, agar records theek hain.",
+          "cga_view": "Transaction ke pure documents aur bank records ready rakho; agar query aaye toh submit karo. Sirf suspicion pe addition nahi honi chahiye.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/unsecured-loan-and-share-application-money-cannot-be-treated-as-bogus-merely-due-to-creditors-link-with-alleged-entry-provider-itat-read-order-1449662"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-03",
+      "summary": "Aaj ke major updates GST aur Income Tax ki compliance aur rulings par based hain. Filhal koi official government release nahi mila hai.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "E-way Bill System mein naya rule August se",
+          "detail": "Trade reports ke hisaab se, 1 August 2026 se bill-to/ship-to transactions mein ship-to GSTIN mandatory ho jayega aur e-way bill close karne ki ek new facility aayegi.",
+          "cga_view": "Aapko systems jaldi hi update karwa lene chahiye, aur staff ko new rule batana zaroori hai. Official notification ka wait bhi karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/proposed-changes-e-way-bill-system-effective-august-1-2026.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Section 16(2)(c) CGST: ITC reversal pe ambiguity",
+          "detail": "Article mein ITC reversal, dubara avail karne, aur kuch legal rulings discuss kiye hain. Practical compliance issues highlighted hue hain, par abhi clarity nahi aayi hai.",
+          "cga_view": "ITC claim karte waqt supplier ki compliance pakka karein, aur koi bhi reversal ya re-availment accounting records mein ache se track karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/section-16-2-cgst-settled-law-practical-ambiguities-road.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Jewellery seizure: ITAT ka naya decision",
+          "detail": "Bangalore ITAT ne decide kiya ki CBDT Instruction 1916 sirf prescribed jewellery quantity ko protect karta hai. Baaki seized jewellery par Section 69A lagega agar valid source nahi dikhaya.",
+          "cga_view": "Agar jewellery disclose karni ho ya assessment chal raha hai, to prescribed limit dhyan mein rakhein aur har ek item ka source clearly document karein.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/cbdt-instruction-1916-protects-prescribed-jewellery-quantity-bangalore-itat.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "GST Appeal me pre-deposit: Delhi HC ka view",
+          "detail": "Delhi High Court ne bola ki Section 107(6) CGST ke liye appeal ka right SCN ki date se decide hoga, aur ye vested right hai.",
+          "cga_view": "Agar aapka appeal under process hai to SCN ki date check karein; kisi bhi new amendment ko retro apply nahi hone dena chahiye.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/vested-rights-commencement-lis-section-107-6-gst-amendment-impact.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-02",
+      "summary": "Aaj Income Tax aur GST ke kuch court judgments aaye hain jo business owners ko impact kar sakte hain. Sab trade press se liye gaye hain, official notification ka intezaar bhi zaroor karein.",
+      "items": [
+        {
+          "category": "Income Tax",
+          "headline": "Ahmedabad ITAT: Sirf 8% profit unaccounted sales par taxable",
+          "detail": "Ahmedabad ITAT ne decide kiya ki agar aapke sales books mein nahi dikhaye hain, to poore sales amount par nahi, balki sirf 8% presumed profit par hi tax lagega. CIT(A) ki 6% estimate ko modify kiya gaya.",
+          "cga_view": "Agar aap par similar unaccounted sales ka issue hai to apne CA se yeh recent judgment discuss karein, shayad relief mil sakti hai. Par yeh ruling sab cases pe apply nahi hoti.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/income-tax/ahmedabad-itat-holds-8-percent-profit-unaccounted-sales-taxable-not-entire-receipts.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Bombay HC: GST penalty director par abhi nahi lagegi",
+          "detail": "Bombay High Court ne ek company director par section 122(1A) CGST ke tehat penalty lagane se stay diya hai, aur bola ki yeh provision individuals pe apply nahi hota. Filhaal yeh sirf interim order hai.",
+          "cga_view": "Agar aap director ho aur aisi notice aayi hai, to abhi relax kar sakte hain. Lekin final decision aana baaki hai, legal advise zaroor lein.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/bombay-hc-stays-section-122-1a-gst-penalty-director-citing-inapplicability-individuals.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Madras HC: GST notifications without Council ultra vires",
+          "detail": "Madras HC ne decide kiya ki GST notifications agar GST Council ke recommendation ke bina hai, to woh invalid hai. Kuch notifications aur notices ko side pe rakha gaya hai.",
+          "cga_view": "Agar aapko aisi GST demand ya notice mili hai jo Council ki recommendation ke bina hai, to apne consultant ko judgement dikhayein. Abhi further clarity aa sakti hai.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-notifications-without-council-recommendation-ultra-vires-madras-hc.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-08-01",
+      "summary": "Aaj court aur tribunal ke kuch important rulings aaye hain GST aur Income Tax pe. MSME disallowance aur ITR utility pe bhi issues report hue hain.",
+      "items": [
+        {
+          "category": "Income Tax",
+          "headline": "MSME Interest Disallowance: Appeal Nahi Banega Assessment mein",
+          "detail": "ITAT ne bola MSME Act ke interest disallowance pe Income Tax ke scrutiny assessment ke appeal mein challenge nahi kiya jaa sakta. Yani is point pe appellate remedy nahi milegi.",
+          "cga_view": "Agar aap MSME interest disallowance ka soch rahe ho, to is point par Income Tax scrutiny assessment mein appeal file karne ka faayda nahi. Advance planning rakho.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/msme-interest-disallowance-not-appealable-in-proceedings-against-scrutiny-assessment-under-income-tax-act-itat-read-order-1449560"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 143(2) Notice Nahi Toh Reassessment Invalid: ITAT",
+          "detail": "Agar ITR file karne ke baad Section 143(2) ka notice nahi diya toh reassessment pura invalid ho jayega - yeh ITAT ki ruling hai.",
+          "cga_view": "Reassessment ya scrutiny notice aaya hai toh check karo Section 143(2) notice mila tha ya nahi. Nahi mila toh strong technical ground hai challenge ka.",
+          "source_type": "trade",
+          "source_name": "taxscan.in",
+          "source_url": "https://www.taxscan.in/top-stories/itat-invalidates-reassessment-for-failure-to-issue-mandatory-section-1432-notice-after-filing-of-itr-1449547"
+        },
+        {
+          "category": "GST",
+          "headline": "GST Demand Stay After ITC Reversal: Karnataka HC",
+          "detail": "Karnataka HC ne GST ke Section 74 ke case mein interim stay diya, jahan petitioner ne adjudication order ko jurisdiction aur natural justice pe challenge kiya tha.",
+          "cga_view": "Agar aapke against similar ITC reversal ke baad demand raise hua hai, to court mein challenge consider kar sakte ho. Order carefully padho, har case alag hota hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/karnataka-hc-grants-interim-stay-gst-demand-itc-reversal.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Form 10B Filing Delay Condoned by Madras HC",
+          "detail": "Madras HC ne Form 10B late filing ko condone kar diya (Section 119(2)(b)), bus cost ke payment pe, aur assessment proceed karne ko bola.",
+          "cga_view": "Trusts/firms agar Form 10B late file hua hai, toh cost deke condonation petition consider kar sakte hain. Late filing par ab relief mil sakta hai, precedent hai.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/madras-hc-condones-delay-form-10b-filing-cbdt-time-limit.html"
+        },
+        {
+          "category": "GST",
+          "headline": "Madras HC: GSTR-2A/2B Mein Dikh Raha Unutilised ITC Par Tax Nahi",
+          "detail": "Madras HC ne bola ki agar unutilised ITC GSTR-2A/2B mein reflected hai, toh uspar tax aur interest nahi banega, jab tak ITC reverse ho gaya hai.",
+          "cga_view": "Agar aapka ITC system mein dikh raha hai par utilise nahi hua, toh demand aaye toh order rely kar sakte ho. GSTR-2A/2B reconciliation strong rakho.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/madras-hc-sets-tax-interest-unutilised-itc-reflected-gstr-2a-2b.html"
+        },
+        {
+          "category": "Income Tax",
+          "headline": "Section 80P Deduction on Bank Interest Allowed: Bangalore ITAT",
+          "detail": "Bangalore ITAT ne bank deposit interest ko business income maana aur Section 80P(2)(a)(i) deduction allow kiya, previous HC decision se alag stand.",
+          "cga_view": "Co-op societies apne interest income ke Section 80P claim ko phir se review karein. Har case ka fact pattern check karein, aur ITAT ka stand rely kar sakte hain.",
+          "source_type": "trade",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/bangalore-itat-section-80p-deduction-bank-interest-distinguishes-totgars.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-07-31",
+      "summary": "Aaj GST aur Income Tax pe kuch important court judgments aaye hain, saath hi GSTN ne e-Way Bill wale naye changes filhaal rok diye hain. Abhi compliance routine pe hi kaam karo.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "GSTN naye e-Way Bill changes abhi hold pe",
+          "detail": "GSTN ne 1 August se lagu hone wale e-Way Bill system ke enhancements abhi rok diye hain. Sabhi purane process hi abhi continue karenge, naye advisory/FAQ bhi withdraw kar liye gaye hain.",
+          "cga_view": "Aap apne logistics ya IT system mein koi naya change mat kariye jab tak GSTN se official green signal na aaye. Compliance filing mein old method hi follow karo.",
+          "source_type": "trade",
+          "source_name": "Taxguru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstn-hold-rollout-proposed-bill-enhancements.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "ITC reversal sahi, lekin penalty form ki galti pe radd",
+          "detail": "Gujarat HC ne decide kiya ki ITC toh reverse karna padega agar supplier ne tax nahi diya, lekin bina GST DRC-01A notice ke penalty nahi lag sakti.",
+          "cga_view": "Agar aapko ITC reversal notice mile toh yeh check karein ki penalty ki process sahi follow hui hai ya nahi. Achhi documentation rakhein.",
+          "source_type": "trade",
+          "source_name": "Taxguru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gujarat-hc-upholds-itc-reversal-quashes-gst-penalty-procedural-lapse.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Section 74 GST case: Documents ki supply pe fresh reply allowed",
+          "detail": "Telangana HC ne kaha ki jab investigating officer documents supply kare, toh taxpayer ko fir se reply dena, personal hearing ka mauka milna zaruri hai.",
+          "cga_view": "Agar aapke case mein seized documents milte hain, toh supplementary reply zaroor file karein aur hearing attend karein. Deadline ka dhyan rakhein.",
+          "source_type": "trade",
+          "source_name": "Taxguru",
+          "source_url": "https://taxguru.in/corporate-law/telangana-hc-fresh-reply-supply-seized-documents-gst-section-74-proceedings.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Reassessment notice invalid agar Rs 50L se kam income chhuti",
+          "detail": "Mumbai ITAT ne rule kiya ki agar alleged escaped income ₹50 lakh se kam hai aur notice issue hui 3 saal baad, toh reassessment invalid hai.",
+          "cga_view": "Past IT returns ka reassessment notice mila hai toh amount aur notice date check karein. Agar Rs 50 lakh ki threshold cross nahi hui toh strong case hai.",
+          "source_type": "trade",
+          "source_name": "Taxguru",
+          "source_url": "https://taxguru.in/income-tax/mumbai-itat-quashes-reassessment-escaped-income-rs-50-lakh.html"
+        }
+      ],
+      "due_dates": []
+    },
+    {
+      "date": "2026-07-30",
+      "summary": "Aaj GST aur Service Tax ki kuch court rulings aayi hain, aur e-Way Bill enhancements abhi rok di gayi hai. Official notifications ka intezaar hai, kaam abhi waise hi chalega jaise ab tak tha.",
+      "items": [
+        {
+          "category": "GST",
+          "headline": "e-Way Bill enhancements abhi hold par hain",
+          "detail": "GSTN ne e-Way Bill system mein 1 Aug 2026 se hone wale changes ko next order tak rok diya hai. Abhi purana process hi follow hoga, naye advisories ya FAQs bhi withdraw kar diye gaye hain.",
+          "cga_view": "Naye e-Way Bill features ke liye koi change mat karo. Abhi kaam normal procedure par hi rakho jab tak official update na aaye.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstn-hold-rollout-proposed-bill-enhancements.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Telangana HC: GSTAT appeal mein 10% deposit maaf, IGST pehle pay hua",
+          "detail": "Telangana High Court ne ek case mein GSTAT appeal ke liye 10% statutory pre-deposit waive kar diya—kyunki taxpayer pehle hi IGST bhar chuka tha. Yeh specific facts par based hai.",
+          "cga_view": "Agar similar IGST aur CGST/SGST liability ka dispute ho to apne advisor se specific legal advice lo—waiver automatically sab cases mein nahi milega.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/goods-and-service-tax/telangana-hc-waives-10-percent-pre-deposit-gstat-appeal-igst-paid.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "Service Tax: 26AS aur ST-3 mismatch pe demand valid nahi",
+          "detail": "CESTAT Mumbai ne bola ki sirf Form 26AS aur ST-3 ki mismatch pe Service Tax demand nahi ban sakti. Department ko aur strong basis chahiye.",
+          "cga_view": "Agar aapko sirf mismatch ke reason se notice aaya hai, toh reply mein judicial precedent ka reference dein. Sari details legal advisor ke through prepare karein.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/service-tax/form-26as-st-3-mismatch-cannot-justify-service-tax-demand-cestat-mumbai.html"
+        },
+        {
+          "category": "Ruling",
+          "headline": "GST Section 74: Seized documents ke baad fresh reply allowed",
+          "detail": "Telangana HC ne order diya ki jab bhi seized documents taxpayer ko milen, toh fresh/supplementary reply, personal hearing aur time-bound adjudication allowed hai.",
+          "cga_view": "Aapke case mein agar documents delay se mile hain, toh fresh representation ka mauka mil sakta hai. Legal strategy apne advisor ke saath tayar karein.",
+          "source_type": "trade",
+          "source_name": "TaxGuru",
+          "source_url": "https://taxguru.in/corporate-law/telangana-hc-fresh-reply-supply-seized-documents-gst-section-74-proceedings.html"
+        }
+      ],
+      "due_dates": []
+    }
+  ]
+}
