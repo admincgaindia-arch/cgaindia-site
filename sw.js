@@ -2,7 +2,7 @@
    Strategy is deliberately conservative: pages are ALWAYS fetched from the
    network first, so a redeploy is visible immediately and no visitor ever
    sees a stale price. The cache exists only so the site still opens offline. */
-var V = 'cga-v1';
+var V = 'cga-v2';
 var SHELL = V + '-shell';
 var RUNTIME = V + '-rt';
 var PRECACHE = [
