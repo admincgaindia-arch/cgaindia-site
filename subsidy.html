@@ -414,7 +414,7 @@ fbq('init','1350244116690583');fbq('track','PageView');
 .tm-form .err{color:#b3261e;font-size:.8rem;margin:-.5rem 0 .7rem;display:none}
 .tm-form .ok{display:none;background:#e7f5fa;border-left:3px solid #005176;padding:.8rem .9rem;font-size:.9rem;margin-bottom:.9rem}
 .tm-tabs{background:#fff;border-bottom:1px solid #d5e5ed;position:sticky;top:71px;z-index:29}
-#fees,#types,#poultry,#mfg,#interest,#who,#process,#faq{scroll-margin-top:128px}
+#fees,#live,#types,#poultry,#mfg,#interest,#who,#process,#faq{scroll-margin-top:128px}
 @media(max-width:1020px){.tm-tabs{top:0}#fees,#types,#poultry,#mfg,#interest,#who,#process,#faq{scroll-margin-top:60px}}
 .tm-tabs .wrap{display:flex;gap:.3rem;overflow-x:auto;scrollbar-width:none}
 .tm-tabs .wrap::-webkit-scrollbar{display:none}
@@ -581,6 +581,24 @@ fbq('init','1350244116690583');fbq('track','PageView');
 }
 .tm-badge svg{width:27px;height:27px}
 </style>
+<style>
+.sub-live{background:#eef5f8;border-block:1px solid #d5e5ed;padding:clamp(2.2rem,5vw,3.4rem) 0}
+.sub-live__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.8rem 1.2rem;margin-bottom:1.5rem}
+.sub-live h2{margin:0;font-size:clamp(1.4rem,1.2rem+1vw,2rem);letter-spacing:-.02em}
+.sub-live .stamp{font-size:.82rem;color:#46626f;margin-left:auto}
+.sub-live .stamp i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#35d07f;margin-right:6px;box-shadow:0 0 0 3px rgba(53,208,127,.22)}
+.sub-live__grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.sub-item{background:#fff;border:1px solid #d5e5ed;border-left:3px solid #005176;padding:1.1rem 1.2rem}
+.sub-item .row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:.55rem}
+.sub-item .tag{background:#005176;color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:3px;padding:.2rem .5rem}
+.sub-item .when{font-size:.78rem;color:#5a7180}
+.sub-item h3{font-size:1.02rem;margin:0 0 .4rem;letter-spacing:-.01em;line-height:1.35}
+.sub-item p{font-size:.92rem;color:#46626f;margin:0 0 .6rem;line-height:1.55}
+.sub-item .auth{font-size:.8rem;color:#5a7180;margin:0 0 .5rem}
+.sub-item a.src{font-size:.85rem;font-weight:650;color:#0b6d87;text-decoration:none;border-bottom:1.5px solid #9fd8e8}
+.sub-item a.src:hover{border-bottom-color:#0b6d87}
+.sub-live__foot{margin-top:1.3rem;font-size:.86rem;color:#46626f}
+</style>
 </head>
 <body>
 
@@ -657,7 +675,7 @@ fbq('init','1350244116690583');fbq('track','PageView');
 <nav class="tm-tabs" aria-label="Is page ke section">
 <div class="wrap">
 <a href="#fees" class="on">Fees</a>
-<a href="#types">Kitne tarah ki</a>
+<a href="#live">Naye updates</a><a href="#types">Kitne tarah ki</a>
 <a href="#poultry">Poultry</a>
 <a href="#mfg">Manufacturing</a>
 <a href="#interest">Interest subsidy</a>
@@ -665,6 +683,21 @@ fbq('init','1350244116690583');fbq('track','PageView');
 <a href="#faq">Sawal</a>
 </div>
 </nav>
+
+
+<section class="sub-live" id="live" hidden>
+<div class="wrap">
+<div class="sub-live__head">
+<div>
+<p class="cg-kicker" style="margin-bottom:.3rem">Roz update hota hai</p>
+<h2>Naye scheme aur subsidy updates</h2>
+</div>
+<span class="stamp"><i></i><span data-live-stamp></span></span>
+</div>
+<div class="sub-live__grid" data-live-grid></div>
+<p class="sub-live__foot">Ye updates roz subah apne aap aate hain, seedhe source ke link ke saath. Kisi bhi scheme par kaam shuru karne se pehle uska current order dekh lijiye &mdash; ya humse pooch lijiye. <a href="bank-finance-news.html" style="color:#0b6d87;font-weight:650">Saare updates dekhiye</a></p>
+</div>
+</section>
 
 <section class="wrap sec" id="fees">
 <p class="eyebrow">Fees</p>
@@ -1014,6 +1047,56 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelecto
   }
   window.addEventListener('scroll',function(){window.requestAnimationFrame(mark);});
   mark();
+})();
+</script>
+<script>
+(function(){
+  var sec=document.getElementById('live');
+  if(!sec) return;
+  var grid=sec.querySelector('[data-live-grid]'), stamp=sec.querySelector('[data-live-stamp]');
+  var KEEP={'Subsidy':1,'Scheme':1,'MSME':1};
+  var MAX=6;
+
+  function esc(s){var d=document.createElement('div');d.textContent=String(s==null?'':s);return d.innerHTML;}
+  function pretty(d){
+    var p=String(d||'').split('-');
+    if(p.length!==3) return '';
+    var m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return p[2].replace(/^0/,'')+' '+(m[Number(p[1])-1]||'')+' '+p[0];
+  }
+
+  fetch('data/finance-news.json',{cache:'no-cache'})
+    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(d){
+      var days=(d&&d.days)||[], picked=[];
+      for(var i=0;i<days.length && picked.length<MAX;i++){
+        var items=days[i].items||[];
+        for(var j=0;j<items.length && picked.length<MAX;j++){
+          var it=items[j];
+          if(it && KEEP[it.cat] && it.headline && it.source_url){
+            it._date=days[i].date; picked.push(it);
+          }
+        }
+      }
+      if(!picked.length) return;            /* kuch na mile to section chhupa hi rahe */
+
+      grid.innerHTML=picked.map(function(it){
+        return '<article class="sub-item">'
+          +'<div class="row"><span class="tag">'+esc(it.cat)+'</span>'
+          +'<span class="when">'+esc(pretty(it._date))+'</span></div>'
+          +'<h3>'+esc(it.headline)+'</h3>'
+          +(it.authority?'<p class="auth">'+esc(it.authority)+'</p>':'')
+          +'<p>'+esc(it.what).slice(0,240)+'</p>'
+          +'<a class="src" href="'+esc(it.source_url)+'" target="_blank" rel="noopener">Source par dekhiye</a>'
+          +'</article>';
+      }).join('');
+
+      if(stamp && d.last_updated){
+        stamp.textContent='Aakhri update '+pretty(String(d.last_updated).slice(0,10));
+      }
+      sec.hidden=false;
+    })
+    .catch(function(){ /* feed na mile to page waisa hi rahe */ });
 })();
 </script>
 </body></html>
