@@ -112,7 +112,17 @@
     }
 
     paint();
-    setTimeout(function () { box.classList.add('on'); }, 900);
+    // Wait until the visitor scrolls (or 8 seconds pass) so the card never covers the hero on arrival.
+    var shown = false;
+    function reveal() {
+      if (shown) { return; }
+      shown = true;
+      window.removeEventListener('scroll', onScroll);
+      box.classList.add('on');
+    }
+    function onScroll() { if (window.scrollY > 320) { reveal(); } }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    setTimeout(reveal, 8000);
     if (list.length > 1) { timer = setInterval(next, ROTATE_MS); }
 
     box.addEventListener('mouseenter', function () { if (timer) { clearInterval(timer); timer = null; } });

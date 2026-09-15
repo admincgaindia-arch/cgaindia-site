@@ -83,9 +83,16 @@
     mq.className = 'cgc-mq';
     var track = document.createElement('div');
     track.className = 'cgc-track';
+    // Each half of the loop must be wider than the screen, otherwise the strip ends
+    // part-way across and leaves an empty gap on the right of wide monitors.
+    var tileW = 204;
+    var reps = Math.max(1, Math.ceil(Math.max(window.innerWidth || 0, 1280) / (found.length * tileW)));
     for (var pass = 0; pass < 2; pass++) {
-      for (var i = 0; i < found.length; i++) { track.appendChild(tile(found[i])); }
+      for (var r = 0; r < reps; r++) {
+        for (var i = 0; i < found.length; i++) { track.appendChild(tile(found[i])); }
+      }
     }
+    track.style.animationDuration = Math.round(found.length * reps * 4.5) + 's';
     mq.appendChild(track);
 
     host.appendChild(wrap);

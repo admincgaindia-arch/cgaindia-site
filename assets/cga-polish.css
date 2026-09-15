@@ -1,0 +1,49 @@
+/* CGA layout polish, Sept 2026. Linked from every page head.
+   Selectors carry an extra "html body" so they win over the inline page styles that load later. */
+
+/* Home hero: copy on the left, direct routes on the right, figures across the bottom */
+html body .cg-hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);row-gap:0}
+html body .cg-hero .cg-copy{min-width:0}
+html body .cg-hero h1{max-width:20ch}
+html body .cg-hero .cg-lead{max-width:56ch}
+.cg-paths{margin-top:clamp(2rem,5vw,2.6rem);background:rgba(0,26,39,.62);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:.4rem 0;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.cg-paths__h{margin:0;padding:.9rem 1.4rem .7rem;font-size:.95rem;font-weight:600;color:#a9cde0}
+.cg-paths a{position:relative;display:block;padding:.95rem 3rem .95rem 1.4rem;border-top:1px solid rgba(255,255,255,.1);color:#fff;text-decoration:none;transition:background .15s ease}
+.cg-paths a b{display:block;font-size:1.02rem;font-weight:600;line-height:1.3}
+.cg-paths a span{display:block;margin-top:.15rem;font-size:.86rem;color:#a9cde0;line-height:1.4}
+.cg-paths a::after{content:"";position:absolute;right:1.45rem;top:50%;width:8px;height:8px;border-top:2px solid #4bbdd8;border-right:2px solid #4bbdd8;transform:translateY(-50%) rotate(45deg);transition:right .15s ease}
+.cg-paths a:hover,.cg-paths a:focus-visible{background:rgba(75,189,216,.12)}
+.cg-paths a:hover::after{right:1.15rem}
+.cg-paths a:focus-visible{outline:2px solid #4bbdd8;outline-offset:-2px}
+@media(min-width:1024px){
+  html body .cg-hero .wrap{grid-template-columns:minmax(0,1.3fr) minmax(340px,.7fr);column-gap:clamp(48px,5vw,96px);align-items:center}
+  html body .cg-hero .cg-copy{grid-column:1}
+  html body .cg-hero .cg-paths{grid-column:2;margin-top:0}
+  html body .cg-hero .cg-glance{grid-column:1/-1}
+}
+
+/* Founder block: fixed portrait column so the text lines up with the rest of the page */
+@media(min-width:820px){
+  html body .cg-founder .wrap{grid-template-columns:minmax(240px,340px) minmax(0,1fr);column-gap:clamp(40px,6vw,96px)}
+  html body .cg-portrait{max-width:none;width:100%}
+}
+html body .cg-founder .cg-body,html body .cg-founder p{max-width:68ch}
+
+/* Section headings keep a readable measure on the wider container */
+html body .cg-sub,html body .sec-head{max-width:64ch}
+
+/* Keyboard focus on every link and button */
+html body a:focus-visible,html body button:focus-visible{outline:2px solid #0e7ea0;outline-offset:3px}
+
+/* Home: six practice areas read as two even rows of three */
+@media(min-width:1024px){html body .cg-prac{grid-template-columns:repeat(3,minmax(0,1fr))}}
+html body .cg-band-photo h2{max-width:34ch}
+/* Gallery arrows sit on the right edge, level with the heading block */
+html body .cg-gal__head{justify-content:space-between}
+html body .cg-gal__head .cg-nav{flex:0 0 auto}
+html body .cg-gal__head>div:first-child{max-width:64ch}
+@media(min-width:1024px){html body .cg-hero h1{font-size:clamp(2.6rem,1.2rem+2.9vw,3.9rem);max-width:21ch}}
+/* Client strip heading uses the site serif, not the Georgia fallback */
+html body #cgaClients .cgc-h{font-family:Fraunces,Georgia,serif;font-weight:560;letter-spacing:-.01em}
+/* Separate the call-to-action band from the lead form directly below it */
+html body #cgaLead{border-top:1px solid rgba(255,255,255,.14)}
