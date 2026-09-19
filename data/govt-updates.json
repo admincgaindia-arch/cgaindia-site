@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18T18:51:37.256Z",
+  "last_updated": "2026-09-19T02:31:13.024Z",
   "days": [
     {
       "date": "2026-09-19",
@@ -9,78 +9,78 @@
           "cat": "Labour",
           "authority": "Cabinet",
           "ref": "",
-          "headline": "EPFO wage ceiling badha ₹25,000 hua",
-          "what": "Cabinet ne EPFO ki mandatory coverage ka wage ceiling ₹15,000 se badha kar ₹25,000 kar diya hai. Isse adhik employees EPFO mein aa jayenge.",
-          "who": "Jinke monthly wages ab ₹15,000 se upar aur ₹25,000 tak hain, un par EPFO rule lagu hoga.",
-          "action": "HR/Payroll team apne employees ka salary check karein aur naye wage ceiling ke hisaab se EPFO me inclusion karein.",
+          "headline": "EPFO wage ceiling hiked to ₹25,000",
+          "what": "Cabinet ne EPFO ki mandatory coverage ke liye wage ceiling ₹15,000 se badha kar ₹25,000 kar di hai. Labour Ministry ne is par Gazette notification bhi jaari kiya hai.",
+          "who": "Har employer jinke employees ab ₹15,000-₹25,000 monthly wage bracket mein aate hain.",
+          "action": "HR aur payroll system mein naya wage ceiling apply karein aur affected employees ke liye EPFO compliance karein.",
           "deadline": "",
-          "source_name": "News On AIR",
-          "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQekRsZVFlU3JCVS1sQlMwa3VXUHpoRzNBTzFXQkFjanZUOXJ6UGJxYjRHVDB6Y25UMHgxM3Z5UDc0VFVpd3pzVGJpU2Z0a1hWS0VjWk8tNVFtbWQ0WnhTSTZ4OGZhYy1kS1JSbnNpTWZtMEc4UzBQOHdXZXBwbEV0MXR5VmhDMWowQ0NGbGgzRi1jWGJKZ0R6WW54OGZSWjcxN0ZxbzYtNFpHQmNCSVJhY3RrVVZaQQ?oc=5"
+          "source_name": "Upstox",
+          "source_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQa19DVVRHVVRkWXJfLWlMZXN1REU5QnlHa1JGOWJiMk4yS0FyZW52QU9qcWJVNXZFYkJvNjIwbnVuWW8yUFp4ZklaNnM4d1ViVXBpNEM2VWRoWmZkbTR2NFFQV1NvTkRROGpyN3NqU1J0dUd4TU5ld2hGRmFzYjNxeTVPWVk2OGpsZEk1dzZNREVSVWR6T1pQTXY5RzNPWERub0FZSWpNWXRfMFNwZVVwMlBjeC1hMElucDVjdzdMOHU3aFlGZ2hTOFBWb0FORGNqSlpjSWVBcEYzdFJEMXdKRWJLYw"
         },
         {
           "jur": "Central",
           "cat": "Income Tax",
           "authority": "CBDT",
           "ref": "",
-          "headline": "Income Tax Rules: Forms 169/171 revise hue, deadline bhi extend hui",
-          "what": "CBDT ne Income Tax Rules ke forms 169 aur 171 revise kiye hain. Sath hi in forms ki filing ki deadline extend ho gayi hai.",
-          "who": "Woh taxpayers ya professionals jinhe ye forms file karne hain.",
-          "action": "Form 169/171 file karne se pehle updated format download karein aur nayi deadline ka dhyan rakhein.",
+          "headline": "IT Forms 169, 171 revised; deadline badha",
+          "what": "CBDT ne Income Tax ke Forms 169 aur 171 revise kiye hain aur inke submission ki deadline extend kar di hai. Naye rules ab lagu hain.",
+          "who": "Taxpayers aur practitioners jo in forms ka use karte hain.",
+          "action": "Latest notified forms ka use karein aur nayi deadline tak file karein.",
           "deadline": "",
           "source_name": "Zee Business",
-          "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVnlaNi1rdFJaNTNyYWhlQVpMX2FxRzZxcThkX0JFbXZBdTBZd0dxS1haY2psZnhzeVpTVU5sbnkySkQySlVmWHRzcnVrcHJNOG5kYnA4czA4aHVZTjA0dUhpWHFKOC1zOUYxS1BnTjN0YXJmaklsZWxvenZXeGRERzYxU25QN2JBQzc2d3JNaDhYSU8xWkxiU0YwaE1RTGo0VlBhVmhYdTcwamo5TDFQUFpxdlJTaTQxdXZjN1MxQWU4cS00WDNkRktSS3U4Zw?oc=5"
+          "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVnlaNi1rdFJaNTNyYWhlQVpMX2FxRzZxcThkX0JFbXZBdTBZd0dxS1haY2psZnhzeVpTVU5sbnkySkQySlVmWHRzcnVrcHJNOG5kYnA4czA4aHVZTjA0dUhpWHFKOC1zOUYxS1BnTjN0YXJmaklsZWxvenZXeGRERzYxU25QN2JBQzc2d3JNaDhYSU8xWkxiU0YwaE1RTGo0VlBhVmhYdTcwamo5TDFQUFpxdlJTaTQxdXZjN1MxQWU4cS00WDNkRktSS3U4Zw"
         },
         {
           "jur": "Central",
           "cat": "Income Tax",
           "authority": "CBDT",
           "ref": "",
-          "headline": "Tax valuer, practitioner registration deadline badha March 2027 tak",
+          "headline": "Tax valuer, practitioner registration deadline March 2027 tak",
           "what": "CBDT ne tax valuer aur practitioner registrations ki deadline March 2027 tak badha di hai.",
-          "who": "Jo income tax valuer ya practitioners registration kara rahe hai unke liye.",
-          "action": "Valuer/practitioners apni registration March 2027 tak kara sakte hain, last date check kar lein.",
+          "who": "Tax valuers aur income tax practitioners jinhe abhi tak registration nahi mila.",
+          "action": "March 2027 tak registration apply karein ya renewal kara lein.",
           "deadline": "March 2027",
-          "source_name": "Livemint",
-          "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNcDUwY1BBQmVwYXJ1bjlJdU12dVB6NmpaYjZ6ZEFpSTRFMjM2VTU5ZDRBNDdWS3RyOE5FZTdRdk5NS180dDhjWDV5XzFleG9qbmF3QloxSXFCTkdiYllJMUlSZllkaVRNeHU5RV9QbUh6Z29nOHVFMnhfV01LMW5QN0NwenpRT2h6TU1VbVFyZWk2RFVHaXUwSi0tbmpTLWFZZDFYMU9QMXkxSFU0RUFXdFZQOHUtejlBNHk0RkJyaDFiZGpTa0pVVS0yLTZrZ9IB0wFBVV95cUxOZEpfNVVFNVhEcWdHMk1rbHQ4ZkYyNS14bG1SMHN3WWI2UmZkemZ6NTZHRmtmcWJoZGlWOW5aTFJPLWNuNVBzeTVvcW1VMkFtbjFLTHhtZDA2VWppUXRyTEJ5RG81Rjlka3U4UXNDb1BraUQzRHd5eVdzUERLZkxoY3VUdXg1NTBCTFotakpTZVFmazFmdFp5dmxxaGxzdmY4aE55SnIzTWg0ejh0bjZHRmxJMWVuMWRBdnFQMjkySFA3X0czam8yOW1Hc1RFelh6ODBv?oc=5"
+          "source_name": "livemint.com",
+          "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNcDUwY1BBQmVwYXJ1bjlJdU12dVB6NmpaYjZ6ZEFpSTRFMjM2VTU5ZDRBNDdWS3RyOE5FZTdRdk5NS180dDhjWDV5XzFleG9qbmF3QloxSXFCTkdiYllJMUlSZllkaVRNeHU5RV9QbUh6Z29nOHVFMnhfV01LMW5QN0NwenpRT2h6TU1VbVFyZWk2RFVHaXUwSi0tbmpTLWFZZDFYMU9QMXkxSFU0RUFXdFZQOHUtejlBNHk0RkJyaDFiZGpTa0pVVS0yLTZrZ9IB0wFBVV95cUxOZEpfNVVFNVhEcWdHMk1rbHQ4ZkYyNS14bG1SMHN3WWI2UmZkemZ6NTZHRmtmcWJoZGlWOW5aTFJPLWNuNVBzeTVvcW1VMkFtbjFLTHhtZDA2VWppUXRyTEJ5RG81Rjlka3U4UXNDb1BraUQzRHd5eVdzUERLZkxoY3VUdXg1NTBCTFotakpTZVFmazFmdFp5dmxxaGxzdmY4aE55SnIzTWg0ejh0bjZHRmxJMWVuMWRBdnFQMjkySFA3X0czam8yOW1Hc1RFelh6ODBv"
+        },
+        {
+          "jur": "Central",
+          "cat": "Labour",
+          "authority": "Cabinet",
+          "ref": "",
+          "headline": "Cabinet ne Bharat Audyogik Vikas Yojna approve ki",
+          "what": "Cabinet ne naye industrial development initiative Bharat Audyogik Vikas Yojna ko manzoori di hai.",
+          "who": "All businesses aur manufacturers jo industrial policy se jude hain.",
+          "action": "Policy ke final notification ka intzaar karein, implement hone par benefit ya compliance dekhein.",
+          "deadline": "",
+          "source_name": "News On AIR",
+          "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaGJxbUhaTFFzNVBPTnFCSlNkNmJFc1B5Z3FqWUY0WWZuSmVucWVFaHBCQURpR3AydXZTaFd6R29xUmpya3NtUXlEUlhaRng0d0RqY0dhSnQ4UG5FN2hlaEt1RE03ZUN0LTAwdlBmakkyeHdYX3VqYjZzWTV0V3ljOEYyWE45cTdGREt1MjRVNzYwVHotX2lsRUh0VjBJa1ZxNlBoUDJDUGc4SHBYUmc1Q1BR"
         },
         {
           "jur": "Central",
           "cat": "GST",
-          "authority": "Government sources",
+          "authority": "Government Sources",
           "ref": "",
-          "headline": "UPI payments par GST MDR lagu, customers ko charge nahi dena",
-          "what": "UPI payments par Merchant Discount Rate (MDR) par GST lagu hai. Lekin sarkar keh rahi hai customers par yeh charge nahi daalna hai.",
-          "who": "Sab merchants jo UPI payments accept karte hain.",
-          "action": "Merchants MDR ka GST khud bear karein, customer se direct charge na lein.",
+          "headline": "UPI payments: GST on merchant charges par, customers par nahi",
+          "what": "Sarkari sources bol rahe hain ki UPI payments par GST sirf MDR (Merchant Discount Rate) par lagu hai, lekin customers ko yeh charge nahi diya jaana chahiye.",
+          "who": "All UPI merchants aur payment service providers.",
+          "action": "MDR par GST collect karo, lekin customer se extra charge na lo.",
           "deadline": "",
-          "source_name": "A2Z Taxcorp LLP",
-          "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUFVkbmpxcTA5TTV2SHBYSzJta3d6VF9UTVBtSkk3TGd1MHdQLW1Wd1ZCM1VvR21yMS1DZkZ3M0dMMU0ydXcwN0h3OGhCX2lJN2pJaE9YWjZHd2xuZ05iSjRTcHpYekhpSFpkcjAyR2pHbWlsZzR2a29NWUNNWWlLMXdOMmFsUWhjWWJIakxScDRRbjlBQTBSeXBaeWVPVmRmVWNOWHZodTU3MElfaHFOcWprRU9uN2RrMFdpY0FDY09MZmg0RUNZ?oc=5"
+          "source_name": "a2ztaxcorp.net",
+          "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUFVkbmpxcTA5TTV2SHBYSzJta3d6VF9UTVBtSkk3TGd1MHdQLW1Wd1ZCM1VvR21yMS1DZkZ3M0dMMU0ydXcwN0h3OGhCX2lJN2pJaE9YWjZHd2xuZ05iSjRTcHpYekhpSFpkcjAyR2pHbWlsZzR2a29NWUNNWWlLMXdOMmFsUWhjWWJIakxScDRRbjlBQTBSeXBaeWVPVmRmVWNOWHZodTU3MElfaHFOcWprRU9uN2RrMFdpY0FDY09MZmg0RUNZ"
         },
         {
           "jur": "Gujarat",
           "cat": "MSME & Scheme",
-          "authority": "Gujarat State Government",
+          "authority": "State Government",
           "ref": "",
-          "headline": "Gujarat GIS mapping se MSMEs ko PM Gati Shakti se link karega",
-          "what": "Gujarat Sarkar ne MSMEs ka GIS mapping shuru kiya hai. Isse industrial data PM Gati Shakti portal se connect hoga.",
-          "who": "Sab Gujarat ke MSME units aur business owners.",
-          "action": "Aapki unit ka data sarkari listing/mapping me check karein, update ki zaroorat ho to department se sampark karein.",
+          "headline": "Gujarat GIS mapping of MSMEs shuru kar raha hai",
+          "what": "Gujarat sarkar MSMEs ka GIS-based mapping start kar rahi hai jisse industrial data PM Gati Shakti se link kiya ja sake.",
+          "who": "Gujarat ke saare MSMEs.",
+          "action": "Apne unit ka latest data local authority ko de, GIS mapping mein cooperate karein.",
           "deadline": "",
           "source_name": "The420.in",
-          "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SUDhJeHd2eFpnNDdyTjRUYTFjcHAwV0pTS09sWUlwVmpheER6VXp2LUE3UURDVWpyZktaN2RhZV80NTItZXdZNnpadVc4c2VaQ0tqaTRxWVdreEhDVWt2LWI3enVFWTRiMmZ4aTh0UnY?oc=5"
-        },
-        {
-          "jur": "Karnataka",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Karnataka State Government",
-          "ref": "",
-          "headline": "Karnataka: Cinema ticket par 2% extra cess aayega",
-          "what": "Karnataka Sarkar cinema tickets par 2% ka extra cess lagane ki planning kar rahi hai.",
-          "who": "Sab theatre owners aur movie ticket sale par business karne wale.",
-          "action": "Ticket rates update karne ke liye ready ho jao, system/ERP me naye cess ko add karo jab lagu ho.",
-          "deadline": "",
-          "source_name": "Business Today",
-          "source_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNQl9WLVlUc05DRjVGeEtweEs2RHZiRFk2MWdOQTBxME94MHR4WkJtb25Bajg2M254cjZNQk5fS0gxQUFleUw4NHcwYmh6MFhzaWVIV2tyb3phdDJaTGpEVW8zWFVpc0dXM3pmcTAzM01MNnhEcjhNVC1jZ1FHNWFqMWtJVms5dzFzRk5qUi1Wc0drWTlzV3ZUdzc1cXU2dGxtam5pRGNiNko4WFhRTzVZV3dUQWs4cEo1Wmw3bWR3eUI4Z016cHVCdWhDeUpTUEliTXVMSW5oNjB2YlVHYjZoT0FTUjJ4Tm4tcUlLN1FKVW9tMnNpMmhiaXc4REvSAfwBQVVfeXFMTUJfVi1ZVHNOQ0Y1RnhLcHhLNkR2YkRZNjFnTkEwcTBPeDB0eFpCbW9uQWo4NjNueHI2TUJOX0tIMUFBZXlMODR3MGJoejBYc2llSFdrcm96YXQyWkxqRFVvM1hVaXNHVzN6ZnEwMzNNTDZ4RHI4TVQtY2dRRzVhajFrSVZrOXcxc0ZOalItVnNHa1k5c1d2VHc3NXF1NnRsbWpuaURjYjZKOFhYUU81WVd3VEFrOHBKNVpsN21kd3lCOGdNenB1QnVoQ3lKU1BJYk11TEluaDYwdmJVR2I2aE9BU1IyeE5uLXFJSzdRSlVvbTJzaTJoYml3OERL?oc=5"
+          "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SUDhJeHd2eFpnNDdyTjRUYTFjcHAwV0pTS09sWUlwVmpheER6VXp2LUE3UURDVWpyZktaN2RhZV80NTItZXdZNnpadVc4c2VaQ0tqaTRxWVdreEhDVWt2LWI3enVFWTRiMmZ4aTh0UnY?"
         }
       ]
     }
