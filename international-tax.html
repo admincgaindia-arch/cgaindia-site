@@ -866,7 +866,7 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelecto
               service:SERVICE,message:SERVICE+': '+f('stage'),
               page:window.location.pathname,at:new Date().toISOString()};
     try{
-      fetch(WEBHOOK,{method:'POST',mode:'no-cors',
+      fetch(WEBHOOK,{method:'POST',
         headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)}).catch(function(){});
     }catch(_){}
     ok.style.display='block';
