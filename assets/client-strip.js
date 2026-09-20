@@ -7,7 +7,7 @@
   'use strict';
 
   var MIN_LOGOS = 3;
-  var BASE = 'assets/';
+  var BASE = '/assets/';
 
   var LOGOS = [
     { file: 'cozycato.jpg', name: 'Cozycato' },
