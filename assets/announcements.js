@@ -3,7 +3,7 @@
    Add <div id="cga-announcements"></div> where the cards should appear.
    Content lives in data/announcements.json - no code changes needed to publish. */
 (function () {
-  var SRC = 'data/announcements.json';
+  var SRC = '/data/announcements.json';
   var KEY = 'cga-ann-dismissed';
 
   function esc(s) {
