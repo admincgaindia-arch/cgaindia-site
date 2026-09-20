@@ -138,7 +138,7 @@
   }
 
   function start() {
-    fetch('data/updates.json?t=' + Date.now())
+    fetch('/data/updates.json?t=' + Date.now())
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (data) {
         var list = collect(data);
