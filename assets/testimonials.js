@@ -2,7 +2,7 @@
    Add <div id="cga-testimonials"></div> plus this script where you want it.
    A quote renders ONLY if consent is true, so nothing can go live by accident. */
 (function () {
-  var SRC = 'data/testimonials.json';
+  var SRC = '/data/testimonials.json';
   var host = document.getElementById('cga-testimonials');
   if (!host) { return; }
 
