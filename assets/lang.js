@@ -1,21 +1,23 @@
 /* CGA language switcher — folder based. Each language lives at /<code>/<page>. English is the root. */
 (function () {
   var LANGS = [
-    ['en', 'English', ''],
-    ['hi', 'हिंदी', 'hi'],
-    ['bn', 'বাংলা', 'bn'],
-    ['mr', 'मराठी', 'mr'],
-    ['te', 'తెలుగు', 'te'],
-    ['ta', 'தமிழ்', 'ta'],
-    ['gu', 'ગુજરાતી', 'gu'],
-    ['ur', 'اردو', 'ur'],
-    ['kn', 'ಕನ್ನಡ', 'kn'],
-    ['or', 'ଓଡ଼ିଆ', 'or'],
-    ['ml', 'മലയാളം', 'ml'],
-    ['pa', 'ਪੰਜਾਬੀ', 'pa'],
-    ['as', 'অসমীয়া', 'as']
+    ['en', 'English'],
+    ['hi', 'हिंदी'],
+    ['bn', 'বাংলা'],
+    ['mr', 'मराठी'],
+    ['te', 'తెలుగు'],
+    ['ta', 'தமிழ்'],
+    ['gu', 'ગુજરાતી'],
+    ['ur', 'اردو'],
+    ['kn', 'ಕನ್ನಡ'],
+    ['or', 'ଓଡ଼ିଆ'],
+    ['ml', 'മലയാളം'],
+    ['pa', 'ਪੰਜਾਬੀ'],
+    ['as', 'অসমীয়া']
   ];
   var LIVE = 'en,hi';
+  /* pages already translated, per language; empty string means all pages */
+  var DONE = { hi: 'about.html,achievements.html,article-12ab-80g.html,article-itr-notice.html,article-pvtltd-vs-llp.html,bank-finance-news.html,case-laws.html,cga.html,clients.html,compliance-calendar.html,contact.html,crypto-tax.html,ecommerce-sellers.html,foreign-income.html,fssai-licence.html,gallery.html,govt-updates.html,gst-notice-sos.html,gst-registration.html,gst-return-filing.html,gujarat-startup-funding.html,health-check.html,index.html,insights.html,privacy.html' };
   var live = LIVE.split(',');
   var codes = {}; for (var i = 0; i < LANGS.length; i++) codes[LANGS[i][0]] = LANGS[i];
 
@@ -24,6 +26,12 @@
   if (parts.length > 1 && codes[parts[0]]) cur = parts[0];
   if (!page || page.indexOf('.') < 0) page = 'index.html';
 
+  function has(code) {
+    if (code === 'en') return true;
+    var d = DONE[code];
+    if (d == null || d === '') return true;
+    return (',' + d + ',').indexOf(',' + page + ',') >= 0;
+  }
   function urlFor(code) { return (code === 'en' ? '/' : '/' + code + '/') + page; }
 
   var css = document.createElement('style');
@@ -39,14 +47,17 @@
   box.className = 'cga-lang';
   var sel = document.createElement('select');
   sel.setAttribute('aria-label', 'Choose language / भाषा चुनें');
+  var shown = 0;
   for (var j = 0; j < LANGS.length; j++) {
     var L = LANGS[j];
     if (live.indexOf(L[0]) < 0) continue;
+    if (!has(L[0]) && L[0] !== cur) continue;
     var o = document.createElement('option');
     o.value = L[0]; o.textContent = L[1];
     if (L[0] === cur) o.selected = true;
-    sel.appendChild(o);
+    sel.appendChild(o); shown++;
   }
+  if (shown < 2) return;
   sel.onchange = function () {
     try { localStorage.setItem('cga_lang', sel.value); } catch (e) {}
     location.href = urlFor(sel.value);
