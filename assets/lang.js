@@ -34,6 +34,29 @@
   }
   function urlFor(code) { return (code === 'en' ? '/' : '/' + code + '/') + page; }
 
+  /* Link guard: on a translated page, a link to a page not yet translated opens the
+     English page (no 404); a link to a translated page stays in the language folder.
+     The click handler also covers links added later by scripts (health-check). */
+  function fixLink(a) {
+    if (cur === 'en' || !a || !a.getAttribute) return;
+    var h = a.getAttribute('href');
+    if (!h || h.indexOf(':') >= 0 || h.charAt(0) === '/' || h.charAt(0) === '#') return;
+    if (h.indexOf('../') === 0) h = h.slice(3);
+    var cut = h.search(/[#?]/), pg = cut < 0 ? h : h.slice(0, cut), tail = cut < 0 ? '' : h.slice(cut);
+    if (!/^[A-Za-z0-9_-]+[.]html$/.test(pg)) return;
+    var d = DONE[cur], ok = (d == null || d === '') || (',' + d + ',').indexOf(',' + pg + ',') >= 0;
+    var want = (ok ? '/' + cur + '/' : '/') + pg + tail;
+    if (a.getAttribute('href') !== want) a.setAttribute('href', want);
+  }
+  if (cur !== 'en') {
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if (a) fixLink(a);
+    }, true);
+    var fixAll = function () { var as = document.querySelectorAll('a[href]'); for (var k = 0; k < as.length; k++) fixLink(as[k]); };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fixAll); else fixAll();
+  }
+
   var css = document.createElement('style');
   css.textContent = '.cga-lang{display:inline-flex;align-items:center;gap:.3rem;margin-left:auto;flex:0 0 auto}'
     + '.cga-lang select{appearance:none;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35);'
