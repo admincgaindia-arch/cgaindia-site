@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-09-25T15:39:27.431Z",
+  "last_updated": "2026-09-26T04:23:39.608Z",
   "days": [
+    {
+      "date": "2026-09-26",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "DGFT",
+          "ref": "",
+          "headline": "DGFT ne 15 scrap-inspection firms ko delist kiya",
+          "what": "DGFT ne 15 scrap-inspection firms ko certificate issuing mein lapses paaye par delist kiya hai.",
+          "who": "Jo importer-exporter scrap import ya export mein in firms par nirbhar the.",
+          "action": "Aapko alternative approved inspection firms khojni hongi, scrap import/export documents mein inka naam na daalein.",
+          "deadline": "",
+          "source_name": "Business Standard",
+          "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQjg2MWtqMWNvZ1N2Y3B0VWZoLVp5TW9QZ3ZRVnRCalQ5elhRREl0NmlFcExMdWdXN1FsVzR4QUdIUEJZQWJBTlpRU1RPSWpPcVB1QWpMbDd0cDFvUkJYZ3k3VlRDNURlc3M4VmV1ZmlLV09CV2pqSFByZE1RbW55NVZXVzJuZXdGS3BEMFNLSW5HZmJUQ214N0MwdDBlLXFmNzh6MUtGYnVXYklmTzYyQmppTi1yYWtOcWRlQjQ4ZXE1MnFFYV8ybXl2aUFGNlJN0gHWAUFVX3lxTFBaU2lmX1lEUnBaVDcxRy0yVlFJZHU0M3lDYnI3NEFuaUZDMWRkR0ZCbmxKTTJuNFdVRGlzcW5JMlFzMXg1bWpvRW5LRmpNU1A3OXBidE1FVmV0Qzl6bFBOMktrOGNJTS01MmY3enVDQmR6VnNpbk1ST0dCRm5GWDR5RGJOWUpTOW5xRDczQlFvTi1QTDNQZEcxdDdGb0RtWUE0ak9reG13bTZzRmRrTlRqbjJ3eDM3QXgydm5RMHl2ZXB6ZkFzQk5FSE5NT0RzTV8yMWVSV3c"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "CBIC ne Section 28DA & CAROTAR par clarification diya",
+          "what": "CBIC ne Section 28DA aur CAROTAR, 2020 ke tehat Form-I, origin verification aur identical imports par virodh saf kiya hai.",
+          "who": "Preferential tariff par import karne wale traders aur businesses.",
+          "action": "Preferential rate ke claim mein Form-I aur verification par nayi clarification ko dekhen, documents tayaar rakhen.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/cbic-clarifies-section-28da-carotar-application-trade-agreements-circular-43-2026-customs.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "MSME & Scheme",
+          "authority": "Unknown",
+          "ref": "",
+          "headline": "MSME ke liye TReDS platforms par nayi credit guarantee system aayi",
+          "what": "TReDS (Trade Receivables Discounting System) platforms par MSMEs ko credit guarantee system launch hua hai.",
+          "who": "TReDS platform par apni receivables factor karne wale MSMEs.",
+          "action": "Aap apne receivables sale karte waqt naye guarantee features ka fayda utha sakte hain.",
+          "deadline": "",
+          "source_name": "Observer Voice",
+          "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZHJCdUdRSmJwUEQtZ2hCc2JxNUl6Vk91dGN3N05PdXdWSm4ydVA3d2dWWXNfZXFFUHYySi1QNkU5WTFQOU5CWVBRcmZiRWFFRkRZV0JvVVdQRUdYUEdyRTNOMFRVSkxMX1FBWXpLX01vd2dSUnhsT2VBbk95bk90a3REa3dzMW5Ldm5qbjVsV1R3Q1U0LUViUVpncXJycVlx"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "Delayed GST payment par interest liability samjhein",
+          "what": "GST ka tax time par na dene par Section 50 & Rule 88B ke tehat interest aur legal liability lagti hai, chahe galat ITC use ho ya cash ledger mein ho.",
+          "who": "GST registered businesses jinhe GST payment delay hota hai.",
+          "action": "Aapko time par tax pay karna hai, delay par interest liability calculate aur pay karni hogi.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/delayed-gst-payment-understanding-interest-liability-legal-consequences.html"
+        },
+        {
+          "jur": "Gujarat",
+          "cat": "GST",
+          "authority": "Gujarat AAR",
+          "ref": "",
+          "headline": "Godown rent (agri warehousing) par 18% GST, RCM bhi lagu",
+          "what": "Gujarat AAR ne decide kiya ki agricultural warehousing ke godown rent par 18% GST lagega. Unregistered person se godown rent lene par RCM 10.10.2024 se lagu hoga.",
+          "who": "Firms jo agricultural warehousing ke liye godown kiraye par lete hain, especially unregistered supplier se.",
+          "action": "Godown rent bills par 18% GST charge ya pay karein. Unregistered se renting hai to RCM ki taiyari karein.",
+          "deadline": "10.10.2024",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/godown-rent-agricultural-warehousing-attracts-18-percent-gst-aar-gujarat.html"
+        },
+        {
+          "jur": "Rajasthan",
+          "cat": "GST",
+          "authority": "Rajasthan AAR",
+          "ref": "",
+          "headline": "Psyllium seeds par 5% GST lagega, exemption nahi milegi",
+          "what": "Rajasthan AAR kehta hai fresh Psyllium seeds ki HSN 12119013 par 5% GST lagu rahegi, exemption claim reject hua.",
+          "who": "Jo traders/growers Psyllium seeds ki supply sale karte hain.",
+          "action": "Fresh Psyllium seeds ki supply/sale par 5% GST lagakar bill banayein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/fresh-psyllium-seeds-taxable-5-percent-gst-not-exempt-rajasthan-aar.html"
+        },
+        {
+          "jur": "Haryana",
+          "cat": "MSME & Scheme",
+          "authority": "Unknown",
+          "ref": "",
+          "headline": "Haryana mein MSME clearance ka naya 15 din ka niyam",
+          "what": "Haryana ne business law mein naya rule laya: ab clearance 15 din mein milne ka naya system hoga.",
+          "who": "Haryana mein naye business kholne wale MSME aur industry applicants.",
+          "action": "Application lagaane ke baad within 15 din aapko clearance milna chahiye, process mein speed ayegi.",
+          "deadline": "",
+          "source_name": "ThePrint",
+          "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVzZnYXlwaUVGZUpHb0tGUHRFR3NaSWRvWXpFTk9UeEkxUjlBUktONVpGRjVSM3dydzE4M3M3cGZPcmtaTFdrcmM2bzNzVHY4NF9iQmpaTWFpd0ZmeWZvM3d4clM3b3NpZ3BGSHJMTEdwenBjbVZNY25lUmVGNkx6bWZ2UDVqRXEzZEVtWDUyaEMzbmc5LTh2dmczMFFIaGtVOVM2TkUzZTN1bkxPbnlZTE1tT3p0bHhQNnFDaTg5QS1hR1NnTWZRY3JZSHo1RDNja2NNaXlSZnZVZkgt0gHiAUFVX3lxTE81bW15dEZhZXlJSVVycUJ5dHZMSEw2WFJSdXppWmNhdEJzQUgwTHU1aUFBV3E2aUZLajZwYmpDMExWNlR1R2hVWW9iRkRiZkluN2p2ZWZKeUJiYjB4NDYwMV9xTVNyNW5wbkZaSTdyclVnNnVqc1FIckxwT2JwRFRmVEpYZTEwSlhsQzVjbG82SExUblhVUW1WRERtQ2hwNGxGTDFxVDg5X0diWmJTMm95blpfR2NyQkFPLVdOa1hQTDZlRjBRYnJoTTZWYlhZOGJiUVNYVjduQlI5Si1UOGJEdEE"
+        }
+      ]
+    },
     {
       "date": "2026-09-25",
       "items": [
