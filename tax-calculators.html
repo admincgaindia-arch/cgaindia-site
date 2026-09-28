@@ -612,7 +612,7 @@ fbq('init','1350244116690583');fbq('track','PageView');
 </div></header>
 
 <section class="wrap sec">
-<nav class="calc-nav" aria-label="Calculators"><a href="#income-tax">Income Tax: New vs Old</a><a href="#gst">GST Calculator</a><a href="#hra">HRA Exemption</a></nav>
+<nav class="calc-nav" aria-label="Calculators"><a href="#income-tax">Income Tax: New vs Old</a><a href="#gst">GST Calculator</a><a href="#hra">HRA Exemption</a><a href="#advance-tax">Advance Tax</a></nav>
 </section>
 
 <section class="wrap sec calc" id="income-tax">
@@ -663,6 +663,35 @@ fbq('init','1350244116690583');fbq('track','PageView');
 </div>
 <p class="calc-note">HRA exemption sirf purane regime mein milti hai. Saal ka rent ₹1 lakh se zyada ho toh landlord ka PAN chahiye.</p>
 </section>
+
+<section class="wrap sec calc" id="advance-tax">
+<p class="eyebrow">Advance Tax</p>
+<h2>Advance tax &mdash; kab, kitna bharna hai</h2>
+<div class="calc-grid">
+<div class="card calc-form">
+<label>Is saal ka anumaanit tax (cess ke saath, ₹)<input id="aT" type="number" inputmode="numeric" min="0" placeholder="e.g. 150000"></label>
+<label>TDS / TCS jo pehle se kat chuka hai (₹)<input id="aD" type="number" inputmode="numeric" min="0" placeholder="0"></label>
+<label>Presumptive scheme (44AD / 44ADA)?<select id="aP"><option value="0">Nahi</option><option value="1">Haan &mdash; ek hi kisht 15 March tak</option></select></label>
+</div>
+<div class="card calc-out" id="aOut"><p class="calc-empty">Tax ka anumaan daaliye. Upar wale income tax calculator se bhi le sakte hain.</p></div>
+</div>
+<p class="calc-note">TDS ke baad bacha tax ₹10,000 ya zyada ho toh advance tax dena hota hai. Senior citizens (60+) jinki business income nahi hai, unhe advance tax nahi dena padta. Kisht late ya kam ho toh 234B / 234C ka interest lagta hai.</p>
+</section>
+<script>
+(function(){
+function v(id){var e=document.getElementById(id);var n=parseFloat(e&&e.value);return isFinite(n)&&n>0?n:0;}
+function r(n){return '₹'+Math.round(n).toLocaleString('en-IN');}
+function adv(){var t=v('aT'),d=v('aD'),p=document.getElementById('aP').value==='1',o=document.getElementById('aOut');
+if(!t){o.innerHTML='<p class="calc-empty">Tax ka anumaan daaliye.</p>';return;}
+var net=Math.max(0,t-d);
+if(net<10000){o.innerHTML='<p class="calc-big">'+r(net)+'</p><p class="calc-win">Bacha tax ₹10,000 se kam hai &mdash; advance tax zaroori nahi.</p>';return;}
+var rows=p?[['15 March tak','100%',net]]:[['15 June tak','15%',net*0.15],['15 September tak','45%',net*0.30],['15 December tak','75%',net*0.30],['15 March tak','100%',net*0.25]];
+var h='<p class="calc-big">'+r(net)+'</p><small>Advance tax (TDS ke baad)</small>';
+rows.forEach(function(x){h+='<div class="calc-row"><span>'+x[0]+' <small>(kul '+x[1]+')</small></span><b>'+r(x[2])+'</b></div>';});
+o.innerHTML=h;}
+['aT','aD','aP'].forEach(function(i){var e=document.getElementById(i);if(e){e.addEventListener('input',adv);e.addEventListener('change',adv);}});
+})();
+</script>
 
 <section class="band-cta">
 <div class="wrap cta-in">
