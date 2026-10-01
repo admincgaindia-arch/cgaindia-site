@@ -16,6 +16,12 @@
     'padding:11px 20px;border-radius:999px;text-decoration:none}' +
     '.cga-paylink:hover{filter:brightness(1.05)}';
 
+  function p_code(card) {
+    var t = card.querySelector('h3');
+    var c = card.querySelector('.tier-code');
+    return ((t ? t.textContent.trim() : '') + (c ? ' (' + c.textContent.trim() + ')' : '')).trim();
+  }
+
   function page() {
     return (location.pathname || '').split('/').pop() || 'index.html';
   }
@@ -74,14 +80,24 @@
       return;
     }
 
+    // Razorpay Payment Button: customer amount khud bharta hai, isliye amount
+    // button ke upar saaf likhna zaroori hai. Card, UPI, netbanking, wallet sab chalta hai.
     var form = document.createElement('form');
     box.appendChild(form);
 
     var s = document.createElement('script');
     s.src = SDK;
     s.async = false;                    // keeps document.currentScript set for the SDK
-    s.setAttribute('data-payment_button_id', id);
+    s.setAttribute('data-payment_button_id', url);
     form.appendChild(s);
+
+    var tip = document.createElement('p');
+    tip.className = 'cga-payhint';
+    tip.style.marginTop = '8px';
+    tip.textContent = amount
+      ? ('Pay Now dabaiye, amount mein \u20b9' + amount + ' bhariye aur Service mein "' + p_code(card) + '" likhiye. Card, UPI, netbanking \u2014 sab chalta hai.')
+      : 'Pay Now dabaiye \u2014 card, UPI, netbanking, sab chalta hai.';
+    box.appendChild(tip);
   }
 
   function start() {
