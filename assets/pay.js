@@ -25,7 +25,7 @@
     '.cga-pm-box h3{margin:0 0 4px;font-size:1.2rem;color:#003b57}.cga-pm-sub{margin:0 0 14px;font-size:.85rem;color:#46626f}' +
     '.cga-pm-x{position:absolute;right:10px;top:8px;border:0;background:none;font-size:1.6rem;cursor:pointer;color:#46626f;line-height:1}' +
     '.cga-pm label{display:block;font-size:.78rem;font-weight:700;margin:0 0 3px}' +
-    '.cga-pm input{width:100%;box-sizing:border-box;font:inherit;font-size:.95rem;padding:9px 11px;border:1.5px solid #c3d2da;border-radius:7px;margin:0 0 10px;background:#fff;color:#0c1b25}' +
+    '.cga-pm input,.cga-pm select{width:100%;box-sizing:border-box;font:inherit;font-size:.95rem;padding:9px 11px;border:1.5px solid #c3d2da;border-radius:7px;margin:0 0 10px;background:#fff;color:#0c1b25}' +
     '.cga-pm input:focus{outline:none;border-color:#005176;box-shadow:0 0 0 3px rgba(0,81,118,.13)}' +
     '.cga-pm input[readonly]{background:#f1f7fa}' +
     '.cga-pm-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}' +
@@ -42,6 +42,8 @@
     return e;
   }
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+  var STATES = ['Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli and Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Ladakh', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal'];
+  function stateOpts(sel) { return '<option value="">Select state</option>' + STATES.map(function (s) { return '<option' + (s === sel ? ' selected' : '') + '>' + s + '</option>'; }).join(''); }
   function fmt(n) { try { return Number(n).toLocaleString('en-IN'); } catch (e) { return String(n); } }
   function page() { return (location.pathname || '').split('/').pop() || 'index.html'; }
   function pageName() {
@@ -49,7 +51,7 @@
     return t || 'CGA service';
   }
   function saved() { try { return JSON.parse(localStorage.getItem(STORE) || '{}') || {}; } catch (e) { return {}; } }
-  function save(d) { try { localStorage.setItem(STORE, JSON.stringify({ name: d.name, mobile: d.mobile, email: d.email })); } catch (e) { /* storage off */ } }
+  function save(d) { try { localStorage.setItem(STORE, JSON.stringify({ name: d.name, mobile: d.mobile, email: d.email, state: d.state, gstin: d.gstin })); } catch (e) { /* storage off */ } }
 
   var cssDone = false;
   function addCss() {
@@ -106,6 +108,8 @@
       '<label for="cpName">Aapka naam / firm</label><input id="cpName" name="name" autocomplete="name" value="' + esc(u.name || '') + '">' +
       '<div class="cga-pm-row"><div><label for="cpMob">Mobile</label><input id="cpMob" name="mobile" type="tel" inputmode="numeric" autocomplete="tel" value="' + esc(u.mobile || '') + '"></div>' +
       '<div><label for="cpMail">Email</label><input id="cpMail" name="email" type="email" autocomplete="email" value="' + esc(u.email || '') + '"></div></div>' +
+      '<div class="cga-pm-row"><div><label for="cpState">State</label><select id="cpState" name="state">' + stateOpts(u.state || '') + '</select></div>' +
+      '<div><label for="cpGst">GSTIN (optional)</label><input id="cpGst" name="gstin" maxlength="15" value="' + esc(u.gstin || '') + '" placeholder="Business ho to"></div></div>' +
       '<p class="cga-pm-err" data-err></p>' +
       '<button type="submit" class="cga-paybtn" data-go>Aage badhiye &mdash; pay kariye</button>' +
       '</form>' +
@@ -133,6 +137,8 @@
         name: v('name'),
         mobile: v('mobile').replace(/[^0-9+]/g, ''),
         email: v('email'),
+        gstin: v('gstin').toUpperCase().replace(/[^0-9A-Z]/g, ''),
+        state: v('state'),
         tier: opts.tier || '',
         page: location.pathname
       };
@@ -140,6 +146,7 @@
       if (!(d.amount >= 1)) { problems.push('amount'); }
       if (d.name.length < 2) { problems.push('naam'); }
       if (d.mobile.replace(/[^0-9]/g, '').length < 10) { problems.push('10 digit mobile'); }
+      if (d.gstin && d.gstin.length !== 15) { problems.push('sahi 15-digit GSTIN'); }
       if (d.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) { problems.push('sahi email'); }
       if (problems.length) { err.textContent = 'Kripya ' + problems.join(', ') + ' bhariye.'; err.style.display = 'block'; return; }
       err.style.display = 'none';
