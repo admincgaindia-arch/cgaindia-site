@@ -91,6 +91,12 @@
     s.setAttribute('data-payment_button_id', url);
     form.appendChild(s);
 
+    var alt = document.createElement('p');
+    alt.className = 'cga-payalt';
+    alt.style.margin = '6px 0 0';
+    alt.innerHTML = 'Button na dikhe to <a href="pay.html" style="font-weight:600">yahan se pay kariye &rarr;</a>';
+    box.appendChild(alt);
+
     var tip = document.createElement('p');
     tip.className = 'cga-payhint';
     tip.style.marginTop = '8px';
