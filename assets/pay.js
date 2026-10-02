@@ -228,6 +228,7 @@
     }
 
     var openers = document.querySelectorAll('[data-cga-pay-open]');
+    if (openers.length) { addCss(); }
     for (var j = 0; j < openers.length; j++) {
       openers[j].addEventListener('click', function (e) {
         e.preventDefault();
