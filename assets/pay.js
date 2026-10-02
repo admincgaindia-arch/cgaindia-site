@@ -55,7 +55,7 @@
     if (amount) {
       note.textContent = 'Ya advance \u20b9' + amount + ' abhi bhej dijiye \u2014 baaki scope dekhne ke baad';
     } else {
-      note.textContent = 'Ya advance abhi bhej dijiye \u2014 baaki scope dekhne ke baad';
+      note.textContent = 'Quote ya invoice mil gaya? Fees yahin se online pay kariye';
     }
     box.appendChild(note);
     card.appendChild(box);
@@ -96,7 +96,7 @@
     tip.style.marginTop = '8px';
     tip.textContent = amount
       ? ('Pay Now dabaiye, amount mein \u20b9' + amount + ' bhariye aur Service mein "' + p_code(card) + '" likhiye. Card, UPI, netbanking \u2014 sab chalta hai.')
-      : 'Pay Now dabaiye \u2014 card, UPI, netbanking, sab chalta hai.';
+      : ('Pay Now dabaiye, quote/invoice ka amount bhariye aur Service mein "' + p_code(card) + '" ya invoice no. likhiye. Card, UPI, netbanking \u2014 sab chalta hai.');
     box.appendChild(tip);
   }
 
