@@ -51,7 +51,7 @@
     return t || 'CGA service';
   }
   function saved() { try { return JSON.parse(localStorage.getItem(STORE) || '{}') || {}; } catch (e) { return {}; } }
-  function save(d) { try { localStorage.setItem(STORE, JSON.stringify({ name: d.name, mobile: d.mobile, email: d.email, state: d.state, gstin: d.gstin })); } catch (e) { /* storage off */ } }
+  function save(d) { try { localStorage.setItem(STORE, JSON.stringify({ name: d.name, mobile: d.mobile, email: d.email, state: d.state, gstin: d.gstin, address: d.address })); } catch (e) { /* storage off */ } }
 
   var cssDone = false;
   function addCss() {
@@ -110,6 +110,7 @@
       '<div><label for="cpMail">Email</label><input id="cpMail" name="email" type="email" autocomplete="email" value="' + esc(u.email || '') + '"></div></div>' +
       '<div class="cga-pm-row"><div><label for="cpState">State</label><select id="cpState" name="state">' + stateOpts(u.state || '') + '</select></div>' +
       '<div><label for="cpGst">GSTIN (optional)</label><input id="cpGst" name="gstin" maxlength="15" value="' + esc(u.gstin || '') + '" placeholder="Business ho to"></div></div>' +
+      '<label for="cpAddr">Billing address <span style="font-weight:400">(GSTIN ya &#8377;50,000+ ho to zaroori)</span></label><input id="cpAddr" name="address" maxlength="200" autocomplete="street-address" value="' + esc(u.address || '') + '" placeholder="Shop/flat, area, city, PIN">' +
       '<p class="cga-pm-err" data-err></p>' +
       '<button type="submit" class="cga-paybtn" data-go>Aage badhiye &mdash; pay kariye</button>' +
       '</form>' +
@@ -139,6 +140,7 @@
         email: v('email'),
         gstin: v('gstin').toUpperCase().replace(/[^0-9A-Z]/g, ''),
         state: v('state'),
+        address: v('address'),
         tier: opts.tier || '',
         page: location.pathname
       };
@@ -147,6 +149,7 @@
       if (d.name.length < 2) { problems.push('naam'); }
       if (d.mobile.replace(/[^0-9]/g, '').length < 10) { problems.push('10 digit mobile'); }
       if (d.gstin && d.gstin.length !== 15) { problems.push('sahi 15-digit GSTIN'); }
+      if ((d.gstin || d.amount >= 50000) && d.address.length < 8) { problems.push('billing address'); }
       if (d.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) { problems.push('sahi email'); }
       if (problems.length) { err.textContent = 'Kripya ' + problems.join(', ') + ' bhariye.'; err.style.display = 'block'; return; }
       err.style.display = 'none';
