@@ -1,6 +1,128 @@
 {
-  "last_updated": "2026-10-01T02:31:17.058Z",
+  "last_updated": "2026-10-02T02:31:18.125Z",
   "days": [
+    {
+      "date": "2026-10-02",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "September 2026 GST revenue crosses Rs 2 lakh crore",
+          "what": "September 2026 mein gross GST revenue 14.7% badh kar Rs 2,03,521 crore ho gaya. Net GST revenue bhi 18.1% upar gaya.",
+          "who": "Sab GST registered businesses par lagu.",
+          "action": "September GST collection aur return filing ki details sahi se verify karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/september-2026-gross-gst-revenue-rises-14-7-percent-rs-2-04-lakh-crore.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "Notification No. 80/2026-Customs (N.T.)",
+          "headline": "Revised Customs Tariff Values effective 1st Oct 2026",
+          "what": "CBIC ne palm oil, soybean oil, brass scrap, gold, silver, aur areca nut ke liye tariff values revise ki hai. Ye Notification No. 80/2026-Customs (N.T.) ke tahat hai.",
+          "who": "Importers dealing with listed goods.",
+          "action": "1 October 2026 se naye tariff values ko import calculations mein include karein.",
+          "deadline": "01 Oct 2026",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/notification-no-80-2026-customs-revised-customs-tariff-values-1-october-2026.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "Import permit mandatory for non-insecticidal insecticide imports",
+          "what": "CBIC ne Insecticides Rules, 1971 amend kiye hain. Non-insecticidal use ke liye import hone wale insecticides (jaise acrylonitrile) par ab import permit compulsory hai.",
+          "who": "Sab importers jo insecticides non-insecticidal purpose ke liye import karte hain.",
+          "action": "Import se pehle specified insecticides ke liye permit hasil karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/import-permit-mandatory-insecticides-imported-non-insecticidal-cbic.html"
+        },
+        {
+          "jur": "Jammu and Kashmir",
+          "cat": "MSME & Scheme",
+          "authority": "Jammu and Kashmir government",
+          "ref": "",
+          "headline": "J&K notifies Electric Vehicle Policy 2026",
+          "what": "Jammu and Kashmir sarkar ne Electric Vehicle Policy 2026 notify kari hai. Nayi policy electric mobility ko promote karti hai.",
+          "who": "J&K ke auto, logistics sector, EV manufacturers, aur businesses.",
+          "action": "Nayi policy ke incentive aur compliance points ko study karein agar EV segment mein kaam karte hain.",
+          "deadline": "",
+          "source_name": "The Economic Times",
+          "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQOTQ5UkZlNjRsdVBhb1RwOVd3S3VYc1QtUHlNSG5UVld0MDZPUWtNUFplOHRXUTA2VXg4WHZ0SFVJZlpCX3NzeDVWYzhHTkJFUkk4R3hmdUROWFlSbUpFTHVtVHZXRGR1b2RCUFpKZlZrT0NGdXhBeHAwX25wTzRwMUZUbFFUVTlTcTIxanEzYjBpTHN0aFRKWnVNTS15TGQ4Z0F5MF9rRFU5c1pmUFktVUlkbm5zYmhMUE10azdnakd6bjc1aUpwdG5hdHR0bF95VkxvRFdHNTFmSjEx0gHiAUFVX3lxTE9iR3huRDdad1Ewem4xaUozYklfa3dia1NzV0VnelZVZnRRekt5Tkw0bW9Hd0NlZ09VQm5IRkx5OHNkcFNBXzRscktBcFFjdHZWRDhYdjJrdEdkSnVnY2owUGFUS194WmFtWmNfQ3lKTm12M1prQnA1OHFwbFdUZU5nNDZtYTFDaVNNTkNxaDhSMDJWZHExNEFQQU4yVXM2M1djOHR5a3EwWEZ0anpYLUIydFZteTZ4UXdwd2tWOENUdDhRSjV3TkZYaHpGcS1WRXN1UHBFLXhMZXlZdEsyM09Ydnc?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "MSME & Scheme",
+          "authority": "Union Minister of Petroleum and Natural Gas",
+          "ref": "",
+          "headline": "GOBARdhan Scheme launch for Compressed Biogas sector",
+          "what": "Union Minister ne GOBARdhan Scheme ko launch kiya hai. Scheme ka maksat India ke Compressed Biogas sector ko boost karna hai.",
+          "who": "Biogas producers, waste management businesses aur allied MSMEs ke liye.",
+          "action": "Scheme ke guidelines aur application procedure ko dekhein agar biogas sector mein kaam karte hain.",
+          "deadline": "",
+          "source_name": "kashmirdespatch.com",
+          "source_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxONkswLVhEYWZtRVhZeWFDWFVvbGFzYmF5UC0xcDFUSkJsVXJya1IwZ212cEFGOXZ0MjhlU29rQk5RODlVbWpLajhNUURudXlVWWdZamlPaTZjQXI0MGRfcUszbUs1Si1TSUFfVEQyV1dNSXhVX3RVZWhFU3FaVWV4dlZsTDRPZjhFWnpWcjV1VklTSDB5R09sUFczZ0QzTDVWWWNpTkl5ZjBtTFVkcW5KRVp1QlBvNk9IQ1R6UU1wNFRkVjJsbDJVNThyNUU2ZHJQY3Z0dV91QVNITHFpdzV3UVNHUmNMUTRXV3FSb0dWRTdnMFlmYWgyVEluYl9XRFdfblBFMHAwZGJYb2NaMG9uZg?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "MCA / ROC",
+          "authority": "",
+          "ref": "",
+          "headline": "Secretarial Standards SS-1, SS-2: Minutes compliance guide",
+          "what": "Company meetings ke liye Secretarial Standards SS-1 (Board meetings) aur SS-2 (General meetings) ka follow hona zaruri. Inmein drafting, signing, preservation aur timelines ka process diya hai.",
+          "who": "All companies incorporated under Companies Act, 2013.",
+          "action": "Meetings ki minutes banate waqt SS-1 aur SS-2 standards ko strictly follow karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/company-law/secretarial-standards-minutes-companies-act-2013-ss-1-ss-2.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CAAR Mumbai",
+          "ref": "",
+          "headline": "Kitchen exhaust hoods 120 cm+ under CTH 8414 80 90",
+          "what": "CAAR Mumbai ka kehna hai ki 120 cm se bade kitchen exhaust hoods with Capture Jet fan ab CTH 8414 80 90 me classifiable hai, CTH 8414 59 90 nahi.",
+          "who": "Importers of big kitchen exhaust hoods with Capture Jet fan.",
+          "action": "Import classification aur customs paperwork mein sahi HSN use karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/kitchen-exhaust-hoods-120-cm-classifiable-cth-8414-80-90-caar-mumbai.html"
+        },
+        {
+          "jur": "Delhi",
+          "cat": "MSME & Scheme",
+          "authority": "Delhi Government",
+          "ref": "",
+          "headline": "Delhi MSME Conclave mein local business support pe zor",
+          "what": "Delhi government ne MSME Conclave organize kiya. Conclave ne local enterprises ke support pe highlight diya hai.",
+          "who": "Delhi ki MSMEs aur startups ke liye.",
+          "action": "Conclave ke recommendations aur support schemes ka fayda lene ke liye government websites check karein.",
+          "deadline": "",
+          "source_name": "Construction World",
+          "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbC1nU2JzOVd0aXRNLVNOLWVVdXc2ZWdpOVJvREdGVmtpNnlVZTBoTHh3aWpnTllEcy1QRkpSZkx4R3lxTXVKMldHaHNlbE8wVjk0VVNlVE5mUWJ0aFl3S3JzaERCVE1UVnZIdnZXaktLRVJ2Ty1aakhNNmV3U19rRXQybDFRTk5uM3pYeW1UMjFyNDR5OC1lYUhHYlplYWVQLTNqODNWYnBhOGFyOHBFcnBkb2I4TWVNVzJsRVRubmlud1hWNjZxV1ppM3A?oc=5"
+        },
+        {
+          "jur": "Karnataka",
+          "cat": "GST",
+          "authority": "",
+          "ref": "",
+          "headline": "Karnataka GST collection Rs 2.04 lakh crore, 14.7% growth",
+          "what": "Karnataka mein September 2026 GST collection 14.7% badha, total Rs 2.04 lakh crore hua.",
+          "who": "Karnataka ke GST registered businesses.",
+          "action": "Monthly GST return ki filing timely karein, increased compliance focus rakhein.",
+          "deadline": "",
+          "source_name": "newskarnataka.com",
+          "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMHdyX21YbmU0Q21lSkxpZTZYRnBaUmx0RTU3cmZjU2tHSXRMNUdxTkZmVUlvWWRZRDNveWVfVW91TC0wYVBrYkY1djlMdnZya1B0SkkycENHeGt0bjR1bEhWajRwVWRNS0dWTk1PY1FqdFRDN0I3bXFhb2l6STdJTXRPWHB1RE91dGR3c2Z4d1I0akc0amdVbDhCNHlNdw?oc=5"
+        }
+      ]
+    },
     {
       "date": "2026-10-01",
       "items": [
