@@ -99,3 +99,43 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount); else mount();
 })();
+
+/* CGA visitor analytics (first-party, no cookies, no raw IP stored).
+   Sends one small beacon per page view + WhatsApp / call / pay clicks to n8n.
+   Team members can exclude their own visits by opening any page with ?notrack=1 (undo: ?notrack=0). */
+(function () {
+  try {
+    var API = 'https://cga.app.n8n.cloud/webhook/cga-track';
+    if (navigator.webdriver || /bot|crawl|spider|headless|lighthouse/i.test(navigator.userAgent || '')) { return; }
+    var q = location.search || '';
+    if (/[?&]notrack=1/.test(q)) { localStorage.setItem('cga_notrack', '1'); }
+    if (/[?&]notrack=0/.test(q)) { localStorage.removeItem('cga_notrack'); }
+    if (localStorage.getItem('cga_notrack') === '1') { return; }
+    var rnd = function () { return Date.now().toString(36) + Math.random().toString(36).slice(2, 10); };
+    var vid = localStorage.getItem('cga_vid'), nv = 0;
+    if (!vid) { vid = rnd(); localStorage.setItem('cga_vid', vid); nv = 1; }
+    var sid = sessionStorage.getItem('cga_sid'), ns = 0;
+    if (!sid) { sid = rnd(); sessionStorage.setItem('cga_sid', sid); ns = 1; }
+    var n = Number(sessionStorage.getItem('cga_pv') || 0) + 1;
+    sessionStorage.setItem('cga_pv', String(n));
+    var p = new URLSearchParams(q);
+    var ref = document.referrer || '';
+    if (ref.indexOf(location.host) >= 0) { ref = ''; }
+    var send = function (d) {
+      d.v = vid; d.s = sid;
+      try { fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d), keepalive: true }).catch(function () {}); } catch (e) {}
+    };
+    send({ e: 'pageview', nv: nv, ns: ns, n: n, p: location.pathname, t: (document.title || '').slice(0, 120), r: ref.slice(0, 200), us: p.get('utm_source') || '', um: p.get('utm_medium') || '', uc: p.get('utm_campaign') || '', l: navigator.language || '' });
+    document.addEventListener('click', function (ev) {
+      var a = ev.target && ev.target.closest ? ev.target.closest('a,button') : null;
+      if (!a) { return; }
+      var href = a.getAttribute('href') || '';
+      var type = '';
+      if (href.indexOf('wa.me') >= 0 || href.indexOf('whatsapp') >= 0) { type = 'whatsapp'; }
+      else if (href.indexOf('tel:') === 0) { type = 'call'; }
+      else if (href.indexOf('mailto:') === 0) { type = 'email'; }
+      else if (a.classList.contains('cga-paybtn') || href.indexOf('pay.html') >= 0) { type = 'pay_click'; }
+      if (type) { send({ e: type, ns: 0, p: location.pathname, t: (a.textContent || '').trim().slice(0, 80) }); }
+    }, true);
+  } catch (e) {}
+})();
