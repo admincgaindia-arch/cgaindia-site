@@ -9,7 +9,7 @@ var T={
 };
 var S=[['Naveen Kumar','SE',' over 6+ years'],['Krishan Kumar','SE',' over 5+ years'],['Suresh Kumar','SE',' over 5+ years'],['Shrey Jain','SE',' over 3+ years'],['Pankaj','SE',' over 3+ years'],
 ['Kanika','SA',''],['Ranjay','AS',''],['Ravi','AS',''],['Hemant Sharma','AS',''],['Sanjay Kumar','AS',''],['Deepak','AS',''],['Shubham','AS',''],
-['Anurag','JA',''],['Ankit','JA',''],['Ritu','JA',''],['Kafi','JA',''],['Rahul','JA',''],['Sushil','JA',''],['Suman','JA',''],['Ashish','JA',''],['Aniket','JA',''],['Vishal Bhoria','JA','']];
+['Anurag','JA',''],['Ankit','JA',''],['Ritu','JA',''],['Kafi','JA',''],['Rahul','JA',''],['Sushil','JA',''],['Suman','JA',''],['Ashish Malik','JA',''],['Aniket','JA',''],['Vishal Bhoria','JA','']];
 var MAP={};S.forEach(function(r,i){MAP[r[0].toLowerCase()]={n:r[0],k:r[1],x:r[2],no:'CGA/APR/2026/'+('00'+(i+1)).slice(-3)};});
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 var uid=0;
