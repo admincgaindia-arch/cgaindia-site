@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-10-07T02:31:17.671Z",
+  "last_updated": "2026-10-08T02:31:15.360Z",
   "days": [
+    {
+      "date": "2026-10-08",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GST Council",
+          "ref": "",
+          "headline": "GST Council set to take up major process overhaul",
+          "what": "GST Council is planning to discuss the next round of GST reforms, focusing on overhauling compliance processes to boost ease of doing business. These changes follow reforms initiated last year.",
+          "who": "Businesses, traders, startups, and GST professionals across India.",
+          "action": "Track GST Council announcements for new compliance procedures that may be rolled out soon.",
+          "deadline": "",
+          "source_name": "Fortune India",
+          "source_url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPbU9WTG04cXlQWm80Rk5qTFFYOE5JeXpQWFpDcDl3M1lKZEhKNWZjTklxUlRLcnhTaTMxMzdIYTNHa08wNGo3SEhJazR1VlJWcmJZS1pnWXRIWUFqeHczTG1kM3JremMzdjFPVzFUWGpjbHhFVXB5N3NMT1FtbE42VktCcndwcGhRU3F2NlhHVi1sVnZFcWVycmI3YllkUHhUNHgzNHFyMXpMc1JfOGIwMWdnemFwWk5HaTd3cC1YSHppNVBRcUdVMUt3Y1pEb0hDWTE2Y1BpbDlacTh4Z2NQcnlaUXhBajRrRXpZTVFUNmhJTmEtblow0gGEAkFVX3lxTE16endURWdsVjJsek1fT1hZSkh0M2tnM0JINXZGLUdzXzBNeXZsSGJGYzkzdnB4aXZfT2dFX3hLSHJuaGQyMTBKUG5EWko2WGw5cGx0blBGcmdpeFFyeVJiMDN1bEVoU3h4R3EzbEk2SFJhaW1vTEVmUzk4N2dqNW4zVjZNWk1ySndoX0pFZmhVTlZESWd1alR3cWNQZ01QODV5NDN5SFI3VmZaRmFhNEotY095SGVFR2dYMmFJWXJHdzIxOGN1YmtRbHRmaW91OHVGRVJYdURrMlg2TExxRVFZOFZuMWhLTTE1MkJtb3ZRZDlmN1h5SHN0YmdwQlBqYkloc1B3?oc=5"
+        },
+        {
+          "jur": "Delhi",
+          "cat": "MSME & Scheme",
+          "authority": "",
+          "ref": "",
+          "headline": "Delhi launches Rs 65-cr DRISHTI project to push PM-UDAY scheme",
+          "what": "A Rs 65-crore DRISHTI project has started to give a fresh boost to the PM-UDAY scheme in Delhi. This aims at regularizing unauthorized colonies.",
+          "who": "Property owners and residents in Delhi’s unauthorized colonies under PM-UDAY.",
+          "action": "Residents should keep documents ready for verification or updates related to property regularisation.",
+          "deadline": "",
+          "source_name": "The Tribune",
+          "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTkk4SEx1cm43N3A4Y3dnOGI2ZVlfVUxZR2Z3UFBNNXlQUU01LWUyZzFHNnl1cXRFZzkzaGVvWExNVU1adzdndHd1d1JYYWVVVS1ROUpMb2ZBaWlTX19nYTFFNmlvcnQxSjE0TXNmNFVtczhZNzI1NGwtSFM2UkpsTEhvWU4xckVrdjFpODduUHA1OUtDcW9TTWlCN2VibU1MQ0h1T3AwYVU0el9TLS14ZEVMNW1WQllrZ2ZQTUtxem04SWg3RWxzV2djR1ZjcEdl0gHQAUFVX3lxTE5OSThITHVybjc3cDhjd2c4YjZlWV9VTFlHZndQUE01eVBRTTUtZTJnMUc2eXVxdEVnOTNoZW9YTE1VTVp3N2d0d3V3UlhhZVVVLVE5SkxvZkFpaVNfX2dhMUU2aW9ydDFKMTRNc2Y0VW1zOFk3MjU0bC1IUzZSSmxMSG9ZTjFyRWt2MWk4N25QcDU5S0Nxb1NNaUI3ZWJtTUxDSHVPcDBhVTR6X1MtLXhkRUw1bVZCWWtnZlBNS3F6bThJaDdFbHNXZ2NHVmNwR2U?oc=5"
+        },
+        {
+          "jur": "Punjab",
+          "cat": "Labour",
+          "authority": "",
+          "ref": "",
+          "headline": "Punjab Labour Code 2026: 10 big changes for HR & legal teams",
+          "what": "Punjab Labour Code 2026 brings ten major changes making many HR decisions into legal matters. New rules are now notified impacting employment practices.",
+          "who": "All businesses, factories, and offices employing staff in Punjab.",
+          "action": "HR teams should study new code and update company HR policies, contracts, and compliance systems as per new law.",
+          "deadline": "",
+          "source_name": "Minute Mirror",
+          "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSkNWXzBEaFJIT0N3M0oyeDZqR3RlMmE4bjhyZGhjNDl0V1dxNXV2bFJNd0huUV9NT0dtdGJuQ1dRZlltOHZZSXAxZEVFT3ctZGdEeEI2TG1hMDdJd2ZRYWVHcDVFeExxV0EzYlA2Mk9RRDdoQUV0M25URmFLNlluRC1hd292cFk1TUs4dlFmRWYyRG9ucVd4TnlEYVdyYlhUVjJjbDRWU2FLSThUanJSMThFR0F3dw?oc=5"
+        },
+        {
+          "jur": "Gujarat",
+          "cat": "GST",
+          "authority": "Gujarat AAR",
+          "ref": "",
+          "headline": "Gujarat AAR: 5% GST on playground, 18% on gym equipment",
+          "what": "Gujarat AAR clarified GST rates: 5% for outdoor playground equipment and parts, 18% for outdoor gym equipment and parts. Bearings placed under HSN 8482.",
+          "who": "Manufacturers, importers, and sellers of playground and gym equipment in Gujarat.",
+          "action": "Apply correct GST rate on invoices as per item—5% for playground, 18% for gym equipment.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/outdoor-playground-equipment-attracts-5-percent-gst-gym-equipment-18-percent-gujarat-aar.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "MCA / ROC",
+          "authority": "MCA",
+          "ref": "",
+          "headline": "MCA notifies Indian Corporate Law Service Rules, 2026",
+          "what": "Ministry of Corporate Affairs (MCA) has notified Indian Corporate Law Service Rules, 2026. Rules deal with recruitment, grades, service conditions, probation and promotions for Indian Corporate Law Service cadre.",
+          "who": "Aspiring and current officers in Indian Corporate Law Service, legal and compliance departments tracking company law.",
+          "action": "If you’re preparing for ICLS or HR in corporate compliance, download and review the new service rules from MCA website.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/company-law/indian-corporate-law-service-rules-2026-notified-mca.html"
+        },
+        {
+          "jur": "Haryana",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "",
+          "ref": "",
+          "headline": "Haryana extends One-Time Settlement deadline to 30 Nov 2026",
+          "what": "Haryana government has extended the last date of its One-Time Settlement Scheme, 2026 till November 30, 2026. This gives more time for eligible taxpayers to settle pending dues.",
+          "who": "Taxpayers in Haryana eligible under the One-Time Settlement Scheme, 2026.",
+          "action": "If you qualify under the scheme, apply for settlement of dues by the new deadline.",
+          "deadline": "30 Nov 2026",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaExIV0FxWUwtcU1lZDdKNGwzVS1GeTREelZaTVNmQWRTTHJyUXJOVzQtOGlYNXlDLUpwd2JmY3dxc1ExaWFCUEY2Vm5wZGdnUUNIMzc4NUFObmdYWTMxbjBDcWZCZDRzMWhrSFZTV29TWGd5UVJ6Q3dUT2JvWTc1WS1iV0ZDTTUzS0RvZFpiTUZFLVVHMzl1TnVWQ2VOTWE5U2RUcA?oc=5"
+        },
+        {
+          "jur": "Gujarat",
+          "cat": "GST",
+          "authority": "Gujarat AAR",
+          "ref": "",
+          "headline": "GST on geomembrane reduced to 5% from 22 Sep 2025",
+          "what": "Gujarat AAR rules: Geomembrane under HSN 59111000 gets GST cut from 12% to 5%, effective from 22 September 2025.",
+          "who": "Businesses dealing in geomembrane products under HSN 59111000.",
+          "action": "From 22 Sep 2025, charge GST at 5% on applicable geomembrane transactions.",
+          "deadline": "22 Sep 2025",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/geomembrane-classified-hsn-59111000-gst-reduced-5-percent-gujarat-aar.html"
+        }
+      ]
+    },
     {
       "date": "2026-10-07",
       "items": [
