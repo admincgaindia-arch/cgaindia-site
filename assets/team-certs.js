@@ -8,9 +8,9 @@ var T={
  JA:{t:'Rising Professional Award',b:'#0e7ea0',a:'#4bbdd8',e:'CGA TEAM RECOGNITION \u00b7 2026',k:'\u0906\u091c \u0915\u0940 \u092e\u0947\u0939\u0928\u0924, \u0915\u0932 \u0915\u0940 \u092a\u0939\u091a\u093e\u0928',s:'RISING STAR',d:0,c:'In encouragement of your commitment and eagerness to learn as Junior Assistant \u2014 the effort you put in today builds the professional you will be tomorrow.'}
 };
 var S=[['Naveen Kumar','SE',' over 6+ years'],['Krishan Kumar','SE',' over 5+ years'],['Suresh Kumar','SE',' over 5+ years'],['Shrey Jain','SE',' over 3+ years'],['Pankaj','SE',' over 3+ years'],
-['Kanika','SA',''],['Ranjay','AS',''],['Ravi','AS',''],['Hemant Sharma','AS',''],['Sanjay Kumar','AS',''],['Deepak','AS',''],['Shubham','AS',''],
+['Kanika','SA',''],['Ranjay','AS',''],null,null,null,null,null,
 ['Anurag','JA',''],['Ankit','JA',''],['Ritu','JA',''],['Kafi','JA',''],['Rahul','JA',''],['Sushil','JA',''],['Suman','JA',''],['Ashish Malik','JA',''],['Aniket','JA',''],['Vishal Bhoria','JA','']];
-var MAP={};S.forEach(function(r,i){MAP[r[0].toLowerCase()]={n:r[0],k:r[1],x:r[2],no:'CGA/APR/2026/'+('00'+(i+1)).slice(-3)};});
+var MAP={};S.forEach(function(r,i){if(!r)return;MAP[r[0].toLowerCase()]={n:r[0],k:r[1],x:r[2],no:'CGA/APR/2026/'+('00'+(i+1)).slice(-3)};});
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 var uid=0;
 function seal(size,top){
@@ -35,7 +35,7 @@ function cert(m){
  +'<div class="cc-mid"><div class="cc-pre">This certificate is proudly presented to</div><div class="cc-name">'+esc(m.n)+'</div><div class="cc-rule" style="border-color:'+a+'"></div><p class="cc-cit">'+esc(t.c.replace('{x}',m.x))+'</p></div>'
  +'<div class="cc-foot"><div class="cc-sig"><div class="cc-script">Neeraj Jain</div><div class="cc-line"></div><b>Neeraj Jain</b><span>Founder &amp; CEO, Canjain Global Advisors</span></div>'
  +'<div class="cc-seal">'+seal(150,t.s)+'</div><div class="cc-iss"><span>Issued at Canjain Global Advisors</span><b>October 2026</b></div></div>'
- +'<div class="cc-meta"><span>Certificate No. '+m.no+'</span><span>cgaindia.com</span><span>Mathura \u00b7 Delhi \u00b7 Rohtak \u00b7 Safidon</span></div></div></div>';
+ +'<div class="cc-meta"><span>Certificate No. '+m.no+'</span><span>cgaindia.com</span><span>Delhi \u00b7 Noida \u00b7 Rohtak \u00b7 Safidon</span></div></div></div>';
 }
 var CSS='.cc-badge{display:flex;align-items:center;justify-content:center;gap:8px;margin:10px auto 0;padding:7px 12px 7px 8px;border:1px solid #e3cf95;background:linear-gradient(180deg,#fffaf0,#fbf1d8);border-radius:999px;font-family:inherit;font-size:.72rem;font-weight:600;line-height:1.2;color:#6e5012;cursor:pointer;max-width:100%;transition:box-shadow .15s,transform .15s}'
 +'.cc-badge:hover,.cc-badge:focus-visible{box-shadow:0 6px 18px -8px rgba(122,90,20,.55);transform:translateY(-1px);outline:none}.cc-badge:focus-visible{outline:2px solid #b08a3e;outline-offset:2px}.cc-badge svg{flex:none}.cc-badge span{text-align:left}.cc-badge{font-size:.72rem}@media(max-width:640px){.cc-badge{padding:6px 10px 6px 6px;gap:6px}}.cc-badge em{display:block;font-style:normal;font-weight:500;font-size:.66rem;color:#8a6a24}'
