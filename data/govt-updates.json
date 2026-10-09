@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-10-08T02:31:15.360Z",
+  "last_updated": "2026-10-09T02:31:24.483Z",
   "days": [
+    {
+      "date": "2026-10-09",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GST Council",
+          "ref": "",
+          "headline": "GST Council approves quarterly tax payment for small biz",
+          "what": "GST Council ne optional quarterly tax payment scheme approve kiya hai chhote businesses ke liye. Ab chhote businesses mahine ke bajaye quarter mein tax file kar sakte hain.",
+          "who": "Small businesses jo GST mein registered hain.",
+          "action": "Agar eligible hain to quarterly payment scheme ka option select kar sakte hain apne GST portal par.",
+          "deadline": "",
+          "source_name": "Livemint",
+          "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNzhlTWpDb05xTWUxVzA5OFVDZTRFRkRGOEtzWGJQQzhxaElmeHhKcE5jbE1aQXdCcHM4dWdmNjBTWXhzaGdqaHFWT3BSZkhiUjM4UVF4YXl5aWxFNXctbHlGZTB3UGU5RjhKZHZCYk9VSURaYm1aZGxicFUzRkhobGV1MU1SeGtCc0NQUVFieDRDbWVqVUxpc0Fha2lJUmpLOU1UQl9Oa25vUUk2aUhicTZuOG5WbUhEdVVmM2EzY3N0aEYtUkg3NkNKMm5VQk1Bd1lIbW9n0gHWAUFVX3lxTFA3OGVNakNvTnFNZTFXMDk4VUNlNEVGREY4S3NYYlBDOHFoSWZ4eEpwTmNsTVpBd0Jwczh1Z2Y2MFNZeHNoZ2pocVZPcFJmSGJSMzhRUXhheXlpbEU1dy1seUZlMHdQZTlGOEpkdkJiT1VJRFpibVpkbGJwVTNGSGhsZXUxTVJ4a0JzQ1BRUWJ4NENtZWpVTGlzQWFraUlSaks5TVRCX05rbm9RSTZpSGJxNm44blZtSER1VWYzYTNjc3RoRi1SSDc2Q0oyblVCTUF3WUhtb2c"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GST Council",
+          "ref": "",
+          "headline": "GST Council reforms: Refund, registration, litigation par aasaaniyan",
+          "what": "GST Council ne refund, registration aur litigation process ko simplify karne ke reforms announce kiye hain. Ye reforms GST compliance ko business-friendly banayenge.",
+          "who": "All GST registered taxpayers.",
+          "action": "GST portal par naye processes ke guidelines check karen aur accordingly filings aur refund claims karein.",
+          "deadline": "",
+          "source_name": "The Hindu",
+          "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS3I4Wm1rV2d4NFdTRm8wY3JvSUgyUWJReVVESUxsTFJyNWZ5ZnRSdFozNUQ4cHAzNjB3MVhmQV9tRWxPNmhOMURtSWFhbHBialQ5c0c0MUh1Q0RQMGdfOEY3dHZvekxmLUhJcUE2cW5RbHpYRDlGUFdKNkVFR1NiTTl0b0xTbHNhaXJSNFFTdlpqbUVKRG5yMDNtbGF1bDh2ekV5LTRSUGZqZUlVUGVLWnNDOVRlOXc5bmt6UjRqcTRJbmR4emNvX2pvQUJ1TE04ZHk5WGwwdE5NWmdLb2hpT9IB5wFBVV95cUxPMHh3SlJnZGpyNS15ZFVIUndIVG42WEZYTlN2eFNWVUt1ZUNnR0RONUtvb3U2VVl4NFBBQWx6NXBudmtCOTZ1eVFIS1RON2piQjd3UnF3UFlnMFVRLVcyb1BfSjJVWDd0MG1WQ2FiLU8ybjdZTUFQM05OY19qM3E3SkRHeHktelVscEpHaThZS1NMWlJHcU0wa3BqNE9CR0w0UXk0SnNGU1dRQ0hNdEtoUDYyX1hKdU5OTXB5TmwzZ20za3VfZXU2aFBhVk94d2hMelNNT0drQ0pSYjBGMFZUM2Eyd1FwMXc"
+        },
+        {
+          "jur": "Rajasthan",
+          "cat": "MSME & Scheme",
+          "authority": "Rajasthan Government",
+          "ref": "",
+          "headline": "Rajasthan MSMEs ke liye digital invoice financing push",
+          "what": "Rajasthan sarkar ne MSMEs ke cash flow ko behtar banane ke liye digital invoice financing ko promote karna shuru kiya hai.",
+          "who": "Rajasthan ke MSME units jo invoice discounting solution use karte hain.",
+          "action": "Eligible MSMEs apne invoices registered digital platform par upload karke financing option le sakte hain.",
+          "deadline": "",
+          "source_name": "rajasthan.economictimes.indiatimes.com",
+          "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPaUxJSFNrT0l1UG1RT1diLWdNeHQ1SHJHYlpacmZrTVF5UDUybUZ6Z0d0Zl9RVDN2Y0YtTy0yU3E5dVo2dWRYVlZvY2w0OW1yNFJSVGNFNEk1R3FkQ1NNZzV4Rkw0SkI2aG1TUGtkc0VKQ3ZJU2p5WlQwWVk1ZF9IdnJQZDFCcXhDQVd4LVBOQXJMU0FQTTlFMTlzS2FNbGtTTjdtVHhMc01RTGczemlkbTlSY1FEWGk1OHVFMHZfNFBSOUVfdlpxdzlHX0FnMWvSAdMBQVVfeXFMTTR5SUdGcUdheVVScHZ6R29PM2NCUVlLT3UzX2JYQWo4T2FfVXp6Nm1DRVdCa0RGRkNsa1BReDQtNGU0UmREVVRTcS0ybVZkaGJ5cWo1eG1RcGJERm4yMGJ5WkFLRGV1U3J6VTdJQjA2WWVrZUNZQ2pBWmdLQmU2WUVLOU1SbVVxdHRZMktxZE4xV1NSblBtdkFqTGhZMEZWVklqTXo1dzQ1cVF1NWw0WVA3cW9lb2JrUzZUWkV5b3ltSzJIbFdjd2w3bjRkTWxDRFYzYw"
+        },
+        {
+          "jur": "Punjab",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Punjab Government",
+          "ref": "",
+          "headline": "Punjab mein leasehold to freehold conversion approve, 5% fee lagegi",
+          "what": "Punjab sarkar ne industrial reforms mein leasehold property ko freehold mein convert karne ki approval de di hai. Is conversion par 5% fee lagegi.",
+          "who": "Punjab ke industrial property holders jiski property leasehold par hai.",
+          "action": "Interested industrial units sarkari process follow karke conversion ke liye apply kar sakte hain, 5% fee jama karani hogi.",
+          "deadline": "",
+          "source_name": "Goodreturns",
+          "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVUsycmFrMWg0MWxYM21NMlpDVkRKVVNJdmE4cXZWa3prWG9JOWJnZERMVzEzWlZfbmFMSkh3TTc1dno0NWhkNXo1bzZlQUNldGozTDFwV0pybUpVX01YdW5jNnVnejNJcVc2by1zeEJaaUF1TUNOek1yeTM3dnFab3Y3TTJIRHhlcUk4UFhPdTA1VUxFNi1CS0lsRm5oYWZRTGlROWppUWdUdVVZVm1NN2RxV1MyM0lmd0E"
+        },
+        {
+          "jur": "Jammu and Kashmir",
+          "cat": "Other",
+          "authority": "J&K Government",
+          "ref": "",
+          "headline": "J&K City Gas Distribution Policy notify hua, PNG/CNG sabhi districts mein",
+          "what": "Jammu & Kashmir sarkar ne City Gas Distribution Policy notify ki hai. Is policy ke tahat PNG (piped natural gas) aur CNG (compressed natural gas) ka expansion sabhi 20 districts mein hoga.",
+          "who": "J&K ke industrial, commercial, aur residential gas consumers.",
+          "action": "PNG/CNG connection ke liye application process aur distribution agency ki guidelines follow karein.",
+          "deadline": "",
+          "source_name": "The New Indian Express",
+          "source_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNOXF4clJad19SZ1VRNWpVRjV4NHJvdWhtVldqUHBGbHNPYWw0ZzhCMzdxZGxYRVluemZJTjJkbUxJMldvUlRyWl9MbHhuOUNERnlFSXJaT25VbzJBQURLbmZEUnYwNHpBLUt3NGN3TkZfTGdldkV2S2R6aHNyaFhIejRGYmMySmlYY19rZm9CTkZyZ1dUZXdEQzVfRXZMeU5vRUt3NF9uWGQ3a3Q0UHhhOG1iZEt1YWZyTFVXRnIzVEY5X3B6ZTMyWHNGR3FmbEJHal9yM01uR1ZIN2xKeFhaUU1Pdl9RS0EtTkHSAeoBQVVfeXFMTTlxeHJSWndfUmdVUTVqVUY1eDRyb3VobVZXalBwRmxzT2FsNGc4QjM3cWRsWEVZbnpmSU4yZG1MSTJXb1JUclpfTGx4bjlDREZ5RUlyWk9uVW8yQUFES25mRFJ2MDR6QS1LdzRjd05GX0xnZXZFdktkemhzcmhYSHo0RmJjMkppWGNfa2ZvQk5GcmdXVGV3REM1X0V2THlOb0VLdzRfblhkN2t0NFB4YThtYmRLdWFmckxVV0ZyM1RGOV9wemUzMlhzRkdxZmxCR2pfcjNNbkdWSDdsSnhYWlFNT3ZfUUtBLU5B"
+        },
+        {
+          "jur": "Telangana",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Telangana Excise Department",
+          "ref": "",
+          "headline": "Telangana me 41 new 2B Bar Licences ke liye applications invite",
+          "what": "Telangana Excise Department ne 41 naye 2B Bar Licences ke liye applications mangi hain. Isse naye bar kholne ke mauke milenge.",
+          "who": "Entrepreneurs aur businesses jo Telangana me nayi 2B bar kholna chahte hain.",
+          "action": "Interested applicants application process aur eligibility terms Excise Department ki website se check karein aur taiyari shuru karein.",
+          "deadline": "",
+          "source_name": "Aabkari Times",
+          "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMmplaFdvQVMtMDM4NmszSWhZQVloM1BpOGFFN2RKejZHSFlTek5IeFhmU2ZGT3dOTUpNMGdhSGhERGFwN2VQUHQyZEhmTkpoNlB3U3Q2WDdPVXVTMk9yRmNQNVFkUkllaWdpcUlDT0h4b3VKOW1iYzk2V2p3TVVRYmhMbXVDbFZONzhMQnphNlNSN09WWmp2NVNYZ3NOSmlVQ3FwQkpiU3A1M1RFdHc"
+        },
+        {
+          "jur": "Delhi",
+          "cat": "MSME & Scheme",
+          "authority": "Union Cabinet",
+          "ref": "",
+          "headline": "Delhi-NCR mein purane trucks/buses ke liye badlao scheme Cabinet approve",
+          "what": "Cabinet ne 9,585-crore rupaye ki scheme approve ki hai jisse Delhi-NCR region mein purane trucks aur buses ko replace kiya jayega.",
+          "who": "Delhi-NCR ke transporters aur fleet owners jin ke paas purane trucks ya buses hain.",
+          "action": "Scheme ke guidelines follow kar ke replacement ke liye apply karein, notified authority se details lein.",
+          "deadline": "",
+          "source_name": "DD News",
+          "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNczNUTG5lNkc0RExUN3dHMUhyNUNGRW1BT1VUX2c4M0ExbXdYOGIzc3A3b21NcFVmM0tCNks0T3M3V0xfdGpNcFlXbkNhNGxrLTBIV0JtNlhpQjJFVUFhMkpRWHhmT0JzdXBySkRTUVhsazJ2a0pnemVYczM1d3Zqb1Q3YmNFSjF3OE9LYUdpUmZadDctQzhHV1ROaFFxRmhVQ3lqOG1VRGVZTVFoTjB2Tjl6RG0?"
+        }
+      ]
+    },
     {
       "date": "2026-10-08",
       "items": [
