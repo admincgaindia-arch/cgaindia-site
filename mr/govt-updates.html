@@ -611,7 +611,7 @@ fbq('init','1350244116690583');fbq('track','PageView');
 .gu-dd{font-weight:800;color:var(--g-navy);font-size:1.15rem;line-height:1}
 .gu-dd small{display:block;font-size:.7rem;font-weight:600;color:var(--g-slate)}
 .gu-small{font-size:.8rem;color:var(--g-slate);margin:10px 0 0;line-height:1.5}
-@media(max-width:900px){.gu-grid{grid-template-columns:1fr}.gu-side{position:static}}
+@media(max-width:900px){.gu-grid{grid-template-columns:minmax(0,1fr)}.gu-grid>*{min-width:0}.gu-side{position:static}}
 </style>
 
 <section class="wrap sec" id="feed">
