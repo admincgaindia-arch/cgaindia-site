@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 Sitemap: https://cgaindia.com/sitemap.xml
 Sitemap: https://cgaindia.com/sitemap-judgments.xml
+Sitemap: https://cgaindia.com/sitemap-insights.xml
