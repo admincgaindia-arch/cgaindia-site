@@ -1,3 +1,25 @@
+/* Google Analytics 4 (CGA India) — loaded once on every page via lang.js */
+(function () {
+  if (window.__cgaGA) { return; }
+  window.__cgaGA = 1;
+  var id = 'G-RELRD3NTXG';
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+  (document.head || document.documentElement).appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', id);
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a) { return; }
+    var h = a.getAttribute('href') || '';
+    if (h.indexOf('wa.me') > -1) { window.gtag('event', 'generate_lead', { method: 'whatsapp' }); }
+    else if (h.indexOf('tel:') === 0) { window.gtag('event', 'generate_lead', { method: 'phone' }); }
+  }, true);
+})();
+
 /* CGA language switcher — folder based. Each language lives at /<code>/<page>. English is the root. */
 (function () {
   var LANGS = [
