@@ -20,6 +20,9 @@
   }, true);
 })();
 
+/* CGA layout guard: long words (e.g. ACIT/ITO) never push a page sideways */
+(function () { var st = document.createElement('style'); st.textContent = 'h1,h2,h3,h4{overflow-wrap:break-word}'; (document.head || document.documentElement).appendChild(st); })();
+
 /* CGA mega menu v2 — rebuilds the Services dropdown on English pages (one place for every service) */
 (function () {
   var seg = location.pathname.split('/').filter(Boolean);
