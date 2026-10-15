@@ -47,8 +47,10 @@
       ['roc-annual-compliance.html', 'ROC Annual Compliance', 'AOC-4, MGT-7, DIR-3 KYC'],
       ['company-secretarial.html', 'Company Secretarial', 'Director, share transfer, MCA'],
       ['company-closure.html', 'Company Closure', 'STK-2, LLP Form 24'],
+      ['company-buy-sell.html', 'Company Takeover', 'Buy / sell, share transfer', 'Naya'],
       ['ngo-registration.html', 'NGO &middot; 12AB &middot; 80G', 'Trust, society, exemption'],
       ['section-8-company.html', 'Section 8 Company', 'Licence, CSR-1'],
+      ['society-compliance.html', 'Society &amp; Co-operative', 'Registration, annual return', 'Naya'],
       ['producer-company.html', 'Producer Company (FPO)', 'Farmer producer org'],
       ['startup.html', 'Startup Services', 'Incorporation se funding'],
       ['startup-india.html', 'Startup India &amp; Grants', 'DPIIT, 80-IAC, seed fund'],
@@ -68,7 +70,8 @@
       ['due-diligence.html', 'Due Diligence', 'Financial, tax, legal'],
       ['business-valuation.html', 'Business Valuation', 'Rule 11UA, FEMA, ESOP'],
       ['accounting-bookkeeping.html', 'Accounting &amp; Bookkeeping', 'Tally, Zoho, Busy'],
-      ['virtual-cfo.html', 'Virtual CFO', 'MIS, cash flow, budget']
+      ['virtual-cfo.html', 'Virtual CFO', 'MIS, cash flow, budget'],
+      ['nbfc-nidhi-microfinance.html', 'NBFC, Nidhi &amp; Microfinance', 'RBI, NDH-4, credit society', 'Naya']
     ]],
     ['law', 'Legal &amp; Disputes', 'Advocate-led, court tak', [
       ['legal-notice.html', 'Legal Notice', 'Drafting aur reply'],
