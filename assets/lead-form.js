@@ -126,6 +126,7 @@
   }
 
   function done(card, d, saved) {
+    if (saved && window.gtag) { try { window.gtag('event', 'generate_lead', { method: 'form', service: d.service, form_page: d.page }); } catch (e) {} }
     card.innerHTML =
       '<div class="cgl-done">' +
         '<h3>Shukriya, ' + (d.name.split(' ')[0] || '') + '</h3>' +
