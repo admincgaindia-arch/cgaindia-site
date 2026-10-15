@@ -2,7 +2,7 @@
    Strategy is deliberately conservative: pages are ALWAYS fetched from the
    network first, so a redeploy is visible immediately and no visitor ever
    sees a stale price. The cache exists only so the site still opens offline. */
-var V = 'cga-v2';
+var V = 'cga-v3';
 var SHELL = V + '-shell';
 var RUNTIME = V + '-rt';
 var PRECACHE = [
@@ -70,6 +70,20 @@ self.addEventListener('fetch', function (event) {
   /* Anything with a query string (cache-busted JSON, tracking pixels) is left
      to the browser untouched, so the runtime cache never fills with one-off URLs. */
   if (u.search) { return; }
+
+  /* Site scripts and styles: network first (revalidated), so a redeploy shows up on the very next load. */
+  if (same && /\.(js|css)$/.test(u.pathname)) {
+    event.respondWith(
+      fetch(req, { cache: 'no-cache' }).then(function (res) {
+        if (res && res.status === 200) {
+          var copy = res.clone();
+          caches.open(RUNTIME).then(function (c) { c.put(req, copy); });
+        }
+        return res;
+      }).catch(function () { return caches.match(req); })
+    );
+    return;
+  }
 
   /* Static assets and fonts: serve cached, refresh in background. */
   event.respondWith(
