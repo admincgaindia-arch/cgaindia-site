@@ -206,6 +206,137 @@
     window.addEventListener('resize', place);
     place();
   }
+  /* ---- site search (header button, Ctrl+K or /) ---- */
+  function cmSearch(mega) {
+    var X = [
+      ['health-check.html', 'Free Compliance Health Check', 'Tool', 'risk pending check gst tds roc'],
+      ['tax-calculators.html', 'Tax Calculators', 'Tool', 'new old regime hra gst calculator income tax'],
+      ['gst-notice-sos.html', 'GST Notice SOS', 'Urgent', 'notice reply asmt drc reg-17 gstr-3a decoder'],
+      ['compliance-calendar.html', 'Compliance Calendar', 'Learn', 'due date deadline calendar'],
+      ['case-laws.html', 'Latest Case Laws', 'Learn', 'judgment itat high court ruling'],
+      ['updates.html', 'Daily Tax Updates', 'Learn', 'news circular notification'],
+      ['govt-updates.html', 'Govt Updates', 'Learn', 'state central scheme notification'],
+      ['bank-finance-news.html', 'Bank & Finance News', 'Learn', 'rbi bank loan news'],
+      ['insights.html', 'Insights & Articles', 'Learn', 'blog article guide'],
+      ['videos.html', 'Videos', 'Learn', 'youtube video'],
+      ['problems-solutions.html', 'Common Problems', 'Learn', 'problem solution'],
+      ['about.html', 'About CGA', 'Firm', 'firm about ca advocate'],
+      ['team.html', 'Our Team', 'Firm', 'team partner ca cs'],
+      ['gallery.html', 'Offices & Gallery', 'Firm', 'office address burari noida rohtak safidon'],
+      ['contact.html', 'Contact & Offices', 'Firm', 'contact phone address whatsapp email office'],
+      ['clients.html', 'Clients', 'Firm', 'clients'],
+      ['pay.html', 'Pay Online', 'Pay', 'payment upi razorpay fee pay'],
+      ['portal.html', 'Client Login', 'Portal', 'login portal'],
+      ['praceasy.html', 'PracEasy', 'Product', 'software practice management']
+    ];
+    var KW = {
+      'bank-loan-documents.html': 'cma provisional projected estimated balance sheet loan cc od net worth turnover certificate',
+      'project-report-loan.html': 'project report mudra pmegp dscr term loan',
+      'society-compliance.html': 'society co-operative cooperative credit society annual return projections multi state',
+      'company-buy-sell.html': 'company kharid bech buy sell takeover share transfer ready company old company',
+      'nbfc-nidhi-microfinance.html': 'nbfc nidhi microfinance mfi lending finance company credit society rbi',
+      'ngo-registration.html': 'ngo trust 12a 12ab 80g society registration',
+      'income-tax-notice.html': 'income tax notice 143 148 scrutiny demand',
+      'cheque-bounce.html': 'cheque bounce 138',
+      'pvt-ltd-incorporation.html': 'company registration incorporation private limited',
+      'gst-registration.html': 'gst number gstin registration',
+      'itr-filing.html': 'itr income tax return filing',
+      'trademark-ip.html': 'trademark brand logo copyright',
+      'fssai-licence.html': 'food licence fssai',
+      'business-registrations.html': 'udyam msme iec import export dsc'
+    };
+    var IDX = [];
+    G.forEach(function (g) { g[3].forEach(function (l) { IDX.push([l[0], l[1].replace(/&amp;/g, '&').replace(/&middot;/g, '·'), g[1].replace(/&amp;/g, '&'), l[2] + ' ' + (KW[l[0]] || ''), l[2]]); }); });
+    X.forEach(function (x) { IDX.push(x); });
+    var css = ''
+      + '.cms-btn{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(0,81,118,.25);background:#fff;color:#005176;cursor:pointer;flex:0 0 40px;margin-left:10px;padding:0}'
+      + '.cms-btn:hover{background:#eef7fb}.cms-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}'
+      + '@media(max-width:1020px){.cms-btn{margin-left:auto;margin-right:8px}}'
+      + '.cms-ov{position:fixed;inset:0;z-index:2147483000;background:rgba(0,26,40,.55);backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;padding:9vh 14px 14px}'
+      + '.cms-ov.on{display:flex}'
+      + '.cms-box{width:min(640px,100%);background:#fff;border-radius:18px;box-shadow:0 30px 80px -20px rgba(0,0,0,.5);overflow:hidden;display:flex;flex-direction:column;max-height:78vh}'
+      + '.cms-top{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid rgba(0,81,118,.12)}'
+      + '.cms-top svg{width:20px;height:20px;stroke:#0e7ea0;fill:none;stroke-width:2;stroke-linecap:round;flex:0 0 20px}'
+      + '.cms-in{flex:1;border:0;outline:0;font:inherit;font-size:1.05rem;color:#00293d;background:transparent;min-width:0}'
+      + '.cms-x{border:0;background:#eef3f6;color:#46626f;border-radius:8px;padding:5px 9px;font:inherit;font-size:.75rem;cursor:pointer}'
+      + '.cms-res{overflow-y:auto;padding:6px}'
+      + '.cms-res a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:11px;text-decoration:none;color:#00293d}'
+      + '.cms-res a b{font-weight:600;font-size:.95rem}.cms-res a small{display:block;color:#5a7380;font-size:.78rem;margin-top:1px}'
+      + '.cms-res a i{margin-left:auto;font-style:normal;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#0e7ea0;background:#eef7fb;border-radius:99px;padding:3px 8px;white-space:nowrap}'
+      + '.cms-res a.sel,.cms-res a:hover{background:#eef7fb}'
+      + '.cms-empty{padding:18px;color:#46626f;font-size:.92rem}'
+      + '.cms-empty a{color:#0e7ea0;font-weight:700}'
+      + '.cms-hint{padding:8px 16px;border-top:1px solid rgba(0,81,118,.1);font-size:.74rem;color:#5a7380}'
+      + '@media(max-width:600px){.cms-res a i,.cms-hint{display:none}.cms-ov{padding-top:12px}}';
+    var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+    var ov = document.createElement('div');
+    ov.className = 'cms-ov';
+    ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Search');
+    ov.innerHTML = '<div class="cms-box"><div class="cms-top"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input class="cms-in" type="search" placeholder="Service dhundhiye: GST notice, CMA, ITR, NBFC..." aria-label="Search services" autocomplete="off"><button type="button" class="cms-x">Esc</button></div><div class="cms-res"></div><div class="cms-hint">&uarr; &darr; se chuniye, Enter se kholiye. Shortcut: Ctrl + K</div></div>';
+    document.body.appendChild(ov);
+    var inp = ov.querySelector('.cms-in'), res = ov.querySelector('.cms-res'), sel = 0, cur = [];
+    function norm(s) { return String(s).toLowerCase().replace(/[^a-z0-9\u0900-\u097f ]+/g, ' ').replace(/\s+/g, ' ').trim(); }
+    function score(it, toks) {
+      var t = norm(it[1]), all = norm(it[1] + ' ' + it[2] + ' ' + it[3]), s = 0;
+      for (var i = 0; i < toks.length; i++) {
+        var k = toks[i];
+        if ((k.length < 4 ? (' ' + all).indexOf(' ' + k) : all.indexOf(k)) < 0) { return -1; }
+        if (t.indexOf(k) === 0) { s += 6; } else if ((' ' + t).indexOf(' ' + k) > -1) { s += 4; } else if (t.indexOf(k) > -1) { s += 2; } else { s += 1; }
+      }
+      return s;
+    }
+    function draw() {
+      var q = norm(inp.value), toks = q ? q.split(' ') : [];
+      if (!toks.length) {
+        cur = IDX.filter(function (x) { return /bank-loan-documents|gst-notice-sos|itr-filing|pvt-ltd-incorporation|health-check|company-buy-sell/.test(x[0]); });
+      } else {
+        cur = IDX.map(function (x) { return [score(x, toks), x]; }).filter(function (p) { return p[0] > 0; })
+          .sort(function (a, b) { return b[0] - a[0]; }).map(function (p) { return p[1]; });
+        var seen = {}; cur = cur.filter(function (x) { if (seen[x[0] + x[1]]) { return false; } seen[x[0] + x[1]] = 1; return true; }).slice(0, 9);
+      }
+      sel = 0;
+      if (!cur.length) {
+        res.innerHTML = '<div class="cms-empty">Kuch nahi mila. <a href="services.html">Saari services dekhiye</a> ya <a href="https://wa.me/919996647888?text=BIZ" target="_blank" rel="noopener">WhatsApp par poochiye</a>.</div>';
+        return;
+      }
+      res.innerHTML = cur.map(function (x, i) {
+        return '<a href="' + x[0] + '"' + (i === 0 ? ' class="sel"' : '') + '><span><b>' + x[1].replace(/</g, '&lt;') + '</b>' + (x[4] ? '<small>' + x[4].replace(/</g, '&lt;') + '</small>' : '') + '</span><i>' + x[2].replace(/</g, '&lt;') + '</i></a>';
+      }).join('');
+    }
+    function mark() { var a = res.querySelectorAll('a[href]'); for (var i = 0; i < a.length; i++) { a[i].classList.toggle('sel', i === sel); } if (a[sel] && a[sel].scrollIntoView) { a[sel].scrollIntoView({ block: 'nearest' }); } }
+    function open() { ov.classList.add('on'); inp.value = ''; draw(); setTimeout(function () { inp.focus(); }, 30); document.documentElement.style.overflow = 'hidden'; }
+    function close() { ov.classList.remove('on'); document.documentElement.style.overflow = ''; }
+    inp.addEventListener('input', draw);
+    inp.addEventListener('keydown', function (e) {
+      var n = res.querySelectorAll('.cms-res > a').length;
+      if (e.key === 'ArrowDown') { e.preventDefault(); if (n) { sel = (sel + 1) % n; mark(); } }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); if (n) { sel = (sel - 1 + n) % n; mark(); } }
+      else if (e.key === 'Enter') { e.preventDefault(); if (cur[sel]) { location.href = cur[sel][0]; } }
+      else if (e.key === 'Escape') { close(); }
+    });
+    ov.addEventListener('click', function (e) { if (e.target === ov) { close(); } });
+    ov.querySelector('.cms-x').addEventListener('click', close);
+    document.addEventListener('keydown', function (e) {
+      var tag = (e.target && e.target.tagName) || '';
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); open(); }
+      else if (e.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(tag) && !e.target.isContentEditable) { e.preventDefault(); open(); }
+      else if (e.key === 'Escape' && ov.classList.contains('on')) { close(); }
+    });
+    var nav = document.querySelector('.nav-in');
+    if (nav) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'cms-btn'; b.setAttribute('aria-label', 'Search services'); b.title = 'Search (Ctrl + K)';
+      b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>';
+      b.addEventListener('click', function (e) { e.stopPropagation(); open(); });
+      var mb = nav.querySelector('.menu-btn');
+      if (window.matchMedia('(max-width:1020px)').matches && mb) { nav.insertBefore(b, mb); } else { nav.appendChild(b); }
+      window.addEventListener('resize', function () {
+        var m = window.matchMedia('(max-width:1020px)').matches;
+        if (m && mb && b.nextSibling !== mb) { nav.insertBefore(b, mb); }
+        else if (!m && b.parentNode === nav && nav.lastElementChild !== b) { nav.appendChild(b); }
+      });
+    }
+  }
   function init() {
     var mega = document.querySelector('.nav-links .dropdown.mega');
     if (!mega || mega.classList.contains('cm-on')) { return; }
@@ -213,6 +344,7 @@
     st.textContent = CSS;
     document.head.appendChild(st);
     try { build(mega); } catch (e) { mega.classList.remove('cm-on'); }
+    try { cmSearch(mega); } catch (e) {}
   }
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
 })();
