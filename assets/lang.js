@@ -227,7 +227,8 @@
       ['clients.html', 'Clients', 'Firm', 'clients'],
       ['pay.html', 'Pay Online', 'Pay', 'payment upi razorpay fee pay'],
       ['portal.html', 'Client Login', 'Portal', 'login portal'],
-      ['praceasy.html', 'PracEasy', 'Product', 'software practice management']
+      ['praceasy.html', 'PracEasy', 'Product', 'software practice management'],
+      ['careers.html', 'Careers & Training', 'Firm', 'job internship articleship training career join apply resume naukri vacancy']
     ];
     var KW = {
       'bank-loan-documents.html': 'cma provisional projected estimated balance sheet loan cc od net worth turnover certificate',
@@ -345,6 +346,7 @@
     document.head.appendChild(st);
     try { build(mega); } catch (e) { mega.classList.remove('cm-on'); }
     try { cmSearch(mega); } catch (e) {}
+    try { var fa = document.querySelector('.nav-links .dropdown a[href="about.html"]'); if (fa && !fa.parentNode.querySelector('a[href="careers.html"]')) { var ca = document.createElement('a'); ca.href = 'careers.html'; ca.textContent = 'Careers \u00b7 Join CGA'; fa.parentNode.appendChild(ca); } } catch (e) {}
   }
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
 })();
