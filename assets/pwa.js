@@ -1,9 +1,9 @@
-/* Google Analytics 4 (G-T7PDMVKJ53). Loaded from this shared file so every page
+/* Google Analytics 4 (G-RELRD3NTXG). Loaded from this shared file so every page
    gets it. Also records lead-form submits, WhatsApp clicks and phone clicks. */
 (function () {
   if (window.__cgaGA) { return; }
   window.__cgaGA = 1;
-  var ID = 'G-T7PDMVKJ53';
+  var ID = 'G-RELRD3NTXG';
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
   window.gtag('js', new Date());
