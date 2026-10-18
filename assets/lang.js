@@ -253,7 +253,7 @@
       + '.cms-btn{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(0,81,118,.25);background:#fff;color:#005176;cursor:pointer;flex:0 0 40px;margin-left:10px;padding:0}'
       + '.cms-btn:hover{background:#eef7fb}.cms-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}'
       + '@media(max-width:1020px){.cms-btn{margin-left:auto;margin-right:8px}}'
-      + '.cms-ov{position:fixed;inset:0;z-index:2147483000;background:rgba(0,26,40,.55);backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;padding:9vh 14px 14px}'
+      + '.cms-ov{position:fixed;inset:0;z-index:2147483646;background:rgba(0,26,40,.55);backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;padding:9vh 14px 14px}'
       + '.cms-ov.on{display:flex}'
       + '.cms-box{width:min(640px,100%);background:#fff;border-radius:18px;box-shadow:0 30px 80px -20px rgba(0,0,0,.5);overflow:hidden;display:flex;flex-direction:column;max-height:78vh}'
       + '.cms-top{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid rgba(0,81,118,.12)}'
@@ -338,6 +338,97 @@
       });
     }
   }
+  /* ---- welcome coupon (one per mobile, 10% off up to Rs 500) ---- */
+  function cmCoupon() {
+    var path = location.pathname;
+    if (/(careers|portal|pay|review|engagement|404|offline)\.html$/.test(path)) { return; }
+    var LS = window.localStorage;
+    function get(k) { try { return LS.getItem(k); } catch (e) { return null; } }
+    function set(k, v) { try { LS.setItem(k, v); } catch (e) {} }
+    if (get('cga_cpn')) { return; }
+    var x = Number(get('cga_cpn_x') || 0);
+    if (x && Date.now() - x < 7 * 86400000) { return; }
+    var shown = false;
+    var css = ''
+      + '.cpn-ov{position:fixed;inset:0;z-index:2147483647;background:rgba(0,26,40,.55);display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;transition:opacity .25s}'
+      + '.cpn-ov.on{opacity:1}'
+      + '.cpn-box{position:relative;width:min(420px,100%);background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.5);font-family:inherit}'
+      + '.cpn-top{background:linear-gradient(135deg,#00293d,#005176);color:#fff;padding:22px 22px 18px;text-align:center}'
+      + '.cpn-top small{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#7fd3e8;font-weight:700}'
+      + '.cpn-top b{display:block;font-size:2.4rem;line-height:1.1;margin:6px 0 2px;color:#e8a317}'
+      + '.cpn-top span{font-size:.95rem;color:#d8eef6}'
+      + '.cpn-x{position:absolute;top:10px;right:12px;border:0;background:rgba(255,255,255,.15);color:#fff;width:30px;height:30px;border-radius:50%;font-size:18px;line-height:30px;cursor:pointer;padding:0}'
+      + '.cpn-body{padding:18px 22px 20px}'
+      + '.cpn-body p{margin:0 0 12px;font-size:.92rem;color:#2c4552}'
+      + '.cpn-body input{width:100%;box-sizing:border-box;border:1px solid #c9dbe4;border-radius:10px;padding:11px 12px;font:inherit;font-size:1rem;margin-bottom:10px;color:#00293d;background:#fbfdfe}'
+      + '.cpn-body input:focus{outline:2px solid #4bbdd8;border-color:#4bbdd8}'
+      + '.cpn-btn{display:block;width:100%;border:0;background:#005176;color:#fff;font:inherit;font-weight:700;font-size:1rem;padding:13px;border-radius:999px;cursor:pointer;text-align:center;text-decoration:none;box-sizing:border-box}'
+      + '.cpn-btn:disabled{opacity:.6;cursor:wait}'
+      + '.cpn-btn.wa{background:#25d366;margin-top:10px}'
+      + '.cpn-btn.ln{background:transparent;color:#005176;border:1.5px solid #c9dbe4;margin-top:10px}'
+      + '.cpn-code{display:flex;align-items:center;justify-content:space-between;gap:10px;border:2px dashed #e8a317;border-radius:12px;padding:12px 14px;margin:4px 0 8px;background:#fffaf0}'
+      + '.cpn-code b{font-size:1.5rem;letter-spacing:.08em;color:#00293d}'
+      + '.cpn-code button{border:0;background:#00293d;color:#fff;border-radius:8px;padding:7px 12px;font:inherit;font-size:.8rem;cursor:pointer}'
+      + '.cpn-t{font-size:.72rem!important;color:#6b8290!important;margin:12px 0 0!important;line-height:1.45}'
+      + '.cpn-err{color:#b3261e!important;font-size:.85rem!important;display:none}'
+      + '.cpn-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}';
+    var TERMS = 'Sirf pehle order par &middot; min order &#8377;999 &middot; zyada se zyada &#8377;500 off &middot; 30 din valid &middot; ek mobile par ek coupon &middot; government fee, stamp duty, audit aur certificate (UDIN) kaam par lagu nahi.';
+    function close(ov) { set('cga_cpn_x', String(Date.now())); ov.classList.remove('on'); setTimeout(function () { if (ov.parentNode) { ov.parentNode.removeChild(ov); } }, 250); document.documentElement.style.overflow = ''; }
+    function fmt(d) { var M = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']; var p = String(d || '').split('-'); return p.length === 3 ? Number(p[2]) + ' ' + M[Number(p[1]) - 1] + ' ' + p[0] : d; }
+    function show() {
+      if (shown || get('cga_cpn')) { return; }
+      if (document.querySelector('.cms-ov.on')) { return; }
+      shown = true;
+      var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+      var ov = document.createElement('div');
+      ov.className = 'cpn-ov'; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Welcome coupon');
+      ov.innerHTML = '<div class="cpn-box"><button type="button" class="cpn-x" aria-label="Band kariye">&times;</button>'
+        + '<div class="cpn-top"><small>Welcome coupon</small><b>10% OFF</b><span>pehli service par, &#8377;500 tak ki bachat</span></div>'
+        + '<div class="cpn-body"><form class="cpn-f" novalidate><p>Apna mobile number daaliye, coupon code turant yahin mil jayega.</p>'
+        + '<input class="cpn-hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">'
+        + '<input name="name" maxlength="60" placeholder="Aapka naam" autocomplete="name">'
+        + '<input name="mobile" type="tel" inputmode="numeric" maxlength="13" placeholder="Mobile number (10 digit)" autocomplete="tel" required>'
+        + '<p class="cpn-err" role="alert"></p>'
+        + '<button type="submit" class="cpn-btn">Coupon paiye</button>'
+        + '<p class="cpn-t">' + TERMS + '</p></form></div></div>';
+      document.body.appendChild(ov);
+      document.documentElement.style.overflow = 'hidden';
+      setTimeout(function () { ov.classList.add('on'); }, 20);
+      ov.querySelector('.cpn-x').addEventListener('click', function () { close(ov); });
+      ov.addEventListener('click', function (e) { if (e.target === ov) { close(ov); } });
+      document.addEventListener('keydown', function esc(e) { if (e.key === 'Escape' && ov.parentNode) { close(ov); document.removeEventListener('keydown', esc); } });
+      var f = ov.querySelector('.cpn-f'), err = ov.querySelector('.cpn-err'), btn = f.querySelector('.cpn-btn');
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var m = f.mobile.value.replace(/[^0-9]/g, '').slice(-10);
+        if (m.length !== 10 || /^[0-5]/.test(m)) { err.textContent = 'Sahi 10 digit mobile number daaliye.'; err.style.display = 'block'; return; }
+        err.style.display = 'none'; btn.disabled = true; btn.textContent = 'Coupon ban raha hai...';
+        fetch('https://cga.app.n8n.cloud/webhook/cga-coupon', { method: 'POST', body: JSON.stringify({ name: f.name.value.trim(), mobile: m, page: path, website: f.website.value }) })
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            if (!d || !d.ok || !d.code) { throw new Error('x'); }
+            var code = String(d.code).replace(/[^A-Z0-9]/g, '');
+            set('cga_cpn', JSON.stringify({ code: code, exp: d.expires_on }));
+            try { if (window.gtag) { window.gtag('event', 'generate_lead', { method: 'coupon' }); } } catch (x) {}
+            var wa = 'https://wa.me/919996647888?text=' + encodeURIComponent('Namaste CGA, mera coupon code ' + code + ' hai. Mujhe is service ke liye madad chahiye: ');
+            ov.querySelector('.cpn-body').innerHTML = '<p><b>Badhai ho!</b> Aapka coupon taiyaar hai' + (d.isNew === false ? ' (is number par pehle se bana hua)' : '') + ':</p>'
+              + '<div class="cpn-code"><b>' + code + '</b><button type="button" class="cpn-cp">Copy</button></div>'
+              + '<p style="font-size:.85rem;color:#46626f">Valid: ' + fmt(d.expires_on) + ' tak. Order karte waqt ye code WhatsApp ya call par bataiye, discount bill mein lag jayega.</p>'
+              + '<a class="cpn-btn wa" href="' + wa + '" target="_blank" rel="noopener">WhatsApp par coupon use kariye</a>'
+              + '<a class="cpn-btn ln" href="services.html">Services aur rates dekhiye</a>'
+              + '<p class="cpn-t">' + TERMS + '</p>';
+            var cp = ov.querySelector('.cpn-cp');
+            cp.addEventListener('click', function () { try { navigator.clipboard.writeText(code); cp.textContent = 'Copied'; } catch (x) { cp.textContent = code; } });
+          })
+          .catch(function () { btn.disabled = false; btn.textContent = 'Coupon paiye'; err.innerHTML = 'Abhi coupon nahi ban paaya. <a href="https://wa.me/919996647888?text=' + encodeURIComponent('Namaste CGA, mujhe website wala 10% welcome coupon chahiye.') + '" target="_blank" rel="noopener">WhatsApp par maangiye</a>.'; err.style.display = 'block'; });
+      });
+    }
+    setTimeout(show, 25000);
+    window.addEventListener('scroll', function onS() {
+      var h = document.documentElement.scrollHeight - innerHeight;
+      if (h > 0 && scrollY / h > 0.5) { window.removeEventListener('scroll', onS); show(); }
+    }, { passive: true });
+  }
   function init() {
     var mega = document.querySelector('.nav-links .dropdown.mega');
     if (!mega || mega.classList.contains('cm-on')) { return; }
@@ -346,6 +437,7 @@
     document.head.appendChild(st);
     try { build(mega); } catch (e) { mega.classList.remove('cm-on'); }
     try { cmSearch(mega); } catch (e) {}
+    try { cmCoupon(); } catch (e) {}
     try { var fa = document.querySelector('.nav-links .dropdown a[href="about.html"]'); if (fa && !fa.parentNode.querySelector('a[href="careers.html"]')) { var ca = document.createElement('a'); ca.href = 'careers.html'; ca.textContent = 'Careers \u00b7 Join CGA'; fa.parentNode.appendChild(ca); } } catch (e) {}
   }
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
