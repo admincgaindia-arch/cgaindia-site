@@ -172,14 +172,14 @@
       });
       body += '</div></div>';
     });
-    rail += '<div class="cm-x"><a class="cm-sos" href="gst-notice-sos.html">&#9201; GST Notice SOS</a><a href="services.html">Saari services dekhiye</a></div></div>';
+    rail += '<div class="cm-x"><a class="cm-sos" href="gst-notice-sos.html">&#9201; GST Notice SOS</a><a href="documents-checklist.html">Documents checklist</a><a href="services.html">Saari services dekhiye</a></div></div>';
     body += '</div>';
     var feat = '<div class="cm-feat">'
       + '<a class="cm-card hot" href="bank-loan-documents.html"><i>Naya &middot; Rate list</i><b>Bank loan documents</b><span>Provisional balance sheet &#8377;1,999 se, CMA data &#8377;4,999 se (+ GST)</span></a>'
       + '<a class="cm-card" href="health-check.html"><i>Free tool</i><b>Compliance Health Check</b><span>2 minute mein jaaniye kya pending hai</span></a>'
       + '<a class="cm-card" href="tax-calculators.html"><i>Free</i><b>Tax Calculators</b><span>New vs old regime, GST, HRA</span></a>'
       + '</div>';
-    var quick = '<div class="cm-quick"><a href="services.html">Saari services</a><a class="cm-sos" href="gst-notice-sos.html">&#9201; GST Notice SOS</a><a href="bank-loan-documents.html">Loan documents rate list</a><a href="health-check.html">Free Health Check</a></div>';
+    var quick = '<div class="cm-quick"><a href="services.html">Saari services</a><a class="cm-sos" href="gst-notice-sos.html">&#9201; GST Notice SOS</a><a href="documents-checklist.html">Documents checklist</a><a href="bank-loan-documents.html">Loan documents rate list</a><a href="health-check.html">Free Health Check</a></div>';
     mega.innerHTML = quick + rail + body + feat;
     mega.classList.add('cm-on');
     function show(i) {
@@ -228,7 +228,8 @@
       ['pay.html', 'Pay Online', 'Pay', 'payment upi razorpay fee pay'],
       ['portal.html', 'Client Login', 'Portal', 'login portal'],
       ['praceasy.html', 'PracEasy', 'Product', 'software practice management'],
-      ['careers.html', 'Careers & Training', 'Firm', 'job internship articleship training career join apply resume naukri vacancy']
+      ['careers.html', 'Careers & Training', 'Firm', 'job internship articleship training career join apply resume naukri vacancy'],
+      ['documents-checklist.html', 'Documents Checklist', 'Tool', 'documents kaagaz papers list required checklist kya chahiye']
     ];
     var KW = {
       'bank-loan-documents.html': 'cma provisional projected estimated balance sheet loan cc od net worth turnover certificate',
