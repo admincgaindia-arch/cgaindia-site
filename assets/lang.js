@@ -430,6 +430,69 @@
       if (h > 0 && scrollY / h > 0.5) { window.removeEventListener('scroll', onS); show(); }
     }, { passive: true });
   }
+  /* ---- Team CGA ki zubaani: approved staff quotes, one featured per day ---- */
+  function cmTeamQuotes() {
+    var p = location.pathname.split('/').pop() || 'index.html';
+    if (['index.html', 'about.html', 'team.html', 'careers.html', 'services.html', 'contact.html'].indexOf(p) < 0) { return; }
+    var foot = document.querySelector('footer');
+    if (!foot || document.getElementById('cgaTeamQ')) { return; }
+    var KEY = 'cga_tq', TTL = 6 * 3600000;
+    function render(list) {
+      if (!list || !list.length) { return; }
+      var css = ''
+        + '.tq{padding:56px 16px;background:linear-gradient(180deg,#f3f9fc,#fff)}'
+        + '.tq-in{max-width:880px;margin:0 auto;text-align:center}'
+        + '.tq-k{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#0e7ea0;font-weight:700}'
+        + '.tq h2{margin:6px 0 22px;font-size:clamp(1.4rem,3vw,1.9rem);color:#00293d}'
+        + '.tq-card{position:relative;background:#fff;border:1px solid rgba(0,81,118,.14);border-radius:20px;padding:34px clamp(18px,4vw,44px) 26px;box-shadow:0 24px 60px -36px rgba(0,41,61,.45);min-height:190px}'
+        + '.tq-card:before{content:"\\201C";position:absolute;top:-8px;left:22px;font-size:6rem;line-height:1;color:#e8a317;font-family:Georgia,serif;opacity:.55}'
+        + '.tq-q{font-size:clamp(1.02rem,2.1vw,1.22rem);line-height:1.6;color:#1d3340;margin:0 0 20px;transition:opacity .35s}'
+        + '.tq-who{display:inline-flex;align-items:center;gap:12px;text-align:left;transition:opacity .35s}'
+        + '.tq-av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#005176,#4bbdd8);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:1rem;flex:0 0 46px}'
+        + '.tq-who b{display:block;color:#00293d}.tq-who small{color:#5a7380;font-size:.84rem}'
+        + '.tq-nav{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:18px}'
+        + '.tq-nav button{width:36px;height:36px;border-radius:50%;border:1.5px solid #c9dbe4;background:#fff;color:#005176;font-size:1rem;cursor:pointer}'
+        + '.tq-dots{display:flex;gap:6px}.tq-dots i{width:8px;height:8px;border-radius:50%;background:#c9dbe4;display:block}.tq-dots i.on{background:#005176}'
+        + '.tq-foot{margin-top:16px;font-size:.84rem;color:#5a7380}.tq-foot a{color:#0e7ea0;font-weight:700}';
+      var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+      var day = Math.floor((Date.now() + 19800000) / 86400000);
+      var idx = day % list.length;
+      var sec = document.createElement('section');
+      sec.className = 'tq'; sec.id = 'cgaTeamQ';
+      sec.innerHTML = '<div class="tq-in"><span class="tq-k">Team CGA ki zubaani</span><h2>Aaj ka vichaar, hamari team se</h2><div class="tq-card"><p class="tq-q"></p><div class="tq-who"><span class="tq-av"></span><span><b></b><small></small></span></div></div>'
+        + (list.length > 1 ? '<div class="tq-nav"><button type="button" class="tq-p" aria-label="Pichhla vichaar">&#8249;</button><span class="tq-dots"></span><button type="button" class="tq-n" aria-label="Agla vichaar">&#8250;</button></div>' : '')
+        + '<p class="tq-foot">CGA team members ke apne shabd. <a href="careers.html">Team join kariye &rarr;</a></p></div>';
+      foot.parentNode.insertBefore(sec, foot);
+      var q = sec.querySelector('.tq-q'), av = sec.querySelector('.tq-av'), nm = sec.querySelector('.tq-who b'), rl = sec.querySelector('.tq-who small'), who = sec.querySelector('.tq-who'), dots = sec.querySelector('.tq-dots');
+      var shown = Math.min(list.length, 7);
+      if (dots) { for (var i = 0; i < shown; i++) { dots.appendChild(document.createElement('i')); } }
+      function initials(n) { return String(n).split(' ').filter(Boolean).slice(0, 2).map(function (w) { return w.charAt(0).toUpperCase(); }).join(''); }
+      function show(k) {
+        idx = (k + list.length) % list.length;
+        var it = list[idx];
+        q.style.opacity = 0; who.style.opacity = 0;
+        setTimeout(function () {
+          q.textContent = it.q; nm.textContent = it.n; rl.textContent = [it.r, it.o].filter(Boolean).join(' \u00b7 '); av.textContent = initials(it.n);
+          q.style.opacity = 1; who.style.opacity = 1;
+          if (dots) { var d = dots.children; for (var j = 0; j < d.length; j++) { d[j].className = (j === idx % shown) ? 'on' : ''; } }
+        }, 180);
+      }
+      show(idx);
+      if (list.length > 1) {
+        var timer = setInterval(function () { show(idx + 1); }, 9000);
+        sec.querySelector('.tq-p').addEventListener('click', function () { clearInterval(timer); show(idx - 1); });
+        sec.querySelector('.tq-n').addEventListener('click', function () { clearInterval(timer); show(idx + 1); });
+      }
+    }
+    var cached = null;
+    try { cached = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
+    if (cached && cached.t && Date.now() - cached.t < TTL) { render(cached.q); return; }
+    fetch('https://cga.app.n8n.cloud/webhook/cga-team-quotes').then(function (r) { return r.json(); }).then(function (d) {
+      var list = (d && d.quotes) || [];
+      try { localStorage.setItem(KEY, JSON.stringify({ t: Date.now(), q: list })); } catch (e) {}
+      render(list);
+    }).catch(function () { if (cached && cached.q) { render(cached.q); } });
+  }
   function init() {
     var mega = document.querySelector('.nav-links .dropdown.mega');
     if (!mega || mega.classList.contains('cm-on')) { return; }
@@ -439,6 +502,7 @@
     try { build(mega); } catch (e) { mega.classList.remove('cm-on'); }
     try { cmSearch(mega); } catch (e) {}
     try { cmCoupon(); } catch (e) {}
+    try { cmTeamQuotes(); } catch (e) {}
     try { var fa = document.querySelector('.nav-links .dropdown a[href="about.html"]'); if (fa && !fa.parentNode.querySelector('a[href="careers.html"]')) { var ca = document.createElement('a'); ca.href = 'careers.html'; ca.textContent = 'Careers \u00b7 Join CGA'; fa.parentNode.appendChild(ca); } } catch (e) {}
   }
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
