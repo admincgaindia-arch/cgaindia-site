@@ -349,7 +349,9 @@
     if (get('cga_cpn')) { return; }
     var x = Number(get('cga_cpn_x') || 0);
     if (x && Date.now() - x < 7 * 86400000) { return; }
-    var shown = false;
+    var shown = false, busy = 0;
+    document.addEventListener('focusin', function (e) { var t = e.target; if (t && /INPUT|TEXTAREA|SELECT/.test(t.tagName) && !(t.closest && t.closest('.cpn-ov'))) { busy = Date.now(); } });
+    document.addEventListener('submit', function (e) { var f = e.target; if (f && !(f.closest && f.closest('.cpn-ov'))) { set('cga_cpn_x', String(Date.now())); shown = true; } }, true);
     var css = ''
       + '.cpn-ov{position:fixed;inset:0;z-index:2147483647;background:rgba(0,26,40,.55);display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;transition:opacity .25s}'
       + '.cpn-ov.on{opacity:1}'
@@ -378,7 +380,7 @@
     function fmt(d) { var M = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']; var p = String(d || '').split('-'); return p.length === 3 ? Number(p[2]) + ' ' + M[Number(p[1]) - 1] + ' ' + p[0] : d; }
     function show() {
       if (shown || get('cga_cpn')) { return; }
-      if (document.querySelector('.cms-ov.on')) { return; }
+      if (document.querySelector('.cms-ov.on') || Date.now() - busy < 60000) { setTimeout(show, 30000); return; }
       shown = true;
       var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
       var ov = document.createElement('div');
