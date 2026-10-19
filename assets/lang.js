@@ -229,7 +229,8 @@
       ['portal.html', 'Client Login', 'Portal', 'login portal'],
       ['praceasy.html', 'PracEasy', 'Product', 'software practice management'],
       ['careers.html', 'Careers & Training', 'Firm', 'job internship articleship training career join apply resume naukri vacancy'],
-      ['documents-checklist.html', 'Documents Checklist', 'Tool', 'documents kaagaz papers list required checklist kya chahiye']
+      ['documents-checklist.html', 'Documents Checklist', 'Tool', 'documents kaagaz papers list required checklist kya chahiye'],
+      ['partners.html', 'Partner with CGA', 'Firm', 'partner referral refer bank dsa loan agent builder property dealer ca associate network']
     ];
     var KW = {
       'bank-loan-documents.html': 'cma provisional projected estimated balance sheet loan cc od net worth turnover certificate',
@@ -505,7 +506,7 @@
     try { cmSearch(mega); } catch (e) {}
     try { cmCoupon(); } catch (e) {}
     try { cmTeamQuotes(); } catch (e) {}
-    try { var fa = document.querySelector('.nav-links .dropdown a[href="about.html"]'); if (fa && !fa.parentNode.querySelector('a[href="careers.html"]')) { var ca = document.createElement('a'); ca.href = 'careers.html'; ca.textContent = 'Careers \u00b7 Join CGA'; fa.parentNode.appendChild(ca); } } catch (e) {}
+    try { var fa = document.querySelector('.nav-links .dropdown a[href="about.html"]'); if (fa && !fa.parentNode.querySelector('a[href="careers.html"]')) { var ca = document.createElement('a'); ca.href = 'careers.html'; ca.textContent = 'Careers \u00b7 Join CGA'; fa.parentNode.appendChild(ca); } if (fa && !fa.parentNode.querySelector('a[href="partners.html"]')) { var pa = document.createElement('a'); pa.href = 'partners.html'; pa.textContent = 'Partner with CGA'; fa.parentNode.appendChild(pa); } } catch (e) {}
   }
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
 })();
