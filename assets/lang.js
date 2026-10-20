@@ -234,6 +234,8 @@
     ];
     var KW = {
       'bank-loan-documents.html': 'cma provisional projected estimated balance sheet loan cc od net worth turnover certificate',
+      'ca-certificates.html': 'net worth certificate visa embassy student visa sponsor udin turnover certificate ca certificate',
+      'foreign-income.html': 'nri visa abroad foreign income overseas',
       'project-report-loan.html': 'project report mudra pmegp dscr term loan',
       'society-compliance.html': 'society co-operative cooperative credit society annual return projections multi state',
       'company-buy-sell.html': 'company kharid bech buy sell takeover share transfer ready company old company',
