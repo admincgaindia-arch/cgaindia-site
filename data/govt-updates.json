@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-10-21T02:31:17.448Z",
+  "last_updated": "2026-10-22T02:31:08.134Z",
   "days": [
+    {
+      "date": "2026-10-22",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GST Council",
+          "ref": "",
+          "headline": "Health & Life Insurance par GST ITC rules mein change aane wale hain",
+          "what": "57th GST Council meeting mein group health aur life insurance par input tax credit (ITC) rules relax karne ka proposal discuss hua hai. Section 17(5) ke changes, employee coverage, premium recovery aur ISD rules par focus hai.",
+          "who": "Jin businesses ne group health ya life insurance apne employees ko diya hai.",
+          "action": "Agar aap apne employees ke liye insurance ka premium dete hain, toh naye ITC eligibility rules aane par apni compliance policies update karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/57th-gst-council-health-life-insurance-itc-section-17-5-eligibility-practical-impact.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Income Tax",
+          "authority": "CBDT",
+          "ref": "Notification 137/2026",
+          "headline": "Government bonds par tax exemption ke liye naya Form 173A",
+          "what": "CBDT ne Rule 281A aur Form 173A notify kiya hai jisse government securities par milne wale interest aur capital gains par income tax exemption claim ki ja sakegi.",
+          "who": "Jin tax payers ke paas government securities hai ya aise invest karna chahte hain.",
+          "action": "Agar aapko government bonds par interest ya capital gains exemption chahiye toh naya Form 173A use kar sakte hain.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/cbdt-notifies-form-173a-exemption-government-securities-notification-137-2026.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "Reverse charge ke self-invoices ab E-Invoice system mein bana sakte hain",
+          "what": "GSTN ne reverse charge (RCM) supplies ke liye self-invoice (RCMDOM, RCMIMP) generate karne ki capability E-Invoice system mein add ki hai. Ab IRN generate possible hai, lekin abhi mandatory nahi hai.",
+          "who": "Jin businesses ka aggregate turnover ₹5 crore ya usse zyada hai aur reverse charge cases mein self-invoice banaate hain.",
+          "action": "Agar aap reverse charge ke liye self-invoice banaate hain, toh E-Invoice system ka optional use kar sakte hain. Regulatory updates ka wait karein for any compulsion.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/reverse-charge-invoices-enter-invoice-system-capability-not-obligation.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "GSTR-3B ke liye due dates extend, late fee maaf",
+          "what": "CBIC ne GST GSTR-3B return filing ki due dates badhai hain aur kuch taxpayers ke liye late fee bhi maaf ki hai.",
+          "who": "Jo businesses GSTR-3B return file karte hain.",
+          "action": "Apne portal par relevant month ki extended due date check karein aur late fee waiver ka benefit lein.",
+          "deadline": "",
+          "source_name": "Goodreturns",
+          "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQLWx5VE1yNVIyM3k5RENuOW5FdXVMaGVHWGlhUjBFbDNuaUh6clJ0b1dUbV8wN2p4bWZ1dDBpejJiSnczSkNOa3Vhb0xTYTY3SHBhTVotZ01WUnFxbm9PaGYxRlhCY2o0bm8tVDYxeGhKZ05vZ0kzMThlY05DNlBaOHdpMENvTm96LWxib1V3VXYtenJWMmJYY1RFMTVkblpPcVhQVDRTWTI5R1E?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "DGFT",
+          "ref": "",
+          "headline": "India–New Zealand FTA: 20 Oct se Indian exports par zero tariff",
+          "what": "DGFT ne bataya ki India-New Zealand FTA ke tahat 20 October se sabhi Indian exports par New Zealand mein duty khatam ho jayegi.",
+          "who": "Exporters jo New Zealand ko goods bhejte hain.",
+          "action": "New Zealand ko export karne wale businesses FTA ka benefit lene ke liye export documentation mein proper mention karein.",
+          "deadline": "20 Oct 2026",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTXUzbk1MbEtQcnY4dk5UaXVmUTJTUjloZ2pERmlQOVUwN1hsSW9GOW0ycjdLelFhMk42RjEzd2g0RUo3MC1Jcm5hR0d2bjhCUzJSNmpCQ1h6ZGwwRW1kLVBmejVoNXNKdnpTVU5MTXJTcEVkXzMwUzZHaHctejFkMDZIRWdqdDlheGdaWVdRbGJKQm9GVTdBZWlDTGhheE5pMlMwd1FiTGQyemtFYmtiX2VzZXUwai1UYlE?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "October 2026 GST return se pehle 12 critical checks karein",
+          "what": "FY 2025-26 GST compliance aur ITC, credit notes, RCM, ISD, IMS aur key deadlines ki review list GSTN ne release ki hai. October 2026 ke return file karne se pehle inn points par focus karein.",
+          "who": "Har registered GST taxpayer, especially jo October 2026 ke returns file karenge.",
+          "action": "October 2026 return se pehle 12 points ki review checklist follow karein, jaise credit notes/RCM/ISD compliance.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-year-review-fy-2025-26-12-critical-checks-october-2026-return.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "MCA / ROC",
+          "authority": "MCA",
+          "ref": "",
+          "headline": "Form CRA-4: Cost audit report file karne ka 30 din ka niyam",
+          "what": "FY 2025-26 ke liye MCA ne guide jaari ki hai jisme Form CRA-4 file karne ka process, XBRL filing, Board review aur attachments ka compliance explain hua hai. Receipt milne ke 30 din ke andar file karna hoga.",
+          "who": "Companies jin par cost audit applicable hai.",
+          "action": "Cost audit report milte hi 30 days ke andar Form CRA-4 file karein, XBRL aur supporting documents attach karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/company-law/mca-form-cra-4-fy-2025-26-filing-trigger-cost-audit-report-checks.html"
+        }
+      ]
+    },
     {
       "date": "2026-10-21",
       "items": [
