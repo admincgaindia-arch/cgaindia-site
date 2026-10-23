@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-10-22T02:31:08.134Z",
+  "last_updated": "2026-10-23T02:31:14.658Z",
   "days": [
+    {
+      "date": "2026-10-23",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "",
+          "ref": "",
+          "headline": "Kullu Pomegranates export hua Dubai",
+          "what": "1.3 MT Kullu ke Anar Dubai export kiye gaye hain. Indian horticulture exports mein yeh ek bada kadam hai.",
+          "who": "Fruit exporters aur Kullu pomegranate growers par lagu.",
+          "action": "Export ki maujooda policies follow karein. Exporters apna documentation ready rakhein.",
+          "deadline": "",
+          "source_name": "Babushahi.com",
+          "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPN1VuQWpsTllieERlTFpuMVItenZMQk5ROUQ5clhPZHd6MEdkVTBaT1hsRnBYd1E0T3paQVhzZXZQVGtDU1oxeG1udUJlRGZOcS15Y2dZOEcxa3VVc2RxTmU4NkEtOGVhSHhNR2ppWVRZd0xEeHpTMV9zeEdfendvRHBCR3phUlVnYTdPTnpFWVk3VUlCQ0kwYVlESGtMdzdRRF9yOVo2Zw?oc=5"
+        },
+        {
+          "jur": "Maharashtra",
+          "cat": "GST",
+          "authority": "Maharashtra AAR",
+          "ref": "",
+          "headline": "GST margin scheme auction intermediary ko nahi milega",
+          "what": "Maharashtra AAR ne decide kiya hai ki GST margin scheme sirf second-hand goods dealers ke liye hai, pure auction intermediary ke liye nahi. Alag valuation method lagega.",
+          "who": "Auction intermediary aur second-hand goods business wale traders par lagu.",
+          "action": "Agar aap auction intermediary hain toh margin scheme ka labh nahi milega. Apne GST valuation method ko accordingly adjust karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-margin-scheme-not-auction-intermediary-maharashtra-aar.html"
+        },
+        {
+          "jur": "Telangana",
+          "cat": "GST",
+          "authority": "Telangana AAR",
+          "ref": "",
+          "headline": "IPO fresh issue par GST ITC milega, OFS par nahi",
+          "what": "Telangana AAR ne clarify kiya hai ki IPO ke fresh issue ke business expenses par GST ITC allowed hai, par Offer for Sale (OFS) ke expenses par nahi.",
+          "who": "IPO launch karne wale companies aur unke tax consultants par lagu.",
+          "action": "Agar IPO ka fresh issue hai toh related GST ITC claim kar sakte hain. OFS ke expenses par nahi kar sakte.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/itc-ipo-expenses-fresh-issue-shares-not-offer-sale-existing-shareholders.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "Reverse charge ke liye e-invoicing mein do naye category",
+          "what": "GSTN ne e-invoicing portal par reverse charge purchases ke liye do naye category add kiye hain. Yeh compliance aur reporting mein madad degi.",
+          "who": "Reverse charge mechanism se supply lene wale GST taxpayers par lagu.",
+          "action": "Reverse charge ki purchases e-invoicing mein naye categories ke hisaab se file karein. E-invoice portal pe check kar lein.",
+          "deadline": "",
+          "source_name": "Business Standard",
+          "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaHhqc1d4VFM0eEdWZHFETlZ1cEo2TkQzRmR4TzBLWExuZVFqdHo4NWpmanYtSnd1NldBbHZfa2Q3RnFwRW5saUJTLUh1bHphb2E3WWsydnhGa0dRTFBBellUN1c5QnJKYTlWb0FoS1JGTE1FRFU5RENaYzJpUzlzZVBmRVNOMWlKS3NkWHpnQ3lhN0R4WFNYR2xzWnI4b1N4VTYzZjFHMF96QmF0X3J3QUJZaXlBNGlRbGUtS1JyeVNPVm9CWTJaTHh1MXLSAdIBQVVfeXFMTjE0d01DTnFGUjAtRjlfTGVSVUJLVDlJV2dIaU1qVzRHQi1kTGRKR3ZGR21qWU1BU00zeG5OQzJjTUtIVGZZWG9oWFVtbjRpeDYxRjNCTDRIcDdTNFpSazE0cXE1SVRYenpXN1N4cXlPSTZwRnYxbXpDNHRrYmdHSVhHdm50OUNUMEFfZmVIUGp4MmlZdkJSbUEzRlNrTUhKM21ZOVQtalBmQ0xIMElQaG5tNF9pZ1VhWEZQYlB2ejF1OVMwUUFBVVBhTmdXU1ZUME5R?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "Small e-commerce sellers ka GST registration 1 Nov se shuru",
+          "what": "Small e-commerce sellers ke liye GST registration process 1 November se shuru ho raha hai. Yeh compliance ko streamline karega.",
+          "who": "Jo chhote sellers e-commerce platforms pe bechte hain, unpar lagu.",
+          "action": "1 November se GST registration process start kar dein agar abhi tak nahi kiya toh.",
+          "deadline": "2026-11-01",
+          "source_name": "Business Standard",
+          "source_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUlZTa21yTTVJeWZsMGJzeHZjZnREMTRyYy1YTXFUT3dtTXNoMXV2RWhHajZuYk1Dc0Z4azYzMFNlcjhWbWw3QU90MnZrZ2doU3VvVHZrWHY3Vnh4c3Rsc1ItdVNSN0ViVm5ocWUzWEVTUEpkQTJlOVJWOENsR1hLNnRCRi1HaHU1YktVbVBzV2ZMblNRR3hKUUs0Q0pWT1Y1cmFQeURqMnUxVC1qT3ZsUXg3MS0wQ1ZkOV94SG1kbVE0czMwaGZWUld3d2RWWGFwYmFxMlhFNlTSAdgBQVVfeXFMUFJWU2ttck01SXlmbDBic3h2Y2Z0RDE0cmMtWE1xVE93bU1zaDF1dkVoR2o2bmJNQ3NGeGs2MzBTZXI4Vm1sN0FPdDJ2a2dnaFN1b1R2a1h2N1Z4eHN0bHNSLXVTUjdFYlZuaHFlM1hFU1BKZEEyZTlSVjhDbEdYSzZ0QkYtR2h1NWJLVW1Qc1dmTG5TUUd4SlFLNENKVk9WNXJhUHlEajJ1MVQtak92bFF4NzEtMENWZDlfeEhtZG1RNHMzMGhmVlJXd3dkVlhhcGJhcTJYRTZU?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "MCA / ROC",
+          "authority": "",
+          "ref": "",
+          "headline": "Private companies: AGM 24-hour notice possible?",
+          "what": "Section 136 ke tahat private companies general meeting ke liye 24 ghante ka notice de sakti hain, par kuch sharten aur hurdles apply hongi. 2017 amendments ke bi kuch naye conditions hain.",
+          "who": "Private companies ke promoters, secretaries aur ROC consultants par lagu.",
+          "action": "Articles of Association check karein aur AGM/EGM notice period ki compliance sahi se dekhein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/company-law/private-companies-hold-general-meetings-24-hours-notice.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "MCA / ROC",
+          "authority": "",
+          "ref": "",
+          "headline": "Telecom regulatory sandbox rules 2026 notify hue",
+          "what": "Centre ne telecom sector ke liye sandbox rules 2026 notify kiye hain. Nayi technology ko test karne ka legal system ab available hai.",
+          "who": "Telecom companies, startups aur new technology developers par lagu.",
+          "action": "Agar nayi telecom tech test karni hai to sandbox rules 2026 ki application process dekhein.",
+          "deadline": "",
+          "source_name": "ET Government",
+          "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOaF8tX243RjBWSHU3Wi1BSTNMa1d6MnVwMmZQaUtQV2szZkJXMDJua3EyVGdzeGVHakQ1OWNnTkZPNXdIZHl3MjEyUHF2UXNwOGQzZ1hWMDdqOXBwNHNiNEd1Wkpzd0N2MEVHZVhhQkZfd0s1czhBMGFYUTlOZFl0NHhDdTI0dE5rdUtLS0R2Snp0bXVHZVMyUFJTNGJTbnUwcGhxbGhjNG9NUjlHLTdmNnVyekpGak93QzlXZVJfbkNPbFBZM3RPd3dVNVI2ZnU5UlRiNm5rODR1WFdYMdIB5gFBVV95cUxORFJ6T1Mwc1E3R1lTRl82anBQV1BQbWRTZHFvQnZSR1AyYURHM0hrY0d0Q3k1LXA4S1djQVQtN3BsM0w0MC1fSXFkUkVXZ0tpQXZoMDdrMG45YWFtdkpWRWdoNS0xeVd4aXRfOXhjZVNJbnVJbGNCNmhqam1VaTUza1pHRV9nUGdzUXM0REw5ZjZCVHJNTnpkUUlfc181bEdUQmY2N1pEQ18tSEppMFBtbXNqcVl0cXFUUnhDaUJBNU0tYTVwa05mZm9la1ZvV3RTMXJIQXdQeERhMWg3X1VDWWtHUGFwUQ?oc=5"
+        }
+      ]
+    },
     {
       "date": "2026-10-22",
       "items": [
