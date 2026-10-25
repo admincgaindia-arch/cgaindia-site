@@ -1,6 +1,115 @@
 {
-  "last_updated": "2026-10-24T02:31:14.163Z",
+  "last_updated": "2026-10-25T02:31:12.766Z",
   "days": [
+    {
+      "date": "2026-10-25",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "MCA / ROC",
+          "authority": "MCA",
+          "ref": "05/2026",
+          "headline": "AOC-4 and MGT-7 filing date badhi FY26 ke liye",
+          "what": "MCA ne FY 2025-26 ke liye AOC-4 filing ki last date 31 December 2026 aur MGT-7/MGT-7A ki last date 31 January 2027 kar di hai. Extra fees nahi lagengi.",
+          "who": "Sabhi companies jo FY 2025-26 ki ROC filings karti hain.",
+          "action": "AOC-4 ko 31 December 2026 tak aur MGT-7/MGT-7A ko 31 January 2027 tak bina late fees ke file karein.",
+          "deadline": "31 December 2026 (AOC-4) / 31 January 2027 (MGT-7/MGT-7A)",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/company-law/mca-extends-aoc-4-filing-31-december-2026-mgt-7-31-january-2027-without-additional-fees.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "26/2026-Customs (ADD)",
+          "headline": "Chinese Titanium Dioxide par anti-dumping duty lagi",
+          "what": "India ne Chinese origin Titanium Dioxide par USD 460–681 per MT anti-dumping duty lagayi hai. Duty paanch saal tak rahegi.",
+          "who": "Titanium Dioxide import karne wale traders aur manufacturers.",
+          "action": "Import order karte waqt duty cost ka hisaab laga lein aur applicable duty pay karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/india-imposes-anti-dumping-duty-usd-460-681-mt-chinese-titanium-dioxide-years.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "25/2026-Customs (ADD)",
+          "headline": "Notification 12/2025-Customs (ADD) ab khatam",
+          "what": "Sarkar ne Notification 12/2025-Customs (ADD) ko ab rescind kar diya hai. Jo kaam pehle ho chuke hain unpe farq nahi padega.",
+          "who": "Jo log Customs (ADD) notification ka compliance kar rahe hain.",
+          "action": "Ab se Notification 12/2025-Customs (ADD) ka istemal na karein. Naye rules dekhein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/notification-no-25-2026-customs-add-rescinds-notification-no-12-2025-customs-add.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "DGFT",
+          "ref": "",
+          "headline": "Chemical products ke liye naye SION norms notify hue",
+          "what": "DGFT ne chemical aur allied products ke liye 4 naye Standard Input-Output Norms (SION) notify kiye hain. Isse advance authorisations process tez hoga.",
+          "who": "Exporters jo chemical & allied products export karte hain.",
+          "action": "Exporters apne advance authorisation applications mein naye SION norms ka reference dein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNODAtZkwzeVBSUjlkbkpVT21tUGxwcFZXMFA3VlRtcWNjby1RUldMWkhPTFhnd0lZckZRT0RzNTB6eXg0aXUzR3ZUWmtvSkJ0YVAyd3BUaWdhQTMxX1dOb1E2b2QzeHpwaktqajZHTXVyMGs4V0U5bW4yLVlzcGRUOXRpbS13ZjU3N29NM2UxLXlMRjIxcV9ZdzRrNVFiNVNDRU9ycE5WNlFXdHB4d3pLUlMwaDhxM3JYYUZlNXlyWVhMR0FsN1ZDcHVRVV9LUklXcXhnb0Z5RGZhdw"
+        },
+        {
+          "jur": "Tamil Nadu",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "State Government",
+          "ref": "",
+          "headline": "TN airports par ATF VAT rate ab sirf 1%",
+          "what": "Tamizh Nadu mein Chennai airport par ATF VAT rate 16% aur dusre TN airports par sirf 1% kar diya gaya hai.",
+          "who": "ATF (aviation turbine fuel) kharidne wale airlines ya fuel suppliers Tamil Nadu ke airports par.",
+          "action": "1 November 2026 se nayi VAT rates applicable hain; fuel procurement ki costing accordingly karein.",
+          "deadline": "1 November 2026",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb3pYYnhPbmsyVEs1aTZVRzYxMHhJaWZsVlhkY3Q0NHNFbFptazlnQU8wbzVqQVBka3RoeThvSVdvblVHNkJaQlJ4S1FLTE54eGZXY0k0UzRtTkl1MGNLMEZycG9vdFlLQVU5QWJHSDYyekFmMVBPaEd6dHJsZElnYnRYb3Q1OUNna1Bhek9ldTF4VmhpMXBmR0ZhdFdCekpwdS0xei1oVVk?oc=5"
+        },
+        {
+          "jur": "Goa",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "State Government",
+          "ref": "",
+          "headline": "Goa mein ATF VAT rate ab 7% hua",
+          "what": "Goa sarkar ne aviation turbine fuel par VAT rate 7% kar diya hai jo 24 October 2026 se lagu hua.",
+          "who": "Airlines aur jet fuel sellers jo Goa se fuel proc ure karte hain.",
+          "action": "Fuel billing mein naya VAT rate adjust karein for Goa airport supplies.",
+          "deadline": "24 October 2026",
+          "source_name": "The Economic Times",
+          "source_url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQNkp1Qy1wTnZBZEdSaDhtTTRHcFp2ejlLQjg0Q2Z6Z05feUY3ZEdzcVJ3dW9iU0hXNnZBLTNSZmFhaGp3SzBJNHI3dDkyZ1RvNDV4WkZtWHk0c3JCdGw0NU9yNEk2cHFVVXdUSkIxdlRiRE1qNEY1djdvR3VtYk94dURuaVJ3RkdxQUpjemtnSHpOdXRVRzVCMUNVbkQ3MFNIV1h1QWFXcjZfdXU1czF6eW91U2VPVnYxQTkyalNRZ1F1M3BYRGtOMWlWaGEyeUtweF9ET1IteXZNN3hsQUdIUVRiRUhOT2hXT1VhUlE3UndOVnpYV2E4OGgzckdaUDlPR3I3dU1kdkxvZFc2aGtQcEZwVWzSAZQCQVVfeXFMUDZKdUMtcE52QWRHUmg4bU00R3Badno5S0I4NENmemdOX3lGN2RHc3FSd3VvYlNIVzZ2QS0zUmZhYWhqd0swSTRyN3Q5MmdUbzQ1eFpGbVh5NHNyQnRsNDVPcjRJNnBxVVV3VEpCMXZUYkRNajRGNXY3b0d1bWJPeHVEbmlSd0ZHcUFKY3prZ0h6TnV0VUc1QjFDVW5ENzBTSFdYdUFhV3I2X3V1NXMxenlvdVNlT1Z2MUE5MmpTUWdRdTNwWERrTjFpVmhhMnlLcHhfRE9SLXl2TTd4bEFHSFFUYkVITk9oV09VYVJRN1J3TlZ6WFdhODhoM3JHWlA5T0dyN3VNZHZMb2RXNmhrUHBGcFVs"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "Duty-Free Raw Sugar Import ki last date ab 31 Dec 2026",
+          "what": "Sarkar ne 10 lakh MT Tariff Rate Quota scheme mein raw sugar ka duty-free import karne ki deadline 31 December 2026 tak badha di hai.",
+          "who": "Raw sugar importers jo is scheme ka use karte hain.",
+          "action": "Duty-free raw sugar import scheme ka benefit 31 December 2026 tak le sakte hain.",
+          "deadline": "31 December 2026",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbHpwWUZUcFJ6UUx4NzZvdzNHbGUxYWJiSkdsZkx3QUhaLXFPVFU0Y2ltMnp5anZxNTVxenpuRXVKUnRvME45NEw0SDlkeWk5c3djYkxzXzVjbThwOU85WjNWbHdRaVdJeUV1TDA2NDZYMi03TG0yT19vMjVkNzF5S0dTTTZnMUhUcDNZRkxVbGVheVMzTlZqdDF2ckR0dUMwVk5mMmhjQktGN19GWEkxMUJRVnpTMExsbUJ5TVg4ekdwdVl4MjZXeDNOeHlEUDRHVTg3Ng"
+        },
+        {
+          "jur": "Goa",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "State Government",
+          "ref": "",
+          "headline": "Goa: draft shops & establishments rules pe feedback invite hua",
+          "what": "Goa sarkar ne draft shops and establishments rules notify kiye hain. 15 din ke andar feedback manga gaya hai.",
+          "who": "Shop owners aur businesses Goa mein.",
+          "action": "Rules ko padhein aur 15 din ke andar feedback submit karein agar koi sujhav ya objection ho.",
+          "deadline": "",
+          "source_name": "digitalgoa",
+          "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONXhEcWhVTXNER1U3RzJMRE0xNktxYXlqQkRFbUJoRFVDUGd4TU9yLUI3NU9CRWpqdzVtNDhGeElhNzZxTUhudElacTlnWUJGeUd4NVlqVmg4SVMyV0NGdWQ3Ni1xUUJnY0wyb2NaRlZwNTYxdkdXRi1FcEVQSjY5NVRFNm95ZzVYSUZoSG4wdV82clpKWmdYbFZWTnpfZGhheHZJ?"
+        }
+      ]
+    },
     {
       "date": "2026-10-24",
       "items": [
