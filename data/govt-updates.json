@@ -1,6 +1,89 @@
 {
-  "last_updated": "2026-10-26T02:31:14.517Z",
+  "last_updated": "2026-10-27T02:31:09.383Z",
   "days": [
+    {
+      "date": "2026-10-27",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "MCA / ROC",
+          "authority": "MCA",
+          "ref": "Circular No. 05/2026",
+          "headline": "MCA ne AOC-4 & MGT-7 ki deadline badhai",
+          "what": "MCA ne Forms AOC-4 aur MGT-7 file karne ki deadline Circular No. 05/2026 ke through extend kar di hai.",
+          "who": "Sabhi companies jinki annual filing due hai.",
+          "action": "AOC-4 aur MGT-7 forms revised deadline tak file karein.",
+          "deadline": "",
+          "source_name": "SAG Infotech Official Tax Blog",
+          "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPN1Q5ckxSb09SUlE1UXFTV3FiTjdMWjhDRnYtWDdqYm0yQnBaTmp3a1IyQk5WLWo2cWF2OVZUMGVLN0dqaDREZFE0V3dHaF9Jd2p1cDZxZ2NGdW16V1lLNm9EWWhlenJqN3g4VXNvWFVCMGlidFI2bnhRZ3U0U0ZUV1VWSjNnTVhhQ2JyOHd4ZGNfQzhy?"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "DGFT",
+          "ref": "",
+          "headline": "DGFT ne metallic scrap imports ke rules update kiye",
+          "what": "DGFT ne metallic scrap import par PSIC rules revise kiye hain.",
+          "who": "Wo importers jo metallic scrap import karte hain.",
+          "action": "Naye PSIC rule check karein aur import documents accordingly arrange karein.",
+          "deadline": "",
+          "source_name": "Taxscan",
+          "source_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNMG1mRzFzdE1NZC1MMjdBcExzb1hxN2VZV3Q1OTBuSjlaQ3NVenpSYzY5MFRMZzlSRlpoS0xmN2d5NC1fMFBGRFF6NXJKejEwYWN1allrRXQxaHRTZUFBeGJKNm10Y0hZNFVMR2d6b3R0RTJDS3V6VDY1c1J4M2VPMU1nVmlheXVkM20zVVFBMFpkZVI0VVFKYmNHQnptTGhPYWg1ZHNGdVpGZXBjbm5naEVQVzZKRlFCYXhXLUVKZ2hjdVN4czF2RGs4MU9IdGwyU3VnVnMwaHJCdE4yaF9VZXpGNkhNSmRkQ25CUXpYQ0QzZw?"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "Naye GST rules 2026 phase-wise 1 November se lagu honge",
+          "what": "CBIC ne confirm kiya hai ki naye GST rules 1 November 2026 se phase-wise lagu honge.",
+          "who": "Sare GST registered businesses aur professionals.",
+          "action": "Apne GST compliance process ko naye rules ke hisab se update karen.",
+          "deadline": "1 Nov 2026",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObFg0SlBVS1Q4SWRWWmtGS3B5QTFmajdQQ001Tm9kNEVDZTQwc2FETk5ubjlhWGIyWm1BdlZRXy1BM1Jwa0FNUWppdkRMTVVQa3o5MXBSU3RzUlRSQ2Voa2NXaWRBU3BPalI5UVlqanJzd2NvVE84bk96MVZRMEVhMmdWVEJkX3pLTC1sNnJzekx3YzZEcGZnUVJtRXhSRnprSERaVW9CalhOS2lwbkJKd2kyQQ?"
+        },
+        {
+          "jur": "Uttarakhand",
+          "cat": "GST",
+          "authority": "Uttarakhand AAR",
+          "ref": "",
+          "headline": "Manpower supply municipality ko GST exemption nahi milegi",
+          "what": "Uttarakhand AAR ne decide kiya ki segregation na hone par municipal manpower supply ko GST exemption nahi milega, 18% GST lagega.",
+          "who": "Jo agencies municipal manpower supply deti hain bina proper segregation ke.",
+          "action": "Aap manpower bills mein GST charge karen agar segregation nahi hua hai.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/municipal-manpower-supply-denied-gst-exemption-lack-segregation-uttarakhand-aar.html"
+        },
+        {
+          "jur": "Maharashtra",
+          "cat": "Customs / DGFT",
+          "authority": "CAAR Mumbai",
+          "ref": "",
+          "headline": "Photonic switch chassis par ab nil BCD milega",
+          "what": "CAAR Mumbai ne photonic switch chassis assemblies ko 8517 79 90 classification diya aur Notification 57/2017-Customs ke tahat Nil Basic Customs Duty allow kiya.",
+          "who": "Importers jo photonic switch chassis assemblies import karte hain.",
+          "action": "Customs clearance mein correct classification lagayein aur nil BCD ka benefit lein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/photonic-switch-chassis-assemblies-classifiable-8517-79-90-eligible-nil-bcd-caar-mumbai.html"
+        },
+        {
+          "jur": "Himachal Pradesh",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Himachal Pradesh Government",
+          "ref": "",
+          "headline": "VAT payment Himachal mein ab online mandatory hai",
+          "what": "Himachal Pradesh ne Rule 37A HP VAT Rules, 2005 me amendment kiya hai, ab sabhi VAT dealers ko payment electronically karna zaroori hai.",
+          "who": "Himachal Pradesh ke saare VAT registered dealers.",
+          "action": "Aapki VAT payment sirf online mode se karein, manual payment accept nahi hogi.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQMWFMSHc1dFk0SXhSd2FsQWEzZk5vc2w2US12cEtZUkdjTWlsdWw3N2ZwbGw0Y2kzMnNGcnJvWUJrbFgtV1lHaHZnczNpUThZd1FJeEMtay1QR2s2R21STnk2aG54cGs2RUhRZFJ2eml3TFMxWTRDVzdCSFJEMFAxOTRra0JfS3dNeTBRT2xtWTFCNWpHM0U2QWtIYVp0MFdqYXpOYXJrZTUxWHZWN21Nbkp2elNhbWdtekI0TkktZEhOT1hIaXkxT2hDbkZvcFIyUTlTcVlBLWVwY1dwVUJV?"
+        }
+      ]
+    },
     {
       "date": "2026-10-26",
       "items": [
