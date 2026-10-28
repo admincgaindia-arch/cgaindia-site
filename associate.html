@@ -629,8 +629,8 @@ fbq('init','1350244116690583');fbq('track','PageView');
 
 <aside class="tm-form" id="apply">
 <h2>Associate ke liye apply kariye</h2>
-<p class="sub">2 minute ka form. Verification ke baad empanelment kit aapke email par aayega, jise aap DSC ya Aadhaar eSign se sign karenge.</p>
-<div class="ok" data-asok>Application mil gayi hai. Membership verify karke CGA team 2 working days mein aapko email karegi.</div>
+<p class="sub">2 minute ka form. Submit karte hi Associate ID aur empanelment kit aapke email par aa jayega, jise aap DSC ya Aadhaar eSign se sign karenge.</p>
+<div class="ok" data-asok>Application mil gayi hai. Aapka Associate ID aur empanelment kit kuch minute mein aapke email par aa jayega.</div>
 <form id="asForm" novalidate>
 <label for="asName">Poora naam (membership records ke hisaab se)</label>
 <input id="asName" name="name" type="text" autocomplete="name" required>
@@ -768,6 +768,7 @@ fbq('init','1350244116690583');fbq('track','PageView');
       message:'ASSOCIATE APPLICATION | '+f('prof')+' | Membership/Enrolment: '+mem+' | Areas: '+(f('areas')||'-'),
       page:window.location.pathname,at:new Date().toISOString()};
     try{fetch('https://cga.app.n8n.cloud/webhook/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)}).catch(function(){});}catch(_){}
+    try{fetch('https://cga.app.n8n.cloud/webhook/cga-associate-apply',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name,mobile:mobile,email:email,city:f('city'),prof:f('prof'),mem:mem,areas:f('areas')})}).catch(function(){});}catch(_){}
     ok.style.display='block'; form.style.display='none';
   });
 })();
