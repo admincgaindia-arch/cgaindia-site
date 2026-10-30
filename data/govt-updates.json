@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-10-29T02:31:14.291Z",
+  "last_updated": "2026-10-30T02:31:17.373Z",
   "days": [
+    {
+      "date": "2026-10-30",
+      "items": [
+        {
+          "jur": "Tamil Nadu",
+          "cat": "Other",
+          "authority": "Tamil Nadu Government",
+          "ref": "",
+          "headline": "Tamil Nadu BESS policy launch, target 2.5 GW/10 GWh",
+          "what": "Tamil Nadu sarkar ne Battery Energy Storage System (BESS) policy notify ki hai. Target 2.5 GW ya 10 GWh ki storage capacity hai.",
+          "who": "Power, renewable, battery storage industry, investors aur related manufacturers.",
+          "action": "Agar battery storage ya renewable sector se jude ho, scheme ki details dekho aur policy ka use karo.",
+          "deadline": "",
+          "source_name": "Power Peak Digest",
+          "source_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBva3RDeGV5MWw4VTdnRUVYMHNzU0pHa2M5VXp2NUQtQTJfNjBhNVJ4VkpDbUNpTTN0TG5xUk1CR2Z3YW52Y0hKcFZDQ2F5eER1eUFuNW9WRVlEUjJwYzcyV2lXaEw3WTRVRkdRTTMwcUNhTGs5X3Nva2EtYw?oc=5"
+        },
+        {
+          "jur": "Goa",
+          "cat": "MSME & Scheme",
+          "authority": "Goa Cabinet",
+          "ref": "",
+          "headline": "Goa Cabinet ne approve kiya MSME Innovation Scheme 2026",
+          "what": "Goa Cabinet ne MSME Innovation Scheme 2026 ko manzoori di hai, purpose non-IT startups ko support karna hai.",
+          "who": "Non-IT MSMEs aur startups jo Goa mein kaam karte hain.",
+          "action": "Non-IT startups yeh scheme join kar sakte hain, details scheme document se dekhein.",
+          "deadline": "",
+          "source_name": "KNN India",
+          "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVzRYMU1ySTN6TWZDdmg0cnZHSTJJWVNqZEk4VWpGMXFlNUMycW5UbVh6TlRrcFZib2pfaXRYQm1LeU9BTGpKalR0QnRMTWZGMUJ3ZXBxak54SzBha0pKc3JWYXEwemZuS2duM2E0ZkVTZnNfMU0yN2NhSGR3YzdTRVhzZTRMVEJvVzdsV1NHS2dkdWhSWE9YbDdqWnRIOE9NZ2w1eHhCMXRSVG1YNXRMR0c1YVNTM3NHSkhJNFNVdw?oc=5"
+        },
+        {
+          "jur": "Maharashtra",
+          "cat": "Other",
+          "authority": "Election Commission",
+          "ref": "",
+          "headline": "EC ne Maharashtra me SIR ki timeline extend ki",
+          "what": "Election Commission ne SIR (Statutory Investigation Report) ki timelines extend kar di hai.",
+          "who": "Maharashtra ke companies, professionals jo SIR compliance mein jude hain.",
+          "action": "Nayi deadline aur compliance schedule check karein, planning accordingly karein.",
+          "deadline": "",
+          "source_name": "The Economic Times",
+          "source_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOeHRlVWtOLXpGdDZkM1RQTjE2REFCNlZVQjV1eElNQWRIdWxtaTdCZWhWV253Xzh3TGFTUmo0Tnl5WDNJV3k5dHFJeUo0VzJkTnFMZHYwY1RpbENZd2U5b2liQy1jSUx1WTFPZVZncFNicEVBRjdyRDkxakFsUVFmQmFLRTEwTmJYV2d5NWdBV3E2X0h4VjdfVlBOZzBKRGVNTjB0TE40WlJWWVpyX0dtS2piRHBsN05nblBwQ2NKaFVmcWl3cGI2UlhSS0RadDd5TXQ0TG11M2V1Z1luYU5BNElTRnA3bllU0gHiAUFVX3lxTE9IUU5FQzQ4ajMwYjhoendld296V1RRalJfeGJKdGR1VGxQUDVVZHA0Q2lKTXdhLXhubE1sSjNoYXFaeHpHc2syT1lIVmw4MmNMSnFDMFJsLXJnQ2JiRS16clhyTmh2eG96MFZhcnR5eEVxMDBuX2dHN1RnbzIyZlc1eGEzcWJIN2NidVVPSGNsVDhnWlppaHdTb2JHOXpsOG1pY0VLSFd6V0wwTlJOeUpTR1FUMGVmTzEyVm5mNy1qZkZjZkV5WlNUeDNPS0Z5MVR6amVqSENwUjJ0eDB1bFk5MVE?oc=5"
+        },
+        {
+          "jur": "Delhi",
+          "cat": "GST",
+          "authority": "Delhi Government",
+          "ref": "",
+          "headline": "GST rules badle, chhote e-comm sellers ki registration asaan",
+          "what": "Delhi me GST rules me badlav hua, ab chhote e-commerce sellers ke liye registration process easy kar diya gaya hai.",
+          "who": "Delhi ke chhote e-commerce sellers aur traders jo online bech rahe hain.",
+          "action": "Agar online bech rahe ho, naye GST registration process ko dekho aur apna registration update karo.",
+          "deadline": "",
+          "source_name": "Magzter",
+          "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPaEdaTExqOHlvNVR2YUMwbllSZUxYVjRQZG5UT0xGTm5ubE1CX01UcWxxa2NRdHk3OWlVcjkzclJ1NzRKOVhlQjdsYTYzWmZuQkR2T2ZJcnppQkpwREFyVGRGUDNHU1IxbnlrSXl4M0NhYk9fb3RQYmM5bkZMYUZ0b2Y0aE1wUldkWEZIZWNITmtJTi1DQXFzelE5bWZITjVtZHlrbVlzWHJyVExuYmhkUGJZVkQ4Y1pLV3k2NGF1U2VNWE13LWd1M2JKLUhLQUNJQ3lRU2ZB?oc=5"
+        },
+        {
+          "jur": "Sikkim",
+          "cat": "GST",
+          "authority": "Central Government",
+          "ref": "",
+          "headline": "GST: Helicopter travel, seeds storage, coffee curing ab exempt",
+          "what": "GST service exemption notification mein amendment aaya hai. Helicopter travel (seat-share) in North-East states, Sikkim aur Bagdogra; seeds storage; coffee curing; seamen's PF services ab exempt.",
+          "who": "Sikkim/NE me helicopter travel business, seeds storage, coffee curing, Seamen's PF ko service dene wale log.",
+          "action": "Agar above category me ho, apni service GST se exempt maan kar apni billing aur accounting update karo.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPTWsxRWpjS0RsUXVYXzFGclhRd1BGNGpNc1ZvVFhMNndLUDlRbDJTM0ljWTlnTHdNZGpKQ0tQdnpWa2ZHNUxKZmhwWnBIcmVCeGFTMW1CN2U3SFRKZWZtbTRZVWtDRG1QZ2tnWk1VX3JDREVJdWxSRFBhWk1Vbmh0dkg1eXBBLTVqWHdscUxIRnY4TGxKSncycUZqSEZ6Ymdwa25pZ1dFOU1JQUw5V3BENjZLbFFMWGdhaUY5OUdnMEVIUXV5VHR6eFpmcnpkUnJnekpkVVd1eEo1RXdmU3pTSnRGWS1ZTEh0bUQwWUYwUUtSNjRldnBOWGJqdnhybVFuTFpVbXU5OXl2VldKdDZIZTlZQ2pmbXBleFdTMkRhd1FGbnhZYm44djN0aThYVmF4M21DRmVjNXRaTThCdVFxTQ?oc=5"
+        },
+        {
+          "jur": "Uttar Pradesh",
+          "cat": "Labour",
+          "authority": "Uttar Pradesh Government",
+          "ref": "",
+          "headline": "UP ne Noida, Ghaziabad me minimum wages revise ki",
+          "what": "Uttar Pradesh sarkar ne Variable Dearness Allowance (VDA) ke tehat Noida aur Ghaziabad me minimum wages revise ki hain. Naye rates issue kiye gaye hain.",
+          "who": "Sabhi employers aur employees (especially factories, shops, establishments) Noida, Ghaziabad region mein.",
+          "action": "HR/payroll wale naye minimum wages kaam par lagu karein, compliance report update karein.",
+          "deadline": "",
+          "source_name": "India.com",
+          "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcmlXeDBvazhvTEhxdGJMZmJrTmp3ZTQwOWRsazdCU3ZmTXBaR0FwRkl6QkJRTnc2ek0zZ3EtU21zQ2J3LXl4elRDd2N4THB1R3FlamsxUkVpSEtIVVZXMm1KcXdhSHpfamJxNFNTUGptbjRISC1LVkpELTBZQUo5YmtjWVVhS1JKcURVZjhsdnFjRWhnNzl3bGpkT0NqUC1iaXRncTdfVk5SM2paN1VBeUJDSUxBbGNyeGIwLdIBwgFBVV95cUxORGdmd0pjenNfRnJ3akI3QlhRNlZmdUh5ZXNTQjVGbkRnXzNLa2VYMkktUDF4U1BsbkZvWWZ0UlFyQjBaWE1DN3BqVzlaUXNUOFJfcEsxNzJrZm5UaHVhRktYU3ZxX2lWa1NVWHFQY2gzYUE4V3NHUHNuWVpDc04ySE1JRUZHWUpNNnhJZXF2cFZXM0hDRWZZOGkwcDdyNGJzQzY4VDFkOG12cWlyTWlRVGROMVhGOWlRbDBhMnd3QkFjdw?oc=5"
+        },
+        {
+          "jur": "Himachal Pradesh",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Himachal Pradesh Government",
+          "ref": "",
+          "headline": "VAT: HP ne electronic payment sab dealers ke liye mandatory kiya",
+          "what": "Himachal Pradesh sarkar ne Rule 37A amend kar diya hai. Sab VAT registered dealers ko ab electronic payment karna hoga.",
+          "who": "HP ke sab registered VAT dealers aur unke accountants.",
+          "action": "VAT ka payment sirf online karein. Manual payment ab allowed nahi.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQMWFMSHc1dFk0SXhSd2FsQWEzZk5vc2w2US12cEtZUkdjTWlsdWw3N2ZwbGw0Y2kzMnNGcnJvWUJrbFgtV1lHaHZnczNpUThZd1FJeEMtay1QR2s2R21STnk2aG54cGs2RUhRZFJ2eml3TFMxWTRDVzdCSFJEMFAxOTRra0JfS3dNeTBRT2xtWTFCNWpHM0U2QWtIYVp0MFdqYXpOYXJrZTUxWHZWN21Nbkp2elNhbWdtekI0TkktZEhOT1hIaXkxT2hDbkZvcFIyUTlTcVlBLWVwY1dwVUJV?oc=5"
+        }
+      ]
+    },
     {
       "date": "2026-10-29",
       "items": [
