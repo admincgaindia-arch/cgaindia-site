@@ -3,6 +3,7 @@
    message so no enquiry is ever lost. Injects itself just above the footer. */
 (function () {
   'use strict';
+  if (document.getElementById('cgaEnquiry')) { return; }
 
   var ENDPOINT = 'https://cga.app.n8n.cloud/webhook/lead';
   var WA = 'https://wa.me/919996647888?text=';
