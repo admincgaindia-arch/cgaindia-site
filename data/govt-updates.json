@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-10-30T02:31:17.373Z",
+  "last_updated": "2026-10-31T02:31:13.868Z",
   "days": [
+    {
+      "date": "2026-10-31",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "CBIC",
+          "ref": "266/12/2026-GST",
+          "headline": "TRAI ko GST mein sarkar nahi maana: CBIC ka clarification",
+          "what": "CBIC ne circular jari karke clarify kiya ki TRAI ko GST mein government nahi maana jayega. Regulatory fees par reverse charge mechanism lagu hoga.",
+          "who": "Telecom services, regulatory fees dene wale sab businesses par.",
+          "action": "TRAI se judi regulatory fees par GST RCM rules follow karo, CBIC ke circular ke hisaab se.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/cbic-clarifies-trai-not-government-gst-impact-rcm-taxability-regulatory-fees.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "1 November 2026 se GST post-sale discount rule badla",
+          "what": "Ab 1 November 2026 se post-sale discounts ka credit note banana hai to pehle se agreement ka requirement hata diya gaya hai. Recipient ko ITC reversal karna hoga.",
+          "who": "Wholesalers, retailers, distributors jo GST mein post-sale discount dete hain.",
+          "action": "Credit note ke liye prior agreement ki ab zarurat nahi, par ITC reversal ka record rakho.",
+          "deadline": "1 November 2026",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-post-sale-discounts-prior-agreement-requirement-removed-1-november-2026.html"
+        },
+        {
+          "jur": "Uttar Pradesh",
+          "cat": "Labour",
+          "authority": "Uttar Pradesh Government",
+          "ref": "",
+          "headline": "Noida, Ghaziabad mein VDA ke saath minimum wages revise hue",
+          "what": "Uttar Pradesh sarkar ne VDA (Variable Dearness Allowance) ke saath minimum wages revise kiye hain. Noida aur Ghaziabad mein naye rate lagu ho gaye hain.",
+          "who": "Noida, Ghaziabad mein sab employers aur workers par lagu.",
+          "action": "Payroll aur wage calculations naye minimum wage rates ke hisaab se update karo.",
+          "deadline": "",
+          "source_name": "India.com",
+          "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcmlXeDBvazhvTEhxdGJMZmJrTmp3ZTQwOWRsazdCU3ZmTXBaR0FwRkl6QkJRTnc2ek0zZ3EtU21zQ2J3LXl4elRDd2N4THB1R3FlamsxUkVpSEtIVVZXMm1KcXdhSHpfamJxNFNTUGptbjRISC1LVkpELTBZQUo5YmtjWVVhS1JKcURVZjhsdnFjRWhnNzl3bGpkT0NqUC1iaXRncTdfVk5SM2paN1VBeUJDSUxBbGNyeGIwLdIBwgFBVV95cUxORGdmd0pjenNfRnJ3akI3QlhRNlZmdUh5ZXNTQjVGbkRnXzNLa2VYMkktUDF4U1BsbkZvWWZ0UlFyQjBaWE1DN3BqVzlaUXNUOFJfcEsxNzJrZm5UaHVhRktYU3ZxX2lWa1NVWHFQY2gzYUE4V3NHUHNuWVpDc04ySE1JRUZHWUpNNnhJZXF2cFZXM0hDRWZZOGkwcDdyNGJzQzY4VDFkOG12cWlyTWlRVGROMVhGOWlRbDBhMnd3QkFjdw?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "Labour",
+          "authority": "Central Government",
+          "ref": "",
+          "headline": "Gig & platform workers ko Social Security Board mein shamil kiya",
+          "what": "Centre ne National Social Security Board ko notify kiya hai jisme gig aur platform workers ko Labour Codes ke under laya gaya hai.",
+          "who": "India ke gig aur platform workers (delivery, cab, service apps waale log).",
+          "action": "Labour Code ke social security rules ab gig workers par bhi lagu hain. Platform companies compliance dekhen.",
+          "deadline": "",
+          "source_name": "India's News.Net",
+          "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcWQ0YWQ1d1ZjN0N0ay1tSEw2aE02eUViamp6dGV5ZFk1UGRZeHNlemZTWkJwRVQ5NGVJa2kxdW9lZlhscG1RVEE1c1F6anI2Ym9Ga2pVUFFaMGJROTdhTTVWXzhCVi1HZ0E0TExwWWpVMDVNcjZwYXJVU1dBUHBFZ19RNl9xanhtWmZKcDc0dTFHb1QyMlJpdUMySDZOdFdHOXJpaktpaklxeDUxZi1vVWdlUWhKQ3Atd1ZfZWJibkRlOU5rRHk1OTR3ek1CbXVObGhF?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "GST e-invoice services maintenance 31 Oct-1 Nov 2026",
+          "what": "GST e-invoice system ki scheduled maintenance 31 October se 1 November 2026 tak hogi. Kuch samay system unavailable rahega.",
+          "who": "Sab GST taxpayers jo e-invoice portal ka use karte hain.",
+          "action": "E-invoice kaam advance mein nipta lo, maintenance duration mein system access nahi milega.",
+          "deadline": "1 November 2026",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUzJFWFNPTUs4UVN3MUgxZzdCQjJFcl9CN2lJQW9ZTFk3dEs5dHNhamxITjVrdXZocXpfSnVFNGFycmNGZ3FlZG1rcVdyV09mSUZDd1NLRkVYZ1RBNDgwTlkwblBPTFhqdzRjXzZWUWdac1puRGp0MU1DenlRMVpud0NISm5ySXBYMzBXTTk4RUp6RWZYLXdua21LcGxPU0c1Mk83UU11dVgwT1U?oc=5"
+        },
+        {
+          "jur": "Gujarat",
+          "cat": "GST",
+          "authority": "Gujarat AAR",
+          "ref": "",
+          "headline": "Tea cups/spoons ke saath bika to 18% GST: Gujarat AAR",
+          "what": "Gujarat AAR ne decide kiya ki agar chai (tea) ko cups ya spoons ke saath bundle karke becha to uspe 18% GST lagega.",
+          "who": "Gujarat wale traders, manufacturers jo tea bundle items bechte hain.",
+          "action": "Tea ke bundles mein 18% GST charge karo agar cups/spoons include hain.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/tea-bundled-cups-spoons-attracts-18-percent-gst-gujarat-aar.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "GST registration processes 2026-27 mein badlenge",
+          "what": "GST registration ke REG-01 form, Rule 14B, amendments, cancellation, documents vagairah mein November, December 2026 aur April 2027 se updates lagu honge.",
+          "who": "Naye GST applicants, existing registrants jinhe amendment/cancellation chahiye.",
+          "action": "Registration ya amendment ke rules/requirements November 2026 se check karo aur accordingly apply karo.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-registration-overhaul-2026-key-effective-november-december-2026-april-2027.html"
+        }
+      ]
+    },
     {
       "date": "2026-10-30",
       "items": [
