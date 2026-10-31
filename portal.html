@@ -683,7 +683,7 @@ fbq('init','1350244116690583');fbq('track','PageView');
       '<div id="cp-otpw" style="display:none"><label class="cp-lbl" for="cp-otp">Email par aaya 6-digit OTP</label><input class="cp-in" id="cp-otp" inputmode="numeric" maxlength="6" style="letter-spacing:.35em;max-width:220px"></div>' +
       '<div class="cp-row"><button class="cp-btn" id="cp-go">OTP bhejiye</button><button class="cp-btn o" id="cp-re" style="display:none">OTP dobara</button></div>' +
       '<p class="cp-msg" id="cp-msg">' + (msg || '') + '</p>' +
-      '<p class="cp-meta" style="margin-top:1rem">Login karke aap apni services, payment history aur pending dues dekh sakte hain. Aapka data sirf aapko dikhta hai.</p></div>' +
+      '<p class="cp-meta" style="margin-top:1rem">Login karke aap apni services, payment history, pending dues aur har service ke documents dekh aur download kar sakte hain. Aapka data sirf aapko dikhta hai.</p></div>' +
       '<div class="cp-card cp-guest"><h2 style="margin-top:0">Guest ke roop mein continue</h2><p class="cp-meta" style="font-size:.9rem">Bina login ke bhi ye kaam kar sakte hain:</p>' +
       '<a href="pay.html">Online fees pay kariye<span>Card, UPI, netbanking, EMI &mdash; GST invoice turant email par</span></a>' +
       '<a href="services.html">Services aur fees dekhiye<span>ITR, GST, company registration, NGO, legal aur bahut kuch</span></a>' +
@@ -868,6 +868,7 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelecto
 <script defer src="assets/pay.js?v=20261002"></script>
 <script defer src="assets/lead-form.js"></script>
 <script src="assets/pwa.js" defer></script>
+<script src="assets/locker.js" defer></script>
 <script>
 (function(){
   var form=document.getElementById('tmForm');
