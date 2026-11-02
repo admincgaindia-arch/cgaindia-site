@@ -43,7 +43,7 @@
 
   function catCls(c) { return c === 'Acknowledgement' || c === 'Certificate' || c === 'Final document' ? 'lk-cat ack' : (c === 'Client upload' ? 'lk-cat cli' : 'lk-cat'); }
   function docRow(d, staffView) {
-    var canDel = C.role === 'admin' || C.role === 'staff' || d.by_role === 'client';
+    var canDel = C.role === 'admin' || C.role === 'senior' || C.role === 'staff' || d.by_role === 'client';
     return '<div class="lk-doc"><div class="lk-l"><span class="lk-ic">' + esc(ext(d.file_name)) + '</span><div style="min-width:0"><b>' + esc(d.title) + '</b>' +
       '<div class="cp-meta"><span class="' + catCls(d.category) + '">' + esc(d.category || 'Document') + '</span>' + esc(d.date) + ' &middot; ' + kb(d.size) +
       (staffView ? ' &middot; ' + esc(d.client || d.client_email) + (d.service ? ' &middot; ' + esc(d.service) : '') : '') + '</div></div></div>' +
@@ -57,7 +57,7 @@
     var so = E.map(function (e) { return '<option value="' + esc(e.eng_id) + '">' + esc(e.service) + (r !== 'client' ? ' - ' + esc(e.client || e.email) : '') + ' (' + esc(e.eng_id) + ')</option>'; }).join('');
     if (r === 'client') {
       h += '<div><label class="cp-lbl">Kis service ke liye?</label><select class="cp-in" id="lk-eng"><option value="">General / permanent document</option>' + so + '</select></div>';
-    } else if (r === 'admin') {
+    } else if (r === 'admin' || r === 'senior') {
       h += '<div><label class="cp-lbl">Service (engagement)</label><select class="cp-in" id="lk-eng"><option value="">Service nahi - seedha client ko</option>' + so + '</select></div>' +
         '<div id="lk-cw"><label class="cp-lbl">Client ka email (agar service nahi chuni)</label><input class="cp-in" id="lk-ce" type="email" placeholder="client@email.com"></div>' +
         '<div id="lk-cnw"><label class="cp-lbl">Client ka naam</label><input class="cp-in" id="lk-cn"></div>';
@@ -137,7 +137,7 @@
         var ct = document.getElementById('lk-cat'); if (ct) { body.category = ct.value; }
         var ce = document.getElementById('lk-ce'); if (ce && !body.eng_id) { body.client_email = ce.value.trim(); body.client_name = (document.getElementById('lk-cn').value || '').trim(); }
         if (C.role === 'staff' && !body.eng_id) { say('Pehle service chuniye.', 'e'); return; }
-        if (C.role === 'admin' && !body.eng_id && !/^[^@ ]+@[^@ ]+\.[^@ ]+$/.test(body.client_email || '')) { say('Service chuniye, ya client ka sahi email daaliye.', 'e'); return; }
+        if ((C.role === 'admin' || C.role === 'senior') && !body.eng_id && !/^[^@ ]+@[^@ ]+\.[^@ ]+$/.test(body.client_email || '')) { say('Service chuniye, ya client ka sahi email daaliye.', 'e'); return; }
         go.disabled = true; say('Upload ho raha hai... (' + kb(f.size) + ')');
         var rd = new FileReader();
         rd.onerror = function () { go.disabled = false; say('File padh nahi paaye. Dobara chuniye.', 'e'); };
