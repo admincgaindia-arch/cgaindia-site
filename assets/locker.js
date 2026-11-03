@@ -4,11 +4,12 @@
 (function () {
   var DOCS = 'https://cga.app.n8n.cloud/webhook/cga-portal-docs';
   var VAULT = 'https://cga.app.n8n.cloud/webhook/cga-portal-vault';
+  var HUB = 'https://cga.app.n8n.cloud/webhook/cga-portal-hub';
   var KEY = 'cga_portal_session';
   var MAX = 8 * 1024 * 1024;
   var app = document.getElementById('cp-app');
   if (!app) { return; }
-  var S = { docs: null, clients: null, portals: [], sel: null, tab: 'docs', creds: {}, q: '', upOpen: false, credForm: null, flash: null, revealed: {}, myCreds: null, loading: false, ents: null, ent: '', ctab: 'docs', groups: null, gview: false, gform: null };
+  var S = { docs: null, clients: null, portals: [], sel: null, tab: 'docs', creds: {}, q: '', upOpen: false, credForm: null, flash: null, revealed: {}, myCreds: null, loading: false, ents: null, ent: '', ctab: 'docs', groups: null, gview: false, gform: null, hub: null, hubC: {}, hubSum: null, ftypes: [], rtypes: [], hform: null, openT: '', upFor: null };
 
   var css = document.createElement('style');
   css.textContent = [
@@ -65,7 +66,17 @@
     '#cp-locker .lk-pt{display:inline-block;font-weight:800;color:#fff;background:var(--cp-navy);border-radius:8px;padding:.25rem .55rem;font-size:.8rem;margin-bottom:.5rem}',
     '#cp-locker .lk-gr{border:1px solid var(--cp-line);border-radius:12px;padding:.8rem .95rem;margin:0 0 .6rem;background:#fff}',
     '#cp-locker .lk-mrow{display:grid;grid-template-columns:2fr 1.5fr 1.2fr auto auto;gap:.5rem;align-items:center;margin:.35rem 0}',
-    '@media(max-width:760px){#cp-locker .lk-mrow{grid-template-columns:1fr}}'
+    '@media(max-width:760px){#cp-locker .lk-mrow{grid-template-columns:1fr}}',
+    '#cp-locker .lk-act{border:1px solid #f0d9a8;background:#fffaf0;border-radius:12px;padding:.9rem 1rem;margin:1rem 0 .2rem}',
+    '#cp-locker .lk-act h3{color:#8a5a00;font-size:1rem;margin:0 0 .5rem}',
+    '#cp-locker .lk-ai{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.5rem;padding:.55rem 0;border-top:1px dashed #f0d9a8}',
+    '#cp-locker .lk-ai:first-of-type{border-top:0}',
+    '#cp-locker .lk-st{display:inline-block;font-size:.7rem;font-weight:800;padding:.12rem .5rem;border-radius:999px;text-transform:uppercase;letter-spacing:.03em}',
+    '#cp-locker .st-ok{background:#e6f6ec;color:#17773f}#cp-locker .st-wait{background:#fff4e0;color:#8a5a00}#cp-locker .st-bad{background:#fdecea;color:#b3261e}#cp-locker .st-mute{background:#eef1f3;color:#5b6b75}',
+    '#cp-locker .lk-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.5rem;border:1px solid var(--cp-line);border-radius:10px;padding:.65rem .85rem;margin:0 0 .45rem;background:#fff}',
+    '#cp-locker .lk-msg{background:#f6fafc;border-radius:10px;padding:.55rem .75rem;margin:.35rem 0;font-size:.9rem}#cp-locker .lk-msg.me{background:#e7f5fa}',
+    '#cp-locker .lk-sum{display:flex;flex-wrap:wrap;gap:.6rem;margin:.9rem 0 0}#cp-locker .lk-sb{flex:1 1 160px;border:1px solid var(--cp-line);border-radius:12px;padding:.7rem .9rem;background:#fff}#cp-locker .lk-sb b{font-size:1.4rem;color:var(--cp-navy);display:block}#cp-locker .lk-sb span{font-size:.75rem;color:var(--cp-mute);font-weight:700;text-transform:uppercase}',
+    '#cp-locker textarea.cp-in{min-height:80px;resize:vertical}'
   ].join('');
   document.head.appendChild(css);
 
@@ -90,6 +101,46 @@
     o.sort(function (a, b) { return a < b ? 1 : -1; });
     return o.map(function (k, i) { return '<details class="lk-fy"' + (i === 0 ? ' open' : '') + '><summary>' + esc(k) + ' <span class="cp-meta" style="font-weight:600">' + g[k].length + ' documents</span></summary><div class="lk-fyb">' + g[k].map(function (d) { return docRow(d, showWho); }).join('') + '</div></details>'; }).join('');
   }
+  var STL = { pending: ['Pending', 'st-wait'], received: ['Mil gaya', 'st-ok'], in_progress: ['Chal raha', 'st-wait'], filed: ['Filed', 'st-ok'], not_applicable: ['Lagu nahi', 'st-mute'], active: ['Active', 'st-ok'], renewal_due: ['Renew karna hai', 'st-bad'], done: ['Renew ho gaya', 'st-ok'], open: ['Jawab baaki', 'st-wait'], answered: ['Jawab aa gaya', 'st-ok'], closed: ['Band', 'st-mute'] };
+  function stb(s) { var x = STL[s] || [s || '-', 'st-mute']; return '<span class="lk-st ' + x[1] + '">' + esc(x[0]) + '</span>'; }
+  function dleft(n) { if (n == null) { return ''; } if (n < 0) { return '<span class="lk-st st-bad">' + (-n) + ' din pehle expire</span>'; } return '<span class="lk-st ' + (n <= 30 ? 'st-bad' : 'st-ok') + '">' + n + ' din baaki</span>'; }
+  function hubOf(type, em) { var L = em ? (S.hubC[em] || []) : (S.hub || []); return L.filter(function (x) { return x.type === type; }); }
+  function loadHubC(em) { call(HUB, { action: 'list', client_email: em }).then(function (r) { S.hubC[em] = (r && r.ok) ? r.items : []; if (r && r.filing_types) { S.ftypes = r.filing_types; S.rtypes = r.renew_types; } paint(); }).catch(function () { S.hubC[em] = []; paint(); }); }
+  function tickets(L, team) {
+    var h = '';
+    L.slice().reverse().forEach(function (t) {
+      var op = S.openT === t.item_id;
+      h += '<div class="lk-row" style="display:block"><div class="lk-h"><div><b>' + esc(t.title) + '</b> ' + stb(t.status) + (team ? '' : (t.client_name && S.ents && S.ents.length > 1 ? ' <span class="lk-who">' + esc(t.client_name) + '</span>' : '')) + '<div class="cp-meta">' + esc(t.item_id) + ' &middot; ' + esc(t.updated) + ' &middot; ' + (t.thread || []).length + ' messages</div></div><div class="cp-row" style="margin:0"><button class="cp-btn o s" data-topen="' + esc(t.item_id) + '">' + (op ? 'Band kariye' : 'Kholiye') + '</button></div></div>';
+      if (op) {
+        h += (t.thread || []).map(function (m) { return '<div class="lk-msg' + ((team ? m.role !== 'client' : m.role === 'client') ? ' me' : '') + '"><b>' + esc(m.by) + '</b> <span class="cp-meta">' + esc(m.t) + '</span><br>' + esc(m.msg) + '</div>'; }).join('');
+        if (t.status !== 'closed') { h += '<textarea class="cp-in" id="tr-' + esc(t.item_id) + '" maxlength="2000" placeholder="Jawab likhiye..."></textarea><div class="cp-row"><button class="cp-btn s" data-trep="' + esc(t.item_id) + '">Bhejiye</button><button class="cp-btn o s" data-tclose="' + esc(t.item_id) + '">Sawaal band kariye</button></div>'; }
+      }
+      h += '</div>';
+    });
+    return h || '<div class="lk-empty">Abhi koi sawaal nahi hai.</div>';
+  }
+  function hubForm(type, em) {
+    var f = S.hform || {}, opts = type === 'filing' ? S.ftypes : (type === 'renewal' ? S.rtypes : []);
+    var ST = { docreq: ['pending', 'received'], filing: ['pending', 'in_progress', 'filed', 'not_applicable'], renewal: ['active', 'renewal_due', 'done'] }[type];
+    return '<div class="lk-up"><div class="lk-g">' +
+      (opts.length ? '<div><label class="cp-lbl">' + (type === 'filing' ? 'Return / filing' : 'Kya renew hona hai') + '</label><select class="cp-in" id="hf-t">' + opts.map(function (o) { return '<option' + (o === f.title ? ' selected' : '') + '>' + esc(o) + '</option>'; }).join('') + '</select></div>' : '<div><label class="cp-lbl">Kaunsa document chahiye</label><input class="cp-in" id="hf-t" maxlength="120" placeholder="jaise Form 16 FY 2025-26, bank statement Apr-Mar" value="' + esc(f.title || '') + '"></div>') +
+      (type === 'filing' ? '<div><label class="cp-lbl">Period</label><input class="cp-in" id="hf-p" maxlength="40" placeholder="jaise Oct 2026, Q2 FY 26-27, AY 2026-27" value="' + esc(f.period || '') + '"></div>' : '') +
+      '<div><label class="cp-lbl">' + (type === 'renewal' ? 'Expiry date' : 'Due date (optional)') + '</label><input class="cp-in" id="hf-d" type="date" value="' + esc(f.due_date || '') + '"></div>' +
+      '<div><label class="cp-lbl">Status</label><select class="cp-in" id="hf-s">' + ST.map(function (x) { return '<option value="' + x + '"' + (x === f.status ? ' selected' : '') + '>' + esc((STL[x] || [x])[0]) + '</option>'; }).join('') + '</select></div>' +
+      '<div class="lk-mrow" style="grid-template-columns:1fr"><div><label class="cp-lbl">' + (type === 'filing' ? 'ARN / acknowledgement no. / note' : 'Note (optional)') + '</label><input class="cp-in" id="hf-x" maxlength="400" value="' + esc(f.detail || '') + '"></div></div></div>' +
+      '<div class="cp-row"><button class="cp-btn s" id="hf-go" data-type="' + type + '">' + (f.item_id ? 'Update kariye' : 'Jodiye') + '</button><button class="cp-btn o s" id="hf-x2">Band kariye</button></div><p class="cp-msg" id="hf-m"></p>' +
+      (type === 'docreq' && !f.item_id ? '<p class="lk-note">Jodte hi client ko email jayega ki ye document chahiye.</p>' : '') + (type === 'filing' ? '<p class="lk-note">"Filed" karte hi client ko email jayega.</p>' : '') + '</div>';
+  }
+  function hubList(type, em, team) {
+    var L = hubOf(type, em);
+    if (type === 'filing') { L.sort(function (a, b) { return String(b.updated).localeCompare(String(a.updated)); }); }
+    if (!L.length) { return '<div class="lk-empty">' + ({ docreq: 'Koi document pending nahi hai.', filing: 'Abhi filing status nahi daala gaya.', renewal: 'Koi renewal track nahi ho raha.' }[type]) + '</div>'; }
+    return L.map(function (x) {
+      return '<div class="lk-row"><div style="min-width:0"><b>' + esc(x.title) + '</b>' + (x.period ? ' <span class="cp-meta">&middot; ' + esc(x.period) + '</span>' : '') + ' ' + stb(x.status) + ' ' + (type === 'renewal' ? dleft(x.days_left) : (x.due_date ? '<span class="cp-meta">Due: ' + esc(x.due_date) + '</span>' : '')) +
+        (!team && x.client_name && S.ents && S.ents.length > 1 ? ' <span class="lk-who">' + esc(x.client_name) + '</span>' : '') + (x.detail ? '<div class="cp-meta">' + esc(x.detail) + '</div>' : '') + '</div>' +
+        (team ? '<div class="cp-row" style="margin:0"><button class="cp-btn o s" data-hed="' + esc(x.item_id) + '">Edit</button><button class="cp-btn o s" data-hdel="' + esc(x.item_id) + '">Hataiye</button></div>' : (type === 'docreq' && x.status !== 'received' ? '<div class="cp-row" style="margin:0"><button class="cp-btn s" data-dup="' + esc(x.item_id) + '">Upload kariye</button></div>' : '')) + '</div>';
+    }).join('');
+  }
   function entName(em) { var e = (S.ents || []).find(function (x) { return x.email === String(em || '').toLowerCase(); }); return e ? e.name : ''; }
   function call(url, body) {
     var s = sess();
@@ -106,10 +157,10 @@
     call(DOCS, { action: 'list' }).then(function (r) {
       S.docs = r || { ok: false, error: 'Load nahi hua.' };
       if (S.docs.ok && isTeam()) {
-        return call(VAULT, { action: 'clients' }).then(function (v) { S.clients = (v && v.ok) ? v.clients : []; S.portals = (v && v.portals) || []; });
+        return Promise.all([call(VAULT, { action: 'clients' }).then(function (v) { S.clients = (v && v.ok) ? v.clients : []; S.portals = (v && v.portals) || []; }), call(HUB, { action: 'list' }).then(function (h) { S.hubSum = (h && h.ok) ? h.summary : null; if (h && h.filing_types) { S.ftypes = h.filing_types; S.rtypes = h.renew_types; } }).catch(function () { S.hubSum = null; })]);
       }
       if (S.docs.ok && role() === 'client') {
-        return call(VAULT, { action: 'list' }).then(function (v) { S.myCreds = (v && v.ok) ? v.creds : []; S.ents = (v && v.entities) || []; });
+        return Promise.all([call(VAULT, { action: 'list' }).then(function (v) { S.myCreds = (v && v.ok) ? v.creds : []; S.ents = (v && v.entities) || []; }), call(HUB, { action: 'list' }).then(function (h) { S.hub = (h && h.ok) ? h.items : []; }).catch(function () { S.hub = []; })]);
       }
     }).then(function () { S.loading = false; paint(); })
       .catch(function () { S.loading = false; S.docs = { ok: false, error: 'Load nahi ho paaya. Refresh kariye.' }; paint(); });
@@ -179,7 +230,19 @@
       '<div class="lk-h"><div class="lk-ct"><span class="lk-av">' + esc(initials(c.name)) + '</span><div><h3>' + esc(c.name) + '</h3><div class="cp-meta">' + esc(em) + (c.work ? ' &middot; ' + c.work + ' kaam' + (c.pending_work ? ' (' + c.pending_work + ' chal rahe)' : '') : '') + '</div></div></div>' +
       '<div class="cp-row" style="margin:0">' + (S.tab === 'docs' ? '<button class="cp-btn s" id="lk-open">Document upload kariye</button>' : '<button class="cp-btn s" id="vf-open">+ Portal login jodiye</button>') + '</div></div>';
     if (S.flash) { h += '<p class="cp-msg ' + S.flash[0] + '">' + esc(S.flash[1]) + '</p>'; }
-    h += '<div class="lk-tabs"><button class="lk-tab' + (S.tab === 'docs' ? ' on' : '') + '" data-tab="docs">Documents (' + D.length + ')</button><button class="lk-tab' + (S.tab === 'creds' ? ' on' : '') + '" data-tab="creds">Portal logins (' + (CR ? CR.length : c.creds || 0) + ')</button></div>';
+    var HC = S.hubC[em], hn = function (t) { return HC ? HC.filter(function (x) { return x.type === t; }).length : '..'; };
+    var tt = function (k, l) { return '<button class="lk-tab' + (S.tab === k ? ' on' : '') + '" data-tab="' + k + '">' + l + '</button>'; };
+    h += '<div class="lk-tabs" style="flex-wrap:wrap">' + tt('docs', 'Documents (' + D.length + ')') + tt('creds', 'Portal logins (' + (CR ? CR.length : c.creds || 0) + ')') + tt('docreq', 'Documents maangiye (' + hn('docreq') + ')') + tt('filing', 'Filing status (' + hn('filing') + ')') + tt('tickets', 'Sawaal (' + hn('ticket') + ')') + tt('renewal', 'Renewals (' + hn('renewal') + ')') + '</div>';
+    if (S.tab === 'docreq' || S.tab === 'filing' || S.tab === 'renewal') {
+      if (!HC) { return h + '<div class="lk-empty">Load ho raha hai...</div>'; }
+      h += '<div class="cp-row" style="margin:0 0 .6rem"><button class="cp-btn s" id="hf-open" data-type="' + S.tab + '">+ ' + ({ docreq: 'Document maangiye', filing: 'Filing status jodiye', renewal: 'Renewal jodiye' }[S.tab]) + '</button></div>';
+      if (S.hform && S.hform.type === S.tab) { h += hubForm(S.tab, em); }
+      return h + hubList(S.tab, em, true);
+    }
+    if (S.tab === 'tickets') {
+      if (!HC) { return h + '<div class="lk-empty">Load ho raha hai...</div>'; }
+      return h + '<div class="lk-up"><label class="cp-lbl">Client ko naya message bhejiye</label><input class="cp-in" id="tn-t" maxlength="120" placeholder="Vishay"><textarea class="cp-in" id="tn-m" maxlength="2000" style="margin-top:.4rem"></textarea><div class="cp-row"><button class="cp-btn s" id="tn-go">Bhejiye</button></div><p class="cp-msg" id="tn-msg"></p></div>' + tickets(HC.filter(function (x) { return x.type === 'ticket'; }), true);
+    }
     if (S.tab === 'docs') {
       if (S.upOpen) { h += uploadForm(em); }
       h += D.length ? byFY(D, false) : '<div class="lk-empty">Is client ke abhi koi documents nahi hain.</div>';
@@ -196,6 +259,12 @@
       (isAll() ? '<div class="cp-row" style="margin:0"><button class="cp-btn o s" id="gp-open">Family / Business Groups</button><button class="cp-btn s" id="lk-open">Document upload kariye</button></div>' : '') + '</div>';
     if (S.flash) { h += '<p class="cp-msg ' + S.flash[0] + '">' + esc(S.flash[1]) + '</p>'; }
     if (S.upOpen) { h += uploadForm(''); }
+    if (S.hubSum) {
+      var sm = S.hubSum;
+      h += '<div class="lk-sum"><div class="lk-sb"><b>' + sm.open_tickets.length + '</b><span>Sawaal - jawab baaki</span></div><div class="lk-sb"><b>' + sm.pending_docreqs + '</b><span>Documents client se pending</span></div><div class="lk-sb"><b>' + sm.renewals_due.length + '</b><span>Renewals 30 din mein</span></div></div>';
+      var urg = sm.open_tickets.map(function (t) { return '<div class="lk-row"><div><b>Sawaal:</b> ' + esc(t.title) + ' <span class="lk-who">' + esc(t.client_name || t.client_email) + '</span> <span class="cp-meta">' + esc(t.updated) + '</span></div><button class="cp-btn s" data-goc="' + esc(t.client_email) + '" data-gotab="tickets">Jawab dijiye</button></div>'; }).concat(sm.renewals_due.map(function (r) { return '<div class="lk-row"><div><b>Renewal:</b> ' + esc(r.title) + ' <span class="lk-who">' + esc(r.client_name || r.client_email) + '</span> ' + dleft(r.days_left) + '</div><button class="cp-btn o s" data-goc="' + esc(r.client_email) + '" data-gotab="renewal">Dekhiye</button></div>'; })).join('');
+      if (urg) { h += '<div style="margin-top:.7rem">' + urg + '</div>'; }
+    }
     h += '<div class="cp-row" style="margin:.9rem 0 0"><input class="cp-in cp-search" id="lk-q" placeholder="Client ka naam ya email dhoondhiye..." value="' + esc(S.q) + '" style="max-width:420px"><span class="cp-meta">' + L.length + ' clients</span></div>';
     var q = S.q.toLowerCase();
     var F = q ? L.filter(function (c) { return (c.name + ' ' + c.email).toLowerCase().indexOf(q) >= 0; }) : L;
@@ -218,11 +287,26 @@
       h += '<div class="lk-ents"><button class="lk-ent' + (!S.ent ? ' on' : '') + '" data-ent="">Sab</button>' + E.map(function (x) { return '<button class="lk-ent' + (S.ent === x.email ? ' on' : '') + '" data-ent="' + esc(x.email) + '">' + esc(x.name) + (x.type ? '<small>' + esc(x.type) + '</small>' : '') + '</button>'; }).join('') + '</div>';
     }
     if (S.flash) { h += '<p class="cp-msg ' + S.flash[0] + '">' + esc(S.flash[1]) + '</p>'; }
-    h += '<div class="lk-h" style="margin-top:.6rem"><div class="lk-tabs" style="margin:.4rem 0 .2rem;border:0"><button class="lk-tab' + (S.ctab === 'docs' ? ' on' : '') + '" data-ctab="docs">Documents (' + D.length + ')</button><button class="lk-tab' + (S.ctab === 'logins' ? ' on' : '') + '" data-ctab="logins">Portal logins (' + CR.length + ')</button></div>' +
+    var HB = (S.hub || []).filter(function (x) { return !S.ent || String(x.client_email || '').toLowerCase() === S.ent; });
+    var dq = HB.filter(function (x) { return x.type === 'docreq' && x.status !== 'received'; }), ans = HB.filter(function (x) { return x.type === 'ticket' && x.status === 'answered'; }), rn = HB.filter(function (x) { return x.type === 'renewal' && x.status !== 'done' && x.days_left != null && x.days_left <= 30; });
+    if (dq.length || ans.length || rn.length) {
+      h += '<div class="lk-act"><h3>Aapko kya karna hai</h3>' + dq.map(function (x) { return '<div class="lk-ai"><div><b>Document bhejiye:</b> ' + esc(x.title) + (x.due_date ? ' <span class="cp-meta">(' + esc(x.due_date) + ' tak)</span>' : '') + (x.detail ? '<div class="cp-meta">' + esc(x.detail) + '</div>' : '') + '</div><button class="cp-btn s" data-dup="' + esc(x.item_id) + '">Upload kariye</button></div>'; }).join('') +
+        ans.map(function (x) { return '<div class="lk-ai"><div><b>CGA ne jawab diya:</b> ' + esc(x.title) + '</div><button class="cp-btn o s" data-goto="tickets" data-topen2="' + esc(x.item_id) + '">Padhiye</button></div>'; }).join('') +
+        rn.map(function (x) { return '<div class="lk-ai"><div><b>Renewal:</b> ' + esc(x.title) + ' ' + dleft(x.days_left) + '</div><a class="cp-btn o s" href="https://wa.me/919996647888?text=' + encodeURIComponent('Renewal karna hai: ' + x.title) + '" target="_blank" rel="noopener">Renew karwaiye</a></div>'; }).join('') + '</div>';
+    }
+    var nF = HB.filter(function (x) { return x.type === 'filing'; }).length, nT = HB.filter(function (x) { return x.type === 'ticket'; }).length, nR = HB.filter(function (x) { return x.type === 'renewal'; }).length;
+    var tb = function (k, l) { return '<button class="lk-tab' + (S.ctab === k ? ' on' : '') + '" data-ctab="' + k + '">' + l + '</button>'; };
+    h += '<div class="lk-h" style="margin-top:.6rem"><div class="lk-tabs" style="margin:.4rem 0 .2rem;border:0;flex-wrap:wrap">' + tb('docs', 'Documents (' + D.length + ')') + tb('filing', 'Filing status (' + nF + ')') + tb('tickets', 'Sawaal (' + nT + ')') + tb('renewals', 'Renewals (' + nR + ')') + tb('logins', 'Portal logins (' + CR.length + ')') + '</div>' +
       (S.ctab === 'docs' ? '<div class="cp-row" style="margin:0"><button class="cp-btn s" id="lk-open">Document bhejiye</button></div>' : '') + '</div>';
     if (S.ctab === 'docs') {
       if (S.upOpen) { h += uploadForm(''); }
       h += D.length ? byFY(D, multi && !S.ent) : '<div class="lk-empty">Abhi yahan koi document nahi hai. CGA team document daalegi to aapko email aayega.</div>';
+    } else if (S.ctab === 'filing') {
+      h += hubList('filing', null, false).replace(/^/, '') ;
+    } else if (S.ctab === 'renewals') {
+      h += hubList('renewal', null, false);
+    } else if (S.ctab === 'tickets') {
+      h += '<div class="lk-up"><label class="cp-lbl">Naya sawaal poochhiye</label>' + (S.ents && S.ents.length > 1 ? '<select class="cp-in" id="tn-who" style="max-width:320px;margin-bottom:.4rem">' + S.ents.map(function (x) { return '<option value="' + esc(x.email) + '">' + esc(x.name) + '</option>'; }).join('') + '</select>' : '') + '<input class="cp-in" id="tn-t" maxlength="120" placeholder="Vishay, jaise: GST refund kab aayega?"><textarea class="cp-in" id="tn-m" maxlength="2000" placeholder="Apna sawaal detail mein likhiye" style="margin-top:.4rem"></textarea><div class="cp-row"><button class="cp-btn s" id="tn-go">Sawaal bhejiye</button></div><p class="cp-msg" id="tn-msg"></p></div>' + tickets(HB.filter(function (x) { return x.type === 'ticket'; }), false);
     } else {
       h += CR.length ? '<p class="lk-note" style="margin:.2rem 0 .7rem">Ye logins CGA team ne aapke liye save kiye hain. Kisi ke saath share na kariye.</p><div class="lk-lg">' + CR.map(function (c) {
         var pw = S.revealed[c.cred_id], who = multi && !S.ent ? entName(c.client_email) : '';
@@ -312,8 +396,22 @@
         }).catch(function () { btn.disabled = false; say('gf-m', 'Network error.', 'e'); });
       };
     }
-    each(box, '[data-cl]', function (b) { b.onclick = function () { S.sel = b.getAttribute('data-cl'); S.tab = 'docs'; S.upOpen = false; S.credForm = null; S.flash = null; paint(); if (!S.creds[S.sel]) { loadCreds(S.sel); } }; });
-    each(box, '[data-tab]', function (b) { b.onclick = function () { S.tab = b.getAttribute('data-tab'); S.upOpen = false; S.credForm = null; paint(); }; });
+    each(box, '[data-topen]', function (b) { b.onclick = function () { var id = b.getAttribute('data-topen'); S.openT = S.openT === id ? '' : id; paint(); }; });
+    each(box, '[data-topen2]', function (b) { b.onclick = function () { S.ctab = 'tickets'; S.openT = b.getAttribute('data-topen2'); paint(); }; });
+    each(box, '[data-goc]', function (b) { b.onclick = function () { S.sel = b.getAttribute('data-goc'); S.tab = b.getAttribute('data-gotab'); S.flash = null; S.hform = null; paint(); if (!S.creds[S.sel]) { loadCreds(S.sel); } loadHubC(S.sel); }; });
+    function hubCall(body, msgId, after) { call(HUB, body).then(function (r) { if (r && r.ok) { S.flash = ['k', r.msg]; S.hform = null; after(r); } else { if (msgId) { say(msgId, (r && r.error) || 'Nahi hua.', 'e'); } else { S.flash = ['e', (r && r.error) || 'Nahi hua.']; paint(); } } }).catch(function () { if (msgId) { say(msgId, 'Network error.', 'e'); } }); }
+    function refreshHub() { if (role() === 'client') { call(HUB, { action: 'list' }).then(function (h) { S.hub = (h && h.ok) ? h.items : S.hub; paint(); }); } else { loadHubC(S.sel); call(HUB, { action: 'list' }).then(function (h) { if (h && h.ok) { S.hubSum = h.summary; } }); } }
+    if ((el = document.getElementById('tn-go'))) { el.onclick = function () { var t = (document.getElementById('tn-t').value || '').trim(), m = (document.getElementById('tn-m').value || '').trim(), w = document.getElementById('tn-who'); if (t.length < 3 || m.length < 3) { say('tn-msg', 'Vishay aur sawaal dono likhiye.', 'e'); return; } this.disabled = true; say('tn-msg', 'Bhej rahe hain...'); hubCall({ action: 'ticket_new', title: t, message: m, client_email: role() === 'client' ? (w ? w.value : '') : S.sel }, 'tn-msg', refreshHub); }; }
+    each(box, '[data-trep]', function (b) { b.onclick = function () { var id = b.getAttribute('data-trep'), ta = document.getElementById('tr-' + id), m = ta ? ta.value.trim() : ''; if (m.length < 2) { return; } b.disabled = true; hubCall({ action: 'ticket_reply', item_id: id, message: m }, null, refreshHub); }; });
+    each(box, '[data-tclose]', function (b) { b.onclick = function () { b.disabled = true; hubCall({ action: 'ticket_close', item_id: b.getAttribute('data-tclose') }, null, refreshHub); }; });
+    if ((el = document.getElementById('hf-open'))) { el.onclick = function () { S.hform = S.hform ? null : { type: this.getAttribute('data-type') }; S.flash = null; paint(); }; }
+    if ((el = document.getElementById('hf-x2'))) { el.onclick = function () { S.hform = null; paint(); }; }
+    each(box, '[data-hed]', function (b) { b.onclick = function () { var x = (S.hubC[S.sel] || []).find(function (i) { return i.item_id === b.getAttribute('data-hed'); }); if (x) { S.hform = { type: x.type, item_id: x.item_id, title: x.title, period: x.period, due_date: x.due_date, status: x.status, detail: x.detail }; S.flash = null; paint(); } }; });
+    each(box, '[data-hdel]', function (b) { b.onclick = function () { if (!confirm('Ye item hata dein?')) { return; } hubCall({ action: 'delete', item_id: b.getAttribute('data-hdel') }, null, refreshHub); }; });
+    if ((el = document.getElementById('hf-go'))) { el.onclick = function () { var f = S.hform || {}, g = function (i) { var x = document.getElementById(i); return x ? x.value.trim() : ''; }; var body = { action: 'save', type: this.getAttribute('data-type'), item_id: f.item_id || '', client_email: S.sel, title: g('hf-t'), period: g('hf-p'), due_date: g('hf-d'), status: g('hf-s'), detail: g('hf-x') }; if (body.title.length < 2) { say('hf-m', 'Title bhariye.', 'e'); return; } this.disabled = true; say('hf-m', 'Save ho raha hai...'); hubCall(body, 'hf-m', refreshHub); }; }
+    each(box, '[data-dup]', function (b) { b.onclick = function () { var x = (S.hub || []).find(function (i) { return i.item_id === b.getAttribute('data-dup'); }); S.upFor = x || null; S.ctab = 'docs'; S.upOpen = true; S.flash = null; paint(); var t = document.getElementById('lk-t'); if (t && x) { t.value = x.title; } var w = document.getElementById('lk-who'); if (w && x) { w.value = String(x.client_email || '').toLowerCase(); } }; });
+    each(box, '[data-cl]', function (b) { b.onclick = function () { S.sel = b.getAttribute('data-cl'); S.tab = 'docs'; S.upOpen = false; S.credForm = null; S.flash = null; S.hform = null; paint(); if (!S.creds[S.sel]) { loadCreds(S.sel); } loadHubC(S.sel); }; });
+    each(box, '[data-tab]', function (b) { b.onclick = function () { S.tab = b.getAttribute('data-tab'); S.upOpen = false; S.credForm = null; S.hform = null; S.openT = ''; paint(); }; });
     each(box, '[data-cp]', function (b) { b.onclick = function () { copy(b.getAttribute('data-cp'), b); }; });
     each(box, '[data-hide]', function (b) { b.onclick = function () { delete S.revealed[b.getAttribute('data-hide')]; paint(); }; });
     each(box, '[data-rv]', function (b) {
@@ -378,7 +476,7 @@
           body.b64 = String(rd.result).split(',')[1] || '';
           call(DOCS, body).then(function (r) {
             go.disabled = false;
-            if (r && r.ok) { S.upOpen = false; S.flash = ['k', r.msg || 'Upload ho gaya.']; loadAll(); }
+            if (r && r.ok) { S.upOpen = false; S.flash = ['k', r.msg || 'Upload ho gaya.']; if (S.upFor) { var q = S.upFor; S.upFor = null; call(HUB, { action: 'docreq_done', item_id: q.item_id }).then(function () { loadAll(); }); } else { loadAll(); } }
             else { say('lk-m', (r && r.error) || 'Upload nahi hua.', 'e'); }
           }).catch(function () { go.disabled = false; say('lk-m', 'Network error.', 'e'); });
         };
@@ -420,7 +518,7 @@
   }
   document.addEventListener('click', function (ev) {
     var t = ev.target;
-    if (t && (t.id === 'cp-ref' || t.id === 'cp-out')) { S.docs = null; S.clients = null; S.creds = {}; S.revealed = {}; S.myCreds = null; S.ents = null; S.groups = null; S.flash = null; S.upOpen = false; if (t.id === 'cp-out') { S.sel = null; S.ent = ''; S.gview = false; } }
+    if (t && (t.id === 'cp-ref' || t.id === 'cp-out')) { S.docs = null; S.clients = null; S.creds = {}; S.revealed = {}; S.myCreds = null; S.ents = null; S.groups = null; S.hub = null; S.hubC = {}; S.hubSum = null; S.flash = null; S.upOpen = false; if (t.id === 'cp-out') { S.sel = null; S.ent = ''; S.gview = false; } }
   }, true);
   new MutationObserver(inject).observe(app, { childList: true });
   inject();
