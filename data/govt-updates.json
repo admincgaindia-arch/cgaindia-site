@@ -1,6 +1,115 @@
 {
-  "last_updated": "2026-11-02T02:31:13.591Z",
+  "last_updated": "2026-11-03T02:31:11.246Z",
   "days": [
+    {
+      "date": "2026-11-03",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "GSTN Advisory: Amend Registration Process Changes",
+          "what": "GSTN ne advisory jaari ki hai jisme GST registration amendment process mein kuch key changes laaye gaye hain.",
+          "who": "Sab GST taxpayers jinhe apne registration details mein update karna hai.",
+          "action": "Agar registration amend kar rahe hain to nayi process padhein aur follow karein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMUtkemhnczJROThjNkU5ZzdrWU42VEdySjZoSUEyWUJIb3o5ZXZuOGZJdWRyUlFnZWpzSmlfMzA4LVYzZDZsMWFwbDZrREd5dFFfdENleHZKZ3pycE85UE1nYV96NFpiMEFOVzJNRVVVcVZIMWdaeWxRZWRsczEyVVR4d3NxRm5LOXNuMG9KV2VWWkpBSWtOS0ctVjJpNXEyZXBN?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "GSTN ne 3 din ka OTP verification mandatory kiya",
+          "what": "GST registration amendment ke liye ab 3 din ke andar OTP verification karna zaroori ho gaya hai.",
+          "who": "Sab GST taxpayers jo registration amendment kar rahe hain.",
+          "action": "Registration details change karne ke baad OTP verify karein, 3 din ke andar.",
+          "deadline": "",
+          "source_name": "SAG Infotech Official Tax Blog",
+          "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTnV5VFNiQ0xTUXFWdmZYTzNHSVp5TlJHaG1LaXQ1ZWl6TEJIVkl1X2xLSzhZV0VPZzE0eVQwczdMd0FzbWhpOGdFZVU1TWVIdGxadFphZ0poUEtVWWxsdE4ycWFsa1hoWjVWWU9HWHJfYVNZS0pndGE5bjdzR0JuOUtxUkh5LXJFS0ZLZkowWTRQVGNYcHdJMy1vamdrNHJPaWppaDFBQUc?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "Composition Levy: GSTN Advisory on New Features",
+          "what": "GSTN ne composition levy functionality mein kuch enhancements jaari kiye hain.",
+          "who": "Composition scheme mein registered GST taxpayers.",
+          "action": "Nayi functionality ki details jaanein aur system mein update check karein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNS2hYSzY5emxZeW5ZajR6N253N0tpQ1h2TWxBZFVTYjlOLU5KVWNfU0hBLXVRU0NneE1qN0xjZWxHcmZaaFRCcXRFYThnMXlmSTBuOVpvcHl5N0xEOHRiQXB2R2FxbFBUcWNUODMwYS1tWnMtdXB1cjUtZ1R5XzlYZHJhM1FFYzA5YmhBd3ZXODlwazBxODYtWDBMOHdhMThBckwzOU5Bcmo2ZWRLcmJwNVpB?oc=5"
+        },
+        {
+          "jur": "Chhattisgarh",
+          "cat": "GST",
+          "authority": "AAR Chhattisgarh",
+          "ref": "",
+          "headline": "IIM Raipur Incubation Project Par 18% GST Laagu",
+          "what": "AAR Chhattisgarh ne faisla diya hai ki IIM Raipur Foundation ka ₹10.70 crore incubation project par 18% GST lagega.",
+          "who": "IIM Raipur Foundation aur jo entities incubation project mein shaamil hain.",
+          "action": "Project ki services par 18% GST rate ki compliance karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/iim-raipur-foundations-rs-10-70-crore-incubation-project-taxable-18-percent-gst-aar-chhattisgarh.html"
+        },
+        {
+          "jur": "Gujarat",
+          "cat": "GST",
+          "authority": "AAR Gujarat",
+          "ref": "",
+          "headline": "Biodegradable Carry Bags Par 5% GST Laagu: Gujarat AAR",
+          "what": "AAR Gujarat ne decide kiya hai ki biodegradable carry bags HSN 39269099 ke under 5% GST ke liable hain.",
+          "who": "Biodegradable carry bags banane, bechne aur kharidne wale businesses aur traders.",
+          "action": "GST invoice aur returns mein 5% GST laga kar compliance karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/biodegradable-carry-bags-classified-hsn-39269099-eligible-5-percent-gst-gujarat-aar.html"
+        },
+        {
+          "jur": "Gujarat",
+          "cat": "GST",
+          "authority": "AAR Gujarat",
+          "ref": "",
+          "headline": "Rice Husk Fibre Boards: 5% GST, Gujarat AAR ne clarify kiya",
+          "what": "AAR Gujarat ne rule diya ki rice husk fibre boards (HSN 4411) par 5% GST lagega.",
+          "who": "Rice husk fibre board manufacturers, sellers aur traders.",
+          "action": "In goods ki supply pe 5% GST collection aur payment karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/rice-husk-fibre-boards-heading-4411-attract-5-percent-gst-gujarat-aar.html"
+        },
+        {
+          "jur": "Maharashtra",
+          "cat": "Customs / DGFT",
+          "authority": "CAAR Mumbai",
+          "ref": "",
+          "headline": "Orthodontic Sheets: Custom Duty mein Plastic Material Ke Roop Mein Treat",
+          "what": "CAAR Mumbai ne clarify kiya hai ki orthodontic sheets plastic materials hai, dental appliances nahi.",
+          "who": "Importers aur exporters jo orthodontic sheets mangwate hai.",
+          "action": "Import/export mein correct customs classification use karein - plastic material.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/orthodontic-sheets-plastic-materials-not-dental-appliances-caar-mumbai.html"
+        },
+        {
+          "jur": "Goa",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "",
+          "ref": "",
+          "headline": "Goa: 2026-27 ke liye 5 talukas ke minimum land rate notified",
+          "what": "Goa sarkar ne 5 talukas ke liye 2026-27 mein minimum land rate notify kiye.",
+          "who": "Property buyers, sellers aur real estate businesses in talukas.",
+          "action": "Property valuation aur stamp duty calculation mein naye land rates ka istemal karein.",
+          "deadline": "",
+          "source_name": "digitalgoa",
+          "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVzM5RTdVd19CVjVOV3Atcjg4QUxuV093T0ktT0pwQll3Y3QwdG81WEhvQkpFZzZUWmNtTzJURjBXcUtLOTR0d19WcmRaNFZoVWYtM3NGYXM2aE9ZS3NNb0k5RW1Hc0VyTHdxQ2FaTkI3NmNwSkFDMUxmN2dIN0dWakVBR0tpWmJOX3BpSGVR?oc=5"
+        }
+      ]
+    },
     {
       "date": "2026-11-02",
       "items": [
