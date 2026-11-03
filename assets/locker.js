@@ -254,7 +254,7 @@
     return h;
   }
   function teamHome() {
-    var r = role(), L = S.clients || [];
+    var r = role(), L = (S.clients || []).filter(function (c) { return !/^(test|locker test)/i.test(String(c.name || '')) && String(c.email || '').indexOf('admin.cgaindia+') !== 0; });
     var h = '<div class="lk-h"><div><h2>Client Workspace</h2><div class="cp-meta">' + (isAll() ? 'Saare clients ke documents aur portal logins ek jagah.' : 'Aapko allot kiye gaye clients ke documents aur portal logins.') + '</div></div>' +
       (isAll() ? '<div class="cp-row" style="margin:0"><button class="cp-btn o s" id="gp-open">Family / Business Groups</button><button class="cp-btn s" id="lk-open">Document upload kariye</button></div>' : '') + '</div>';
     if (S.flash) { h += '<p class="cp-msg ' + S.flash[0] + '">' + esc(S.flash[1]) + '</p>'; }
