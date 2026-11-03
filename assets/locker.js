@@ -103,7 +103,17 @@
   }
   var STL = { pending: ['Pending', 'st-wait'], received: ['Mil gaya', 'st-ok'], in_progress: ['Chal raha', 'st-wait'], filed: ['Filed', 'st-ok'], not_applicable: ['Lagu nahi', 'st-mute'], active: ['Active', 'st-ok'], renewal_due: ['Renew karna hai', 'st-bad'], done: ['Renew ho gaya', 'st-ok'], open: ['Jawab baaki', 'st-wait'], answered: ['Jawab aa gaya', 'st-ok'], closed: ['Band', 'st-mute'] };
   function stb(s) { var x = STL[s] || [s || '-', 'st-mute']; return '<span class="lk-st ' + x[1] + '">' + esc(x[0]) + '</span>'; }
-  function dleft(n) { if (n == null) { return ''; } if (n < 0) { return '<span class="lk-st st-bad">' + (-n) + ' din pehle expire</span>'; } return '<span class="lk-st ' + (n <= 30 ? 'st-bad' : 'st-ok') + '">' + n + ' din baaki</span>'; }
+  function dleft(n, th, late) { if (n == null) { return ''; } if (n < 0) { return '<span class="lk-st st-bad">' + (-n) + ' din ' + (late || 'pehle expire') + '</span>'; } if (n === 0) { return '<span class="lk-st st-bad">Aaj due</span>'; } return '<span class="lk-st ' + (n <= (th || 30) ? 'st-bad' : 'st-ok') + '">' + n + ' din baaki</span>'; }
+  function profPanel(HC) {
+    var pr = (HC || []).find(function (x) { return x.type === 'profile'; }), p = {};
+    try { p = JSON.parse((pr && pr.detail) || '{}'); } catch (e) { p = {}; }
+    var ck = function (k, l) { return '<label class="lk-sw' + (p[k] ? ' on' : '') + '" style="margin:.2rem 1rem .2rem 0"><input type="checkbox" id="pf-' + k + '"' + (p[k] ? ' checked' : '') + '>' + l + '</label>'; };
+    var sel = function (k, opts) { return '<select class="cp-in" id="pf-' + k + '" style="max-width:220px">' + opts.map(function (o) { return '<option value="' + o[0] + '"' + (p[k] === o[0] ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') + '</select>'; };
+    return '<details class="lk-fy"' + (pr ? '' : ' open') + ' style="margin-bottom:.8rem"><summary>Compliance calendar settings ' + (pr ? '<span class="lk-st st-ok">ON</span>' : '<span class="lk-st st-wait">Set nahi</span>') + '</summary><div class="lk-fyb"><p class="lk-note" style="margin:0 0 .6rem">Jo lagu ho wo chuniye. System roz subah agle 40 din ki filings apne aap banayega (normal due date ke saath). Aap sirf status "Filed" kariye.</p>' +
+      '<div class="lk-g"><div><label class="cp-lbl">GST</label>' + sel('gst', [['', 'GST nahi'], ['monthly', 'Monthly (GSTR-1 + 3B)'], ['qrmp', 'QRMP (quarterly)']]) + '</div><div><label class="cp-lbl">ITR</label>' + sel('itr', [['', 'ITR nahi'], ['normal', 'Normal (31 Jul)'], ['audit', 'Audit case (30 Sep / 31 Oct)']]) + '</div></div>' +
+      '<div style="margin-top:.5rem">' + ck('tds', 'TDS (payment + return)') + ck('adv', 'Advance tax') + ck('gstr9', 'GSTR-9 annual') + ck('roc', 'ROC (AOC-4, MGT-7)') + ck('pf', 'PF / ESI') + '</div>' +
+      '<div class="cp-row"><button class="cp-btn s" id="pf-go">Settings save kariye</button></div><p class="cp-msg" id="pf-m"></p></div></details>';
+  }
   function hubOf(type, em) { var L = em ? (S.hubC[em] || []) : (S.hub || []); return L.filter(function (x) { return x.type === type; }); }
   function loadHubC(em) { call(HUB, { action: 'list', client_email: em }).then(function (r) { S.hubC[em] = (r && r.ok) ? r.items : []; if (r && r.filing_types) { S.ftypes = r.filing_types; S.rtypes = r.renew_types; } paint(); }).catch(function () { S.hubC[em] = []; paint(); }); }
   function tickets(L, team) {
@@ -133,10 +143,10 @@
   }
   function hubList(type, em, team) {
     var L = hubOf(type, em);
-    if (type === 'filing') { L.sort(function (a, b) { return String(b.updated).localeCompare(String(a.updated)); }); }
+    if (type === 'filing') { L.sort(function (a, b) { var pa = (a.status === 'pending' || a.status === 'in_progress') ? 0 : 1, pb = (b.status === 'pending' || b.status === 'in_progress') ? 0 : 1; if (pa !== pb) { return pa - pb; } return pa === 0 ? String(a.due_date || '9').localeCompare(String(b.due_date || '9')) : String(b.updated).localeCompare(String(a.updated)); }); }
     if (!L.length) { return '<div class="lk-empty">' + ({ docreq: 'Koi document pending nahi hai.', filing: 'Abhi filing status nahi daala gaya.', renewal: 'Koi renewal track nahi ho raha.' }[type]) + '</div>'; }
     return L.map(function (x) {
-      return '<div class="lk-row"><div style="min-width:0"><b>' + esc(x.title) + '</b>' + (x.period ? ' <span class="cp-meta">&middot; ' + esc(x.period) + '</span>' : '') + ' ' + stb(x.status) + ' ' + (type === 'renewal' ? dleft(x.days_left) : (x.due_date ? '<span class="cp-meta">Due: ' + esc(x.due_date) + '</span>' : '')) +
+      return '<div class="lk-row"><div style="min-width:0"><b>' + esc(x.title) + '</b>' + (x.period ? ' <span class="cp-meta">&middot; ' + esc(x.period) + '</span>' : '') + ' ' + stb(x.status) + ' ' + (type === 'renewal' ? dleft(x.days_left) : (type === 'filing' && (x.status === 'pending' || x.status === 'in_progress') && x.due_date ? dleft(x.days_left, 7, 'late') + ' <span class="cp-meta">Due: ' + esc(x.due_date) + '</span>' : (x.due_date ? '<span class="cp-meta">Due: ' + esc(x.due_date) + '</span>' : ''))) +
         (!team && x.client_name && S.ents && S.ents.length > 1 ? ' <span class="lk-who">' + esc(x.client_name) + '</span>' : '') + (x.detail ? '<div class="cp-meta">' + esc(x.detail) + '</div>' : '') + '</div>' +
         (team ? '<div class="cp-row" style="margin:0"><button class="cp-btn o s" data-hed="' + esc(x.item_id) + '">Edit</button><button class="cp-btn o s" data-hdel="' + esc(x.item_id) + '">Hataiye</button></div>' : (type === 'docreq' && x.status !== 'received' ? '<div class="cp-row" style="margin:0"><button class="cp-btn s" data-dup="' + esc(x.item_id) + '">Upload kariye</button></div>' : '')) + '</div>';
     }).join('');
@@ -235,6 +245,7 @@
     h += '<div class="lk-tabs" style="flex-wrap:wrap">' + tt('docs', 'Documents (' + D.length + ')') + tt('creds', 'Portal logins (' + (CR ? CR.length : c.creds || 0) + ')') + tt('docreq', 'Documents maangiye (' + hn('docreq') + ')') + tt('filing', 'Filing status (' + hn('filing') + ')') + tt('tickets', 'Sawaal (' + hn('ticket') + ')') + tt('renewal', 'Renewals (' + hn('renewal') + ')') + '</div>';
     if (S.tab === 'docreq' || S.tab === 'filing' || S.tab === 'renewal') {
       if (!HC) { return h + '<div class="lk-empty">Load ho raha hai...</div>'; }
+      if (S.tab === 'filing') { h += profPanel(HC); }
       h += '<div class="cp-row" style="margin:0 0 .6rem"><button class="cp-btn s" id="hf-open" data-type="' + S.tab + '">+ ' + ({ docreq: 'Document maangiye', filing: 'Filing status jodiye', renewal: 'Renewal jodiye' }[S.tab]) + '</button></div>';
       if (S.hform && S.hform.type === S.tab) { h += hubForm(S.tab, em); }
       return h + hubList(S.tab, em, true);
@@ -404,6 +415,7 @@
     if ((el = document.getElementById('tn-go'))) { el.onclick = function () { var t = (document.getElementById('tn-t').value || '').trim(), m = (document.getElementById('tn-m').value || '').trim(), w = document.getElementById('tn-who'); if (t.length < 3 || m.length < 3) { say('tn-msg', 'Vishay aur sawaal dono likhiye.', 'e'); return; } this.disabled = true; say('tn-msg', 'Bhej rahe hain...'); hubCall({ action: 'ticket_new', title: t, message: m, client_email: role() === 'client' ? (w ? w.value : '') : S.sel }, 'tn-msg', refreshHub); }; }
     each(box, '[data-trep]', function (b) { b.onclick = function () { var id = b.getAttribute('data-trep'), ta = document.getElementById('tr-' + id), m = ta ? ta.value.trim() : ''; if (m.length < 2) { return; } b.disabled = true; hubCall({ action: 'ticket_reply', item_id: id, message: m }, null, refreshHub); }; });
     each(box, '[data-tclose]', function (b) { b.onclick = function () { b.disabled = true; hubCall({ action: 'ticket_close', item_id: b.getAttribute('data-tclose') }, null, refreshHub); }; });
+    if ((el = document.getElementById('pf-go'))) { el.onclick = function () { var g = function (k) { var x = document.getElementById('pf-' + k); return x ? (x.type === 'checkbox' ? x.checked : x.value) : ''; }; this.disabled = true; say('pf-m', 'Save ho raha hai...'); hubCall({ action: 'save', type: 'profile', client_email: S.sel, profile: { gst: g('gst'), itr: g('itr'), tds: g('tds'), adv: g('adv'), gstr9: g('gstr9'), roc: g('roc'), pf: g('pf') } }, 'pf-m', refreshHub); }; }
     if ((el = document.getElementById('hf-open'))) { el.onclick = function () { S.hform = S.hform ? null : { type: this.getAttribute('data-type') }; S.flash = null; paint(); }; }
     if ((el = document.getElementById('hf-x2'))) { el.onclick = function () { S.hform = null; paint(); }; }
     each(box, '[data-hed]', function (b) { b.onclick = function () { var x = (S.hubC[S.sel] || []).find(function (i) { return i.item_id === b.getAttribute('data-hed'); }); if (x) { S.hform = { type: x.type, item_id: x.item_id, title: x.title, period: x.period, due_date: x.due_date, status: x.status, detail: x.detail }; S.flash = null; paint(); } }; });
