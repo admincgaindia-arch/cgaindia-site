@@ -1,6 +1,115 @@
 {
-  "last_updated": "2026-11-04T02:31:15.284Z",
+  "last_updated": "2026-11-05T02:31:16.668Z",
   "days": [
+    {
+      "date": "2026-11-05",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "MSME & Scheme",
+          "authority": "Cabinet",
+          "ref": "",
+          "headline": "Critical minerals processing scheme approved",
+          "what": "Cabinet ne scheme approve ki hai jo critical minerals ka processing India mein hi karne ka aim rakhti hai. Isse dusre countries par dependence kam hogi.",
+          "who": "Minerals sector mein kaam karne wali companies aur traders.",
+          "action": "Aapko naye scheme ke details dekhne chahiye, agar critical minerals ke processing mein involved hain.",
+          "deadline": "",
+          "source_name": "Daily Excelsior",
+          "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOV3N1amlVRWlicjQxLVBkVGhqTzQyam00YVNQeFBVR1pvQlVCVE05aWVKMG5Ua3BPWVFRZEhSNFUwM3NVRFR0RElQeUFZRDQ4ZkExUnZwdTg4TWJ2eTlLMDR3RFB4ZktlaS1wLXhRNFdHLTZFakoteVVKOENtNTFGdTYxYWQyYk1mV3JKZ1BwejhwRWlpOE5wblpFRzRHS05zN2ZJS3pHdTh5UVRmTTgweUtsMTFPMVJFaWhXTkNnbG5nVzY4b0hTN3Y3N3Y2SnpkNFHSAdIBQVVfeXFMTldzdWppVUVpYnI0MS1QZFRoak80MmptNGFTUHhQVUdab0JVQlRNOWllSjBuVGtwT1lRUWRIUjRVMDNzVURUdERJUHlBWUQ0OGZBMVJ2cHU4OE1idnk5SzA0d0RQeGZLZWktcC14UTRXRy02RWpKLXlVSjhDbTUxRnU2MWFkMmJNZldySmdQcHo4cEVpaThOcG5aRUc0R0tOczdmSUt6R3U4eVFUZk04MHlLbDExTzFSRWloV05DZ2xuZ1c2OG9IUzd2Nzd2Nkp6ZDRR?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CAAR Delhi",
+          "ref": "",
+          "headline": "PVC, PS, PU wall panels Builder’s Ware maana gaya",
+          "what": "CAAR Delhi ne Decorative PVC, PS, PU wall panels ko Customs Tariff 3925 ke under Builder’s Ware classify kiya.",
+          "who": "Wall panel importers, builders, traders.",
+          "action": "Classification check karein, ab se import declaration mein Customs Tariff 3925 mention karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/decorative-wall-panels-classified-customs-tariff-3925-caar-delhi.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Income Tax",
+          "authority": "CBDT",
+          "ref": "140/2026",
+          "headline": "CBDT ne APERC exemption period correct kiya",
+          "what": "CBDT ne APERC ke exemption period ko Notification 24/2019 mein English version ke liye 2020–21 se 2024–25 tak correct kiya hai.",
+          "who": "APERC ya related income tax exemption lene wale taxpayer.",
+          "action": "Agar exemption period pe confusion thi to ab nayi notification check karein. Corrected period ka dhyan rakhein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/cbdt-corrects-aperc-exemption-period-ays-2020-21-2024-25.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "E-Way Bill ab 14-digit hoga 1 Jan 2027 se",
+          "what": "GSTN ne propose kiya hai ki 1 January 2027 se E-Way Bill number 14-digit aur Consolidated E-Way Bill number 11-digit ka ho jayega.",
+          "who": "GST taxpayers aur software providers jinhe E-Way Bill generate karna hota hai.",
+          "action": "Accounting/ERP software upgrade ki planning abhi se start karein. Manual records bhi update karein.",
+          "deadline": "01 Jan 2027",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstn-proposes-14-digit-bill-numbers-1-january-2027.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "A2Z Taxcorp LLP",
+          "ref": "",
+          "headline": "SEZ duty drawback claims rules badle",
+          "what": "Sarkar ne SEZ Rules amend kiye hain jisse DTA suppliers ab duty drawback benefit le sakte hain agar SEZ unit/developer ka disclaimer mile.",
+          "who": "DTA (Domestic Tariff Area) se supply karne wale exporters aur SEZ units.",
+          "action": "SEZ ko supply karte waqt ab disclaimer lene ki process apnayen, taki duty drawback ka benefit claim kar saken.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPX3AyM0YxNm1kcVdlUkE5VWwwWGJYRkR4TGZBa2dJTFdZZk1SRUdIWHJLSTVVZHpnRjNfaTQtdXNOVm1nOTRoeTgwRmwyRWRDR1RTNE9vbFBuUFZMeVRoM3ZHWXNEbkE5TlMwTFh0SkFvYkVUSFdlbnpOV2RrZjVDaV9EVXhSQ0xhN21sWHJnLTJtYmg3UkRoRTFqaXJnMEY5dXZlRGpoV2dVMk1hc0NxSDVITk9EcHBpUEMxQVlJSlVuVGg3dkJYWWlrR1ZWMjFaRlpKRG01NnhlOWc2c0hkZFN1bmRXY0ZtRkQ4VGQtSHdlUDlO"
+        },
+        {
+          "jur": "Central",
+          "cat": "MSME & Scheme",
+          "authority": "Cabinet",
+          "ref": "",
+          "headline": "Cabinet ne Rs 14,500-cr energy storage scheme pass ki",
+          "what": "Cabinet ne Rs 14,500-crore ki scheme approve ki hai taaki large-scale energy storage projects ko boost kiya ja sake.",
+          "who": "Energy storage, battery manufacturers, power sector companies.",
+          "action": "Scheme ke eligibility aur application guidelines jaise hi ayein, usko follow karein.",
+          "deadline": "",
+          "source_name": "The Tribune",
+          "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPY2FnYk1wbml4ZjV0cE5OUnRaNDd1cUY4LWxIUTlzeWxqYTBxbEQ3dEVrMTBBRWJZMXFBN3d5aWZvOF82UkJQY3gzd1lhN0I2bjY3VVc5WklBMGRMMzBhbm1rNTREN2lYZXBCOFF5YkZVbDdnMEYzMzJRbnJTR2czWV9scEQyWmY2VG5sVFExbENubTliQUh6NmpCREY4QTMzWk45eTZYR28zVDIxeHo2REtuODVidlJnTWfSAboBQVVfeXFMT2NhZ2JNcG5peGY1dHBOTlJ0WjQ3dXFGOC1sSFE5c3lsamEwcWxEN3RFazEwQUViWTFxQTd3eWlmbzhfNlJCUGN4M3dZYTdCNm42N1VXOVpJQTBkTDMwYW5tazU0RDdpWGVwQjhReWJGVWw3ZzBGMzMyUW5yU0dnM1lfbHBEMlpmNlRubFRRMWxDbm05YkFIejZqQkRGOEEzM1pOOXk2WEdvM1QyMXh6NkRLbjg1YnZSZ01n"
+        },
+        {
+          "jur": "Central",
+          "cat": "MSME & Scheme",
+          "authority": "Cabinet",
+          "ref": "",
+          "headline": "VISTAR Scheme: Rs 4,371-cr statistical system modernisation",
+          "what": "Modi Cabinet ne Rs 4,371-crore ka VISTAR Scheme pass kiya hai jo India ke statistical system ko modernise karega aur surveys ko expand karega.",
+          "who": "Survey agencies, data analysis firms aur sarkari departments jo policy ya research ka kaam karte hain.",
+          "action": "Jo bhi sarkari statistics ya data se jude hain, scheme details aur funding guidelines ka wait karein.",
+          "deadline": "",
+          "source_name": "Babushahi.com",
+          "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE52bEpwek1Rb3hZcHNpeTE5YjdvbWhTU2w5cTI2aWRUTDJxZEFGQmlVU0l5bGF1a3dZcVJ5cDNJbWljd3lhVnNtTEJady1PZ2JtblhmajMtZFVUUEZTNVE?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "Labour",
+          "authority": "www.pib.gov.in",
+          "ref": "",
+          "headline": "Shram Samvad: Labour Codes par awareness drive",
+          "what": "Indore & Dhar region ke liye Labour Codes par capacity building aur awareness programme organise hua hai.",
+          "who": "Industry owners, HR, aur workers Madhya Pradesh ke Indore & Dhar region se.",
+          "action": "Aapki location wahan hai to labour codes ki training ya awareness program participate karein ya apne staff ko bhejein.",
+          "deadline": "",
+          "source_name": "www.pib.gov.in",
+          "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9jaUFkNXdVNzFGWGFwLUlVeTRMR1dmZUdMWmZVbDh5UDFWb1U5U0NkN1Fsc3Rtd25YM2EzT3BaQWNEbmNrcTNBQ242bDRGM09GeGhMODJEckxieURqYWl2TmEyR09xc0pyeXNSUjRuYUg4TDJsNG8xY05jZUM?oc=5"
+        }
+      ]
+    },
     {
       "date": "2026-11-04",
       "items": [
