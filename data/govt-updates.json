@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-11-05T02:31:16.668Z",
+  "last_updated": "2026-11-06T02:31:18.955Z",
   "days": [
+    {
+      "date": "2026-11-06",
+      "items": [
+        {
+          "jur": "West Bengal",
+          "cat": "MSME & Scheme",
+          "authority": "West Bengal Government",
+          "ref": "",
+          "headline": "Bengal unveils Industrial Policy with investor incentives",
+          "what": "West Bengal sarkar ne nayi industrial policy launch ki hai, jisme investors ko incentive dene ke liye dedicated fund banaya gaya hai. Policy mein 120% tak assistance aur alag land procurement route bhi diya gaya hai.",
+          "who": "Investors aur naye industrial project lagane wale log aur companies West Bengal mein.",
+          "action": "Agar West Bengal mein nayi industry ya project lagana hai, to nayi policy aur incentive details padhein. Apply karne wale process samjhein.",
+          "deadline": "",
+          "source_name": "Business Standard",
+          "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQOHMtR3ZiMGM4X1pQNFV1T2tXVUVUV3BQLVNacXEzeldTWWVYQ1UxVWxoTkdSdG00LXBoUVhQano3dmFUX1V6d2VlWFpUQzB4OFJPTlZkUmcxWDZZMHE3YkxabVN5a243T0NjU0xfQzJvZHotTTAydWlSVXJhRmpTcWFnUkRESVByNXJXX0FNdUFKX3M0MEYzLU9wQWlpbF9CdWRsbGFfR1VTSHFhM0dFRm1HR1dGaElhZEpUa1VJSDdvRE11b1hFRE5SWWE1RU5DRDNpQg"
+        },
+        {
+          "jur": "Central",
+          "cat": "Income Tax",
+          "authority": "CBDT",
+          "ref": "Notification No. 141/2026",
+          "headline": "IFSC aircraft leasing dividends par TDS exemption",
+          "what": "CBDT ne notification jaari kiya hai jisme ek IFSC aircraft leasing unit se doosre IFSC unit ko dividend payment par TDS nahi katega.",
+          "who": "Sirf IFSC (International Financial Services Centre) ki registered aircraft leasing units ke beech ka dividend payment.",
+          "action": "Agar aap IFSC aircraft leasing unit hain, to dividend payment par TDS exemption ka benefit notification mein diye rules dekh kar use karein.",
+          "deadline": "",
+          "source_name": "TaxCorp AI",
+          "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUU5aQUlHSUo0THprQWF6V1dNMkl0R29kaHFmcHRtZHpkdkt3MW5NNUlUYzdVcmxXWHYtZUh0ai1kVUtzWmVwVUU0SkhuZjlBdDVFVUkxU0VLeGVZM2QxYzJsR3BmRXlmNVV6eDhheVpWR2FnQTI0WWhUS0lZSVJHY3h4enVTMkVoV1cyZVF3WllkQTVKMWVuYjBLUzNMaVJ2S29FR1QwSk52cGc"
+        },
+        {
+          "jur": "Central",
+          "cat": "MCA / ROC",
+          "authority": "MCA",
+          "ref": "",
+          "headline": "Direct listing ab debentures, preference shares par bhi",
+          "what": "MCA ne direct listing ki framework ab convertible debentures, preference shares aur negative net worth waali companies par bhi laga di hai. IFSC companies bhi covered hain.",
+          "who": "Jo companies India mein convertible debentures, preference shares ya IFSC mein list karna chahti hain, including negative net worth waale.",
+          "action": "Agar aapki company eligible hai, to naye direct listing ke rules padhein aur capital market se fund raise options explore karein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZG54TVBHRjdxNjhYR3ZFZkxFOEVDdGpmTXBEZlc4dFg2aGxfeVk5bzlLbnZzcTdkWDN6cW40eF9zdGh1QzFWS2pQTU9kUlBINW9GLW4wNl9hWDNHeUdwcGhlaWQ2dU8yZ0hFamRXOEFJeDJyR2lQMmlpemhfOGxQNW1DN29kc1NFMVFXTU1xM3czTEZPd3FMRVgxeDc5dkcyaEhOTzhFc1YyVG9oc3ZqRU9nODN4Q3RYbjRiTHNGcXl6UjZnVV8yOVVvMnM2N1Zjck9tQlBDTno3NlhiRWpjTWpqR20zUDZCYmpOOFBGcV9ISGJXRVVXMDlBd3dfMGdVSEE"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "DGFT",
+          "ref": "",
+          "headline": "DGFT services ki full digitisation ki time limit March 2027",
+          "what": "DGFT ke services ab March 2027 tak poori tarah digital ho jayengi. Purpose hai physical visit khatam karna aur sab online process banana.",
+          "who": "Exporters, importers, DGFT portal users.",
+          "action": "Apne documents aur registrations DGFT portal par online hi process karein. Manual visit avoid karein, digital workflow follow karein.",
+          "deadline": "March 2027",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUEtYeEpJV2N4al8tNHRuT1B6dXAzbTR3MnItWFBWZ0ZheU4tbEY4c0VzNVdhZ1VGLU52dVZnWkduaS1XalE3eC0wSjN2Tjg0cm53MWtubTkzVVgtOFdEV2VaeDFHN2dnQWNGc3lFSEhLZEJ0X0x5YXpXYmdObGRYTlAzU1F0Zi0xd1JZQ0NDRHFPektyTTYzSnpuamtDWWh2TzZyQVJXYTF0Tm5VRkQxeFoxMWVCcnN3MWZfQjExU0w"
+        },
+        {
+          "jur": "Gujarat",
+          "cat": "MSME & Scheme",
+          "authority": "Gujarat Export Promotion Council",
+          "ref": "",
+          "headline": "Gujarat Export Promotion Council ne MSME export ko boost diya",
+          "what": "Gujarat Export Promotion Council ne MSME export push shuru kiya hai, export badhane ko naye initiatives liye gaye hain.",
+          "who": "Gujarat ke MSMEs, exporters aur export interested units.",
+          "action": "MSME units naye export promotion initiatives aur support schemes ka benefit lene ke liye council se contact karein.",
+          "deadline": "",
+          "source_name": "Urban Acres",
+          "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNWlvZ3ZuR190UG5wdUVEdFZlUnZtOGhSanp2b1Q0djhPMURHWEppcEpNQWVlLVd6SUJpNDA2S2lzSjRYT09MajRNN1ZRcFFOcnhqc0d5Tmw4SFZhbFYxcEFKMGk1dEdiU1pyVnVXb0J4NjFIRnVjQTB2aExvYXVVN3VsQVl5N09jX2lyMVdn"
+        },
+        {
+          "jur": "Goa",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Goa Government",
+          "ref": "",
+          "headline": "Goa Govt ne liquor bottle refund scheme April 2027 tak defer ki",
+          "what": "Goa sarkar ne liquor bottles ke liye deposit refund scheme ka implementation ab 1 April 2027 tak postpone kar diya hai.",
+          "who": "Goa ke liquor manufacturers, traders, bar aur retail outlets.",
+          "action": "Liquor bottle deposit refund scheme abhi lagu nahi hui hai, implementation ab April 2027 se hoga. Scheme ke provisions ki tayyari karein.",
+          "deadline": "1 April 2027",
+          "source_name": "Aabkari Times",
+          "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNLVNRSENWdzNXbENRTS1kZV9CRXJJUERMSFVPamp0ZnhyN0ZqX2N0RVE4cmZoTGs1RnJJdFRJc2JSbFFFaDR6bWc4STcwTExIWThOeXEtejVGS3lnbjNOamF4NXhIejZJYzl1UkFuNVlGTThYQWYyU2doazh0VmhYVnJTOFNxWkwydjBHa3RTUC00dUdUMlY4VU9tRnNhN2F3UmRIZkx3aWFDUQ"
+        },
+        {
+          "jur": "Delhi",
+          "cat": "Customs / DGFT",
+          "authority": "CAAR Delhi",
+          "ref": "",
+          "headline": "British premium Scotch par customs duty cut, Delhi mein price giregi",
+          "what": "Delhi mein British spirits, khaaskar premium Scotch ki price ab kam hogi kyunki customs duty cut hua hai.",
+          "who": "Delhi mein alcohol importers, liquor traders aur customers jo British premium Scotch import karte hain ya bechte hain.",
+          "action": "Importers aur traders naye customs duty rate check karein aur accordingly apni pricing policy update karein.",
+          "deadline": "",
+          "source_name": "ET Retail",
+          "source_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPZU1rU09mWU1SdTU5MVZ4SHdrMl96dWNZdFE0cHlTZkpudkRqTUZSV2gzZ0JwcDdGREV4aWU5UThzRWVIWTdkZjQ0dTBYVU4zWkdaOEJ0SHN4VXpDMUVJWFZMMndmeVBlQ29GSTdoMnhYd1dyMm03NlRJVlJyRllhalJVLUJpTHNLaTZyMGFGa0JBcFVWMFdVX1RFT0ZpbXppcXU4MFY1ei1qaFFJWFRDWWNtel9xbmhJUTdSQ3VKWHhVRHZCTFd0blJmRmdEellHWXl2aExSYXIzRzF1bmpnaEpVV3I4YlFOMF9tNjZaUnBOa2h3OE1FbFhzZTNtVlNySmhJ0gGHAkFVX3lxTE5iVjdaQ042M3ZCSExPejROa1pTeWIzNUMyZkFocC02NXJTUWtrOUNWM3dEV09rclhZLVhJSzBDU2E2ZWo5SUVrQ0JBT1BqdXFzeE1aa1RKWDRRMktzTnZpcklDdGpxbF9zRmU4ajMxOWVtUnRYSjlRR0FVTWJuSTFWd2FoTXVhWDFybWRqbVh0TVpUSmtSbHJnclhYY3RhUk5VcFlTM3lvZUJid0RDYkZSU1BkQXJSOV9QRUpSQW42eEpFc3BqVFlaYkt2bDZ2T2s5OTBOMzhzSXp0S0NrT1l5M1FMZXpqZmk2LWMwTWt5NFZvVzNISEluYUYtbVlCTkVONkNaZ1k0"
+        }
+      ]
+    },
     {
       "date": "2026-11-05",
       "items": [
