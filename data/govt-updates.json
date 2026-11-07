@@ -1,6 +1,76 @@
 {
-  "last_updated": "2026-11-06T02:31:18.955Z",
+  "last_updated": "2026-11-07T02:31:14.007Z",
   "days": [
+    {
+      "date": "2026-11-07",
+      "items": [
+        {
+          "jur": "Nagaland",
+          "cat": "GST",
+          "authority": "State Government of Nagaland",
+          "ref": "",
+          "headline": "Nagaland GST 11th Amendment Act Lagu",
+          "what": "Nagaland ne GST (11th Amendment) Act ke provisions ka enforcement notify kiya hai. Yani naye GST kanoon ab rajya mein lagu hain.",
+          "who": "Nagaland mein business, traders aur manufacturers jin par GST lagu hota hai.",
+          "action": "GST compliance ke liye naye amendment ki details padh len aur apne GST filings accordingly update karein.",
+          "deadline": "",
+          "source_name": "MokokchungTimes.com",
+          "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQX2xzVEppSjVRdW12YlZGTTROZ0tXcGxHdXE3RzZILVFuaU9XVmFQWkN6bWdVckJUMGp0dXAwRWJjV0QxSnpUajl3bnFTeERGdnFOVFpPay0tVWRYUVA2Q3kxTHkwZUdQbmI5ZlFTdTNDTGwwUFJQMUFYTHBqUUFFUVhxdXZzeWdCMWUtN0czRmlEMTRaLUYtQzdqMNIBowFBVV95cUxQUnlub1RWTTZIMGprVUM5Q3JmU2pxM3dJTFNuaGxSUWRyb2JhLXhPck5PaTBSQkRCX0N3OUFTSVFnVGtJQTZGczdqVXNOczRnbG5qMUs2a2NoeHF4VlRRX0VyS2NMT1hCb19JNklWV3gycy1FSHVWcnV3MFNpT1dyT2JHcTNaTVpXRWNxRVpDR3V6RWtza1ljdDNUVW1FaDI1b0dJ"
+        },
+        {
+          "jur": "Central",
+          "cat": "Labour",
+          "authority": "Labour Department",
+          "ref": "",
+          "headline": "Labour Codes Par Draft Rules Pe Suggestion Mangaye",
+          "what": "Labour Department ne chaar Labour Codes ke draft rules par objections aur suggestions bulaye hain. Matlab, naye niyam banne se pehle public ka input chahiye.",
+          "who": "Employer, industry bodies, CA/CS, aur Labour law professionals.",
+          "action": "Draft rules padh kar agar objection ya suggestion ho to time par Labour Dept ko bhejein.",
+          "deadline": "",
+          "source_name": "Nicobar Times",
+          "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZFVIblBBRVZ0T0EwQ29fd1Bqa2RvbVBwZlFiTnNDQ3pkNW1JelZaU19QWjdUQ0dGZWlvVGVfTWM5cFM2MjRoUVZaWVFpZkZ4RUhCT2hrSndiWm92b0VsTTBUWXNSc2V2WlVhSmpGZzRMTy04TzBSdV9NZjhKQ0Q2bE9VektNVUpkVlYxT0licDR0LXYyN25fSDM0dXlWbDRRUHJCM25mX2lDTXhnajlWeEpOd1J3TnFmSm9ST2YydlNkbHN2YzZB0gHHAUFVX3lxTE5kVUhuUEFFVnRPQTBDb193UGprZG9tUHBmUWJOc0NDemQ1bUl6VlpTX1BaN1RDR0ZlaW9UZV9NYzlwUzYyNGhRVlpZUWlmRnhFSEJPaGtKd2Jab3ZvRWxNMFRZc1JzZXZaVWFKakZnNExPLThPMFJ1X01mOEpDRDZsT1V6S01VSmRWVjFPSWJwNHQtdjI3bl9IMzR1eVZsNFFQckIzbmZfaUNNeGdqOVZ4Sk53UndOcWZKb1JPZjJ2U2Rsc3ZjNkE"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "Malaysian Rock Breaker & Chisel Par Guarantee",
+          "what": "CBIC ne Malaysian rock breaker aur alloy steel chisel import par provisional assessment aur guarantee 162.50% aur 29.21% lagane ka order diya hai.",
+          "who": "Importers jo Malaysian rock breaker ya alloy steel chisel mangwate hain.",
+          "action": "Aise importers ab provisional assessment me specified percentage ka guarantee jama karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/cbic-prescribes-162-50-percent-29-21-percent-guarantees-malaysian-rock-breaker-chisel-imports.html"
+        },
+        {
+          "jur": "Delhi",
+          "cat": "Customs / DGFT",
+          "authority": "CAAR Delhi",
+          "ref": "",
+          "headline": "Decorative Wall Panels Ki Customs Classification",
+          "what": "CAAR Delhi ne decide kiya hai ki decorative PVC, PS aur PU wall panels ab Customs Tariff 3925 ke under builder’s ware ke roop me classify honge.",
+          "who": "Importers aur traders jo aise wall panels mangwate hai ya bechte hain.",
+          "action": "Ab wall panels ki import/export filings Customs Tariff 3925 ke hisaab se karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/decorative-wall-panels-classified-customs-tariff-3925-caar-delhi.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "SEZ ke beech ab ICES se goods move honge",
+          "what": "CBIC ne allow kiya hai ki SEZs ke beech goods ki movement ICES portal par electronic Bill of Entry se ho sakti hai. Automated ledger updates aur koi duty payment nahi.",
+          "who": "SEZ units, import/export companies jo SEZs ke andar ya unke beech goods supply karte hain.",
+          "action": "Goods ki SEZ ke beech movement karte waqt electronic Bill of Entry file karein aur ICES se process karein. Duty pay nahi karna padega.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPWHVXMl81dHlCRHRjdzJrMFFSeGlVMkpZM2VHeFVFVmVZRnlXcEZ4a0tYLWh5T3pXUElnUnB4LUIxNFNGNldTUGF1UzA4bEZJNHJvdHVxQklBQ2Zpb2N4YkdVMGEza2R1ekdyNU9GTkN0QTVXUTdxM0hpZ3VwaXRXbVVnUl9sa19JU0RDZ2J5NzRCR0M1WG5CWUhzUmd6QXJ4WUFKNXNqWE54SFhNbHVRZkNOVmg3ekNrSl9JSHVKb2t6cGh3MWxWeXREdGItQVRMNnVpYkltT2kxbjJqVC1DUnZ4SXViY252R1JuTnJGV3E"
+        }
+      ]
+    },
     {
       "date": "2026-11-06",
       "items": [
