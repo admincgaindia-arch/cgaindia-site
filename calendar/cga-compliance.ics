@@ -1,0 +1,1958 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CGA India//Compliance Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CGA Compliance Calendar (India)
+X-WR-TIMEZONE:Asia/Kolkata
+X-WR-CALDESC:GST\, TDS\, Income Tax\, ROC and PF due dates by CGA India (
+ cgaindia.com). Normal statutory due dates - check for extensions.
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:20261111-GSTR1Oct2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:GSTR-1 (Oct 2026)
+DESCRIPTION:Monthly GSTR-1 for Oct 2026 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Oct 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261115-PFESIOct2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:PF / ESI (Oct 2026)
+DESCRIPTION:PF and ESI contribution for Oct 2026. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Oct 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261120-GSTR3BOct2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:GSTR-3B (Oct 2026)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Oct 2026. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Oct 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125-GSTPMT06QRMPOct2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:GST PMT-06 QRMP (Oct 2026)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (Oct 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261129-ROCMGT7MGT7Aannualreturn@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:ROC MGT-7 / MGT-7A (annual return)
+DESCRIPTION:Annual return with ROC - within 60 days of AGM. Normal due da
+ te - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: ROC MGT-7 / MGT-7A (annual return)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261130-ITRtransferpricingcases@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:ITR - transfer pricing cases
+DESCRIPTION:Return due date for year 2025-26 - transfer pricing cases. No
+ rmal due date - check for extensions. Help: cgaindia.com | +91 99966 478
+ 88
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: ITR - transfer pricing cases
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261207-TDSTCSdepositNov2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:TDS / TCS deposit (Nov 2026)
+DESCRIPTION:Deposit of TDS / TCS deducted in Nov 2026. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Nov 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261211-GSTR1Nov2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:GSTR-1 (Nov 2026)
+DESCRIPTION:Monthly GSTR-1 for Nov 2026 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Nov 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261215-Advancetax3rdinstalment75@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Advance tax - 3rd instalment (75%)
+DESCRIPTION:Advance tax - 75% cumulative by 15 December. Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: Advance tax - 3rd instalment (75%)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261215-PFESINov2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:PF / ESI (Nov 2026)
+DESCRIPTION:PF and ESI contribution for Nov 2026. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Nov 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261220-GSTR3BNov2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:GSTR-3B (Nov 2026)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Nov 2026. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Nov 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261225-GSTPMT06QRMPNov2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:GST PMT-06 QRMP (Nov 2026)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (Nov 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20261231-GSTR99Cannualreturn@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:GSTR-9 / 9C annual return
+DESCRIPTION:GST annual return and reconciliation for FY 2025-26. Normal d
+ ue date - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-9 / 9C annual return
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270107-TDSTCSdepositDec2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:TDS / TCS deposit (Dec 2026)
+DESCRIPTION:Deposit of TDS / TCS deducted in Dec 2026. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Dec 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270111-GSTR1Dec2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:GSTR-1 (Dec 2026)
+DESCRIPTION:Monthly GSTR-1 for Dec 2026 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Dec 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270113-GSTR1QRMPQ3FY202627@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:GSTR-1 QRMP (Q3 FY 2026-27)
+DESCRIPTION:Quarterly GSTR-1 under the QRMP scheme. Normal due date - che
+ ck for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 QRMP (Q3 FY 2026-27)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270115-PFESIDec2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:PF / ESI (Dec 2026)
+DESCRIPTION:PF and ESI contribution for Dec 2026. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Dec 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270115-TCSreturn27EQQ3FY202627@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:TCS return 27EQ (Q3 FY 2026-27)
+DESCRIPTION:Quarterly TCS statement. Normal due date - check for extensio
+ ns. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TCS return 27EQ (Q3 FY 2026-27)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270120-GSTR3BDec2026@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:GSTR-3B (Dec 2026)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Dec 2026. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Dec 2026)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270122-GSTR3BQRMPQ3FY202627CategoryXstates@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:GSTR-3B QRMP (Q3 FY 2026-27) - Category X states
+DESCRIPTION:Quarterly GSTR-3B (QRMP) - 22nd for Category X states (Gujara
+ t / Maharashtra / Karnataka / MP / Tamil Nadu / Kerala / Telangana / AP 
+ / Goa / Chhattisgarh and some UTs). Normal due date - check for extensio
+ ns. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B QRMP (Q3 FY 2026-27) - Category X stat
+ es
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270124-GSTR3BQRMPQ3FY202627CategoryYstates@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:GSTR-3B QRMP (Q3 FY 2026-27) - Category Y states
+DESCRIPTION:Quarterly GSTR-3B (QRMP) - 24th for Category Y states (Delhi 
+ / Haryana / Punjab / UP / Rajasthan / Bihar and others). Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B QRMP (Q3 FY 2026-27) - Category Y stat
+ es
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270131-TDSreturn24Q26QQ3FY202627@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:TDS return 24Q / 26Q (Q3 FY 2026-27)
+DESCRIPTION:Quarterly TDS statements. Normal due date - check for extensi
+ ons. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS return 24Q / 26Q (Q3 FY 2026-27)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270207-TDSTCSdepositJan2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:TDS / TCS deposit (Jan 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Jan 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Jan 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270211-GSTR1Jan2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:GSTR-1 (Jan 2027)
+DESCRIPTION:Monthly GSTR-1 for Jan 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Jan 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270215-PFESIJan2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:PF / ESI (Jan 2027)
+DESCRIPTION:PF and ESI contribution for Jan 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Jan 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270220-GSTR3BJan2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:GSTR-3B (Jan 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Jan 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Jan 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270225-GSTPMT06QRMPJan2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:GST PMT-06 QRMP (Jan 2027)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (Jan 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270307-TDSTCSdepositFeb2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:TDS / TCS deposit (Feb 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Feb 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Feb 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270311-GSTR1Feb2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:GSTR-1 (Feb 2027)
+DESCRIPTION:Monthly GSTR-1 for Feb 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Feb 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270315-Advancetax4thinstalment100@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Advance tax - 4th instalment (100%)
+DESCRIPTION:Advance tax - 100% of estimated tax by 15 March. Normal due d
+ ate - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: Advance tax - 4th instalment (100%)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270315-PFESIFeb2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:PF / ESI (Feb 2027)
+DESCRIPTION:PF and ESI contribution for Feb 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Feb 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270320-GSTR3BFeb2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:GSTR-3B (Feb 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Feb 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Feb 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270325-GSTPMT06QRMPFeb2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:GST PMT-06 QRMP (Feb 2027)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (Feb 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270411-GSTR1Mar2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:GSTR-1 (Mar 2027)
+DESCRIPTION:Monthly GSTR-1 for Mar 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Mar 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270413-GSTR1QRMPQ4FY202627@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270414
+SUMMARY:GSTR-1 QRMP (Q4 FY 2026-27)
+DESCRIPTION:Quarterly GSTR-1 under the QRMP scheme. Normal due date - che
+ ck for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 QRMP (Q4 FY 2026-27)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270415-PFESIMar2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:PF / ESI (Mar 2027)
+DESCRIPTION:PF and ESI contribution for Mar 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Mar 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270420-GSTR3BMar2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:GSTR-3B (Mar 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Mar 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Mar 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270422-GSTR3BQRMPQ4FY202627CategoryXstates@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:GSTR-3B QRMP (Q4 FY 2026-27) - Category X states
+DESCRIPTION:Quarterly GSTR-3B (QRMP) - 22nd for Category X states (Gujara
+ t / Maharashtra / Karnataka / MP / Tamil Nadu / Kerala / Telangana / AP 
+ / Goa / Chhattisgarh and some UTs). Normal due date - check for extensio
+ ns. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B QRMP (Q4 FY 2026-27) - Category X stat
+ es
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270424-GSTR3BQRMPQ4FY202627CategoryYstates@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:GSTR-3B QRMP (Q4 FY 2026-27) - Category Y states
+DESCRIPTION:Quarterly GSTR-3B (QRMP) - 24th for Category Y states (Delhi 
+ / Haryana / Punjab / UP / Rajasthan / Bihar and others). Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B QRMP (Q4 FY 2026-27) - Category Y stat
+ es
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270430-MSME1OctMarhalfyear@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:MSME-1 (Oct-Mar half year)
+DESCRIPTION:Half-yearly return of dues to MSME suppliers. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: MSME-1 (Oct-Mar half year)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270430-TDSTCSdepositMar2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:TDS / TCS deposit (Mar 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Mar 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Mar 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270507-TDSTCSdepositApr2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+SUMMARY:TDS / TCS deposit (Apr 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Apr 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Apr 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270511-GSTR1Apr2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:GSTR-1 (Apr 2027)
+DESCRIPTION:Monthly GSTR-1 for Apr 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Apr 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270515-PFESIApr2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:PF / ESI (Apr 2027)
+DESCRIPTION:PF and ESI contribution for Apr 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Apr 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270515-TCSreturn27EQQ4FY202627@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:TCS return 27EQ (Q4 FY 2026-27)
+DESCRIPTION:Quarterly TCS statement. Normal due date - check for extensio
+ ns. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TCS return 27EQ (Q4 FY 2026-27)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270520-GSTR3BApr2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+SUMMARY:GSTR-3B (Apr 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Apr 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Apr 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270525-GSTPMT06QRMPApr2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270526
+SUMMARY:GST PMT-06 QRMP (Apr 2027)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (Apr 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270531-TDSreturn24Q26QQ4FY202627@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270531
+DTEND;VALUE=DATE:20270601
+SUMMARY:TDS return 24Q / 26Q (Q4 FY 2026-27)
+DESCRIPTION:Quarterly TDS statements. Normal due date - check for extensi
+ ons. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS return 24Q / 26Q (Q4 FY 2026-27)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270607-TDSTCSdepositMay2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:TDS / TCS deposit (May 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in May 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (May 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270611-GSTR1May2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:GSTR-1 (May 2027)
+DESCRIPTION:Monthly GSTR-1 for May 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (May 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270615-Advancetax1stinstalment15@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:Advance tax - 1st instalment (15%)
+DESCRIPTION:Advance tax - 15% by 15 June. Normal due date - check for ext
+ ensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: Advance tax - 1st instalment (15%)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270615-Form1616Aissue@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:Form 16 / 16A issue
+DESCRIPTION:Issue of TDS certificates (Form 16) for year 2026-27. Normal 
+ due date - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: Form 16 / 16A issue
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270615-PFESIMay2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:PF / ESI (May 2027)
+DESCRIPTION:PF and ESI contribution for May 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (May 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270620-GSTR3BMay2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:GSTR-3B (May 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for May 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (May 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270625-GSTPMT06QRMPMay2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:GST PMT-06 QRMP (May 2027)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (May 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270707-TDSTCSdepositJun2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270707
+DTEND;VALUE=DATE:20270708
+SUMMARY:TDS / TCS deposit (Jun 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Jun 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Jun 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270711-GSTR1Jun2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270711
+DTEND;VALUE=DATE:20270712
+SUMMARY:GSTR-1 (Jun 2027)
+DESCRIPTION:Monthly GSTR-1 for Jun 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Jun 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270713-GSTR1QRMPQ1FY202728@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270713
+DTEND;VALUE=DATE:20270714
+SUMMARY:GSTR-1 QRMP (Q1 FY 2027-28)
+DESCRIPTION:Quarterly GSTR-1 under the QRMP scheme. Normal due date - che
+ ck for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 QRMP (Q1 FY 2027-28)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270715-PFESIJun2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270716
+SUMMARY:PF / ESI (Jun 2027)
+DESCRIPTION:PF and ESI contribution for Jun 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Jun 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270715-TCSreturn27EQQ1FY202728@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270716
+SUMMARY:TCS return 27EQ (Q1 FY 2027-28)
+DESCRIPTION:Quarterly TCS statement. Normal due date - check for extensio
+ ns. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TCS return 27EQ (Q1 FY 2027-28)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270720-GSTR3BJun2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270720
+DTEND;VALUE=DATE:20270721
+SUMMARY:GSTR-3B (Jun 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Jun 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Jun 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270722-GSTR3BQRMPQ1FY202728CategoryXstates@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270722
+DTEND;VALUE=DATE:20270723
+SUMMARY:GSTR-3B QRMP (Q1 FY 2027-28) - Category X states
+DESCRIPTION:Quarterly GSTR-3B (QRMP) - 22nd for Category X states (Gujara
+ t / Maharashtra / Karnataka / MP / Tamil Nadu / Kerala / Telangana / AP 
+ / Goa / Chhattisgarh and some UTs). Normal due date - check for extensio
+ ns. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B QRMP (Q1 FY 2027-28) - Category X stat
+ es
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270724-GSTR3BQRMPQ1FY202728CategoryYstates@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270724
+DTEND;VALUE=DATE:20270725
+SUMMARY:GSTR-3B QRMP (Q1 FY 2027-28) - Category Y states
+DESCRIPTION:Quarterly GSTR-3B (QRMP) - 24th for Category Y states (Delhi 
+ / Haryana / Punjab / UP / Rajasthan / Bihar and others). Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B QRMP (Q1 FY 2027-28) - Category Y stat
+ es
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270731-ITRsalariednonbusinessITR1ITR2@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270801
+SUMMARY:ITR - salaried / non-business (ITR-1 / ITR-2)
+DESCRIPTION:Return due date for year 2026-27 - individuals / HUF without 
+ business income. Normal due date - check for extensions. Help: cgaindia.
+ com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: ITR - salaried / non-business (ITR-1 / ITR-2)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270731-TDSreturn24Q26QQ1FY202728@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270801
+SUMMARY:TDS return 24Q / 26Q (Q1 FY 2027-28)
+DESCRIPTION:Quarterly TDS statements. Normal due date - check for extensi
+ ons. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS return 24Q / 26Q (Q1 FY 2027-28)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270807-TDSTCSdepositJul2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270807
+DTEND;VALUE=DATE:20270808
+SUMMARY:TDS / TCS deposit (Jul 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Jul 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Jul 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270811-GSTR1Jul2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270811
+DTEND;VALUE=DATE:20270812
+SUMMARY:GSTR-1 (Jul 2027)
+DESCRIPTION:Monthly GSTR-1 for Jul 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Jul 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270815-PFESIJul2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:PF / ESI (Jul 2027)
+DESCRIPTION:PF and ESI contribution for Jul 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Jul 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270820-GSTR3BJul2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:GSTR-3B (Jul 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Jul 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Jul 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270825-GSTPMT06QRMPJul2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270826
+SUMMARY:GST PMT-06 QRMP (Jul 2027)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (Jul 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270831-ITRbusinessprofessionnonaudit@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270831
+DTEND;VALUE=DATE:20270901
+SUMMARY:ITR - business / profession (non-audit)
+DESCRIPTION:Return due date for year 2026-27 - business or professional i
+ ncome not liable to audit / partners / non-audit firms (Finance Act 2026
+ ). Normal due date - check for extensions. Help: cgaindia.com | +91 9996
+ 6 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: ITR - business / profession (non-audit)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270907-TDSTCSdepositAug2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270907
+DTEND;VALUE=DATE:20270908
+SUMMARY:TDS / TCS deposit (Aug 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Aug 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Aug 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270911-GSTR1Aug2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+SUMMARY:GSTR-1 (Aug 2027)
+DESCRIPTION:Monthly GSTR-1 for Aug 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Aug 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270915-Advancetax2ndinstalment45@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:Advance tax - 2nd instalment (45%)
+DESCRIPTION:Advance tax - 45% cumulative by 15 September. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: Advance tax - 2nd instalment (45%)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270915-PFESIAug2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:PF / ESI (Aug 2027)
+DESCRIPTION:PF and ESI contribution for Aug 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Aug 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270920-GSTR3BAug2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270920
+DTEND;VALUE=DATE:20270921
+SUMMARY:GSTR-3B (Aug 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Aug 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Aug 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270925-GSTPMT06QRMPAug2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20270926
+SUMMARY:GST PMT-06 QRMP (Aug 2027)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (Aug 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270930-DIR3KYCdirectors@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271001
+SUMMARY:DIR-3 KYC (directors)
+DESCRIPTION:Annual KYC of directors holding DIN. Normal due date - check 
+ for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: DIR-3 KYC (directors)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20270930-Taxauditreport@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271001
+SUMMARY:Tax audit report
+DESCRIPTION:Tax audit report for year 2026-27. Normal due date - check fo
+ r extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: Tax audit report
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271007-TDSTCSdepositSep2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271007
+DTEND;VALUE=DATE:20271008
+SUMMARY:TDS / TCS deposit (Sep 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Sep 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Sep 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271011-GSTR1Sep2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+SUMMARY:GSTR-1 (Sep 2027)
+DESCRIPTION:Monthly GSTR-1 for Sep 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Sep 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271013-GSTR1QRMPQ2FY202728@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271013
+DTEND;VALUE=DATE:20271014
+SUMMARY:GSTR-1 QRMP (Q2 FY 2027-28)
+DESCRIPTION:Quarterly GSTR-1 under the QRMP scheme. Normal due date - che
+ ck for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 QRMP (Q2 FY 2027-28)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271015-PFESISep2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271015
+DTEND;VALUE=DATE:20271016
+SUMMARY:PF / ESI (Sep 2027)
+DESCRIPTION:PF and ESI contribution for Sep 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Sep 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271015-TCSreturn27EQQ2FY202728@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271015
+DTEND;VALUE=DATE:20271016
+SUMMARY:TCS return 27EQ (Q2 FY 2027-28)
+DESCRIPTION:Quarterly TCS statement. Normal due date - check for extensio
+ ns. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TCS return 27EQ (Q2 FY 2027-28)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271020-GSTR3BSep2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271020
+DTEND;VALUE=DATE:20271021
+SUMMARY:GSTR-3B (Sep 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Sep 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Sep 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271022-GSTR3BQRMPQ2FY202728CategoryXstates@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271022
+DTEND;VALUE=DATE:20271023
+SUMMARY:GSTR-3B QRMP (Q2 FY 2027-28) - Category X states
+DESCRIPTION:Quarterly GSTR-3B (QRMP) - 22nd for Category X states (Gujara
+ t / Maharashtra / Karnataka / MP / Tamil Nadu / Kerala / Telangana / AP 
+ / Goa / Chhattisgarh and some UTs). Normal due date - check for extensio
+ ns. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B QRMP (Q2 FY 2027-28) - Category X stat
+ es
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271024-GSTR3BQRMPQ2FY202728CategoryYstates@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271024
+DTEND;VALUE=DATE:20271025
+SUMMARY:GSTR-3B QRMP (Q2 FY 2027-28) - Category Y states
+DESCRIPTION:Quarterly GSTR-3B (QRMP) - 24th for Category Y states (Delhi 
+ / Haryana / Punjab / UP / Rajasthan / Bihar and others). Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B QRMP (Q2 FY 2027-28) - Category Y stat
+ es
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271030-ROCAOC4financialstatements@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271030
+DTEND;VALUE=DATE:20271031
+SUMMARY:ROC AOC-4 (financial statements)
+DESCRIPTION:Financial statements with ROC - within 30 days of AGM (AGM by
+  30 Sep). Normal due date - check for extensions. Help: cgaindia.com | +
+ 91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: ROC AOC-4 (financial statements)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271031-ITRauditcasesandcompanies@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271031
+DTEND;VALUE=DATE:20271101
+SUMMARY:ITR - audit cases and companies
+DESCRIPTION:Return due date for year 2026-27 - audit cases. Normal due da
+ te - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: ITR - audit cases and companies
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271031-MSME1AprSephalfyear@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271031
+DTEND;VALUE=DATE:20271101
+SUMMARY:MSME-1 (Apr-Sep half year)
+DESCRIPTION:Half-yearly return of dues to MSME suppliers. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: MSME-1 (Apr-Sep half year)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271031-TDSreturn24Q26QQ2FY202728@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271031
+DTEND;VALUE=DATE:20271101
+SUMMARY:TDS return 24Q / 26Q (Q2 FY 2027-28)
+DESCRIPTION:Quarterly TDS statements. Normal due date - check for extensi
+ ons. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS return 24Q / 26Q (Q2 FY 2027-28)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271107-TDSTCSdepositOct2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271107
+DTEND;VALUE=DATE:20271108
+SUMMARY:TDS / TCS deposit (Oct 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Oct 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Oct 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271111-GSTR1Oct2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271111
+DTEND;VALUE=DATE:20271112
+SUMMARY:GSTR-1 (Oct 2027)
+DESCRIPTION:Monthly GSTR-1 for Oct 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Oct 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271115-PFESIOct2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271115
+DTEND;VALUE=DATE:20271116
+SUMMARY:PF / ESI (Oct 2027)
+DESCRIPTION:PF and ESI contribution for Oct 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Oct 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271120-GSTR3BOct2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271120
+DTEND;VALUE=DATE:20271121
+SUMMARY:GSTR-3B (Oct 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Oct 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Oct 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271125-GSTPMT06QRMPOct2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271125
+DTEND;VALUE=DATE:20271126
+SUMMARY:GST PMT-06 QRMP (Oct 2027)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (Oct 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271129-ROCMGT7MGT7Aannualreturn@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271129
+DTEND;VALUE=DATE:20271130
+SUMMARY:ROC MGT-7 / MGT-7A (annual return)
+DESCRIPTION:Annual return with ROC - within 60 days of AGM. Normal due da
+ te - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: ROC MGT-7 / MGT-7A (annual return)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271130-ITRtransferpricingcases@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271130
+DTEND;VALUE=DATE:20271201
+SUMMARY:ITR - transfer pricing cases
+DESCRIPTION:Return due date for year 2026-27 - transfer pricing cases. No
+ rmal due date - check for extensions. Help: cgaindia.com | +91 99966 478
+ 88
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: ITR - transfer pricing cases
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271207-TDSTCSdepositNov2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271207
+DTEND;VALUE=DATE:20271208
+SUMMARY:TDS / TCS deposit (Nov 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Nov 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Nov 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271211-GSTR1Nov2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271211
+DTEND;VALUE=DATE:20271212
+SUMMARY:GSTR-1 (Nov 2027)
+DESCRIPTION:Monthly GSTR-1 for Nov 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Nov 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271215-Advancetax3rdinstalment75@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271215
+DTEND;VALUE=DATE:20271216
+SUMMARY:Advance tax - 3rd instalment (75%)
+DESCRIPTION:Advance tax - 75% cumulative by 15 December. Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: Advance tax - 3rd instalment (75%)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271215-PFESINov2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271215
+DTEND;VALUE=DATE:20271216
+SUMMARY:PF / ESI (Nov 2027)
+DESCRIPTION:PF and ESI contribution for Nov 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Nov 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271220-GSTR3BNov2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271220
+DTEND;VALUE=DATE:20271221
+SUMMARY:GSTR-3B (Nov 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Nov 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Nov 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271225-GSTPMT06QRMPNov2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+SUMMARY:GST PMT-06 QRMP (Nov 2027)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (Nov 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20271231-GSTR99Cannualreturn@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+SUMMARY:GSTR-9 / 9C annual return
+DESCRIPTION:GST annual return and reconciliation for FY 2026-27. Normal d
+ ue date - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-9 / 9C annual return
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280107-TDSTCSdepositDec2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280107
+DTEND;VALUE=DATE:20280108
+SUMMARY:TDS / TCS deposit (Dec 2027)
+DESCRIPTION:Deposit of TDS / TCS deducted in Dec 2027. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Dec 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280111-GSTR1Dec2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280111
+DTEND;VALUE=DATE:20280112
+SUMMARY:GSTR-1 (Dec 2027)
+DESCRIPTION:Monthly GSTR-1 for Dec 2027 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Dec 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280113-GSTR1QRMPQ3FY202728@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280113
+DTEND;VALUE=DATE:20280114
+SUMMARY:GSTR-1 QRMP (Q3 FY 2027-28)
+DESCRIPTION:Quarterly GSTR-1 under the QRMP scheme. Normal due date - che
+ ck for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 QRMP (Q3 FY 2027-28)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280115-PFESIDec2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280115
+DTEND;VALUE=DATE:20280116
+SUMMARY:PF / ESI (Dec 2027)
+DESCRIPTION:PF and ESI contribution for Dec 2027. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Dec 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280115-TCSreturn27EQQ3FY202728@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280115
+DTEND;VALUE=DATE:20280116
+SUMMARY:TCS return 27EQ (Q3 FY 2027-28)
+DESCRIPTION:Quarterly TCS statement. Normal due date - check for extensio
+ ns. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TCS return 27EQ (Q3 FY 2027-28)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280120-GSTR3BDec2027@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280120
+DTEND;VALUE=DATE:20280121
+SUMMARY:GSTR-3B (Dec 2027)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Dec 2027. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Dec 2027)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280122-GSTR3BQRMPQ3FY202728CategoryXstates@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280122
+DTEND;VALUE=DATE:20280123
+SUMMARY:GSTR-3B QRMP (Q3 FY 2027-28) - Category X states
+DESCRIPTION:Quarterly GSTR-3B (QRMP) - 22nd for Category X states (Gujara
+ t / Maharashtra / Karnataka / MP / Tamil Nadu / Kerala / Telangana / AP 
+ / Goa / Chhattisgarh and some UTs). Normal due date - check for extensio
+ ns. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B QRMP (Q3 FY 2027-28) - Category X stat
+ es
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280124-GSTR3BQRMPQ3FY202728CategoryYstates@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280124
+DTEND;VALUE=DATE:20280125
+SUMMARY:GSTR-3B QRMP (Q3 FY 2027-28) - Category Y states
+DESCRIPTION:Quarterly GSTR-3B (QRMP) - 24th for Category Y states (Delhi 
+ / Haryana / Punjab / UP / Rajasthan / Bihar and others). Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B QRMP (Q3 FY 2027-28) - Category Y stat
+ es
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280131-TDSreturn24Q26QQ3FY202728@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280131
+DTEND;VALUE=DATE:20280201
+SUMMARY:TDS return 24Q / 26Q (Q3 FY 2027-28)
+DESCRIPTION:Quarterly TDS statements. Normal due date - check for extensi
+ ons. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS return 24Q / 26Q (Q3 FY 2027-28)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280207-TDSTCSdepositJan2028@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280207
+DTEND;VALUE=DATE:20280208
+SUMMARY:TDS / TCS deposit (Jan 2028)
+DESCRIPTION:Deposit of TDS / TCS deducted in Jan 2028. Normal due date - 
+ check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: TDS / TCS deposit (Jan 2028)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280211-GSTR1Jan2028@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280211
+DTEND;VALUE=DATE:20280212
+SUMMARY:GSTR-1 (Jan 2028)
+DESCRIPTION:Monthly GSTR-1 for Jan 2028 (normal filers). Normal due date 
+ - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-1 (Jan 2028)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280215-PFESIJan2028@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280215
+DTEND;VALUE=DATE:20280216
+SUMMARY:PF / ESI (Jan 2028)
+DESCRIPTION:PF and ESI contribution for Jan 2028. Normal due date - check
+  for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: PF / ESI (Jan 2028)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280220-GSTR3BJan2028@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280220
+DTEND;VALUE=DATE:20280221
+SUMMARY:GSTR-3B (Jan 2028)
+DESCRIPTION:Monthly GSTR-3B and tax payment for Jan 2028. Normal due date
+  - check for extensions. Help: cgaindia.com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GSTR-3B (Jan 2028)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20280225-GSTPMT06QRMPJan2028@cgaindia.com
+DTSTAMP:20261109T162411Z
+DTSTART;VALUE=DATE:20280225
+DTEND;VALUE=DATE:20280226
+SUMMARY:GST PMT-06 QRMP (Jan 2028)
+DESCRIPTION:Monthly tax payment by QRMP taxpayers for the first two month
+ s of the quarter. Normal due date - check for extensions. Help: cgaindia
+ .com | +91 99966 47888
+URL:https://cgaindia.com/compliance-calendar.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Due in 2 days: GST PMT-06 QRMP (Jan 2028)
+TRIGGER:-P2D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
