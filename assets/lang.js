@@ -654,3 +654,5 @@
     }, true);
   } catch (e) {}
 })();
+/* Festival greeting popup loader (assets/festival.js) */
+(function () { try { if (document.getElementById('cga-fest-js')) { return; } var s = document.createElement('script'); s.id = 'cga-fest-js'; s.src = '/assets/festival.js?v=1'; s.defer = true; document.head.appendChild(s); } catch (e) {} })();
