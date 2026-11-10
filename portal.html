@@ -658,6 +658,38 @@ fbq('init','1350244116690583');fbq('track','PageView');
 .cp-guest a:hover{border-color:var(--cp-navy);background:#f6fafc}
 .cp-search{max-width:320px}
 @media (max-width:760px){.cp-grid2{grid-template-columns:1fr}.cp-act .g{grid-template-columns:1fr}}
+
+/* CGA portal dashboard theme v2 */
+#cp-app .cp-hero{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;background:linear-gradient(120deg,#00293d 0%,#005176 55%,#0b6f8f 100%);color:#fff;border-radius:18px;padding:1.3rem 1.5rem;margin:0 0 1.1rem;box-shadow:0 14px 34px rgba(0,41,61,.22);position:relative;overflow:hidden}
+#cp-app .cp-hero:after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(245,179,1,.35),rgba(245,179,1,0) 70%)}
+#cp-app .cp-hero-l{display:flex;align-items:center;gap:.9rem;position:relative;z-index:1}
+#cp-app .cp-hero-av{width:54px;height:54px;border-radius:16px;background:#f5b301;color:#00293d;font-weight:900;font-size:1.5rem;display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 6px 16px rgba(0,0,0,.2)}
+#cp-app .cp-hero h2{margin:0;font-size:1.4rem;color:#fff}
+#cp-app .cp-hero-sub{color:#cfe8f2;font-size:.92rem;margin-top:.1rem}
+#cp-app .cp-hero-meta{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.45rem;font-size:.82rem;color:#cfe8f2}
+#cp-app .cp-hero-r{display:flex;flex-direction:column;align-items:flex-end;gap:.6rem;position:relative;z-index:1}
+#cp-app .cp-when{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:flex-end}
+#cp-app .cp-when span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:.35rem .8rem;font-size:.85rem;font-weight:700}
+#cp-app .cp-hero .cp-btn.o{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35);color:#fff}
+#cp-app .cp-hero .cp-btn.o:hover{background:rgba(255,255,255,.2)}
+@media(max-width:640px){#cp-app .cp-hero-r{align-items:flex-start}#cp-app .cp-when{justify-content:flex-start}}
+#cp-app .cp-kpis{grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:.85rem}
+#cp-app .cp-kpi{--k:#4f46e5;position:relative;background:linear-gradient(180deg,#fff,#fff);border:1px solid #e6edf2;border-radius:16px;padding:1rem 1.05rem 1.05rem;box-shadow:0 6px 18px rgba(16,42,67,.06);overflow:hidden;transition:transform .15s,box-shadow .15s}
+#cp-app .cp-kpi:before{content:"";position:absolute;inset:0;background:var(--k);opacity:.06}
+#cp-app .cp-kpi:after{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--k)}
+#cp-app .cp-kpi:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(16,42,67,.1)}
+#cp-app .cp-kpi-top{display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;position:relative}
+#cp-app .cp-kpi small{position:relative;font-size:.74rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#45596a}
+#cp-app .cp-kpi-ic{width:36px;height:36px;border-radius:11px;display:flex;align-items:center;justify-content:center;color:var(--k);background:#fff;box-shadow:inset 0 0 0 1.5px var(--k)}
+#cp-app .cp-kpi b{position:relative;display:block;font-size:1.75rem;line-height:1.1;margin-top:.45rem;color:#0f2433}
+#cp-app .cp-kpi-alert{border-color:#fecdd3}#cp-app .cp-kpi-alert b{color:#e11d48}
+#cp-app .cp-card{border-radius:18px;border-color:#e3ebf0;box-shadow:0 8px 24px rgba(16,42,67,.06)}
+#cp-app .cp-card>h2:first-child{display:flex;align-items:center;gap:.5rem}
+#cp-app .cp-card>h2:first-child:before{content:"";width:6px;height:20px;border-radius:4px;background:linear-gradient(180deg,#f5b301,#005176)}
+#cp-app .cp-eng{border-radius:14px;border-color:#e3ebf0;transition:box-shadow .15s,border-color .15s}
+#cp-app .cp-eng:hover{border-color:#9fc3d4;box-shadow:0 8px 20px rgba(16,42,67,.07)}
+#cp-app .cp-bar{height:9px;background:#e9f0f4}#cp-app .cp-bar i{background:linear-gradient(90deg,#005176,#22a6c7,#f5b301);border-radius:6px}
+#cp-app .cp-b-admin{background:#fde68a;color:#7c4a03}#cp-app .cp-b-senior{background:#ddd6fe;color:#4c1d95}#cp-app .cp-b-staff{background:#bae6fd;color:#0c4a6e}#cp-app .cp-b-client{background:#bbf7d0;color:#14532d}
 </style>
 
 <script>
@@ -721,9 +753,32 @@ fbq('init','1350244116690583');fbq('track','PageView');
 
   function header() {
     var r = (D.role || '').toLowerCase();
-    return '<div class="cp-top"><div><h2>Namaste, ' + esc(D.name || D.email) + '</h2><div class="cp-meta">' + esc(D.email) + ' &middot; <span class="cp-badge cp-b-' + r + '">' + r + '</span></div></div><div class="cp-row" style="margin:0"><button class="cp-btn o s" id="cp-ref">Refresh</button><button class="cp-btn o s" id="cp-out">Logout</button></div></div>';
+    var now = new Date(Date.now() + 19800000), hr = now.getUTCHours();
+    var greet = hr < 12 ? 'Good morning' : (hr < 17 ? 'Good afternoon' : 'Good evening');
+    var DN = ['Ravivar', 'Somvar', 'Mangalvar', 'Budhvar', 'Guruvar', 'Shukravar', 'Shanivar'], MN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var ds = DN[now.getUTCDay()] + ', ' + now.getUTCDate() + ' ' + MN[now.getUTCMonth()] + ' ' + now.getUTCFullYear();
+    var first = String(D.name || D.email || '').split(' ')[0];
+    var sub = r === 'client' ? 'Aapki services, documents aur filings ek jagah' : (r === 'admin' ? 'Firm ka poora haal ek nazar mein' : 'Aaj ka kaam, clients aur deadlines');
+    if (!window.__cpClock) { window.__cpClock = setInterval(function () { var el = document.getElementById('cp-clock'); if (el) { var n = new Date(Date.now() + 19800000), h = n.getUTCHours(), m = n.getUTCMinutes(); el.textContent = ((h % 12) || 12) + ':' + (m < 10 ? '0' : '') + m + (h < 12 ? ' AM' : ' PM'); } }, 20000); }
+    var h0 = now.getUTCHours(), m0 = now.getUTCMinutes();
+    return '<div class="cp-hero"><div class="cp-hero-l"><div class="cp-hero-av">' + esc(first.charAt(0).toUpperCase() || 'C') + '</div><div><h2>' + greet + ', ' + esc(first || 'ji') + '</h2><div class="cp-hero-sub">' + sub + '</div><div class="cp-hero-meta"><span class="cp-badge cp-b-' + r + '">' + r + '</span><span>' + esc(D.email) + '</span></div></div></div>' +
+      '<div class="cp-hero-r"><div class="cp-when"><span>&#128197; ' + ds + '</span><span id="cp-clock">&#128339; ' + ((h0 % 12) || 12) + ':' + (m0 < 10 ? '0' : '') + m0 + (h0 < 12 ? ' AM' : ' PM') + '</span></div><div class="cp-row" style="margin:0"><button class="cp-btn o s" id="cp-ref">&#8635; Refresh</button><button class="cp-btn o s" id="cp-out">Logout</button></div></div></div>';
   }
-  function kpis(list) { return '<div class="cp-kpis">' + list.map(function (k) { return '<div class="cp-kpi"><small>' + k[0] + '</small><b' + (k[2] ? ' class="cp-due"' : '') + '>' + k[1] + '</b></div>'; }).join('') + '</div>'; }
+  function kpis(list) {
+    var PAL = ['#4f46e5', '#0891b2', '#059669', '#d97706', '#7c3aed', '#0d9488', '#ea580c', '#2563eb'];
+    function ic(label) {
+      var l = String(label).toLowerCase(), p;
+      if (/client/.test(l)) { p = '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>'; }
+      else if (/pend|due|dues/.test(l)) { p = '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'; }
+      else if (/paid|fee|rs|amount|month|revenue|online/.test(l)) { p = '<rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/>'; }
+      else if (/complete|done/.test(l)) { p = '<path d="M20 6 9 17l-5-5"/>'; }
+      else if (/active|chal/.test(l)) { p = '<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>'; }
+      else if (/sign|unassign/.test(l)) { p = '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>'; }
+      else { p = '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/>'; }
+      return '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + p + '</svg>';
+    }
+    return '<div class="cp-kpis">' + list.map(function (k, i) { var c = k[2] ? '#e11d48' : PAL[i % PAL.length]; return '<div class="cp-kpi' + (k[2] ? ' cp-kpi-alert' : '') + '" style="--k:' + c + '"><div class="cp-kpi-top"><small>' + k[0] + '</small><span class="cp-kpi-ic">' + ic(k[0]) + '</span></div><b' + (k[2] ? ' class="cp-due"' : '') + '>' + (k[1] == null ? 0 : k[1]) + '</b></div>'; }).join('') + '</div>';
+  }
   function engCard(e, mode) {
     var pct = Math.round(e.stage / 6 * 100);
     var h = '<div class="cp-eng"><div class="cp-eng-h"><div><h3>' + esc(e.service) + (e.tier ? ' <span class="cp-meta">(' + esc(e.tier) + ')</span>' : '') + '</h3><div class="cp-meta">' + esc(e.eng_id) + ' &middot; ' + esc(e.created) + (mode !== 'client' && e.client ? ' &middot; <b style="color:#1d2a33">' + esc(e.client) + '</b>' : '') + '</div></div><div><span class="cp-badge ' + stCls(e) + '">' + esc(stTxt(e)) + '</span></div></div>' +
