@@ -1,6 +1,89 @@
 {
-  "last_updated": "2026-11-12T02:31:14.803Z",
+  "last_updated": "2026-11-13T02:31:23.553Z",
   "days": [
+    {
+      "date": "2026-11-13",
+      "items": [
+        {
+          "jur": "Gujarat",
+          "cat": "GST",
+          "authority": "Gujarat AAR",
+          "ref": "",
+          "headline": "Biodegradable bags par 5% GST, proof zaruri",
+          "what": "Gujarat AAR ne decide kiya hai ki biodegradable bags par 5% GST lagega, bas yeh proven hona chahiye ki bag biodegradable hai.",
+          "who": "Biodegradable bag manufacturers aur traders Gujarat mein.",
+          "action": "Biodegradability proof ready rakhen GST rate claim karne ke liye.",
+          "deadline": "",
+          "source_name": "LiveLawBiz",
+          "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZGsycDdlaXNoREFURnkxWWsxQXRIM1Z0Y0dOelNlM2UtWTVCdmEzVnkweEpuUjlBeXg0WEsyZFlKWXhSQkRkREc2a0FqZWpIdExtWGNweG9DMEliTEc3VlVmb3ZQaHJqVk9vSzN2T2xsek8yTkw0Q0dCU09MRWo0NzJmbFo0V0MyWC1rQU5aMkZWT0VzeDBPcWt5NHpuWEFyZXd0ZWxFWVUyT3FvelNudlFCSHBxQdIBtgFBVV95cUxQZGsycDdlaXNoREFURnkxWWsxQXRIM1Z0Y0dOelNlM2UtWTVCdmEzVnkweEpuUjlBeXg0WEsyZFlKWXhSQkRkREc2a0FqZWpIdExtWGNweG9DMEliTEc3VlVmb3ZQaHJqVk9vSzN2T2xsek8yTkw0Q0dCU09MRWo0NzJmbFo0V0MyWC1rQU5aMkZWT0VzeDBPcWt5NHpuWEFyZXd0ZWxFWVUyT3FvelNudlFCSHBxQQ?oc=5"
+        },
+        {
+          "jur": "Tamil Nadu",
+          "cat": "GST",
+          "authority": "Tamil Nadu AAR",
+          "ref": "",
+          "headline": "Plastic nursery pots, trays par 18% GST: TN AAR",
+          "what": "Tamil Nadu AAR ne bola hai ki plastic nursery pots aur seedling trays par 18% GST lagega.",
+          "who": "Nursery pot and tray suppliers, plastic product businesses in Tamil Nadu.",
+          "action": "GST invoices par 18% rate lagayen for in products.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/plastic-nursery-pots-seedling-trays-attract-18-percent-gst-tamil-nadu-aar.html"
+        },
+        {
+          "jur": "Chhattisgarh",
+          "cat": "GST",
+          "authority": "Chhattisgarh AAR",
+          "ref": "",
+          "headline": "IIM Raipur consultancy par 18% GST laga: CG AAR",
+          "what": "IIM Raipur Foundation ki rural livelihood consultancy par 18% GST laga hai, as per Chhattisgarh AAR.",
+          "who": "Consultancy services under rural livelihood projects in Chhattisgarh.",
+          "action": "Consultancy invoice banate waqt 18% GST charge karein.",
+          "deadline": "",
+          "source_name": "LiveLawBiz",
+          "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUG42a0xmNGJqLUp0VHg3cGVvZmwtbDlyamJzellMOEFZVlBkekwzOXlQRHg0ME5pNl85M25KRFd6VGQ4VTlaMk1VeWxPMzcwU3pGWGZMaEw0Y05CbVFERG5BOFBZSXR4UFhZSHNUZV9fYm1Lck16MjVBWkR4ODA3WHFEZ08wMk5FMzVyQ25qT3k2QXRQR0RFcFdLUGhEcWIzNFVjSThfRmFkLXB20gGsAUFVX3lxTE5QbjZrTGY0YmotSnRUeDdwZW9mbC1sOXJqYnN6WUw4QVlWUGR6TDM5eVBEeDQwTmk2XzkzbkpEV3pUZDhVOVoyTVV5bE8zNzBTekZYZkxoTDRjTkJtUUREbkE4UFlJdHhQWFlIc1RlX19ibUtyTXoyNUFaRHg4MDdYcURnTzAyTkUzNXJDbmpPeTZBdFBHREVwV0tQaERxYjM0VWNJOF9GYWQtcHY?oc=5"
+        },
+        {
+          "jur": "Delhi",
+          "cat": "Other",
+          "authority": "Delhi government",
+          "ref": "",
+          "headline": "Delhi ne public services delivery Act notify kiya",
+          "what": "Delhi government ne 2026 ka naya Act notify kiya hai jo public services ki time-bound delivery ko assure karta hai.",
+          "who": "Delhi ke residents aur businesses jinhe sarkari services timely chahiye.",
+          "action": "Update rakhain ki kaun kaun services is Act ke scope me aati hain; delay hone par complaint kar sakte hain.",
+          "deadline": "",
+          "source_name": "Hindustan Times",
+          "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPVmRyN1FiRUt5OFdyVm4tbXlqVDIzemNrTVJjZVp2OExud2pQNGtJLXhnXzY5SmZLUW5GSXpJUnBmX0lzLXhsdWNpTkJKQ1loNXRHZUZUZHdKekdTQnVNRktfcEZMVzdLR0t1X1l2MFlTa2E0dUVLVzN2eTIzM0NvOU1URDhURTlZUm9XcDBoLTRLbjByZjFJd3RRMk9aVTBOQzJsRXdQUHNqVUpkX3ZibERHX01BTGJYeVlHMk9RQXpjUkc5cXJQYV9HakZLajZMR2htX2JvX1NpZUduY0VIUtIB5gFBVV95cUxQR1FDMDlqcXlsaDQzcEVFR3ZCbVl0UnBtNXhHSDU2ZUYzUjlUN0RERkdWUUpsWXFFaDRYblJKSUlOb3hYMkxyc01Xd2hhZTlqVTZFMlh1TkswUkZoY0Q3cGtKMDFFSGd4Q1FFc3I5b0lZSmlFeUJaMW9SS19PMVYxWXVsMFBOQVpYYkp3R2psclJtRmZvRThCWnRNaWFVRFdMUVV3aG9HUVZnS0ZxMlU2b2JRMlpHcFpQZzIzcFMtRGhGYy0ybU45d1VTcVdrZHA2aGp4RkxjWTVONmw1ZkdueGhBQzlFUQ?oc=5"
+        },
+        {
+          "jur": "Kerala",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Kerala Excise dept.",
+          "ref": "",
+          "headline": "Kerala: naye liquor licence par temporary ban",
+          "what": "Kerala Excise dept ne nayi liquor licences dena abhi rok diya hai jab tak nayi govt liquor policy aa nahi jati.",
+          "who": "Restaurants, shops, applicants Kerala mein jo new liquor licence chahte hain.",
+          "action": "Naya licence apply mat karein, jab tak nayi policy announce nahi hoti.",
+          "deadline": "",
+          "source_name": "The Hindu",
+          "source_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPTWtoRDZYbEYxeFZDWVJJYl8yZ0hpNEo2c0d1bmNLZ2xtY3ByUk9xdHNPY3Fab2RNb2tqZkU3TEluSXNkOFZRSXo2cXNIaWJIQ0JPNmpzWmktZWQ4bVZSdE5td09Jb1Yxb3NnOHpUMFNLdVlQNjMwdURaVEsxWDlwVVBaS2tTdWFDbkdHNGpDZEJkc05VdDR5MFdMd1ZXQWFCYmt3TkFRMzlxQl9uMnNJNFdhOTRiVjVxQ0s1Wk02c3ZjUGtsV0JiTFA5aTZLVmZLSmh6Sk5XclM4QnhBRlhYZzdUcExNUmFzTmE2YjBVTjk0YzBiUGZSWkg1ZUtiT1JlMmfSAYgCQVVfeXFMTXlVNVpZZjFldzM0eTE1cnVtQnBEWHd3dkUxUzFLMGdVM1g2R2FiQWJiOU1ZZEVjTWFXV2xqT3NqZnNSVG9CNFhJWTJsd25CcHg2UXROS2JWT28tWGY1MjlKZ2FrdkJTVnpBeWVXZDUxQmlLbm5KQ2tGdC1xSF9UYUtEU3pKS2hJNkp4XzdLd3JQeWlqdzRLUEZ1OXdrVDZjbENaTjNwd0JsZzZMak5GX2VwaFlWTk0tQ2FlanVfeEpuYXo4RlpQdTh3MEVZMkVmSXJrYjVReUdyeXVtQUQyMU1ZejB5SHdaWWhzV3ZxODRuNXBvRjJEd0hITndMaE9MM1NPcGUxYnVL?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "New E-Way Bill Format 2027 se lagu hoga",
+          "what": "E-Way Bill ka naya numbering format 2027 se lagu hoga. Key changes finalize ho gaye hain.",
+          "who": "Sab GST registered businesses jo inter/intra state supply karte hain.",
+          "action": "ERP/software update plan karein naya format ke liye.",
+          "deadline": "",
+          "source_name": "Taxscan",
+          "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPU3Q1ZThYR2hyQzRzbGU1VUVoMGY1aWdrM0VZTUNsYkRSbUgxMUxQamZiSnhKYmExMDhEVE5CcHNWZ0RMTVBab3hJel9XOVJGSTNHRHRBQ1JkcDF5OXNteDlWQy0xeW10TFctb25qSHdkOTE5VFQ5MGR1bUZLNkxKZ1c4Q0NnaVdhcmp4ejdqY1p3TUk?oc=5"
+        }
+      ]
+    },
     {
       "date": "2026-11-12",
       "items": [
@@ -4378,128 +4461,6 @@
           "deadline": "10.10.2024",
           "source_name": "taxguru.in",
           "source_url": "https://taxguru.in/goods-and-service-tax/godown-rent-agricultural-warehousing-attracts-18-percent-gst-aar-gujarat.html"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-25",
-      "items": [
-        {
-          "jur": "Central",
-          "cat": "MCA / ROC",
-          "authority": "ROC",
-          "ref": "",
-          "headline": "Section 8 company object change may impact tax exemption",
-          "what": "Section 8 company agar apne object badalta hai to ROC approval chahiye. Naye object agar registration se nahi milte to 12A/80G tax exemption dobara lena pad sakta hai.",
-          "who": "Section 8 (NGO-type) companies registered under Companies Act.",
-          "action": "Object change se pehle compliance check karo. Naye registration apply karo agar object tax laws se nahi milte.",
-          "deadline": "",
-          "source_name": "taxguru.in",
-          "source_url": "https://taxguru.in/company-law/section-8-company-object-change-affect-12a-80g-registration.html"
-        },
-        {
-          "jur": "Punjab",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Punjab Excise Department",
-          "ref": "",
-          "headline": "Sunday ko bhi khule rahenge Punjab excise office property tax ke liye",
-          "what": "Punjab ke excise offices Sunday ko bhi property tax collection ke liye khule rahenge.",
-          "who": "Punjab ke property owners jo tax jama karna chahte hain.",
-          "action": "Tax jama karne ke liye Sunday ko bhi office ja sakte hain.",
-          "deadline": "",
-          "source_name": "24 News HD",
-          "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQU3lObFBzWFNZVEtKWHpVUDVRNlQ3NWNCVE13dVkxbTBjVS14ckNMMEFWTWIxRmxzeWRpUnIwb2lIVjRscUIzdTd1QUh4OFFIVENjZHVOZF9QcEJ2bnNfVDdHdFlQdkZEM1pQUVVmQ2dUd3NnYTQ1NDVXTm1HZUpsSlFaS2F4TUpDRk5YSmxtVjg4d05nRmNhY1B4RlNHLUxRWUHSAbIBQVVfeXFMT2JLLTMweV84Nk9PZzcydWNJczVqcGJCQ1dxNEJEU3BuY3dxRlAxUVlONVZoYkZwWUQzTzVjQWxqUThHX1RoczBxaDdDSWszUGlfZnZiVW9LbGU2R3REWDNJdnhxZTRfYlJaZTZ2LTVKYk5kMU9aNlVuMWF1QzN5ZFRITUVjQllvV2hsRDhvcHJWRFc3dElJa3pwbGdqUE9RZHFtSUpVVnU4QmZvWXp2Si0xUQ?oc=5"
-        },
-        {
-          "jur": "Andhra Pradesh",
-          "cat": "GST",
-          "authority": "Andhra Pradesh Government",
-          "ref": "",
-          "headline": "AP mein GST AAR reconstitute, naye members appointed",
-          "what": "Andhra Pradesh sarkar ne GST Advance Ruling Authority (AAR) ko reconstitute kiya hai. State Tax aur Central Tax ke naye members appoint hue hain.",
-          "who": "GST registered dealers, tax professionals, applicants in Andhra Pradesh.",
-          "action": "Advance ruling ki applications ab naye AAR panel ke saamne dalein.",
-          "deadline": "",
-          "source_name": "a2ztaxcorp.net",
-          "source_url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOV3c2MHhJWm5ORlY4Uy1NalJIUHM4alJQRngybjA5Z1BaRVh4R1R6alFPSWZ0azJDVmFGTHFqNnlVTjRPby14VDdtVFJmV3VLVFY2QVpxbjRHTDB6RXQ2Wmh0a2pBTDdDalo5M2ZMTGF2WmdKUG5aM0EyS2FPZnR1dVRDM3NpQWZGdUlyS2UyTk51RWJWTUxCMV8wQ0pTRU1oN3dweVBEYTRyLU91ZXpZbXdPNVJqNE52UWVYMTdEeEVUMWVjWjZMVGhPVEJ3VlJaODdqM0RIR3hDYkJ3N0V1M3pmc2VUZlViRkpsMW5PRkZWdGhJRExZ?oc=5"
-        },
-        {
-          "jur": "Chandigarh",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Chandigarh Administration",
-          "ref": "",
-          "headline": "Chandigarh: Natural Gas VAT 12.5% se 5% hua",
-          "what": "Chandigarh admin ne natural gas par VAT 12.5% se ghata kar 5% kiya hai.",
-          "who": "Natural gas supply, trade, industry in Chandigarh.",
-          "action": "Agla bill dekhte time updated VAT rate ka hisaab rakhein.",
-          "deadline": "",
-          "source_name": "Construction World",
-          "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVkdaaHl4MlFINVdxWk5SOVMwYlhUX19DaDJsa1o3YVVtbDlTdEFXV0VVMi1QRUd0V3N1eV9oX1JrUElVaGxBczVPa2o4VUxPeFRVTmVoYV9ISjhZbk0tMXVQeEZuNW1YY3ZtOVRTSnN4N2lYclFoZzV0dmxNcDJVVXJnQnNEM1RlTHpkRG5XWmhrRHRGSzh3OTB4ZUdoaHhNeXB0UDczbHI5NzhITUxKeWg0MElGVDR1ekR1OTl4SlpBZElvZjFzVmpPZGhNbHNrNk1Z?oc=5"
-        },
-        {
-          "jur": "Rajasthan",
-          "cat": "GST",
-          "authority": "Rajasthan AAR",
-          "ref": "",
-          "headline": "Fresh Psyllium Seeds par 5% GST lagu: Rajasthan AAR",
-          "what": "Rajasthan AAR ne decide kiya hai ki fresh Psyllium seeds par 5% GST lagega, exemption nahi milegi.",
-          "who": "Psyllium seeds business ya dealers Rajasthan mein.",
-          "action": "Is item par 5% GST invoice mein lagayein, exemption claim mat karein.",
-          "deadline": "",
-          "source_name": "taxguru.in",
-          "source_url": "https://taxguru.in/goods-and-service-tax/fresh-psyllium-seeds-taxable-5-percent-gst-not-exempt-rajasthan-aar.html"
-        },
-        {
-          "jur": "Gujarat",
-          "cat": "GST",
-          "authority": "Gujarat AAR",
-          "ref": "",
-          "headline": "Godown rent (agri warehousing) par 18% GST lagega: Gujarat AAR",
-          "what": "AAR Gujarat ne decide kiya ki agricultural warehousing ke godown rent par 18% GST lagega. Unregistered godown se hire karne par RCM 10.10.2024 se apply hoga.",
-          "who": "Warehousing, agri supply chain companies Gujarat mein.",
-          "action": "Godown rent par 18% GST charge karein ya pay karein. Agar unregistered se godown liya hai to 10.10.2024 se RCM follow karein.",
-          "deadline": "10.10.2024",
-          "source_name": "taxguru.in",
-          "source_url": "https://taxguru.in/goods-and-service-tax/godown-rent-agricultural-warehousing-attracts-18-percent-gst-aar-gujarat.html"
-        },
-        {
-          "jur": "Delhi",
-          "cat": "MSME & Scheme",
-          "authority": "Delhi Government",
-          "ref": "",
-          "headline": "Delhi govt ko 5,500+ EV incentive applications mile",
-          "what": "Nayi electric vehicle (EV) policy ke tahat, Delhi govt ko 5,500 se jyada applications incentive ke liye mile hain.",
-          "who": "Delhi mein EV buyers ya businesses incentive lene wale.",
-          "action": "Agar application daali hai to processing ka wait karein. Nayi applications EV policy ke tahat dalein.",
-          "deadline": "",
-          "source_name": "Business Standard",
-          "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNOEZmOWZTV0lud3lBZ0E5SjJzUHhwdGVDSFY0bHBzUW5XVTVtc0QwSTVydVpzMnV3MDlsb1BtZmNwZlUtT3BnMEFJYjc0Y3p0Y3hGM19kcXJBOTRUVFFZeDlEZkZWQmVnUHc1cHA0Y0FrbHZ1akI1b3BkUUlZbmY0X1B4NTZ6eFFpdk9KMGduUU5od2dPSWxWU2hjT2R5dE5EU3otTFl4VjZfS2NUQzM3VzlyRzlIclFoQlRLYUxRSUdlT0h0UThlOG51Zno3SlBBM2xBZFc0M09ySlHSAdsBQVVfeXFMTThGZjlmU1dJbnd5QWdBOUoyc1B4cHRlQ0hWNGxwc1FuV1U1bXNEMEk1cnVaczJ1dzA5bG9QbWZjcGZVLU9wZzBBSWI3NGN6dGN4RjNfZHFyQTk0VFRRWXg5RGZGVkJlZ1B3NXBwNGNBa2x2dWpCNW9wZFFJWW5mNF9QeDU2enhRaXZPSjBnblFOaHdnT0lsVlNoY09keXRORFN6LUxZeFY2X0tjVEMzN1c5ckc5SHJRaEJUS2FMUUlHZU9IdFE4ZThudWZ6N0pQQTNsQWRXNDNPckpR"
-        },
-        {
-          "jur": "Telangana",
-          "cat": "GST",
-          "authority": "Telangana AAR",
-          "ref": "",
-          "headline": "Cinema equipment leasing par highest GST rate: Telangana AAR",
-          "what": "Telangana AAR ne maana hai ki projectors, servers, UPS, VSAT ka leasing ek mixed supply hai aur bundle pe highest GST rate lagega.",
-          "who": "Cinema equipment lease karne wale, multiplex, suppliers Telangana mein.",
-          "action": "Sab equipment ke bundle pe highest GST rate lagakar GST pay karein.",
-          "deadline": "",
-          "source_name": "taxguru.in",
-          "source_url": "https://taxguru.in/goods-and-service-tax/digital-cinema-equipment-leasing-mixed-supply-taxable-highest-gst-rate-telangana-aar.html"
-        },
-        {
-          "jur": "Haryana",
-          "cat": "MSME & Scheme",
-          "authority": "Haryana Government",
-          "ref": "",
-          "headline": "Haryana business law: 15-day clearance rule for MSMEs",
-          "what": "Naya kanoon: MSME ko business clearance process sirf 15 din mein poora hoga, lamba wait khatam.",
-          "who": "Haryana ke MSME businesses jo approval ya clearance ka wait karte hain.",
-          "action": "Naye business, license ya clearance ke liye ab 15 din mein update milega. Process start karte hi ye rule check karein.",
-          "deadline": "",
-          "source_name": "ThePrint",
-          "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVzZnYXlwaUVGZUpHb0tGUHRFR3NaSWRvWXpFTk9UeEkxUjlBUktONVpGRjVSM3dydzE4M3M3cGZPcmtaTFdrcmM2bzNzVHY4NF9iQmpaTWFpd0ZmeWZvM3d4clM3b3NpZ3BGSHJMTEdwenBjbVZNY25lUmVGNkx6bWZ2UDVqRXEzZEVtWDUyaEMzbmc5LTh2dmczMFFIaGtVOVM2TkUzZTN1bkxPbnlZTE1tT3p0bHhQNnFDaTg5QS1hR1NnTWZRY3JZSHo1RDNja2NNaXlSZnZVZkgt0gHiAUFVX3lxTE81bW15dEZhZXlJSVVycUJ5dHZMSEw2WFJSdXppWmNhdEJzQUgwTHU1aUFBV3E2aUZLajZwYmpDMExWNlR1R2hVWW9iRkRiZkluN2p2ZWZKeUJiYjB4NDYwMV9xTVNyNW5wbkZaSTdyclVnNnVqc1FIckxwT2JwRFRmVEpYZTEwSlhsQzVjbG82SExUblhVUW1WRERtQ2hwNGxGTDFxVDg5X0diWmJTMm95blpfR2NyQkFPLVdOa1hQTDZlRjBRYnJoTTZWYlhZOGJiUVNYVjduQlI5Si1UOGJEdEE?oc=5"
         }
       ]
     }
