@@ -657,7 +657,8 @@
 /* Ad conversion tracking: Meta Pixel Contact/Lead + Google Ads conversion (set CGA_AW_SEND_TO once the Ads tag label is known) */
 (function () {
   try {
-    var AW = window.CGA_AW_SEND_TO || '';
+    var AW = window.CGA_AW_SEND_TO || 'AW-18487504160/sd0BCOD3lLgdEKDaw-9E';
+    try { if (window.gtag) { window.gtag('config', 'AW-18487504160'); } } catch (x) {}
     var done = {};
     function fire(kind, meta) {
       if (done[kind]) { return; } done[kind] = 1;
