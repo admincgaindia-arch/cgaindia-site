@@ -616,6 +616,40 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount); else mount();
 })();
 
+/* CGA enquiry buttons (14 Nov 2026): WhatsApp + Call buttons under the hero intro on service pages, and a fixed WhatsApp/Call bar on phones. Skips tool, login and payment pages. */
+(function () {
+  try {
+    if (window.__cgaCta) { return; }
+    window.__cgaCta = 1;
+    var seg = location.pathname.split('/').filter(Boolean);
+    var L = (seg.length > 1 && /^(hi|pa|mr|gu|bn)$/.test(seg[0])) ? seg[0] : 'en';
+    var file = (seg.length ? seg[seg.length - 1] : 'index.html').toLowerCase();
+    if (/^(portal|pay|engagement|review|careers|associate|partners|samvaad[a-z0-9-]*|privacy|terms|refund|contact|notice-decoder|tax-calculators|gst-2b-reconciliation|interest-late-fee-calculator|case-law-search|ais-mismatch-checker|tax-help-desk|fee-quote|book-consultation|health-check|recovery-desk|notice-cover|templates|documents-checklist|compliance-calendar|free-tools)[.]html$/.test(file)) { return; }
+    var T = { en: ['WhatsApp par baat kariye', 'Call kariye'], hi: ['WhatsApp पर बात करें', 'कॉल करें'], pa: ['WhatsApp ਉੱਤੇ ਗੱਲ ਕਰੋ', 'ਕਾਲ ਕਰੋ'], mr: ['WhatsApp वर बोला', 'कॉल करा'], gu: ['WhatsApp પર વાત કરો', 'કોલ કરો'], bn: ['WhatsApp-এ কথা বলুন', 'কল করুন'] }[L];
+    var topic = String(document.title || '').split('|')[0].split(' — ')[0].split(' – ')[0].replace(/\s+/g, ' ').trim().slice(0, 60);
+    var wa = 'https://wa.me/919996647888?text=' + encodeURIComponent('Namaste CGA, mujhe is baare mein baat karni hai: ' + topic);
+    var tel = 'tel:+919996647888';
+    var st = document.createElement('style');
+    st.textContent = '.cga-hcta{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px}.cga-hcta a{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;font-size:.98rem;text-decoration:none;line-height:1.2}.cga-hcta .w{background:#25D366;color:#fff}.cga-hcta .c{border:1.5px solid currentColor}.cga-mbar{display:none}@media(max-width:760px){.cga-mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#00293d;padding:10px 14px;gap:10px;align-items:center;box-shadow:0 -10px 30px -12px rgba(0,0,0,.5)}.cga-mbar .w{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;font-weight:700;font-size:.95rem;padding:13px 14px;border-radius:999px;text-decoration:none}.cga-mbar .c{flex:none;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;color:#fff;text-decoration:none;font-size:1.15rem}body.cga-has-mbar{padding-bottom:70px}body.cga-has-mbar .wa-float{display:none}}';
+    (document.head || document.documentElement).appendChild(st);
+    var lede = document.querySelector('.tm-hero .tm-lede');
+    if (lede && lede.parentNode && !lede.parentNode.querySelector('a[href*="wa.me"],a[href^="tel:"]')) {
+      var h = document.createElement('div');
+      h.className = 'cga-hcta';
+      h.style.color = window.getComputedStyle(lede).color;
+      h.innerHTML = '<a class="w" href="' + wa + '" target="_blank" rel="noopener">💬 ' + T[0] + '</a><a class="c" href="' + tel + '" style="color:inherit">📞 ' + T[1] + '</a>';
+      lede.parentNode.insertBefore(h, lede.nextSibling);
+    }
+    if (!document.querySelector('.sticky-cta')) {
+      var b = document.createElement('div');
+      b.className = 'cga-mbar';
+      b.innerHTML = '<a class="w" href="' + wa + '" target="_blank" rel="noopener">💬 ' + T[0] + '</a><a class="c" href="' + tel + '" aria-label="Call">📞</a>';
+      document.body.appendChild(b);
+      document.body.classList.add('cga-has-mbar');
+    }
+  } catch (e) {}
+})();
+
 /* CGA visitor analytics (first-party, no cookies, no raw IP stored).
    Sends one small beacon per page view + WhatsApp / call / pay clicks to n8n.
    Team members can exclude their own visits by opening any page with ?notrack=1 (undo: ?notrack=0). */
