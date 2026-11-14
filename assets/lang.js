@@ -654,5 +654,29 @@
     }, true);
   } catch (e) {}
 })();
+/* Ad conversion tracking: Meta Pixel Contact/Lead + Google Ads conversion (set CGA_AW_SEND_TO once the Ads tag label is known) */
+(function () {
+  try {
+    var AW = window.CGA_AW_SEND_TO || '';
+    var done = {};
+    function fire(kind, meta) {
+      if (done[kind]) { return; } done[kind] = 1;
+      try { if (window.fbq) { window.fbq('track', kind, meta || {}); } } catch (x) {}
+      try { if (AW && window.gtag) { window.gtag('event', 'conversion', { send_to: AW, value: 500, currency: 'INR' }); } } catch (x) {}
+    }
+    var priv = /portal|draft/.test(location.pathname);
+    document.addEventListener('click', function (ev) {
+      var a = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null; if (!a || priv) { return; }
+      var h = a.getAttribute('href') || '';
+      if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp.com') > -1) { fire('Contact', { content_name: 'whatsapp' }); }
+      else if (h.indexOf('tel:') === 0) { fire('Contact', { content_name: 'phone' }); }
+    }, true);
+    document.addEventListener('submit', function (ev) {
+      var f = ev.target; if (!f || priv) { return; }
+      if (f.querySelector('input[type=password]') || (f.checkValidity && !f.checkValidity())) { return; }
+      if (f.querySelector('input[type=email],input[type=tel],input[name*=phone],input[name*=mobile],textarea')) { fire('Lead', { content_name: f.id || location.pathname }); }
+    }, true);
+  } catch (e) {}
+})();
 /* Festival greeting popup loader (assets/festival.js) */
 (function () { try { if (document.getElementById('cga-fest-js')) { return; } var s = document.createElement('script'); s.id = 'cga-fest-js'; s.src = '/assets/festival.js?v=1'; s.defer = true; document.head.appendChild(s); } catch (e) {} })();
