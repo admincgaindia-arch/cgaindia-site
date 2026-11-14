@@ -1,6 +1,115 @@
 {
-  "last_updated": "2026-11-13T02:31:23.553Z",
+  "last_updated": "2026-11-14T02:31:14.870Z",
   "days": [
+    {
+      "date": "2026-11-14",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "Income Tax",
+          "authority": "-",
+          "ref": "-",
+          "headline": "Form 3CFA for patent royalty: 21 Nov deadline",
+          "what": "AY 2026-27 ke resident patentees ke liye Form 3CFA file karne ki deadline 21 November hai, audit-return category waalon ke liye. 10% patent royalty rate, eligibility aur 5 saal continue rehne ka rule hai.",
+          "who": "Resident patentee jinke return covered audit category mein aate hain.",
+          "action": "Eligible log 21 Nov se pehle Form 3CFA file karein. 5 saal ki continuity ka dhyaan rakhein.",
+          "deadline": "21 November 2026",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/form-3cfa-patent-royalty-21-november-2026-option-deadline-section-115bbf-controls.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Labour",
+          "authority": "EPFO",
+          "ref": "-",
+          "headline": "Oct 2026 EPF return aur deposit ki last date 15 Nov",
+          "what": "EPFO ne alert diya hai ki employers October 2026 ka ECR file karein aur EPF contribution 15 November tak deposit karein.",
+          "who": "Saare employers jin par EPF lagu hota hai.",
+          "action": "October 2026 ECR file karke EPF paisa 15 Nov tak jama karein.",
+          "deadline": "15 November 2026",
+          "source_name": "Livemint",
+          "source_url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPeDRWTk9uTEQ3Zk0wV3Y4R1h5eGtkckFGOWFEblR2dUoxZjEwUEc2N2lIREdLeHdXWGFIcDh4QUR5MlpoU3hlWjVMY1ZJRzNDTHVsLS04Mzl3ZDhxWUxJVzNSVndTdzZ2elB2UmJNTkUzT19DamNUTDZSZ1hvV2tfUG5HQzBWbjhZN09aNXJSVUFJeGFwUHNtYkNsbEg5TW16dU45TFR4ejZWemZnMGpxVm5UY2FTZVprRHNQaHlXZGpEc1lOcjN1Y2NKbGQ2bmdwMVpmTmxNNDFRTE9OVm5lRE9KRU5XYTFTamtOMUg2S1RBZEJRWGw40gH3AUFVX3lxTE94NFZOT25MRDdmTTBXdjhHWHl4a2RyQUY5YURuVHZ1SjFmMTBQRzY3aUhER0t4d1dYYUhwOHhBRHkyWmhTeGVaNUxjVklHM0NMdWwtLTgzOXdkOHFZTElXM1JWd1N3NnZ6UHZSYk1ORTNPX0NqY1RMNlJnWG9Xa19QbkdDMFZuOFk3T1o1clJVQUl4YXBQc21iQ2xsSDlNbXp1TjlMVHh6NlZ6ZmcwanFWblRjYVNlWmtEc1BoeVdkakRzWU5yM3VjY0psZDZuZ3AxWmZObE00MVFMT05WbmVET0pFTldhMVNqa04xSDZLVEFkQlFYbDg?"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "DGFT",
+          "ref": "-",
+          "headline": "Lithium-Ion Battery Black Mass export ab banned",
+          "what": "DGFT ne Lithium-Ion Battery Black Mass ka export ITC (HS) Code 85491400 ke under rok diya hai. Yeh turant lagu hai.",
+          "who": "Jo bhi exporter Lithium-Ion Battery Black Mass bech rahe hain.",
+          "action": "Ab is item ka export na karein. Export plan bana rahe hain to update karein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQnVjVFFzRExCRXQ1VXRsUThyRDc5bWdpYklqUlBBU3oxejhNdDljLXFlVXlmeW83TVVSZWM0d2NoY3VudXJRY0FEWXRWOUl3OHI3Yl9VTXNCV2NpbVg3SHRMMmI4RVdId2piYUZZUXJfUktDY2EtWUVaWFpMMEs1S1lBYUNHNkllUWFJUTFtVHVvQ2w1STd1eUJ5eXhtblBac3Z1aFFQZzdadV8taThwVDQ4dkZTdU5YeE5sdGFybkd1Z3NYalpj?"
+        },
+        {
+          "jur": "Central",
+          "cat": "MSME & Scheme",
+          "authority": "Union Cabinet",
+          "ref": "-",
+          "headline": "Stand-Up India scheme ab aur aage continue hoga",
+          "what": "Cabinet ne Stand-Up India Scheme ko continue karne ki approval de di hai. ₹4,111 crore ka credit guarantee corpus hai, target 2.5 lakh women, SC aur ST entrepreneurs ko support karna.",
+          "who": "Women, SC aur ST entrepreneurs jo Stand-Up India scheme ka benefit lena chahte hain.",
+          "action": "Yogya candidates Stand-Up India scheme ke liye apply karein, credit facilities ka faayda uthayein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOekFGRlJxd05OWTlMRExsRFAtUXJFQkkzSGJpWjlKTmpzbkJpYW1KQnFLb3RzZFdpX1p2eVQwRmI4bUUwbVNNT1pnUDRjZi1mNFY4cnJhOXVHOXpTbWZ5WDNGaTBJV1d2bVdwb2Z5d2hMTUlBUklHTXRiSzZNa0pYMUtOQmJkLVp4YW1XdnZEdFB3dFQxZk5SY3NEY0NWQUo5ZE5xMXFueFdld1BLVnYzV2gycUh0aU95SGxaU09tdm8zSnpyTVd4TmkyaVRfdGxhTUw0b0pPYnJzSEZtdGdORGtqNHIxcG1nZnhqLVFYdHBCUzRoMWlVQmdON2NlRUluN3c?"
+        },
+        {
+          "jur": "Central",
+          "cat": "Income Tax",
+          "authority": "-",
+          "ref": "-",
+          "headline": "Presumptive Taxation Section 58 ka samjhauta",
+          "what": "Section 58 ke under presumptive taxation ki basic rules, profit rates, eligibility, books, tax audit, aur restrictions ki samajh di gayi hai.",
+          "who": "Taxpayers jo presumptive taxation ka option use karte hain / karna chahte hain.",
+          "action": "Section 58 ke norms follow karein aur check karein ki eligibility hai ya nahi.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/presumptive-taxation-income-tax-act-2025-section-58.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "-",
+          "headline": "GST TDS: Section 51 ke rules aur GSTR-7 filing",
+          "what": "GST TDS Section 51: 2% deduction, ₹2.5 lakh threshold, GSTR-7 filing aur metal scrap ke liye special rule. Late fees aur supplier credit ki conditions bhi batayi gayi hain.",
+          "who": "Registered persons jin par Section 51 GST TDS lagu hota hai (e.g., sarkari department, notified company).",
+          "action": "GST TDS rule samjhein, sahi tareeke se GSTR-7 file karein, threshold par dhyaan dein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-tds-section-51-gstr-7-rate-due-date-registration-compliance.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CAAR Delhi",
+          "ref": "-",
+          "headline": "5G modules: CTH 8517 62 90, customs exemption nahi",
+          "what": "CAAR Delhi ne Telit 5G modules ko CTH 8517 62 90 mein classify kiya hai aur customs duty exemption provide nahi kiya.",
+          "who": "5G module importers jo Telit brand items mangwa rahe hain.",
+          "action": "Import me correct CTH use karein, exemption claim mat karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/caar-delhi-classifies-telit-5g-modules-cth-8517-62-90-denies-customs-duty-exemption.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "MSME & Scheme",
+          "authority": "DGFT",
+          "ref": "-",
+          "headline": "RELIEF scheme: exporters ke liye sarkari support",
+          "what": "Sarkar ne RELIEF scheme launch ki hai, taaki West Asia logistics disruption ke time exporters ko support mile.",
+          "who": "Sare exporters jo West Asia logistics disruption se affected hain.",
+          "action": "Agar aap affected exporter hain to scheme ke details dekhein aur support ke liye apply karein.",
+          "deadline": "",
+          "source_name": "DD News",
+          "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZmZqanZTdE1NUG1KY1lUeTFXUGVvR2NCWDQybHhnM3N3cGlTVFpVbnBwUm11TjRKQmtHcWRqb1pTMnlZbWhiRXE0T1luOVlza2hBNnA2MTMyVmg2MzFtWDVHZVA4Zjhpdm9ERm1TcUExTW5sVkJOSkpGN1lHSXRGM3czQzZRRHRkeS1IWDgtcjduRURyeTVTQzkxYnktSUNhVjdDblF2SndsajJEYVRVXw?oc=5"
+        }
+      ]
+    },
     {
       "date": "2026-11-13",
       "items": [
@@ -4352,115 +4461,6 @@
           "deadline": "",
           "source_name": "taxguru.in",
           "source_url": "https://taxguru.in/goods-and-service-tax/57th-gst-council-meeting-registration-itc-process-reforms-focus.html"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-26",
-      "items": [
-        {
-          "jur": "Central",
-          "cat": "Customs / DGFT",
-          "authority": "DGFT",
-          "ref": "",
-          "headline": "15 scrap-inspection firms delisted by DGFT",
-          "what": "DGFT ne 15 scrap-inspection firms ko certificate issue karne mein lapses ke kaaran delist kiya hai. In firms se ab further certificate ya inspection ka kaam nahi hoga.",
-          "who": "All importers/exporters jo scrap import ya export karte hain.",
-          "action": "Check kiye ki aapki inspection firm abhi bhi DGFT list mein hai ya nahi. Import/export se pehle updated list dekhein.",
-          "deadline": "",
-          "source_name": "Business Standard",
-          "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQjg2MWtqMWNvZ1N2Y3B0VWZoLVp5TW9QZ3ZRVnRCalQ5elhRREl0NmlFcExMdWdXN1FsVzR4QUdIUEJZQWJBTlpRU1RPSWpPcVB1QWpMbDd0cDFvUkJYZ3k3VlRDNURlc3M4VmV1ZmlLV09CV2pqSFByZE1RbW55NVZXVzJuZXdGS3BEMFNLSW5HZmJUQ214N0MwdDBlLXFmNzh6MUtGYnVXYklmTzYyQmppTi1yYWtOcWRlQjQ4ZXE1MnFFYV8ybXl2aUFGNlJN0gHWAUFVX3lxTFBaU2lmX1lEUnBaVDcxRy0yVlFJZHU0M3lDYnI3NEFuaUZDMWRkR0ZCbmxKTTJuNFdVRGlzcW5JMlFzMXg1bWpvRW5LRmpNU1A3OXBidE1FVmV0Qzl6bFBOMktrOGNJTS01MmY3enVDQmR6VnNpbk1ST0dCRm5GWDR5RGJOWUpTOW5xRDczQlFvTi1QTDNQZEcxdDdGb0RtWUE0ak9reG13bTZzRmRrTlRqbjJ3eDM3QXgydm5RMHl2ZXB6ZkFzQk5FSE5NT0RzTV8yMWVSV3c"
-        },
-        {
-          "jur": "Andhra Pradesh",
-          "cat": "GST",
-          "authority": "Andhra Pradesh Government",
-          "ref": "",
-          "headline": "AP ne GST AAR authority phir se banayi",
-          "what": "Andhra Pradesh sarkar ne Authority for Advance Ruling (AAR) ko dobara banaya hai. Isme State Tax aur Central Tax ke member appoint kiye gaye hain.",
-          "who": "GST registered businesses Andhra Pradesh mein.",
-          "action": "GST queries ya doubt par naya AAR approach karein advance ruling ke liye.",
-          "deadline": "",
-          "source_name": "A2Z Taxcorp LLP",
-          "source_url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOV3c2MHhJWm5ORlY4Uy1NalJIUHM4alJQRngybjA5Z1BaRVh4R1R6alFPSWZ0azJDVmFGTHFqNnlVTjRPby14VDdtVFJmV3VLVFY2QVpxbjRHTDB6RXQ2Wmh0a2pBTDdDalo5M2ZMTGF2WmdKUG5aM0EyS2FPZnR1dVRDM3NpQWZGdUlyS2UyTk51RWJWTUxCMV8wQ0pTRU1oN3dweVBEYTRyLU91ZXpZbXdPNVJqNE52UWVYMTdEeEVUMWVjWjZMVGhPVEJ3VlJaODdqM0RIR3hDYkJ3N0V1M3pmc2VUZlViRkpsMW5PRkZWdGhJRExZ"
-        },
-        {
-          "jur": "Central",
-          "cat": "Customs / DGFT",
-          "authority": "CBIC",
-          "ref": "",
-          "headline": "CBIC ne Section 28DA, CAROTAR ne clarify kiya",
-          "what": "CBIC ne Form-I, origin verification aur identical imports ke rules ko Section 28DA aur CAROTAR, 2020 ke under clarifiy kiya hai. Ye clarification preferential tariff claims par applied hoga.",
-          "who": "Importers/exporters jo trade agreements mein preferential tariff claim karte hain.",
-          "action": "Apne documentation aur origin verification process ko is clarification ke mutabiq update karein.",
-          "deadline": "",
-          "source_name": "taxguru.in",
-          "source_url": "https://taxguru.in/custom-duty/cbic-clarifies-section-28da-carotar-application-trade-agreements-circular-43-2026-customs.html"
-        },
-        {
-          "jur": "Central",
-          "cat": "MCA / ROC",
-          "authority": "MCA",
-          "ref": "",
-          "headline": "Section 8 company: Object change par 12A/80G impact ho sakta hai",
-          "what": "Section 8 company ke objectives badalne par naya ROC approval mandatory hai. Agar naya object 12A ya 80G se match nahi karta to fir se tax registration lena pad sakta hai.",
-          "who": "All Section 8 companies jinke tax exemption registration hai.",
-          "action": "Object change se pehle tax compliance aur approval ka assessment karein; ROC aur tax registration ki process samjhein.",
-          "deadline": "",
-          "source_name": "taxguru.in",
-          "source_url": "https://taxguru.in/company-law/section-8-company-object-change-affect-12a-80g-registration.html"
-        },
-        {
-          "jur": "Haryana",
-          "cat": "MSME & Scheme",
-          "authority": "Haryana Government",
-          "ref": "",
-          "headline": "MSME clearance ab 15 din mein Haryana me",
-          "what": "Haryana government ka naya business law MSME clearances sirf 15 din mein dene ka nishchit karta hai. Ab lambi pratiksha nahi hogi.",
-          "who": "MSME units jo Haryana mein naya business shuru karna chahte hain.",
-          "action": "Apni approval application submit karen, process ab tezi se hoga. Delay hone par complaint kar sakte hain.",
-          "deadline": "",
-          "source_name": "ThePrint",
-          "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVzZnYXlwaUVGZUpHb0tGUHRFR3NaSWRvWXpFTk9UeEkxUjlBUktONVpGRjVSM3dydzE4M3M3cGZPcmtaTFdrcmM2bzNzVHY4NF9iQmpaTWFpd0ZmeWZvM3d4clM3b3NpZ3BGSHJMTEdwenBjbVZNY25lUmVGNkx6bWZ2UDVqRXEzZEVtWDUyaEMzbmc5LTh2dmczMFFIaGtVOVM2TkUzZTN1bkxPbnlZTE1tT3p0bHhQNnFDaTg5QS1hR1NnTWZRY3JZSHo1RDNja2NNaXlSZnZVZkgt0gHiAUFVX3lxTE81bW15dEZhZXlJSVVycUJ5dHZMSEw2WFJSdXppWmNhdEJzQUgwTHU1aUFBV3E2aUZLajZwYmpDMExWNlR1R2hVWW9iRkRiZkluN2p2ZWZKeUJiYjB4NDYwMV9xTVNyNW5wbkZaSTdyclVnNnVqc1FIckxwT2JwRFRmVEpYZTEwSlhsQzVjbG82SExUblhVUW1WRERtQ2hwNGxGTDFxVDg5X0diWmJTMm95blpfR2NyQkFPLVdOa1hQTDZlRjBRYnJoTTZWYlhZOGJiUVNYVjduQlI5Si1UOGJEdEE"
-        },
-        {
-          "jur": "Chandigarh",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Chandigarh Administration",
-          "ref": "",
-          "headline": "Natural Gas VAT Chandigarh mein 12.5% se 5% hua",
-          "what": "Chandigarh administration ne natural gas par VAT 12.5% se 5% par la diya hai. Yani ab natural gas par tax kam hoga.",
-          "who": "Jo businesses ya establishments natural gas use karte hain Chandigarh mein.",
-          "action": "Apne purchase/sales invoice mein updated VAT rate ka use karein. Accounts ko accordingly adjust karein.",
-          "deadline": "",
-          "source_name": "Construction World",
-          "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVkdaaHl4MlFINVdxWk5SOVMwYlhUX19DaDJsa1o3YVVtbDlTdEFXV0VVMi1QRUd0V3N1eV9oX1JrUElVaGxBczVPa2o4VUxPeFRVTmVoYV9ISjhZbk0tMXVQeEZuNW1YY3ZtOVRTSnN4N2lYclFoZzV0dmxNcDJVVXJnQnNEM1RlTHpkRG5XWmhrRHRGSzh3OTB4ZUdoaHhNeXB0UDczbHI5NzhITUxKeWg0MElGVDR1ekR1OTl4SlpBZElvZjFzVmpPZGhNbHNrNk1Z"
-        },
-        {
-          "jur": "Central",
-          "cat": "MSME & Scheme",
-          "authority": "Central Government",
-          "ref": "",
-          "headline": "MSMEs ke liye TReDS platform par credit guarantee system launch",
-          "what": "Sarkar ne MSMEs ke liye TReDS platforms par naya credit guarantee system introduce kiya hai. Ab MSMEs factoring aur bill discounting pe better facility le sakte hain.",
-          "who": "MSMEs jo TReDS platform ka use karte hain working capital ke liye.",
-          "action": "Agar MSME hai to naye credit guarantee options ka faayda lene ke liye TReDS operator se sampark karein.",
-          "deadline": "",
-          "source_name": "Observer Voice",
-          "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZHJCdUdRSmJwUEQtZ2hCc2JxNUl6Vk91dGN3N05PdXdWSm4ydVA3d2dWWXNfZXFFUHYySi1QNkU5WTFQOU5CWVBRcmZiRWFFRkRZV0JvVVdQRUdYUEdyRTNOMFRVSkxMX1FBWXpLX01vd2dSUnhsT2VBbk95bk90a3REa3dzMW5Ldm5qbjVsV1R3Q1U0LUViUVpncXJycVlx?oc=5"
-        },
-        {
-          "jur": "Gujarat",
-          "cat": "GST",
-          "authority": "AAR Gujarat",
-          "ref": "",
-          "headline": "Godown rent for agri warehousing par 18% GST: AAR Gujarat",
-          "what": "AAR Gujarat ne decide kiya ki agricultural warehousing ke godown rent par 18% GST lagega. 10.10.2024 se unregistered persons se hired godowns par RCM bhi lagega.",
-          "who": "Warehousing business aur farmers/agri traders jo Gujarat me unregistered se godown rent karte hain.",
-          "action": "Godown rent billing par 18% GST lagayein. Unregistered landlord se rent par 10.10.2024 se RCM ka dhyan rakhein.",
-          "deadline": "10.10.2024",
-          "source_name": "taxguru.in",
-          "source_url": "https://taxguru.in/goods-and-service-tax/godown-rent-agricultural-warehousing-attracts-18-percent-gst-aar-gujarat.html"
         }
       ]
     }
