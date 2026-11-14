@@ -17,6 +17,7 @@
     var h = a.getAttribute('href') || '';
     if (h.indexOf('wa.me') > -1) { window.gtag('event', 'generate_lead', { method: 'whatsapp' }); }
     else if (h.indexOf('tel:') === 0) { window.gtag('event', 'generate_lead', { method: 'phone' }); }
+    else if (h.indexOf('pay.html') > -1) { window.gtag('event', 'begin_checkout', { method: 'pay_page' }); }
   }, true);
 })();
 
@@ -620,6 +621,7 @@
    Team members can exclude their own visits by opening any page with ?notrack=1 (undo: ?notrack=0). */
 (function () {
   try {
+    return; /* disabled 14 Nov 2026: visitor tracking moved to GA4 to save n8n executions. Remove this line to re-enable. */
     var API = 'https://cga.app.n8n.cloud/webhook/cga-track';
     if (navigator.webdriver || /bot|crawl|spider|headless|lighthouse/i.test(navigator.userAgent || '')) { return; }
     var q = location.search || '';
