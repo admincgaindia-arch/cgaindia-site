@@ -1,6 +1,128 @@
 {
-  "last_updated": "2026-11-14T02:31:14.870Z",
+  "last_updated": "2026-11-15T02:31:15.369Z",
   "days": [
+    {
+      "date": "2026-11-15",
+      "items": [
+        {
+          "jur": "Delhi",
+          "cat": "Other",
+          "authority": "Delhi govt",
+          "ref": "",
+          "headline": "Delhi Udyog Data Platform mein Aadhaar authentication mandatory",
+          "what": "Delhi sarkar ne Unified Data Platform ke liye Aadhaar authentication notification jaari ki hai.",
+          "who": "Un businesses ya vyakti jinhe Udyog Data Platform ka istemal karna hai.",
+          "action": "Platform par login ya registration ke liye Aadhaar authentication complete karein.",
+          "deadline": "",
+          "source_name": "Business Standard",
+          "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZlFUd2czbF81cjB3b2M2OFdGekhZS3JrLXRXWV9MNU5YRUJ6MGl2Q2FPRS1zbUxQX3JnZ1M1ZGpSMHl5a0lYZzRUdmdtT2hpTWk3R0l2NlRmeV9vM0ttUi1WUE9NU2V4UXFjXzlGel9fZHRVUV9hMUZydUFoOWt1dndGZ0FJV00zekZXXzlJSTg3V0NrWGNialpLelVKRWRWS0ZrVnV1WFVfdmJKYjlySG4xSnBGb0diaW1kd3diZGd1a0hLZHJYV3d3TTlNQdIB0wFBVV95cUxPbVZVYnQzd2VTSzFfdlZpN05GbllnWG5mbUNXdU9FRm5EbktSRXlSXzNLM1FSaV85b1lpb25TbjlVSUhEZFdlaW1aaFRraGRKdTFkN3dnS0hkYThQVnBhMWQ1WDF0YXR6UzlFNElqWmpHT1dDbEdoc3diX2NkZWh1WEtMeXduLXRiWm9Ta2ZqWUQxaHBNR1BSLWlpZzR2clRIQ3RyLUpKeWpJemYxNjZ2U25QR2NVQTFNMEoxelpVV2piaENFY1BhcEJ3a1VrbWZwa2FJ"
+        },
+        {
+          "jur": "Jammu and Kashmir",
+          "cat": "GST",
+          "authority": "J&K Government",
+          "ref": "",
+          "headline": "J&K me Industrial GST reimbursement claims filing par relief",
+          "what": "Jammu and Kashmir sarkar ne ek baar ki relief di hai industrial units ko unke pending GST reimbursement claims file karne ke liye aur edible oil manufacturers ki eligibility badhai hai.",
+          "who": "J&K ke industrial units, khaaskar edible oil manufacturers.",
+          "action": "Agar GST reimbursement claim pending hai to ab file kar sakte hain. Edible oil units eligibility bhi check karein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ZcE9VU0oyRHFhbG1fVkJLTU1OV0k0NmV1dlc5R2NMZ0kxSEJWVm1la1I1TUEzWnBweDlpT3k5TWxZUUM5NUpITGZHOFdGQTcwU20zekU1R1k3cGotRmtOVFNqRWNUNnpsV3FKNlc3RDdmNFZYRVVqWU44NTU5VW8?oc=5"
+        },
+        {
+          "jur": "Maharashtra",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Maharashtra Government",
+          "ref": "",
+          "headline": "Maharashtra: Aviation fuel par 7% VAT ab 2027 tak",
+          "what": "Maharashtra sarkar ne Aviation Turbine Fuel (ATF) par kam ki hui 7% VAT rate ko April 14, 2027 tak badha diya hai.",
+          "who": "ATF bechne ya kharidne wali companies ya distributors Maharashtra mein.",
+          "action": "ATF ke liye reduced VAT rate ka benefit ab 2027 tak planning mein rakhein.",
+          "deadline": "14 Apr 2027",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVEJaUVBWLTd6UGZYTENuN1ZkbktXd3ZVN1pVNGZZSktCc3lnaXNBR2hVWDF0Z1pWUkZfSUYtTnMxakttdkJUbzlKSWdpd0hqbFNFLWtnLUQ0NXNaUHFMdExETktWaHhwUG9vVnV6SFVteDNLMWljX1doRE1KcVp0X2dhSWN1YWVFMVR6dGh1bm0zNGtlR1JvbVZxSFMzdkZjXzVGdTEwQ09hODBmQWRIWFc3Q2ZaczZBZWxjcnZHdF84Zw"
+        },
+        {
+          "jur": "Assam",
+          "cat": "MSME & Scheme",
+          "authority": "Assam Govt",
+          "ref": "",
+          "headline": "Assam ne UNNATI 2026 portal launch kiya, ₹500-cr subsidy scheme",
+          "what": "Assam sarkar ne UNNATI 2026 ke tahat ₹500 crore ki industrial subsidy portal launch ki hai.",
+          "who": "Assam ke industrial units aur naye entrepreneur.",
+          "action": "Industrial subsidy lene ke liye UNNATI 2026 portal par register karein.",
+          "deadline": "",
+          "source_name": "of this Land, for its People",
+          "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPM1FFbW1wTUExUWFiTGV5OXNDeVZ2dUJ1bEpmTzZkNV9SWk1GQTR0ZU42RFM1a2VweFkwWjhzZzI3UTNrU21aS3lnN0dXSG0yelRyMGpSdkFva0s0ZldVN2VrMFZ4emFSY3czMWw0ZnVvZGR5S1gycVY5NXRKYnh1UnB3bXZpa0FvN2xkNXBXM1RDZ3ZRczFENVp1VVhBbzNadzFqeThPblpBOFJyMmJWSUg1Y0xwV2wtbDRQdHhfZ1RDNXU0N25CY2NKMNIB2AFBVV95cUxPQ01rLW0xSHdWS3d4TEQtVnUySzBXdzdSNDVlbG50eVl4M3dOdGRRbmlfOTNFNVFCNUxsaTMtTnhscmJXUkpZSUd6Y3RkZklOWkN4dTZVUmdTcmdiMi1HMEdRYVh5ckV2X3pDdUdJbjJ0REJwd25EbU9VeTdkLWkwc3NzWTc1akR5QkFIMTlSZHFRTGVRSjd6TV82OVFpUUREejcwMEFwOXIwRG5tX0VUbzhhTm8yS1lBTjlqR3RMakV0SDlCZGxmTVFqOHlMWmdKUjFyZXNVb0M"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "91/2026-Customs (N.T.)",
+          "headline": "Gold, Silver, Edible Oils, Brass Scrap ke Customs Values badle",
+          "what": "CBIC ne gold, silver, edible oils aur brass scrap ke tariff values revise kiye hain. Notification effective 14 Nov 2026 se lagu hai.",
+          "who": "Import/export karne wale traders aur manufacturers in commodities.",
+          "action": "Import/export se pehle naye tariff values check karen. Billing aur customs calculation accordingly karein.",
+          "deadline": "14 Nov 2026",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/cbic-revises-customs-tariff-values-gold-silver-edible-oils-brass-scrap-14-november-2026.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "36/2026-Customs",
+          "headline": "ATA Carnet Imports: Customs extension allowed up to carnet validity",
+          "what": "CBIC Notification 36/2026-Customs ne 4 mahine ki ATA Carnet period ko carnet ki valid date tak extend karne ka option customs ko diya hai.",
+          "who": "Businesses ya traders jo ATA Carnet par import karte hain.",
+          "action": "Extension chahiye to carnet ki validity period tak customs mein request kar sakte hain. Relevant docs submit karein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/government-extension-month-ata-carnet-period-customs-notification-36-2026.html"
+        },
+        {
+          "jur": "Telangana",
+          "cat": "Labour",
+          "authority": "Telangana Govt",
+          "ref": "",
+          "headline": "Telangana: Gig worker welfare rules jaari, 4.5 lakh ko social security",
+          "what": "Telangana sarkar ne gig workers ke liye welfare rules jaari kiye hain, jisse 4.5 lakh logon ko social security milegi.",
+          "who": "Telangana ke gig workers (delivery, ride-hailing, etc).",
+          "action": "Agar aap gig worker hain, to welfare rules ki eligibility check karein aur registration ka process follow karein.",
+          "deadline": "",
+          "source_name": "TheWire.in",
+          "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdVpLb0pBQnB0dTFKSnI0M2NKWGtEUkp0MHJONXFDSXVRN2RhdnVJVEVRcVBQX05VR3Nyb0pjSkd3Mk9QTnlqR0tuM21rUlNCbjZhT0dfRFdxUU5IcWJVbzR6S0l6SEJFVnpBY3RFX2ZJdVlMcDdoNG5ZbHE4ZFhJYlhudnQ3MFR4eHZoRjBBZVBzU09kV2Y5b1NqVGxubUxESkdoU09YbG9NbTBRZzE3TUdIS3VYYjhpajdfRHVwX1pMYzlyNmNicUxCZm1wODBXeGfSAdcBQVVfeXFMUDF3WjBmck8waUNEY2lqVjNqR012UFNTYlY2cUl5b3ZzYzRJLTV3VzZKVXBlZ2NHVm1qcjBVQnlVQkNZdHpxbkpRM0FtekNNZFhwa2hPNEJiUVNxTHljRWFvNENNLVJLVFZ4Qk5WSnBKSGRPejJLVmFNN1BCcWcwcm1BRkllTVhLdGJsYUM0bjdwLUppNnRPMnI5dk5oSEFHV09qdElMZ1U5NE5ONlN1Y1dha2pwMGdEakN6b0U5ZmNlWDFPTHNxYzhEZGFFdHNlWFZzb2l3SGM"
+        },
+        {
+          "jur": "Gujarat",
+          "cat": "GST",
+          "authority": "Gujarat AAR",
+          "ref": "",
+          "headline": "Biodegradable bags par 5% GST, lekin certificate zaroori",
+          "what": "Gujarat AAR ne clarify kiya hai ki biodegradable bags par 5% GST tabhi lagega jab product ki certified biodegradability ho.",
+          "who": "Gujarat ke biodegradable bags banane ya bechne wale business.",
+          "action": "Biodegradability ka valid certificate ready rakhen tabhi 5% GST ka benefit milega.",
+          "deadline": "",
+          "source_name": "SAG Infotech Official Tax Blog",
+          "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRUhfT2dVOWJtQ2ZWNEg4WU00QjRWYmE0c05SamMwbjFZSmJqVWF5NlJZWG9taE9Jc2s1YkpHOGV2bmZkamJfLWxYM19vdHUxY0NBbDBJSDAzUVZHUkhfX2NpSWs0UUNTbzlRdXhZalRhelBmcDVpdUFONlc1ZzJUdnJDTW9PeUdnZEJGVkRJQXVuM3J5UGI5WUNn?oc=5"
+        },
+        {
+          "jur": "Tamil Nadu",
+          "cat": "GST",
+          "authority": "A2Z Taxcorp LLP",
+          "ref": "",
+          "headline": "Tamil Nadu GST process badla, refunds aur tez milenge",
+          "what": "Tamil Nadu sarkar ne GST rules mein badlav kiye hain jisse refunds aur jaldi mil sakein.",
+          "who": "Tamil Nadu ke GST registered businesses.",
+          "action": "Refund claim karte waqt naye process aur documents ki jankari lein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9YTTdtbGc5VUxhNGZESGhqcERTRm5EcXdzQ3IxZUNibWxkTjBhOUtFcmx5Q0g0UVVNc2lVeE9VZHh6ODBGWl91Y01TNGk4NmVHQ3lwVDNmOTlzTWIxMS1aOTRuQURGOTZIWU1NbWxfZlBrMVFvdDlxQmhn?oc=5"
+        }
+      ]
+    },
     {
       "date": "2026-11-14",
       "items": [
@@ -4365,102 +4487,6 @@
           "deadline": "",
           "source_name": "newskarnataka.com",
           "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMHdyX21YbmU0Q21lSkxpZTZYRnBaUmx0RTU3cmZjU2tHSXRMNUdxTkZmVUlvWWRZRDNveWVfVW91TC0wYVBrYkY1djlMdnZya1B0SkkycENHeGt0bjR1bEhWajRwVWRNS0dWTk1PY1FqdFRDN0I3bXFhb2l6STdJTXRPWHB1RE91dGR3c2Z4d1I0akc0amdVbDhCNHlNdw?oc=5"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-01",
-      "items": [
-        {
-          "jur": "Central",
-          "cat": "Income Tax",
-          "authority": "CBDT",
-          "ref": "",
-          "headline": "CBDT ne audit cases ke liye I-T return ki last date badhai",
-          "what": "CBDT ne audit cases ki income tax return file karne ki deadline extend kar di hai. Ab naye date pe file kar sakte hain.",
-          "who": "Jinke cases audit me aate hain, un businesses, professionals par lagu.",
-          "action": "Aap audit cases ki return ab extended last date tak file kar sakte hain.",
-          "deadline": "21 Nov 2026",
-          "source_name": "News On AIR",
-          "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSDVyLWVDazFNMHc2SFlHM3FJbTV0UldVdElfQUhuT1Nnb1h1c08zYy10aUpEV3BpRUd0ZzR1XzRtMEd1NFNjTXA2V09sQmxuVV9KbHhXUzdVZlBuVEd5bXFrMlQtVmxFbWFPTTllRFRKT2dDX0VqUHVpRmJ1WFpBZ2ZtRk9sZ3JrVVV0NWxHMnBzekx2ZGYxSGNHNG8?oc=5"
-        },
-        {
-          "jur": "Central",
-          "cat": "Customs / DGFT",
-          "authority": "Ministry of Commerce / DGFT",
-          "ref": "",
-          "headline": "India ne sugar export par turant ban lagaya, Sept 2026 tak",
-          "what": "Bharat sarkar ne sugar ki export par abhi se turant pratibandh laga diya hai. Yeh ban September 2026 tak rahega.",
-          "who": "Sugar exporters, exporters associations par asar.",
-          "action": "Sugar export ab turant band kar dein. Koi bhi naya export shipment book na karein.",
-          "deadline": "Sep 2026",
-          "source_name": "DD News",
-          "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN0hDSEY1Ml9mQ3NPb2c1eDNrWEN0cVEtTzNhUU50b0xPZEdjeUdZU2kzWUUyVzJSYmZKQ2Jfc0k2Ml9lUEs4NHgyYno1UnFudC1wR3p2UmlwN2dEOGZkYkdXY0o3TGRHb0xBTjZ0a01zR2lobGxDbFc5bi1aeENVZklJby1BdlhGaHF1QUZmU1NQcmUteXVkUA?oc=5"
-        },
-        {
-          "jur": "Central",
-          "cat": "Customs / DGFT",
-          "authority": "Ministry of Commerce / DGFT",
-          "ref": "",
-          "headline": "RoDTEP scheme exporters ke liye 3 mahine badha",
-          "what": "Centre ne RoDTEP (export incentive scheme) ki validity ab 31 December 2026 tak badha di hai. Exporters ko aur 3 mahine ka samay mil gaya hai.",
-          "who": "All eligible Indian exporters jinke products RoDTEP mein aate hain.",
-          "action": "RoDTEP ke tahat apna claim ab 31 Dec tak file karen. Scheme ki extended period ko dhyan mein rakhen.",
-          "deadline": "31 Dec 2026",
-          "source_name": "The New Indian Express",
-          "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeVB1OWlRdEhoX3ZyVzVpdDY2bmM4VmFteERqUktScjF3NVNnV2p1cFJBSV90SERuN3ZXYVZyWWxIdWtRQ3I2WnZkczVGZG9nRXVtbDVnUjhvRFVLeGItdnMyY1plZUQxdDJZVHp4eTNOemE3Ml9lODhteEF4SVRFVVlsRXRUV000dDJYY2pKZ3pTMl9Bam1wWGk1dzRCM0R2YnllUllpeWV2aXhBYnN4VjZzaExSMlp5emNMOUV5Vzd4b0JCbUg1c0tn0gHXAUFVX3lxTE9HYjR2aFM1WTR6V2RGQWlQOHNHWC1naHA4aFBIYmdHUmt1S2R3U0t6MXhhTEcwOV9FX0xneFVMUmU5SE1EaWNPaVRrVEp6WEFmVTR4QTVOYVhvRnh2dXUtUkE2OE5GS3ZfY1hqRmFEZzhLV2hSMVFUQ0tWcW9zNDVBVzliSUo2Y0p2MkhyRy1WZGVzNFk4akl3UlhDRVI3OFYtR2dZY2p3eWVPSFJJV2tid3NJNmZncTlWS3J5LXNtWGpHSGtCVnduSlozeWlQbDlQWnJsSURN?oc=5"
-        },
-        {
-          "jur": "Central",
-          "cat": "Customs / DGFT",
-          "authority": "Ministry of Textiles",
-          "ref": "",
-          "headline": "RoSCTL scheme for apparel export 3 mahine extend",
-          "what": "Kapda aur made-up goods export par milne wali RoSCTL scheme ki validity 3 mahine badh gayi hai. Ab aur time milega incentive claim karne ka.",
-          "who": "Apparel aur made-up goods exporters ko pratyaksh benefit.",
-          "action": "RoSCTL scheme under incentive ab 3 mahine aur claim karein. Extended duration ka use karen.",
-          "deadline": "",
-          "source_name": "Deccan Herald",
-          "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZEN3RmxYRGd3bTJBeFVNeWtEU1czd1Fydlg2cWltSUZxSWRDYWs4Qm9neFRyaFdnRkpYeUtoaXBwR0FqQWNlSVJzSDlfSXV6QnJtcjRzTExoZTNnU0xzYm9FMlN1Ymc4MlJVeGJvZ2dteWdIZ0drcjFickVzZnQ0a2lSdFpjazFscmJZVkFDOGV1ZFZFd0YzY1pfY3lVVlE4YUVfNW45MDJkSGVqdmJENUdBYlJiWi1lZmFOSWNiMzNxeV9ReDJUM2NxdEJtbDJFcFBTQw?oc=5"
-        },
-        {
-          "jur": "Central",
-          "cat": "Customs / DGFT",
-          "authority": "Union Cabinet",
-          "ref": "",
-          "headline": "Green Energy Corridor scheme ko Cabinet ki manzoori mili",
-          "what": "Rs 1.86 lakh crore Green Energy Corridor scheme ko Cabinet ka approval mil gaya hai. Iska focus renewable energy par hai.",
-          "who": "Renewable energy sector, companies jo energy transmission mein judi hain.",
-          "action": "Scheme ki guidelines aur incentives ka intezar karein. Planning mein is scheme ko consider karein.",
-          "deadline": "",
-          "source_name": "The Tribune",
-          "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNzJHdTIxVWttcUtfWkFLLWl4V05hLVZZcVM2TEszb2hDaWlCUkY2MUpSYWwxRGE1eTdreVZUb0ZEazZjMllBdkYyRnBQcFVCQnBTOWhDUWxfVXhQS2NReG1Ucm1LcVYzZTNhWlczTE5ZMG0tcklOZ2ZzRDBHaWxlOWpxbEdvWDV2anRsN0RTcXA1d0xhWmtvR0RDakNHcUZjVlpEQWpuOUtReUR0RVBJbU1CUEhzTm5JQ1p1ZjVIQVlnMThU0gHEAUFVX3lxTE83Mkd1MjFVa21xS19aQUstaXhXTmEtVllxUzZMSzNvaENpaUJSRjYxSlJhbDFEYTV5N2t5VlRvRkRrNmMyWUF2RjJGcFBwVUJCcFM5aENRbF9VeFBLY1F4bVRybUtxVjNlM2FaVzNMTlkwbS1ySU5nZnNEMEdpbGU5anFsR29YNXZqdGw3RFNxcDV3TGFaa29HRENqQ0dxRmNWWkRBam45S1F5RHRFUEltTUJQSHNObklDWnVmNUhBWWcxOFQ?oc=5"
-        },
-        {
-          "jur": "Central",
-          "cat": "Customs / DGFT",
-          "authority": "Ministry of Commerce",
-          "ref": "",
-          "headline": "MSP par soybean, moong, tur ki kharid manzoor 3 states mein",
-          "what": "Sarkar ne soybean, moong aur tur ki kharid MSP par approve ki hai. Total 7.11 lakh tonne procurement hogi teen rajyon mein.",
-          "who": "Farmers of 3 specified states jahan procurement hoga.",
-          "action": "Agar aap eligible farmer hain, to MSP par bechne ka mauka milega. Details ka intezar karein.",
-          "deadline": "",
-          "source_name": "BusinessLine",
-          "source_url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQeGx2SkhheDZXYTJXNDA0R3VTLXFaa3Rfc3M3ZDdCVzlESkM2b2Jvd2VFZFZIb1lWYXNveUNCdkhxYmJVa2tiLXQtNU1uaU5MbEpjcVpVcDk4MERtd0gtYkFiNElhRGF5Rno0WkM4anNtMmVBc0I1djd1X3FTT3B2MHR6S1pDSGhlenQ0Vjh0RER0dGJEVktIX3U0NTRSMVVyVEpQTU5qREtzTTVoc1dWQzdzRDFKclBFdm5nSTRTdDVwLU9lTlFpdk9FWWpqZFRwVS02S2ZqSDdTYnlmSDFTckNVaXgxQkw5bUdaRDFIcWZDODRaVjZ3VV81V1hXTGR3YzNlbDdHZXY4OHPSAYsCQVVfeXFMUHhsdkpIYXg2V2EyVzQwNEd1Uy1xWmt0X3NzN2Q3Qlc5REpDNm9ib3dlRWRWSG9ZVmFzb3lDQnZIcWJiVWtrYi10LTVNbmlOTGxKY3FaVXA5ODBEbXdILWJBYjRJYURheUZ6NFpDOGpzbTJlQXNCNXY3dV9xU09wdjB0ektaQ0hoZXp0NFY4dEREdHRiRFZLSF91NDU0UjFVclRKUE1OakRLc001aHNXVkM3c0QxSnJQRXZuZ0k0U3Q1cC1PZU5RaXZPRVlqamRUcFUtNktmakg3U2J5ZkgxU3JDVWl4MUJMOW1HWkQxSHFmQzg0WlY2d1VfNVdYV0xkd2MzZWw3R2V2ODhz?oc=5"
-        },
-        {
-          "jur": "Central",
-          "cat": "GST",
-          "authority": "GST Council",
-          "ref": "",
-          "headline": "57th GST Council Meeting: Registration, ITC, Process reforms",
-          "what": "GST Council ki 57th meeting mein registration process, input tax credit (ITC) rules, Section 17(5), invoice mismatches par kuch reforms discuss honge.",
-          "who": "GST registered businesses, professionals aur tax practitioners.",
-          "action": "Jo bhi naye updates circulars nikle, uske hisaab se apni compliance aur accounting practice update karein.",
-          "deadline": "",
-          "source_name": "taxguru.in",
-          "source_url": "https://taxguru.in/goods-and-service-tax/57th-gst-council-meeting-registration-itc-process-reforms-focus.html"
         }
       ]
     }
