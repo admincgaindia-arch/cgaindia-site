@@ -616,6 +616,148 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount); else mount();
 })();
 
+/* CGA nav polish (15 Nov 2026): The Firm / Founder / Learn menus get an icon and a one-line description per link (two columns on desktop when long); on phones the Services menu becomes five tappable group cards that open one at a time. */
+(function () {
+  try {
+    if (window.__cgaNx) { return; }
+    window.__cgaNx = 1;
+    var seg = location.pathname.split('/').filter(Boolean);
+    var EN = !(seg.length > 1 && /^(hi|pa|mr|gu|bn|te|ta|ur|kn|or|ml|as)$/.test(seg[0]));
+    var I = {
+      'about.html': 'M3 21h18M5 21V5l7-2 7 2v16M9 9h1M14 9h1M9 13h1M14 13h1M10 21v-4h4v4',
+      'cga.html': 'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3zM9 12l2 2 4-4',
+      'team.html': 'M16 20v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 20v-1a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8',
+      'clients.html': 'M3 7h18v13H3zM8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18',
+      'gallery.html': 'M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11zM12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z',
+      'achievements.html': 'M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM8.5 14L7 21l5-3 5 3-1.5-7',
+      'careers.html': 'M12 3l10 5-10 5L2 8l10-5zM6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5',
+      'partners.html': 'M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1',
+      'nj': 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1',
+      'praceasy.html': 'M3 4h18v12H3zM8 20h8M12 16v4',
+      'social-impact.html': 'M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z',
+      'videos.html': 'M4 5h16v14H4zM10 9l5 3-5 3z',
+      'insights.html': 'M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 21a2 2 0 0 1 2-2h13M9 7h6',
+      'updates.html': 'M6 16v-5a6 6 0 1 1 12 0v5l2 2H4l2-2zM10 20a2 2 0 0 0 4 0',
+      'case-laws.html': 'M12 3v18M7 21h10M5 7h14M5 7l-3 7a3.5 3.5 0 0 0 6 0L5 7zM19 7l-3 7a3.5 3.5 0 0 0 6 0l-3-7z',
+      'problems-solutions.html': 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7M12 17h.01',
+      'compliance-calendar.html': 'M4 6h16v15H4zM4 10h16M8 3v4M16 3v4',
+      'bank-finance-news.html': 'M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18',
+      'govt-updates.html': 'M5 21V4M5 4h12l-2 4 2 4H5',
+      '_': 'M5 12h14M13 6l6 6-6 6'
+    };
+    var D = {
+      'about.html': 'Firm ki kahani aur kaam ka tareeka',
+      'cga.html': 'Tax aur legal, ek hi desk par',
+      'team.html': 'Kaun aapka kaam sambhalta hai',
+      'clients.html': 'Kin logon ke saath kaam kiya',
+      'gallery.html': 'Delhi, Noida, Rohtak, Safidon',
+      'achievements.html': 'Milestones aur registrations',
+      'careers.html': 'Training aur jobs, poore India se',
+      'partners.html': 'Banks, DSA aur professionals ke liye',
+      'nj': 'Founder ka personal profile',
+      'praceasy.html': 'CA firms ke liye practice software',
+      'social-impact.html': 'Samaj ke liye kaam',
+      'videos.html': 'Tax aur GST, aasaan bhasha mein',
+      'insights.html': 'Articles aur guides',
+      'updates.html': 'Roz subah tax aur compliance',
+      'case-laws.html': 'ITAT, High Court, Supreme Court',
+      'problems-solutions.html': 'Aam dikkatein, seedha hal',
+      'compliance-calendar.html': 'Is mahine ki due dates',
+      'bank-finance-news.html': 'Loan, subsidy aur RBI updates',
+      'govt-updates.html': 'Central aur har state ke updates'
+    };
+    var PI = ['M7 3h8l4 4v14H5V3h2zM9 12h6M9 16h4', I['about.html'], 'M4 20V10M10 20V4M16 20v-8M22 20H2', I['case-laws.html'], I['team.html']];
+    function svg(p) { return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + p + '"/></svg>'; }
+    function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+    var st = document.createElement('style');
+    st.textContent = '.nx-ic{flex:none;width:38px;height:38px;border-radius:11px;background:#e9f7fb;color:#005176;display:grid;place-items:center;transition:background .15s,color .15s}'
+      + '.nx-ic svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}'
+      + '.nav-links .dropdown.nx a.nx-i{display:flex!important;align-items:center;justify-content:flex-start;text-align:left;gap:12px;padding:9px 10px!important;border-radius:12px;text-decoration:none;white-space:normal}'
+      + '.nx-t{min-width:0;flex:1}.nx-t b{display:block;font-weight:650;color:#00293d;font-size:.93rem;line-height:1.25}'
+      + '.nx-t small{display:block;color:#5b6b75;font-size:.78rem;line-height:1.3;margin-top:2px;font-weight:400}'
+      + '.nav-links .dropdown.nx a.nx-i:hover{background:#f1f8fb}.nav-links .dropdown.nx a.nx-i:hover .nx-ic{background:#005176;color:#fff}'
+      + '.nx-mi{display:none}'
+      + '@media(min-width:1021px){.nav-links .dropdown.nx{padding:10px;border-radius:16px;min-width:300px;box-shadow:0 24px 60px -24px rgba(0,41,61,.45)}'
+      + '.nav-links .dropdown.nx.nx-2{display:grid;grid-template-columns:1fr 1fr;gap:2px 6px;min-width:580px}}'
+      + '@media(max-width:1020px){.cm-on .cm-pan{margin:8px 10px 0;border:1px solid #dbe8ee;border-radius:14px;background:#fff;overflow:hidden}'
+      + '.cm-on .cm-pan .cm-head{display:flex;align-items:center;gap:12px;padding:12px;cursor:pointer;-webkit-tap-highlight-color:transparent}'
+      + '.cm-on .cm-pan .cm-head>div{flex:1;min-width:0}'
+      + '.cm-on .cm-pan .cm-head h4{margin:0;padding:0;font-size:.98rem;letter-spacing:0;text-transform:none;color:#00293d;font-weight:700}'
+      + '.cm-on .cm-pan .cm-head p{display:block;margin:2px 0 0;font-size:.78rem;color:#5b6b75;line-height:1.3}'
+      + '.cm-on .cm-pan .cm-head .nx-ic.nx-mi{display:grid}.cm-on .cm-pan .cm-head .nx-ch.nx-mi{display:flex}'
+      + '.nx-ch{align-items:center;gap:8px;color:#5b6b75}.nx-ch i{font-style:normal;font-size:.72rem;font-weight:700;background:#e9f7fb;color:#005176;border-radius:99px;padding:2px 8px}'
+      + '.nx-ch svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}.nx-open .nx-ch svg{transform:rotate(180deg)}'
+      + '.cm-on .cm-pan .cm-grid{display:none;grid-template-columns:1fr;gap:0;padding:4px 6px 8px}.cm-on .cm-pan.nx-open .cm-grid{display:grid}'
+      + '.cm-on .cm-pan.nx-open .cm-head{border-bottom:1px solid #eef3f6}'
+      + '.nav-links .cm-on .cm-pan a.cm-l{padding:10px!important;font-size:.92rem;border-radius:10px}'
+      + '.cm-on .cm-pan .cm-sub{display:block;font-size:.78rem;color:#5b6b75;font-weight:400;margin-top:1px}}';
+    (document.head || document.documentElement).appendChild(st);
+    function place(d) {
+      if (window.innerWidth < 1021) { d.style.left = ''; d.style.right = ''; return; }
+      d.style.left = ''; d.style.right = '';
+      var r = d.getBoundingClientRect();
+      if (r.right > window.innerWidth - 12) { d.style.left = 'auto'; d.style.right = '0'; r = d.getBoundingClientRect(); }
+      if (r.left < 12) { d.style.right = (r.left - 12) + 'px'; }
+    }
+    function simple() {
+      var dds = document.querySelectorAll('.nav-links > li > .dropdown');
+      for (var i = 0; i < dds.length; i++) {
+        var d = dds[i];
+        if (d.className.indexOf('mega') > -1) { continue; }
+        var as = d.querySelectorAll('a');
+        if (!as.length) { continue; }
+        if (d.className.indexOf('nx') < 0) {
+          d.className += ' nx';
+          (function (dd) { var li = dd.parentNode; li.addEventListener('mouseenter', function () { place(dd); }); li.addEventListener('focusin', function () { place(dd); }); })(d);
+        }
+        if (as.length > 5 && d.className.indexOf('nx-2') < 0) { d.className += ' nx-2'; }
+        for (var j = 0; j < as.length; j++) {
+          var a = as[j];
+          if (a.querySelector('.nx-ic')) { continue; }
+          var href = a.getAttribute('href') || '';
+          var key = href.indexOf('neerajjain.in') > -1 ? 'nj' : href.split('#')[0].split('?')[0].split('/').pop();
+          var t = String(a.textContent).replace(/\s+/g, ' ').trim();
+          a.className = (a.className ? a.className + ' ' : '') + 'nx-i';
+          a.innerHTML = '<span class="nx-ic">' + svg(I[key] || I._) + '</span><span class="nx-t"><b>' + esc(t) + '</b>' + (EN && D[key] ? '<small>' + D[key] + '</small>' : '') + '</span>';
+        }
+      }
+    }
+    function mob() {
+      var mega = document.querySelector('.nav-links .dropdown.mega.cm-on');
+      if (!mega) { return false; }
+      var pans = mega.querySelectorAll('.cm-pan');
+      for (var i = 0; i < pans.length; i++) {
+        var head = pans[i].querySelector('.cm-head');
+        if (!head || head.querySelector('.nx-mi')) { continue; }
+        var ic = document.createElement('span');
+        ic.className = 'nx-ic nx-mi';
+        ic.innerHTML = svg(PI[i] || I._);
+        head.insertBefore(ic, head.firstChild);
+        var ch = document.createElement('span');
+        ch.className = 'nx-ch nx-mi';
+        ch.innerHTML = '<i>' + pans[i].querySelectorAll('a.cm-l').length + '</i>' + svg('M6 9l6 6 6-6');
+        head.appendChild(ch);
+        head.addEventListener('click', function (e) {
+          if (window.innerWidth > 1020) { return; }
+          if (e.target && e.target.closest && e.target.closest('a')) { return; }
+          e.stopPropagation();
+          var p = this.parentNode;
+          var was = p.className.indexOf('nx-open') > -1;
+          var all = p.parentNode.querySelectorAll('.cm-pan');
+          for (var k = 0; k < all.length; k++) { all[k].className = all[k].className.replace(/\s*nx-open/g, ''); }
+          if (!was) { p.className += ' nx-open'; }
+        });
+      }
+      return true;
+    }
+    simple();
+    var tries = 0;
+    (function go() { if (!mob() && tries++ < 20) { setTimeout(go, 300); } })();
+    setTimeout(simple, 1500);
+    setTimeout(simple, 4000);
+  } catch (e) {}
+})();
+
 /* CGA enquiry buttons (14 Nov 2026): WhatsApp + Call buttons under the hero intro on service pages, and a fixed WhatsApp/Call bar on phones. Skips tool, login and payment pages. */
 (function () {
   try {
