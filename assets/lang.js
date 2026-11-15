@@ -758,6 +758,118 @@
   } catch (e) {}
 })();
 
+/* CGA services page polish (15 Nov 2026): on services.html the category chips move into a bar that stays under the menu while scrolling, with a live search box; each section gets a counter pill; cards lift on hover and the whole card is clickable. */
+(function () {
+  try {
+    if (window.__cgaSv) { return; }
+    window.__cgaSv = 1;
+    var seg = location.pathname.split('/').filter(Boolean);
+    var file = (seg.length ? seg[seg.length - 1] : '').toLowerCase();
+    if (file !== 'services.html') { return; }
+    var L = (seg.length > 1 && /^(hi|pa|mr|gu|bn)$/.test(seg[0])) ? seg[0] : 'en';
+    var T = { en: ['Service dhundhiye: GST, trademark, notice', 'Is naam ki service nahi mili. Doosra shabd likhiye ya WhatsApp par pooch lijiye.', ' services'], hi: ['सेवा खोजें', 'इस नाम की सेवा नहीं मिली।', ''], pa: ['ਸੇਵਾ ਖੋਜੋ', 'ਇਸ ਨਾਂ ਦੀ ਸੇਵਾ ਨਹੀਂ ਮਿਲੀ।', ''], mr: ['सेवा शोधा', 'या नावाची सेवा सापडली नाही.', ''], gu: ['સેવા શોધો', 'આ નામની સેવા મળી નથી.', ''], bn: ['পরিষেবা খুঁজুন', 'এই নামের পরিষেবা পাওয়া যায়নি।', ''] }[L];
+    var groups = document.querySelectorAll('.svc-grp');
+    var hero = document.querySelector('.page-hero');
+    var jump = document.querySelector('.svc-jump');
+    if (!groups.length || !hero || !jump) { return; }
+    var st = document.createElement('style');
+    st.textContent = '.svc-grp{scroll-margin-top:150px}.page-hero .svc-jump{display:none}'
+      + '.svc-grp .card.reveal{opacity:1!important;transform:none!important}'
+      + '.svc-grp .card{position:relative;border-radius:18px;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}'
+      + '.svc-grp .card:before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,#005176,#4bbdd8);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}'
+      + '.svc-grp .card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -26px rgba(0,41,61,.5);border-color:#bfe3ee}'
+      + '.svc-grp .card:hover:before{transform:scaleX(1)}'
+      + '.svc-grp .card .svc-ico{border-radius:14px;transition:transform .18s ease}.svc-grp .card:hover .svc-ico{transform:scale(1.06)}'
+      + '.svc-grp .card h3 a{text-decoration:none}.svc-grp .card h3 a:before{content:"";position:absolute;left:0;top:0;right:0;bottom:0}'
+      + '.svc-grp .card p a,.svc-grp .card p button{position:relative;z-index:2}'
+      + '.svc-grp.sv-hide,.svc-grp .card.sv-hide{display:none!important}'
+      + '.sv-n{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0e7ea0;background:#e9f7fb;border-radius:99px;padding:6px 12px;margin-bottom:10px}'
+      + '.sv-n b{color:#005176}'
+      + '.sv-bar{position:sticky;z-index:40;background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid #e3ecf1;box-shadow:0 10px 24px -22px rgba(0,41,61,.6)}'
+      + '.sv-bar .sv-in{max-width:1280px;margin:0 auto;padding:10px clamp(16px,4vw,32px);display:flex;align-items:center;gap:14px}'
+      + '.sv-chips{flex:1;min-width:0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.sv-chips::-webkit-scrollbar{display:none}'
+      + '.sv-chips a{flex:none;font-size:.84rem;font-weight:600;color:#33505d;text-decoration:none;border:1px solid #d5e3ea;border-radius:99px;padding:7px 13px;white-space:nowrap;transition:background .15s,color .15s,border-color .15s}'
+      + '.sv-chips a:hover{border-color:#005176;color:#005176}.sv-chips a.on{background:#005176;border-color:#005176;color:#fff}'
+      + '.sv-q{flex:none;position:relative;width:270px}.sv-q svg{position:absolute;left:13px;top:50%;margin-top:-8px;width:16px;height:16px;fill:none;stroke:#5b6b75;stroke-width:2;stroke-linecap:round}'
+      + '.sv-q input{width:100%;font:inherit;font-size:.88rem;color:#00293d;background:#fff;border:1px solid #cfe0e8;border-radius:99px;padding:9px 14px 9px 36px;outline:none}.sv-q input:focus{border-color:#005176;box-shadow:0 0 0 3px rgba(75,189,216,.25)}'
+      + '.sv-none{display:none;margin:40px auto;max-width:560px;text-align:center;color:#33505d;background:#f3f9fc;border:1px dashed #bfe3ee;border-radius:16px;padding:22px}'
+      + '@media(max-width:760px){.sv-bar .sv-in{flex-direction:column;align-items:stretch;gap:8px;padding:8px 14px}.sv-q{width:100%;order:-1}.sv-q input{padding:7px 12px 7px 34px;font-size:.84rem}.sv-chips a{padding:5px 11px;font-size:.8rem}.svc-grp{scroll-margin-top:175px}}';
+    (document.head || document.documentElement).appendChild(st);
+    var bar = document.createElement('div');
+    bar.className = 'sv-bar';
+    var chips = '';
+    var ja = jump.querySelectorAll('a');
+    for (var i = 0; i < ja.length; i++) { chips += '<a href="' + ja[i].getAttribute('href') + '">' + ja[i].innerHTML + '</a>'; }
+    bar.innerHTML = '<div class="sv-in"><div class="sv-chips">' + chips + '</div><label class="sv-q"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" autocomplete="off" aria-label="' + T[0] + '" placeholder="' + T[0] + '"></label></div>';
+    hero.parentNode.insertBefore(bar, hero.nextSibling);
+    var nav = document.querySelector('nav');
+    function setTop() { var h = 0; if (nav) { var p = window.getComputedStyle(nav).position; if (p === 'sticky' || p === 'fixed') { h = nav.offsetHeight; } } bar.style.top = h + 'px'; }
+    setTop();
+    window.addEventListener('resize', setTop);
+    var none = document.createElement('div');
+    none.className = 'sv-none';
+    none.textContent = T[1];
+    groups[0].parentNode.appendChild(none);
+    var total = groups.length;
+    for (var g = 0; g < groups.length; g++) {
+      var hd = groups[g].querySelector('header');
+      if (hd && !hd.querySelector('.sv-n')) {
+        var n = groups[g].querySelectorAll('.card').length;
+        var pill = document.createElement('div');
+        pill.className = 'sv-n';
+        pill.innerHTML = '<b>' + (g < 9 ? '0' : '') + (g + 1) + '</b> / ' + (total < 10 ? '0' : '') + total + ' · ' + n + T[2];
+        hd.insertBefore(pill, hd.firstChild);
+      }
+    }
+    var links = bar.querySelectorAll('.sv-chips a');
+    function go(e) {
+      var id = (this.getAttribute('href') || '').split('#')[1];
+      var el = id ? document.getElementById(id) : null;
+      if (!el) { return; }
+      e.preventDefault();
+      var inp = bar.querySelector('input');
+      if (inp.value) { inp.value = ''; filter(); }
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    for (var k = 0; k < links.length; k++) { links[k].addEventListener('click', go); }
+    var ticking = false;
+    function spy() {
+      ticking = false;
+      var line = (parseInt(bar.style.top, 10) || 0) + bar.offsetHeight + 30;
+      var cur = -1;
+      for (var i = 0; i < groups.length; i++) { if (groups[i].offsetParent !== null && groups[i].getBoundingClientRect().top <= line) { cur = i; } }
+      for (var j = 0; j < links.length; j++) {
+        var id = (links[j].getAttribute('href') || '').split('#')[1];
+        var on = cur > -1 && groups[cur].id === id;
+        if (on !== (links[j].className === 'on')) {
+          links[j].className = on ? 'on' : '';
+          if (on) { var c = links[j].parentNode; c.scrollLeft = Math.max(0, links[j].offsetLeft - c.offsetLeft - 20); }
+        }
+      }
+    }
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; window.setTimeout(spy, 80); } }, { passive: true });
+    function filter() {
+      var q = String(bar.querySelector('input').value || '').toLowerCase().replace(/\s+/g, ' ').trim();
+      var shown = 0;
+      for (var i = 0; i < groups.length; i++) {
+        var cs = groups[i].querySelectorAll('.card');
+        var vis = 0;
+        for (var j = 0; j < cs.length; j++) {
+          var hit = !q || String(cs[j].textContent).toLowerCase().indexOf(q) > -1;
+          cs[j].className = cs[j].className.replace(/\s*sv-hide/g, '') + (hit ? '' : ' sv-hide');
+          if (hit) { vis++; }
+        }
+        groups[i].className = groups[i].className.replace(/\s*sv-hide/g, '') + (vis ? '' : ' sv-hide');
+        shown += vis;
+      }
+      none.style.display = shown ? 'none' : 'block';
+      spy();
+    }
+    bar.querySelector('input').addEventListener('input', filter);
+    spy();
+  } catch (e) {}
+})();
+
 /* CGA enquiry buttons (14 Nov 2026): WhatsApp + Call buttons under the hero intro on service pages, and a fixed WhatsApp/Call bar on phones. Skips tool, login and payment pages. */
 (function () {
   try {
