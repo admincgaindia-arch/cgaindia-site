@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-11-17T02:31:15.486Z",
+  "last_updated": "2026-11-18T02:31:15.415Z",
   "days": [
+    {
+      "date": "2026-11-18",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "GSTN",
+          "ref": "",
+          "headline": "GSTN advisory: e-Invoicing RCM, imports mandatory from Jan 2027",
+          "what": "GSTN ne advisory jaari ki hai ki domestic reverse charge supplies (RCMDOM) aur import of services (RCMIMP) par e-invoicing lagu hoga. Yeh implementation 1 January 2027 se lagu hoga.",
+          "who": "GST registered businesses jo reverse charge supply ya import of services karte hain.",
+          "action": "Reverse charge aur import supplies par 1 Jan 2027 se e-invoicing system use karein. ERP ya billing software update karein.",
+          "deadline": "01 Jan 2027",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOYk1OSEp2OE5QSjdQLU1jYkdmV2xVYk5tLVNDNHV0OVF1MlJTN0hHQ2huRUdZcWRENVRSWGY4ZDd0WXhpSEY4U1RTZ2JocHFjWW0yUFM4c05QUVNwUlV1Q1ZpS2F2SlVXWEJjYXdXYjJ1S0ZlbC1vVUVBZDRQOUxfQnR4Y0xVOEEtRWhHa2ozTDB5MUctUW5XU0JpVm1NWkk2SG9FRXdEZjdSNkhWTENOa0pMdW5OZEpNaGlkU2gxd042dTI5WE93UDhyc1dxVUZubzRQMTk3Y3ZvWVpSVUVwNElKT0dSUmdZU1dGRVJmX1Q2dEM1clJEX1MxbjA?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "Ramayapatnam Port Andhra Pradesh ko Customs Port ghoshit",
+          "what": "CBIC ne Ramayapatnam Port, Andhra Pradesh ko import-export goods ke liye ek naya Customs Port ghoshit kiya hai.",
+          "who": "Importers, exporters aur logistic companies jo Ramayapatnam Port ka istemal karte hain.",
+          "action": "Ab import-export Ramayapatnam Port se Customs clearance ke saath kiya ja sakta hai.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWmlqODZTWTR2VlBOMFI0YUFKY1NhQlRERnVKbVFqb2pCZm4wbk1TbjNJMXpsLWx1R0UtQmhKRGJxemtpYl9UelNCMmNyYVJxcWVQMFZIVmF5SE1KM2JzMjJuMDBpSUNBVGFrbWVnay1JVG9kaWljR20tdW9na3Y2SG5iM1lzVmJLWjFEaXlLUG12QjAtcmNqcmxyZnJneWluM0dIcUt2dlFVak4xVVp0WkJ0NmVMa0l2bmkwUg?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "Income Tax",
+          "authority": "CBDT",
+          "ref": "",
+          "headline": "CBDT ne Joint Plant Committee ko 2026-27 ke liye Income Tax exemption di",
+          "what": "CBDT ne Joint Plant Committee ko specified income par tax year 2026-27 ke liye income tax exemption grant ki hai.",
+          "who": "Joint Plant Committee aur iske financial stakeholders.",
+          "action": "Tax compliance mein is exemption ka dhyaan rakhein. Specified income par exemption claim karein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSDZQMHlKR1RXaFJ0VksxSkg0T0ZDZ0xNa19hUE9ORC1CY1VrZVpwcm40VVpyclpUbHc5Qk9VaDB4VTZZeGNwS1Z6Zk1yMEZfVFhLV1VrNmFsSFp5SEZ0c21NSkVNOHZtaXh0LUNfTF80cUhZaUd0bkRmcDhGcm9wMEI2LWM3eG9nN1puSWZ6M2gzOVp2eHQzU1NZd2tWMmlBbTlacGFMR3FPUXE4YU96b0tnSjdGaVZrcFJnMmZHYw?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "Central Government",
+          "ref": "",
+          "headline": "SAED on Petrol, Diesel, ATF revised; effective 16 Nov 2026",
+          "what": "Central sarkar ne Special Additional Excise Duty (SAED) export par revise ki hai. Petrol, diesel aur ATF export par nai rates 16 November 2026 se lagu hongi.",
+          "who": "Exporters of petrol, diesel, and ATF.",
+          "action": "Ab naye SAED rates ke hisaab se export duty calculate karein. Export ki planning accordingly karein.",
+          "deadline": "16 Nov 2026",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPdDE4dzRhUjVUNElnb1F4cjdfODFYZUItbENoaFVhNkVvUm5CMFlNUzAzdzVJVnFTRWxiaU1Tb0o2dU5xTDZmY3FFcTZRd0ZuMVlfdnRVeUZnM2phal81S1haSHUtVWRKR1FrN09ZcGt5bzByWkloWmw3cUl3UDhZUEV4TTBXaWUyQTdVcjhQX3Y4c1FrTThrZVhlYm5jSDdMUkJwN1JGWWgwUHlURjdqRWpVY3E1UnNYSnE0eHhZbDlEcTM4c1lvSGVpX3c3a05rSUM2Y3owazJubVVl?oc=5"
+        },
+        {
+          "jur": "Chandigarh",
+          "cat": "Other",
+          "authority": "Chandigarh Administration",
+          "ref": "",
+          "headline": "Chandigarh: New Fire Safety Rules notify, 1991 rules ki jagah",
+          "what": "Chandigarh Administration ne naye Fire Safety Rules notify kiye hai. Purane 1991 regulations ab officially repeal ho gaye hain.",
+          "who": "Chandigarh ke sabhi businesses, offices, aur industrial establishments.",
+          "action": "Apne premises fire safety compliance ke liye naye rules padhein aur lagu karein.",
+          "deadline": "",
+          "source_name": "The Tribune",
+          "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTDU3V2hIWi16eURVSERvdk9WTDlycElVOFd4aHFuQmNhdkpZeHpObFVLbERuN0h3T1IxSEFJUkV6RzZWZVFmOXpPdHVpbWJrc1IzQ2lBZFVZeXdvZFZUVmJscl9mV04xX2NQMXJWZHRXWm9fdVhLeVcweTRNRXE0Zk5aOVpid21WX3kxV0pPNVhEcW9jSWZnbWM4Rk5qeWU1Vy1TelJaNkTSAawBQVVfeXFMTkY1MHJHTG8yb1RwVW5CVVRndDlNOHpkMGFxRFRMVHhyVXQ1X1FMZ3pyOUtjRGJKOEVEdWpHMUV6dFREdVlSN2gxVTgxeWI2QlNySnRRWU1kRTBKZmRXZUJrT3ZSNmpTa0dlMlhhNFZ0U0hKSENDVG8xNFoyWkluNGtiXzRJcDlaVTFpQkFnS3o0eWo4SC1XUkxjMmozR3lfakwyelFkQ2VhRXp1Yg?oc=5"
+        },
+        {
+          "jur": "Maharashtra",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Maharashtra Government",
+          "ref": "",
+          "headline": "Maharashtra extends reduced 7% VAT on jet fuel (ATF) till April 2027",
+          "what": "Maharashtra sarkar ne Aviation Turbine Fuel par 7% VAT ki chhuti ab 14 April 2027 tak badha di hai. Airlines ko abhi yahi rate milta rahega.",
+          "who": "ATF kharidne wali airlines aur ATF dealers in Maharashtra.",
+          "action": "Jet fuel procurement aur billing mein 7% VAT ka benefit continue rakhein till notified date.",
+          "deadline": "14 Apr 2027",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVEJaUVBWLTd6UGZYTENuN1ZkbktXd3ZVN1pVNGZZSktCc3lnaXNBR2hVWDF0Z1pWUkZfSUYtTnMxakttdkJUbzlKSWdpd0hqbFNFLWtnLUQ0NXNaUHFMdExETktWaHhwUG9vVnV6SFVteDNLMWljX1doRE1KcVp0X2dhSWN1YWVFMVR6dGh1bm0zNGtlR1JvbVZxSFMzdkZjXzVGdTEwQ09hODBmQWRIWFc3Q2ZaczZBZWxjcnZHdF84Zw?oc=5"
+        },
+        {
+          "jur": "Maharashtra",
+          "cat": "Other",
+          "authority": "Maharashtra Government",
+          "ref": "",
+          "headline": "Lifts, Escalators Act 2017: Naye licensing rules 1 Nov 2026 se lagu",
+          "what": "Maharashtra Lifts, Escalators and Moving Walks Act, 2017 ke licensing requirements aur compliance obligations 1 November 2026 se effective hain.",
+          "who": "Maharashtra mein lifts, escalators, ya moving walks install ya maintain karne wale businesses aur contractors.",
+          "action": "1 November 2026 se naye statutory framework aur licensing obligations ka palan karein.",
+          "deadline": "01 Nov 2026",
+          "source_name": "TaxCorp AI",
+          "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRkpYU1hSM0NKbnE2RWwzTm1MZURER2stWmdGUDZWUWxPYXRUbWJ4MEU5NUplM2xnYU5mOWxaVFdObFZFM1JqMkRUSVRMZUpCTHlUcE9YSklURWZ1WHppeXZLZUxKazJuUGVxODhBaWRodU5OR3lBUlAwemdYenpXVHJSZ243Wjdxc2xwOFhJaEdCR09KUms4dC1wUFlfMFhsc2ZCUUsxaw?oc=5"
+        }
+      ]
+    },
     {
       "date": "2026-11-17",
       "items": [
@@ -4352,102 +4448,6 @@
           "deadline": "",
           "source_name": "Kalkine India",
           "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOLVRUWnhzcEtNeGE3ZkU1eXg5b19uZE14UldseVN1TkoySFVBZFR3N1BUVmdSdEd3Vl90b2pQWkQxVTlIbTlfUG8ySXNMRExwLV9nOXd1TXA1ZWo2clhPdDRST0htQjU3NnFBMEViSnc4QmhqeGF6ODE4bW5aaFlkaDgtTlFvMXlhZlVLMGZDSGt5bEUwa3QzOXh5UWJaVGRmRktiOFhKcXVZc3FIREt5amZNdWN5dXluczctRVRLTnVfalU1UjA2OXRsWUhBNFZxTzA3MEU3dFRYekRPMk5yUQ?oc=5"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-04",
-      "items": [
-        {
-          "jur": "Central",
-          "cat": "MSME & Scheme",
-          "authority": "MSME Ministry, Statistics Ministry",
-          "ref": "",
-          "headline": "MSME aur Statistics Ministry ne Statistical Business Register majboot kiya",
-          "what": "MSME Ministry aur Statistics Ministry ne milkar Statistical Business Register ko mazboot karne ke liye agreement sign kiya hai.",
-          "who": "Business owners, MSMEs, aur data providers is register mein shamil honge.",
-          "action": "Business related statistics update karne mein interested stakeholders latest process ka palan karein.",
-          "deadline": "",
-          "source_name": "News On AIR",
-          "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOazNVNFZDWVdZai1BV042ZVV4WFZjVEZTdUx2bVZmdVdoQko0T1N6Q3dXNkR3ek9TTDBCZG1vU2x1U3BtU0pWZ1JoQVFBSjhFTkFzdVZGalNzNVRmdWJxSXFIUTR1UEFEVXpEekxWbUptRl9mVTZZVkFweVU4bXk1OWdCekpCU1NHMFZ3Y3VkekVDb3hVMHZiemxodlpfb0ZuTDQ2Vm1QQnpERXJVSk91RQ?oc=5"
-        },
-        {
-          "jur": "Gujarat",
-          "cat": "MSME & Scheme",
-          "authority": "State Government of Gujarat",
-          "ref": "",
-          "headline": "Gujarat Industrial Policy 2026: Manufacturing aur startups par focus",
-          "what": "Gujarat sarkar ne nayi Industrial Policy 2026 jari ki hai, jisme manufacturing aur startup sector ko prathmikta di gayi hai.",
-          "who": "Gujarat ke manufacturers, startups aur investors par lagu.",
-          "action": "Manufacturing ya startup plans hai to nayi policy ke provisions dekhein, eligibility aur benefits samjhein.",
-          "deadline": "",
-          "source_name": "Goodreturns",
-          "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQd0V2bGVReUt1WVNJUkExbFhPSmVlRGRkbkNzMTBtWU11UUd5WmNEUlh2cU9Ea3Z0LTB5ZGRVNlZPWExLbFVBVEZXNFVOZllHcUdxcTc4V1Bqc3AwNkc0V2xianRtQUdoZW8zM3FhVk1nLVd0YzlqcE5fWGFyMGF6V3F4cUwwaW40di1kRkQwYUJYRDJncUlESVZmOGpYOHhoVDE2dUduNUdIT0RtYkxQQ291d3dFUQ?oc=5"
-        },
-        {
-          "jur": "Jammu and Kashmir",
-          "cat": "MSME & Scheme",
-          "authority": "Jammu and Kashmir Government",
-          "ref": "",
-          "headline": "J&K ne Compressed Bio-Gas (CBG) Policy 2026 notify ki",
-          "what": "Jammu & Kashmir sarkar ne kachre se fuel banane ke liye Compressed Bio-Gas (CBG) Policy 2026 notify ki hai.",
-          "who": "Waste management businesses, biogas producers aur related investors J&K mein.",
-          "action": "CBG projects mein interested log nayi policy dekhein aur process samjhein.",
-          "deadline": "",
-          "source_name": "The Tribune",
-          "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOV3RPSHhKZFV4a1lLOGR0RHBnWEUyVDlZdUVibWNwMEV6WTJHZ3ItQkhpZXcwdnBtUG5ZU2ZCdmFRaEVuTHNRdkR5VGl1VEZObURPME1PdDc4QldpbWJpdkFtQWtKV2dxZGFIZl9tQkdldE1XS0xmWGlRa2QwcVQycnEzS3RFU0oyUVFPdE530gGOAUFVX3lxTE5XdE9IeEpkVXhrWUs4ZHREcGdYRTJUOVl1RWJtY3AwRXpZMkdnci1CSGlldzB2cG1QbllTZkJ2YVFoRW5Mc1F2RHlUaXVURk5tRE8wTU90NzhCV2ltYml2QW1Ba0pXZ3FkYUhmX21CR2V0TVdLTGZYaVFrZDBxVDJycTNLdEVTSjJRUU90Tnc?oc=5"
-        },
-        {
-          "jur": "Tamil Nadu",
-          "cat": "Labour",
-          "authority": "Tamil Nadu Government",
-          "ref": "",
-          "headline": "Tamil Nadu: Shops ko 365 din khula rakhne ki permission extend",
-          "what": "Tamil Nadu ne dukaane aur establishments ko 365 din khula rakhne ki permission extend ki hai, kuch employee suraksha conditions ke saath.",
-          "who": "Tamil Nadu ke sabhi shop aur business owners jin ki establishments mein log kaam karte hain.",
-          "action": "Jo shops din bhar kholte hain, naye employee safeguard rules padhein aur implement karein.",
-          "deadline": "",
-          "source_name": "SCC Online",
-          "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZ05wajVFbGwySWFua1lmdUhSTk0tZEZyZnVBdXZIYm1YX0RQMG1kWVhVd3Y5a1FyREc2TDg5WXpnVjRrTmsxbUg2MjRXakJyZzhCbFBlUHRrOXVDVkktemcybHN4enlJaHlZV3VoTHJTSjNnV2x1UzFDSElnUEttLThfUTRpcmhZNXpHVTNrM0N3MUVRaTVPT2w3Y2lpMEJZSHptZkVqQQ?oc=5"
-        },
-        {
-          "jur": "Gujarat",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Gujarat Government",
-          "ref": "",
-          "headline": "Gujarat: Vehicle scrap par 50% vehicle tax concession approve",
-          "what": "Gujarat sarkar ne purane vehicles scrap karne par vehicle tax mein 50% chhoot approve ki hai.",
-          "who": "Gujarat ke vehicle owners jo gaadi scrap karne ki soch rahe hain.",
-          "action": "Agar vehicle scrap plan hai to sarkari concession rules dekhein, apply karen.",
-          "deadline": "",
-          "source_name": "The Economic Times",
-          "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSUE0cTNHNnAyeHZIZ3ZNNHJzOHpWZmNHNEZxNGlqcFRhQ2JWWkZ0aUlBVWNFZTB6MXBIMXR1eEw4dlJ3LThFY3BkcGFnWHFMNG1sbko0Z194VGZOckg3SXM3RGY1VlVTTjJ3V2NRQzJ0ODNCdTlzQnljM1MtWERGYzZPcC13MS1oUnZnd21zelRyMTB1RDhleXdhMGpmVWdEZ0ZYQm9YeEQyMGNpYkI0RTlYWVM2Mk1zSkpTY1dheWFaRlHSAcMBQVVfeXFMTklBNHEzRzZwMnh2SGd2TTRyczh6VmZjRzRGcTRpanBUYUNiVlpGdGlJQVVjRWUwejFwSDF0dXhMOHZSdy04RWNwZHBhZ1hxTDRtbG5KNGdfeFRmTnJIN0lzN0RmNVZVU04yd1djUUMydDgzQnU5c0J5YzNTLVhERmM2T3AtdzEtaFJ2Z3dtc3pUcjEwdUQ4ZXl3YTBqZlVnRGdGWEJvWHhEMjBjaWJCNEU5WFlTNjJNc0pKU2NXYXlhWkZR?oc=5"
-        },
-        {
-          "jur": "Bihar",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Bihar Government",
-          "ref": "",
-          "headline": "Bihar: Regional airports par ATF VAT zero kiya UDAN scheme ke liye",
-          "what": "Bihar sarkar ne regional airports par Aviation Turbine Fuel (ATF) par VAT zero kiya hai, taki sampark badhe.",
-          "who": "Aviation companies jo Bihar ke regional airports se udan chala rahe hain.",
-          "action": "Regulatory aur costing changes ko consideration mein lein, operations adjust karen.",
-          "deadline": "",
-          "source_name": "swarajyamag.com",
-          "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeDVhNzYwamZNLUUyT21nSGwxNWdpY2Q3clpRZE90R1dxQS11QmNrZ0J5M1kwYUhBQVIxMWJqQ0ZmUC0wMC1PbXE3MFFvVE9OZEE4S1dTN1pVY1pIWEt1b2tXN2tISzV5YXlKLTJPZTlZMUN2Q0V0UmJndEpkUUtNWG96MmJ3REYzcjZQQ3RpOXoxejFxa2pVQk9VZG5RaEZFRFduTmxsamtOemQ1RE1fNXd6dmFjWTBLYWhPMjF30gHOAUFVX3lxTFBPWGNKTnJoUC13TENfWk5tcE1tZUxRa3cwYnlXb180Z2ZqdllwV3hBMm1hdkdPX3p6VEVTT1dVM0ltMWRFdHNqWlM1cE5LZW9NQ2VRZXhYdk96dkVLa0Q0eVZmMGlRQURMYU5MUFdZXzlIam9TTzh1bDBRa1BxcWdNRTRnQWZZQmdHMFpoX2lPOTJvNGZNeFdENEI3cE1sa2FBWl9RejNhU3BTTjFOUHRFTlRaUmE3bnpNUEVOSE5VaV9pbTYxWXdZMGhQaUtB?oc=5"
-        },
-        {
-          "jur": "Andhra Pradesh",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Andhra Pradesh Excise Department",
-          "ref": "",
-          "headline": "Liquor shop application ki deadline ab 6 October hai Andhra Pradesh mein",
-          "what": "Andhra Pradesh mein liquor shop ke liye application ki deadline extend kar ke 6 October tak kar di gayi hai.",
-          "who": "Andhra Pradesh mein liquor shops kholne ke liye apply karne wale business owners.",
-          "action": "Agar abhi tak apply nahi kiya hai to 6 October tak zarur application jama kar dein.",
-          "deadline": "2026-10-06",
-          "source_name": "The Hindu",
-          "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQmNIQ2JxdWswSEl2Ym1BNkFYTzdkWHpGRm9XelZjOTB6ZkpCRHk2cEI4Q1J1dFVaUTBzMVQtRHFIWk5QRm5qa0NKRDhTeGZhN1IzMkNuZkVfZlhfZDRQeC05dFdpWlVvVHFmb2FzbjJnakxMaWk2NVZKRlJnZVQ5RjRGQ3dfdnlsMC0zUlZMRkFoWTZmaXhHWEstMUhBQk5Gek1iVVBDdUZQREtJRVc3bTZvcFNmNE1DbDNTdW5mZ0ZPYkNoMlhGbk15MjBkcmRlM0Ryckh1amZZOGJ5SlJNSTJQOFpOZ9IB5gFBVV95cUxOQmNIQ2JxdWswSEl2Ym1BNkFYTzdkWHpGRm9XelZjOTB6ZkpCRHk2cEI4Q1J1dFVaUTBzMVQtRHFIWk5QRm5qa0NKRDhTeGZhN1IzMkNuZkVfZlhfZDRQeC05dFdpWlVvVHFmb2FzbjJnakxMaWk2NVZKRlJnZVQ5RjRGQ3dfdnlsMC0zUlZMRkFoWTZmaXhHWEstMUhBQk5Gek1iVVBDdUZQREtJRVc3bTZvcFNmNE1DbDNTdW5mZ0ZPYkNoMlhGbk15MjBkcmRlM0Ryckh1amZZOGJ5SlJNSTJQOFpOZw?oc=5"
         }
       ]
     }
