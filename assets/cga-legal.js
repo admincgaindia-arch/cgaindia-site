@@ -723,7 +723,7 @@ const fyS = now.getUTCMonth() >= 3 ? now.getUTCFullYear() : now.getUTCFullYear()
 let services = [];
 if (Array.isArray(b.services)) { services = b.services; }
 else if (typeof b.services === 'string' && b.services.trim()) { services = b.services.split(/[\n;]+/).map(function (l) { const p = l.split('|').map(function (x) { return cl(x, 120); }); const fee = Number(String(p[1] || '').replace(/[^0-9.]/g, '')); return { s: p[0], fee: fee || 0, fee_text: fee ? '' : (p[1] || ''), billing: p[2] || '' }; }).filter(function (s) { return s.s; }); }
-if (!services.length && b.service) { services = [{ s: cl(b.service, 150), fee_text: 'As per engagement letter ' + cl(b.eng_ref, 30), billing: 'As agreed' }]; }
+if (!services.length && b.service) { services = [{ s: cl(b.service, 150), fee_text: b.eng_ref ? 'As per engagement letter ' + cl(b.eng_ref, 30) : 'As per invoice', billing: 'As agreed' }]; }
 const dsc = cl(b.dsc_holders, 300).split(',').map(function (x) { return x.trim(); }).filter(Boolean);
 const conflict = cl(b.conflict, 600).split(/[\n]+/).map(function (l) { const p = l.split('|').map(function (x) { return x.trim(); }); return { name: p[0] || '', conn: p[1] || '', interest: p[2] || '' }; }).filter(function (c) { return c.name; });
 const mob = cl(b.mobile, 20).replace(/[^0-9]/g, '').slice(-10);
