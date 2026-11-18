@@ -315,3 +315,94 @@ function renderKit(k, fd, acc) {
     has6: !!conflict.length
   };
 }
+
+function cgaBuildEngagement(c, pageHtml) {
+function e(v) { return String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+function strip(s) { return String(s).replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').replace(/[ ]+/g, ' ').trim(); }
+function m(n) { return Number(n).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+
+function tierScope(code, depth) {
+  var out = [];
+  if (!pageHtml || !code || depth > 4) { return out; }
+  var mark = '<span class="tier-code">' + code + '</span>';
+  var i = pageHtml.indexOf(mark);
+  if (i < 0) { return out; }
+  var ulS = pageHtml.indexOf('<ul', i);
+  var ulE = pageHtml.indexOf('</ul>', ulS);
+  if (ulS < 0 || ulE < ulS || ulS - i > 4000) { return out; }
+  var parts = pageHtml.slice(ulS, ulE).split('<li');
+  for (var k = 1; k < parts.length; k++) {
+    var t = strip('<li' + parts[k]);
+    if (!t) { continue; }
+    var words = t.split(' ');
+    if (t.toLowerCase().indexOf('ka poora scope') >= 0 && words.length <= 5) {
+      tierScope(words[0], depth + 1).forEach(function (x) { out.push(x); });
+    } else { out.push(t); }
+  }
+  return out;
+}
+var s = (c.service + ' ' + c.page).toLowerCase();
+var RULES = [
+  [['itr'], 'within three to five working days of receipt of complete documents and your approval of the computation of income', ['Collection and review of income particulars, Form 16, Form 26AS, AIS and TIS', 'Computation of total income and tax liability, and advice on tax payable or refund due', 'Preparation and electronic filing of the return of income for the relevant assessment year', 'Assistance with e-verification and furnishing of the filing acknowledgement']],
+  [['gst-return', 'gst return'], 'on or before the statutory due date for each tax period, provided the data is received at least five days before that date', ['Preparation of GSTR-1 and GSTR-3B from the data furnished by you', 'Reconciliation of input tax credit with GSTR-2B', 'Electronic filing of the returns and furnishing of acknowledgements']],
+  [['gst-registration', 'gst registration'], 'the application will be filed within two working days of receipt of complete documents; grant of registration rests with the GST authorities and ordinarily takes seven to fifteen working days', ['Scrutiny of documents for registration', 'Filing of application in Form GST REG-01', 'Response to clarifications sought by the department, if any', 'Furnishing of the certificate of registration']],
+  [['tds'], 'quarterly statements will be filed on or before the statutory due date, provided deduction data is received at least seven days before that date', ['Preparation of quarterly TDS / TCS statements from the deduction data furnished', 'Electronic filing of the statements', 'Generation of Form 16 / 16A, where applicable']],
+  [['pvt-ltd', 'private limited', 'opc', 'one person', 'section 8', 'section-8'], 'ordinarily ten to fifteen working days from receipt of complete documents, subject to processing by the Ministry of Corporate Affairs', ['Reservation of name and filing of incorporation forms with the Ministry of Corporate Affairs', 'Digital Signature Certificates and Director Identification Numbers, to the extent included in the package', 'Drafting of the Memorandum and Articles of Association', 'Furnishing of the certificate of incorporation, PAN and TAN']],
+  [['llp'], 'ordinarily twelve to eighteen working days from receipt of complete documents, subject to processing by the Ministry of Corporate Affairs', ['Reservation of name and filing of incorporation forms', 'Drafting and filing of the LLP Agreement, to the extent included in the package', 'Furnishing of the certificate of incorporation, PAN and TAN']],
+  [['roc', 'annual compliance'], 'on or before the due dates prescribed under the Companies Act, 2013 / LLP Act, 2008, provided the financial statements are finalised in time', ['Preparation and filing of annual returns and financial statements with the Registrar, as per the package', 'Preparation of minutes and statutory documentation, as per the package']],
+  [['trademark'], 'the application will be filed within three to five working days of receipt of complete documents; registration rests with the Trade Marks Registry and ordinarily takes twelve to twenty-four months', ['Search of the trade marks register and search report', 'Filing of the application for registration', 'Monitoring of status and communication of examination reports']],
+  [['fssai'], 'the application will be filed within two working days of receipt of complete documents; grant rests with the Food Safety authority', ['Scrutiny of documents and filing of the application', 'Response to queries raised by the authority', 'Furnishing of the registration / licence']],
+  [['udyam', 'msme', 'iec', 'shop act', 'professional tax', 'business-registr'], 'ordinarily seven to fifteen working days from receipt of complete documents, subject to processing by the authorities concerned', ['Scrutiny of documents for the registrations comprised in the package', 'Filing of the applications on the respective portals', 'Response to queries raised by the authorities, if any', 'Furnishing of the certificates and login particulars']],
+  [['iso'], 'ordinarily ten to twenty working days, subject to audit scheduling by the certification body', ['Gap assessment and documentation support', 'Co-ordination with the certification body', 'Furnishing of the certificate']],
+  [['ngo', '12ab', '80g', 'trust', 'society'], 'the applications will be filed within seven working days of receipt of complete documents; approvals rest with the authorities', ['Drafting of constitutional documents, as per the package', 'Filing of applications for registration / approval', 'Representation before the authorities on queries raised']],
+  [['notice', 'litigation', 'legal', 'cheque', 'civil', 'criminal', 'property', 'appeal'], 'as per the time limits fixed by the authority or court; drafts will ordinarily be furnished at least two working days before the due date where documents are received in time', ['Study of the notice / matter and the relevant documents', 'Drafting of the reply, submissions or pleadings', 'Filing and representation, as per the package']],
+  [['virtual-cfo', 'retainer', 'payroll', 'accounting', 'bookkeeping'], 'continuing monthly service; monthly deliverables will ordinarily be furnished within ten working days after the close of each month', ['Monthly services comprised in the selected package', 'Monthly management information and status report']],
+  [['audit'], 'as per the audit plan agreed at the commencement meeting, and in any case before the statutory due dates', ['Planning, execution and reporting in accordance with the applicable Standards on Auditing, by a practising Chartered Accountant associated with CGA']]
+];
+var timeline = 'ordinarily seven to fifteen working days from receipt of complete documents and information, unless otherwise agreed in writing';
+var scope = null;
+for (var r of RULES) { if (r[0].some(function (k) { return s.indexOf(k) >= 0; })) { timeline = r[1]; scope = r[2]; break; } }
+var tier = tierScope(c.tier, 0);
+var tierNote = '';
+if (!scope) { scope = tier.length ? tier : ['Professional services described under the selected service on cgaindia.com']; }
+else if (tier.length || c.tier) { tierNote = 'The above includes the deliverables listed against Package ' + e(c.tier || '') + ' on the service page at cgaindia.com as on the date of this letter.'; }
+
+var now = new Date(Date.now() + 330 * 60000);
+var MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var dateTxt = now.getUTCDate() + ' ' + MON[now.getUTCMonth()] + ' ' + now.getUTCFullYear();
+var ymd = String(now.getUTCFullYear()).slice(2) + String(now.getUTCMonth() + 1).padStart(2, '0') + String(now.getUTCDate()).padStart(2, '0');
+var engId = 'ENG-' + ymd + '-' + Math.random().toString(36).slice(2, 6).toUpperCase();
+var fyStart = now.getUTCMonth() >= 3 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;
+var fy = fyStart + '-' + String(fyStart + 1).slice(2);
+var token = '';
+while (token.length < 32) { token += Math.random().toString(36).slice(2); }
+token = token.slice(0, 32);
+var fee = Number(c.fee || 0);
+var taxable = Math.round(fee / 1.18 * 100) / 100;
+var gst = Math.round((fee - taxable) * 100) / 100;
+var ul = function (arr) { return arr.map(function (x, i) { return '<p class="cl sub"><b>(' + String.fromCharCode(97 + i) + ')</b>' + e(x) + '</p>'; }).join(''); };
+
+var body = cgaLetterhead(e)
+  + '<table class="m"><tr><td>Ref.: <b>CGA/' + engId + '/' + fy + '</b></td><td style="text-align:right;padding-left:40px">Date: <b>' + dateTxt + '</b></td></tr></table>'
+  + '<p>To<br><b>' + e(c.name) + '</b>' + (c.address ? '<br>' + e(c.address) : '') + (c.gstin ? '<br>GSTIN: ' + e(c.gstin) : '') + '<br>' + e(c.mobile) + (c.email ? ' &middot; ' + e(c.email) : '') + '</p>'
+  + '<p><b>Sub.: Engagement for ' + e(c.service) + '</b></p>'
+  + '<p>Dear Sir / Madam,</p>'
+  + '<p>We thank you for entrusting the above assignment to Canjain Global Advisors Private Limited (&ldquo;CGA&rdquo;, &ldquo;we&rdquo; or &ldquo;us&rdquo;). The purpose of this letter is to confirm the scope of the assignment, the time frame, our fees and the respective responsibilities of yourself (&ldquo;the Client&rdquo;) and of CGA. This letter and the Standard Terms of Engagement annexed to it together govern this assignment and every further assignment we may undertake for you.</p>'
+  + '<h2>1. Scope of the assignment</h2><p>Our work shall comprise the following:</p>' + ul(scope)
+  + (tierNote ? '<p>' + tierNote + '</p>' : '')
+  + '<p>Unless separately agreed in writing, the assignment does not include government fees, challans, taxes, interest, penalties or late fees; representation before any authority or court not mentioned above; or work relating to any other period or entity.</p>'
+  + '<h2>2. Time frame</h2><p><b>Expected time frame:</b> ' + e(timeline.charAt(0).toUpperCase() + timeline.slice(1)) + '.</p><p>The time frame commences only on receipt of complete documents, information and approvals, and shall stand extended by any delay on the part of the Client, any government portal or authority, or any third party.</p>'
+  + '<h2>3. Professional fees</h2><p>Our fee for the assignment is <b>Rs ' + m(taxable) + '</b> plus Goods and Services Tax at 18% of <b>Rs ' + m(gst) + '</b>, aggregating <b>Rs ' + m(fee) + '</b>' + (c.invoice_no ? ', received under invoice ' + e(c.invoice_no) + (c.payment_id ? ' (payment reference ' + e(c.payment_id) + ')' : '') : '') + '. Government fees, stamp duty, Digital Signature Certificate charges and out-of-pocket expenses are payable at actuals unless expressly included in the package. Where the published fee is a starting fee, any revision for additional scope shall be confirmed to you in writing before that work is undertaken.</p>'
+  + '<h2>4. Information, approvals and authority</h2><p>The assignment depends upon your furnishing complete and correct information in time. No return or application will be filed without your prior approval, which may be given in writing, by e-mail or by WhatsApp from the contact details stated above. Where the Client is a firm, company, LLP, trust or society, or where Digital Signature Certificates or portal credentials are to be entrusted to us, we shall send you, on acceptance of this letter, our Client Documentation (a Declaration of Authorised Persons, a Letter of Authority for statutory portals and a Letter of Representation) for completion online.</p>'
+  + '<h2>5. Standard Terms of Engagement</h2><p>The annexed Standard Terms form an integral part of this letter. We would draw your particular attention to the clauses dealing with authority to instruct (clause 4), digital signatures and credentials (clause 5), fees (clause 6), lien (clause 7), limitation of liability (clause 8) and indemnity (clause 9).</p>'
+  + '<p>Kindly signify your acceptance of this letter and the annexed Standard Terms by executing the acceptance below. Our team will commence the assignment immediately thereafter.</p>'
+  + '<p>Yours faithfully,</p>'
+  + '<div class="sig">For <b>Canjain Global Advisors Private Limited</b><div class="sg" style="font-family:&#39;Mrs Saint Delafield&#39;,&#39;Great Vibes&#39;,cursive;font-size:38px">Neeraj Jain</div><div class="ln"><b>Neeraj Jain</b><br>Director</div></div>'
+  + '<h2>Acceptance by the Client</h2><p>I/We have read and understood this letter and the annexed Standard Terms of Engagement and accept them for and on behalf of the Client.</p>'
+  + 'CLIENT_ACCEPTANCE'
+  + '<div style="page-break-before:always;margin-top:26px;border-top:1px solid #999;padding-top:20px">' + cgaLetterhead(e) + cgaStandardTerms({ e: e }) + '<p class="nt" style="margin-top:12px">Annexure to engagement letter Ref. CGA/' + engId + '/' + fy + '</p></div>';
+var letter = '<!DOCTYPE html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&family=Great+Vibes&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">' + LEGAL_CSS + '</head><body><div class="doc">' + body + '</div></body></html>';
+var history = JSON.stringify([{ s: 0, t: new Date().toISOString(), n: 'Engagement letter sent to client' }]);
+return Object.assign({}, c, { eng_id: engId, token: token, timeline: timeline, letter_html: letter, history: history, date_txt: dateTxt, link: 'https://cgaindia.com/engagement.html?t=' + token });
+
+}
