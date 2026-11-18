@@ -5,7 +5,7 @@
 
   if (document.getElementById('cgaTicker')) { return; }
   var path = (location.pathname || '').toLowerCase();
-  if (path.indexOf('updates.html') !== -1) { return; }
+  if (/updates\.html|client-kit|engagement\.html|portal\.html|kit-staff/.test(path)) { return; }
   try { if (window.sessionStorage && sessionStorage.getItem('cgaTickerOff') === '1') { return; } } catch (e) {}
 
   var ROTATE_MS = 8000;
