@@ -406,3 +406,93 @@ var history = JSON.stringify([{ s: 0, t: new Date().toISOString(), n: 'Engagemen
 return Object.assign({}, c, { eng_id: engId, token: token, timeline: timeline, letter_html: letter, history: history, date_txt: dateTxt, link: 'https://cgaindia.com/engagement.html?t=' + token });
 
 }
+
+function cgaKitApi(req, rowsIn, cfg) {
+const b = req.body || {};
+const h = req.headers || {};
+const t = String(b.t || '');
+const rows = (rowsIn || []).filter(function (r) { return r && r.token; });
+const row = rows.find(function (r) { return r.token === t; });
+function out(reply, op, extra) { return [{ json: Object.assign({ reply: reply, op: op || 'none' }, extra || {}) }]; }
+if (t.length < 20 || !row || row.status === 'VOID') { return out({ ok: false, error: 'Ye link sahi nahi hai ya band ho chuka hai. CGA team se sampark kariye: 99966-47888.' }); }
+function e(v) { return String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+function js(s, d) { try { var v = JSON.parse(s || ''); return v == null ? d : v; } catch (z) { return d; } }
+function mask(em) { const p = String(em).split('@'); return p[0].slice(0, 2) + '***@' + (p[1] || ''); }
+function istTxt(iso) { const d = new Date(new Date(iso).getTime() + 330 * 60000); return d.toISOString().slice(0, 16).replace('T', ' ') + ' IST'; }
+function clean(v, n) { return String(v == null ? '' : v).replace(/[<>]/g, '').trim().slice(0, n || 120); }
+function cleanFd(x) {
+  x = x || {};
+  const o = {};
+  o.constitution = clean(x.constitution, 60);
+  o.owners = (Array.isArray(x.owners) ? x.owners : []).slice(0, 20).map(function (r) { return { name: clean(r.name, 80), desig: clean(r.desig, 40), din: clean(r.din, 20), share: clean(r.share, 10), mobile: clean(r.mobile, 15), email: clean(r.email, 80), dsc: !!r.dsc }; }).filter(function (r) { return r.name; });
+  o.auth = (Array.isArray(x.auth) ? x.auth : []).slice(0, 10).map(function (r) { return { name: clean(r.name, 80), desig: clean(r.desig, 40), mobile: clean(r.mobile, 15), email: clean(r.email, 80), authority: clean(r.authority, 10) || 'Single' }; }).filter(function (r) { return r.name; });
+  o.reg = {}; o.logins = {};
+  ['GST', 'IT', 'TDS', 'MCA', 'EPF'].forEach(function (p) {
+    const r = (x.reg || {})[p] || {}; o.reg[p] = { m: clean(r.m, 15), e: clean(r.e, 80), o: clean(r.o, 60) };
+    const l = (x.logins || {})[p] || {}; o.logins[p] = { id: clean(l.id, 40), date: clean(l.date, 20), otp: clean(l.otp, 60) };
+  });
+  const lo = (x.logins || {}).OTHER || {}; o.logins.OTHER = { portal: clean(lo.portal, 40), id: clean(lo.id, 40), date: clean(lo.date, 20), otp: clean(lo.otp, 60) };
+  o.others = clean(x.others, 200) || 'None';
+  o.dispute = clean(x.dispute, 300) || 'None';
+  const br = x.br || {}; o.br = { date: clean(br.date, 20), time: clean(br.time, 15), director: clean(br.director, 60), din: clean(br.din, 12) };
+  o.place = clean(x.place, 40);
+  return o;
+}
+const signed = row.status === 'SIGNED';
+const saved = js(row.form_data, null);
+const action = String(b.action || 'get');
+function view(fd, acc) {
+  const r = renderKit(row, fd || {}, acc || null);
+  return { ok: true, kit_id: row.kit_id, status: row.status, name: row.name, entity_type: row.entity_type, pan: row.pan, email: row.email, mobile: row.mobile, email_masked: row.email ? mask(row.email) : '', needs_email: !/@/.test(row.email || ''), fy: row.fy, portals: js(row.portals, []), dsc_holders: js(row.dsc_holders, []), has6: r.has6, signed: signed, signer_name: row.signer_name || '', signed_at: row.signed_at ? istTxt(row.signed_at) : '', doc3_status: row.doc3_status || '', html: r.html, print: signed ? r.print : '', saved: saved };
+}
+if (action === 'get') {
+  if (signed) { return out(Object.assign(view(saved, { name: row.signer_name, desig: (saved && saved.signer_desig) || '', at: row.signed_at, ip: row.signed_ip, place: (saved && saved.place) || '' }), { html: row.signed_html || '' })); }
+  const v = view(saved || {}, null);
+  if (row.status === 'SENT' && b.staff !== true) { return out(v, 'open', { token: row.token, opened_at: new Date().toISOString() }); }
+  return out(v);
+}
+if (action === 'preview') {
+  if (signed) { return out({ ok: false, error: 'Ye documents pehle hi sign ho chuke hain.' }); }
+  return out({ ok: true, html: renderKit(row, cleanFd(b.fd), null).html });
+}
+if (action === 'otp') {
+  if (signed) { return out({ ok: false, error: 'Ye documents pehle hi sign ho chuke hain.' }); }
+  if (row.status === 'HOLD') { return out({ ok: false, error: 'Ye link abhi CGA team ke review mein hai. Team ke approve karne ke baad sign ho sakega.' }); }
+  let em = String(row.email || '').trim();
+  if (!/@/.test(em)) { em = clean(b.email, 120).toLowerCase(); if (!/^[^@ ]+@[^@ ]+[.][a-z]{2,}$/.test(em)) { return out({ ok: false, need_email: true, error: 'Kripya apna sahi email address likhiye. OTP aur signed copy isi par aayegi.' }); } }
+  const otp = String(Math.floor(100000 + Math.random() * 900000));
+  const html = '<div style="font-family:Arial,sans-serif;font-size:15px">Namaste ' + e(row.name) + ',<br><br>CGA Client Documentation (Ref ' + e(row.kit_id) + ') sign karne ke liye aapka OTP hai:<br><br><b style="font-size:26px;letter-spacing:4px">' + otp + '</b><br><br>Ye OTP 10 minute tak valid hai. Ise kisi ke saath share na kariye.<br><br>Team CGA</div>';
+  return out({ ok: true, sent_to: mask(em) }, 'otp', { otp: otp, otp_exp: Date.now() + 10 * 60000, token: row.token, email: em, mail_html: html, mail_subject: 'Your CGA signing OTP: ' + otp });
+}
+if (action === 'sign') {
+  if (signed) { return out({ ok: false, error: 'Ye documents pehle hi sign ho chuke hain.' }); }
+  if (row.status === 'HOLD') { return out({ ok: false, error: 'Ye link abhi CGA team ke review mein hai.' }); }
+  const fd = cleanFd(b.fd);
+  const name = clean(b.name, 80);
+  const desig = clean(b.desig, 40);
+  if (!fd.owners.length) { return out({ ok: false, error: 'Kam se kam ek owner / director / partner ka naam bhariye (Step 1).' }); }
+  if (!fd.auth.length || !fd.auth.every(function (a) { return a.mobile || a.email; })) { return out({ ok: false, error: 'Authorised person ka naam aur mobile ya email bhariye (Step 2).' }); }
+  if (name.length < 3) { return out({ ok: false, error: 'Kripya sign karne wale ka poora naam likhiye.' }); }
+  if (!desig) { return out({ ok: false, error: 'Kripya apna designation likhiye (jaise Director / Partner / Proprietor).' }); }
+  if (b.agree !== true) { return out({ ok: false, error: 'Kripya sehmati ka box tick kariye.' }); }
+  if (!row.otp || String(b.otp || '').trim() !== String(row.otp) || Date.now() > Number(row.otp_exp || 0)) { return out({ ok: false, error: 'OTP galat hai ya expire ho gaya. Naya OTP mangwaiye.' }); }
+  fd.signer_desig = desig;
+  const at = new Date().toISOString();
+  const ip = String(h['x-forwarded-for'] || h['x-real-ip'] || '').split(',')[0].trim() || 'unknown';
+  const acc = { name: name, desig: desig, at: at, ip: ip, place: fd.place, email: row.email };
+  const r = renderKit(row, fd, acc);
+  const needPrint = !!r.print;
+  const v = Object.assign(view(fd, acc), { status: 'SIGNED', signed: true, signer_name: name, signed_at: istTxt(at), html: r.html, print: r.print, doc3_status: needPrint ? 'PENDING' : 'NA', saved: fd });
+  const kitUrl = 'https://cgaindia.com/client-kit.html?t=' + row.token;
+  const actBase = 'https://cga.app.n8n.cloud/webhook/cga-kit-act?k=' + (cfg && cfg.actKey) + '&id=' + encodeURIComponent(row.kit_id);
+  const cHtml = '<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.6">Namaste ' + e(row.name) + ',<br><br>Aapki CGA Client Documentation (Ref ' + e(row.kit_id) + ') e-sign ho gayi hai. Signed copy (PDF) attached hai.<br><br>' +
+    (needPrint ? '<b>Ek kaam baaki hai:</b> ' + (r.holders.length ? 'DSC holder(s) <b>' + e(r.holders.join(', ')) + '</b> ke liye DSC ki Deed of Authorisation and Indemnity stamp paper par sign aur notarise karwa kar ' : '') + (fd.owners.length > 1 ? (r.holders.length ? 'aur ' : '') + 'Declaration ka counterpart signature page sab directors / partners se sign karwa kar ' : '') + 'CGA office mein jama karwaiye. Pre-filled print copy yahan se nikaliye: <a href="' + kitUrl + '">Print pages kholiye</a><br><br>' : '') +
+    'Kisi bhi sawal ke liye: 99966-47888<br><br>Team CGA</div>';
+  const tHtml = '<div style="font-family:Arial,sans-serif;font-size:14px;line-height:1.6"><b>CGA Client Documentation SIGNED</b><br><br>' + e(row.kit_id) + '<br>Client: ' + e(row.name) + ' (' + e(row.mobile) + ')<br>Signed by: ' + e(name) + ', ' + e(desig) + ' / IP ' + e(ip) + '<br>Owners: ' + e(fd.owners.map(function (o) { return o.name; }).join(', ')) + '<br>Authorised: ' + e(fd.auth.map(function (a) { return a.name + ' ' + (a.mobile || '') + ' ' + (a.email || ''); }).join('; ')) + '<br><br>' +
+    (needPrint ? '<b>Physical pending:</b> ' + (r.holders.length ? 'DSC Deed (stamp paper + notary) for ' + e(r.holders.join(', ')) + '. ' : '') + (fd.owners.length > 1 ? 'Declaration counterpart signed by all owners.' : '') + '<br>Jab originals office mein aa jayen: <a href="' + actBase + '&a=doc3" style="display:inline-block;background:#0a7d3c;color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none">Print pack received</a><br><br><b>Rule:</b> DSC Deed aane se pehle DSC custody mein na lein.<br><br>' : 'Koi physical document baaki nahi.<br><br>') +
+    'Signed PDF attached. Scan + file in client folder same day.</div>';
+  return out(v, 'sign', { token: row.token, signer_name: name, signed_at: at, signed_ip: ip, form_data: JSON.stringify(fd), signed_html: r.html, doc3_status: needPrint ? 'PENDING' : 'NA', email: row.email, client_html: cHtml, team_html: tHtml, client_subject: 'Signed: CGA Client Documentation ' + row.kit_id, team_subject: '[CGA Kit] SIGNED: ' + row.kit_id + ' - ' + row.name + (needPrint ? ' (print pack pending)' : ''), file_name: row.kit_id + '-CGA-Client-Documentation.pdf' });
+}
+return out({ ok: false, error: 'Unknown action' });
+
+}
