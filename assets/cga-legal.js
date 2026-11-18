@@ -448,7 +448,7 @@ function view(fd, acc) {
 if (action === 'get') {
   if (signed) { return out(Object.assign(view(saved, { name: row.signer_name, desig: (saved && saved.signer_desig) || '', at: row.signed_at, ip: row.signed_ip, place: (saved && saved.place) || '' }), { html: row.signed_html || '' })); }
   const v = view(saved || {}, null);
-  if (row.status === 'SENT' && b.staff !== true) { return out(v, 'open', { token: row.token, opened_at: new Date().toISOString() }); }
+  if ((row.status === 'SENT' || row.status === 'DRAFT') && b.staff !== true) { return out(v, 'open', { token: row.token, opened_at: new Date().toISOString() }); }
   return out(v);
 }
 if (action === 'preview') {
