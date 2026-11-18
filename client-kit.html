@@ -633,16 +633,26 @@ fbq('init','1350244116690583');fbq('track','PageView');
 .kport{width:100%;border-collapse:collapse;font-size:.86rem}.kport th,.kport td{border-bottom:1px solid #eef2f5;padding:.35rem .3rem;text-align:left;vertical-align:top}.kport th{font-size:.75rem;color:var(--slate);font-weight:700}
 .kport input{padding:.4rem .5rem!important;font-size:.85rem!important}
 .kstep{display:inline-flex;align-items:center;justify-content:center;width:1.6rem;height:1.6rem;border-radius:50%;background:#0b4a6e;color:#fff;font-size:.85rem;font-weight:700;margin-right:.4rem}
-@media (max-width:640px){.kc .g2,.kc .g3{grid-template-columns:1fr}.kport thead{display:none}.kport tr{display:block;border:1px solid #e3eaef;border-radius:8px;margin:.5rem 0;padding:.3rem .5rem}.kport td{display:block;border:0;padding:.2rem 0}.kport td[data-l]:before{content:attr(data-l);display:block;font-size:.72rem;color:var(--slate);font-weight:700}.kfr{height:62vh}}
+
+.kcl{list-style:none;margin:.6rem 0 0;padding:0}.kcl li{display:flex;gap:.6rem;align-items:flex-start;padding:.55rem 0;border-bottom:1px solid #eef2f5}
+.kcl li .ar{flex:none;font-size:.7rem;font-weight:700;color:#0b4a6e;background:#e3f3f9;border-radius:6px;padding:2px 7px;margin-top:2px;min-width:74px;text-align:center}
+.kcl li .tx{flex:1}.kcl li .tx b{display:block;font-size:.92rem}.kcl li .tx small{color:var(--slate);font-size:.78rem}
+.kcl li label.tg{flex:none;display:flex;align-items:center;gap:.35rem;font-size:.8rem;font-weight:600;margin:0;white-space:nowrap}
+.kcal{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.5rem;margin-top:.6rem}.kcal div{border:1px solid #e3eaef;border-radius:8px;padding:.45rem .6rem;font-size:.84rem}.kcal div b{display:block;color:#0b4a6e;font-size:.78rem}
+.knote{background:#fff8e6;border:1px solid #f0d9a0;border-radius:8px;padding:.6rem .8rem;font-size:.86rem;margin-top:.6rem}
+.kchk{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin-top:.6rem}.kchk label{display:flex;gap:.4rem;align-items:center;font-weight:500;margin:0}
+@media (max-width:640px){.kcl li{flex-wrap:wrap}.kc .g2,.kc .g3{grid-template-columns:1fr}.kport thead{display:none}.kport tr{display:block;border:1px solid #e3eaef;border-radius:8px;margin:.5rem 0;padding:.3rem .5rem}.kport td{display:block;border:0;padding:.2rem 0}.kport td[data-l]:before{content:attr(data-l);display:block;font-size:.72rem;color:var(--slate);font-weight:700}.kfr{height:62vh}}
 </style>
 
+<script src="assets/cga-legal.js?v=6"></script>
 <script>
 (function () {
   var API = 'https://cga.app.n8n.cloud/webhook/cga-kit';
   var app = document.getElementById('kit-app');
   var t = '';
   try { t = new URLSearchParams(location.search).get('t') || ''; } catch (x) {}
-  var D = null;
+  var D = null, SEL = {};
+  var STATES = ['Haryana', 'Delhi', 'Uttar Pradesh', 'Punjab', 'Rajasthan', 'Himachal Pradesh', 'Uttarakhand', 'Chandigarh', 'Jammu and Kashmir', 'Madhya Pradesh', 'Gujarat', 'Maharashtra', 'Bihar', 'Jharkhand', 'West Bengal', 'Odisha', 'Assam', 'Karnataka', 'Kerala', 'Tamil Nadu', 'Telangana', 'Andhra Pradesh', 'Goa', 'Chhattisgarh', 'Other'];
   var PORT = [['GST', 'GST'], ['IT', 'Income Tax'], ['TDS', 'TRACES (TDS)'], ['MCA', 'MCA'], ['EPF', 'EPFO / ESIC']];
   var CONS = ['Individual', 'Proprietorship', 'Partnership Firm', 'LLP', 'Private Limited Company', 'Public Limited Company', 'Section 8 Company', 'Trust', 'Society', 'HUF'];
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
@@ -666,6 +676,11 @@ fbq('init','1350244116690583');fbq('track','PageView');
     var h = head(d) + '<div class="kc"><h2>Signed documents</h2><p class="sub">Signed by <b>' + esc(d.signer_name) + '</b> on ' + esc(d.signed_at) + '. Signed PDF copy aapke email par bheji gayi hai.</p><iframe class="kfr" id="kfr" title="Signed documents"></iframe></div>';
     if (d.print) {
       h += '<div class="kc"><h2>Physical signature ke liye documents</h2><p class="sub">' + (d.doc3_status === 'RECEIVED' ? 'Ye documents CGA office ko mil chuke hain. Dhanyavaad.' : 'Neeche diye documents print kariye. DSC ki Deed stamp paper par sign aur notarise karwa kar, aur counterpart page sab directors / partners se sign karwa kar CGA office mein jama karwaiye.') + '</p><button class="kb" id="kpr">Print kariye</button><iframe class="kfr" id="kfp" title="Print documents" style="margin-top:.8rem;height:50vh"></iframe></div>';
+    }
+    if (typeof cgaCompliance === 'function' && d.saved && d.saved.p) {
+      var cc = cgaCompliance(Object.assign({}, d.saved.p, { cons: d.saved.constitution || d.entity_type }));
+      var mine = cc.calendar.filter(function (x) { return !d.saved.sel || d.saved.sel[x.k] !== 'client'; });
+      h = h.replace('<div class="kc"><h2>Signed documents</h2>', '<div class="kc"><h2>Aapka compliance calendar</h2><p class="sub">Ye kaam CGA aapke liye karega. Har due date se pehle hum aapse data mangenge.</p><div class="kcal">' + mine.slice(0, 12).map(function (x) { return '<div><b>' + new Date(x.d + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) + '</b>' + esc(x.t) + '</div>'; }).join('') + '</div><p class="sub" style="margin-top:.8rem">Poora status <a href="portal.html">CGA Portal</a> par bhi dikhta hai (isi email se login).</p></div><div class="kc"><h2>Signed documents</h2>');
     }
     app.innerHTML = h;
     $('kfr').srcdoc = d.html;
@@ -698,23 +713,38 @@ fbq('init','1350244116690583');fbq('track','PageView');
     var cons = s.constitution || d.entity_type || '';
     var k = kind(cons);
     var reg = s.reg || {}, lg = s.logins || {}, br = s.br || {};
+    var P = s.p || {};
+    SEL = s.sel || {};
     var owners = (s.owners && s.owners.length) ? s.owners : [{ name: k === 'ind' ? d.name : '', desig: k === 'ind' ? 'Self' : (k === 'prop' ? 'Proprietor' : '') }];
     var auth = (s.auth && s.auth.length) ? s.auth : [{ name: k === 'ind' ? d.name : '', desig: k === 'ind' ? 'Self' : '', mobile: d.mobile || '', email: d.email || '' }];
     var h = head(d)
-      + '<div class="kc"><p style="margin:0">CGA ke saath aapka kaam saaf aur record par rahe, isliye hum har client se ye standard documents lete hain: Engagement Letter &amp; Standard Terms, Declaration of Authorised Persons, Letter of Authority (portals) aur Letter of Representation. Details bhariye, documents padhiye, aur email OTP se sign kariye. Lagbhag 10 minute lagenge.</p></div>'
+      + '<div class="kc"><p style="margin:0">CGA ke saath aapka kaam saaf aur record par rahe, isliye hum har client se ye standard documents lete hain: Engagement Letter &amp; Standard Terms, Schedule of Compliances, Declaration of Authorised Persons, Letter of Authority for Representation (litigation, refund, appeals), Letter of Authority (portals) aur Letter of Representation. Details bhariye, documents padhiye, aur email OTP se sign kariye. Lagbhag 10 minute lagenge.</p></div>'
       + '<div class="kc"><h2><span class="kstep">1</span>Client ki jaankari</h2><div class="g2"><div><label for="kcons">Constitution</label><select id="kcons">' + CONS.map(function (c) { return '<option' + (c === cons ? ' selected' : '') + '>' + c + '</option>'; }).join('') + '</select></div>'
       + '<div><label for="kplace">Place (shehar)</label><input type="text" id="kplace" maxlength="40" value="' + esc(s.place || '') + '"></div></div>'
       + '<div id="kown"><p class="sub" style="margin-top:1rem"><b id="kownT"></b></p><div id="kownL">' + owners.map(function (o) { return ownerRow(o); }).join('') + '</div><button class="kb o s" type="button" id="kownA">+ Aur jodiye</button></div>'
       + '<div id="kind" style="display:none"><label class="chk" style="display:flex;gap:.45rem;margin-top:1rem;font-weight:500"><input type="checkbox" id="kinddsc"' + (owners[0] && owners[0].dsc ? ' checked' : '') + '> Mera DSC (digital signature) CGA ke paas rahega</label></div>'
       + '<div id="kbr" style="display:none"><p class="sub" style="margin-top:1rem"><b>Resolution ki details</b> (kis meeting mein CGA ko appoint kiya, aur kaun sign karega)</p><div class="g2"><div><label>Meeting / resolution date</label><input type="date" id="kbrd" value="' + esc(br.date) + '"></div><div><label>Time</label><input type="text" id="kbrt" maxlength="15" placeholder="11:00 AM" value="' + esc(br.time) + '"></div><div><label>Authorised person ka naam</label><input type="text" id="kbrn" maxlength="60" value="' + esc(br.director) + '"></div><div><label>DIN (company ke liye)</label><input type="text" id="kbrdin" maxlength="12" value="' + esc(br.din) + '"></div></div></div>'
       + '<div id="kdisp"><label for="kdis">Owners / partners ke beech koi vivaad ya case? (nahi hai to khaali chhodiye)</label><input type="text" id="kdis" maxlength="300" value="' + esc(s.dispute && s.dispute !== 'None' ? s.dispute : '') + '"></div></div>'
-      + '<div class="kc"><h2><span class="kstep">2</span>CGA ko instruction kaun dega</h2><p class="sub">Sirf inhi logon ke mobile / email se aaye instruction aur approval CGA maanega.</p><div id="kauL">' + auth.map(authRow).join('') + '</div><button class="kb o s" type="button" id="kauA">+ Aur jodiye</button></div>'
-      + '<div class="kc"><h2><span class="kstep">3</span>Government portals</h2><p class="sub">Portal par registered mobile / email, aur jo login ID CGA ke saath share hai. <b>Password yahan mat likhiye.</b> Jo portal aapke liye laagu nahi, use khaali chhodiye.</p>'
+      + '<div class="kc"><h2><span class="kstep">2</span>Business profile aur compliance</h2><p class="sub">Is jaankari se tay hota hai ki aap par kaun-kaun si compliances, audits aur certificates laagu hain. Pichhle financial year ke figures likhiye (Rs lakh mein).</p>'
+      + '<div class="g3"><div><label>State</label><select id="pst">' + STATES.map(function (x) { return '<option' + (x === (P.state || 'Haryana') ? ' selected' : '') + '>' + x + '</option>'; }).join('') + '</select></div>'
+      + '<div><label>Kaam ka prakaar</label><select id="pbiz">' + [['none', 'Koi business / profession nahi'], ['trading', 'Trading'], ['manufacturing', 'Manufacturing'], ['services', 'Services'], ['profession', 'Profession (CA, doctor, lawyer, consultant)']].map(function (o) { return '<option value="' + o[0] + '"' + (o[0] === (P.biz || (k === 'ind' ? 'none' : 'trading')) ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') + '</select></div>'
+      + '<div><label>GST registration</label><select id="pgst">' + [['none', 'GST registration nahi'], ['regular', 'Regular - monthly returns'], ['qrmp', 'Regular - quarterly (QRMP)'], ['composition', 'Composition scheme']].map(function (o) { return '<option value="' + o[0] + '"' + (o[0] === (P.gst || 'none') ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') + '</select></div>'
+      + '<div data-w="biz"><label>Turnover / gross receipts (Rs lakh)</label><input type="text" inputmode="decimal" id="pto" value="' + esc(P.to || '') + '"></div>'
+      + '<div data-w="co"><label>Paid-up capital (Rs lakh)</label><input type="text" inputmode="decimal" id="ppuc" value="' + esc(P.puc || '') + '"></div>'
+      + '<div data-w="co"><label>Reserves &amp; surplus (Rs lakh)</label><input type="text" inputmode="decimal" id="pres" value="' + esc(P.res || '') + '"></div>'
+      + '<div data-w="co"><label>Saal mein maximum borrowings (Rs lakh)</label><input type="text" inputmode="decimal" id="pborr" value="' + esc(P.borr || '') + '"></div>'
+      + '<div data-w="llp"><label>Partners ka contribution (Rs lakh)</label><input type="text" inputmode="decimal" id="pcon" value="' + esc(P.contrib || '') + '"></div>'
+      + '<div><label>Employees ki sankhya</label><input type="text" inputmode="numeric" id="pemp" value="' + esc(P.emp || '') + '"></div></div>'
+      + '<div class="kchk">' + [['cash5', 'Cash receipts aur payments 5% se kam', 'biz'], ['presum', 'Presumptive scheme (44AD / 44ADA type) liya hai', 'biz'], ['lowp', 'Presumptive rate se kam profit dikhaya', 'biz'], ['tds', 'TDS kat-ta hai (TAN hai)'], ['pf', 'EPF registered'], ['esi', 'ESIC registered'], ['forex', 'Import / export / foreign payments'], ['refund', 'GST refund claim karte hain'], ['hs', 'Kisi company ki holding / subsidiary', 'co'], ['listed', 'Listed company', 'co'], ['msme', 'MSME suppliers se purchase', 'co'], ['dep', 'Loans / deposits liye hain', 'co'], ['npo', 'Registered trust / NGO (12AB)', 'npo']].map(function (c) { return '<label' + (c[2] ? ' data-w="' + c[2] + '"' : '') + '><input type="checkbox" id="p' + c[0] + '"' + (P[c[0]] ? ' checked' : '') + '> ' + c[1] + '</label>'; }).join('') + '</div>'
+      + '<h3 style="margin:1.1rem 0 .2rem;font-size:1rem">Aap par laagu compliances</h3><p class="sub" style="margin:0">Jo kaam CGA karega us par tick rehne dijiye. Jo aap khud ya kisi aur se karwate hain, uska tick hata dijiye. Ye Schedule mein record hoga.</p><ul class="kcl" id="kcl"></ul><div id="knotes"></div>'
+      + '<h3 style="margin:1.1rem 0 .2rem;font-size:1rem">Agle due dates</h3><div class="kcal" id="kcal"></div></div>'
+      + '<div class="kc"><h2><span class="kstep">3</span>CGA ko instruction kaun dega</h2><p class="sub">Sirf inhi logon ke mobile / email se aaye instruction aur approval CGA maanega.</p><div id="kauL">' + auth.map(authRow).join('') + '</div><button class="kb o s" type="button" id="kauA">+ Aur jodiye</button></div>'
+      + '<div class="kc"><h2><span class="kstep">4</span>Government portals</h2><p class="sub">Portal par registered mobile / email, aur jo login ID CGA ke saath share hai. <b>Password yahan mat likhiye.</b> Jo portal aapke liye laagu nahi, use khaali chhodiye.</p>'
       + '<table class="kport"><thead><tr><th>Portal</th><th>Registered mobile</th><th>Registered email</th><th>Kiske naam par</th><th>Login / User ID</th><th>OTP kiske paas aata hai</th></tr></thead><tbody>'
       + PORT.map(function (p) { var r = reg[p[0]] || {}, l = lg[p[0]] || {}; return '<tr data-p="' + p[0] + '"><td><b>' + p[1] + '</b></td><td data-l="Registered mobile"><input type="tel" data-g="m" maxlength="15" value="' + esc(r.m) + '"></td><td data-l="Registered email"><input type="email" data-g="e" maxlength="80" value="' + esc(r.e) + '"></td><td data-l="Kiske naam par"><input type="text" data-g="o" maxlength="60" value="' + esc(r.o) + '"></td><td data-l="Login / User ID"><input type="text" data-g="id" maxlength="40" value="' + esc(l.id) + '"></td><td data-l="OTP kiske paas"><input type="text" data-g="otp" maxlength="60" value="' + esc(l.otp) + '"></td></tr>'; }).join('')
       + '</tbody></table><label for="koth">CGA ke alawa kaun-kaun in logins ko use karta hai? (koi nahi to khaali chhodiye)</label><input type="text" id="koth" maxlength="200" value="' + esc(s.others && s.others !== 'None' ? s.others : '') + '"></div>'
-      + '<div class="kc"><h2><span class="kstep">4</span>Documents padhiye</h2><p class="sub">Aapki bhari hui details ke saath documents yahan dikhenge. Details badalne ke baad "Refresh" dabaiye.</p><button class="kb o s" type="button" id="kprev">Refresh preview</button><iframe class="kfr" id="kfr" title="Documents" style="margin-top:.8rem"></iframe></div>'
-      + '<div class="kc"><h2><span class="kstep">5</span>Sign kariye (Email OTP)</h2><div class="g2"><div><label for="ksn">Sign karne wale ka poora naam</label><input type="text" id="ksn" maxlength="80" value="' + esc(s.signer || (k === 'ind' ? d.name : '')) + '"></div><div><label for="ksd">Designation</label><input type="text" id="ksd" maxlength="40" placeholder="Director / Partner / Proprietor / Self" value="' + esc(s.signer_desig || (k === 'ind' ? 'Self' : '')) + '"></div></div>'
+      + '<div class="kc"><h2><span class="kstep">5</span>Documents padhiye</h2><p class="sub">Aapki bhari hui details ke saath documents yahan dikhenge. Details badalne ke baad "Refresh" dabaiye.</p><button class="kb o s" type="button" id="kprev">Refresh preview</button><iframe class="kfr" id="kfr" title="Documents" style="margin-top:.8rem"></iframe></div>'
+      + '<div class="kc"><h2><span class="kstep">6</span>Sign kariye (Email OTP)</h2><div class="g2"><div><label for="ksn">Sign karne wale ka poora naam</label><input type="text" id="ksn" maxlength="80" value="' + esc(s.signer || (k === 'ind' ? d.name : '')) + '"></div><div><label for="ksd">Designation</label><input type="text" id="ksd" maxlength="40" placeholder="Director / Partner / Proprietor / Self" value="' + esc(s.signer_desig || (k === 'ind' ? 'Self' : '')) + '"></div></div>'
       + (d.needs_email ? '<label for="kem">Aapka email (OTP aur signed copy isi par aayegi)</label><input type="email" id="kem" maxlength="120" style="max-width:420px">' : '')
       + '<label style="font-weight:400;display:flex;gap:.5rem;align-items:flex-start;max-width:720px;margin-top:.8rem"><input type="checkbox" id="kag" style="margin-top:.3rem"> Maine upar ke sabhi documents padh liye hain. Main inhe client ki taraf se sweekar karta / karti hoon, aur confirm karta / karti hoon ki di gayi jaankari sahi hai. Ye electronic acceptance Information Technology Act, 2000 ke under valid hai.</label>'
       + '<div style="margin-top:.8rem"><button class="kb o" type="button" id="kotp">OTP bhejiye' + (d.email_masked ? ' (' + esc(d.email_masked) + ')' : '') + '</button></div>'
@@ -744,12 +774,35 @@ fbq('init','1350244116690583');fbq('track','PageView');
       fd.logins[p] = { id: g('id'), date: '', otp: g('otp') };
     });
     if (['co', 'llp', 'trust', 'soc'].indexOf(k) > -1) { fd.br = { date: $('kbrd').value, time: $('kbrt').value.trim(), director: $('kbrn').value.trim(), din: $('kbrdin').value.trim() }; }
+    fd.p = prof();
+    fd.sel = {};
+    Array.prototype.forEach.call(document.querySelectorAll('#kcl input[data-k]'), function (i) { fd.sel[i.getAttribute('data-k')] = i.checked ? 'cga' : 'client'; });
     fd.signer = $('ksn') ? $('ksn').value.trim() : '';
     fd.signer_desig = $('ksd') ? $('ksd').value.trim() : '';
     return fd;
   }
   function msg(txt, ok) { var m = $('kmsg'); m.className = 'kmsg ' + (ok ? 'k' : 'e'); m.textContent = txt; }
 
+  function prof() {
+    var v = function (id) { var el = $(id); return el ? el.value.trim() : ''; };
+    var c = function (id) { var el = $(id); return !!(el && el.checked); };
+    return { state: v('pst'), biz: v('pbiz'), gst: v('pgst'), to: v('pto'), puc: v('ppuc'), res: v('pres'), borr: v('pborr'), contrib: v('pcon'), emp: v('pemp'), cash5: c('pcash5'), presum: c('ppresum'), lowp: c('plowp'), tds: c('ptds'), pf: c('ppf'), esi: c('pesi'), forex: c('pforex'), refund: c('prefund'), hs: c('phs'), listed: c('plisted'), msme: c('pmsme'), dep: c('pdep'), npo: c('pnpo') };
+  }
+  function drawComp() {
+    if (typeof cgaCompliance !== 'function') { return; }
+    var cons = $('kcons').value, k = kind(cons), p = prof();
+    var isCo = k === 'co', show = { biz: p.biz !== 'none', co: isCo, llp: k === 'llp', npo: k === 'trust' || k === 'soc' };
+    Array.prototype.forEach.call(document.querySelectorAll('[data-w]'), function (el) { el.style.display = show[el.getAttribute('data-w')] ? '' : 'none'; });
+    Array.prototype.forEach.call(document.querySelectorAll('#kcl input[data-k]'), function (i) { SEL[i.getAttribute('data-k')] = i.checked ? 'cga' : 'client'; });
+    var c = cgaCompliance(Object.assign({}, p, { cons: cons }));
+    $('kcl').innerHTML = c.items.map(function (it) {
+      var on = SEL[it.k] ? SEL[it.k] === 'cga' : it.req !== 'optional';
+      var tg = it.req === 'on request' ? '<span class="muted" style="font-size:.78rem">Zarurat par</span>' : '<label class="tg"><input type="checkbox" data-k="' + it.k + '"' + (on ? ' checked' : '') + '> CGA karega</label>';
+      return '<li><span class="ar">' + esc(it.area) + '</span><span class="tx"><b>' + esc(it.name) + '</b><small>' + esc(it.freq) + ' &middot; ' + esc(it.when) + ' &middot; ' + esc(it.basis) + '</small></span>' + tg + '</li>';
+    }).join('') || '<li><span class="tx">Abhi koi compliance laagu nahi dikh rahi.</span></li>';
+    $('knotes').innerHTML = c.notes.length ? '<div class="knote">' + c.notes.map(esc).join('<br>') + '</div>' : '';
+    $('kcal').innerHTML = c.calendar.slice(0, 9).map(function (x) { return '<div><b>' + new Date(x.d + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) + '</b>' + esc(x.t) + '</div>'; }).join('');
+  }
   function wire(d) {
     var T = { co: 'Sabhi Directors', llp: 'Sabhi Designated Partners', firm: 'Sabhi Partners', trust: 'Sabhi Trustees', soc: 'Governing Body ke members', huf: 'Karta aur adult coparceners', prop: 'Proprietor' };
     function sync() {
@@ -760,8 +813,11 @@ fbq('init','1350244116690583');fbq('track','PageView');
       $('kbr').style.display = ['co', 'llp', 'trust', 'soc'].indexOf(k) > -1 ? '' : 'none';
       $('kownT').textContent = (T[k] || 'Owners') + ' ki details';
     }
-    $('kcons').onchange = function () { sync(); saveDraft(); };
+    $('kcons').onchange = function () { sync(); drawComp(); saveDraft(); };
     sync();
+    drawComp();
+    app.addEventListener('input', function (ev) { if (ev.target && /^p/.test(ev.target.id || '')) { drawComp(); } });
+    app.addEventListener('change', function (ev) { if (ev.target && (/^p/.test(ev.target.id || '') || ev.target.getAttribute('data-k'))) { if (!ev.target.getAttribute('data-k')) { drawComp(); } } });
     app.addEventListener('click', function (ev) { var b = ev.target.closest && ev.target.closest('.kr .x'); if (b) { b.parentNode.remove(); saveDraft(); } });
     app.addEventListener('change', saveDraft);
     $('kownA').onclick = function () { $('kownL').insertAdjacentHTML('beforeend', ownerRow({})); };
