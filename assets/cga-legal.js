@@ -496,3 +496,57 @@ if (action === 'sign') {
 return out({ ok: false, error: 'Unknown action' });
 
 }
+
+function cgaKitNormalize(j) {
+function cl(v, n) { return String(v == null ? '' : v).replace(/[<>]/g, '').trim().slice(0, n || 200); }
+let src = 'form'; let b = j;
+if (j.body) { src = 'engagement'; b = j.body; }
+const now = new Date(Date.now() + 330 * 60000);
+const fyS = now.getUTCMonth() >= 3 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;
+let services = [];
+if (Array.isArray(b.services)) { services = b.services; }
+else if (typeof b.services === 'string' && b.services.trim()) { services = b.services.split(/[\n;]+/).map(function (l) { const p = l.split('|').map(function (x) { return cl(x, 120); }); const fee = Number(String(p[1] || '').replace(/[^0-9.]/g, '')); return { s: p[0], fee: fee || 0, fee_text: fee ? '' : (p[1] || ''), billing: p[2] || '' }; }).filter(function (s) { return s.s; }); }
+if (!services.length && b.service) { services = [{ s: cl(b.service, 150), fee_text: 'As per engagement letter ' + cl(b.eng_ref, 30), billing: 'As agreed' }]; }
+const dsc = cl(b.dsc_holders, 300).split(',').map(function (x) { return x.trim(); }).filter(Boolean);
+const conflict = cl(b.conflict, 600).split(/[\n]+/).map(function (l) { const p = l.split('|').map(function (x) { return x.trim(); }); return { name: p[0] || '', conn: p[1] || '', interest: p[2] || '' }; }).filter(function (c) { return c.name; });
+const mob = cl(b.mobile, 20).replace(/[^0-9]/g, '').slice(-10);
+const email = cl(b.email, 120).toLowerCase();
+return { source: src, name: cl(b.name, 120), client_code: cl(b.client_code, 30).toUpperCase(), entity_type: cl(b.entity_type, 40) || (src === 'engagement' ? '' : 'Individual'), mobile: mob, email: /@/.test(email) ? email : '', pan: cl(b.pan, 10).toUpperCase(), gstin: cl(b.gstin, 15).toUpperCase(), address: cl(b.address, 200), eng_ref: cl(b.eng_ref, 30), services: JSON.stringify(services), dsc_holders: JSON.stringify(dsc), conflict: JSON.stringify(conflict), fy: fyS + '-' + String(fyS + 1).slice(2), q_email: /@/.test(email) ? email : 'none@none.invalid', q_mobile: mob || '0000000000' };
+}
+function cgaKitDecide(c, rowsIn) {
+function nm(x) { return String(x || '').toLowerCase().replace(/[^a-z0-9]/g, ''); }
+const rows = (rowsIn || []).filter(function (r) { return r.token && r.status !== 'VOID' && ((c.email && r.email === c.email) || (r.mobile === c.mobile && nm(r.name) === nm(c.name))); });
+const yearAgo = Date.now() - 330 * 86400000;
+const signed = rows.find(function (r) { return r.status === 'SIGNED' && new Date(r.signed_at || r.created_at || 0).getTime() > yearAgo; });
+const open = rows.find(function (r) { return ['DRAFT', 'SENT', 'OPENED'].indexOf(r.status) > -1; });
+function rnd(n, set) { let s = ''; for (let i = 0; i < n; i++) { s += set[Math.floor(Math.random() * set.length)]; } return s; }
+const d = new Date(Date.now() + 330 * 60000).toISOString();
+if (signed) { return Object.assign({}, c, { mode: 'skip', kit_id: signed.kit_id, token: signed.token, status: 'SIGNED' }); }
+if (open) { return Object.assign({}, c, { mode: 'update', kit_id: open.kit_id, token: open.token, email: c.email || open.email || '', entity_type: c.entity_type || open.entity_type || '', client_code: c.client_code || open.client_code || '', status: 'SENT' }); }
+return Object.assign({}, c, { mode: 'insert', kit_id: 'KIT-' + d.slice(2, 4) + d.slice(5, 7) + d.slice(8, 10) + '-' + rnd(4, 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'), token: rnd(32, 'abcdefghijkmnpqrstuvwxyz23456789'), status: 'SENT' });
+}
+function cgaKitCompose(d) {
+function e(v) { return String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+const link = 'https://cgaindia.com/client-kit.html?t=' + d.token;
+const btn = '<a href="' + link + '" style="display:inline-block;background:#0b4a6e;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:bold">Documents dekhiye aur sign kariye</a>';
+const dsc = JSON.parse(d.dsc_holders || '[]');
+const intro = d.eng_ref ? 'Aapka engagement letter (Ref ' + e(d.eng_ref) + ') sign ho gaya hai, dhanyavaad. Ab ek aakhri step: CGA ki standard Client Documentation.' : 'CGA ke saath aapka kaam saaf, surakshit aur record par rahe, isliye hum sabhi clients se standard Client Documentation le rahe hain.';
+const client = '<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.65;color:#14232b">Namaste ' + e(d.name) + ',<br><br>' + intro + '<br><br>Isme ' + (d.eng_ref ? '' : 'Engagement Letter &amp; Standard Terms, ') + 'Declaration of Authorised Persons, Letter of Authority (government portals) aur Letter of Representation shaamil hain. Sab online hai: details bhariye, documents padhiye aur email OTP se sign kariye. Lagbhag 10 minute lagenge, print ya courier ki zarurat nahi.<br><br>' + btn + '<br><br>' + (dsc.length ? 'Note: ' + e(dsc.join(', ')) + ' ka DSC CGA ke paas hai. Uske liye Deed of Authorisation and Indemnity stamp paper par sign aur notarise karwana hoga; online sign ke baad uski bhari hui print copy mil jayegi.<br><br>' : '') + '<span style="font-size:13px;color:#5a6b76">Ye link sirf aapke liye hai. Koi sawal ho to call / WhatsApp: 99966-47888.</span><br><br>Team CGA<br>Canjain Global Advisors Pvt Ltd</div>';
+const wa = 'Namaste ' + d.name + ' ji,\n\nCGA mein aapke records aur kaam ko surakshit aur record par rakhne ke liye hum sabhi clients se standard Client Documentation (Engagement Letter, Authorised Persons Declaration, Portal Authority) le rahe hain. Ye online hai, lagbhag 10 minute lagenge, email OTP se sign hota hai:\n' + link + '\n\nKoi sawal ho to isi number par message kariye.\nTeam CGA - Canjain Global Advisors';
+const waUrl = d.mobile ? 'https://wa.me/91' + d.mobile + '?text=' + encodeURIComponent(wa) : '';
+const team = '<div style="font-family:Arial,sans-serif;font-size:14px;line-height:1.6">' + (d.mode === 'skip' ? '<b>Is client ki Client Documentation pehle hi SIGNED hai</b> (' + e(d.kit_id) + '). Naya link nahi bheja gaya.' : '<b>Client Documentation ' + (d.mode === 'update' ? 'dobara bheji gayi' : 'bheji gayi') + '</b>') + '<br><br>' + e(d.kit_id) + ' &middot; ' + e(d.name) + (d.client_code ? ' (' + e(d.client_code) + ')' : '') + '<br>Mobile: ' + e(d.mobile || '-') + ' &middot; Email: ' + e(d.email || 'nahi hai') + '<br>Source: ' + e(d.source) + (d.eng_ref ? ' / ' + e(d.eng_ref) : '') + '<br>DSC with CGA: ' + e(dsc.join(', ') || 'None') + '<br><br>Client link: <a href="' + link + '">' + link + '</a>' + (waUrl && d.mode !== 'skip' ? '<br><br><a href="' + waUrl + '" style="display:inline-block;background:#25d366;color:#fff;padding:9px 16px;border-radius:6px;text-decoration:none;font-weight:bold">WhatsApp par link bhejiye</a>' : '') + (d.email ? '' : '<br><b>Client ka email nahi hai - WhatsApp se link zaroor bhejiye.</b>') + '</div>';
+return { has_email: !!d.email && d.mode !== 'skip', email: d.email, client_html: client, client_subject: (d.eng_ref ? 'Ek aakhri step: ' : 'Action needed: ') + 'CGA Client Documentation (Ref ' + d.kit_id + ')', team_html: team, team_subject: '[CGA Kit] ' + (d.mode === 'skip' ? 'Already signed' : 'Sent') + ': ' + d.kit_id + ' - ' + d.name };
+}
+function cgaKitDue(rowsIn) {
+function e(v) { return String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+const now = Date.now(); const D2 = 2 * 86400000;
+return (rowsIn || []).filter(function (r) {
+  if (!/@/.test(r.email || '') || !r.token) { return false; }
+  const sent = new Date(r.sent_at || r.created_at || 0).getTime(); const last = new Date(r.last_reminder || 0).getTime();
+  return Number(r.reminder_count || 0) < 3 && now - sent > D2 && now - last > D2;
+}).slice(0, 80).map(function (r) {
+  const link = 'https://cgaindia.com/client-kit.html?t=' + r.token;
+  const html = '<div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.65;color:#14232b">Namaste ' + e(r.name) + ',<br><br>Ek chhota sa reminder: aapki CGA Client Documentation (Ref ' + e(r.kit_id) + ') abhi sign hona baaki hai. Isme lagbhag 10 minute lagenge.<br><br><a href="' + link + '" style="display:inline-block;background:#0b4a6e;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:bold">Documents dekhiye aur sign kariye</a><br><br>Koi sawal ho to call / WhatsApp: 99966-47888.<br><br>Team CGA<br>Canjain Global Advisors Pvt Ltd</div>';
+  return { token: r.token, email: r.email, html: html, subject: 'Reminder: CGA Client Documentation (Ref ' + r.kit_id + ')', count: Number(r.reminder_count || 0) + 1 };
+});
+}
