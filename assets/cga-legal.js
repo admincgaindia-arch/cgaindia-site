@@ -118,6 +118,163 @@ function cgaStandardTerms(o) {
     + C(2, 'If any provision is held invalid or unenforceable, the remaining provisions shall continue in full force. No delay or omission in exercising any right shall operate as a waiver of it.')
     + C(3, 'The Client may not assign its rights under the engagement without the prior written consent of CGA. CGA may engage associated professionals and personnel to perform any part of the Services, remaining responsible to the Client for their work.');
 }
+// ---------------- CGA compliance engine ----------------
+// p: client profile (amounts in Rs lakh). Returns applicable compliances, audits, certifications and a 12-month calendar.
+var CGA_REPS = [
+  { name: 'Neeraj Jain', qual: 'Advocate and Chartered Accountant', reg: '' },
+  { name: 'CA Nikhil Tanwar', qual: 'Chartered Accountant in practice', reg: '' },
+  { name: 'CA Bhagesh Jain', qual: 'Chartered Accountant in practice', reg: '' }
+];
+function cgaKind(c) { c = String(c || '').toLowerCase(); return /llp/.test(c) ? 'llp' : /section 8/.test(c) ? 'sec8' : /one person|opc/.test(c) ? 'opc' : /public/.test(c) ? 'pubco' : /company|pvt|private/.test(c) ? 'co' : /partner/.test(c) ? 'firm' : /trust/.test(c) ? 'trust' : /society/.test(c) ? 'soc' : /huf/.test(c) ? 'huf' : /propriet/.test(c) ? 'prop' : 'ind'; }
+function cgaCompliance(p, todayIso) {
+  p = p || {};
+  var n = function (v) { var x = Number(String(v == null ? '' : v).replace(/[^0-9.]/g, '')); return isFinite(x) ? x : 0; };
+  var K = cgaKind(p.cons);
+  var isCo = ['co', 'opc', 'pubco', 'sec8'].indexOf(K) > -1;
+  var to = n(p.to), puc = n(p.puc), res = n(p.res), borr = n(p.borr), contrib = n(p.contrib), emp = n(p.emp);
+  var biz = p.biz || (K === 'ind' || K === 'huf' ? 'none' : 'trading');
+  var hasBiz = biz !== 'none';
+  var prof = biz === 'profession';
+  var gst = p.gst || 'none';
+  var items = [], notes = [];
+  function add(k, area, name, freq, when, basis, req) { items.push({ k: k, area: area, name: name, freq: freq, when: when, basis: basis, req: req || 'mandatory' }); }
+  function rs(l) { return l >= 100 ? 'Rs ' + (Math.round(l) / 100) + ' crore' : 'Rs ' + l + ' lakh'; }
+  var y24 = !/maharashtra|gujarat|karnataka|goa|kerala|tamil|telangana|andhra|chhattisgarh|madhya|daman|puducherry|andaman|lakshadweep/i.test(p.state || '');
+
+  // ---- GST ----
+  if (gst === 'regular') {
+    add('gstr1', 'GST', 'GSTR-1 (outward supplies)', 'Monthly', '11th of following month', 'Regular GST registration');
+    add('gstr3b', 'GST', 'GSTR-3B (summary return and tax payment)', 'Monthly', '20th of following month', 'Regular GST registration');
+    add('itcrec', 'GST', 'ITC reconciliation of purchase register with GSTR-2B / IMS and GSTR-2A', 'Monthly', 'Before GSTR-3B', 'Rule 36(4) and section 16(2)(aa), CGST Act - ITC only as reflected in GSTR-2B');
+  } else if (gst === 'qrmp') {
+    add('gstr1', 'GST', 'GSTR-1 (quarterly) with optional IFF in first two months', 'Quarterly', '13th of month after quarter', 'QRMP scheme (aggregate turnover up to Rs 5 crore)');
+    add('pmt06', 'GST', 'Monthly tax payment in PMT-06 (first two months of quarter)', 'Monthly', '25th of following month', 'QRMP scheme');
+    add('gstr3b', 'GST', 'GSTR-3B (quarterly)', 'Quarterly', (y24 ? '24th' : '22nd') + ' of month after quarter', 'QRMP scheme; date depends on State of registration');
+    add('itcrec', 'GST', 'ITC reconciliation with GSTR-2B / IMS and GSTR-2A', 'Quarterly', 'Before GSTR-3B', 'Section 16(2)(aa), CGST Act');
+  } else if (gst === 'composition') {
+    add('cmp08', 'GST', 'CMP-08 (statement-cum-challan)', 'Quarterly', '18th of month after quarter', 'Composition scheme');
+    add('gstr4', 'GST', 'GSTR-4 (annual return)', 'Yearly', '30 April', 'Composition scheme');
+  }
+  if (gst === 'regular' || gst === 'qrmp') {
+    if (to > 200) { add('gstr9', 'GST', 'GSTR-9 (annual return)', 'Yearly', '31 December', 'Aggregate turnover ' + rs(to) + ' exceeds Rs 2 crore'); }
+    else { add('gstr9', 'GST', 'GSTR-9 (annual return)', 'Yearly', '31 December', 'Optional: aggregate turnover up to Rs 2 crore is exempt', 'optional'); }
+    if (to > 500) { add('gstr9c', 'GST', 'GSTR-9C (reconciliation statement)', 'Yearly', '31 December', 'Aggregate turnover ' + rs(to) + ' exceeds Rs 5 crore'); }
+    if (to > 500) { add('einv', 'GST', 'E-invoicing on IRP for B2B supplies', 'Continuous', 'At the time of invoice', 'Aggregate turnover exceeds Rs 5 crore' + (to >= 1000 ? '; invoices to be reported within 30 days' : '')); }
+    if (p.refund) { add('gstref', 'GST', 'GST refund applications (exports / inverted duty)', 'As required', 'Within 2 years of relevant date', 'Exports or inverted duty structure', 'conditional'); }
+  }
+
+  // ---- Income tax ----
+  var taxAudit = false, taBasis = '';
+  if (hasBiz) {
+    if (prof) { if (to > 50) { taxAudit = true; taBasis = 'Gross receipts from profession ' + rs(to) + ' exceed Rs 50 lakh'; } }
+    else if (p.cash5) { if (to > 1000) { taxAudit = true; taBasis = 'Turnover ' + rs(to) + ' exceeds Rs 10 crore (cash receipts and payments within 5%)'; } }
+    else if (to > 100) { taxAudit = true; taBasis = 'Turnover ' + rs(to) + ' exceeds Rs 1 crore'; }
+    if (p.presum && !p.lowp && (prof ? to <= (p.cash5 ? 75 : 50) : to <= (p.cash5 ? 300 : 200))) { taxAudit = false; notes.push('Presumptive taxation opted within its limit and income declared at or above the presumptive rate: tax audit not required.'); }
+    if (!taxAudit && p.presum && p.lowp) { taxAudit = true; taBasis = 'Income declared below the presumptive rate'; }
+  }
+  if (taxAudit) { add('taxaudit', 'Income Tax', 'Tax audit and audit report under section 63, Income-tax Act, 2025', 'Yearly', '30 September', taBasis); }
+  var itrWhen = (isCo || K === 'trust' || K === 'soc' || taxAudit || (K === 'llp' && (to > 40 || contrib > 25)) || (K === 'firm' && taxAudit)) ? '31 October' : (hasBiz || K === 'firm' || K === 'llp' ? '31 August' : '31 July');
+  add('itr', 'Income Tax', 'Income-tax return', 'Yearly', itrWhen, isCo ? 'Company' : (taxAudit ? 'Assessee liable to audit' : (hasBiz ? 'Business / profession income' : 'Individual / HUF')));
+  if (hasBiz || isCo || K === 'firm' || K === 'llp' || p.advtax) { add('advtax', 'Income Tax', 'Advance tax (estimate and payment)', 'Quarterly', '15 June, 15 Sept, 15 Dec, 15 March', 'Where tax liability for the year is Rs 10,000 or more', 'conditional'); }
+  if (p.tds) {
+    add('tdspay', 'TDS / TCS', 'Deposit of TDS / TCS deducted', 'Monthly', '7th of following month (30 April for March)', 'Deductor holding TAN');
+    add('tdsret', 'TDS / TCS', 'Quarterly TDS / TCS statements (salary and non-salary)', 'Quarterly', '31 July, 31 Oct, 31 Jan, 31 May', 'Deductor holding TAN');
+    add('tdscert', 'TDS / TCS', 'TDS certificates to deductees', 'Quarterly / Yearly', 'Within 15 days of statement due date; salary certificate by 15 June', 'Deductor holding TAN');
+  }
+
+  // ---- Audits under other laws ----
+  if (isCo) {
+    add('statutory', 'Audit', 'Statutory audit of financial statements (sections 139 and 143, Companies Act, 2013)', 'Yearly', 'Before AGM (by 30 September)', 'Every company', 'mandatory');
+    var small = (K === 'co' || K === 'opc') && !p.hs && puc <= 1000 && to <= 10000;
+    var caroExempt = K === 'opc' || K === 'sec8' || small || (K === 'co' && !p.hs && (puc + res) <= 100 && borr <= 100 && to <= 1000);
+    if (caroExempt) { notes.push('CARO 2020 not applicable: ' + (K === 'opc' ? 'One Person Company' : K === 'sec8' ? 'Section 8 company' : small ? 'small company (paid-up capital up to Rs 10 crore and turnover up to Rs 100 crore, w.e.f. 1 December 2025)' : 'private company with paid-up capital and reserves, borrowings each up to Rs 1 crore and revenue up to Rs 10 crore') + '.'); }
+    else { add('caro', 'Audit', 'Reporting under Companies (Auditor’s Report) Order, 2020 (CARO)', 'Yearly', 'With statutory audit report', 'Company not covered by any CARO exemption'); }
+    var intA = (K === 'co' && (to >= 20000 || borr >= 10000)) || (K === 'pubco' && (p.listed || puc >= 5000 || to >= 20000 || borr >= 10000));
+    if (intA) { add('internal', 'Audit', 'Internal audit (section 138, Companies Act, 2013)', 'Yearly', 'Periodic, as per board plan', 'Turnover / borrowing / paid-up capital thresholds crossed'); }
+    var secA = p.listed || (K === 'pubco' && (puc >= 5000 || to >= 25000)) || borr >= 10000;
+    if (secA) { add('secaudit', 'Audit', 'Secretarial audit (section 204, Companies Act, 2013)', 'Yearly', 'With Board report', 'Listed / public company thresholds or borrowings of Rs 100 crore or more'); }
+    if (biz === 'manufacturing' && to >= 3500) { add('cost', 'Audit', 'Cost records and examination of cost audit applicability (section 148)', 'Yearly', 'Within 180 days of year end', 'Manufacturing company with turnover ' + rs(to) + ' (records from Rs 35 crore; audit at higher thresholds for specified products)', 'conditional'); }
+    add('agm', 'ROC / MCA', 'Board meetings, AGM and statutory registers', K === 'opc' || small ? 'Half-yearly' : 'Quarterly', 'AGM by 30 September', K === 'opc' ? 'One Person Company' : 'Companies Act, 2013');
+    add('aoc4', 'ROC / MCA', 'AOC-4 (financial statements)', 'Yearly', 'Within 30 days of AGM', 'Every company');
+    add('mgt7', 'ROC / MCA', (small || K === 'opc' ? 'MGT-7A' : 'MGT-7') + ' (annual return)', 'Yearly', 'Within 60 days of AGM', 'Every company');
+    add('adt1', 'ROC / MCA', 'ADT-1 (auditor appointment)', 'On appointment', 'Within 15 days of AGM', 'Appointment / reappointment of auditor', 'conditional');
+    if (borr > 0 || p.dep) { add('dpt3', 'ROC / MCA', 'DPT-3 (return of deposits / outstanding receipts of money)', 'Yearly', '30 June', 'Company has loans / receipts not treated as deposits'); }
+    if (p.msme) { add('msme1', 'ROC / MCA', 'MSME-1 (dues to micro and small enterprises beyond 45 days)', 'Half-yearly', '30 April and 31 October', 'Purchases from MSME suppliers'); }
+    add('dirkyc', 'ROC / MCA', 'DIR-3 KYC of directors', 'Every three years', '30 June of the year following the third financial year', 'Triennial KYC regime w.e.f. 31 March 2026', 'conditional');
+  }
+  if (K === 'llp') {
+    if (to > 40 || contrib > 25) { add('llpaudit', 'Audit', 'Audit of LLP accounts (rule 24, LLP Rules, 2009)', 'Yearly', 'Before Form 8', 'Turnover above Rs 40 lakh or contribution above Rs 25 lakh'); }
+    add('form11', 'ROC / MCA', 'Form 11 (annual return of LLP)', 'Yearly', '30 May', 'Every LLP');
+    add('form8', 'ROC / MCA', 'Form 8 (statement of account and solvency)', 'Yearly', '30 October', 'Every LLP');
+  }
+  if (K === 'trust' || K === 'soc') {
+    add('npoaudit', 'Audit', 'Audit of accounts of registered trust / institution under the Income-tax Act, 2025', 'Yearly', 'One month before return due date', 'Registered non-profit whose total income before exemption exceeds the basic exemption limit', p.npo ? 'mandatory' : 'conditional');
+    add('npoform', 'Income Tax', 'Statement of accumulation / application of income and other non-profit filings', 'Yearly', 'Before return due date', 'Registered non-profit organisation', 'conditional');
+  }
+
+  // ---- Labour ----
+  if (p.pf) { add('pf', 'Payroll', 'EPF contribution and ECR return', 'Monthly', '15th of following month', 'EPF registration'); }
+  if (p.esi) { add('esi', 'Payroll', 'ESI contribution and return', 'Monthly', '15th of following month', 'ESIC registration'); }
+  if (!p.pf && emp >= 20) { notes.push('With ' + emp + ' employees, EPF registration is mandatory (20 or more employees).'); }
+  if (!p.esi && emp >= 10) { notes.push('With ' + emp + ' employees, ESIC registration is to be examined (10 or more employees in notified areas).'); }
+
+  // ---- Bookkeeping ----
+  if (hasBiz || isCo || K === 'firm' || K === 'llp' || K === 'trust' || K === 'soc') { add('books', 'Accounts', 'Bookkeeping, bank reconciliation and monthly MIS', 'Monthly', 'Within 10 days after month end', 'Maintenance of books of account', 'optional'); }
+
+  // ---- Certifications (on request) ----
+  var cert = [];
+  if (p.forex) { cert.push(['15cb', 'Chartered accountant certificate for foreign remittances', 'Payments to non-residents']); }
+  if (p.refund) { cert.push(['refcert', 'Chartered accountant certificate for GST refund (unjust enrichment)', 'Refund claims above Rs 2 lakh']); }
+  cert.push(['nw', 'Net worth / turnover certificates (bank, tender, visa)', 'As required by bank, tender or embassy']);
+  if (isCo) { cert.push(['dptcert', 'Auditor certificate for DPT-3 / other MCA forms', 'Where prescribed']); }
+  cert.forEach(function (c) { add(c[0], 'Certification', c[1], 'On request', 'As required', c[2], 'on request'); });
+
+  // ---- 12-month calendar ----
+  var today = new Date(todayIso || Date.now());
+  var start = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 1));
+  var cal = [];
+  function push(y, m, d, k, label) { var dt = new Date(Date.UTC(y, m, d)); if (dt >= new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate())) && dt < new Date(start.getTime() + 366 * 86400000)) { cal.push({ d: dt.toISOString().slice(0, 10), k: k, t: label }); } }
+  var has = function (k) { return items.some(function (i) { return i.k === k; }); };
+  var MN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  for (var i = 0; i < 13; i++) {
+    var y = start.getUTCFullYear() + Math.floor((start.getUTCMonth() + i) / 12), m = (start.getUTCMonth() + i) % 12;
+    var pm = (m + 11) % 12, pmy = m === 0 ? y - 1 : y, per = MN[pm] + ' ' + pmy;
+    var qEnd = [3, 6, 9, 0].indexOf(m) > -1; // month after quarter end (Apr, Jul, Oct, Jan)
+    if (gst === 'regular') { push(y, m, 11, 'gstr1', 'GSTR-1 for ' + per); push(y, m, 18, 'itcrec', 'ITC reconciliation (2B/IMS) for ' + per); push(y, m, 20, 'gstr3b', 'GSTR-3B for ' + per); }
+    if (gst === 'qrmp') { if (qEnd) { push(y, m, 13, 'gstr1', 'GSTR-1 for quarter ending ' + per); push(y, m, 18, 'itcrec', 'ITC reconciliation for quarter ending ' + per); push(y, m, y24 ? 24 : 22, 'gstr3b', 'GSTR-3B for quarter ending ' + per); } else { push(y, m, 25, 'pmt06', 'PMT-06 tax payment for ' + per); } }
+    if (gst === 'composition' && qEnd) { push(y, m, 18, 'cmp08', 'CMP-08 for quarter ending ' + per); }
+    if (p.tds) { push(y, m, m === 3 ? 30 : 7, 'tdspay', 'TDS deposit for ' + per); }
+    if (p.pf) { push(y, m, 15, 'pf', 'EPF / ECR for ' + per); }
+    if (p.esi) { push(y, m, 15, 'esi', 'ESI for ' + per); }
+    if (has('books')) { push(y, m, 10, 'books', 'Books and MIS for ' + per); }
+  }
+  var Y = start.getUTCFullYear();
+  [Y, Y + 1].forEach(function (yy) {
+    if (p.tds) { push(yy, 6, 31, 'tdsret', 'TDS statement Q1'); push(yy, 9, 31, 'tdsret', 'TDS statement Q2'); push(yy, 0, 31, 'tdsret', 'TDS statement Q3'); push(yy, 4, 31, 'tdsret', 'TDS statement Q4'); push(yy, 5, 15, 'tdscert', 'Salary TDS certificates'); }
+    if (has('advtax')) { push(yy, 5, 15, 'advtax', 'Advance tax - 1st instalment'); push(yy, 8, 15, 'advtax', 'Advance tax - 2nd instalment'); push(yy, 11, 15, 'advtax', 'Advance tax - 3rd instalment'); push(yy, 2, 15, 'advtax', 'Advance tax - final instalment'); }
+    var itrM = itrWhen === '31 July' ? [6, 31] : itrWhen === '31 August' ? [7, 31] : [9, 31];
+    push(yy, itrM[0], itrM[1], 'itr', 'Income-tax return');
+    if (taxAudit) { push(yy, 8, 30, 'taxaudit', 'Tax audit report'); }
+    if (has('gstr9')) { push(yy, 11, 31, 'gstr9', 'GSTR-9' + (has('gstr9c') ? ' and GSTR-9C' : '') + ' annual return'); }
+    if (gst === 'composition') { push(yy, 3, 30, 'gstr4', 'GSTR-4 annual return'); }
+    if (isCo) { push(yy, 8, 30, 'agm', 'AGM (with audited accounts)'); push(yy, 9, 14, 'adt1', 'ADT-1 (if auditor appointed)'); push(yy, 9, 30, 'aoc4', 'AOC-4 filing'); push(yy, 10, 29, 'mgt7', 'Annual return (MGT-7 / MGT-7A) filing'); if (has('dpt3')) { push(yy, 5, 30, 'dpt3', 'DPT-3'); } if (has('msme1')) { push(yy, 3, 30, 'msme1', 'MSME-1 (Oct-Mar)'); push(yy, 9, 31, 'msme1', 'MSME-1 (Apr-Sep)'); } }
+    if (K === 'llp') { push(yy, 4, 30, 'form11', 'LLP Form 11'); push(yy, 9, 30, 'form8', 'LLP Form 8'); }
+    if (has('npoaudit')) { push(yy, 8, 30, 'npoaudit', 'Trust / institution audit report'); }
+  });
+  cal.sort(function (a, b) { return a.d < b.d ? -1 : a.d > b.d ? 1 : 0; });
+  return { kind: K, items: items, notes: notes, calendar: cal, tax_audit: taxAudit };
+}
+
+function cgaComplianceTable(c, sel, e) {
+  sel = sel || {};
+  var rows = c.items.map(function (i) {
+    var by = sel[i.k] === 'client' ? 'Client' : (sel[i.k] === 'cga' ? 'CGA' : (i.req === 'on request' ? 'CGA, on request' : 'Client'));
+    return '<tr><td>' + e(i.area) + '</td><td>' + e(i.name) + (i.req === 'optional' ? ' <i>(optional)</i>' : i.req === 'conditional' ? ' <i>(if applicable)</i>' : '') + '</td><td>' + e(i.freq) + '</td><td>' + e(i.when) + '</td><td>' + e(i.basis) + '</td><td><b>' + by + '</b></td></tr>';
+  }).join('');
+  return '<table class="t"><tr><th>Area</th><th>Compliance</th><th>Frequency</th><th>Due</th><th>Basis of applicability</th><th>Responsibility</th></tr>' + rows + '</table>'
+    + (c.notes.length ? '<p><b>Notes:</b> ' + c.notes.map(e).join(' ') + '</p>' : '');
+}
+
 function renderKit(k, fd, acc) {
   fd = fd || {};
   function e(v) { return String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
@@ -150,6 +307,9 @@ function renderKit(k, fd, acc) {
   var place = acc ? (acc.place || '') : (fd.place || '');
   var ref = 'CGA/' + e(k.kit_id) + '/' + e(fy);
   var refLine = '<table class="m"><tr><td>Ref.: <b>' + ref + '</b></td><td style="text-align:right">Date: ' + b(dated, 14) + '</td></tr></table>';
+  var prof = (fd.p && typeof fd.p === 'object') ? fd.p : null;
+  var cmp = prof ? cgaCompliance(Object.assign({}, prof, { cons: cons }), acc ? acc.at : null) : null;
+  var hasBiz = !prof || prof.biz !== 'none' || !isInd;
 
   function clientHead() {
     return '<div class="clh"><b>' + e(String(name).toUpperCase() || 'CLIENT') + '</b><span>' + e(k.address || '') + (k.pan ? ' &middot; PAN ' + e(k.pan) : '') + (k.gstin ? ' &middot; GSTIN ' + e(k.gstin) : '') + '</span>'
@@ -182,7 +342,7 @@ function renderKit(k, fd, acc) {
       + '<h2>1. Services</h2><p>We shall render the services set out below. Any other work shall be a separate assignment, to be undertaken only on your written request and on fees agreed in writing.</p>'
       + table(['Service', 'Period', 'Professional fee (excluding GST)', 'Billing'], svcRows)
       + '<h2>2. Information and approvals</h2><p>The services depend upon your furnishing complete and correct information, records and approvals in time. Every return and form will be filed only after its approval by you or by a person authorised by you in the Declaration of Authorised Persons accompanying this letter.</p>'
-      + '<h2>3. Accompanying documents</h2><p>To protect both you and us, this letter is accompanied by (a) a Declaration of Constitution and Authorised Persons; (b) a Letter of Authority for access to statutory portals; and (c) a Letter of Representation regarding books, records and information. Where a Digital Signature Certificate is to be kept with us, its holder will additionally execute a Deed of Authorisation and Indemnity on stamp paper.</p>'
+      + '<h2>3. Accompanying documents</h2><p>To protect both you and us, this letter is accompanied by (a) a Schedule of Applicable Compliances recording which compliances CGA shall carry out; (b) a Declaration of Constitution and Authorised Persons; (c) a Letter of Authority for Representation before tax and regulatory authorities; (d) a Letter of Authority for access to statutory portals; and (e) a Letter of Representation. Where a Digital Signature Certificate is to be kept with us, its holder will additionally execute a Deed of Authorisation and Indemnity on stamp paper.</p>'
       + '<h2>4. Standard Terms</h2><p>Our Standard Terms of Engagement, annexed hereto, form an integral part of this letter. We request you to read them carefully, in particular the clauses dealing with authority to instruct (clause 4), digital signatures and credentials (clause 5), fees (clause 6), lien (clause 7), limitation of liability (clause 8) and indemnity (clause 9).</p>'
       + '<p>Kindly signify your acceptance of this letter and the annexed Standard Terms by executing the acceptance below. Should you wish to discuss any of these terms, we shall be glad to do so.</p>'
       + '<p>Yours faithfully,</p>' + cgaSign()
@@ -190,6 +350,44 @@ function renderKit(k, fd, acc) {
       + sigBlock(name) + '</section>'
       + '<section class="doc">' + cgaLetterhead(e) + cgaStandardTerms({ e: e }) + '<p class="nt" style="margin-top:12px">Annexure to letter Ref. ' + ref + '</p>' + sigBlock(name) + '</section>';
   }
+
+  // ---------------- Schedule of compliances ----------------
+  var dSch = '';
+  if (cmp) {
+    var P = prof, Lk = function (v) { return v === true ? 'Yes' : v === false ? 'No' : (v || '-'); };
+    var GSTL = { none: 'Not registered', regular: 'Regular (monthly returns)', qrmp: 'Regular - QRMP (quarterly returns)', composition: 'Composition scheme' };
+    var BZ = { none: 'No business / profession', trading: 'Trading', manufacturing: 'Manufacturing', services: 'Services', profession: 'Profession' };
+    var pr = [['Constitution', e(cons || '-')], ['State of principal place of business', e(P.state || '-')], ['Nature of activity', e(BZ[P.biz] || '-')], ['GST registration', e(GSTL[P.gst] || '-')], ['Turnover / gross receipts of preceding year', P.to ? 'Rs ' + e(P.to) + ' lakh' : '-'], ['Cash receipts and payments within 5% of totals', Lk(P.cash5)], ['TDS deductor (holds TAN)', Lk(P.tds)], ['Employees / EPF / ESIC', e(P.emp || '0') + ' / ' + Lk(P.pf) + ' / ' + Lk(P.esi)], ['Foreign transactions / GST refunds', Lk(P.forex) + ' / ' + Lk(P.refund)]];
+    if (cmp.kind === 'co' || cmp.kind === 'opc' || cmp.kind === 'pubco' || cmp.kind === 'sec8') { pr.push(['Paid-up capital / reserves / maximum borrowings', 'Rs ' + e(P.puc || 0) + ' / ' + e(P.res || 0) + ' / ' + e(P.borr || 0) + ' lakh']); pr.push(['Holding or subsidiary company / listed', Lk(P.hs) + ' / ' + Lk(P.listed)]); }
+    if (cmp.kind === 'llp') { pr.push(['Contribution of partners', 'Rs ' + e(P.contrib || 0) + ' lakh']); }
+    dSch = '<section class="doc">' + cgaLetterhead(e) + refLine
+      + '<h1>Schedule of Applicable Compliances</h1><div class="st">and allocation of responsibility between the Client and CGA &middot; forming part of the engagement</div>'
+      + '<h2>A. Profile furnished by the Client</h2>' + table(['Particular', 'As furnished'], pr)
+      + '<h2>B. Compliances applicable on the above profile</h2>' + cgaComplianceTable(cmp, fd.sel || {}, e)
+      + '<h2>C. Terms of allocation</h2>'
+      + cl('1.', 'CGA shall carry out the compliances marked &ldquo;CGA&rdquo; above, subject to the Client furnishing complete information and approvals in time and to the fees agreed for them.')
+      + cl('2.', 'Every compliance marked &ldquo;Client&rdquo; remains the sole responsibility of the Client. CGA shall have no obligation or liability in respect of it, whether or not CGA has knowledge of it, unless CGA has accepted it in writing.')
+      + cl('3.', 'Applicability has been determined on the profile furnished by the Client and the law in force on the date of this Schedule. The Client shall inform CGA forthwith of any change in turnover, capital, borrowings, employees, registrations or activities. CGA shall review this Schedule at least once every financial year.')
+      + cl('4.', 'Any audit, certificate or report which the law requires to be issued by a practising professional in his or her own name shall be undertaken by an independent practising professional in accordance with clauses 1.3 and 11.2 of the Standard Terms, CGA acting as co-ordinator.')
+      + cl('5.', 'Due dates stated are those prescribed on the date of this Schedule and shall stand modified by any extension or amendment notified by the Government.')
+      + sigBlock(name) + '</section>';
+  }
+
+  // ---------------- Letter of Authority for Representation ----------------
+  var reps = (typeof CGA_REPS !== 'undefined' ? CGA_REPS : []);
+  var dAR = '<section class="doc">' + clientHead() + refLine + '<p>To<br>' + CGA.name + '<br>and the professionals named below</p>'
+    + '<h1>Letter of Authority for Representation</h1><div class="st">General authority to appear and act before tax, regulatory and appellate authorities</div>'
+    + cl('1.', (isInd ? 'I' : 'We') + ', ' + b(name, 26) + (k.pan ? ' (PAN ' + e(k.pan) + ')' : '') + (k.gstin ? ' (GSTIN ' + e(k.gstin) + ')' : '') + ', hereby appoint and authorise each of the following professionals associated with Canjain Global Advisors Private Limited (&ldquo;CGA&rdquo;), severally, to act as ' + (isInd ? 'my' : 'our') + ' authorised representative:'
+      + table(['Name', 'Qualification', 'Enrolment / membership no.'], reps.map(function (r) { return [e(r.name), e(r.qual), r.reg ? e(r.reg) : '&nbsp;']; }))
+      + 'together with any other advocate, chartered accountant, company secretary or cost accountant associated with CGA whom CGA may designate by written intimation to ' + (isInd ? 'me' : 'us') + ', each being a person entitled to so act under the law concerned.')
+    + cl('2.', 'The authority extends to appearing, attending, representing and acting on ' + (isInd ? 'my' : 'our') + ' behalf before every officer, authority, appellate authority and tribunal under (a) the Central Goods and Services Tax Act, 2017, the State and Union Territory GST Acts and the Integrated GST Act, 2017, including section 116 of the CGST Act and the GST Appellate Tribunal; (b) the Income-tax Act, 2025, including section 515 thereof, and the Income-tax Act, 1961 for earlier years, including faceless proceedings, the Commissioner (Appeals), the Dispute Resolution Panel and the Income Tax Appellate Tribunal; (c) the Customs Act, 1962 and the Foreign Trade (Development and Regulation) Act, 1992; (d) the Companies Act, 2013 and the Limited Liability Partnership Act, 2008, in matters before the Registrar and the Regional Director; (e) the labour and social security laws; and (f) any other law under which representation by such a professional is permitted.')
+    + cl('3.', 'Within that scope the representatives may, in respect of any assessment, scrutiny, audit, inquiry, verification, notice, summons, refund, rectification, appeal, revision, stay, settlement or compounding, for any period whether past, pending or future: file replies, submissions, applications, refund claims, appeals and other documents; receive notices and orders; inspect records and obtain copies; furnish documents and explanations; and do all acts incidental thereto.')
+    + cl('4.', 'No admission of liability, agreement to any addition, withdrawal of any appeal or application, settlement, or payment of tax, interest or penalty shall be made on ' + (isInd ? 'my' : 'our') + ' behalf without ' + (isInd ? 'my' : 'our') + ' prior written consent, which may be given by e-mail or WhatsApp. Refunds shall be credited only to ' + (isInd ? 'my' : 'our') + ' own bank account, and CGA shall not receive any refund on ' + (isInd ? 'my' : 'our') + ' behalf.')
+    + cl('5.', 'Where the law requires personal appearance or a statement on oath, ' + (isInd ? 'I' : 'we') + ' shall appear in person. Representation before any court, High Court or the Supreme Court shall be by a separate vakalatnama executed for each matter.')
+    + cl('6.', 'This authority takes effect from the date of its execution, shall remain in force until revoked by written notice, and shall continue for proceedings pending on the date of revocation until other representatives are substituted on record. ' + (isInd ? 'I' : 'We') + ' ratify all acts lawfully done under it.')
+    + cl('7.', 'CGA shall be obliged to represent ' + (isInd ? 'me' : 'us') + ' in a particular matter only when that matter has been entrusted to it and the fees for it agreed in writing. ' + (isInd ? 'I' : 'We') + ' shall forward every notice, summons and order to CGA within three days of its receipt.')
+    + sigBlock(name)
+    + '<h2>Acceptance</h2><p>The authority is accepted. Each representative named above shall sign the acceptance on the copy filed in any proceeding in which he or she appears.</p>' + cgaSign() + '</section>';
 
   // ---------------- Declaration of Constitution and Authorised Persons ----------------
   var ownRows = owners.map(function (o) { return [cell(o.name), cell(o.desig), cell(o.din), cell(o.share), cell(o.mobile), cell(o.email)]; });
@@ -245,6 +443,19 @@ function renderKit(k, fd, acc) {
     + '<p>Yours faithfully,</p>' + sigBlock(name) + '</section>';
 
   // ---------------- Letter of Representation ----------------
+  var d5i = '';
+  if (isInd && !hasBiz) {
+    d5i = '<section class="doc">' + clientHead() + refLine + toCGA()
+      + '<h1>Letter of Representation</h1><div class="st">regarding income, investments and information &middot; financial year ' + e(fy) + '</div>'
+      + '<p>Dear Sirs,</p><p>This letter is furnished in connection with the tax services rendered by you to me for the financial year ' + e(fy) + '. I confirm, to the best of my knowledge and belief, that:</p>'
+      + cl('1.', 'All my sources of income, including salary, house property, capital gains, interest, dividends and income from other sources, and all my bank accounts, investments and assets have been disclosed to you.')
+      + cl('2.', 'I have examined the information in my Annual Information Statement and Form 26AS, and have explained to you every entry in them that does not relate to me or differs from my records.')
+      + cl('3.', 'Particulars of any asset held or income earned outside India, and of any account outside India in which I have signing authority, have been disclosed to you.')
+      + cl('4.', 'Deductions and exemptions claimed are supported by documents in my possession, which I shall produce when required.')
+      + cl('5.', 'Every notice or communication received from the Income-tax Department up to the date of this letter has been handed over to you.')
+      + cl('6.', 'The computation and return prepared by you will be examined and approved by me before filing. I shall bear any tax, interest, penalty or prosecution arising from information that is incorrect or incomplete, and shall not hold CGA, its directors or personnel responsible for it.')
+      + '<p>Yours faithfully,</p>' + sigBlock(name) + '</section>';
+  }
   var d5 = '<section class="doc">' + clientHead() + refLine + toCGA()
     + '<h1>Letter of Representation</h1><div class="st">regarding books of account, records and information &middot; financial year ' + e(fy) + '</div>'
     + '<p>Dear Sirs,</p>'
@@ -309,7 +520,7 @@ function renderKit(k, fd, acc) {
   }
   var wrap = function (title, body) { return '<!DOCTYPE html><html><head><meta charset="utf-8"><title>' + e(title) + '</title><link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">' + LEGAL_CSS + '</head><body>' + body + '</body></html>'; };
   return {
-    html: wrap('CGA Client Documents ' + k.kit_id, d1 + d2 + d4 + d5 + d6),
+    html: wrap('CGA Client Documents ' + k.kit_id, d1 + dSch + d2 + dAR + d4 + (d5i || d5) + d6),
     print: pr ? wrap('CGA documents for physical signature ' + k.kit_id, pr) : '',
     holders: holders.map(function (o) { return o.name; }),
     has6: !!conflict.length
@@ -393,7 +604,7 @@ var body = cgaLetterhead(e)
   + '<p>Unless separately agreed in writing, the assignment does not include government fees, challans, taxes, interest, penalties or late fees; representation before any authority or court not mentioned above; or work relating to any other period or entity.</p>'
   + '<h2>2. Time frame</h2><p><b>Expected time frame:</b> ' + e(timeline.charAt(0).toUpperCase() + timeline.slice(1)) + '.</p><p>The time frame commences only on receipt of complete documents, information and approvals, and shall stand extended by any delay on the part of the Client, any government portal or authority, or any third party.</p>'
   + '<h2>3. Professional fees</h2><p>Our fee for the assignment is <b>Rs ' + m(taxable) + '</b> plus Goods and Services Tax at 18% of <b>Rs ' + m(gst) + '</b>, aggregating <b>Rs ' + m(fee) + '</b>' + (c.invoice_no ? ', received under invoice ' + e(c.invoice_no) + (c.payment_id ? ' (payment reference ' + e(c.payment_id) + ')' : '') : '') + '. Government fees, stamp duty, Digital Signature Certificate charges and out-of-pocket expenses are payable at actuals unless expressly included in the package. Where the published fee is a starting fee, any revision for additional scope shall be confirmed to you in writing before that work is undertaken.</p>'
-  + '<h2>4. Information, approvals and authority</h2><p>The assignment depends upon your furnishing complete and correct information in time. No return or application will be filed without your prior approval, which may be given in writing, by e-mail or by WhatsApp from the contact details stated above. Where the Client is a firm, company, LLP, trust or society, or where Digital Signature Certificates or portal credentials are to be entrusted to us, we shall send you, on acceptance of this letter, our Client Documentation (a Declaration of Authorised Persons, a Letter of Authority for statutory portals and a Letter of Representation) for completion online.</p>'
+  + '<h2>4. Information, approvals and authority</h2><p>The assignment depends upon your furnishing complete and correct information in time. No return or application will be filed without your prior approval, which may be given in writing, by e-mail or by WhatsApp from the contact details stated above. We shall also send you, on acceptance of this letter, our Client Documentation (a Schedule of Applicable Compliances, a Declaration of Authorised Persons, a Letter of Authority for Representation, a Letter of Authority for statutory portals and a Letter of Representation) for completion online.</p>'
   + '<h2>5. Standard Terms of Engagement</h2><p>The annexed Standard Terms form an integral part of this letter. We would draw your particular attention to the clauses dealing with authority to instruct (clause 4), digital signatures and credentials (clause 5), fees (clause 6), lien (clause 7), limitation of liability (clause 8) and indemnity (clause 9).</p>'
   + '<p>Kindly signify your acceptance of this letter and the annexed Standard Terms by executing the acceptance below. Our team will commence the assignment immediately thereafter.</p>'
   + '<p>Yours faithfully,</p>'
@@ -436,6 +647,12 @@ function cleanFd(x) {
   o.dispute = clean(x.dispute, 300) || 'None';
   const br = x.br || {}; o.br = { date: clean(br.date, 20), time: clean(br.time, 15), director: clean(br.director, 60), din: clean(br.din, 12) };
   o.place = clean(x.place, 40);
+  const pp = x.p || {};
+  const num = function (v) { const z = Number(String(v == null ? '' : v).replace(/[^0-9.]/g, '')); return isFinite(z) && z > 0 ? Math.round(z * 100) / 100 : 0; };
+  const yn = function (v) { return v === true || v === 'yes'; };
+  o.p = { state: clean(pp.state, 40), biz: ['none', 'trading', 'manufacturing', 'services', 'profession'].indexOf(pp.biz) > -1 ? pp.biz : 'trading', gst: ['none', 'regular', 'qrmp', 'composition'].indexOf(pp.gst) > -1 ? pp.gst : 'none', to: num(pp.to), cash5: yn(pp.cash5), presum: yn(pp.presum), lowp: yn(pp.lowp), puc: num(pp.puc), res: num(pp.res), borr: num(pp.borr), hs: yn(pp.hs), listed: yn(pp.listed), contrib: num(pp.contrib), tds: yn(pp.tds), emp: num(pp.emp), pf: yn(pp.pf), esi: yn(pp.esi), forex: yn(pp.forex), refund: yn(pp.refund), msme: yn(pp.msme), npo: yn(pp.npo), dep: yn(pp.dep) };
+  o.sel = {};
+  Object.keys(x.sel || {}).slice(0, 80).forEach(function (kk) { if (/^[a-z0-9]{2,12}$/.test(kk)) { o.sel[kk] = x.sel[kk] === 'client' ? 'client' : 'cga'; } });
   return o;
 }
 const signed = row.status === 'SIGNED';
