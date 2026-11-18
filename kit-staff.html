@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Client Documentation Tracker | CGA Staff</title>
+<link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+<style>
+:root{--ink:#0b2f4a;--brand:#0b4a6e;--line:#dfe7ec;--slate:#5a6b76;--bg:#f4f7f9;--ok:#17773f;--warn:#8a5a00}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#14232b;font-size:14px}
+header{background:var(--ink);color:#fff;padding:14px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+header img{height:34px;background:#fff;border-radius:6px;padding:3px 6px}
+header h1{font-size:17px;margin:0;font-weight:700}
+header a{color:#9fd8ea;margin-left:auto;font-size:13px}
+main{max-width:1180px;margin:0 auto;padding:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer}
+.stat b{display:block;font-size:20px;color:var(--brand)}.stat span{font-size:12px;color:var(--slate)}
+.stat.on{border-color:var(--brand);box-shadow:0 0 0 2px rgba(11,74,110,.15)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+input,select{padding:9px 10px;border:1.5px solid #c3d2da;border-radius:7px;font:inherit;background:#fff}
+#q{flex:1;min-width:220px}
+.btn{display:inline-block;background:var(--brand);color:#fff;border:0;border-radius:999px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;white-space:nowrap}
+.btn.o{background:#fff;color:var(--brand);border:1.5px solid var(--brand)}.btn.w{background:#25d366}.btn.s{padding:6px 11px;font-size:12.5px}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid #eef2f5;vertical-align:top}
+th{font-size:12px;color:var(--slate);text-transform:uppercase;letter-spacing:.04em}
+.st{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11.5px;font-weight:700}
+.st.DRAFT{background:#eef2f5;color:#44535c}.st.SENT{background:#e3f3f9;color:var(--brand)}.st.OPENED{background:#fff4e0;color:var(--warn)}.st.SIGNED{background:#e6f6ec;color:var(--ok)}.st.VOID{background:#fdecea;color:#8a1f17}
+.muted{color:var(--slate);font-size:12px}
+.pager{display:flex;gap:8px;align-items:center;justify-content:flex-end;margin-top:10px}
+#pinbox{max-width:380px;margin:60px auto}
+.err{color:#b3261e;margin-top:8px}
+@media(max-width:760px){.stats{grid-template-columns:repeat(3,1fr)}thead{display:none}tr{display:block;border:1px solid var(--line);border-radius:8px;margin:8px 0;padding:6px 8px;background:#fff}td{display:block;border:0;padding:3px 0}td.a{padding-top:6px}}
+</style>
+</head>
+<body>
+<header><img src="/assets/img/cga-logo.png" alt="CGA"><h1>Client Documentation Tracker</h1><a href="https://cga.app.n8n.cloud/form/cga-send-kit" target="_blank" rel="noopener">+ Naya client / email ke saath bhejiye</a></header>
+<main id="app">
+<div class="card" id="pinbox"><h2 style="margin:0 0 10px;font-size:18px">Staff PIN daaliye</h2><form id="pf"><input type="password" id="pin" placeholder="PIN" style="width:100%" autocomplete="current-password"><div style="margin-top:10px"><button class="btn" type="submit">Kholiye</button></div><div class="err" id="perr"></div></form></div>
+</main>
+<script>
+(function () {
+  var API = 'https://cga.app.n8n.cloud/webhook/cga-kit-staff';
+  var SITE = 'https://cgaindia.com/client-kit.html?t=';
+  var app = document.getElementById('app');
+  var PIN = '', ROWS = [], F = { q: '', st: '', sv: '', page: 0 };
+  var PER = 50;
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+  function call(body) { body.pin = PIN; return fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).then(function (r) { return r.json(); }); }
+  function waText(r) {
+    return 'Namaste ' + r.n + ' ji,\n\nCGA mein aapke records aur kaam ko surakshit aur record par rakhne ke liye hum sabhi clients se standard Client Documentation (Engagement Letter, Authorised Persons Declaration, Portal Authority) le rahe hain. Ye online hai, lagbhag 10 minute lagenge, email OTP se sign hota hai:\n' + SITE + r.t + '\n\nKoi sawal ho to isi number par message kariye.\nTeam CGA - Canjain Global Advisors';
+  }
+  function load() {
+    app.innerHTML = '<div class="card">Loading...</div>';
+    call({ action: 'list' }).then(function (d) {
+      if (!d || !d.ok) { try { sessionStorage.removeItem('cga_kit_pin'); } catch (x) {} location.reload(); return; }
+      ROWS = d.rows || [];
+      ROWS.sort(function (a, b) { var o = { OPENED: 0, SENT: 1, DRAFT: 2, SIGNED: 3, VOID: 4 }; return (o[a.st] - o[b.st]) || a.n.localeCompare(b.n); });
+      shell(); draw();
+    }).catch(function () { app.innerHTML = '<div class="card err">Network problem. Page refresh kariye.</div>'; });
+  }
+  function count(st) { return ROWS.filter(function (r) { return st === 'D3' ? (r.st === 'SIGNED' && r.d3 === 'PENDING') : r.st === st; }).length; }
+  function shell() {
+    var S = [['', 'Total', ROWS.length], ['DRAFT', 'Abhi nahi bheja', count('DRAFT')], ['SENT', 'Bheja', count('SENT')], ['OPENED', 'Khola, sign baaki', count('OPENED')], ['SIGNED', 'Signed', count('SIGNED')], ['D3', 'DSC Deed baaki', count('D3')]];
+    app.innerHTML = '<div class="stats" id="stats">' + S.map(function (s) { return '<div class="stat' + (F.st === s[0] ? ' on' : '') + '" data-st="' + s[0] + '"><b>' + s[2] + '</b><span>' + s[1] + '</span></div>'; }).join('') + '</div>'
+      + '<div class="card" style="margin-top:14px"><div class="filters"><input id="q" type="search" placeholder="Naam, client code ya mobile se dhoondhiye" value="' + esc(F.q) + '"><select id="sv"><option value="">Saari services</option><option>GST</option><option>ROC</option><option>TDS</option><option>Balance Sheet</option><option>Income Tax</option></select></div>'
+      + '<p class="muted" style="margin:10px 0 0">Pehle un clients ko bhejiye jinka DSC ya portal login CGA ke paas hai (GST / ROC / TDS wale). "WhatsApp" dabane par message aur link khul jayega; bhejte hi status "Bheja" ho jayega. Email wale clients ko form se bhejiye, unhe 3 reminder apne aap jayenge.</p></div>'
+      + '<div class="card"><table><thead><tr><th>Client</th><th>Mobile</th><th>Services</th><th>Status</th><th></th></tr></thead><tbody id="tb"></tbody></table><div class="pager" id="pg"></div></div>';
+    document.getElementById('sv').value = F.sv;
+    document.getElementById('q').oninput = function () { F.q = this.value; F.page = 0; draw(); };
+    document.getElementById('sv').onchange = function () { F.sv = this.value; F.page = 0; draw(); };
+    Array.prototype.forEach.call(document.querySelectorAll('.stat'), function (el) { el.onclick = function () { F.st = el.getAttribute('data-st'); F.page = 0; shell(); draw(); }; });
+  }
+  function filtered() {
+    var q = F.q.toLowerCase().trim();
+    return ROWS.filter(function (r) {
+      if (F.st === 'D3') { if (!(r.st === 'SIGNED' && r.d3 === 'PENDING')) { return false; } }
+      else if (F.st && r.st !== F.st) { return false; }
+      if (F.sv && r.s.toLowerCase().indexOf(F.sv.toLowerCase()) < 0) { return false; }
+      if (q && (r.n + ' ' + r.c + ' ' + r.m).toLowerCase().indexOf(q) < 0) { return false; }
+      return true;
+    });
+  }
+  function draw() {
+    var list = filtered(), pages = Math.max(1, Math.ceil(list.length / PER));
+    if (F.page >= pages) { F.page = pages - 1; }
+    var part = list.slice(F.page * PER, F.page * PER + PER);
+    document.getElementById('tb').innerHTML = part.map(function (r) {
+      var stx = r.st === 'SIGNED' ? 'Signed ' + esc(r.sa) + (r.d3 === 'PENDING' ? '<br><span class="muted">DSC Deed baaki</span>' : '') : r.st === 'OPENED' ? 'Khola ' + esc(r.op) : r.st === 'SENT' ? 'Bheja ' + esc(r.se) : r.st === 'DRAFT' ? 'Abhi nahi bheja' : esc(r.st);
+      var acts = (r.st !== 'SIGNED' && r.st !== 'VOID' && r.m ? '<a class="btn w s" data-wa="' + esc(r.t) + '" href="https://wa.me/91' + esc(r.m) + '?text=' + encodeURIComponent(waText(r)) + '" target="_blank" rel="noopener">WhatsApp</a> ' : '') + (r.st !== 'VOID' ? '<button class="btn o s" data-cp="' + esc(r.t) + '">Link copy</button>' : '');
+      return '<tr><td><b>' + esc(r.n) + '</b><div class="muted">' + esc(r.c || r.k) + '</div></td><td>' + esc(r.m || '-') + (r.e ? '<div class="muted">email hai</div>' : '') + '</td><td class="muted">' + esc(r.s) + '</td><td><span class="st ' + esc(r.st) + '">' + esc(r.st) + '</span><div class="muted">' + stx + '</div></td><td class="a">' + acts + '</td></tr>';
+    }).join('') || '<tr><td colspan="5" class="muted">Koi client nahi mila.</td></tr>';
+    document.getElementById('pg').innerHTML = '<span class="muted">' + list.length + ' clients &middot; page ' + (F.page + 1) + ' / ' + pages + '</span>' + (F.page > 0 ? '<button class="btn o s" id="pv">Pichhla</button>' : '') + (F.page < pages - 1 ? '<button class="btn o s" id="nx">Agla</button>' : '');
+    if (document.getElementById('pv')) { document.getElementById('pv').onclick = function () { F.page--; draw(); window.scrollTo(0, 0); }; }
+    if (document.getElementById('nx')) { document.getElementById('nx').onclick = function () { F.page++; draw(); window.scrollTo(0, 0); }; }
+  }
+  app.addEventListener('click', function (ev) {
+    var a = ev.target.closest && ev.target.closest('[data-wa]');
+    if (a) {
+      var t = a.getAttribute('data-wa');
+      var r = ROWS.find(function (x) { return x.t === t; });
+      if (r && r.st === 'DRAFT') { r.st = 'SENT'; r.se = new Date().toISOString().slice(0, 10); call({ action: 'sent', token: t }).catch(function () {}); setTimeout(function () { shell(); draw(); }, 300); }
+      return;
+    }
+    var c = ev.target.closest && ev.target.closest('[data-cp]');
+    if (c) {
+      var link = SITE + c.getAttribute('data-cp');
+      try { navigator.clipboard.writeText(link); c.textContent = 'Copied'; } catch (x) { window.prompt('Link copy kariye', link); }
+    }
+  });
+  try { PIN = sessionStorage.getItem('cga_kit_pin') || ''; } catch (x) {}
+  if (PIN) { load(); return; }
+  document.getElementById('pf').onsubmit = function (e) {
+    e.preventDefault(); PIN = document.getElementById('pin').value.trim();
+    call({ action: 'list' }).then(function (d) {
+      if (d && d.ok) { try { sessionStorage.setItem('cga_kit_pin', PIN); } catch (x) {} ROWS = d.rows || []; load(); }
+      else { document.getElementById('perr').textContent = (d && d.error) || 'PIN galat hai.'; }
+    }).catch(function () { document.getElementById('perr').textContent = 'Network problem.'; });
+  };
+})();
+</script>
+</body>
+</html>
