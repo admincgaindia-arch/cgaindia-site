@@ -1,6 +1,89 @@
 {
-  "last_updated": "2026-11-18T02:31:15.415Z",
+  "last_updated": "2026-11-19T02:31:11.133Z",
   "days": [
+    {
+      "date": "2026-11-19",
+      "items": [
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "93/2026-Customs (N.T.)",
+          "headline": "Ramayapatnam Andhra Pradesh now a Customs port",
+          "what": "Ramayapatnam, Andhra Pradesh, ko CBIC ne customs port ghoshit kiya hai imports aur exports ke liye. Ab yahan se export aur import allowed hai.",
+          "who": "Importers, exporters aur logistics companies jinhe Andhra Pradesh se maal bhejna ya mangwana hai.",
+          "action": "Ramayapatnam se custom clearance kar sakte hai. Shipping plan accordingly banaen.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/cbic-notifies-ramayapatnam-customs-port-imports-exports.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "Income Tax",
+          "authority": "CBDT",
+          "ref": "",
+          "headline": "Gratuity tax exemption limit FY 2026-27 announced",
+          "what": "Income-tax Act, 2025 ke hisaab se 2026-27 mein gratuity par tax exemption milega, saari eligibility aur calculation nayi labour codes ke hisaab se hogi.",
+          "who": "Woh salaried log jinhe 2026-27 mein gratuity milni hai.",
+          "action": "HR aur salary team eligibility, calculation aur tax implication check karein. Planning karein naye law ke hisaab se.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/income-tax/gratuity-tax-exemption-2026-27-income-tax-labour-laws.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "GST discounts 1 Nov 2026 se: Section 15(3) & ITC rules",
+          "what": "1 November 2026 se GST mein discount, credit note, ITC reversal par Section 15(3) aur nyi CBIC circulars lagu. Dealer incentives aur credit processing ka naya tareeka hai.",
+          "who": "Dealers, wholesalers, retailers jo discount invoice me dikhate hain.",
+          "action": "Credit notes sahi dalo, ITC reversal & discount policy apni accounting mein verify karo. CBIC circulars padho.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gst-discounts-1-november-2026-section-15-3-credit-notes-itc-reversal-cbic-circulars.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "GSTR-9 & 9C FY 2025-26: Table-wise guide & relaxations",
+          "what": "GSTR-9 aur GSTR-9C ki filing FY 2025-26 ke liye: mandatory aur optional tables, ITC reversal, HSN code reporting aur checklist jaari ki gayi hai.",
+          "who": "All GST registered regular taxpayers jo annual return bharte hain.",
+          "action": "GSTR-9/9C mein sahi table fill karein, ITC reversal aur reconciliation par dhyan dein, updated guide padhein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/gstr-9-gstr-9c-fy-2025-26-table-wise-reporting-relaxations.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "MCA / ROC",
+          "authority": "MCA",
+          "ref": "",
+          "headline": "AOC-4 FY 2025-26: Filing fee relief till 31 Dec 2026",
+          "what": "Company law ke tahat FY 2025-26 ka AOC-4 form file karne par 31 December 2026 tak additional filing fee mein relief diya gaya hai. Statutory deadlines aur penalties bhi jaari hain.",
+          "who": "All companies jinke upar AOC-4 filing ki zimmedari hai.",
+          "action": "AOC-4 timely file karein; additional fee relief ka fayda lene ke liye 31 Dec 2026 se pehle filing karein.",
+          "deadline": "31 Dec 2026",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/company-law/aoc-4-filing-2026-deadline-form-filing-cost-costly-delay.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "MSME & Scheme",
+          "authority": "IMPRI Impact and Policy Research Institute",
+          "ref": "",
+          "headline": "MSME TEAM initiative 2024 launched",
+          "what": "Nayi 'MSME Trade Enablement And Marketing' (MSME TEAM), 2024 initiative jaari hui. Policy ka uddeshya MSMEs ko trade aur marketing mein support karna hai.",
+          "who": "Micro, small and medium enterprises (MSMEs) jo business expansion ya marketing mein interested hain.",
+          "action": "Scheme ki guidelines dekhein aur eligibility ke hisaab se apply kar sakte hain.",
+          "deadline": "",
+          "source_name": "IMPRI Impact and Policy Research Institute",
+          "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdThiQlBmc3Y1UHFsejVQeDRJOUhPWURHbXF0X3hwWFIxSnVudzBMMVo0OVZvMDBNTmhud3U2Q3lOdjNZQzRGZFZzaDMtbXJVVmRxRWdzUWNCQngzYVpxbnE1TkxmS0NnRHRWdWIyZVFzS09VVkFXeG5MSGpRSVNDQkhwckhscWJHOWZfUnNZWHdnRGJORXFzb0JYWXRaa2ZG"
+        }
+      ]
+    },
     {
       "date": "2026-11-18",
       "items": [
@@ -4352,102 +4435,6 @@
           "deadline": "21 Oct 2026",
           "source_name": "taxguru.in",
           "source_url": "https://taxguru.in/income-tax/income-tax-audit-due-date-extended-21-october-2026-relief.html"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-05",
-      "items": [
-        {
-          "jur": "Assam",
-          "cat": "Other",
-          "authority": "Assam Cabinet",
-          "ref": "",
-          "headline": "12% reservation for Agniveers in Assam Police, SDRF, Fire",
-          "what": "Assam Cabinet ne Police, SDRF aur Fire Services mein Agniveers ke liye 12% reservation approve kiya hai.",
-          "who": "Sirf Agniveer scheme ke zariye recruit hone wale candidates.",
-          "action": "Agniveers jo in posts ke liye apply karna chahte hain, reservation ka benefit check karein.",
-          "deadline": "",
-          "source_name": "shop.ssbcrack.com",
-          "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdFdyTGQ0NmdNOXFQUENmbDlESGVMVXU0TkxsNmlUclpNcGlIMlpwXzlpMTctMU5oU0Eyc3FVTmYwZDlQN21DTUFlT2J1WjYwOTRxd19FaFRIdTJCV1QtRjdZOTdkSVEyWE41cTdBZm1xcmp3MWlhNHhJeGpUMGc0WkxfWERLM2VQTXQzZFpNd3puNVloQmxRbW1aVGtLZ2VzTlJTdFIwcXRxQlRhaS1CamJiYjdjSXNiMzQybFB3Q0ZoV2txZnc?oc=5"
-        },
-        {
-          "jur": "Haryana",
-          "cat": "MSME & Scheme",
-          "authority": "Haryana State Government",
-          "ref": "",
-          "headline": "Haryana ne industrial regularisation policy amend ki",
-          "what": "Haryana sarkar ne policy modify ki hai taki industrial areas mein municipal limits ke bahar bhi civic amenities provide ki ja sakein.",
-          "who": "Haryana ke un industrial units par asar jo municipal limits ke bahar hain.",
-          "action": "Industrial units ko nayi policy ki details padhkar compliance ya benefit ka plan banana chahiye.",
-          "deadline": "",
-          "source_name": "Goodreturns",
-          "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYjdXakxCWElIRk1ubThGSUFpZ1gwcnNvaVJQRm5fVlBnRXBZWkJHMUlnVFFmQzZhZ0poU0hYMWhlWWNuUlA5bGUwSmNrUmVUcURwczdvVDY4MjVlWDc3bEdXNzF3ZmUtNUJ4dXdUTnQyYzN2RS1vVXdwOWtyY0swYk1GQVA5TWM0c21RZnZQTFZ1WGRIcndnak52LVRLVnVkbHR2WTNlYzNDU1l6UjJrYTgzWFRGcDBxMEE?oc=5"
-        },
-        {
-          "jur": "Jammu and Kashmir",
-          "cat": "MSME & Scheme",
-          "authority": "Jammu and Kashmir Government",
-          "ref": "",
-          "headline": "J&K released Compressed Bio-Gas Policy 2026",
-          "what": "Jammu and Kashmir ne waste se fuel banane ke liye CBG policy notify ki hai.",
-          "who": "Waste management, renewable energy aur gas production sector ke stakeholders ke liye.",
-          "action": "Interested businesses aur investors CBG policy ke rules aur incentives ko study karein.",
-          "deadline": "",
-          "source_name": "The Tribune",
-          "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOV3RPSHhKZFV4a1lLOGR0RHBnWEUyVDlZdUVibWNwMEV6WTJHZ3ItQkhpZXcwdnBtUG5ZU2ZCdmFRaEVuTHNRdkR5VGl1VEZObURPME1PdDc4QldpbWJpdkFtQWtKV2dxZGFIZl9tQkdldE1XS0xmWGlRa2QwcVQycnEzS3RFU0oyUVFPdE530gGOAUFVX3lxTE5XdE9IeEpkVXhrWUs4ZHREcGdYRTJUOVl1RWJtY3AwRXpZMkdnci1CSGlldzB2cG1QbllTZkJ2YVFoRW5Mc1F2RHlUaXVURk5tRE8wTU90NzhCV2ltYml2QW1Ba0pXZ3FkYUhmX21CR2V0TVdLTGZYaVFrZDBxVDJycTNLdEVTSjJRUU90Tnc?oc=5"
-        },
-        {
-          "jur": "Gujarat",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Gujarat State Government",
-          "ref": "",
-          "headline": "Gujarat: Vehicle scrapping par 50% tax concession",
-          "what": "Gujarat government ne vehicle scrapping scheme mein 50% vehicle tax concession approve kiya hai.",
-          "who": "Gujarat ke vehicle owners jo apni purani gaadi scrap karte hain.",
-          "action": "Vehicle scrap karte waqt concession ke liye scheme ki eligibility conditions check karein.",
-          "deadline": "",
-          "source_name": "economictimes.com",
-          "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSUE0cTNHNnAyeHZIZ3ZNNHJzOHpWZmNHNEZxNGlqcFRhQ2JWWkZ0aUlBVWNFZTB6MXBIMXR1eEw4dlJ3LThFY3BkcGFnWHFMNG1sbko0Z194VGZOckg3SXM3RGY1VlVTTjJ3V2NRQzJ0ODNCdTlzQnljM1MtWERGYzZPcC13MS1oUnZnd21zelRyMTB1RDhleXdhMGpmVWdEZ0ZYQm9YeEQyMGNpYkI0RTlYWVM2Mk1zSkpTY1dheWFaRlHSAcMBQVVfeXFMTklBNHEzRzZwMnh2SGd2TTRyczh6VmZjRzRGcTRpanBUYUNiVlpGdGlJQVVjRWUwejFwSDF0dXhMOHZSdy04RWNwZHBhZ1hxTDRtbG5KNGdfeFRmTnJIN0lzN0RmNVZVU04yd1djUUMydDgzQnU5c0J5YzNTLVhERmM2T3AtdzEtaFJ2Z3dtc3pUcjEwdUQ4ZXl3YTBqZlVnRGdGWEJvWHhEMjBjaWJCNEU5WFlTNjJNc0pKU2NXYXlhWkZR?oc=5"
-        },
-        {
-          "jur": "Bihar",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Bihar State Government",
-          "ref": "",
-          "headline": "Bihar ne regional airports par ATF VAT zero kiya",
-          "what": "Bihar sarkar ne regional airports par Aviation Turbine Fuel (ATF) par VAT ko zero kar diya hai UDAN scheme ke andar connectivity badhane ke liye.",
-          "who": "Airlines jo Bihar ke regional airports se operate karti hain.",
-          "action": "UDAN scheme ya regional airport se udan chalane wale airlines VAT exemption ka benefit le sakte hain.",
-          "deadline": "",
-          "source_name": "Swarajya",
-          "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeDVhNzYwamZNLUUyT21nSGwxNWdpY2Q3clpRZE90R1dxQS11QmNrZ0J5M1kwYUhBQVIxMWJqQ0ZmUC0wMC1PbXE3MFFvVE9OZEE4S1dTN1pVY1pIWEt1b2tXN2tISzV5YXlKLTJPZTlZMUN2Q0V0UmJndEpkUUtNWG96MmJ3REYzcjZQQ3RpOXoxejFxa2pVQk9VZG5RaEZFRFduTmxsamtOemQ1RE1fNXd6dmFjWTBLYWhPMjF30gHOAUFVX3lxTFBPWGNKTnJoUC13TENfWk5tcE1tZUxRa3cwYnlXb180Z2ZqdllwV3hBMm1hdkdPX3p6VEVTT1dVM0ltMWRFdHNqWlM1cE5LZW9NQ2VRZXhYdk96dkVLa0Q0eVZmMGlRQURMYU5MUFdZXzlIam9TTzh1bDBRa1BxcWdNRTRnQWZZQmdHMFpoX2lPOTJvNGZNeFdENEI3cE1sa2FBWl9RejNhU3BTTjFOUHRFTlRaUmE3bnpNUEVOSE5VaV9pbTYxWXdZMGhQaUtB?oc=5"
-        },
-        {
-          "jur": "Gujarat",
-          "cat": "Other",
-          "authority": "Gujarat State Government",
-          "ref": "",
-          "headline": "Gujarat UCC Bill ko President ka assent, lagu tab jab state notify karega",
-          "what": "Gujarat Uniform Civil Code (UCC) Bill ko President ki manzoori mil gayi hai, implementation state notification ke baad hoga.",
-          "who": "Gujarat ke sabhi nagrik, family law changes honge jab notification aaye.",
-          "action": "Legal, business aur HR teams UCC notification ka intezar karein, implementation ke baad hi rules applicable honge.",
-          "deadline": "",
-          "source_name": "newindianexpress.com",
-          "source_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOWEJyb2hpOURlN1JvY0lzRUJVeV8wc2dOMUpoRmgxZHoycUl2dGJHYndZLWJkT3hGenROOVFpOGFUeVVjSXRwX2FzWUtZZmZyRlFkNF9BQ2NUblppOE5QSjBsOG9QT1B4bGxOaEdBMEZhUVlPeWZoS0xHWTk3eTZMaExQcWZNcENSYzE4elpQMjcydmhQTXdtcGhqZ1lxVklubElESVpJZUhJY2pWbWJFZEQ5TldqenVHelFrLUp5YWJZWTNlaGd2WktmWFJHU3BrQlB3cldJdG5HYVB0bzE3VXIyd9IB8AFBVV95cUxOUHlpSzJtclY1djlUaXprdXV4My1RdGxoLUVNUm93ZXNTT3g1cFFiVTMtcE5XcXYtcW03clk5Z1VFcDhna1hQVFRUVkY4dG13ZVFxMzROeGtZaWoySmlDMS0tRzcyRFRJRFc2SzBXd2RQM3pJazBkSjc5Slc4YTdBU1NYamctRW8zODNYN0VFRkxsM3FYcE5kaTB6bVdCVlJ0ZTF4b3dQRm5FZFp6X3JKUnJHQkNtYUZrVUZTbUxPRHZaNjlZMk11S2xwRjVHOFFMRi0xTDgzS2tpUTQtRml2ekZTUkI0WEFwMldjdkJlelI?oc=5"
-        },
-        {
-          "jur": "Central",
-          "cat": "GST",
-          "authority": "GST Council",
-          "ref": "",
-          "headline": "GST Council 7 Oct ko refunds aur registration par focus karega",
-          "what": "GST Council ki meeting 7 October ko hai jisme refunds aur GST registration reforms cover honge.",
-          "who": "Sabhi taxpayers aur e-commerce sellers jinhe GST registration/exemption chahiye ya refund claim process me interest hai.",
-          "action": "Taxpayers latest council decisions ki updates follow karein, registration aur refund process par impact ho sakta hai.",
-          "deadline": "",
-          "source_name": "Kalkine India",
-          "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOLVRUWnhzcEtNeGE3ZkU1eXg5b19uZE14UldseVN1TkoySFVBZFR3N1BUVmdSdEd3Vl90b2pQWkQxVTlIbTlfUG8ySXNMRExwLV9nOXd1TXA1ZWo2clhPdDRST0htQjU3NnFBMEViSnc4QmhqeGF6ODE4bW5aaFlkaDgtTlFvMXlhZlVLMGZDSGt5bEUwa3QzOXh5UWJaVGRmRktiOFhKcXVZc3FIREt5amZNdWN5dXluczctRVRLTnVfalU1UjA2OXRsWUhBNFZxTzA3MEU3dFRYekRPMk5yUQ?oc=5"
         }
       ]
     }
