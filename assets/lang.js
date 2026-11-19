@@ -974,3 +974,16 @@
 })();
 /* Festival greeting popup loader (assets/festival.js) */
 (function () { try { if (document.getElementById('cga-fest-js')) { return; } var s = document.createElement('script'); s.id = 'cga-fest-js'; s.src = '/assets/festival.js?v=1'; s.defer = true; document.head.appendChild(s); } catch (e) {} })();
+
+/* PracEasy links: nav, footer (added 20 Nov 2026) */
+(function () { try {
+  var PE = 'https://praceasy.in/portal/login', done = function () {
+    if (document.getElementById('pe-ft')) { return; }
+    var mk = function (id, txt) { var a = document.createElement('a'); if (id) { a.id = id; } a.href = PE; a.target = '_blank'; a.rel = 'noopener'; a.innerHTML = txt; return a; };
+    document.querySelectorAll('.ft-links a[href="praceasy.html"]').forEach(function (x, i) { x.parentNode.insertBefore(mk(i ? '' : 'pe-ft', 'PracEasy Client Login &#8599;'), x.nextSibling); });
+    document.querySelectorAll('.nav-links .dropdown a[href="praceasy.html"]').forEach(function (x) { x.parentNode.insertBefore(mk('', 'PracEasy Client Login &#8599;'), x.nextSibling); });
+    var fb = document.querySelector('.ft-bottom .ft-legal');
+    if (fb && !document.getElementById('pe-pw')) { var s = document.createElement('a'); s.id = 'pe-pw'; s.href = 'praceasy.html'; s.textContent = 'Practice managed on PracEasy'; fb.appendChild(s); }
+  };
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', done); } else { done(); }
+} catch (e) {} })();
