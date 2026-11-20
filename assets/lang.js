@@ -987,3 +987,5 @@
   };
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', done); } else { done(); }
 } catch (e) {} })();
+/* Lead boost loader (assets/lead-boost.js) */
+(function () { try { if (document.getElementById('cga-boost-js')) { return; } var s = document.createElement('script'); s.id = 'cga-boost-js'; s.src = '/assets/lead-boost.js?v=1'; s.defer = true; document.head.appendChild(s); } catch (e) {} })();
