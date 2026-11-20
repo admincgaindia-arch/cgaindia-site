@@ -351,8 +351,9 @@
     function get(k) { try { return LS.getItem(k); } catch (e) { return null; } }
     function set(k, v) { try { LS.setItem(k, v); } catch (e) {} }
     if (get('cga_cpn')) { return; }
+    var force = /[?&]coupon=1/.test(location.search);
     var x = Number(get('cga_cpn_x') || 0);
-    if (x && Date.now() - x < 7 * 86400000) { return; }
+    if (!force && x && Date.now() - x < 7 * 86400000) { return; }
     var shown = false, busy = 0;
     document.addEventListener('focusin', function (e) { var t = e.target; if (t && /INPUT|TEXTAREA|SELECT/.test(t.tagName) && !(t.closest && t.closest('.cpn-ov'))) { busy = Date.now(); } });
     document.addEventListener('submit', function (e) { var f = e.target; if (f && !(f.closest && f.closest('.cpn-ov'))) { set('cga_cpn_x', String(Date.now())); shown = true; } }, true);
@@ -415,22 +416,25 @@
           .then(function (d) {
             if (!d || !d.ok || !d.code) { throw new Error('x'); }
             var code = String(d.code).replace(/[^A-Z0-9]/g, '');
-            set('cga_cpn', JSON.stringify({ code: code, exp: d.expires_on }));
+            set('cga_cpn', JSON.stringify({ code: code, exp: d.expires_on, m: m }));
             try { if (window.gtag) { window.gtag('event', 'generate_lead', { method: 'coupon' }); } } catch (x) {}
             var wa = 'https://wa.me/919996647888?text=' + encodeURIComponent('Namaste CGA, mera coupon code ' + code + ' hai. Mujhe is service ke liye madad chahiye: ');
             ov.querySelector('.cpn-body').innerHTML = '<p><b>Badhai ho!</b> Aapka coupon taiyaar hai' + (d.isNew === false ? ' (is number par pehle se bana hua)' : '') + ':</p>'
               + '<div class="cpn-code"><b>' + code + '</b><button type="button" class="cpn-cp">Copy</button></div>'
-              + '<p style="font-size:.85rem;color:#46626f">Valid: ' + fmt(d.expires_on) + ' tak. Order karte waqt ye code WhatsApp ya call par bataiye, discount bill mein lag jayega.</p>'
+              + '<p style="font-size:.85rem;color:#46626f">Valid: ' + fmt(d.expires_on) + ' tak. Online payment ke form mein ye code daaliye, ya WhatsApp / call par order karte waqt bataiye.</p>'
+              + '<button type="button" class="cpn-btn" data-rw style="background:#e8a317;color:#00293d">3 dost ko share kariye, coupon 15% banaiye</button>'
               + '<a class="cpn-btn wa" href="' + wa + '" target="_blank" rel="noopener">WhatsApp par coupon use kariye</a>'
               + '<a class="cpn-btn ln" href="services.html">Services aur rates dekhiye</a>'
               + '<p class="cpn-t">' + TERMS + '</p>';
+            var rw = ov.querySelector('[data-rw]');
+            if (rw) { rw.addEventListener('click', function () { close(ov); if (window.CGARewards) { window.CGARewards.open(); } }); }
             var cp = ov.querySelector('.cpn-cp');
             cp.addEventListener('click', function () { try { navigator.clipboard.writeText(code); cp.textContent = 'Copied'; } catch (x) { cp.textContent = code; } });
           })
           .catch(function () { btn.disabled = false; btn.textContent = 'Coupon paiye'; err.innerHTML = 'Abhi coupon nahi ban paaya. <a href="https://wa.me/919996647888?text=' + encodeURIComponent('Namaste CGA, mujhe website wala 10% welcome coupon chahiye.') + '" target="_blank" rel="noopener">WhatsApp par maangiye</a>.'; err.style.display = 'block'; });
       });
     }
-    setTimeout(show, 25000);
+    setTimeout(show, force ? 800 : 25000);
     window.addEventListener('scroll', function onS() {
       var h = document.documentElement.scrollHeight - innerHeight;
       if (h > 0 && scrollY / h > 0.5) { window.removeEventListener('scroll', onS); show(); }
@@ -989,3 +993,5 @@
 } catch (e) {} })();
 /* Lead boost loader (assets/lead-boost.js) */
 (function () { try { if (document.getElementById('cga-boost-js')) { return; } var s = document.createElement('script'); s.id = 'cga-boost-js'; s.src = '/assets/lead-boost.js?v=1'; s.defer = true; document.head.appendChild(s); } catch (e) {} })();
+/* Refer & Earn loader (assets/cga-rewards.js) */
+(function () { try { if (document.getElementById('cga-rw-js')) { return; } var s = document.createElement('script'); s.id = 'cga-rw-js'; s.src = '/assets/cga-rewards.js?v=1'; s.defer = true; document.head.appendChild(s); } catch (e) {} })();
