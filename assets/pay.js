@@ -94,6 +94,8 @@
     opts = opts || {};
     var u = saved();
     var amt = opts.amount ? String(opts.amount) : '';
+    /* Tier card payments carry the card's published advance; the client may pay more, not less. Invoice / quote payments stay open. */
+    var minAmt = (opts.tier && !opts.invoice) ? Math.round(Number(String(opts.amount || '').replace(/[^0-9.]/g, ''))) || 0 : 0;
     var ov = el('div', { 'class': 'cga-pm', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Online payment' });
     var box = el('div', { 'class': 'cga-pm-box' });
     box.innerHTML =
@@ -103,7 +105,7 @@
       '<div class="cga-pm-msg" data-msg></div>' +
       '<form novalidate data-f>' +
       '<label for="cpSvc">Service</label><input id="cpSvc" name="service" value="' + esc(opts.service || '') + '"' + (opts.lockService ? ' readonly' : ' placeholder="Jaise ITR filing, GST return"') + '>' +
-      '<div class="cga-pm-row"><div><label for="cpAmt">Amount (&#8377;)</label><input id="cpAmt" name="amount" inputmode="numeric" value="' + esc(amt) + '" placeholder="Jaise 5900"></div>' +
+      '<div class="cga-pm-row"><div><label for="cpAmt">Amount (&#8377;)</label><input id="cpAmt" name="amount" inputmode="numeric" value="' + esc(amt) + '" placeholder="Jaise 5900"' + (minAmt ? ' min="' + minAmt + '"' : '') + '>' + (minAmt ? '<span style="display:block;font-size:11px;color:#5b6b75;margin-top:3px">Kam se kam &#8377;' + fmt(minAmt) + ' (card par likhi advance fee)</span>' : '') + '</div>' +
       '<div><label for="cpInv">Invoice / Ref no.</label><input id="cpInv" name="invoice" value="' + esc(opts.invoice || '') + '" placeholder="Optional"></div></div>' +
       '<label for="cpName">Aapka naam / firm</label><input id="cpName" name="name" autocomplete="name" value="' + esc(u.name || '') + '">' +
       '<div class="cga-pm-row"><div><label for="cpMob">Mobile</label><input id="cpMob" name="mobile" type="tel" inputmode="numeric" autocomplete="tel" value="' + esc(u.mobile || '') + '"></div>' +
@@ -146,6 +148,7 @@
       };
       var problems = [];
       if (!(d.amount >= 1)) { problems.push('amount'); }
+      if (minAmt && d.amount < minAmt) { problems.push('amount kam se kam \u20B9' + fmt(minAmt)); }
       if (d.name.length < 2) { problems.push('naam'); }
       if (d.mobile.replace(/[^0-9]/g, '').length < 10) { problems.push('10 digit mobile'); }
       if (d.gstin && d.gstin.length !== 15) { problems.push('sahi 15-digit GSTIN'); }
