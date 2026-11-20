@@ -121,9 +121,9 @@ function cgaStandardTerms(o) {
 // ---------------- CGA compliance engine ----------------
 // p: client profile (amounts in Rs lakh). Returns applicable compliances, audits, certifications and a 12-month calendar.
 var CGA_REPS = [
-  { name: 'Neeraj Jain', qual: 'Advocate and Chartered Accountant', reg: '' },
-  { name: 'CA Nikhil Tanwar', qual: 'Chartered Accountant in practice', reg: '' },
-  { name: 'CA Bhagesh Jain', qual: 'Chartered Accountant in practice', reg: '' }
+  { name: 'Neeraj Jain', qual: 'Founder & CEO, CGA' },
+  { name: 'CA Nikhil Tanwar', qual: 'Associated CA, Partner of CGA' },
+  { name: 'CA Bhagesh Jain', qual: 'Associated CA, Partner of CGA' }
 ];
 function cgaKind(c) { c = String(c || '').toLowerCase(); return /llp/.test(c) ? 'llp' : /section 8/.test(c) ? 'sec8' : /one person|opc/.test(c) ? 'opc' : /public/.test(c) ? 'pubco' : /company|pvt|private/.test(c) ? 'co' : /partner/.test(c) ? 'firm' : /trust/.test(c) ? 'trust' : /society/.test(c) ? 'soc' : /huf/.test(c) ? 'huf' : /propriet/.test(c) ? 'prop' : 'ind'; }
 function cgaCompliance(p, todayIso) {
@@ -378,7 +378,7 @@ function renderKit(k, fd, acc) {
   var dAR = '<section class="doc">' + clientHead() + refLine + '<p>To<br>' + CGA.name + '<br>and the professionals named below</p>'
     + '<h1>Letter of Authority for Representation</h1><div class="st">General authority to appear and act before tax, regulatory and appellate authorities</div>'
     + cl('1.', (isInd ? 'I' : 'We') + ', ' + b(name, 26) + (k.pan ? ' (PAN ' + e(k.pan) + ')' : '') + (k.gstin ? ' (GSTIN ' + e(k.gstin) + ')' : '') + ', hereby appoint and authorise each of the following professionals associated with Canjain Global Advisors Private Limited (&ldquo;CGA&rdquo;), severally, to act as ' + (isInd ? 'my' : 'our') + ' authorised representative:'
-      + table(['Name', 'Qualification', 'Enrolment / membership no.'], reps.map(function (r) { return [e(r.name), e(r.qual), r.reg ? e(r.reg) : '&nbsp;']; }))
+      + table(['Name', 'Designation'], reps.map(function (r) { return [e(r.name), e(r.qual)]; }))
       + 'together with any other advocate, chartered accountant, company secretary or cost accountant associated with CGA whom CGA may designate by written intimation to ' + (isInd ? 'me' : 'us') + ', each being a person entitled to so act under the law concerned.')
     + cl('2.', 'The authority extends to appearing, attending, representing and acting on ' + (isInd ? 'my' : 'our') + ' behalf before every officer, authority, appellate authority and tribunal under (a) the Central Goods and Services Tax Act, 2017, the State and Union Territory GST Acts and the Integrated GST Act, 2017, including section 116 of the CGST Act and the GST Appellate Tribunal; (b) the Income-tax Act, 2025, including section 515 thereof, and the Income-tax Act, 1961 for earlier years, including faceless proceedings, the Commissioner (Appeals), the Dispute Resolution Panel and the Income Tax Appellate Tribunal; (c) the Customs Act, 1962 and the Foreign Trade (Development and Regulation) Act, 1992; (d) the Companies Act, 2013 and the Limited Liability Partnership Act, 2008, in matters before the Registrar and the Regional Director; (e) the labour and social security laws; and (f) any other law under which representation by such a professional is permitted.')
     + cl('3.', 'Within that scope the representatives may, in respect of any assessment, scrutiny, audit, inquiry, verification, notice, summons, refund, rectification, appeal, revision, stay, settlement or compounding, for any period whether past, pending or future: file replies, submissions, applications, refund claims, appeals and other documents; receive notices and orders; inspect records and obtain copies; furnish documents and explanations; and do all acts incidental thereto.')
