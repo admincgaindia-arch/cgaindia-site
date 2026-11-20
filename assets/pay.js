@@ -88,6 +88,7 @@
     box.appendChild(wrap);
   }
 
+  function myCoupon() { try { var c = JSON.parse(window.localStorage.getItem('cga_cpn') || 'null'); return c && c.code ? c.code : ''; } catch (e) { return ''; } }
   /* opts: { service, tier, amount, invoice, lockService } */
   function openPay(opts) {
     addCss();
@@ -107,6 +108,7 @@
       '<label for="cpSvc">Service</label><input id="cpSvc" name="service" value="' + esc(opts.service || '') + '"' + (opts.lockService ? ' readonly' : ' placeholder="Jaise ITR filing, GST return"') + '>' +
       '<div class="cga-pm-row"><div><label for="cpAmt">Amount (&#8377;)</label><input id="cpAmt" name="amount" inputmode="numeric" value="' + esc(amt) + '" placeholder="Jaise 5900"' + (minAmt ? ' min="' + minAmt + '"' : '') + '>' + (minAmt ? '<span style="display:block;font-size:11px;color:#5b6b75;margin-top:3px">Kam se kam &#8377;' + fmt(minAmt) + ' (card par likhi advance fee)</span>' : '') + '</div>' +
       '<div><label for="cpInv">Invoice / Ref no.</label><input id="cpInv" name="invoice" value="' + esc(opts.invoice || '') + '" placeholder="Optional"></div></div>' +
+      '<label for="cpCpn">Coupon code <span style="font-weight:400">(optional)</span></label><input id="cpCpn" name="coupon" maxlength="12" value="' + esc(myCoupon()) + '" placeholder="Jaise CGA7K2QX" style="text-transform:uppercase">' +
       '<label for="cpName">Aapka naam / firm</label><input id="cpName" name="name" autocomplete="name" value="' + esc(u.name || '') + '">' +
       '<div class="cga-pm-row"><div><label for="cpMob">Mobile</label><input id="cpMob" name="mobile" type="tel" inputmode="numeric" autocomplete="tel" value="' + esc(u.mobile || '') + '"></div>' +
       '<div><label for="cpMail">Email</label><input id="cpMail" name="email" type="email" autocomplete="email" value="' + esc(u.email || '') + '"></div></div>' +
@@ -156,6 +158,9 @@
       if (d.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) { problems.push('sahi email'); }
       if (problems.length) { err.textContent = 'Kripya ' + problems.join(', ') + ' bhariye.'; err.style.display = 'block'; return; }
       err.style.display = 'none';
+      d.base_amount = d.amount;
+      d.coupon = v('coupon').toUpperCase().replace(/[^A-Z0-9]/g, '');
+      d.ref = window.CGA_REF ? window.CGA_REF() : '';
       save(d);
       go.disabled = true;
       go.textContent = 'Ek second...';
@@ -167,7 +172,7 @@
         fallbackButton(box);
       };
 
-      fetch(ORDER_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) })
+      var placeOrder = function () { fetch(ORDER_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) })
         .then(function (r) { return r.json(); })
         .then(function (o) {
           if (!o || !o.live || !o.order_id || !o.key_id) { fail(); return; }
@@ -175,7 +180,7 @@
             var rzp = new window.Razorpay({
               key: o.key_id,
               order_id: o.order_id,
-              amount: d.amount * 100,
+              amount: Math.round(Number(o.amount || d.amount)) * 100,
               currency: 'INR',
               name: 'Canjain Global Advisors',
               description: (d.service + (d.tier ? ' (' + d.tier + ')' : '')).slice(0, 250),
@@ -202,7 +207,18 @@
             rzp.open();
           });
         })
-        .catch(function () { fail(); });
+        .catch(function () { fail(); }); };
+
+      /* Coupon: the server recomputes the discount; here we only show it before checkout. */
+      if (!d.coupon) { placeOrder(); return; }
+      fetch('https://cga.app.n8n.cloud/webhook/cga-coupon-x', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'check', code: d.coupon, amount: d.base_amount, mobile: d.mobile.replace(/[^0-9]/g, '').slice(-10) }) })
+        .then(function (r) { return r.json(); })
+        .then(function (c) {
+          if (c && c.ok && c.final >= 1) { d.amount = c.final; say('ok', esc(c.msg) + ' Ab pay karna hai: <b>&#8377;' + fmt(c.final) + '</b> (&#8377;' + fmt(d.base_amount) + ' ki jagah).'); }
+          else { say('bad', esc((c && c.msg) || 'Coupon nahi laga.') + ' Payment &#8377;' + fmt(d.base_amount) + ' ka hoga.'); d.coupon = ''; }
+          placeOrder();
+        })
+        .catch(function () { d.coupon = ''; placeOrder(); });
     });
   }
 
