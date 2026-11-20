@@ -121,9 +121,9 @@ function cgaStandardTerms(o) {
 // ---------------- CGA compliance engine ----------------
 // p: client profile (amounts in Rs lakh). Returns applicable compliances, audits, certifications and a 12-month calendar.
 var CGA_REPS = [
-  { name: 'Neeraj Jain', qual: 'Founder & CEO, CGA' },
-  { name: 'CA Nikhil Tanwar', qual: 'Associated CA, Partner of CGA' },
-  { name: 'CA Bhagesh Jain', qual: 'Associated CA, Partner of CGA' }
+  { name: 'Neeraj Jain', qual: 'Founder & CEO, Canjain Global Advisors Pvt Ltd (CGA)' },
+  { name: 'CA Nikhil Tanwar', qual: 'Associated Chartered Accountant, Direct Tax, CGA' },
+  { name: 'CA Bhagesh Jain', qual: 'Associated Chartered Accountant, Audit & Assurance, CGA' }
 ];
 function cgaKind(c) { c = String(c || '').toLowerCase(); return /llp/.test(c) ? 'llp' : /section 8/.test(c) ? 'sec8' : /one person|opc/.test(c) ? 'opc' : /public/.test(c) ? 'pubco' : /company|pvt|private/.test(c) ? 'co' : /partner/.test(c) ? 'firm' : /trust/.test(c) ? 'trust' : /society/.test(c) ? 'soc' : /huf/.test(c) ? 'huf' : /propriet/.test(c) ? 'prop' : 'ind'; }
 function cgaCompliance(p, todayIso) {
