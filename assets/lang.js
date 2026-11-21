@@ -46,6 +46,7 @@
     ]],
     ['co', 'Company &amp; Startup', 'Registration se compliance tak', [
       ['pvt-ltd-incorporation.html', 'Pvt Ltd Registration', 'SPICe+, DIN, PAN, TAN'],
+      ['nri-company-registration.html', 'NRI / OCI Company Setup', 'Videsh se India mein company'],
       ['llp-partnership.html', 'LLP &amp; Partnership', 'Deed, LLP agreement'],
       ['business-registrations.html', 'Udyam, IEC, DSC', 'Shop Act, professional tax'],
       ['roc-annual-compliance.html', 'ROC Annual Compliance', 'AOC-4, MGT-7, DIR-3 KYC'],
@@ -245,6 +246,7 @@
       'income-tax-notice.html': 'income tax notice 143 148 scrutiny demand',
       'cheque-bounce.html': 'cheque bounce 138',
       'pvt-ltd-incorporation.html': 'company registration incorporation private limited',
+      'nri-company-registration.html': 'nri oci foreign national videsh usa uk canada uae company registration india apostille fdi fc-gpr subsidiary',
       'gst-registration.html': 'gst number gstin registration',
       'itr-filing.html': 'itr income tax return filing',
       'trademark-ip.html': 'trademark brand logo copyright',
@@ -988,6 +990,16 @@
     document.querySelectorAll('.nav-links .dropdown a[href="praceasy.html"]').forEach(function (x) { x.parentNode.insertBefore(mk('', 'PracEasy Client Login &#8599;'), x.nextSibling); });
     var fb = document.querySelector('.ft-bottom .ft-legal');
     if (fb && !document.getElementById('pe-pw')) { var s = document.createElement('a'); s.id = 'pe-pw'; s.href = 'praceasy.html'; s.textContent = 'Practice managed on PracEasy'; fb.appendChild(s); }
+  };
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', done); } else { done(); }
+} catch (e) {} })();
+/* NRI / OCI company page link in the static nav mega menu and footer (added 21 Nov 2026) */
+(function () { try {
+  var done = function () {
+    if (document.getElementById('nri-nav') || /nri-company-registration\.html$/.test(location.pathname) && document.querySelector('a.nri-lk')) { return; }
+    var mk = function (id) { var a = document.createElement('a'); if (id) { a.id = id; } a.className = 'nri-lk'; a.href = '/nri-company-registration.html'; a.textContent = 'NRI / OCI Company Setup'; return a; };
+    document.querySelectorAll('.nav-links .mega-col a[href$="pvt-ltd-incorporation.html"]').forEach(function (x, i) { if (!x.parentNode.querySelector('a.nri-lk')) { x.parentNode.insertBefore(mk(i ? '' : 'nri-nav'), x.nextSibling); } });
+    document.querySelectorAll('.ft-links a[href$="pvt-ltd-incorporation.html"]').forEach(function (x) { if (!x.parentNode.querySelector('a.nri-lk')) { x.parentNode.insertBefore(mk(''), x.nextSibling); } });
   };
   if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', done); } else { done(); }
 } catch (e) {} })();
