@@ -218,6 +218,7 @@
       ['case-laws.html', 'Latest Case Laws', 'Learn', 'judgment itat high court ruling'],
       ['updates.html', 'Daily Tax Updates', 'Learn', 'news circular notification'],
       ['govt-updates.html', 'Govt Updates', 'Learn', 'state central scheme notification'],
+      ['events.html', 'Events & Webinars', 'Learn', 'seminar webinar conference event cpe icai workshop summit'],
       ['bank-finance-news.html', 'Bank & Finance News', 'Learn', 'rbi bank loan news'],
       ['insights.html', 'Insights & Articles', 'Learn', 'blog article guide'],
       ['videos.html', 'Videos', 'Learn', 'youtube video'],
@@ -622,6 +623,12 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount); else mount();
 })();
 
+/* Events & Webinars link next to Govt Updates in the Learn menu and footer (added 22 Nov 2026). Runs before nav polish so it gets an icon. */
+(function () { try {
+  var add = function (sel) { document.querySelectorAll(sel).forEach(function (x) { if (x.parentNode.querySelector('a[href$="events.html"]')) { return; } var a = document.createElement('a'); a.href = '/events.html'; a.textContent = 'Events & Webinars'; x.parentNode.insertBefore(a, x.nextSibling); }); };
+  var go = function () { add('.nav-links .dropdown a[href$="govt-updates.html"]'); add('.ft-links a[href$="govt-updates.html"]'); };
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', go); } else { go(); }
+} catch (e) {} })();
 /* CGA nav polish (15 Nov 2026): The Firm / Founder / Learn menus get an icon and a one-line description per link (two columns on desktop when long); on phones the Services menu becomes five tappable group cards that open one at a time. */
 (function () {
   try {
@@ -649,6 +656,7 @@
       'compliance-calendar.html': 'M4 6h16v15H4zM4 10h16M8 3v4M16 3v4',
       'bank-finance-news.html': 'M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18',
       'govt-updates.html': 'M5 21V4M5 4h12l-2 4 2 4H5',
+      'events.html': 'M4 6h16v15H4zM4 10h16M8 3v5M16 3v5M8 14h3M8 17h6',
       '_': 'M5 12h14M13 6l6 6-6 6'
     };
     var D = {
@@ -670,6 +678,7 @@
       'problems-solutions.html': 'Aam dikkatein, seedha hal',
       'compliance-calendar.html': 'Is mahine ki due dates',
       'bank-finance-news.html': 'Loan, subsidy aur RBI updates',
+      'events.html': 'Seminar, webinar aur CPE events',
       'govt-updates.html': 'Central aur har state ke updates'
     };
     var PI = ['M7 3h8l4 4v14H5V3h2zM9 12h6M9 16h4', I['about.html'], 'M4 20V10M10 20V4M16 20v-8M22 20H2', I['case-laws.html'], I['team.html']];
