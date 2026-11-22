@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-22T04:41:28.947Z",
+ "updated": "2026-11-22T04:52:47.711Z",
  "today": "2026-11-22",
- "count": 24,
+ "count": 25,
  "events": [
   {
    "title": "GST & Indirect Taxes Committee is organising Workshop on GSTR-9 & GSTR-9C",
@@ -19,6 +19,23 @@
    "link": "https://icai.org/committeeevents.shtml",
    "source_name": "ICAI Committee Events",
    "src": "auto"
+  },
+  {
+   "title": "IBSEA Rising Up MSME & Manufacturing Summit 2026",
+   "org": "IBSEA with Maharishi University of Information Technology and Factory Easy",
+   "start": "2026-11-22",
+   "end": "",
+   "time": "11:30 AM - 4:30 PM",
+   "mode": "Offline",
+   "city": "Noida",
+   "topic": "Startup & MSME",
+   "aud": "Business",
+   "fee": "Free (invitation / registration)",
+   "cpe": "",
+   "about": "Manufacturers, MSME, startup founders aur industry experts (300+) ke saath networking summit, Maharishi University Noida campus mein.",
+   "link": "https://www.ibsea.in",
+   "source_name": "IBSEA with Maharishi University of Information Technology an",
+   "src": "submit"
   },
   {
    "title": "Webinar on \"From Practice to Institution: A Practical Blueprint to Scale Your CA Firm\"",
