@@ -1,6 +1,141 @@
 {
-  "last_updated": "2026-11-22T02:31:10.771Z",
+  "last_updated": "2026-11-23T02:31:22.616Z",
   "days": [
+    {
+      "date": "2026-11-23",
+      "items": [
+        {
+          "jur": "Himachal Pradesh",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Himachal Pradesh",
+          "ref": "",
+          "headline": "Cement par naya clinker cess, price badhega",
+          "what": "Himachal Pradesh sarkar ne cement clinker par naya cess lagaya hai. Is se cement ki keemat aur badhne wali hai.",
+          "who": "Cement manufacturers aur buyers par asar padega.",
+          "action": "Naye cess ka hisaab lagakar supply ke rates decide karo.",
+          "deadline": "",
+          "source_name": "The Tribune",
+          "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTjRtLVE4U3dWSElabDVBZ1NMV0dWczZjY3I1dkU1dDFIT3c4cGpMLWdIY2R3d2JSeUIzZHZIMHJ2SnE5QXgxMGp1VV84ZlpFMVQzM3ZPSk5OYzdPMFV0UFd4aWcyUVlkZ0NTUFVxSGFXRVE3ZGZwVER1OXpXYThSd3BwT3lxYlhlXzF0ZEMtMHpkSDYzSUhLV01vbjdqU1ZFUDRuRkpKdWZ1Nnk2REl2d01fR0RlTTN6Z2RjNmpDVDRIazZlcXVSanV30gHKAUFVX3lxTE9ONG0tUThTd1ZISVpsNUFnU0xXR1ZzNmNjcjV2RTV0MUhPdzhwakwtZ0hjZHd3YlJ5QjNkdkgwcnZKcTlBeDEwanVVXzhmWkUxVDMzdk9KTk5jN08wVXRQV3hpZzJRWWRnQ1NQVXFIYVdFUTdkZnBURHU5eldhOFJ3cHBPeXFiWGVfMXRkQy0wemRINjNJSEtXTW9uN2pTVkVQNG5GSkp1ZnU2eTZESXZ3TV9HRGVNM3pnZGM2akNUNEhrNmVxdVJqdXc?oc=5"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "CBIC",
+          "ref": "260/06/2026-GST",
+          "headline": "ISD Credit eligibility par CBIC ka naya circular",
+          "what": "CBIC Circular 260/06/2026-GST ne ISD (Input Service Distributor) credit eligibility, recipient ki zimmedari, reversal, refund aur compliance ki clarity di hai. April 2025 se lagu.",
+          "who": "ISD se credit lene wale GST taxpayers par lagu.",
+          "action": "ISD credit, reversals aur refunds CBIC guidelines ke hisaab se plan karo.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/isd-credit-gst-recipients-itc-eligibility-reversals-cbic-circular-260-2026.html"
+        },
+        {
+          "jur": "Central",
+          "cat": "GST",
+          "authority": "CBIC",
+          "ref": "37/2026-Customs",
+          "headline": "Natural Diamond imports par Customs & IGST exemption DIA scheme mein",
+          "what": "Notification 37/2026-Customs ke tahat DIA Scheme mein eligible natural cut aur polished diamond imports par kuch customs duty aur IGST se exemption di gayi hai.",
+          "who": "DIA Scheme me covered diamond importers, exporters aur dealers.",
+          "action": "Eligibility check karen aur agar scheme mein covered hain to notification ka benefit uthayein.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/customs-duty-igst-exemption-natural-diamond-imports-dia-scheme.html"
+        },
+        {
+          "jur": "Telangana",
+          "cat": "GST",
+          "authority": "Telangana AAR",
+          "ref": "",
+          "headline": "Maintenance charges ₹7,500 ke upar poore amount par 18% GST",
+          "what": "Telangana AAR ne clarify kiya hai: Agar maintenance charges ₹7,500/month se zyada hain, to poore amount par 18% GST lagega, sirf excess part par nahi.",
+          "who": "Residential societies, housing complexes ke members aur GST registered maintenance agencies.",
+          "action": "GST ka calculation poore maintenance amount par karo jab threshold cross ho.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/goods-and-service-tax/telangana-aar-clarifies-18-percent-gst-entire-maintenance-charges-exceeding-rs-7-500.html"
+        },
+        {
+          "jur": "Odisha",
+          "cat": "MSME & Scheme",
+          "authority": "Odisha",
+          "ref": "",
+          "headline": "Women Entrepreneurship Platform launch aur nayi MSME facilities Odisha mein",
+          "what": "Odisha sarkar ne Women Entrepreneurship Platform shuru ki aur MSME facilities launch ki hain business badhava ke liye.",
+          "who": "Odisha ki women entrepreneurs, MSME units ke promoters.",
+          "action": "Nayi platform aur facilities ka upyog business start ya expand karne ke liye karo.",
+          "deadline": "",
+          "source_name": "GK Today",
+          "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSU1GaW5tVUFQbXRodFJsTVNreGFybWpES19sUUs2X2NoMnNTZE5Oa0RRXzZ3ZmhMOXN4WUJ5SFNQX1F2YXdyWkRiNzhPUVgwMFRJZS1ZUTI2RFFIRWlQUEd2eVl0TkE2RHBaOEFRdzRvTV9iQjItQnh5VHU0ZWdVZ3YwV1JmYmpqNjl5N213VlFkckVubjBtTw?oc=5"
+        },
+        {
+          "jur": "Delhi",
+          "cat": "Other",
+          "authority": "Delhi",
+          "ref": "",
+          "headline": "Delhi mein commercial vehicles par environmental compensation charge badha",
+          "what": "Delhi sarkar ne naya notification jaari kiya hai - ab commercial vehicles ko enter karne par higher environmental compensation charge dena padega.",
+          "who": "All commercial vehicle owners / operators Delhi mein business karte hain.",
+          "action": "Enhanced charge ki calculation karen aur Delhi entry ke liye extra payment plan karen.",
+          "deadline": "",
+          "source_name": "ET Auto",
+          "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOdGhaX201RTJzRkNGdzBpRGRKZU5xVEJXRGFPdjRobjBuenZIdHN2S1NFMmlMU2Vlamd6bl8zdmF2RVNVd3hiNEhLb3hFS2IwWkN6cEo2ZEw3S2E2X2xUYmd4c09KVVprLURjLURaN0puT2VMUVpWWmEwT3BhOGhLMUtDTlFzeC1GdjY4cUdzV1N2T1FVcmdrYlB6alBoXzBxd3V0akVWMWROZjhLSXZHdURZMnJWMkVBa0xiNVpYYzJuSGpub1p2RlZqeHVlNXlBYmVJSkxzNEpBSVNQZVVoR2h1MWpZUWhYWWJ3Tl9kLWNfVmUxQXdZTDc4REZ0VnB30gH7AUFVX3lxTE92alBFSTQ5c0kzYWlkbjB6Q1BvWEZzTkpyazFtZHU4cHJLQmJXaTlnR0JqRnd1YzF4SnRTdE4wX0czMk5tTEFsM0NqMmtoUjNpeHdfQ3dLTFlRM0dxYTJhX3RwZm1Ednd5Yk5YTVAybTE1OVJuS0NiaWd6YVg4VWJ0eUN3V3hFb25OZExlVXBfb05JdW55Q0dHR2NSX1VMY3M5RjZhS2Z0YkZYcXUzdjI1Mkl0a0d4NkJEVjJOR0FfNUwzRk1UWjRFd3plb1UxNm50RW1WYzg0cGJ1dnlvRDI4cGo4aGY5NTZQeXd1Q2h5WWVOVWx5T0YyRF9B?oc=5"
+        },
+        {
+          "jur": "Bihar",
+          "cat": "MSME & Scheme",
+          "authority": "Bihar Cabinet",
+          "ref": "",
+          "headline": "Bihar Cabinet ne nayi MSME policy pass ki",
+          "what": "Bihar Cabinet ne MSME policy and power distribution investment ko approve kiya hai. Is se state mein business environment improve hoga.",
+          "who": "MSMEs, naye business aur industrial investors Bihar mein.",
+          "action": "Policy ki details check karo aur naye industrial investment plans banate waqt inhe dhyaan mein rakho.",
+          "deadline": "",
+          "source_name": "GK Today",
+          "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZU40UFpBS1Btb21KYXVVcmdUdE1YdDQtVTA5LXdnZldkRkUwY05NTVJYNWpKaXhsY1ZIdFMwYjBhUjZOODFlSTF0MkFiX3NScmw4T3laYmlYLVlqOEJjanE1Mzc5c1h6S2UwUGtSemVtNkpXSjZ1aUhSLXpnQS11bjNhLU1VVk1uQ25rcVRYeGVSMTltQnZN?oc=5"
+        },
+        {
+          "jur": "Maharashtra",
+          "cat": "Labour",
+          "authority": "Maharashtra",
+          "ref": "",
+          "headline": "Maharashtra mein naye Labour Rules 2026",
+          "what": "Naye rules mein working hours, minimum wages aur overtime ke norms update kiye gaye hain. Labour compliance mein changes aaye hain.",
+          "who": "Business owners, HR managers, factories Maharashtra mein.",
+          "action": "Naye rules padh kar policies aur payroll update karo.",
+          "deadline": "",
+          "source_name": "Mumbai Live",
+          "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSUNGdE91b1NxVVJtWmF1RzZqWGJKRTZDYzBxbjRuSXhSMkZxY3NOVDVTYTlaZDhheHpKZTlqYmw3OWI2T2JFYmtXeXMxOXR4eXJBaVhzWFJlZk9DQnh3QzA3VU05U1NRVlFUam5uZHF3a1JpSnVRUkFoYmwzLVIzM0hsNVZoUDNJUkpRbHVXdlZORDZsQ3pxNjlCSmFfM3pDczk4NmdiaS1PRjhnY3lDSk8yNkY3UUNDTU5GbS1xbHU0Rk4wYzNB0gHMAUFVX3lxTE9DbW1tMmNZZWliX3ZQckx2bHp0dkRLaXJsUktINkFoYUJLSFBIbzY3a19ST3ExUTNTb3VyU3llY2hQSVJCNXd1QUJWcDlzLTBQUTR6aDFVa2JVTlFPdzQwUDFsU0k2bXYwUG1Qa2V1N0VNaVJCby1EYXJtUWZyQ0MxWW10ckFRMENJLVE5N2U3UHptSUlhR2ZWWGZfOXNPUDhYb2pEUFRwNlJnREdrdkdURW1rdHZKazBFLWRSRGh0c3FDZWNxRkVpZGROOA?oc=5"
+        },
+        {
+          "jur": "Punjab",
+          "cat": "MSME & Scheme",
+          "authority": "Punjab",
+          "ref": "",
+          "headline": "Industrial approvals Punjab mein ab online asaan ho gaye",
+          "what": "Punjab sarkar ne industrial approvals ka process online single click pe le aaya hai. Ab approvals aur fast aur easy milenge.",
+          "who": "Naye aur existing industrial units, investors Punjab mein.",
+          "action": "Industry approvals ke liye portal par apply karo, ab physical visit ki jarurat nahi.",
+          "deadline": "",
+          "source_name": "Oneindia",
+          "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUmRhdUZzdmhkX3Jwd216ZE4zZ2xSQ00tZlRkb2VMU0dueXZjTHpObUtWU1YwdFJrOXJWS1c0ZVQ4dUo4eTdZalNzczJFYlQ2MXFIM0F2MGN6VTV5TmNPT0g4R1VEVUpoWTBWeVVxRVdROFFwbnRnRnRFV3pzRGlZVXR6Q3ExbFkwYXltN2hJLVduamNWMDltV01vQXp1VFZWb2c5N3RQazlHWWdr?oc=5"
+        },
+        {
+          "jur": "Assam",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Assam",
+          "ref": "",
+          "headline": "Assam Excise Rules mein heritage liquor units aur naya category add",
+          "what": "Assam Excise Rules amend hue. Heritage liquor units aur ek nayi category add ki gayi hai.",
+          "who": "Liquor manufacturers, distributors, aur nayi heritage liquor units Assam mein.",
+          "action": "Naye rules dekhen aur business license/proposal accordingly file karein.",
+          "deadline": "",
+          "source_name": "GK Today",
+          "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNN0ppYXJ5VW4zUmxkUzVxSm5GMGFCQTAtdkMzVGloZ3B3c1Flck1jODUtX0JBOHJNTjZrY2lCSV9vaW5sMWpZRFNVM1hiSmJTMW92YWY5YWJvMm53bks0UzlYMXNJeFg4REoybEJxUHJ1TGUwaWIwQUtjNjVnZnFJWHBHVkJjdmJMcldFaVdObTBiU0lQSEJXdg?oc=5"
+        }
+      ]
+    },
     {
       "date": "2026-11-22",
       "items": [
@@ -4339,102 +4474,6 @@
           "deadline": "",
           "source_name": "KNN India",
           "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcVdGYXg2Smw0dnhWZ0hSZ2ZoQ3UzTGdFcjdCTEZIRDhXTWdFdWYzVERfTHZyUjVJal94a1BadU5ZOFZ4WHRJdDNkWlUxdnVNUzJLNnRyM1l2d1RKNGNaejF4akpGX1pVUEFWZmUtczVJX0hnbjkyVlZqQmlBZ0YtT2RBLVhKdXpBRHc5djNQX3ptM09HLTBjdVExQlctMUVtTzRkd0JBQXFWSnhmZmZ4MnBKdVVjbHN2eXJGNkVodkk?oc=5"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "items": [
-        {
-          "jur": "Central",
-          "cat": "GST",
-          "authority": "GST Council",
-          "ref": "",
-          "headline": "GST Council approves quarterly tax payment for small biz",
-          "what": "GST Council ne optional quarterly tax payment scheme approve kiya hai chhote businesses ke liye. Ab chhote businesses mahine ke bajaye quarter mein tax file kar sakte hain.",
-          "who": "Small businesses jo GST mein registered hain.",
-          "action": "Agar eligible hain to quarterly payment scheme ka option select kar sakte hain apne GST portal par.",
-          "deadline": "",
-          "source_name": "Livemint",
-          "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNzhlTWpDb05xTWUxVzA5OFVDZTRFRkRGOEtzWGJQQzhxaElmeHhKcE5jbE1aQXdCcHM4dWdmNjBTWXhzaGdqaHFWT3BSZkhiUjM4UVF4YXl5aWxFNXctbHlGZTB3UGU5RjhKZHZCYk9VSURaYm1aZGxicFUzRkhobGV1MU1SeGtCc0NQUVFieDRDbWVqVUxpc0Fha2lJUmpLOU1UQl9Oa25vUUk2aUhicTZuOG5WbUhEdVVmM2EzY3N0aEYtUkg3NkNKMm5VQk1Bd1lIbW9n0gHWAUFVX3lxTFA3OGVNakNvTnFNZTFXMDk4VUNlNEVGREY4S3NYYlBDOHFoSWZ4eEpwTmNsTVpBd0Jwczh1Z2Y2MFNZeHNoZ2pocVZPcFJmSGJSMzhRUXhheXlpbEU1dy1seUZlMHdQZTlGOEpkdkJiT1VJRFpibVpkbGJwVTNGSGhsZXUxTVJ4a0JzQ1BRUWJ4NENtZWpVTGlzQWFraUlSaks5TVRCX05rbm9RSTZpSGJxNm44blZtSER1VWYzYTNjc3RoRi1SSDc2Q0oyblVCTUF3WUhtb2c"
-        },
-        {
-          "jur": "Central",
-          "cat": "GST",
-          "authority": "GST Council",
-          "ref": "",
-          "headline": "GST Council reforms: Refund, registration, litigation par aasaaniyan",
-          "what": "GST Council ne refund, registration aur litigation process ko simplify karne ke reforms announce kiye hain. Ye reforms GST compliance ko business-friendly banayenge.",
-          "who": "All GST registered taxpayers.",
-          "action": "GST portal par naye processes ke guidelines check karen aur accordingly filings aur refund claims karein.",
-          "deadline": "",
-          "source_name": "The Hindu",
-          "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS3I4Wm1rV2d4NFdTRm8wY3JvSUgyUWJReVVESUxsTFJyNWZ5ZnRSdFozNUQ4cHAzNjB3MVhmQV9tRWxPNmhOMURtSWFhbHBialQ5c0c0MUh1Q0RQMGdfOEY3dHZvekxmLUhJcUE2cW5RbHpYRDlGUFdKNkVFR1NiTTl0b0xTbHNhaXJSNFFTdlpqbUVKRG5yMDNtbGF1bDh2ekV5LTRSUGZqZUlVUGVLWnNDOVRlOXc5bmt6UjRqcTRJbmR4emNvX2pvQUJ1TE04ZHk5WGwwdE5NWmdLb2hpT9IB5wFBVV95cUxPMHh3SlJnZGpyNS15ZFVIUndIVG42WEZYTlN2eFNWVUt1ZUNnR0RONUtvb3U2VVl4NFBBQWx6NXBudmtCOTZ1eVFIS1RON2piQjd3UnF3UFlnMFVRLVcyb1BfSjJVWDd0MG1WQ2FiLU8ybjdZTUFQM05OY19qM3E3SkRHeHktelVscEpHaThZS1NMWlJHcU0wa3BqNE9CR0w0UXk0SnNGU1dRQ0hNdEtoUDYyX1hKdU5OTXB5TmwzZ20za3VfZXU2aFBhVk94d2hMelNNT0drQ0pSYjBGMFZUM2Eyd1FwMXc"
-        },
-        {
-          "jur": "Rajasthan",
-          "cat": "MSME & Scheme",
-          "authority": "Rajasthan Government",
-          "ref": "",
-          "headline": "Rajasthan MSMEs ke liye digital invoice financing push",
-          "what": "Rajasthan sarkar ne MSMEs ke cash flow ko behtar banane ke liye digital invoice financing ko promote karna shuru kiya hai.",
-          "who": "Rajasthan ke MSME units jo invoice discounting solution use karte hain.",
-          "action": "Eligible MSMEs apne invoices registered digital platform par upload karke financing option le sakte hain.",
-          "deadline": "",
-          "source_name": "rajasthan.economictimes.indiatimes.com",
-          "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPaUxJSFNrT0l1UG1RT1diLWdNeHQ1SHJHYlpacmZrTVF5UDUybUZ6Z0d0Zl9RVDN2Y0YtTy0yU3E5dVo2dWRYVlZvY2w0OW1yNFJSVGNFNEk1R3FkQ1NNZzV4Rkw0SkI2aG1TUGtkc0VKQ3ZJU2p5WlQwWVk1ZF9IdnJQZDFCcXhDQVd4LVBOQXJMU0FQTTlFMTlzS2FNbGtTTjdtVHhMc01RTGczemlkbTlSY1FEWGk1OHVFMHZfNFBSOUVfdlpxdzlHX0FnMWvSAdMBQVVfeXFMTTR5SUdGcUdheVVScHZ6R29PM2NCUVlLT3UzX2JYQWo4T2FfVXp6Nm1DRVdCa0RGRkNsa1BReDQtNGU0UmREVVRTcS0ybVZkaGJ5cWo1eG1RcGJERm4yMGJ5WkFLRGV1U3J6VTdJQjA2WWVrZUNZQ2pBWmdLQmU2WUVLOU1SbVVxdHRZMktxZE4xV1NSblBtdkFqTGhZMEZWVklqTXo1dzQ1cVF1NWw0WVA3cW9lb2JrUzZUWkV5b3ltSzJIbFdjd2w3bjRkTWxDRFYzYw"
-        },
-        {
-          "jur": "Punjab",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Punjab Government",
-          "ref": "",
-          "headline": "Punjab mein leasehold to freehold conversion approve, 5% fee lagegi",
-          "what": "Punjab sarkar ne industrial reforms mein leasehold property ko freehold mein convert karne ki approval de di hai. Is conversion par 5% fee lagegi.",
-          "who": "Punjab ke industrial property holders jiski property leasehold par hai.",
-          "action": "Interested industrial units sarkari process follow karke conversion ke liye apply kar sakte hain, 5% fee jama karani hogi.",
-          "deadline": "",
-          "source_name": "Goodreturns",
-          "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVUsycmFrMWg0MWxYM21NMlpDVkRKVVNJdmE4cXZWa3prWG9JOWJnZERMVzEzWlZfbmFMSkh3TTc1dno0NWhkNXo1bzZlQUNldGozTDFwV0pybUpVX01YdW5jNnVnejNJcVc2by1zeEJaaUF1TUNOek1yeTM3dnFab3Y3TTJIRHhlcUk4UFhPdTA1VUxFNi1CS0lsRm5oYWZRTGlROWppUWdUdVVZVm1NN2RxV1MyM0lmd0E"
-        },
-        {
-          "jur": "Jammu and Kashmir",
-          "cat": "Other",
-          "authority": "J&K Government",
-          "ref": "",
-          "headline": "J&K City Gas Distribution Policy notify hua, PNG/CNG sabhi districts mein",
-          "what": "Jammu & Kashmir sarkar ne City Gas Distribution Policy notify ki hai. Is policy ke tahat PNG (piped natural gas) aur CNG (compressed natural gas) ka expansion sabhi 20 districts mein hoga.",
-          "who": "J&K ke industrial, commercial, aur residential gas consumers.",
-          "action": "PNG/CNG connection ke liye application process aur distribution agency ki guidelines follow karein.",
-          "deadline": "",
-          "source_name": "The New Indian Express",
-          "source_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNOXF4clJad19SZ1VRNWpVRjV4NHJvdWhtVldqUHBGbHNPYWw0ZzhCMzdxZGxYRVluemZJTjJkbUxJMldvUlRyWl9MbHhuOUNERnlFSXJaT25VbzJBQURLbmZEUnYwNHpBLUt3NGN3TkZfTGdldkV2S2R6aHNyaFhIejRGYmMySmlYY19rZm9CTkZyZ1dUZXdEQzVfRXZMeU5vRUt3NF9uWGQ3a3Q0UHhhOG1iZEt1YWZyTFVXRnIzVEY5X3B6ZTMyWHNGR3FmbEJHal9yM01uR1ZIN2xKeFhaUU1Pdl9RS0EtTkHSAeoBQVVfeXFMTTlxeHJSWndfUmdVUTVqVUY1eDRyb3VobVZXalBwRmxzT2FsNGc4QjM3cWRsWEVZbnpmSU4yZG1MSTJXb1JUclpfTGx4bjlDREZ5RUlyWk9uVW8yQUFES25mRFJ2MDR6QS1LdzRjd05GX0xnZXZFdktkemhzcmhYSHo0RmJjMkppWGNfa2ZvQk5GcmdXVGV3REM1X0V2THlOb0VLdzRfblhkN2t0NFB4YThtYmRLdWFmckxVV0ZyM1RGOV9wemUzMlhzRkdxZmxCR2pfcjNNbkdWSDdsSnhYWlFNT3ZfUUtBLU5B"
-        },
-        {
-          "jur": "Telangana",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "Telangana Excise Department",
-          "ref": "",
-          "headline": "Telangana me 41 new 2B Bar Licences ke liye applications invite",
-          "what": "Telangana Excise Department ne 41 naye 2B Bar Licences ke liye applications mangi hain. Isse naye bar kholne ke mauke milenge.",
-          "who": "Entrepreneurs aur businesses jo Telangana me nayi 2B bar kholna chahte hain.",
-          "action": "Interested applicants application process aur eligibility terms Excise Department ki website se check karein aur taiyari shuru karein.",
-          "deadline": "",
-          "source_name": "Aabkari Times",
-          "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMmplaFdvQVMtMDM4NmszSWhZQVloM1BpOGFFN2RKejZHSFlTek5IeFhmU2ZGT3dOTUpNMGdhSGhERGFwN2VQUHQyZEhmTkpoNlB3U3Q2WDdPVXVTMk9yRmNQNVFkUkllaWdpcUlDT0h4b3VKOW1iYzk2V2p3TVVRYmhMbXVDbFZONzhMQnphNlNSN09WWmp2NVNYZ3NOSmlVQ3FwQkpiU3A1M1RFdHc"
-        },
-        {
-          "jur": "Delhi",
-          "cat": "MSME & Scheme",
-          "authority": "Union Cabinet",
-          "ref": "",
-          "headline": "Delhi-NCR mein purane trucks/buses ke liye badlao scheme Cabinet approve",
-          "what": "Cabinet ne 9,585-crore rupaye ki scheme approve ki hai jisse Delhi-NCR region mein purane trucks aur buses ko replace kiya jayega.",
-          "who": "Delhi-NCR ke transporters aur fleet owners jin ke paas purane trucks ya buses hain.",
-          "action": "Scheme ke guidelines follow kar ke replacement ke liye apply karein, notified authority se details lein.",
-          "deadline": "",
-          "source_name": "DD News",
-          "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNczNUTG5lNkc0RExUN3dHMUhyNUNGRW1BT1VUX2c4M0ExbXdYOGIzc3A3b21NcFVmM0tCNks0T3M3V0xfdGpNcFlXbkNhNGxrLTBIV0JtNlhpQjJFVUFhMkpRWHhmT0JzdXBySkRTUVhsazJ2a0pnemVYczM1d3Zqb1Q3YmNFSjF3OE9LYUdpUmZadDctQzhHV1ROaFFxRmhVQ3lqOG1VRGVZTVFoTjB2Tjl6RG0?"
         }
       ]
     }
