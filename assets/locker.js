@@ -233,7 +233,7 @@
     return '<div class="lk-up"><div class="lk-g">' +
       '<div><label class="cp-lbl">Portal</label><select class="cp-in" id="vf-p">' + S.portals.map(function (p) { return '<option' + (p === f.portal ? ' selected' : '') + '>' + esc(p) + '</option>'; }).join('') + '</select></div>' +
       '<div><label class="cp-lbl">Login ID / username</label><input class="cp-in" id="vf-l" maxlength="120" autocomplete="off" value="' + esc(f.login_id || '') + '"></div>' +
-      '<div><label class="cp-lbl">Password' + (f.cred_id ? ' (khaali chhodein to purana rahega)' : '') + '</label><input class="cp-in" id="vf-s" type="password" maxlength="200" autocomplete="new-password"></div>' +
+      '<div><label class="cp-lbl">Password' + (f.cred_id ? ' (khaali chhodein to purana rahega)' : '') + '</label><input class="cp-in" id="vf-s" type="password" maxlength="200" autocomplete="new-password"><div style="display:flex;gap:.4rem;margin-top:.35rem;flex-wrap:wrap"><button type="button" class="cp-btn o s" id="vf-gen">&#128273; Naya password banao</button><button type="button" class="cp-btn o s" id="vf-cp">Copy</button></div><p class="lk-note" style="margin:.3rem 0 0">GST portal: 8-15 akshar, bada + chhota + number + special. Pehle GST portal par yahi password set kariye, phir yahan Update dabaiye.</p></div>' +
       '<div><label class="cp-lbl">Note (optional)</label><input class="cp-in" id="vf-x" maxlength="300" placeholder="jaise GSTIN, registered mobile, security question" value="' + esc(f.extra || '') + '"></div></div>' +
       '<label class="lk-sw" style="margin-top:.6rem"><input type="checkbox" id="vf-sh"' + (f.show_client ? ' checked' : '') + '>Client ko bhi dikhe</label>' +
       '<div class="cp-row"><button class="cp-btn s" id="vf-go">' + (f.cred_id ? 'Update kariye' : 'Save kariye') + '</button><button class="cp-btn o s" id="vf-x2">Band kariye</button></div><p class="cp-msg" id="vf-m"></p>' +
@@ -543,4 +543,27 @@
   }, true);
   new MutationObserver(inject).observe(app, { childList: true });
   inject();
+})();
+
+/* Password generator for the vault form (24 Nov 2026): two random Hindi words + digit + symbol + digits, 10-15 chars, GST portal rules. */
+(function () {
+  var W = ['Neem', 'Kaju', 'Gulab', 'Tawa', 'Patang', 'Doodh', 'Aam', 'Badal', 'Chand', 'Dhoop', 'Gamla', 'Hira', 'Imli', 'Jamun', 'Kela', 'Lassi', 'Mitti', 'Nadi', 'Pankh', 'Ret', 'Sagar', 'Tara', 'Ullu', 'Van', 'Yatra', 'Zeera', 'Ganna', 'Moti', 'Sona', 'Chai', 'Diya', 'Ghanti', 'Jhula', 'Kalam', 'Lattu', 'Mor', 'Naav', 'Pul', 'Rang', 'Suraj', 'Tota', 'Bagh', 'Dhol', 'Gaadi', 'Haldi', 'Kesar', 'Lauki', 'Methi', 'Palak', 'Raja', 'Seb', 'Til', 'Anaar', 'Bel', 'Chhata', 'Dhaga', 'Ghoda', 'Joota', 'Kursi', 'Mela'];
+  var SY = '@#!$%&*';
+  function rnd(n) { var a = new Uint32Array(1); (window.crypto || window.msCrypto).getRandomValues(a); return a[0] % n; }
+  function gen() {
+    for (var t = 0; t < 50; t++) {
+      var p = W[rnd(W.length)] + rnd(10) + W[rnd(W.length)] + SY.charAt(rnd(SY.length)) + (10 + rnd(90));
+      if (p.length >= 10 && p.length <= 15 && /[A-Z]/.test(p) && /[a-z]/.test(p) && /[0-9]/.test(p) && /[^A-Za-z0-9]/.test(p)) { return p; }
+    }
+    return 'Neem7Kaju#42';
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target && e.target.closest ? e.target.closest('#vf-gen, #vf-cp') : null;
+    if (!b) { return; }
+    e.preventDefault();
+    var inp = document.getElementById('vf-s');
+    if (!inp) { return; }
+    if (b.id === 'vf-gen') { inp.value = gen(); inp.type = 'text'; inp.focus(); }
+    else if (inp.value) { try { navigator.clipboard.writeText(inp.value); b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1500); } catch (x) { inp.type = 'text'; inp.select(); } }
+  });
 })();
