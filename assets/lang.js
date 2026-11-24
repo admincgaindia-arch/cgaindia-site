@@ -623,6 +623,8 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount); else mount();
 })();
 
+/* Accessibility: footer column titles are h4 but follow h2 sections, so screen readers saw a skipped level. Expose them as level-2 headings (24 Nov 2026). */
+(function () { try { var go = function () { document.querySelectorAll('footer h4, .ft h4').forEach(function (h) { if (!h.hasAttribute('aria-level')) { h.setAttribute('aria-level', '2'); } }); document.querySelectorAll('.how-step h4').forEach(function (h) { if (!h.hasAttribute('aria-level')) { h.setAttribute('aria-level', '3'); } }); }; if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', go); } else { go(); } } catch (e) {} })();
 /* Events & Webinars link next to Govt Updates in the Learn menu and footer (added 22 Nov 2026). Runs before nav polish so it gets an icon. */
 (function () { try {
   var add = function (sel) { document.querySelectorAll(sel).forEach(function (x) { if (x.parentNode.querySelector('a[href$="events.html"]')) { return; } var a = document.createElement('a'); a.href = '/events.html'; a.textContent = 'Events & Webinars'; x.parentNode.insertBefore(a, x.nextSibling); }); };
