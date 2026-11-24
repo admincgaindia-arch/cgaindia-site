@@ -67,3 +67,19 @@ html body section.wrap.sec{padding-left:clamp(20px,4vw,40px);padding-right:clamp
 }
 @media(max-width:480px){.topbar{font-size:.74rem}.topbar .tb-left{gap:2px 11px}}
 
+
+/* Accessibility pass (24 Nov 2026): WCAG 2.2 AA text contrast (4.5:1) and 24px touch targets.
+   Found with Lighthouse / axe on home, service, tool, events and article templates. */
+html body .ft-mail b,html body .f-blk b{color:rgba(255,255,255,.74)}
+html body .ft-note,html body .f-note{color:rgba(255,255,255,.72)}
+html body .f-bottom a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+html body .ft-tag,html body .ft-go{color:color-mix(in srgb,var(--c) 66%,#000)}
+html body #free-tools .cg-kicker,html body section.cg-sec>.wrap>.cg-kicker{color:#0a6380}
+html body .cgl-go{background:#0a6380;color:#fff}
+html body .sv-n{color:#0a6380}
+html body .jd-cta a.wa,html body a.btn-wa,html body .btn.wa{background:#128045;color:#fff}
+html body .cf-b.cf-wa{color:#fff}
+html body .topbar a{min-height:24px;padding:2px 0}
+html body #cgDots{gap:0}
+html body #cgDots button{box-sizing:content-box;padding:7.5px;background-clip:content-box;border-radius:12px}
+html body main a:not([class]):not([style]){text-underline-offset:2px}
