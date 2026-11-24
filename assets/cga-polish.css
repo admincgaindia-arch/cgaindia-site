@@ -83,3 +83,4 @@ html body .topbar a{min-height:24px;padding:2px 0}
 html body #cgDots{gap:0}
 html body #cgDots button{box-sizing:content-box;padding:7.5px;background-clip:content-box;border-radius:12px}
 html body main a:not([class]):not([style]){text-underline-offset:2px}
+html body .cga-mbar a.w{background:#128045;color:#fff}
