@@ -1,6 +1,102 @@
 {
-  "last_updated": "2026-11-24T02:31:15.277Z",
+  "last_updated": "2026-11-25T02:31:16.791Z",
   "days": [
+    {
+      "date": "2026-11-25",
+      "items": [
+        {
+          "jur": "Haryana",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Haryana Government",
+          "ref": "",
+          "headline": "Haryana: Micro, Small units ko 70% SGST reimbursement",
+          "what": "Haryana govt ne manufacturing micro aur small enterprises ke liye intra-state sales par 7 saal tak 70% tak net SGST reimbursement announce kiya hai.",
+          "who": "Haryana ke manufacturing micro aur small enterprises (MSEs) ke liye.",
+          "action": "Eligible units ko apni intra-state sales par reimbursement claim karna hai, scheme details check karein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQam55blJhZTlBSk5uZWtoSWRRTFhaaGdCWkx5eVpGMmVmRUlFNVQxaXc2YnVMeXktcXJTM2ZVQzloYjRaN2N0OURCNVhtWEx0ekxjZjk2dkozSXpZLUhSQ0VzWmtUZ0RPQy1MTDRZdmFDM3pTdl9ubWV1d05ON0g0V05fQUxNcW5ad2wwcVN5cl9IY3VTMERRVlVvMkQ5UlNKZ3NfU051NHdRUWtpLVQ3eUloOXZ0SC1sR0hkODZ5dzh5Yy01ZldLLWJfUTVMMlNjcDJPYTI1aDBqb3Y4TTRLaTluQmx5eXBtcFdJNDUydWVSbTA0V0E?oc=5"
+        },
+        {
+          "jur": "Tamil Nadu",
+          "cat": "Customs / DGFT",
+          "authority": "Chennai Customs",
+          "ref": "Public Notice 153/2026",
+          "headline": "ICEGATE payment mandatory, TR-6 challan manual only jab zarurat ho",
+          "what": "Chennai Customs ne voluntary payments ke liye ICEGATE online payment mandatory kiya hai. Manual TR-6 challan sirf exceptional cases me allow hai.",
+          "who": "Chennai Customs jurisdiction ke importers/exporters, traders.",
+          "action": "Payment karte samay ICEGATE portal use karein. Manual TR-6 option tabhi jab valid reason ho.",
+          "deadline": "",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/custom-duty/chennai-customs-mandates-icegate-voluntary-payments-restricts-manual-tr-6-challans.html"
+        },
+        {
+          "jur": "Andhra Pradesh",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Andhra Pradesh Government",
+          "ref": "",
+          "headline": "Gold/jewellery Rs 10 lakh+ par e-way bill Andhra Pradesh me must",
+          "what": "Andhra Pradesh ne gold, precious stones aur jewellery par ₹10 lakh se upar intra-state movement ke liye e-way bill 21 Nov 2026 se mandatory kiya hai.",
+          "who": "AP state me gold, precious stones, jewellery ka Rs 10 lakh se upar transport karne wale businesses, jewellers, transporters.",
+          "action": "21 Nov 2026 se aisi goods ki delivery/intra-state transport pe e-way bill banwayein.",
+          "deadline": "21 Nov 2026",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOMWVRNG9tMWhpLUFmS19nbnd3NTNtVzJrcVNtYTZsZkRvRW4wcVdETWtFVVZybUxTbzJlOG9tYkFzSnJWbVp3dmN1OGlOby1ZamU0MllaV3kwczVNU3lNYUROTEdLd1l1UmUzVHRmWUlYb0s0RG9TaEktYk9KM2JEVi1WTHJsUUFVekhORVZOOXBuSExSbFk3QmZYNVlFNG41cHBFZ0VRcFZvdVJ2UUNGQmtxY2h3Wm9Db3JJSktsb0hyQTJEb0djR2ktdFNuYzJnYlVmclVnenZLS1YyZ1Bnc291REt0VHBRRk9MU2J4NEhxWDRnMktCYlFkX0FKZjZTbXVWSFV3cUs5djltcy1NY0lnZw?"
+        },
+        {
+          "jur": "Central",
+          "cat": "Customs / DGFT",
+          "authority": "CBIC",
+          "ref": "",
+          "headline": "Gold, silver, edible oils tariff value update from 24 Nov",
+          "what": "CBIC ne gold, silver, edible oils aur kuch or items ki tariff value update ki hai. New rates 24 Nov 2026 se lagu hain.",
+          "who": "Customs clearance karne wale importers/exporters ke liye.",
+          "action": "Applicable items ka updated tariff value customs clearance ke samay dekhein.",
+          "deadline": "24 Nov 2026",
+          "source_name": "TaxCorp AI",
+          "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWHdoUUdieWVIZEFjbThpcEdUczRLXzlpWFNNT0J2UEd1azZOSnFDYnYzN0FZTnJRbVVnS25la3d0S3hMdnZHdVEtUFJqd3dQalMxUGVxYlZkQmFaVUV4bVdncU1nRnZfRV9BTkxvb1ZvZXdtRFY1cHZtb0p4LXE2cDRKMl9maUNOWDNyVllNWnlZRm1GWk16SFh4UXM3VXVfR1E?"
+        },
+        {
+          "jur": "Telangana",
+          "cat": "GST",
+          "authority": "Telangana State Tax Department",
+          "ref": "",
+          "headline": "IGST credit (cancelled GSTIN): Recovery & dashboard tracking",
+          "what": "Telangana ne dashboard launch kiya hai, 1 April 2021 se 31 Jan 2026 beech cancel kiye GST registrations jisme IGST credit > ₹50,000 bacha hai, uski verification/recovery hogi.",
+          "who": "Telangana me un businesses par jo GST registration cancel kar chuke hain jinke account me IGST credit bacha hai.",
+          "action": "Aapka GSTIN cancelled hai aur IGST credit ₹50,000+ hai to department ki recovery/verification process ke liye prepared rahein.",
+          "deadline": "",
+          "source_name": "A2Z Taxcorp LLP",
+          "source_url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxPOXBTa2tBV21nMlRUamYwdW9xWFBDRm40VThyY3RVNzJpUHpFWUQ2ZEFTYWMxZVRkLTI1amVsaFg4Q1FZX2N3dVpfc2l4Q3N0TU0yRTR0NXhoWmVWVEpBVzRTSUJKQXhMVnpQcVZzOGNMN0tRT1J3LW14cVdZMTc5UzJ5d0FvUUJxcXh4SEJuck1LbkxwUmg1U05sV3RNbHZNalh0RVBpYTF4MDZBcmRub21ieWxMTGhQSm5CYUFoY3Q5Smw4cW5UM2h4b0U1RDA5NTJTSW56cFdmcE1hb19NWlhDNm9QdU96c2s4UUhVTWtzRHlHd2xURzRmYU5odnJFRVBMRlNXTGtFbFNvMUNhNUJDZmF0UHAzUFduSTl6TXIwZEJ3dnBfYVFrc1BlMmRaNVEyU0pISklBQ3g0SFVSTExQZw?"
+        },
+        {
+          "jur": "Kerala",
+          "cat": "State Tax & Stamp Duty",
+          "authority": "Kerala Government",
+          "ref": "",
+          "headline": "Kerala Flood Cess notified, ab extra tax lagu hoga",
+          "what": "Kerala Govt ne Flood Cess notify kiya hai. Ye special cess kuch categories par lagu hoga, detailed rates/coverage notification me hain.",
+          "who": "Kerala me supply of goods/services karne wale businesses par.",
+          "action": "Kerala me sale/ billing karte waqt flood cess ka proper collection aur compliance karein.",
+          "deadline": "",
+          "source_name": "Legal 500",
+          "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSEQ3NUpBYkItejlLYkhFNVZoODRITi1kM2FMa3ZmamxRZ3Q5ckFtX0s1dzdRMEFSVzR6emljUllZb0lIdzRMX0RyRmstNERCWHVKa1M1bUlNOUxpS210cmtBbFVoYnNvTTdKaUthQ0M5bmlIRUJjWkVtemVZWnpJMkJfNlVCaWxyY19oQjltYUdZbUhLQUlR?"
+        },
+        {
+          "jur": "Central",
+          "cat": "MCA / ROC",
+          "authority": "NFRA",
+          "ref": "",
+          "headline": "NFRA-2 auditor return 30 Nov: FY 2025-26 ki deadline",
+          "what": "2025-26 reporting period ke liye auditor annual return NFRA-2 form ki last date 30 Nov 2026 hai. Auditor-level data aur validation controls ab mandatory.",
+          "who": "Sabhi auditors jinke upar NFRA-2 ka scope apply hota hai.",
+          "action": "Apni entity ka NFRA-2 online form data timely validate kar file karein, evidence sambhal ke rakhein.",
+          "deadline": "30 Nov 2026",
+          "source_name": "taxguru.in",
+          "source_url": "https://taxguru.in/company-law/nfra-2-reporting-period-2025-26-auditor-annual-return-due-30-november-2026.html"
+        }
+      ]
+    },
     {
       "date": "2026-11-24",
       "items": [
@@ -4378,115 +4474,6 @@
           "deadline": "",
           "source_name": "taxguru.in",
           "source_url": "https://taxguru.in/goods-and-service-tax/gst-council-proposes-annual-return-quarterly-payment-scheme-small-b2c-businesses.html"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-11",
-      "items": [
-        {
-          "jur": "Haryana",
-          "cat": "MSME & Scheme",
-          "authority": "",
-          "ref": "",
-          "headline": "Lado scheme ke liye income limit ab Rs 1.80 lakh",
-          "what": "Haryana Lado scheme ka income limit ab badha kar Rs 1.80 lakh kar diya gaya hai.",
-          "who": "Woh log jo Lado scheme ka faayda lena chahte hain.",
-          "action": "Agar aapka annual income limit andar aata hai toh application kar sakte hain.",
-          "deadline": "",
-          "source_name": "The Tribune",
-          "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNV24xRmlZSWRfV1BrRFhmMy1lM2hfd0ljekZsQU9seDBDTGN2SmZBN1RUN2lZR2dveGZkSFQ2Y0NwczVRT1pVWkU5MW1qSll4M3VfWE84WHJTa05SYjNVVUtrdnBJU2kweXBPUlZWVWpkV25IdmpxOFNxNk8tTjR6Z00tV0U3TE1BQ0VNbURNUmFSanFSTk1tcVowQVlZdVp3OTdMcG5vRdIBpwFBVV95cUxNV24xRmlZSWRfV1BrRFhmMy1lM2hfd0ljekZsQU9seDBDTGN2SmZBN1RUN2lZR2dveGZkSFQ2Y0NwczVRT1pVWkU5MW1qSll4M3VfWE84WHJTa05SYjNVVUtrdnBJU2kweXBPUlZWVWpkV25IdmpxOFNxNk8tTjR6Z00tV0U3TE1BQ0VNbURNUmFSanFSTk1tcVowQVlZdVp3OTdMcG5vRQ?oc=5"
-        },
-        {
-          "jur": "Central",
-          "cat": "Customs / DGFT",
-          "authority": "",
-          "ref": "",
-          "headline": "FTP 2023: Rough diamond trading ki eligibility revised hui",
-          "what": "FTP 2023 ke under rough diamond trading ke liye eligibility criteria revise hua hai SNZs (Special Notified Zones) mein.",
-          "who": "Rough diamond traders, import-export firms jinhe FTP mein SNZs ka use karna hai.",
-          "action": "Latest eligibility rules check karke compliance karein agar SNZs mein trade karte hain.",
-          "deadline": "",
-          "source_name": "TaxCorp AI",
-          "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObkROT09EUmRVUlNndm0tcWtxampXcEZNcGlUekw2OWhaYzJYM0d4OXJOcklZRmdOc2toRmQ2OWpDd2pOay1wMlRHREhKbERzdHNpLThsWHNnV1p6b3p2c1RJa2pHbVdlNE54aFI1YmxKWTJJSkRFS3VCQW5tMVRVRS14QkxuUDJBUmh0THBYUTRlYjRQaFk0NlJkWVhLZWs?oc=5"
-        },
-        {
-          "jur": "Punjab",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "",
-          "ref": "",
-          "headline": "24 master plans mein industries ko exemption extension Punjab mein",
-          "what": "Punjab sarkar ne 24 master plan areas mein 20,000 industries ko exemption extension diya hai.",
-          "who": "Master plan areas mein aane wali industries Punjab mein.",
-          "action": "Industry ko check karna hai ki aapke area mein exemption extension applicable hai ya nahi.",
-          "deadline": "",
-          "source_name": "Indianmasterminds",
-          "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbGJhTU5IaXhudG9BRXlmbzFDNkJDYms1SnFrOHNsT1lHTVlEZWl3SWMtYS1iWmlvMkJwX1hTWVJMUGd3QVlxWGtDZkxHN2JvNmtyeFNCaUFZZjdhTWNnMHFRS3RuejEzOEFoaUtXaGU0TXc5eEktV1BtdVNrZ0E2S0VMZEF2b1lTaUE?oc=5"
-        },
-        {
-          "jur": "Gujarat",
-          "cat": "MSME & Scheme",
-          "authority": "",
-          "ref": "",
-          "headline": "MSME Incentive Scheme 2026 Gujarat mein launch hua",
-          "what": "Gujarat ne MSME ke liye Incentive Scheme 2026 launch ki hai jisme capital, interest aur technology ke liye support milega.",
-          "who": "Gujarat ke MSME units jo naye scheme ke tahat incentives lena chahte hain.",
-          "action": "Scheme ke guidelines padhkar eligible MSME jaldi apply karein.",
-          "deadline": "",
-          "source_name": "KNN India",
-          "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNRGhJeUdCNk9mYXZYLUl1T0prM01PZTlyUm5MQmgxck9RSVFubk94TE5FeHljYUhkaE5zNFl1YU5HdnliWE9HVWdHZ0pTM25SUmphZVJ4aUVEanItRllFSnpYV2FSbG1BZ2M1OTJiVVBRbjJPZF83SG9QR2pWdFRoQkVzTUluUTBBQ2hFZWhjUmZKYXZQOFBLSEN5WDNoMHI1WTBkdHNLalpYYjBnSDZUWHBmOFhKQ2g3LWFMNkpLSlcyRlN1Mjk1NjE1R1E?oc=5"
-        },
-        {
-          "jur": "Odisha",
-          "cat": "Labour",
-          "authority": "",
-          "ref": "",
-          "headline": "Odisha mein minimum wage har worker category ke liye ₹6 badha",
-          "what": "Odisha sarkar ne minimum wage sabhi worker categories ke liye ₹6 per day badha diya hai.",
-          "who": "Odisha ke shop, factory aur MSME workers par laga hoga.",
-          "action": "Employers minimum wage change ka dhyaan rakhein, salary list update karein.",
-          "deadline": "",
-          "source_name": "FM Bharat",
-          "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSWs5Yzg1ZGJTaU1FTGktQlVRNjdYTFZDb2lEWlcyMEtER2tZWVZkLWVYd0JwUWQ1X1RtQWpUYVR6S2w5dzA3NGtBX1VabEk3dGxodWxYZzh4enQzM0JLX0U3TGlfX0xpa1ZFc0sxazVLaUNUN1VsX1dIN3UtZ0p4RGduZmxTM29tTTNQMHZfNnlkaWNuQmp5UHZQckFlS0w5TE9xQjh5V1U0RXg0ZmxpYWhEZHY?oc=5"
-        },
-        {
-          "jur": "Delhi",
-          "cat": "State Tax & Stamp Duty",
-          "authority": "",
-          "ref": "",
-          "headline": "Delhi EV Policy 2026 notify hui: Road tax exemption aur phased registration",
-          "what": "Delhi EV Policy 2026 notify ho gayi hai, jis mein road tax exemption aur phased EV-only registration ka provision hai.",
-          "who": "Delhi ke vehicle owners aur dealerships jo EV lene ya bechne wale hain.",
-          "action": "Policy ke new benefits ka faayda lene ke liye registration process follow karo.",
-          "deadline": "",
-          "source_name": "Goodreturns",
-          "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdFNObHF4ZHFyaHZUOFhURUdTb2tsM1lUS0t4TmlzNERjTVczN0lqMjNfWWktMlFVNldua3VpZFFCdXRCQWJlNGtZLTFDVXhLcXdmeDlvVzdoYmZWTmZCYzBqbnZiSFI4UHFpTm83NU83SkJTTXoxbEJDcGNuMnVNZzZSZDhCRU14YUJOOFd5RUR1NFhPd052bkgxdUZXV214em5TRVZWVEdrbksyRHFNampn?oc=5"
-        },
-        {
-          "jur": "Central",
-          "cat": "GST",
-          "authority": "CBIC",
-          "ref": "",
-          "headline": "GST e-way bill reforms: Interception aur detention par nayi FAQs",
-          "what": "CBIC ne FAQs jaari ki hain e-way bill process mein interception, detention, jurisdictional powers, missing documents aur confiscation par.",
-          "who": "All GST taxpayers jo goods ka interstate movement karte hain.",
-          "action": "Goods transport karne se pehle FAQs padhkar new rules follow karein.",
-          "deadline": "",
-          "source_name": "taxguru.in",
-          "source_url": "https://taxguru.in/goods-and-service-tax/faqs-bill-reforms-interception-inspection-detention-goods-transit.html"
-        },
-        {
-          "jur": "Central",
-          "cat": "GST",
-          "authority": "CBIC",
-          "ref": "",
-          "headline": "GST Refund FAQs jaari: Automation aur revised timeline par reforms",
-          "what": "CBIC ne GST refund FAQs jaari ki hain jisme automated processing, 90% provisional refund, deemed acknowledgement, eligibility aur new timelines explain ki gayi hain.",
-          "who": "GST registered log aur firms jinko refund claim karna hai.",
-          "action": "FAQs padhkar apna refund process new system ke hisaab se karein.",
-          "deadline": "",
-          "source_name": "taxguru.in",
-          "source_url": "https://taxguru.in/goods-and-service-tax/gst-refund-faqs-automated-processing-provisional-refund-revised-timelines.html"
         }
       ]
     }
