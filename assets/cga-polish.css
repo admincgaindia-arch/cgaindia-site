@@ -84,3 +84,10 @@ html body #cgDots{gap:0}
 html body #cgDots button{box-sizing:content-box;padding:7.5px;background-clip:content-box;border-radius:12px}
 html body main a:not([class]):not([style]){text-underline-offset:2px}
 html body .cga-mbar a.w{background:#128045;color:#fff}
+/* Smooth page-to-page transition (Chrome/Edge/Safari 18+; others ignore) */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:cgVtOut .22s ease-in both}
+::view-transition-new(root){animation:cgVtIn .32s cubic-bezier(.2,.8,.2,1) both}
+@keyframes cgVtOut{to{opacity:0;transform:translateY(-6px)}}
+@keyframes cgVtIn{from{opacity:0;transform:translateY(8px)}}
+@media(prefers-reduced-motion:reduce){@view-transition{navigation:none}::view-transition-old(root),::view-transition-new(root){animation:none}}
