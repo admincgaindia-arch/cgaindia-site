@@ -1025,4 +1025,4 @@
 /* Refer & Earn loader (assets/cga-rewards.js) */
 (function () { try { if (document.getElementById('cga-rw-js')) { return; } var s = document.createElement('script'); s.id = 'cga-rw-js'; s.src = '/assets/cga-rewards.js?v=1'; s.defer = true; document.head.appendChild(s); } catch (e) {} })();
 /* Motion layer loader (assets/cga-motion.js) */
-(function () { try { if (document.getElementById('cga-motion-js')) { return; } var s = document.createElement('script'); s.id = 'cga-motion-js'; s.src = '/assets/cga-motion.js?v=1'; s.defer = true; document.head.appendChild(s); } catch (e) {} })();
+(function () { try { if (document.getElementById('cga-motion-js')) { return; } var s = document.createElement('script'); s.id = 'cga-motion-js'; s.src = '/assets/cga-motion.js?v=2'; s.defer = true; document.head.appendChild(s); } catch (e) {} })();
