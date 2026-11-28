@@ -28,6 +28,23 @@
     '#cp-locker .lk-tab{background:none;border:0;border-bottom:3px solid transparent;padding:.55rem .8rem;font:inherit;font-weight:700;color:var(--cp-mute);cursor:pointer}',
     '#cp-locker .lk-tab.on{color:var(--cp-navy);border-bottom-color:var(--cp-navy)}',
     '#cp-locker .lk-grp{margin:1rem 0 .3rem;font-weight:700;color:var(--cp-navy);font-size:.92rem}',
+    '#cp-locker .lk-secs{display:flex;flex-wrap:wrap;gap:.4rem;margin:.7rem 0 .8rem}',
+    '#cp-locker .lk-sc{border:1px solid var(--cp-line);background:#fff;border-radius:999px;padding:.4rem .8rem;font:inherit;font-size:.82rem;font-weight:700;color:var(--cp-navy);cursor:pointer;min-height:36px}',
+    '#cp-locker .lk-sc.on{background:var(--cp-navy);color:#fff;border-color:var(--cp-navy)}',
+    '#cp-locker .lk-sc i{font-style:normal;margin-right:.25rem}',
+    '#cp-locker .lk-sc small{opacity:.75;margin-left:.3rem;font-weight:600}',
+    '#cp-locker .lk-sec{border:1px solid var(--cp-line);border-radius:14px;margin:0 0 .7rem;background:#fff;overflow:hidden}',
+    '#cp-locker .lk-sec>summary{list-style:none;cursor:pointer;padding:.8rem 1rem;display:flex;align-items:center;gap:.6rem;font-weight:700;color:var(--cp-navy);background:#f6fafc;min-height:48px}',
+    '#cp-locker .lk-sec>summary::-webkit-details-marker{display:none}',
+    '#cp-locker .lk-sec>summary .lk-si{font-size:1.2rem}',
+    '#cp-locker .lk-sec>summary .lk-sn{margin-left:auto;font-size:.78rem;background:#e3f3f9;border-radius:999px;padding:.1rem .6rem}',
+    '#cp-locker .lk-secb{padding:.6rem .8rem .2rem}',
+    '#cp-locker .lk-kyc{display:flex;flex-wrap:wrap;gap:.4rem;margin:.2rem 0 .7rem}',
+    '#cp-locker .lk-kc{font-size:.8rem;border-radius:999px;padding:.3rem .7rem;border:1px solid var(--cp-line);background:#fff}',
+    '#cp-locker .lk-kc.ok{background:#e6f6ec;border-color:#bfe5cc;color:#17773f}',
+    '#cp-locker .lk-kc.no{background:#fff4e0;border-color:#f1d29a;color:#8a5a00;cursor:pointer;font-weight:700}',
+    '#cp-locker .lk-rt{font:inherit;font-size:.75rem;border:1px solid var(--cp-line);border-radius:8px;padding:.2rem .3rem;max-width:12rem}',
+    '#cp-locker .lk-prog{font-size:.85rem;color:var(--cp-navy);margin-top:.4rem}',
     '#cp-locker .lk-doc{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.5rem;border:1px solid var(--cp-line);border-radius:10px;padding:.7rem .85rem;margin:0 0 .5rem;background:#fff}',
     '#cp-locker .lk-doc b{display:block;font-size:.95rem;color:#1d2a33;word-break:break-word}',
     '#cp-locker .lk-ic{display:inline-block;width:2.1rem;height:2.1rem;line-height:2.1rem;text-align:center;border-radius:8px;background:#e3f3f9;color:var(--cp-navy);font-weight:800;font-size:.62rem;margin-right:.6rem;flex:none}',
@@ -170,6 +187,44 @@
   function isTeam() { var r = role(); return r === 'admin' || r === 'senior' || r === 'staff'; }
   function isAll() { var r = role(); return r === 'admin' || r === 'senior'; }
 
+  function secs() { return (S.docs && S.docs.sections) || [{ key: 'other', name: 'Other', icon: '', client: true, types: ['Other'] }]; }
+  function secOf(t) { var L = secs(); for (var i = 0; i < L.length; i++) { if ((L[i].types || []).indexOf(t) >= 0) { return L[i]; } } return L[L.length - 1]; }
+  function fyKey(d) { return d.fy || fyOf(d); }
+  function bySection(D, showWho, client) {
+    var L = secs(), g = {};
+    D.forEach(function (d) { var k = secOf(d.type || d.category).key; (g[k] = g[k] || []).push(d); });
+    var f = S.secF || '';
+    var chips = '<div class="lk-secs"><button class="lk-sc' + (!f ? ' on' : '') + '" data-secf="">Sab <small>' + D.length + '</small></button>' + L.filter(function (s) { return g[s.key]; }).map(function (s) { return '<button class="lk-sc' + (f === s.key ? ' on' : '') + '" data-secf="' + esc(s.key) + '"><i>' + esc(s.icon) + '</i>' + esc(s.name) + '<small>' + g[s.key].length + '</small></button>'; }).join('') + '</div>';
+    var body = L.filter(function (s) { return (!f || f === s.key) && (g[s.key] || s.key === 'kyc'); }).map(function (s) {
+      var list = g[s.key] || [];
+      var inner = s.key === 'kyc' ? kycBox(list, client) : '';
+      if (list.length) {
+        var fy = {}, o = [];
+        list.forEach(function (d) { var k = /^(kyc|reg|cga)$/.test(s.key) ? '' : fyKey(d); if (!fy[k]) { fy[k] = []; o.push(k); } fy[k].push(d); });
+        o.sort(function (a, b) { return a === 'Permanent' ? 1 : (b === 'Permanent' ? -1 : (a < b ? 1 : -1)); });
+        inner += o.map(function (k) { return (k ? '<div class="lk-grp">' + esc(k) + '</div>' : '') + fy[k].map(function (d) { return docRow(d, showWho); }).join(''); }).join('');
+      }
+      if (!inner) { return ''; }
+      return '<details class="lk-sec"' + (f || list.length ? ' open' : '') + '><summary><span class="lk-si">' + esc(s.icon) + '</span>' + esc(s.name) + '<span class="lk-sn">' + list.length + '</span></summary><div class="lk-secb">' + inner + '</div></details>';
+    }).join('');
+    return chips + body;
+  }
+  function kycBox(list, client) {
+    var K = (S.docs && S.docs.kyc) || {}, need = (K.individual || []).concat((K.business || []).filter(function (x) { return (K.individual || []).indexOf(x) < 0 && !/resolution/i.test(x); }));
+    if (!need.length) { return ''; }
+    var have = {}; list.forEach(function (d) { have[d.type] = 1; });
+    return '<div class="lk-kyc">' + need.map(function (t) { return have[t] ? '<span class="lk-kc ok">&#10004; ' + esc(t) + '</span>' : '<button class="lk-kc no" data-kyc="' + esc(t) + '">+ ' + esc(t) + '</button>'; }).join('') + '</div>';
+  }
+  function typeOpts(client, pre) {
+    var h = client ? '' : '<option value="auto"' + (!pre ? ' selected' : '') + '>Auto: file ke naam se pehchaan</option>';
+    secs().forEach(function (s) { if (client && !s.client) { return; } h += '<optgroup label="' + esc(s.icon + ' ' + s.name) + '">' + s.types.map(function (t) { return '<option' + (t === pre ? ' selected' : '') + '>' + esc(t) + '</option>'; }).join('') + '</optgroup>'; });
+    return h;
+  }
+  function fyOpts() {
+    var now = new Date(), y = now.getMonth() >= 3 ? now.getFullYear() : now.getFullYear() - 1, h = '<option value="">Auto (naam / date se)</option><option>Permanent</option>';
+    for (var i = 0; i < 10; i++) { var a = y - i; h += '<option>FY ' + a + '-' + String(a + 1).slice(2) + '</option>'; }
+    return h;
+  }
   function loadAll() {
     S.loading = true;
     call(DOCS, { action: 'list' }).then(function (r) {
@@ -193,9 +248,9 @@
     var canDel = isTeam() || d.by_role === 'client';
     var who = showWho ? entName(d.client_email) : '';
     return '<div class="lk-doc"><div class="lk-l"><span class="lk-ic">' + esc(ext(d.file_name)) + '</span><div style="min-width:0"><b>' + esc(d.title) + '</b>' +
-      '<div class="cp-meta">' + (who ? '<span class="lk-who">' + esc(who) + '</span>' : '') + '<span class="' + catCls(d.category) + '">' + esc(d.category || 'Document') + '</span>' + esc(d.date) + ' &middot; ' + kb(d.size) + (d.service ? ' &middot; ' + esc(d.service) : '') + '</div></div></div>' +
+      '<div class="cp-meta">' + (who ? '<span class="lk-who">' + esc(who) + '</span>' : '') + '<span class="' + catCls(d.category) + '">' + esc(d.type || d.category || 'Document') + '</span>' + (d.fy ? esc(d.fy) + ' &middot; ' : '') + esc(d.date) + ' &middot; ' + kb(d.size) + (d.service ? ' &middot; ' + esc(d.service) : '') + '</div></div></div>' +
       '<div class="cp-row" style="margin:0"><button class="cp-btn s" data-dl="' + esc(d.doc_id) + '">Download</button>' +
-      (canDel ? '<button class="cp-btn o s" data-rm="' + esc(d.doc_id) + '">Hataiye</button>' : '') + '</div></div>';
+      (isTeam() ? '<select class="lk-rt" data-rt="' + esc(d.doc_id) + '" title="Section / type badliye">' + typeOpts(false, d.type).replace('<option value="auto">Auto: file ke naam se pehchaan</option>', '') + '</select>' : '') + (canDel ? '<button class="cp-btn o s" data-rm="' + esc(d.doc_id) + '">Hataiye</button>' : '') + '</div></div>';
   }
   function credRow(c, clientView) {
     var pw = S.revealed[c.cred_id];
@@ -218,13 +273,15 @@
     if (r === 'client') {
       if (S.ents && S.ents.length > 1) { h += '<div><label class="cp-lbl">Kiske liye?</label><select class="cp-in" id="lk-who">' + S.ents.map(function (x) { return '<option value="' + esc(x.email) + '"' + (x.email === S.ent ? ' selected' : '') + '>' + esc(x.name) + (x.type ? ' (' + esc(x.type) + ')' : '') + '</option>'; }).join('') + '</select></div>'; }
       h += '<div><label class="cp-lbl">Kis service ke liye?</label><select class="cp-in" id="lk-eng"><option value="">General / permanent document</option>' + so + '</select></div>';
+      h += '<div><label class="cp-lbl">Document kya hai?</label><select class="cp-in" id="lk-cat">' + typeOpts(true, S.preType || 'Other') + '</select></div>';
     } else {
-      h += '<div><label class="cp-lbl">Service (engagement)</label><select class="cp-in" id="lk-eng"><option value="">' + (isAll() ? 'Service nahi - seedha client ko' : 'Service chuniye') + '</option>' + so + '</select></div>';
+      h += '<div><label class="cp-lbl">Service (engagement)</label><select class="cp-in" id="lk-eng"><option value="">' + (isAll() || preEmail ? 'Service nahi - seedha client ko' : 'Service chuniye') + '</option>' + so + '</select></div>';
       if (isAll() && !preEmail) { h += '<div><label class="cp-lbl">Client ka email</label><input class="cp-in" id="lk-ce" type="email"></div><div><label class="cp-lbl">Client ka naam</label><input class="cp-in" id="lk-cn"></div>'; }
-      h += '<div><label class="cp-lbl">Document type</label><select class="cp-in" id="lk-cat">' + (S.docs.cats || []).map(function (c) { return '<option>' + esc(c) + '</option>'; }).join('') + '</select></div>';
+      h += '<div><label class="cp-lbl">Document type / section</label><select class="cp-in" id="lk-cat">' + typeOpts(false, S.preType || '') + '</select></div>';
+      h += '<div><label class="cp-lbl">Financial year</label><select class="cp-in" id="lk-fy">' + fyOpts() + '</select></div>';
     }
-    h += '<div><label class="cp-lbl">Document ka naam</label><input class="cp-in" id="lk-t" maxlength="120" placeholder="' + (r === 'client' ? 'jaise PAN card, bank statement' : 'jaise ITR-V AY 2026-27') + '"></div>' +
-      '<div><label class="cp-lbl">File (PDF, photo, Word, Excel, ZIP; max 8 MB)</label><input class="cp-in" id="lk-f" type="file" accept=".pdf,.jpg,.jpeg,.png,.webp,.heic,.doc,.docx,.xls,.xlsx,.csv,.txt,.zip,.json,.xml"></div></div>' +
+    h += '<div><label class="cp-lbl">Document ka naam (ek file ho to)</label><input class="cp-in" id="lk-t" maxlength="120" placeholder="' + (r === 'client' ? 'jaise PAN card, bank statement' : 'khaali chhodein to file ka naam') + '"></div>' +
+      '<div><label class="cp-lbl">' + (r === 'client' ? 'File' : 'Files (ek saath kai chun sakte hain)') + ' &middot; PDF, photo, Word, Excel, ZIP; har file max 8 MB</label><input class="cp-in" id="lk-f" type="file"' + (r === 'client' ? '' : ' multiple') + ' accept=".pdf,.jpg,.jpeg,.png,.webp,.heic,.doc,.docx,.xls,.xlsx,.csv,.txt,.zip,.json,.xml"></div></div>' +
       '<div class="cp-row"><button class="cp-btn s" id="lk-go">Upload kariye</button><button class="cp-btn o s" id="lk-x">Band kariye</button></div><p class="cp-msg" id="lk-m"></p></div>';
     return h;
   }
@@ -264,7 +321,7 @@
     }
     if (S.tab === 'docs') {
       if (S.upOpen) { h += uploadForm(em); }
-      h += D.length ? byFY(D, false) : '<div class="lk-empty">Is client ke abhi koi documents nahi hain.</div>';
+      h += bySection(D, false, false) + (D.length ? '' : '<div class="lk-empty">Is client ke abhi koi documents nahi hain. Upar "Document upload kariye" se ek saath kai files daal sakte hain; type apne aap pehchana jayega.</div>');
     } else {
       if (S.credForm) { h += credForm(); }
       if (!CR) { h += '<div class="lk-empty">Load ho raha hai...</div>'; }
@@ -319,7 +376,7 @@
       (S.ctab === 'docs' ? '<div class="cp-row" style="margin:0"><button class="cp-btn s" id="lk-open">Document bhejiye</button></div>' : '') + '</div>';
     if (S.ctab === 'docs') {
       if (S.upOpen) { h += uploadForm(''); }
-      h += D.length ? byFY(D, multi && !S.ent) : '<div class="lk-empty">Abhi yahan koi document nahi hai. CGA team document daalegi to aapko email aayega.</div>';
+      h += bySection(D, multi && !S.ent, true) + (D.length ? '' : '<div class="lk-empty">Abhi yahan koi document nahi hai. CGA team document daalegi to aapko email aayega. Upar se apne KYC papers bhi bhej sakte hain.</div>');
     } else if (S.ctab === 'filing') {
       h += hubList('filing', null, false).replace(/^/, '') ;
     } else if (S.ctab === 'renewals') {
@@ -478,32 +535,60 @@
     }
     if ((el = document.getElementById('lk-go'))) {
       el.onclick = function () {
-        var go = this, fi = document.getElementById('lk-f'), f = fi && fi.files && fi.files[0], eng = document.getElementById('lk-eng');
-        if (!f) { say('lk-m', 'File chuniye.', 'e'); return; }
-        if (f.size > MAX) { say('lk-m', 'File 8 MB se badi hai.', 'e'); return; }
-        var body = { action: 'upload', file_name: f.name, mime: f.type || '', title: (document.getElementById('lk-t').value || '').trim() || f.name, eng_id: eng ? eng.value : '' };
-        var ct = document.getElementById('lk-cat'); if (ct) { body.category = ct.value; }
-        var wh = document.getElementById('lk-who'); if (wh) { body.client_email = wh.value; }
-        if (role() !== 'client' && !body.eng_id) {
-          if (S.sel) { body.client_email = S.sel; var cc = (S.clients || []).find(function (x) { return x.email === S.sel; }); body.client_name = cc ? cc.name : ''; }
-          else { var ce = document.getElementById('lk-ce'); body.client_email = ce ? ce.value.trim().toLowerCase() : ''; var cn = document.getElementById('lk-cn'); body.client_name = cn ? cn.value.trim() : ''; }
-          if (!isAll()) { say('lk-m', 'Pehle service chuniye.', 'e'); return; }
-          if (!/^[^@ ]+@[^@ ]+\.[^@ ]+$/.test(body.client_email || '')) { say('lk-m', 'Client ka sahi email daaliye.', 'e'); return; }
+        var go = this, fi = document.getElementById('lk-f'), files = fi && fi.files ? Array.prototype.slice.call(fi.files) : [], eng = document.getElementById('lk-eng');
+        if (!files.length) { say('lk-m', 'File chuniye.', 'e'); return; }
+        var big = files.filter(function (f) { return f.size > MAX; });
+        if (big.length) { say('lk-m', big.map(function (f) { return f.name; }).join(', ') + ': 8 MB se badi hai. Chhoti karke dobara chuniye.', 'e'); return; }
+        if (files.length > 50) { say('lk-m', 'Ek baar mein 50 tak files chuniye.', 'e'); return; }
+        var base = { action: 'upload', eng_id: eng ? eng.value : '' };
+        var ct = document.getElementById('lk-cat'); if (ct) { base.category = ct.value; }
+        var fyEl = document.getElementById('lk-fy'); if (fyEl) { base.fy = fyEl.value; }
+        var wh = document.getElementById('lk-who'); if (wh) { base.client_email = wh.value; }
+        if (role() !== 'client' && !base.eng_id) {
+          if (S.sel) { base.client_email = S.sel; var cc = (S.clients || []).find(function (x) { return x.email === S.sel; }); base.client_name = cc ? cc.name : ''; }
+          else { var ce = document.getElementById('lk-ce'); base.client_email = ce ? ce.value.trim().toLowerCase() : ''; var cn = document.getElementById('lk-cn'); base.client_name = cn ? cn.value.trim() : ''; }
+          if (!base.client_email && !isAll()) { say('lk-m', 'Pehle service chuniye.', 'e'); return; }
+          if (!/^[^@ ]+@[^@ ]+\.[^@ ]+$/.test(base.client_email || '')) { say('lk-m', 'Client ka sahi email daaliye.', 'e'); return; }
         }
-        go.disabled = true; say('lk-m', 'Upload ho raha hai... (' + kb(f.size) + ')');
-        var rd = new FileReader();
-        rd.onerror = function () { go.disabled = false; say('lk-m', 'File padh nahi paaye.', 'e'); };
-        rd.onload = function () {
-          body.b64 = String(rd.result).split(',')[1] || '';
-          call(DOCS, body).then(function (r) {
+        var tIn = (document.getElementById('lk-t').value || '').trim();
+        var total = files.length, done = 0, fail = [], types = {};
+        go.disabled = true;
+        function next(i) {
+          if (i >= total) {
             go.disabled = false;
-            if (r && r.ok) { S.upOpen = false; S.flash = ['k', r.msg || 'Upload ho gaya.']; if (S.upFor) { var q = S.upFor; S.upFor = null; call(HUB, { action: 'docreq_done', item_id: q.item_id }).then(function () { loadAll(); }); } else { loadAll(); } }
-            else { say('lk-m', (r && r.error) || 'Upload nahi hua.', 'e'); }
-          }).catch(function () { go.disabled = false; say('lk-m', 'Network error.', 'e'); });
-        };
-        rd.readAsDataURL(f);
+            var tl = Object.keys(types).map(function (k) { return k + ' (' + types[k] + ')'; }).join(', ');
+            if (!fail.length) { S.upOpen = false; S.preType = ''; S.flash = ['k', (total > 1 ? total + ' documents upload ho gaye' : 'Document upload ho gaya') + (tl ? ': ' + tl : '') + (role() === 'client' ? '. CGA team ko alert chala gaya.' : '. Client ko ek email gaya.')]; if (S.upFor) { var q = S.upFor; S.upFor = null; call(HUB, { action: 'docreq_done', item_id: q.item_id }).then(function () { loadAll(); }); } else { loadAll(); } }
+            else { say('lk-m', done + ' upload hue, ' + fail.length + ' nahi hue: ' + fail.join('; '), 'e'); if (done) { loadAll(); } }
+            return;
+          }
+          var f = files[i];
+          say('lk-m', 'Upload ho raha hai ' + (i + 1) + ' / ' + total + ': ' + f.name + ' (' + kb(f.size) + ')');
+          var rd = new FileReader();
+          rd.onerror = function () { fail.push(f.name + ': padh nahi paaye'); next(i + 1); };
+          rd.onload = function () {
+            var body = {}; Object.keys(base).forEach(function (k) { body[k] = base[k]; });
+            body.file_name = f.name; body.mime = f.type || ''; body.title = (total === 1 && tIn) ? tIn : f.name.replace(/\.[^.]+$/, '');
+            body.b64 = String(rd.result).split(',')[1] || '';
+            body.notify = (i === total - 1); body.batch_total = total;
+            call(DOCS, body).then(function (r) {
+              if (r && r.ok) { done++; if (r.type) { types[r.type] = (types[r.type] || 0) + 1; } }
+              else { fail.push(f.name + ': ' + ((r && r.error) || 'nahi hua')); }
+              next(i + 1);
+            }).catch(function () { fail.push(f.name + ': network error'); next(i + 1); });
+          };
+          rd.readAsDataURL(f);
+        }
+        next(0);
       };
     }
+    each(box, '[data-secf]', function (b) { b.onclick = function () { S.secF = b.getAttribute('data-secf'); paint(); }; });
+    each(box, '[data-kyc]', function (b) { b.onclick = function () { S.preType = b.getAttribute('data-kyc'); S.upOpen = true; S.flash = null; paint(); var f = document.getElementById('lk-f'); if (f) { f.scrollIntoView({ behavior: 'smooth', block: 'center' }); } }; });
+    each(box, '[data-rt]', function (sel) {
+      sel.onchange = function () {
+        var v = sel.value; sel.disabled = true;
+        call(DOCS, { action: 'retype', doc_id: sel.getAttribute('data-rt'), category: v }).then(function (r) { S.flash = r && r.ok ? ['k', 'Section badal diya: ' + v] : ['e', (r && r.error) || 'Nahi hua.']; loadAll(); }).catch(function () { sel.disabled = false; });
+      };
+    });
     each(box, '[data-dl]', function (b) {
       b.onclick = function () {
         var id = b.getAttribute('data-dl'), t = b.textContent; b.disabled = true; b.textContent = 'Aa raha hai...';
@@ -527,7 +612,7 @@
   function bumpClient(em, k, n) { (S.clients || []).forEach(function (c) { if (c.email === em) { c[k] = Math.max(0, (c[k] || 0) + n); } }); }
 
   function inject() {
-    var top = app.querySelector('.cp-top');
+    var top = app.querySelector('.cp-top') || app.querySelector('.cp-hero');
     if (!top) { if (!sess()) { S.docs = null; S.clients = null; S.sel = null; S.creds = {}; S.revealed = {}; S.myCreds = null; } return; }
     if (document.getElementById('cp-locker')) { return; }
     var box = document.createElement('div');
