@@ -47,7 +47,7 @@
   if (window.__cgaAnim2) { return; } window.__cgaAnim2 = 1;
   try {
     var mm = window.matchMedia ? function (q) { return window.matchMedia(q).matches; } : function () { return false; };
-    if (mm('(prefers-reduced-motion: reduce)') || !('IntersectionObserver' in window)) { return; }
+    if (mm('(prefers-reduced-motion: reduce)') || !('IntersectionObserver' in window) || window.top !== window.self) { return; }
     if (!window.CSS || !CSS.supports || !CSS.supports('translate', '0 10px')) { return; }
     var EASE = 'cubic-bezier(.2,.7,.2,1)';
     var css = 'html{scroll-behavior:smooth}'
@@ -108,8 +108,24 @@
         setTimeout(function () { done(el); }, 1300);
         countIn(el);
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0 });
     seen.forEach(function (el) { io.observe(el); });
+    /* Fallback: on scroll, reveal anything already in or above the viewport; reveal all at page end or after 25s */
+    var tk = 0;
+    function sweep(all) {
+      tk = 0; var h = window.innerHeight || 800, left = 0;
+      seen.forEach(function (el) {
+        if (!el.classList.contains('cga-rv') || el.classList.contains('cga-in')) { return; }
+        if (all || el.getBoundingClientRect().top < h * 0.97) { io.unobserve(el); el.classList.add('cga-in'); countIn(el); setTimeout(function () { done(el); }, 1300); } else { left++; }
+      });
+      if (!left) { window.removeEventListener('scroll', onSc); }
+    }
+    function onSc() {
+      if (tk) { return; } tk = 1;
+      setTimeout(function () { var de = document.documentElement; sweep(window.innerHeight + window.scrollY >= de.scrollHeight - 80); }, 120);
+    }
+    window.addEventListener('scroll', onSc, { passive: true });
+    setTimeout(function () { sweep(true); }, 25000);
     /* Show everything before printing */
     window.addEventListener('beforeprint', function () { seen.forEach(done); });
 
